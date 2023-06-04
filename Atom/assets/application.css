@@ -7,7 +7,6 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *
  */
 
 #peek .wrapper {
@@ -2615,12 +2614,9 @@ body.menu-active .modal-backdrop {
 @charset "utf-8";
 @font-face {
   font-family: 'octicons';
-  src: url(octicons/octicons.eot#iefix)
-      format('embedded-opentype'),
-    url(octicons/octicons.woff)
-      format('woff'),
-    url(octicons/octicons.ttf)
-      format('truetype'),
+  src: url(octicons/octicons.eot#iefix) format('embedded-opentype'),
+    url(octicons/octicons.woff) format('woff'),
+    url(octicons/octicons.ttf) format('truetype'),
     url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-685f15d151c86713c12ae8bb4ad5e8fadb618ae27c5dbde9e923f00dde3896df.svg#octicons)
       format('svg');
   font-weight: normal;

@@ -24,7 +24,6 @@
 
  */
 
-
 #peek .wrapper {
   width: 860px !important;
   padding: 0;
@@ -43,13 +42,14 @@ label {
 }
 
 /* line 21, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-input[type="text"], #adv_code_search .search-page-label,
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="tel"],
-input[type="url"],
-input[type="search"],
+input[type='text'],
+#adv_code_search .search-page-label,
+input[type='password'],
+input[type='email'],
+input[type='number'],
+input[type='tel'],
+input[type='url'],
+input[type='search'],
 textarea {
   min-height: 34px;
   padding: 7px 8px;
@@ -65,23 +65,28 @@ textarea {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
 }
 /* line 42, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-input[type="text"].focus, #adv_code_search .focus.search-page-label, input[type="text"]:focus, .focused .drag-and-drop, #adv_code_search .search-page-label:focus,
-input[type="password"].focus,
-input[type="password"]:focus,
-input[type="email"].focus,
-input[type="email"]:focus,
-input[type="number"].focus,
-input[type="number"]:focus,
-input[type="tel"].focus,
-input[type="tel"]:focus,
-input[type="url"].focus,
-input[type="url"]:focus,
-input[type="search"].focus,
-input[type="search"]:focus,
+input[type='text'].focus,
+#adv_code_search .focus.search-page-label,
+input[type='text']:focus,
+.focused .drag-and-drop,
+#adv_code_search .search-page-label:focus,
+input[type='password'].focus,
+input[type='password']:focus,
+input[type='email'].focus,
+input[type='email']:focus,
+input[type='number'].focus,
+input[type='number']:focus,
+input[type='tel'].focus,
+input[type='tel']:focus,
+input[type='url'].focus,
+input[type='url']:focus,
+input[type='search'].focus,
+input[type='search']:focus,
 textarea.focus,
 textarea:focus {
   border-color: #51a7e8;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+    0 0 5px rgba(81, 167, 232, 0.5);
 }
 
 /* line 51, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
@@ -145,7 +150,7 @@ input.input-large {
 
 /* line 104, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
 .input-monospace {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
 
 /* line 114, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
@@ -153,16 +158,22 @@ dl.form {
   margin: 15px 0;
 }
 /* line 117, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form input[type="text"], dl.form #adv_code_search .search-page-label, #adv_code_search dl.form .search-page-label,
-dl.form input[type="password"],
-dl.form input[type="email"],
+dl.form input[type='text'],
+dl.form #adv_code_search .search-page-label,
+#adv_code_search dl.form .search-page-label,
+dl.form input[type='password'],
+dl.form input[type='email'],
 dl.form textarea {
   background-color: #fafafa;
 }
 /* line 123, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form input[type="text"]:focus, dl.form .focused .drag-and-drop, .focused dl.form .drag-and-drop, dl.form #adv_code_search .search-page-label:focus, #adv_code_search dl.form .search-page-label:focus,
-dl.form input[type="password"]:focus,
-dl.form input[type="email"]:focus,
+dl.form input[type='text']:focus,
+dl.form .focused .drag-and-drop,
+.focused dl.form .drag-and-drop,
+dl.form #adv_code_search .search-page-label:focus,
+#adv_code_search dl.form .search-page-label:focus,
+dl.form input[type='password']:focus,
+dl.form input[type='email']:focus,
 dl.form textarea:focus {
   background-color: #fff;
 }
@@ -185,50 +196,64 @@ dl.form.flattened > dd {
   line-height: 32px;
 }
 /* line 159, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form > dd input[type="text"], dl.form > dd #adv_code_search .search-page-label, #adv_code_search dl.form > dd .search-page-label,
-dl.form > dd input[type="password"],
-dl.form > dd input[type="email"] {
+dl.form > dd input[type='text'],
+dl.form > dd #adv_code_search .search-page-label,
+#adv_code_search dl.form > dd .search-page-label,
+dl.form > dd input[type='password'],
+dl.form > dd input[type='email'] {
   width: 440px;
   max-width: 100%;
   margin-right: 5px;
   background-position-x: 98%;
 }
 /* line 167, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form > dd input[type="text"].short, dl.form > dd #adv_code_search .short.search-page-label, #adv_code_search dl.form > dd .short.search-page-label,
-dl.form > dd input[type="password"].short,
-dl.form > dd input[type="email"].short {
+dl.form > dd input[type='text'].short,
+dl.form > dd #adv_code_search .short.search-page-label,
+#adv_code_search dl.form > dd .short.search-page-label,
+dl.form > dd input[type='password'].short,
+dl.form > dd input[type='email'].short {
   width: 250px;
 }
 /* line 171, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form > dd input[type="text"].shorter, dl.form > dd #adv_code_search .shorter.search-page-label, #adv_code_search dl.form > dd .shorter.search-page-label,
-dl.form > dd input[type="password"].shorter,
-dl.form > dd input[type="email"].shorter {
+dl.form > dd input[type='text'].shorter,
+dl.form > dd #adv_code_search .shorter.search-page-label,
+#adv_code_search dl.form > dd .shorter.search-page-label,
+dl.form > dd input[type='password'].shorter,
+dl.form > dd input[type='email'].shorter {
   width: 130px;
 }
 /* line 175, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form > dd input[type="text"].long, dl.form > dd #adv_code_search .long.search-page-label, #adv_code_search dl.form > dd .long.search-page-label,
-dl.form > dd input[type="password"].long,
-dl.form > dd input[type="email"].long {
+dl.form > dd input[type='text'].long,
+dl.form > dd #adv_code_search .long.search-page-label,
+#adv_code_search dl.form > dd .long.search-page-label,
+dl.form > dd input[type='password'].long,
+dl.form > dd input[type='email'].long {
   width: 100%;
 }
 /* line 179, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form > dd input[type="text"].is-autocheck-loading, dl.form > dd #adv_code_search .is-autocheck-loading.search-page-label, #adv_code_search dl.form > dd .is-autocheck-loading.search-page-label,
-dl.form > dd input[type="password"].is-autocheck-loading,
-dl.form > dd input[type="email"].is-autocheck-loading {
-  background-image: url("/web/20221207004816im_/https://atom.io/images/spinners/octocat-spinner-32.gif");
+dl.form > dd input[type='text'].is-autocheck-loading,
+dl.form > dd #adv_code_search .is-autocheck-loading.search-page-label,
+#adv_code_search dl.form > dd .is-autocheck-loading.search-page-label,
+dl.form > dd input[type='password'].is-autocheck-loading,
+dl.form > dd input[type='email'].is-autocheck-loading {
+  background-image: url('https://web.archive.org/web/20221207004816im_/https://atom.io/images/spinners/octocat-spinner-32.gif');
   background-size: 16px;
 }
 /* line 184, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form > dd input[type="text"].is-autocheck-successful, dl.form > dd #adv_code_search .is-autocheck-successful.search-page-label, #adv_code_search dl.form > dd .is-autocheck-successful.search-page-label,
-dl.form > dd input[type="password"].is-autocheck-successful,
-dl.form > dd input[type="email"].is-autocheck-successful {
-  background-image: url("/web/20221207004816im_/https://atom.io/images/modules/ajax/success.png");
+dl.form > dd input[type='text'].is-autocheck-successful,
+dl.form > dd #adv_code_search .is-autocheck-successful.search-page-label,
+#adv_code_search dl.form > dd .is-autocheck-successful.search-page-label,
+dl.form > dd input[type='password'].is-autocheck-successful,
+dl.form > dd input[type='email'].is-autocheck-successful {
+  background-image: url('https://web.archive.org/web/20221207004816im_/https://atom.io/images/modules/ajax/success.png');
 }
 /* line 188, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-dl.form > dd input[type="text"].is-autocheck-errored, dl.form > dd #adv_code_search .is-autocheck-errored.search-page-label, #adv_code_search dl.form > dd .is-autocheck-errored.search-page-label,
-dl.form > dd input[type="password"].is-autocheck-errored,
-dl.form > dd input[type="email"].is-autocheck-errored {
-  background-image: url("/web/20221207004816im_/https://atom.io/images/modules/ajax/error.png");
+dl.form > dd input[type='text'].is-autocheck-errored,
+dl.form > dd #adv_code_search .is-autocheck-errored.search-page-label,
+#adv_code_search dl.form > dd .is-autocheck-errored.search-page-label,
+dl.form > dd input[type='password'].is-autocheck-errored,
+dl.form > dd input[type='email'].is-autocheck-errored {
+  background-image: url('https://web.archive.org/web/20221207004816im_/https://atom.io/images/modules/ajax/error.png');
 }
 /* line 198, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
 dl.form > dd textarea {
@@ -273,7 +298,7 @@ dl.form > dd h4 + p.note {
 dl.form.required > dt > label:after {
   padding-left: 5px;
   color: #9f1006;
-  content: "*";
+  content: '*';
 }
 
 /* line 252, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
@@ -292,8 +317,8 @@ dl.form.required > dt > label:after {
   border-radius: 3px;
 }
 /* line 269, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-.form-checkbox input[type=checkbox],
-.form-checkbox input[type=radio] {
+.form-checkbox input[type='checkbox'],
+.form-checkbox input[type='radio'] {
   float: left;
   margin: 2px 0 0 -20px;
   vertical-align: middle;
@@ -318,7 +343,7 @@ dl.form.required > dt > label:after {
   width: 47px;
   height: 31px;
   text-indent: -9999px;
-  background-image: url("/web/20221207004816im_/https://atom.io/images/modules/pricing/credit-cards-@1x.png");
+  background-image: url('https://web.archive.org/web/20221207004816im_/https://atom.io/images/modules/pricing/credit-cards-@1x.png');
   background-position: 0 0;
   opacity: 0.6;
 }
@@ -371,10 +396,14 @@ dl.form.required > dt > label:after {
   color: #999;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2 / 1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
   /* line 344, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
   .form-cards > .cards .card {
-    background-image: url("/web/20221207004816im_/https://atom.io/images/modules/pricing/credit-cards-@2x.png");
+    background-image: url('https://web.archive.org/web/20221207004816im_/https://atom.io/images/modules/pricing/credit-cards-@2x.png');
     background-size: 300px 31px;
   }
 }
@@ -464,13 +493,13 @@ dl.form .form-note {
 /* line 5, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/mixins/_clearfix.scss */
 .hfields:before {
   display: table;
-  content: "";
+  content: '';
 }
 /* line 10, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/mixins/_clearfix.scss */
 .hfields:after {
   display: table;
   clear: both;
-  content: "";
+  content: '';
 }
 /* line 458, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
 .hfields dl.form {
@@ -648,7 +677,8 @@ html.no-dnd-uploads .upload-enabled textarea {
   padding: 0 10px 10px;
 }
 /* line 625, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-.previewable-comment-form.write-selected .write-content, .previewable-comment-form.preview-selected .preview-content {
+.previewable-comment-form.write-selected .write-content,
+.previewable-comment-form.preview-selected .preview-content {
   display: block;
 }
 /* line 630, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
@@ -752,7 +782,9 @@ input::-webkit-inner-spin-button {
   z-index: 2;
 }
 /* line 744, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
-.input-group input[type="text"] + .minibutton, .input-group #adv_code_search .search-page-label + .minibutton, #adv_code_search .input-group .search-page-label + .minibutton {
+.input-group input[type='text'] + .minibutton,
+.input-group #adv_code_search .search-page-label + .minibutton,
+#adv_code_search .input-group .search-page-label + .minibutton {
   margin-left: 0;
 }
 /* line 749, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
@@ -897,7 +929,7 @@ p.explain .minibutton {
 
 /* line 877, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
 .status-indicator {
-  font: normal normal 16px/1 "octicons";
+  font: normal normal 16px/1 'octicons';
   display: inline-block;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -911,20 +943,21 @@ p.explain .minibutton {
   width: 16px;
   height: 16px;
   margin-top: -4px;
-  background: url("/web/20221207004816im_/https://atom.io/images/spinners/octocat-spinner-32-EAF2F5.gif") 0 0 no-repeat;
+  background: url('https://web.archive.org/web/20221207004816im_/https://atom.io/images/spinners/octocat-spinner-32-EAF2F5.gif')
+    0 0 no-repeat;
   background-size: 16px;
 }
 
 /* line 892, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
 .status-indicator-success:before {
   color: #6cc644;
-  content: "\f03a";
+  content: '\f03a';
 }
 
 /* line 897, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
 .status-indicator-failed:before {
   color: #bd2c00;
-  content: "\f02d";
+  content: '\f02d';
 }
 /* line 27, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
 .button,
@@ -970,7 +1003,10 @@ p.explain .minibutton {
   box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
 }
 /* line 58, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button:hover, .button:active, .button.zeroclipboard-is-hover, .button.zeroclipboard-is-active,
+.button:hover,
+.button:active,
+.button.zeroclipboard-is-hover,
+.button.zeroclipboard-is-active,
 .minibutton:hover,
 .minibutton:active,
 .minibutton.zeroclipboard-is-hover,
@@ -984,7 +1020,10 @@ p.explain .minibutton {
   border-color: #ccc;
 }
 /* line 67, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button:active, .button.selected, .button.selected:hover, .button.zeroclipboard-is-active,
+.button:active,
+.button.selected,
+.button.selected:hover,
+.button.zeroclipboard-is-active,
 .minibutton:active,
 .minibutton.selected,
 .minibutton.selected:hover,
@@ -995,7 +1034,10 @@ p.explain .minibutton {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 /* line 79, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button:disabled, .button:disabled:hover, .button.disabled, .button.disabled:hover,
+.button:disabled,
+.button:disabled:hover,
+.button.disabled,
+.button.disabled:hover,
 .minibutton:disabled,
 .minibutton:disabled:hover,
 .minibutton.disabled,
@@ -1032,7 +1074,8 @@ p.explain .minibutton {
   border-color: #4a993e;
 }
 /* line 104, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button.primary:active, .button.primary.selected,
+.button.primary:active,
+.button.primary.selected,
 .minibutton.primary:active,
 .minibutton.primary.selected {
   background-color: #569e3d;
@@ -1040,7 +1083,10 @@ p.explain .minibutton {
   border-color: #418737;
 }
 /* line 113, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button.primary:disabled, .button.primary:disabled:hover, .button.primary.disabled, .button.primary.disabled:hover,
+.button.primary:disabled,
+.button.primary:disabled:hover,
+.button.primary.disabled,
+.button.primary.disabled:hover,
 .minibutton.primary:disabled,
 .minibutton.primary:disabled:hover,
 .minibutton.primary.disabled,
@@ -1072,7 +1118,8 @@ p.explain .minibutton {
   border-color: #cd504a;
 }
 /* line 134, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button.danger:active, .button.danger.selected,
+.button.danger:active,
+.button.danger.selected,
 .minibutton.danger:active,
 .minibutton.danger.selected {
   color: #fff;
@@ -1081,7 +1128,10 @@ p.explain .minibutton {
   border-color: #9f312c;
 }
 /* line 144, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button.danger:disabled, .button.danger:disabled:hover, .button.danger.disabled, .button.danger.disabled:hover,
+.button.danger:disabled,
+.button.danger:disabled:hover,
+.button.danger.disabled,
+.button.danger.disabled:hover,
 .minibutton.danger:disabled,
 .minibutton.danger:disabled:hover,
 .minibutton.danger.disabled,
@@ -1202,13 +1252,13 @@ p.explain .minibutton {
 /* line 5, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/mixins/_clearfix.scss */
 .button-group:before {
   display: table;
-  content: "";
+  content: '';
 }
 /* line 10, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/mixins/_clearfix.scss */
 .button-group:after {
   display: table;
   clear: both;
-  content: "";
+  content: '';
 }
 /* line 309, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
 .button-group .button,
@@ -1233,7 +1283,10 @@ p.explain .minibutton {
   border-bottom-right-radius: 3px;
 }
 /* line 327, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button-group .button:hover, .button-group .button:focus, .button-group .button:active, .button-group .button.selected,
+.button-group .button:hover,
+.button-group .button:focus,
+.button-group .button:active,
+.button-group .button.selected,
 .button-group .minibutton:hover,
 .button-group .minibutton:focus,
 .button-group .minibutton:active,
@@ -1256,7 +1309,8 @@ p.explain .minibutton {
   box-shadow: none;
 }
 /* line 345, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button-group .button + .button:active, .button-group .button + .button.selected,
+.button-group .button + .button:active,
+.button-group .button + .button.selected,
 .button-group .minibutton + .minibutton:active,
 .button-group .minibutton + .minibutton.selected {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
@@ -1292,7 +1346,8 @@ p.explain .minibutton {
   -webkit-appearance: none;
 }
 /* line 388, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button-link:hover, .button-link:focus {
+.button-link:hover,
+.button-link:focus {
   text-decoration: underline;
 }
 /* line 393, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
@@ -1322,14 +1377,18 @@ p.explain .minibutton {
   -webkit-appearance: none;
 }
 /* line 418, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button-outline:hover, .button-outline.zeroclipboard-is-hover {
+.button-outline:hover,
+.button-outline.zeroclipboard-is-hover {
   color: #fff;
   text-decoration: none;
   background-color: #4183c4;
   border-color: #4183c4;
 }
 /* line 426, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/buttons.scss */
-.button-outline:disabled, .button-outline.disabled, .button-outline:disabled:hover, .button-outline.disabled:hover {
+.button-outline:disabled,
+.button-outline.disabled,
+.button-outline:disabled:hover,
+.button-outline.disabled:hover {
   color: #777;
   cursor: default;
   background-color: #f5f5f5;
@@ -1346,7 +1405,10 @@ p.explain .minibutton {
   vertical-align: top;
 }
 /* line 19, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/behavior.scss */
-.css-truncate.expandable.zeroclipboard-is-hover .css-truncate-target, .css-truncate.expandable.zeroclipboard-is-hover.css-truncate-target, .css-truncate.expandable:hover .css-truncate-target, .css-truncate.expandable:hover.css-truncate-target {
+.css-truncate.expandable.zeroclipboard-is-hover .css-truncate-target,
+.css-truncate.expandable.zeroclipboard-is-hover.css-truncate-target,
+.css-truncate.expandable:hover .css-truncate-target,
+.css-truncate.expandable:hover.css-truncate-target {
   max-width: 10000px !important;
 }
 /* line 28, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
@@ -1360,7 +1422,8 @@ p.explain .minibutton {
   z-index: 1000000;
   display: none;
   padding: 5px 8px;
-  font: normal normal 10px/1.5 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font: normal normal 10px/1.5 Helvetica, arial, freesans, clean, sans-serif,
+    'Segoe UI Emoji', 'Segoe UI Symbol';
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -1385,12 +1448,13 @@ p.explain .minibutton {
   height: 0;
   color: rgba(0, 0, 0, 0.8);
   pointer-events: none;
-  content: "";
+  content: '';
   border: 5px solid transparent;
 }
 
 /* line 71, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
-.tooltipped:hover:before, .tooltipped:hover:after,
+.tooltipped:hover:before,
+.tooltipped:hover:after,
 .tooltipped:active:before,
 .tooltipped:active:after,
 .tooltipped:focus:before,
@@ -1523,7 +1587,8 @@ p.explain .minibutton {
   border-collapse: separate;
 }
 /* line 215, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
-.tooltipped-multiline.tooltipped-s:after, .tooltipped-multiline.tooltipped-n:after {
+.tooltipped-multiline.tooltipped-s:after,
+.tooltipped-multiline.tooltipped-n:after {
   right: auto;
   left: 50%;
   -webkit-transform: translateX(-50%) !important;
@@ -1531,18 +1596,20 @@ p.explain .minibutton {
   transform: translateX(-50%) !important;
 }
 /* line 222, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
-.tooltipped-multiline.tooltipped-w:after, .tooltipped-multiline.tooltipped-e:after {
+.tooltipped-multiline.tooltipped-w:after,
+.tooltipped-multiline.tooltipped-e:after {
   right: 100%;
 }
 
-@media screen and (min-width: 0\0 ) {
+@media screen and (min-width: 0\0) {
   /* line 230, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
   .tooltipped-multiline:after {
     width: 250px;
   }
 }
 /* line 241, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
-.tooltipped-sticky:before, .tooltipped-sticky:after {
+.tooltipped-sticky:before,
+.tooltipped-sticky:after {
   display: inline-block;
 }
 /* line 247, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
@@ -1562,7 +1629,9 @@ p.explain .minibutton {
   border-bottom-color: rgba(255, 255, 255, 0.8);
 }
 /* line 273, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
-.fullscreen-overlay-enabled.dark-theme .tooltipped.tooltipped-n:before, .fullscreen-overlay-enabled.dark-theme .tooltipped.tooltipped-ne:before, .fullscreen-overlay-enabled.dark-theme .tooltipped.tooltipped-nw:before {
+.fullscreen-overlay-enabled.dark-theme .tooltipped.tooltipped-n:before,
+.fullscreen-overlay-enabled.dark-theme .tooltipped.tooltipped-ne:before,
+.fullscreen-overlay-enabled.dark-theme .tooltipped.tooltipped-nw:before {
   border-top-color: rgba(255, 255, 255, 0.8);
 }
 /* line 278, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/components/tooltips.scss */
@@ -1589,7 +1658,7 @@ p.explain .minibutton {
   display: block;
   width: 0;
   height: 0;
-  content: "";
+  content: '';
   border: 4px solid;
   border-right-color: transparent;
   border-left-color: transparent;
@@ -1649,7 +1718,9 @@ p.explain .minibutton {
   color: inherit;
 }
 /* line 92, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu.is-showing-clear-item .select-menu-clear-item + .select-menu-no-results {
+.select-menu.is-showing-clear-item
+  .select-menu-clear-item
+  + .select-menu-no-results {
   display: none;
 }
 /* line 95, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
@@ -1688,8 +1759,8 @@ p.explain .minibutton {
   top: 50%;
   margin: -16px 0 0 -16px;
   width: 32px;
-  content: "\f008";
-  font: normal normal 32px/1 "octicons";
+  content: '\f008';
+  font: normal normal 32px/1 'octicons';
   display: inline-block;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -1831,7 +1902,8 @@ p.explain .minibutton {
   border-radius: 3px;
 }
 /* line 250, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-text-filter input::-webkit-input-placeholder, .select-menu-text-filter input:-moz-placeholder {
+.select-menu-text-filter input::-webkit-input-placeholder,
+.select-menu-text-filter input:-moz-placeholder {
   color: #aaa;
 }
 
@@ -1912,19 +1984,21 @@ p.explain .minibutton {
   display: none;
 }
 /* line 335, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-item.disabled, .select-menu-item.disabled.selected {
+.select-menu-item.disabled,
+.select-menu-item.disabled.selected {
   color: #999;
 }
 /* line 339, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-item.disabled .select-menu-item-gravatar, .select-menu-item.disabled.selected .select-menu-item-gravatar {
-  opacity: .5;
+.select-menu-item.disabled .select-menu-item-gravatar,
+.select-menu-item.disabled.selected .select-menu-item-gravatar {
+  opacity: 0.5;
 }
 /* line 342, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
 .select-menu-item .octicon {
   vertical-align: middle;
 }
 /* line 346, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-item input[type="radio"] {
+.select-menu-item input[type='radio'] {
   display: none;
 }
 /* line 348, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
@@ -1941,18 +2015,24 @@ p.explain .minibutton {
   color: inherit;
 }
 /* line 359, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-item.navigation-focus, .select-menu-item.navigation-focus.selected, .select-menu-item.navigation-focus.select-menu-action {
+.select-menu-item.navigation-focus,
+.select-menu-item.navigation-focus.selected,
+.select-menu-item.navigation-focus.select-menu-action {
   background-color: #4183c4;
   color: #fff;
 }
 /* line 365, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-item.navigation-focus > .octicon, .select-menu-item.navigation-focus.selected > .octicon, .select-menu-item.navigation-focus.select-menu-action > .octicon {
+.select-menu-item.navigation-focus > .octicon,
+.select-menu-item.navigation-focus.selected > .octicon,
+.select-menu-item.navigation-focus.select-menu-action > .octicon {
   color: #fff;
 }
 /* line 367, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
 .select-menu-item.navigation-focus .text-danger,
-.select-menu-item.navigation-focus .description, .select-menu-item.navigation-focus.selected .text-danger,
-.select-menu-item.navigation-focus.selected .description, .select-menu-item.navigation-focus.select-menu-action .text-danger,
+.select-menu-item.navigation-focus .description,
+.select-menu-item.navigation-focus.selected .text-danger,
+.select-menu-item.navigation-focus.selected .description,
+.select-menu-item.navigation-focus.select-menu-action .text-danger,
 .select-menu-item.navigation-focus.select-menu-action .description {
   color: #fff;
 }
@@ -1969,15 +2049,18 @@ p.explain .minibutton {
   display: table-cell;
 }
 /* line 383, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-item.select-menu-action, .select-menu-item.selected {
+.select-menu-item.select-menu-action,
+.select-menu-item.selected {
   color: #333;
 }
 /* line 387, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-item.select-menu-action .description, .select-menu-item.selected .description {
+.select-menu-item.select-menu-action .description,
+.select-menu-item.selected .description {
   color: #666;
 }
 /* line 389, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-item.select-menu-action > .octicon, .select-menu-item.selected > .octicon {
+.select-menu-item.select-menu-action > .octicon,
+.select-menu-item.selected > .octicon {
   color: #333;
 }
 /* line 392, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
@@ -2037,7 +2120,8 @@ form.select-menu-item > div:first-child {
   color: #999;
 }
 /* line 443, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-select-menu/stylesheets/select-menu.scss */
-.select-menu-list.filterable-empty .select-menu-no-results, .select-menu-no-results:only-child {
+.select-menu-list.filterable-empty .select-menu-no-results,
+.select-menu-no-results:only-child {
   display: block;
 }
 
@@ -2195,7 +2279,12 @@ body.menu-active .modal-backdrop {
   outline: none;
 }
 /* line 44, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
   margin: 1em 0 15px;
   padding: 0;
   font-weight: bold;
@@ -2204,12 +2293,22 @@ body.menu-active .modal-backdrop {
   position: relative;
 }
 /* line 52, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
   display: none;
   color: #000;
 }
 /* line 57, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body h1:hover a.anchor, .markdown-body h2:hover a.anchor, .markdown-body h3:hover a.anchor, .markdown-body h4:hover a.anchor, .markdown-body h5:hover a.anchor, .markdown-body h6:hover a.anchor {
+.markdown-body h1:hover a.anchor,
+.markdown-body h2:hover a.anchor,
+.markdown-body h3:hover a.anchor,
+.markdown-body h4:hover a.anchor,
+.markdown-body h5:hover a.anchor,
+.markdown-body h6:hover a.anchor {
   text-decoration: none;
   line-height: 1;
   padding-left: 8px;
@@ -2217,11 +2316,27 @@ body.menu-active .modal-backdrop {
   top: 15%;
 }
 /* line 64, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body h1:hover a.anchor .octicon-link, .markdown-body h2:hover a.anchor .octicon-link, .markdown-body h3:hover a.anchor .octicon-link, .markdown-body h4:hover a.anchor .octicon-link, .markdown-body h5:hover a.anchor .octicon-link, .markdown-body h6:hover a.anchor .octicon-link {
+.markdown-body h1:hover a.anchor .octicon-link,
+.markdown-body h2:hover a.anchor .octicon-link,
+.markdown-body h3:hover a.anchor .octicon-link,
+.markdown-body h4:hover a.anchor .octicon-link,
+.markdown-body h5:hover a.anchor .octicon-link,
+.markdown-body h6:hover a.anchor .octicon-link {
   display: inline-block;
 }
 /* line 68, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body h1 tt, .markdown-body h1 code, .markdown-body h2 tt, .markdown-body h2 code, .markdown-body h3 tt, .markdown-body h3 code, .markdown-body h4 tt, .markdown-body h4 code, .markdown-body h5 tt, .markdown-body h5 code, .markdown-body h6 tt, .markdown-body h6 code {
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
   font-size: inherit;
 }
 /* line 73, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
@@ -2254,14 +2369,18 @@ body.menu-active .modal-backdrop {
 /* line 100, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
 .markdown-body p,
 .markdown-body blockquote,
-.markdown-body ul, .markdown-body ol, .markdown-body dl,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
 .markdown-body table,
 .markdown-body pre {
   margin: 15px 0;
 }
 /* line 108, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
 .markdown-body hr {
-  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  background: transparent
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC)
+    repeat-x 0 0;
   border: 0 none;
   color: #ccc;
   height: 4px;
@@ -2269,11 +2388,13 @@ body.menu-active .modal-backdrop {
   margin: 15px 0;
 }
 /* line 118, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body ul, .markdown-body ol {
+.markdown-body ul,
+.markdown-body ol {
   padding-left: 30px;
 }
 /* line 121, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body ul.no-list, .markdown-body ol.no-list {
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
   list-style-type: none;
   padding: 0;
 }
@@ -2304,7 +2425,7 @@ body.menu-active .modal-backdrop {
 }
 /* line 175, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
 .markdown-body blockquote {
-  border-left: 4px solid #DDD;
+  border-left: 4px solid #ddd;
   padding: 0 15px;
   color: #777;
 }
@@ -2327,7 +2448,8 @@ body.menu-active .modal-backdrop {
   font-weight: bold;
 }
 /* line 200, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body table th, .markdown-body table td {
+.markdown-body table th,
+.markdown-body table td {
   border: 1px solid #ddd;
   padding: 6px 13px;
 }
@@ -2435,7 +2557,8 @@ body.menu-active .modal-backdrop {
   text-align: right;
 }
 /* line 314, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body code, .markdown-body tt {
+.markdown-body code,
+.markdown-body tt {
   margin: 0;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
@@ -2443,12 +2566,16 @@ body.menu-active .modal-backdrop {
   padding: 0;
 }
 /* line 322, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body code:before, .markdown-body code:after, .markdown-body tt:before, .markdown-body tt:after {
-  content: "\00a0";
+.markdown-body code:before,
+.markdown-body code:after,
+.markdown-body tt:before,
+.markdown-body tt:after {
+  content: '\00a0';
   letter-spacing: -0.2em;
 }
 /* line 327, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body code br, .markdown-body tt br {
+.markdown-body code br,
+.markdown-body tt br {
   display: none;
 }
 /* line 330, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
@@ -2465,7 +2592,8 @@ body.menu-active .modal-backdrop {
   background: transparent;
 }
 /* line 341, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body .highlight pre, .markdown-body pre {
+.markdown-body .highlight pre,
+.markdown-body pre {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   font-size: 13px;
@@ -2479,7 +2607,8 @@ body.menu-active .modal-backdrop {
   word-wrap: normal;
 }
 /* line 355, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body pre code, .markdown-body pre tt {
+.markdown-body pre code,
+.markdown-body pre tt {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -2491,13 +2620,23 @@ body.menu-active .modal-backdrop {
   line-height: inherit;
 }
 /* line 366, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer-user-content/components/markdown.scss */
-.markdown-body pre code:before, .markdown-body pre code:after, .markdown-body pre tt:before, .markdown-body pre tt:after {
+.markdown-body pre code:before,
+.markdown-body pre code:after,
+.markdown-body pre tt:before,
+.markdown-body pre tt:after {
   content: normal;
 }
 @charset "UTF-8";
 @font-face {
   font-family: 'octicons';
-  src: url(/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-9c162bcbd21831c1c86623d8352a5b883d3d638b5b5e889caf9cf6817523c376.eot#iefix) format("embedded-opentype"), url(/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-cc5c5a519a545518743243db9cbfd19cc01662693d4bea686c54d622b0944b0b.woff) format("woff"), url(/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-b06360cb96ebabeb54faaa03d75c758a7c58e99cb0566fef78dc58e092d07932.ttf) format("truetype"), url(/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-685f15d151c86713c12ae8bb4ad5e8fadb618ae27c5dbde9e923f00dde3896df.svg#octicons) format("svg");
+  src: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-9c162bcbd21831c1c86623d8352a5b883d3d638b5b5e889caf9cf6817523c376.eot#iefix)
+      format('embedded-opentype'),
+    url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-cc5c5a519a545518743243db9cbfd19cc01662693d4bea686c54d622b0944b0b.woff)
+      format('woff'),
+    url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-b06360cb96ebabeb54faaa03d75c758a7c58e99cb0566fef78dc58e092d07932.ttf)
+      format('truetype'),
+    url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octicons/octicons/octicons-685f15d151c86713c12ae8bb4ad5e8fadb618ae27c5dbde9e923f00dde3896df.svg#octicons)
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -3718,7 +3857,7 @@ body.menu-active .modal-backdrop {
   font-weight: 500;
   color: white;
   border: none;
-  border-radius: .2em;
+  border-radius: 0.2em;
   background: #3b9b6d;
   text-shadow: none;
 }
@@ -3737,15 +3876,16 @@ body.menu-active .modal-backdrop {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/button-sprites-8c98d3585e81ec86b72d55d2b0eb3952357c8607a4ebce843f676e9200261f81.png);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/button-sprites-8c98d3585e81ec86b72d55d2b0eb3952357c8607a4ebce843f676e9200261f81.png);
   position: absolute;
   top: 4px;
   left: 4px;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 104, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
   .button-image-down {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/button-sprites@2x-51a6061d94aa2ab3da1947ef7410639424818cd7244c736bc8580e43347d1b21.png);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/button-sprites@2x-51a6061d94aa2ab3da1947ef7410639424818cd7244c736bc8580e43347d1b21.png);
     -webkit-background-size: 64px 32px;
     -moz-background-size: 64px 32px;
     -o-background-size: 64px 32px;
@@ -3758,16 +3898,17 @@ body.menu-active .modal-backdrop {
   display: inline-block;
   height: 32px;
   width: 32px;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/button-sprites-8c98d3585e81ec86b72d55d2b0eb3952357c8607a4ebce843f676e9200261f81.png);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/button-sprites-8c98d3585e81ec86b72d55d2b0eb3952357c8607a4ebce843f676e9200261f81.png);
   position: absolute;
   background-position: -32px 0;
   top: 4px;
   left: 4px;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 114, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/buttons.scss */
   .button-image-github {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/button-sprites@2x-51a6061d94aa2ab3da1947ef7410639424818cd7244c736bc8580e43347d1b21.png);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/button-sprites@2x-51a6061d94aa2ab3da1947ef7410639424818cd7244c736bc8580e43347d1b21.png);
     -webkit-background-size: 64px 32px;
     -moz-background-size: 64px 32px;
     -o-background-size: 64px 32px;
@@ -3790,215 +3931,230 @@ body.menu-active .modal-backdrop {
   clear: both;
 }
 /* line 13, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body img[align=right] {
+.markdown-body img[align='right'] {
   position: relative;
   z-index: 1;
 }
 /* line 18, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .highlight pre, .markdown-body pre {
+.markdown-body .highlight pre,
+.markdown-body pre {
   color: #c5c8c6;
   background-color: #1d1f21;
   border: 0;
 }
 /* line 25, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .comment {
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 /* line 29, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .entity {
-  color: #FFD2A7;
+  color: #ffd2a7;
 }
 /* line 32, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .entity.name.type {
   text-decoration: underline;
-  color: #FFFFB6;
+  color: #ffffb6;
 }
 /* line 37, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .entity.other.inherited-class {
-  color: #9B5C2E;
+  color: #9b5c2e;
 }
 /* line 42, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .keyword {
-  color: #96CBFE;
+  color: #96cbfe;
 }
 /* line 45, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .keyword.control {
-  color: #96CBFE;
+  color: #96cbfe;
 }
 /* line 49, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .keyword.operator {
-  color: #EDEDED;
+  color: #ededed;
 }
 /* line 54, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .storage {
-  color: #CFCB90;
+  color: #cfcb90;
 }
 /* line 57, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .storage.modifier {
-  color: #96CBFE;
+  color: #96cbfe;
 }
 /* line 62, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .constant {
-  color: #99CC99;
+  color: #99cc99;
 }
 /* line 65, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .constant.numeric {
-  color: #FF73FD;
+  color: #ff73fd;
 }
 /* line 70, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .variable {
-  color: #C6C5FE;
+  color: #c6c5fe;
 }
 /* line 74, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .invalid.deprecated {
   text-decoration: underline;
-  color: #FD5FF1;
+  color: #fd5ff1;
 }
 /* line 79, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .invalid.illegal {
-  color: #FD5FF1;
+  color: #fd5ff1;
   background-color: rgba(86, 45, 86, 0.75);
 }
 /* line 86, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .source .string .source,
 .markdown-body .line .source .string .meta.embedded.line {
-  color: #EDEDED;
+  color: #ededed;
 }
 /* line 91, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .source .string .punctuation.section.embedded {
-  color: #00A0A0;
+  color: #00a0a0;
 }
 /* line 94, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .source .string .punctuation.section.embedded .source {
-  color: #00A0A0;
+  color: #00a0a0;
 }
 /* line 100, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .string {
-  color: #A8FF60;
+  color: #a8ff60;
 }
 /* line 103, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .string .constant {
-  color: #00A0A0;
+  color: #00a0a0;
 }
 /* line 107, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .string.regexp {
-  color: #E9C062;
+  color: #e9c062;
 }
 /* line 110, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .string.regexp .constant.character.escape,
 .markdown-body .line .string.regexp .source.ruby.embedded,
 .markdown-body .line .string.regexp .string.regexp.arbitrary-repitition {
-  color: #FF8000;
+  color: #ff8000;
 }
 /* line 116, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .string.regexp.group {
-  color: #C6A24F;
+  color: #c6a24f;
   background-color: rgba(255, 255, 255, 0.06);
 }
 /* line 121, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .string.regexp.character-class {
-  color: #B18A3D;
+  color: #b18a3d;
 }
 /* line 126, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .string .variable {
-  color: #8A9A95;
+  color: #8a9a95;
 }
 /* line 131, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .support {
-  color: #FFFFB6;
+  color: #ffffb6;
 }
 /* line 134, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .support.function {
-  color: #DAD085;
+  color: #dad085;
 }
 /* line 138, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .support.constant {
-  color: #FFD2A7;
+  color: #ffd2a7;
 }
 /* line 142, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .support.type.property-name.css {
-  color: #EDEDED;
+  color: #ededed;
 }
 /* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .source .entity.name.tag,
 .markdown-body .line .source .entity.other.attribute-name,
 .markdown-body .line .meta.tag.inline,
 .markdown-body .line .meta.tag.inline .entity {
-  color: #96CBFE;
+  color: #96cbfe;
 }
 /* line 155, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .entity.other.attribute-name {
-  color: #FFD7B1;
+  color: #ffd7b1;
 }
 /* line 159, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .line .entity.name.tag.namespace, .markdown-body .line .entity.other.attribute-name.namespace {
-  color: #E18964;
+.markdown-body .line .entity.name.tag.namespace,
+.markdown-body .line .entity.other.attribute-name.namespace {
+  color: #e18964;
 }
 /* line 166, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.preprocessor.c {
-  color: #8996A8;
+  color: #8996a8;
 }
 /* line 170, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.preprocessor.c .keyword {
-  color: #AFC4DB;
+  color: #afc4db;
 }
 /* line 174, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.cast {
   color: #676767;
 }
 /* line 178, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .line .meta.sgml.html .meta.doctype, .markdown-body .line .meta.sgml.html .meta.doctype .entity, .markdown-body .line .meta.sgml.html .meta.doctype .string, .markdown-body .line .meta.xml-processing, .markdown-body .line .meta.xml-processing .entity, .markdown-body .line .meta.xml-processing .string {
+.markdown-body .line .meta.sgml.html .meta.doctype,
+.markdown-body .line .meta.sgml.html .meta.doctype .entity,
+.markdown-body .line .meta.sgml.html .meta.doctype .string,
+.markdown-body .line .meta.xml-processing,
+.markdown-body .line .meta.xml-processing .entity,
+.markdown-body .line .meta.xml-processing .string {
   color: #494949;
 }
 /* line 187, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .line .meta.tag, .markdown-body .line .meta.tag .entity {
-  color: #96CBFE;
+.markdown-body .line .meta.tag,
+.markdown-body .line .meta.tag .entity {
+  color: #96cbfe;
 }
 /* line 192, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.selector.css .entity.name.tag {
   text-decoration: underline;
-  color: #96CBFE;
+  color: #96cbfe;
 }
 /* line 197, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .line .meta.selector.css .entity.other.attribute-name.tag.pseudo-class {
-  color: #8F9D6A;
+.markdown-body
+  .line
+  .meta.selector.css
+  .entity.other.attribute-name.tag.pseudo-class {
+  color: #8f9d6a;
 }
 /* line 201, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.selector.css .entity.other.attribute-name.id {
-  color: #8B98AB;
+  color: #8b98ab;
 }
 /* line 205, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.selector.css .entity.other.attribute-name.class {
-  color: #62B1FE;
+  color: #62b1fe;
 }
 /* line 209, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .line .meta.property-group .support.constant.property-value.css, .markdown-body .line .meta.property-value .support.constant.property-value.css {
-  color: #F9EE98;
+.markdown-body .line .meta.property-group .support.constant.property-value.css,
+.markdown-body .line .meta.property-value .support.constant.property-value.css {
+  color: #f9ee98;
 }
 /* line 214, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.preprocessor.at-rule .keyword.control.at-rule {
-  color: #8693A5;
+  color: #8693a5;
 }
 /* line 218, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .line .meta.property-value .support.constant.named-color.css, .markdown-body .line .meta.property-value .constant {
-  color: #87C38A;
+.markdown-body .line .meta.property-value .support.constant.named-color.css,
+.markdown-body .line .meta.property-value .constant {
+  color: #87c38a;
 }
 /* line 223, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.constructor.argument.css {
-  color: #8F9D6A;
+  color: #8f9d6a;
 }
 /* line 227, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .line .meta.diff, .markdown-body .line .meta.diff.header {
-  color: #F8F8F8;
-  background-color: #0E2231;
+.markdown-body .line .meta.diff,
+.markdown-body .line .meta.diff.header {
+  color: #f8f8f8;
+  background-color: #0e2231;
 }
 /* line 233, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
 .markdown-body .line .meta.separator {
-  color: #60A633;
+  color: #60a633;
   background-color: #242424;
 }
 /* line 238, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
-.markdown-body .line .meta.line.entry.logfile, .markdown-body .line .meta.line.exit.logfile {
+.markdown-body .line .meta.line.entry.logfile,
+.markdown-body .line .meta.line.exit.logfile {
   background-color: rgba(238, 238, 238, 0.16);
 }
 /* line 243, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/shared/markdown.scss */
@@ -4033,12 +4189,12 @@ body.menu-active .modal-backdrop {
 }
 /* line 28, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
 .account-token .show-token {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   width: 280px;
   text-align: center;
 }
 /* line 34, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.account-token input[type=submit] {
+.account-token input[type='submit'] {
   height: 34px;
   font-size: 14px;
 }
@@ -4062,7 +4218,9 @@ body.menu-active .modal-backdrop {
   display: none;
 }
 /* line 55, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form label, .address-form input, .address-form select {
+.address-form label,
+.address-form input,
+.address-form select {
   display: inline-block;
 }
 /* line 59, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
@@ -4093,7 +4251,8 @@ body.menu-active .modal-backdrop {
   opacity: 0.8;
 }
 /* line 86, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/account.scss */
-.address-form input[type="submit"], .address-form .button {
+.address-form input[type='submit'],
+.address-form .button {
   margin: 16px 20% 0 4%;
   width: 27.5%;
   float: right;
@@ -4111,11 +4270,12 @@ body.menu-active .modal-backdrop {
   margin-top: 6px;
 }
 /* line 16, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
-.admin h3, .admin h4 {
+.admin h3,
+.admin h4 {
   margin-bottom: 0px;
 }
 /* line 21, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
-.admin .admin-package-search input[type=text] {
+.admin .admin-package-search input[type='text'] {
   width: 100%;
 }
 /* line 26, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/admin.scss */
@@ -4234,12 +4394,13 @@ form.contact-form dl.form dd {
   margin: 0px;
 }
 /* line 42, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/contact.scss */
-form.contact-form dl.form input[type="text"], form.contact-form dl.form textarea {
+form.contact-form dl.form input[type='text'],
+form.contact-form dl.form textarea {
   width: 100%;
   margin-bottom: 14px;
 }
 /* line 48, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/contact.scss */
-form.contact-form input[type="submit"] {
+form.contact-form input[type='submit'] {
   float: right;
   font-size: 16px;
 }
@@ -4249,12 +4410,13 @@ form.contact-form input[type="submit"] {
   position: relative;
   height: 470px;
   width: 410px;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/contact-9d1b6cdb25146e496d21105863ba63b3972de3f7188fe50cd4b823e3dfb5d0a8.gif);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/contact-9d1b6cdb25146e496d21105863ba63b3972de3f7188fe50cd4b823e3dfb5d0a8.gif);
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 54, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/contact.scss */
   .illustration-contact {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/contact@2x-a8728ac460764d1a4b7fda3c3140e97b42c33edc9b62dfe1f4b6dcce2775e102.gif);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/contact@2x-a8728ac460764d1a4b7fda3c3140e97b42c33edc9b62dfe1f4b6dcce2775e102.gif);
     -webkit-background-size: 410px 470px;
     -moz-background-size: 410px 470px;
     -o-background-size: 410px 470px;
@@ -4276,7 +4438,8 @@ form.contact-form input[type="submit"] {
   color: #574c4f;
 }
 /* line 18, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
-.documents .navigation a.is-selected, .documents .navigation a:active {
+.documents .navigation a.is-selected,
+.documents .navigation a:active {
   color: #574c4f;
 }
 
@@ -4339,7 +4502,7 @@ form.contact-form input[type="submit"] {
   padding-right: 20px;
 }
 /* line 74, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
-.documents-search input[type="text"] {
+.documents-search input[type='text'] {
   font-size: 16px;
   width: 100%;
   margin: 0;
@@ -4351,7 +4514,8 @@ form.contact-form input[type="submit"] {
   display: none;
 }
 /* line 86, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
-.documents-toc h2, .documents-toc h3 {
+.documents-toc h2,
+.documents-toc h3 {
   margin: 20px 0 10px;
   font-size: 22px;
 }
@@ -4367,12 +4531,13 @@ form.contact-form input[type="submit"] {
   display: block;
   width: 470px;
   height: 448px;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/inspectocat-ea9c25ba1895ee5f5cf41fec6b77a8c6086f6b07f0b286c2ceb265ab9518b5ee.png);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/inspectocat-ea9c25ba1895ee5f5cf41fec6b77a8c6086f6b07f0b286c2ceb265ab9518b5ee.png);
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 99, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
   .inspectocat {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/inspectocat@2x-989c53753f7310fd1ffccd1a69b3a40e9b0a8741b8a734cd5c9b556c002cd407.png);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/inspectocat@2x-989c53753f7310fd1ffccd1a69b3a40e9b0a8741b8a734cd5c9b556c002cd407.png);
     -webkit-background-size: 470px 448px;
     -moz-background-size: 470px 448px;
     -o-background-size: 470px 448px;
@@ -4579,7 +4744,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 213, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content h1 {
-  font-size: 1.0em;
+  font-size: 1em;
   border-bottom: 0;
   text-align: right;
   font-weight: 200;
@@ -4595,12 +4760,12 @@ form.contact-form input[type="submit"] {
 }
 /* line 226, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.c {
-  color: #0099FF;
+  color: #0099ff;
   font-style: italic;
 }
 /* line 227, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.err {
-  color: #AA0000;
+  color: #aa0000;
 }
 /* line 228, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.k {
@@ -4613,7 +4778,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 230, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.cm {
-  color: #35586C;
+  color: #35586c;
   font-style: italic;
 }
 /* line 231, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
@@ -4622,18 +4787,18 @@ form.contact-form input[type="submit"] {
 }
 /* line 232, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.c1 {
-  color: #35586C;
+  color: #35586c;
   font-style: italic;
 }
 /* line 233, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.cs {
-  color: #35586C;
+  color: #35586c;
   font-weight: bold;
   font-style: italic;
 }
 /* line 234, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.gd {
-  background-color: #FFCCCC;
+  background-color: #ffcccc;
 }
 /* line 235, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.ge {
@@ -4641,7 +4806,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 236, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.gr {
-  color: #FF0000;
+  color: #ff0000;
 }
 /* line 237, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.gh {
@@ -4650,7 +4815,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 238, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.gi {
-  background-color: #CCFFCC;
+  background-color: #ccffcc;
 }
 /* line 241, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.go {
@@ -4672,7 +4837,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 246, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.gt {
-  color: #99CC66;
+  color: #99cc66;
 }
 /* line 247, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.kc {
@@ -4705,11 +4870,11 @@ form.contact-form input[type="submit"] {
 }
 /* line 253, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.m {
-  color: #FF6600;
+  color: #ff6600;
 }
 /* line 254, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.s {
-  color: #CC3300;
+  color: #cc3300;
 }
 /* line 255, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.na {
@@ -4721,7 +4886,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.nc {
-  color: #00AA88;
+  color: #00aa88;
   font-weight: bold;
 }
 /* line 258, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
@@ -4730,7 +4895,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 259, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.nd {
-  color: #9999FF;
+  color: #9999ff;
 }
 /* line 260, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.ni {
@@ -4739,20 +4904,20 @@ form.contact-form input[type="submit"] {
 }
 /* line 261, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.ne {
-  color: #CC0000;
+  color: #cc0000;
   font-weight: bold;
 }
 /* line 262, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.nf {
-  color: #CC00FF;
+  color: #cc00ff;
 }
 /* line 263, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.nl {
-  color: #9999FF;
+  color: #9999ff;
 }
 /* line 264, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.nn {
-  color: #00CCFF;
+  color: #00ccff;
   font-weight: bold;
 }
 /* line 265, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
@@ -4775,65 +4940,65 @@ form.contact-form input[type="submit"] {
 }
 /* line 269, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.mf {
-  color: #FF6600;
+  color: #ff6600;
 }
 /* line 270, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.mh {
-  color: #FF6600;
+  color: #ff6600;
 }
 /* line 271, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.mi {
-  color: #FF6600;
+  color: #ff6600;
 }
 /* line 272, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.mo {
-  color: #FF6600;
+  color: #ff6600;
 }
 /* line 273, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.sb {
-  color: #CC3300;
+  color: #cc3300;
 }
 /* line 274, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.sc {
-  color: #CC3300;
+  color: #cc3300;
 }
 /* line 275, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.sd {
-  color: #CC3300;
+  color: #cc3300;
   font-style: italic;
 }
 /* line 276, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.s2 {
-  color: #CC3300;
+  color: #cc3300;
 }
 /* line 277, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.se {
-  color: #CC3300;
+  color: #cc3300;
   font-weight: bold;
 }
 /* line 278, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.sh {
-  color: #CC3300;
+  color: #cc3300;
 }
 /* line 279, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.si {
-  color: #AA0000;
+  color: #aa0000;
 }
 /* line 280, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.sx {
-  color: #CC3300;
+  color: #cc3300;
 }
 /* line 281, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.sr {
-  color: #33AAAA;
+  color: #33aaaa;
 }
 /* line 282, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.s1 {
-  color: #CC3300;
+  color: #cc3300;
 }
 /* line 285, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.ss {
-  color: #AA6600;
+  color: #aa6600;
 }
 /* line 287, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.bp {
@@ -4853,7 +5018,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 291, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.il {
-  color: #FF6600;
+  color: #ff6600;
 }
 /* line 294, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.g {
@@ -4861,11 +5026,11 @@ form.contact-form input[type="submit"] {
 }
 /* line 295, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.l {
-  color: #CC6600;
+  color: #cc6600;
 }
 /* line 296, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.l {
-  color: #FF9900;
+  color: #ff9900;
 }
 /* line 297, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.n {
@@ -4877,7 +5042,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 299, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.py {
-  color: #9966FF;
+  color: #9966ff;
 }
 /* line 300, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.p {
@@ -4885,20 +5050,20 @@ form.contact-form input[type="submit"] {
 }
 /* line 301, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
 .document-content pre code.x {
-  color: #FF0066;
+  color: #ff0066;
 }
 /* line 304, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
-.document-content pre[data-code-language="console"] {
+.document-content pre[data-code-language='console'] {
   background: #ddd;
   padding: 10px;
 }
 /* line 308, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
-.document-content pre[data-code-language="console"] code.go {
+.document-content pre[data-code-language='console'] code.go {
   color: #555;
-  font-size: 1.0em;
+  font-size: 1em;
 }
 /* line 312, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
-.document-content pre[data-code-language="console"] code.gp {
+.document-content pre[data-code-language='console'] code.gp {
   color: #009900;
   font-weight: bold;
 }
@@ -4920,7 +5085,8 @@ form.contact-form input[type="submit"] {
 }
 
 /* line 332, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents.scss */
-.training-video-link a, .training-video-link a:hover {
+.training-video-link a,
+.training-video-link a:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -4967,7 +5133,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 38, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
 .documents code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   font-size: 14px;
   padding: 0.3em 0;
   background-color: #f8f6f2;
@@ -4999,7 +5165,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 71, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
 .documents .no-methods-message {
-  opacity: .5;
+  opacity: 0.5;
   font-style: italic;
 }
 /* line 76, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
@@ -5013,12 +5179,12 @@ form.contact-form input[type="submit"] {
 /* line 85, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
 .documents .markdown-body pre {
   margin: 0;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   font-size: 14px;
 }
 /* line 91, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
 .documents .markdown-body .reference-link {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   font-size: 14px;
 }
 /* line 97, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
@@ -5106,7 +5272,12 @@ form.contact-form input[type="submit"] {
   color: #b4daba;
 }
 /* line 188, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
-.documents .api-entry h1, .documents .api-entry h2, .documents .api-entry h3, .documents .api-entry h4, .documents .api-entry h5, .documents .api-entry h6 {
+.documents .api-entry h1,
+.documents .api-entry h2,
+.documents .api-entry h3,
+.documents .api-entry h4,
+.documents .api-entry h5,
+.documents .api-entry h6 {
   margin: 1em 0 !important;
 }
 /* line 192, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
@@ -5114,7 +5285,9 @@ form.contact-form input[type="submit"] {
   font-size: 16px;
 }
 /* line 196, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
-.documents .api-entry h4, .documents .api-entry h5, .documents .api-entry h6 {
+.documents .api-entry h4,
+.documents .api-entry h5,
+.documents .api-entry h6 {
   font-size: 14px;
 }
 /* line 200, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
@@ -5132,7 +5305,7 @@ form.contact-form input[type="submit"] {
 }
 /* line 212, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
 .documents .api-entry > .name {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   font-size: 14px;
   margin-bottom: 0.5em;
   margin-top: 0;
@@ -5229,7 +5402,8 @@ form.contact-form input[type="submit"] {
   color: #2e282a;
 }
 /* line 287, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
-.documents .api-entry .return-values .argument-depth-1 > td > code:before, .documents .api-entry .return-values .argument-depth-1 > td > code:after,
+.documents .api-entry .return-values .argument-depth-1 > td > code:before,
+.documents .api-entry .return-values .argument-depth-1 > td > code:after,
 .documents .api-entry .return-values .argument-depth-2 > td > code:before,
 .documents .api-entry .return-values .argument-depth-2 > td > code:after,
 .documents .api-entry .return-values .argument-depth-3 > td > code:before,
@@ -5278,7 +5452,7 @@ form.contact-form input[type="submit"] {
 /* line 310, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/documents_next.scss */
 .documents .api-entry .return-values code .argument-list,
 .documents .api-entry .arguments code .argument-list {
-  opacity: .6;
+  opacity: 0.6;
 }
 /* line 5, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/feedback.scss */
 .survey-landing .survey-button .octicon {
@@ -5308,34 +5482,49 @@ form.contact-form input[type="submit"] {
 }
 
 /* line 13, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
-#flag-modal, .blacklist-modal, .delete-modal {
+#flag-modal,
+.blacklist-modal,
+.delete-modal {
   background: #efeae1;
   padding: 24px;
   border-radius: 3px;
   text-align: center;
 }
 /* line 19, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
-#flag-modal .octicon, .blacklist-modal .octicon, .delete-modal .octicon {
+#flag-modal .octicon,
+.blacklist-modal .octicon,
+.delete-modal .octicon {
   font-size: 1.5em;
 }
 /* line 23, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
-#flag-modal h2, .blacklist-modal h2, .delete-modal h2 {
+#flag-modal h2,
+.blacklist-modal h2,
+.delete-modal h2 {
   margin: 0;
   font-weight: 300;
   font-size: 40px;
   line-height: 1.4;
 }
 /* line 30, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
-#flag-modal p, .blacklist-modal p, .delete-modal p {
+#flag-modal p,
+.blacklist-modal p,
+.delete-modal p {
   margin-top: 0;
 }
 /* line 34, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
-#flag-modal textarea, #flag-modal input[type=text], .blacklist-modal textarea, .blacklist-modal input[type=text], .delete-modal textarea, .delete-modal input[type=text] {
+#flag-modal textarea,
+#flag-modal input[type='text'],
+.blacklist-modal textarea,
+.blacklist-modal input[type='text'],
+.delete-modal textarea,
+.delete-modal input[type='text'] {
   width: 100%;
   margin-bottom: 24px;
 }
 /* line 39, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/flag.scss */
-#flag-modal .flag-button, .blacklist-modal .flag-button, .delete-modal .flag-button {
+#flag-modal .flag-button,
+.blacklist-modal .flag-button,
+.delete-modal .flag-button {
   float: right;
   font-size: 14px;
   margin: 0;
@@ -5367,7 +5556,7 @@ body {
   margin: 0;
   color: #574c4f;
   font: 16px/1.7 normal normal;
-  font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, arial, freesans, clean, sans-serif;
 }
 
 /* line 31, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
@@ -5418,11 +5607,21 @@ a:hover {
 }
 
 /* line 73, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #4c4245;
 }
 /* line 74, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
-h1.center, h2.center, h3.center, h4.center, h5.center, h6.center {
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center {
   text-align: center;
 }
 
@@ -5502,12 +5701,13 @@ hr {
   width: 114px;
   height: 24px;
   margin: 4px 8px 4px 0;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/logo-small-d5c157accc541ade5c6ee158addb33d55e5095aeeb7b8029a50d6d7519d7d2f6.png);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/logo-small-d5c157accc541ade5c6ee158addb33d55e5095aeeb7b8029a50d6d7519d7d2f6.png);
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .logo-small {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/logo-small@2x-d405dec6f35448988d8f4e6ea17535679eaab25487e320c0d6acc4d2d25a277c.png);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/logo-small@2x-d405dec6f35448988d8f4e6ea17535679eaab25487e320c0d6acc4d2d25a277c.png);
     -webkit-background-size: 114px 24px;
     -moz-background-size: 114px 24px;
     -o-background-size: 114px 24px;
@@ -5542,12 +5742,13 @@ hr {
   text-indent: 230px;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/logo-2e973d170e9b53b56217b520bbcbb2fae7592fab58822513d63b788b25c394fd.png);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/logo-2e973d170e9b53b56217b520bbcbb2fae7592fab58822513d63b788b25c394fd.png);
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 171, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .header .logo {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/logo@2x-a5016e18b0182a194d422d0970b4837b514ae006311d35e86f905008d079871d.png);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/logo@2x-a5016e18b0182a194d422d0970b4837b514ae006311d35e86f905008d079871d.png);
     -webkit-background-size: 290px 60px;
     -moz-background-size: 290px 60px;
     -o-background-size: 290px 60px;
@@ -5684,7 +5885,8 @@ hr {
   padding-right: 0;
 }
 /* line 299, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
-.columns .left, .columns .right {
+.columns .left,
+.columns .right {
   width: 50%;
 }
 /* line 301, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
@@ -5728,7 +5930,12 @@ hr {
   color: #999;
 }
 /* line 339, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
-.search-page .markdown h1, .search-page .markdown h2, .search-page .markdown h3, .search-page .markdown h4, .search-page .markdown h5, .search-page .markdown h6 {
+.search-page .markdown h1,
+.search-page .markdown h2,
+.search-page .markdown h3,
+.search-page .markdown h4,
+.search-page .markdown h5,
+.search-page .markdown h6 {
   font-size: 16px;
   font-weight: bold;
   border-bottom: 0;
@@ -5808,7 +6015,10 @@ hr {
 }
 
 /* line 413, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
-.hero .flash.notice, .hero .flash.alert, .invite .flash.notice, .invite .flash.alert {
+.hero .flash.notice,
+.hero .flash.alert,
+.invite .flash.notice,
+.invite .flash.alert {
   background-color: transparent;
   border-top: 0;
 }
@@ -5840,12 +6050,14 @@ hr {
 }
 
 /* line 444, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
-.thirds, .halves {
+.thirds,
+.halves {
   overflow: hidden;
   margin-right: -20px;
 }
 /* line 448, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
-.thirds .grid-cell, .halves .grid-cell {
+.thirds .grid-cell,
+.halves .grid-cell {
   float: left;
   padding-right: 20px;
 }
@@ -5865,17 +6077,18 @@ hr {
   position: absolute;
   width: 256px;
   height: 86px;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/soon-86fa6b907b62dac4215a12cf83d8c497d0ff2cc28c2d726083b55eeb85a13e0a.gif);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/soon-86fa6b907b62dac4215a12cf83d8c497d0ff2cc28c2d726083b55eeb85a13e0a.gif);
   top: 50%;
   left: 50%;
   margin-top: -85px;
   margin-left: -128px;
   line-height: 0;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 462, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
   .nope {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/soon@2x-4e4b4a7e7772ade6490c8cdac8960838c385b05fc20d2e8afe03f4143bcf2167.gif);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/soon@2x-4e4b4a7e7772ade6490c8cdac8960838c385b05fc20d2e8afe03f4143bcf2167.gif);
     -webkit-background-size: 256px 86px;
     -moz-background-size: 256px 86px;
     -o-background-size: 256px 86px;
@@ -5950,15 +6163,16 @@ hr {
   position: absolute;
   width: 980px;
   height: 456px;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/octocat-spinner-64-f4c980250033ceb8052bb542cf947750f8c73ebe69b0b0b66b415b4a40f8bd6e.gif);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octocat-spinner-64-f4c980250033ceb8052bb542cf947750f8c73ebe69b0b0b66b415b4a40f8bd6e.gif);
   background-repeat: no-repeat;
   background-position: center;
   display: none;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 13, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
   .package-list .loading-overlay {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/octocat-spinner-64@2x-338974454bb5c32803e82f601beb051d373744b024fe8742a76009700fd7e033.gif);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octocat-spinner-64@2x-338974454bb5c32803e82f601beb051d373744b024fe8742a76009700fd7e033.gif);
     -webkit-background-size: 64px 64px;
     -moz-background-size: 64px 64px;
     -o-background-size: 64px 64px;
@@ -6010,7 +6224,8 @@ hr {
   color: #9e9b95;
 }
 /* line 64, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-list .search-sorter .icon-up, .package-list .search-sorter .icon-down {
+.package-list .search-sorter .icon-up,
+.package-list .search-sorter .icon-down {
   color: #9e9b95;
   display: none;
 }
@@ -6118,18 +6333,21 @@ hr {
 }
 
 /* line 173, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .card-name, .project-card .card-name {
+.package-card .card-name,
+.project-card .card-name {
   font-weight: 300;
   font-size: 28px;
   margin: 0;
   line-height: 1.4;
 }
 /* line 179, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .card-name .css-truncate-target, .project-card .card-name .css-truncate-target {
+.package-card .card-name .css-truncate-target,
+.project-card .card-name .css-truncate-target {
   color: #3b9b6d;
 }
 /* line 184, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .keywords, .project-card .keywords {
+.package-card .keywords,
+.project-card .keywords {
   min-height: 20px;
   font-size: 12px;
   line-height: 20px;
@@ -6140,7 +6358,8 @@ hr {
   text-overflow: ellipsis;
 }
 /* line 194, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .keywords li, .project-card .keywords li {
+.package-card .keywords li,
+.project-card .keywords li {
   padding: 2px 4px;
   list-style-type: none;
   display: inline;
@@ -6149,20 +6368,24 @@ hr {
   background-color: #f8f6f2;
 }
 /* line 201, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .keywords li a, .project-card .keywords li a {
+.package-card .keywords li a,
+.project-card .keywords li a {
   color: #9e9b95;
 }
 /* line 208, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .card-description, .project-card .card-description {
+.package-card .card-description,
+.project-card .card-description {
   font-size: 15px;
 }
 /* line 212, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .card-install-button, .project-card .card-install-button {
+.package-card .card-install-button,
+.project-card .card-install-button {
   margin-left: 9px;
   font-weight: 500;
 }
 /* line 217, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .card-install-button-close, .project-card .card-install-button-close {
+.package-card .card-install-button-close,
+.project-card .card-install-button-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -6174,15 +6397,20 @@ hr {
   outline: none;
 }
 /* line 228, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .card-install-button-close:hover, .package-card .card-install-button-close:focus, .project-card .card-install-button-close:hover, .project-card .card-install-button-close:focus {
+.package-card .card-install-button-close:hover,
+.package-card .card-install-button-close:focus,
+.project-card .card-install-button-close:hover,
+.project-card .card-install-button-close:focus {
   color: #574c4f;
 }
 /* line 232, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .card-install-button-close:active, .project-card .card-install-button-close:active {
+.package-card .card-install-button-close:active,
+.project-card .card-install-button-close:active {
   color: #9e9b95;
 }
 /* line 237, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .modal-download-atom, .project-card .modal-download-atom {
+.package-card .modal-download-atom,
+.project-card .modal-download-atom {
   position: absolute;
   z-index: 1;
   width: 280px;
@@ -6197,8 +6425,9 @@ hr {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 /* line 251, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .modal-download-atom::before, .project-card .modal-download-atom::before {
-  content: "";
+.package-card .modal-download-atom::before,
+.project-card .modal-download-atom::before {
+  content: '';
   position: absolute;
   bottom: -6px;
   right: 32px;
@@ -6212,23 +6441,28 @@ hr {
   pointer-events: none;
 }
 /* line 266, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .modal-download-atom h4, .project-card .modal-download-atom h4 {
+.package-card .modal-download-atom h4,
+.project-card .modal-download-atom h4 {
   margin: 0 0 5px 0;
 }
 /* line 272, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .body, .project-card .body {
+.package-card .body,
+.project-card .body {
   padding: 7px 13px;
 }
 /* line 275, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card .body .css-truncate-target, .project-card .body .css-truncate-target {
+.package-card .body .css-truncate-target,
+.project-card .body .css-truncate-target {
   max-width: 100%;
 }
 /* line 280, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card p, .project-card p {
+.package-card p,
+.project-card p {
   margin: 0;
 }
 /* line 282, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.package-card img, .project-card img {
+.package-card img,
+.project-card img {
   height: 24px;
   width: 24px;
 }
@@ -6553,7 +6787,8 @@ input.search-input {
   line-height: 1.3;
 }
 /* line 584, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
-.theme-card .theme-name a, .theme-card .theme-name span {
+.theme-card .theme-name a,
+.theme-card .theme-name span {
   color: #574c4f;
   display: block;
   max-width: 100%;
@@ -6607,7 +6842,7 @@ input.search-input {
 /* line 635, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 #crop-modal .spinner {
   background-color: rgba(255, 255, 255, 0.7);
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/octocat-spinner-64-f4c980250033ceb8052bb542cf947750f8c73ebe69b0b0b66b415b4a40f8bd6e.gif);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octocat-spinner-64-f4c980250033ceb8052bb542cf947750f8c73ebe69b0b0b66b415b4a40f8bd6e.gif);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -6618,10 +6853,11 @@ input.search-input {
   margin-top: -24px;
   z-index: 9999999;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
   /* line 635, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
   #crop-modal .spinner {
-    background-image: url(/web/20221207004816im_/https://atom.io/assets/octocat-spinner-64@2x-338974454bb5c32803e82f601beb051d373744b024fe8742a76009700fd7e033.gif);
+    background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/octocat-spinner-64@2x-338974454bb5c32803e82f601beb051d373744b024fe8742a76009700fd7e033.gif);
     -webkit-background-size: 64px 64px;
     -moz-background-size: 64px 64px;
     -o-background-size: 64px 64px;
@@ -6738,7 +6974,7 @@ input.search-input {
   display: block;
   width: 0;
   height: 0;
-  content: "";
+  content: '';
   border: 4px solid;
   border-right-color: transparent;
   border-left-color: transparent;
@@ -6794,7 +7030,9 @@ input.search-input {
   color: inherit;
 }
 /* line 86, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu.is-showing-clear-item .select-menu-clear-item + .select-menu-no-results {
+.select-menu.is-showing-clear-item
+  .select-menu-clear-item
+  + .select-menu-no-results {
   display: none;
 }
 /* line 89, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
@@ -6833,8 +7071,8 @@ input.search-input {
   top: 50%;
   margin: -16px 0 0 -16px;
   width: 32px;
-  content: "\f008";
-  font: normal normal 32px/1 "octicons";
+  content: '\f008';
+  font: normal normal 32px/1 'octicons';
   display: inline-block;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -6897,8 +7135,8 @@ input.search-input {
   padding: 5px 10px;
   font-weight: bold;
   color: #900;
-  background-color: #FFEAEA;
-  border: 1px solid #E2A0A0;
+  background-color: #ffeaea;
+  border: 1px solid #e2a0a0;
 }
 
 /* line 161, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
@@ -6965,7 +7203,7 @@ input.search-input {
 /* line 223, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-text-filter:first-child:last-child {
   padding-bottom: 10px;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #ddd;
 }
 /* line 228, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-text-filter input {
@@ -6973,11 +7211,12 @@ input.search-input {
   width: 100%;
   max-width: 100%;
   padding: 5px;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   border-radius: 3px;
 }
 /* line 236, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-text-filter input::-webkit-input-placeholder, .select-menu-text-filter input:-moz-placeholder {
+.select-menu-text-filter input::-webkit-input-placeholder,
+.select-menu-text-filter input:-moz-placeholder {
   color: #aaa;
 }
 
@@ -7058,19 +7297,21 @@ input.search-input {
   display: none;
 }
 /* line 319, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.disabled, .select-menu-item.disabled.selected {
+.select-menu-item.disabled,
+.select-menu-item.disabled.selected {
   color: #999;
 }
 /* line 323, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.disabled .select-menu-item-gravatar, .select-menu-item.disabled.selected .select-menu-item-gravatar {
-  opacity: .5;
+.select-menu-item.disabled .select-menu-item-gravatar,
+.select-menu-item.disabled.selected .select-menu-item-gravatar {
+  opacity: 0.5;
 }
 /* line 326, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item .octicon {
   vertical-align: middle;
 }
 /* line 330, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item input[type="radio"] {
+.select-menu-item input[type='radio'] {
   display: none;
 }
 /* line 332, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
@@ -7087,18 +7328,24 @@ input.search-input {
   color: inherit;
 }
 /* line 343, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.navigation-focus, .select-menu-item.navigation-focus.selected, .select-menu-item.navigation-focus.select-menu-action {
+.select-menu-item.navigation-focus,
+.select-menu-item.navigation-focus.selected,
+.select-menu-item.navigation-focus.select-menu-action {
   background-color: #4183c4;
   color: #fff;
 }
 /* line 349, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.navigation-focus > .octicon, .select-menu-item.navigation-focus.selected > .octicon, .select-menu-item.navigation-focus.select-menu-action > .octicon {
+.select-menu-item.navigation-focus > .octicon,
+.select-menu-item.navigation-focus.selected > .octicon,
+.select-menu-item.navigation-focus.select-menu-action > .octicon {
   color: #fff;
 }
 /* line 351, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item.navigation-focus .text-danger,
-.select-menu-item.navigation-focus .description, .select-menu-item.navigation-focus.selected .text-danger,
-.select-menu-item.navigation-focus.selected .description, .select-menu-item.navigation-focus.select-menu-action .text-danger,
+.select-menu-item.navigation-focus .description,
+.select-menu-item.navigation-focus.selected .text-danger,
+.select-menu-item.navigation-focus.selected .description,
+.select-menu-item.navigation-focus.select-menu-action .text-danger,
 .select-menu-item.navigation-focus.select-menu-action .description {
   color: #fff;
 }
@@ -7115,15 +7362,18 @@ input.search-input {
   display: table-cell;
 }
 /* line 363, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-action, .select-menu-item.selected {
+.select-menu-item.select-menu-action,
+.select-menu-item.selected {
   color: #333;
 }
 /* line 367, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-action .description, .select-menu-item.selected .description {
+.select-menu-item.select-menu-action .description,
+.select-menu-item.selected .description {
   color: #666;
 }
 /* line 369, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-item.select-menu-action > .octicon, .select-menu-item.selected > .octicon {
+.select-menu-item.select-menu-action > .octicon,
+.select-menu-item.selected > .octicon {
   color: #333;
 }
 /* line 371, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
@@ -7183,7 +7433,8 @@ form.select-menu-item > div:first-child {
   color: #999;
 }
 /* line 421, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
-.select-menu-list.filterable-empty .select-menu-no-results, .select-menu-no-results:only-child {
+.select-menu-list.filterable-empty .select-menu-no-results,
+.select-menu-no-results:only-child {
   display: block;
 }
 
@@ -7385,13 +7636,19 @@ body.menu-active .modal-backdrop {
 /* line 20, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome {
   font: 16px/1.5 normal normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-weight: 300;
   color: #efdab9;
   background-color: #343233;
 }
 /* line 27, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.welcome h1, .welcome h2, .welcome h3, .welcome h4, .welcome h5, .welcome h6 {
+.welcome h1,
+.welcome h2,
+.welcome h3,
+.welcome h4,
+.welcome h5,
+.welcome h6 {
   color: inherit;
 }
 /* line 29, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -7427,7 +7684,7 @@ body.menu-active .modal-backdrop {
 }
 /* line 53, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome a:active {
-  color: #D36E2D;
+  color: #d36e2d;
 }
 /* line 55, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome .section {
@@ -7444,7 +7701,7 @@ body.menu-active .modal-backdrop {
   font-weight: 500;
   color: #98c3b7;
   background-color: #393c3c;
-  padding: 0 .2em;
+  padding: 0 0.2em;
 }
 /* line 73, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome .column {
@@ -7461,7 +7718,7 @@ body.menu-active .modal-backdrop {
 /* line 78, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome .welcome-button {
   display: inline-block;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   line-height: inherit;
   font-size: inherit;
   font-weight: 500;
@@ -7507,7 +7764,7 @@ body.menu-active .modal-backdrop {
 }
 /* line 122, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome ::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;
@@ -7518,7 +7775,12 @@ body.menu-active .modal-backdrop {
 /* line 136, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--hero {
   text-align: center;
-  background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
+  background-image: radial-gradient(
+    ellipse closest-side at 50% 50%,
+    #3a3f45,
+    #37383c 25%,
+    #343233
+  );
   background-repeat: no-repeat;
   background-size: 100% 1000px;
   background-position: center -120px;
@@ -7530,7 +7792,7 @@ body.menu-active .modal-backdrop {
 }
 /* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--hero a {
-  font-size: .9em;
+  font-size: 0.9em;
   color: #8e8373;
 }
 
@@ -7552,7 +7814,7 @@ body.menu-active .modal-backdrop {
 
 /* line 169, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-tagline {
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
   font-size: 2.3em;
   letter-spacing: 0.05em;
   font-weight: 200;
@@ -7569,7 +7831,8 @@ body.menu-active .modal-backdrop {
   flex: 0 0 500px;
   height: 366px;
   background-repeat: no-repeat;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/index-logo-112585a3112ec646fa9e426f835b1626094f57354fd7dd059a8f455881654ad2.svg), url(/web/20221207004816im_/https://atom.io/assets/index-portal-sides-8f3d2e2077a1fb786c0bed45cc8f9e5ead36d291c4485ff8f00d8d713a3a7499.svg);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/index-logo-112585a3112ec646fa9e426f835b1626094f57354fd7dd059a8f455881654ad2.svg),
+    url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/index-portal-sides-8f3d2e2077a1fb786c0bed45cc8f9e5ead36d291c4485ff8f00d8d713a3a7499.svg);
   background-position: center;
   -webkit-user-select: none;
   user-select: none;
@@ -7680,7 +7943,7 @@ body.menu-active .modal-backdrop {
   display: block;
   font-size: 1.4em;
   line-height: 2rem;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   font-weight: 500;
 }
 /* line 261, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -7688,12 +7951,12 @@ body.menu-active .modal-backdrop {
   display: block;
   font-size: 1.4em;
   line-height: 2rem;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 /* line 268, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-download .support {
   display: block;
-  font-size: .9em;
+  font-size: 0.9em;
   color: #8e8373;
 }
 /* line 274, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -7705,11 +7968,11 @@ body.menu-active .modal-backdrop {
 }
 /* line 279, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-download .welcome-button .octicon {
-  margin-right: .8em;
+  margin-right: 0.8em;
 }
 /* line 284, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-download .welcome-button + .welcome-button {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 /* line 289, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -7726,7 +7989,7 @@ body.menu-active .modal-backdrop {
   display: block;
   margin-bottom: 2em;
   color: #786f63;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 /* line 301, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-tos a {
@@ -7755,7 +8018,7 @@ body.menu-active .modal-backdrop {
 /* line 324, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--realtime {
   background-repeat: no-repeat;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/index-teletype-graphic-cf60b66bbb2b00e1e4e9f8020b9fa59b6084d77ed4c7a3c4e0cdab5848aabca7.svg);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/index-teletype-graphic-cf60b66bbb2b00e1e4e9f8020b9fa59b6084d77ed4c7a3c4e0cdab5848aabca7.svg);
   background-position: calc(50% - 1140px) center;
 }
 /* line 329, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -7766,13 +8029,14 @@ body.menu-active .modal-backdrop {
 .section--realtime .welcome-bg--screenshot {
   left: 50%;
   margin-left: 40px;
-  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5);
+  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg)
+    saturate(3.5);
 }
 
 /* line 343, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--github {
   background-repeat: no-repeat;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/index-github-graphic-76719876301655e713fffcfb596504d5d0f6aced6698e5c26d39251682654f6a.svg);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/index-github-graphic-76719876301655e713fffcfb596504d5d0f6aced6698e5c26d39251682654f6a.svg);
   background-position: calc(50% + 550px) center;
 }
 /* line 348, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -7834,7 +8098,7 @@ body.menu-active .modal-backdrop {
   border-top: 1px solid #1a191a;
   background-color: #2c2a2b;
   background-repeat: no-repeat;
-  background-image: url(/web/20221207004816im_/https://atom.io/assets/index-rocket-ef425ba508961fee99c87f537d72240849d8fbe81789245b23aa4d381fd7358a.svg);
+  background-image: url(https://web.archive.org/web/20221207004816im_/https://atom.io/assets/index-rocket-ef425ba508961fee99c87f537d72240849d8fbe81789245b23aa4d381fd7358a.svg);
   background-position: calc(50% + 380px) 60px;
 }
 /* line 415, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
@@ -8049,7 +8313,8 @@ body.menu-active .modal-backdrop {
 
 /* line 631, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta .hero-logo {
-  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5);
+  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg)
+    saturate(3.5);
 }
 /* line 636, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta .hero-logo-circle:nth-child(4) {
@@ -8058,7 +8323,8 @@ body.menu-active .modal-backdrop {
 
 /* line 641, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .hero-logo {
-  filter: brightness(0.8) contrast(0.6) sepia(0.9) hue-rotate(215deg) saturate(6);
+  filter: brightness(0.8) contrast(0.6) sepia(0.9) hue-rotate(215deg)
+    saturate(6);
 }
 /* line 646, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .hero-logo-circle:nth-child(4) {
@@ -8082,7 +8348,7 @@ body.menu-active .modal-backdrop {
 }
 /* line 657, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .version {
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
 }
 
 @keyframes hero-logo-circle--reverse {
@@ -8177,7 +8443,7 @@ body.menu-active .modal-backdrop {
 /* line 2, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-inner {
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   max-width: 200px;
   padding: 5px 8px 4px 8px;
   text-align: center;
@@ -8343,11 +8609,12 @@ body.menu-active .modal-backdrop {
   background: #111;
   display: inline-block;
   padding: 4px 6px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Courier, monospace;
   line-height: 1;
   color: #ccc;
   border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 /* line 46, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek.scss */
 #peek .bucket .hidden {
@@ -8381,7 +8648,8 @@ body.menu-active .modal-backdrop {
   vertical-align: top;
 }
 /* line 79, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek.scss */
-#peek .css-truncate.expandable:hover .css-truncate-target, #peek .css-truncate.expandable:hover.css-truncate-target {
+#peek .css-truncate.expandable:hover .css-truncate-target,
+#peek .css-truncate.expandable:hover.css-truncate-target {
   max-width: 10000px !important;
 }
 /* line 1, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-performance_bar-1.2.1/app/assets/stylesheets/peek/views/performance_bar.scss */
@@ -8404,7 +8672,7 @@ body.menu-active .modal-backdrop {
   top: 0;
   bottom: 0;
   overflow: hidden;
-  opacity: .8;
+  opacity: 0.8;
   color: transparent;
 }
 /* line 22, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-performance_bar-1.2.1/app/assets/stylesheets/peek/views/performance_bar.scss */

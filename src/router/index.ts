@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import BetaView from '../views/BetaView.vue'
 import HomeView from '../views/HomeView.vue'
 import NightlyView from '../views/NightlyView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
 import TeletypeView from '../views/TeletypeView.vue'
 
 const router = createRouter({
@@ -26,6 +27,10 @@ const router = createRouter({
       path: '/teletype',
       name: 'teletype',
       component: TeletypeView
+    },
+    {
+      path: '/:notFound',
+      component: NotFoundView
     }
   ]
 })

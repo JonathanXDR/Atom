@@ -1,21 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import BetaView from '../views/BetaView.vue'
 import HomeView from '../views/HomeView.vue'
+import NightlyView from '../views/NightlyView.vue'
+import TeletypeView from '../views/TeletypeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'atom',
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/beta',
+      name: 'beta',
+      component: BetaView
+    },
+    {
+      path: '/nightly',
+      name: 'nightly',
+      component: NightlyView
+    },
+    {
+      path: '/teletype',
+      name: 'teletype',
+      component: TeletypeView
     }
   ]
 })

@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* line 26, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 html {
   font: 14px/1.5 normal normal;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   color: #efdab9;
   background-color: #343233;
   -webkit-font-smoothing: antialiased;
@@ -252,8 +256,7 @@ code {
 /* line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 .hero {
   padding-top: 100px;
-  background-image: url(../svg/real-time-lines.svg),
-    url(../svg/real-time-bg.svg);
+  background-image: url(../svg/real-time-lines.svg), url(../svg/real-time-bg.svg);
   background-repeat: no-repeat;
   background-position:
     -580px 30px,
@@ -274,8 +277,7 @@ code {
 /* line 272, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 body {
   padding-bottom: 200px;
-  background-image: url(../svg/real-time-lines.svg),
-    url(../svg/real-time-bg.svg);
+  background-image: url(../svg/real-time-lines.svg), url(../svg/real-time-bg.svg);
   background-repeat: no-repeat;
   background-position:
     calc(100% + 500px) calc(100% - 50px),
@@ -360,8 +362,7 @@ body {
 
   /* line 341, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
   .wrapper--video {
-    background-image: url(../svg/real-time-lines.svg),
-      url(../svg/real-time-bg.svg);
+    background-image: url(../svg/real-time-lines.svg), url(../svg/real-time-bg.svg);
     background-position: center;
     background-size: auto;
     margin-bottom: 5rem;
@@ -369,8 +370,7 @@ body {
 
   /* line 348, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
   body {
-    background-image: url(../svg/real-time-lines.svg),
-      url(../svg/real-time-bg.svg);
+    background-image: url(../svg/real-time-lines.svg), url(../svg/real-time-bg.svg);
     background-position:
       calc(100% + 1140px) calc(100% - 60px),
       -420px calc(100% - -500px);

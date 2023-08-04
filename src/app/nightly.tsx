@@ -177,9 +177,9 @@ export default function Nightly() {
                       </li>
 
                       <li>
-                        <span className="platform">Windows</span>
+                        <span className="platform">macOS</span>
                         <span className="support">
-                          For 64-bit Windows 7 or later
+                          For macOS 10.10 or later
                         </span>
                       </li>
                       <li>

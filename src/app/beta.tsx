@@ -1,14 +1,11 @@
+import Image from "next/image";
+import "/public/assets/css/application.css";
+
 export default function Beta() {
   return (
     <>
       <head>
         <title>Atom</title>
-        <link
-          rel="stylesheet"
-          media="all"
-          href="assets/css/application.css"
-          data-turbolinks-track="true"
-        />
         <meta
           property="og:url"
           content="https://web.archive.org/web/20221207004901/https://atom.io/"
@@ -109,63 +106,63 @@ export default function Beta() {
                       aria-hidden="true"
                     >
                       <div className="hero-logo-circles">
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-red-semi.svg"
+                          src="/assets/svg/portal-red-semi.svg"
                           alt="portal-red-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-red.svg"
+                          src="/assets/svg/portal-red.svg"
                           alt="portal-red"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-orange-semi.svg"
+                          src="/assets/svg/portal-orange-semi.svg"
                           alt="portal-orange-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-orange.svg"
+                          src="/assets/svg/portal-orange.svg"
                           alt="portal-orange"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-yellow-semi.svg"
+                          src="/assets/svg/portal-yellow-semi.svg"
                           alt="portal-yellow-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-yellow.svg"
+                          src="/assets/svg/portal-yellow.svg"
                           alt="portal-yellow"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-green-semi.svg"
+                          src="/assets/svg/portal-green-semi.svg"
                           alt="portal-green-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-green.svg"
+                          src="/assets/svg/portal-green.svg"
                           alt="portal-green"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-blue-semi.svg"
+                          src="/assets/svg/portal-blue-semi.svg"
                           alt="portal-blue-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-blue.svg"
+                          src="/assets/svg/portal-blue.svg"
                           alt="portal-blue"
                         />
                       </div>
                     </div>
                     <ul className="hero-header-item hero-download">
                       <li>
-                        <img
+                        <Image
                           className="logo-wordmark"
-                          src="assets/svg/atom-wordmark.svg"
+                          src="/assets/svg/atom-wordmark.svg"
                           alt="atom-wordmark"
                         />
                       </li>

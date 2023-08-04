@@ -1,3 +1,6 @@
+"use client";
+import Image from "next/image";
+import "/public/assets/css/teletype.css";
 export default function Teletype() {
   return (
     <>
@@ -20,8 +23,6 @@ export default function Teletype() {
           content="Teletype for Atom lets developers share their workspace with team members and collaborate on code in real time."
         />
         <meta property="og:image" content="assets/png/teletype.png" />
-
-        <link rel="stylesheet" media="all" href="assets/css/teletype.css" />
       </head>
       <body>
         <section className="section hero">
@@ -87,7 +88,10 @@ export default function Teletype() {
                 preload="auto"
                 poster="assets/png/real-time-video-poster.png"
               >
-                <source src="assets/videos/real-time.mp4" type="video/mp4" />
+                <source
+                  src="/public/assets/videos/real-time.mp4"
+                  type="video/mp4"
+                />
               </video>
               <div id="video-hud" className="video-hud">
                 <button
@@ -119,7 +123,11 @@ export default function Teletype() {
               follow along with the active tab automatically.
             </p>
             <p className="is-centered">
-              <img className="img" src="assets/svg/real-time-portals.svg" />
+              <Image
+                className="img"
+                src="/assets/svg/real-time-portals.svg"
+                alt="real-time-portals"
+              />
             </p>
           </div>
         </section>
@@ -131,9 +139,9 @@ export default function Teletype() {
             <ol className="privacy-list">
               <li>
                 <p className="privacy-img-wrapper">
-                  <img
+                  <Image
                     className="privacy-img"
-                    src="assets/svg/real-time-privacy-1.svg"
+                    src="/assets/svg/real-time-privacy-1.svg"
                     alt="real-time-privacy-1"
                   />
                 </p>
@@ -144,9 +152,9 @@ export default function Teletype() {
               </li>
               <li>
                 <p className="privacy-img-wrapper">
-                  <img
+                  <Image
                     className="privacy-img"
-                    src="assets/svg/real-time-privacy-2.svg"
+                    src="/assets/svg/real-time-privacy-2.svg"
                     alt="real-time-privacy-2"
                   />
                 </p>

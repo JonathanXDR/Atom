@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import "/public/assets/css/application.css";
 
 export default function Home() {
   return (
@@ -6,12 +8,6 @@ export default function Home() {
       <head>
         <title>Atom</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="stylesheet"
-          media="all"
-          href="assets/css/application.css"
-          data-turbolinks-track="true"
-        />
         <meta
           property="og:url"
           content="https://web.archive.org/web/20221207004815/https://atom.io/"
@@ -113,63 +109,63 @@ export default function Home() {
                       aria-hidden="true"
                     >
                       <div className="hero-logo-circles">
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-red-semi.svg"
+                          src="/assets/svg/portal-red-semi.svg"
                           alt="portal-red-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-red.svg"
+                          src="/assets/svg/portal-red.svg"
                           alt="portal-red"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-orange-semi.svg"
+                          src="/assets/svg/portal-orange-semi.svg"
                           alt="portal-orange-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-orange.svg"
+                          src="/assets/svg/portal-orange.svg"
                           alt="portal-orange"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-yellow-semi.svg"
+                          src="/assets/svg/portal-yellow-semi.svg"
                           alt="portal-yellow-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-yellow.svg"
+                          src="/assets/svg/portal-yellow.svg"
                           alt="portal-yellow"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-green-semi.svg"
+                          src="/assets/svg/portal-green-semi.svg"
                           alt="portal-green-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-green.svg"
+                          src="/assets/svg/portal-green.svg"
                           alt="portal-green"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-blue-semi.svg"
+                          src="/assets/svg/portal-blue-semi.svg"
                           alt="portal-blue-semi"
                         />
-                        <img
+                        <Image
                           className="hero-logo-circle"
-                          src="assets/svg/portal-blue.svg"
+                          src="/assets/svg/portal-blue.svg"
                           alt="portal-blue"
                         />
                       </div>
                     </div>
                     <ul className="hero-header-item hero-download">
                       <li>
-                        <img
+                        <Image
                           className="logo-wordmark"
-                          src="assets/svg/atom-wordmark.svg"
+                          src="/assets/svg/atom-wordmark.svg"
                           alt="atom-wordmark"
                         />
                       </li>
@@ -227,9 +223,10 @@ export default function Home() {
                     </h1>
                   </div>
 
-                  <img
+                  <Image
                     className="hero-octonaut"
-                    src="assets/svg/octonaut.svg"
+                    src="/assets/svg/octonaut.svg"
+                    alt="octonaut"
                   />
                 </div>
               </section>
@@ -246,9 +243,10 @@ export default function Home() {
                   </p>
 
                   <div className="welcome-bgs">
-                    <img
+                    <Image
                       className="welcome-bg welcome-bg--screenshot"
-                      src="assets/png/teletype-screenshot.png"
+                      src="/assets/png/teletype-screenshot.png"
+                      alt="teletype-screenshot"
                     />
                   </div>
 
@@ -283,9 +281,10 @@ export default function Home() {
                   </p>
 
                   <div className="welcome-bgs">
-                    <img
+                    <Image
                       className="welcome-bg welcome-bg--screenshot"
-                      src="assets/png/github-screenshot.png"
+                      src="/assets/png/github-screenshot.png"
+                      alt="github-screenshot"
                     />
                   </div>
 
@@ -495,33 +494,6 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
-                <script
-                  src="https://web.archive.org/web/20221207004815js_/https://platform.twitter.com/oct.js"
-                  type="text/javascript"
-                ></script>
-                {/* <script type="text/javascript">
-              twttr.conversion.trackPid('l6c37', {
-                tw_sale_amount: 0,
-                tw_order_quantity: 0,
-              });
-            </script> */}
-                <noscript>
-                  <img
-                    height="1"
-                    width="1"
-                    style="display: none"
-                    alt=""
-                    src="https://web.archive.org/web/20221207004815im_/https://analytics.twitter.com/i/adsct?txn_id=l6c37&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0"
-                  />
-                  <img
-                    height="1"
-                    width="1"
-                    style="display: none"
-                    alt=""
-                    src="https://web.archive.org/web/20221207004815im_/https://t.co/i/adsct?txn_id=l6c37&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0"
-                  />
-                </noscript>
               </section>
             </div>
           </div>

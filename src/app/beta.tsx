@@ -2,22 +2,12 @@ export default function Beta() {
   return (
     <>
       <head>
-        <meta charset="UTF-8" />
         <title>Atom</title>
         <link
           rel="stylesheet"
           media="all"
           href="assets/css/application.css"
           data-turbolinks-track="true"
-        />
-        <script
-          src="assets/js/application.js"
-          data-turbolinks-track="true"
-        ></script>
-        <meta name="csrf-param" content="authenticity_token" />
-        <meta
-          name="csrf-token"
-          content="RHdMV4vNdPZAnEmp18wxx+eHpfrk136M3JeO0Zku4E/CJqWIEKZptTzSbpk/3r/LxAby7j7+lLj3nS8bFe2t0g=="
         />
         <meta
           property="og:url"
@@ -38,28 +28,9 @@ export default function Beta() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@AtomEditor" />
-        <meta property="twitter:creator" content="@github" />
-        <meta property="twitter:title" content="Atom" />
-        <meta
-          property="twitter:description"
-          content="A hackable text editor for the 21st Century"
-        />
-        <meta
-          property="twitter:image:src"
-          content="assets/png/atom-logo@1200x630.png"
-        />
-        <meta property="twitter:image:width" content="1200" />
-        <meta property="twitter:image:height" content="630" />
-
         <meta
           name="description"
           content="At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it."
-        />
-        <meta
-          name="google-site-verification"
-          content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY"
         />
 
         <link rel="shortcut icon" href="favicon.ico" />
@@ -141,42 +112,52 @@ export default function Beta() {
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-red-semi.svg"
+                          alt="portal-red-semi"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-red.svg"
+                          alt="portal-red"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-orange-semi.svg"
+                          alt="portal-orange-semi"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-orange.svg"
+                          alt="portal-orange"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-yellow-semi.svg"
+                          alt="portal-yellow-semi"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-yellow.svg"
+                          alt="portal-yellow"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-green-semi.svg"
+                          alt="portal-green-semi"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-green.svg"
+                          alt="portal-green"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-blue-semi.svg"
+                          alt="portal-blue-semi"
                         />
                         <img
                           className="hero-logo-circle"
                           src="assets/svg/portal-blue.svg"
+                          alt="portal-blue"
                         />
                       </div>
                     </div>
@@ -185,6 +166,7 @@ export default function Beta() {
                         <img
                           className="logo-wordmark"
                           src="assets/svg/atom-wordmark.svg"
+                          alt="atom-wordmark"
                         />
                       </li>
                       <li>

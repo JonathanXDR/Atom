@@ -2,13 +2,8 @@ export default function Teletype() {
   return (
     <>
       <head>
-        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Teletype for Atom</title>
-        <link
-          rel="canonical"
-          href="https://web.archive.org/web/20221207004826/https://teletype.atom.io/"
-        />
         <link rel="shortcut icon" href="favicon.ico" />
         <meta
           property="og:url"
@@ -27,7 +22,6 @@ export default function Teletype() {
         <meta property="og:image" content="assets/png/teletype.png" />
 
         <link rel="stylesheet" media="all" href="assets/css/teletype.css" />
-        <script src="assets/js/teletype.js" media="all"></script>
       </head>
       <body>
         <section className="section hero">
@@ -140,6 +134,7 @@ export default function Teletype() {
                   <img
                     className="privacy-img"
                     src="assets/svg/real-time-privacy-1.svg"
+                    alt="real-time-privacy-1"
                   />
                 </p>
                 <p>
@@ -152,6 +147,7 @@ export default function Teletype() {
                   <img
                     className="privacy-img"
                     src="assets/svg/real-time-privacy-2.svg"
+                    alt="real-time-privacy-2"
                   />
                 </p>
                 <p>

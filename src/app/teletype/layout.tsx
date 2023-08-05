@@ -5,14 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1.0",
-  metadataBase: new URL("/"),
+  metadataBase: new URL("/teletype/"),
   title: "Teletype for Atom",
-  icons: {
-    icon: "favicon.ico",
-  },
+  description:
+    "Teletype for Atom lets developers share their workspace with team members and collaborate on code in real time.",
   openGraph: {
-    url: "https://teletype.atom.io/",
-    siteName: "teletype.atom.io",
+    url: "/teletype",
+    siteName: "Atom",
     type: "website",
     title: "Code together in real time in Atom",
     description:
@@ -22,6 +21,30 @@ export const metadata: Metadata = {
         url: "assets/png/teletype.png",
       },
     ],
+  },
+  authors: [
+    {
+      name: "GitHub",
+      url: "https://github.com",
+    },
+    {
+      name: "Jonathan Russ",
+      url: "https://jonathan-russ.com",
+    },
+  ],
+  icons: {
+    icon: "favicon.ico",
+  },
+  alternates: {
+    canonical: "/",
+    types: {
+      "application/atom+xml": [
+        {
+          url: "/packages.atom",
+          title: "Atom Packages and Themes",
+        },
+      ],
+    },
   },
 };
 

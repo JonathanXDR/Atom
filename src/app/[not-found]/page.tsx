@@ -1,4 +1,4 @@
-import "./404.css";
+import "./main.css";
 
 export default function NotFound() {
   return (

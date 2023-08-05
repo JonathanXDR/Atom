@@ -1,6 +1,11 @@
 "use client";
 import Image from "next/image";
 import "/public/assets/css/teletype.css";
+
+import realTimePortals from "/public/assets/svg/real-time-portals.svg";
+import realTimePrivacy1 from "/public/assets/svg/real-time-privacy-1.svg";
+import realTimePrivacy2 from "/public/assets/svg/real-time-privacy-2.svg";
+
 export default function Teletype() {
   return (
     <>
@@ -125,8 +130,9 @@ export default function Teletype() {
             <p className="is-centered">
               <Image
                 className="img"
-                src="/assets/svg/real-time-portals.svg"
+                src={realTimePortals}
                 alt="real-time-portals"
+                style={{ width: "100%", height: "100%" }}
               />
             </p>
           </div>
@@ -141,8 +147,9 @@ export default function Teletype() {
                 <p className="privacy-img-wrapper">
                   <Image
                     className="privacy-img"
-                    src="/assets/svg/real-time-privacy-1.svg"
+                    src={realTimePrivacy1}
                     alt="real-time-privacy-1"
+                    style={{ width: "100%", height: "100%" }}
                   />
                 </p>
                 <p>
@@ -154,8 +161,9 @@ export default function Teletype() {
                 <p className="privacy-img-wrapper">
                   <Image
                     className="privacy-img"
-                    src="/assets/svg/real-time-privacy-2.svg"
+                    src={realTimePrivacy2}
                     alt="real-time-privacy-2"
+                    style={{ width: "100%", height: "100%" }}
                   />
                 </p>
                 <p>

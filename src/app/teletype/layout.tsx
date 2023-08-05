@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Teletype for Atom lets developers share their workspace with team members and collaborate on code in real time.",
     images: [
       {
-        url: "assets/png/teletype.png",
+        url: "/assets/png/teletype.png",
       },
     ],
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     },
   ],
   icons: {
-    icon: "favicon.ico",
+    icon: "/favicon.ico",
   },
   alternates: {
     canonical: "/",

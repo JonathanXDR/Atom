@@ -3,8 +3,9 @@
 
 export const metadata = {
   title: "The page you were looking for doesn't exist (404)",
-  description:
-    "At GitHub, we're building the text editor we've always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can't wait to see what you build with it.",
+  icons: {
+    icon: "favicon.ico",
+  },
 };
 
 export default function RootLayout({

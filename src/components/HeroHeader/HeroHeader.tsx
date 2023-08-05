@@ -1,8 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { usePathname } from "next/navigation";
 
-import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
 import portalBlueSemi from "/public/assets/svg/portal-blue-semi.svg";
 import portalBlue from "/public/assets/svg/portal-blue.svg";
 import portalGreenSemi from "/public/assets/svg/portal-green-semi.svg";
@@ -14,7 +14,11 @@ import portalRed from "/public/assets/svg/portal-red.svg";
 import portalYellowSemi from "/public/assets/svg/portal-yellow-semi.svg";
 import portalYellow from "/public/assets/svg/portal-yellow.svg";
 
-const HeroHeader: React.FC = () => {
+import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
+
+const HeroMeta: React.FC = () => {
+  const pathname = usePathname();
+
   return (
     <header className="hero-header">
       <div className="hero-header-item hero-logo" aria-hidden="true">
@@ -91,7 +95,13 @@ const HeroHeader: React.FC = () => {
           />
         </li>
         <li>
-          <span className="version">1.63</span>
+          <span className="version">
+            {pathname === "/nightly"
+              ? "Nightly"
+              : pathname === "/beta"
+              ? "BETA"
+              : "1.63"}
+          </span>
           <Link href="/releases">Release notes</Link>
         </li>
 
@@ -101,7 +111,13 @@ const HeroHeader: React.FC = () => {
         </li>
         <li>
           <Link
-            href="/download/windows_x64"
+            href={
+              pathname === "/nightly"
+                ? "/download/mac?channel=nightly"
+                : pathname === "/beta"
+                ? "/download/mac?channel=beta"
+                : "/download/mac"
+            }
             className="welcome-button js-download-button"
           >
             <span className="octicon octicon-move-down"></span>
@@ -109,7 +125,6 @@ const HeroHeader: React.FC = () => {
           </Link>
         </li>
       </ul>
-
       <p className="hero-meta">
         <span className="hero-tos">
           By downloading, you agree to the{" "}
@@ -118,14 +133,28 @@ const HeroHeader: React.FC = () => {
           </Link>
           .
         </span>
-        <Link href="https://github.com/atom/atom/releases/latest">
+        <Link
+          href={
+            pathname === "/nightly"
+              ? "https://github.com/atom/atom-nightly-releases/releases"
+              : pathname === "/beta"
+              ? "https://github.com/atom/atom/releases"
+              : "https://github.com/atom/atom/releases/latest"
+          }
+        >
           Other platforms
         </Link>
-        <Link href="/beta">Try Atom Beta</Link>
-        <Link href="/nightly">Try Atom Nightly</Link>
+        {pathname === "/nightly" || pathname === "/beta" ? (
+          <Link href="/">Back to Atom Stable</Link>
+        ) : (
+          <>
+            <Link href="/beta">Try Atom Beta</Link>
+            <Link href="/nightly">Try Atom Nightly</Link>
+          </>
+        )}
       </p>
     </header>
   );
 };
 
-export default HeroHeader;
+export default HeroMeta;

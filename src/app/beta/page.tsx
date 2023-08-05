@@ -1,180 +1,23 @@
-import Image from "next/image";
+"use client";
 import "/public/assets/css/application.css";
 
-import portalBlueSemi from "/public/assets/svg/portal-blue-semi.svg";
-import portalBlue from "/public/assets/svg/portal-blue.svg";
-import portalGreenSemi from "/public/assets/svg/portal-green-semi.svg";
-import portalGreen from "/public/assets/svg/portal-green.svg";
-import portalOrangeSemi from "/public/assets/svg/portal-orange-semi.svg";
-import portalOrange from "/public/assets/svg/portal-orange.svg";
-import portalRedSemi from "/public/assets/svg/portal-red-semi.svg";
-import portalRed from "/public/assets/svg/portal-red.svg";
-import portalYellowSemi from "/public/assets/svg/portal-yellow-semi.svg";
-import portalYellow from "/public/assets/svg/portal-yellow.svg";
-
+import FooterItem from "@/components/FooterItem/FooterItem";
+import HeroHeader from "@/components/HeroHeader/HeroHeader";
+import NavItem from "@/components/NavItem/NavItem";
 import Link from "next/link";
-import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
 
 export default function Beta() {
   return (
     <body className="is-responsive">
       <div className="footer-push">
-        <nav className="top-bar" aria-label="Primary">
-          <div className="wrapper no-pad">
-            <ul className="navigation">
-              <li>
-                <h1>
-                  <Link
-                    href="/"
-                    className="logo-small"
-                    title="Atom: A hackable text editor for the 21st Century"
-                  ></Link>
-                </h1>
-              </li>
-              <li>
-                <Link href="/packages">Packages</Link>
-              </li>
-              <li>
-                <Link href="/themes">Themes</Link>
-              </li>
-              <li>
-                <Link href="/docs">Documentation</Link>
-              </li>
-              <li>
-                <Link href="https://blog.atom.io/">Blog</Link>
-              </li>
-              <li>
-                <Link href="https://github.com/atom/atom/discussions">
-                  Discussions
-                </Link>
-              </li>
-            </ul>
-
-            <div className="top-bar-right">
-              <Link href="/login?last_url=%2Fbeta">
-                <span className="octicon octicon-log-in"></span> Sign in
-              </Link>
-            </div>
-          </div>
-        </nav>
-
+        <NavItem />
         <div id="js-pjax-container">
           <div className="welcome welcome-beta">
             <section className="section section--hero">
               <div className="wrapper">
-                <header className="hero-header">
-                  <div
-                    className="hero-header-item hero-logo"
-                    aria-hidden="true"
-                  >
-                    <div className="hero-logo-circles">
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalRedSemi}
-                        alt="portal-red-semi"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalRed}
-                        alt="portal-red"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalOrangeSemi}
-                        alt="portal-orange-semi"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalOrange}
-                        alt="portal-orange"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalYellowSemi}
-                        alt="portal-yellow-semi"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalYellow}
-                        alt="portal-yellow"
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalGreenSemi}
-                        alt="portal-green-semi"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalGreen}
-                        alt="portal-green"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalBlueSemi}
-                        alt="portal-blue-semi"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                      <Image
-                        className="hero-logo-circle"
-                        src={portalBlue}
-                        alt="portal-blue"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                    </div>
-                  </div>
-                  <ul className="hero-header-item hero-download">
-                    <li>
-                      <Image
-                        className="logo-wordmark"
-                        src={atomWordmark}
-                        alt="atom-wordmark"
-                        style={{ width: "100%", height: "100%" }}
-                      />
-                    </li>
-                    <li>
-                      <span className="version">BETA</span>
-                      <Link href="/releases">Release notes</Link>
-                    </li>
-
-                    <li>
-                      <span className="platform">macOS</span>
-                      <span className="support">For macOS 10.10 or later</span>
-                    </li>
-                    <li>
-                      <Link
-                        href="/download/windows_x64?channel=beta"
-                        className="welcome-button js-download-button"
-                      >
-                        <span className="octicon octicon-move-down"></span>
-                        Download
-                      </Link>
-                    </li>
-                  </ul>
-
-                  <p className="hero-meta">
-                    <span className="hero-tos">
-                      By downloading, you agree to the{" "}
-                      <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
-                        Terms and Conditions
-                      </Link>
-                      .
-                    </span>
-                    <Link href="https://github.com/atom/atom/releases">
-                      Other platforms
-                    </Link>
-                    <Link href="/">Back to Atom Stable</Link>
-                  </p>
-                </header>
+                <HeroHeader />
               </div>
             </section>
-
             <section className="section section--features">
               <div className="wrapper wrapper--beta">
                 <h3>Try Atom Beta</h3>
@@ -220,46 +63,7 @@ export default function Beta() {
         <div className="footer-pad"></div>
       </div>
 
-      <footer>
-        <div className="footer">
-          <div className="wrapper no-pad">
-            <ul className="footer-left">
-              <li>
-                <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
-                  Terms of Use
-                </Link>
-              </li>
-              <li>
-                <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
-                  Code of Conduct
-                </Link>
-              </li>
-              <li>
-                <Link href="/releases">Releases</Link>
-              </li>
-              <li>
-                <Link href="https://flight-manual.atom.io/faq/">FAQ</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </ul>
-
-            <div className="footer-right">
-              <Link href="https://github.com/">
-                <span className="octicon octicon-code"></span> with{" "}
-                <span className="octicon octicon-heart"></span> by{" "}
-                <span className="octicon octicon-logo-github"></span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <FooterItem />
     </body>
   );
 }

@@ -8,10 +8,14 @@ import realTimePrivacy1 from "/public/assets/svg/real-time-privacy-1.svg";
 import realTimePrivacy2 from "/public/assets/svg/real-time-privacy-2.svg";
 
 export default function Teletype() {
+  const [isPlaying, setIsPlaying] = React.useState(true);
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const videoButtonRef = React.useRef<HTMLButtonElement>(null);
+
   const playVideo = () => {
+    setIsPlaying(true);
     if (videoRef.current instanceof HTMLVideoElement) {
+      videoRef.current.style.zIndex = "1";
       videoRef.current.play();
     }
     if (videoButtonRef.current instanceof HTMLButtonElement) {
@@ -78,6 +82,7 @@ export default function Teletype() {
               className="video"
               preload="auto"
               poster="/assets/png/real-time-video-poster.png"
+              controls={isPlaying}
             >
               <source src="/assets/videos/real-time.mp4" type="video/mp4" />
               <track kind="captions" />

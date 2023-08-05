@@ -4,8 +4,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  viewport: "width=device-width, initial-scale=1.0",
-  metadataBase: new URL("/404/"),
+  metadataBase: new URL("https://atom.io/404"),
   title: "The page you were looking for doesn't exist (404)",
   description:
     "At GitHub, we're building the text editor we've always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can't wait to see what you build with it.",

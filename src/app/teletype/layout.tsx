@@ -4,8 +4,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  viewport: "width=device-width, initial-scale=1.0",
-  metadataBase: new URL("/teletype/"),
+  metadataBase: new URL("https://atom.io/teletype"),
   title: "Teletype for Atom",
   description:
     "Teletype for Atom lets developers share their workspace with team members and collaborate on code in real time.",

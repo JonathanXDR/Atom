@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import "/public/assets/css/application.css";
 
@@ -14,6 +12,7 @@ import portalRed from "/public/assets/svg/portal-red.svg";
 import portalYellowSemi from "/public/assets/svg/portal-yellow-semi.svg";
 import portalYellow from "/public/assets/svg/portal-yellow.svg";
 
+import Link from "next/link";
 import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
 
 export default function Nightly() {
@@ -93,21 +92,21 @@ export default function Nightly() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004838/https://blog.atom.io/">
+                  <Link href="https://web.archive.org/web/20221207004838/https://blog.atom.io/">
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004838/https://github.com/atom/atom/discussions">
+                  <Link href="https://web.archive.org/web/20221207004838/https://github.com/atom/atom/discussions">
                     Discussions
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
               <div className="top-bar-right">
-                <a href="https://web.archive.org/web/20221207004838/https://atom.io/login?last_url=%2Fnightly">
+                <Link href="https://web.archive.org/web/20221207004838/https://atom.io/login?last_url=%2Fnightly">
                   <span className="octicon octicon-log-in"></span> Sign in
-                </a>
+                </Link>
               </div>
             </div>
           </nav>
@@ -195,9 +194,9 @@ export default function Nightly() {
                       </li>
                       <li>
                         <span className="version">Nightly</span>
-                        <a href="https://web.archive.org/web/20221207004838/https://atom.io/releases">
+                        <Link href="https://web.archive.org/web/20221207004838/https://atom.io/releases">
                           Release notes
-                        </a>
+                        </Link>
                       </li>
 
                       <li>
@@ -219,18 +218,18 @@ export default function Nightly() {
 
                     <p className="hero-meta">
                       <span className="hero-tos">
-                        By downloading, you agree to the
-                        <a href="https://web.archive.org/web/20221207004838/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
+                        By downloading, you agree to the{" "}
+                        <Link href="https://web.archive.org/web/20221207004838/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                           Terms and Conditions
-                        </a>
+                        </Link>
                         .
                       </span>
-                      <a href="https://web.archive.org/web/20221207004838/https://github.com/atom/atom-nightly-releases/releases">
+                      <Link href="https://web.archive.org/web/20221207004838/https://github.com/atom/atom-nightly-releases/releases">
                         Other platforms
-                      </a>
-                      <a href="https://web.archive.org/web/20221207004838/https://atom.io/">
+                      </Link>
+                      <Link href="https://web.archive.org/web/20221207004838/https://atom.io/">
                         Back to Atom Stable
-                      </a>
+                      </Link>
                     </p>
                   </header>
                 </div>
@@ -244,10 +243,10 @@ export default function Nightly() {
                     Want to never wait for new improvements? The Nightly channel
                     contains new features and bug fixes as soon as they get
                     merged into master. It is intended for developers and very
-                    early adopters. See the
-                    <a href="https://web.archive.org/web/20221207004838/https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
-                      blog post
-                    </a>
+                    early adopters. See the{" "}
+                    <Link href="https://web.archive.org/web/20221207004838/https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
+                      blog post{" "}
+                    </Link>
                     for more information.
                   </p>
 
@@ -268,10 +267,10 @@ export default function Nightly() {
                   <div className="features-item">
                     <span className="mega-octicon octicon-bug"></span>
                     <p>
-                      There may be bugs. If you have problems, please
-                      <a href="https://web.archive.org/web/20221207004838/https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues">
+                      There may be bugs. If you have problems, please{" "}
+                      <Link href="https://web.archive.org/web/20221207004838/https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues">
                         file an issue
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -287,43 +286,43 @@ export default function Nightly() {
             <div className="wrapper no-pad">
               <ul className="footer-left">
                 <li>
-                  <a href="https://web.archive.org/web/20221207004838/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
+                  <Link href="https://web.archive.org/web/20221207004838/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                     Terms of Use
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004838/https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
+                  <Link href="https://web.archive.org/web/20221207004838/https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
                     Privacy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004838/https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
+                  <Link href="https://web.archive.org/web/20221207004838/https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
                     Code of Conduct
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004838/https://atom.io/releases">
+                  <Link href="https://web.archive.org/web/20221207004838/https://atom.io/releases">
                     Releases
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004838/https://flight-manual.atom.io/faq/">
+                  <Link href="https://web.archive.org/web/20221207004838/https://flight-manual.atom.io/faq/">
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004838/https://atom.io/contact">
+                  <Link href="https://web.archive.org/web/20221207004838/https://atom.io/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
               <div className="footer-right">
-                <a href="https://web.archive.org/web/20221207004838/https://github.com/">
-                  <span className="octicon octicon-code"></span> with
-                  <span className="octicon octicon-heart"></span> by
+                <Link href="https://web.archive.org/web/20221207004838/https://github.com/">
+                  <span className="octicon octicon-code"></span> with{" "}
+                  <span className="octicon octicon-heart"></span> by{" "}
                   <span className="octicon octicon-logo-github"></span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

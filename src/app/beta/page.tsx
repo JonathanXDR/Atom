@@ -12,6 +12,7 @@ import portalRed from "/public/assets/svg/portal-red.svg";
 import portalYellowSemi from "/public/assets/svg/portal-yellow-semi.svg";
 import portalYellow from "/public/assets/svg/portal-yellow.svg";
 
+import Link from "next/link";
 import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
 
 export default function Beta() {
@@ -90,21 +91,21 @@ export default function Beta() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004901/https://blog.atom.io/">
+                  <Link href="https://web.archive.org/web/20221207004901/https://blog.atom.io/">
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004901/https://github.com/atom/atom/discussions">
+                  <Link href="https://web.archive.org/web/20221207004901/https://github.com/atom/atom/discussions">
                     Discussions
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
               <div className="top-bar-right">
-                <a href="https://web.archive.org/web/20221207004901/https://atom.io/login?last_url=%2Fbeta">
+                <Link href="https://web.archive.org/web/20221207004901/https://atom.io/login?last_url=%2Fbeta">
                   <span className="octicon octicon-log-in"></span> Sign in
-                </a>
+                </Link>
               </div>
             </div>
           </nav>
@@ -191,9 +192,9 @@ export default function Beta() {
                       </li>
                       <li>
                         <span className="version">BETA</span>
-                        <a href="https://web.archive.org/web/20221207004901/https://atom.io/releases">
+                        <Link href="https://web.archive.org/web/20221207004901/https://atom.io/releases">
                           Release notes
-                        </a>
+                        </Link>
                       </li>
 
                       <li>
@@ -215,18 +216,18 @@ export default function Beta() {
 
                     <p className="hero-meta">
                       <span className="hero-tos">
-                        By downloading, you agree to the
-                        <a href="https://web.archive.org/web/20221207004901/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
+                        By downloading, you agree to the{" "}
+                        <Link href="https://web.archive.org/web/20221207004901/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                           Terms and Conditions
-                        </a>
+                        </Link>
                         .
                       </span>
-                      <a href="https://web.archive.org/web/20221207004901/https://github.com/atom/atom/releases">
+                      <Link href="https://web.archive.org/web/20221207004901/https://github.com/atom/atom/releases">
                         Other platforms
-                      </a>
-                      <a href="https://web.archive.org/web/20221207004901/https://atom.io/">
+                      </Link>
+                      <Link href="https://web.archive.org/web/20221207004901/https://atom.io/">
                         Back to Atom Stable
-                      </a>
+                      </Link>
                     </p>
                   </header>
                 </div>
@@ -238,14 +239,14 @@ export default function Beta() {
 
                   <p>
                     Want to be on the bleeding edge? The Beta channel contains
-                    new features and bug fixes before they land on the
-                    <a href="https://web.archive.org/web/20221207004901/https://atom.io/">
+                    new features and bug fixes before they land on the{" "}
+                    <Link href="https://web.archive.org/web/20221207004901/https://atom.io/">
                       stable channel
-                    </a>
-                    . It is intended for developers and early adopters. See the
-                    <a href="https://web.archive.org/web/20221207004901/https://blog.atom.io/2015/10/21/introducing-the-atom-beta-channel.html">
-                      blog post
-                    </a>
+                    </Link>
+                    . It is intended for developers and early adopters. See the{" "}
+                    <Link href="https://web.archive.org/web/20221207004901/https://blog.atom.io/2015/10/21/introducing-the-atom-beta-channel.html">
+                      blog post{" "}
+                    </Link>
                     for more information.
                   </p>
 
@@ -265,10 +266,10 @@ export default function Beta() {
                   <div className="features-item">
                     <span className="mega-octicon octicon-bug"></span>
                     <p>
-                      There may be bugs. If you have problems, please
-                      <a href="https://web.archive.org/web/20221207004901/https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues">
+                      There may be bugs. If you have problems, please{" "}
+                      <Link href="https://web.archive.org/web/20221207004901/https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues">
                         file an issue
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -284,43 +285,43 @@ export default function Beta() {
             <div className="wrapper no-pad">
               <ul className="footer-left">
                 <li>
-                  <a href="https://web.archive.org/web/20221207004901/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
+                  <Link href="https://web.archive.org/web/20221207004901/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                     Terms of Use
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004901/https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
+                  <Link href="https://web.archive.org/web/20221207004901/https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
                     Privacy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004901/https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
+                  <Link href="https://web.archive.org/web/20221207004901/https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
                     Code of Conduct
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004901/https://atom.io/releases">
+                  <Link href="https://web.archive.org/web/20221207004901/https://atom.io/releases">
                     Releases
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004901/https://flight-manual.atom.io/faq/">
+                  <Link href="https://web.archive.org/web/20221207004901/https://flight-manual.atom.io/faq/">
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://web.archive.org/web/20221207004901/https://atom.io/contact">
+                  <Link href="https://web.archive.org/web/20221207004901/https://atom.io/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
               <div className="footer-right">
-                <a href="https://web.archive.org/web/20221207004901/https://github.com/">
-                  <span className="octicon octicon-code"></span> with
-                  <span className="octicon octicon-heart"></span> by
+                <Link href="https://web.archive.org/web/20221207004901/https://github.com/">
+                  <span className="octicon octicon-code"></span> with{" "}
+                  <span className="octicon octicon-heart"></span> by{" "}
                   <span className="octicon octicon-logo-github"></span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

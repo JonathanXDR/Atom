@@ -1,12 +1,24 @@
+"use client";
 import Image from "next/image";
-import "/public/assets/css/teletype.css";
-
 import Link from "next/link";
+import React from "react";
+import "/public/assets/css/teletype.css";
 import realTimePortals from "/public/assets/svg/real-time-portals.svg";
 import realTimePrivacy1 from "/public/assets/svg/real-time-privacy-1.svg";
 import realTimePrivacy2 from "/public/assets/svg/real-time-privacy-2.svg";
 
 export default function Teletype() {
+  const videoRef = React.useRef<HTMLVideoElement>(null);
+  const videoButtonRef = React.useRef<HTMLButtonElement>(null);
+  const playVideo = () => {
+    if (videoRef.current instanceof HTMLVideoElement) {
+      videoRef.current.play();
+    }
+    if (videoButtonRef.current instanceof HTMLButtonElement) {
+      videoButtonRef.current.style.display = "none";
+    }
+  };
+
   return (
     <body>
       <section className="section hero">
@@ -62,22 +74,20 @@ export default function Teletype() {
         <div className="wrapper wrapper--full wrapper--video">
           <div className="video-container">
             <video
-              id="video"
+              ref={videoRef}
               className="video"
               preload="auto"
-              poster="assets/png/real-time-video-poster.png"
+              poster="/assets/png/real-time-video-poster.png"
             >
-              <source
-                src="/public/assets/videos/real-time.mp4"
-                type="video/mp4"
-              />
+              <source src="/assets/videos/real-time.mp4" type="video/mp4" />
               <track kind="captions" />
             </video>
             <div id="video-hud" className="video-hud">
               <button
-                id="video-button"
+                ref={videoButtonRef}
                 className="video-play-button mega-octicon octicon-playback-play"
                 aria-label="Play video"
+                onClick={playVideo}
               ></button>
             </div>
           </div>

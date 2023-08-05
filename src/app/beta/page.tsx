@@ -1,10 +1,9 @@
 "use client";
-import "/public/assets/css/application.css";
-
 import FooterItem from "@/components/FooterItem/FooterItem";
 import HeroHeader from "@/components/HeroHeader/HeroHeader";
 import NavItem from "@/components/NavItem/NavItem";
 import Link from "next/link";
+import "/public/assets/css/application.css";
 
 export default function Beta() {
   return (

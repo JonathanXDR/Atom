@@ -1,12 +1,11 @@
 "use client";
-import Image from "next/image";
-import "/public/assets/css/application.css";
-
 import FooterItem from "@/components/FooterItem/FooterItem";
 import HeroHeader from "@/components/HeroHeader/HeroHeader";
 import NavItem from "@/components/NavItem/NavItem";
 import SunsetBanner from "@/components/SunsetBanner/SunsetBanner";
+import Image from "next/image";
 import Link from "next/link";
+import "/public/assets/css/application.css";
 import githubScreenshot from "/public/assets/png/github-screenshot.png";
 import teletypeScreenshot from "/public/assets/png/teletype-screenshot.png";
 import octonaut from "/public/assets/svg/octonaut.svg";

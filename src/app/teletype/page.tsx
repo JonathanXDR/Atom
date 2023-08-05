@@ -13,10 +13,7 @@ export default function Teletype() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Teletype for Atom</title>
         <link rel="shortcut icon" href="favicon.ico" />
-        <meta
-          property="og:url"
-          content="https://web.archive.org/web/20221207004826/https://teletype.atom.io/"
-        />
+        <meta property="og:url" content="https://teletype.atom.io/" />
         <meta property="og:site_name" content="teletype.atom.io" />
         <meta property="og:type" content="website" />
         <meta
@@ -92,6 +89,7 @@ export default function Teletype() {
                   src="/public/assets/videos/real-time.mp4"
                   type="video/mp4"
                 />
+                <track kind="captions" />
               </video>
               <div id="video-hud" className="video-hud">
                 <button
@@ -116,11 +114,11 @@ export default function Teletype() {
             </p>
             <p>
               Teletype introduces the concept of
-              <strong> real-time "portals" </strong> for sharing workspaces.
-              When a host opens a portal, their active tab becomes a shared
-              workspace. There, invited collaborators can join in and make edits
-              in real time. As the host moves between files, collaborators
-              follow along with the active tab automatically.
+              <strong> real-time &quot;portals&quot; </strong> for sharing
+              workspaces. When a host opens a portal, their active tab becomes a
+              shared workspace. There, invited collaborators can join in and
+              make edits in real time. As the host moves between files,
+              collaborators follow along with the active tab automatically.
             </p>
             <p className="is-centered">
               <Image
@@ -168,7 +166,7 @@ export default function Teletype() {
               </li>
             </ol>
             <p>
-              There's no centralized server to spy on your keystrokes, and
+              There&apos;s no centralized server to spy on your keystrokes, and
               Teletype uses <strong>WebRTC</strong> to encrypt all communication
               between collaborators. What happens in the portal stays in the
               portal.
@@ -181,22 +179,19 @@ export default function Teletype() {
             <h2>Getting started</h2>
             <h4>1. Install Atom</h4>
             <p>
-              Download and install{" "}
-              <Link href="https://web.archive.org/web/20221207004826/https://atom.io/">
-                Atom
-              </Link>
-              . It's free, open source, and cross-platform. You can use it on
+              Download and install <Link href="https://atom.io/">Atom</Link>.
+              It&apos;s free, open source, and cross-platform. You can use it on
               Windows, macOS, or Linux.
             </p>
             <h4>2. Install Teletype for Atom</h4>
             <p>
               Install the{" "}
-              <Link href="https://web.archive.org/web/20221207004826/atom://settings-view/show-package?package=teletype">
+              <Link href="atom://settings-view/show-package?package=teletype">
                 teletype{" "}
               </Link>
               package to start collaborating today. If you need help, take a
               look at{" "}
-              <Link href="https://web.archive.org/web/20221207004826/https://flight-manual.atom.io/using-atom/sections/atom-packages/">
+              <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages/">
                 how to install Atom packages
               </Link>
               .
@@ -209,6 +204,7 @@ export default function Teletype() {
               Click the{" "}
               <span
                 className="octicon octicon-radio-tower"
+                role="img"
                 aria-label="Teletype"
               ></span>{" "}
               icon in the Atom status bar, and flip the switch to start sharing
@@ -229,15 +225,15 @@ export default function Teletype() {
             <h2>Feedback</h2>
             <p>
               We welcome your{" "}
-              <Link href="https://web.archive.org/web/20221207004826/https://github.com/atom/atom/discussions">
+              <Link href="https://github.com/atom/atom/discussions">
                 feedback{" "}
               </Link>
               on this beta release. If you run into any problems, please{" "}
-              <Link href="https://web.archive.org/web/20221207004826/https://github.com/atom/teletype/issues">
+              <Link href="https://github.com/atom/teletype/issues">
                 open an issue{" "}
               </Link>
               or take a look at the{" "}
-              <Link href="https://web.archive.org/web/20221207004826/https://github.com/atom/teletype/blob/master/CONTRIBUTING.md">
+              <Link href="https://github.com/atom/teletype/blob/master/CONTRIBUTING.md">
                 contribution guide{" "}
               </Link>
               and start contributing.
@@ -245,16 +241,22 @@ export default function Teletype() {
           </div>
 
           <div className="wrapper love">
-            <a
-              className="love"
-              href="https://web.archive.org/web/20221207004826/https://github.com/"
-            >
-              <span className="octicon octicon-code" aria-label="Made"></span>{" "}
+            <a className="love" href="https://github.com/">
+              <span
+                className="octicon octicon-code"
+                role="img"
+                aria-label="Made"
+              ></span>{" "}
               with{" "}
-              <span className="octicon octicon-heart" aria-label="love"></span>{" "}
+              <span
+                className="octicon octicon-heart"
+                role="img"
+                aria-label="Love"
+              ></span>{" "}
               by{" "}
               <span
                 className="octicon octicon-logo-github"
+                role="img"
                 aria-label="GitHub"
               ></span>
             </a>

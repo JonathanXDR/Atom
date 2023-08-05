@@ -25,10 +25,7 @@ export default function Home() {
       <head>
         <title>Atom</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          property="og:url"
-          content="https://web.archive.org/web/20221207004815/https://atom.io/"
-        />
+        <meta property="og:url" content="https://atom.io/" />
         <meta property="og:site_name" content="Atom" />
         <meta
           property="og:title"
@@ -36,7 +33,7 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it."
+          content="At GitHub, we're building the text editor we've always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can't wait to see what you build with it."
         />
         <meta property="og:type" content="website" />
         <meta property="og:author" content="https://www.facebook.com/GitHub" />
@@ -46,7 +43,7 @@ export default function Home() {
 
         <meta
           name="description"
-          content="At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it."
+          content="At GitHub, we're building the text editor we've always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can't wait to see what you build with it."
         />
 
         <link rel="shortcut icon" href="favicon.ico" />
@@ -54,7 +51,7 @@ export default function Home() {
           rel="alternate"
           type="application/atom+xml"
           title="Atom Packages and Themes"
-          href="https://web.archive.org/web/20221207004815/https://atom.io/packages.atom"
+          href="https://atom.io/packages.atom"
         />
       </head>
       <body className="is-responsive">
@@ -63,43 +60,32 @@ export default function Home() {
             <div className="wrapper no-pad">
               <ul className="navigation">
                 <li>
-                  <a
-                    className=""
-                    href="https://web.archive.org/web/20221207004815/https://atom.io/packages"
-                  >
+                  <a className="" href="https://atom.io/packages">
                     Packages
                   </a>
                 </li>
                 <li>
-                  <a
-                    className=""
-                    href="https://web.archive.org/web/20221207004815/https://atom.io/themes"
-                  >
+                  <a className="" href="https://atom.io/themes">
                     Themes
                   </a>
                 </li>
                 <li>
-                  <a
-                    className=""
-                    href="https://web.archive.org/web/20221207004815/https://atom.io/docs"
-                  >
+                  <a className="" href="https://atom.io/docs">
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <Link href="https://web.archive.org/web/20221207004815/https://blog.atom.io/">
-                    Blog
-                  </Link>
+                  <Link href="https://blog.atom.io/">Blog</Link>
                 </li>
                 <li>
-                  <Link href="https://web.archive.org/web/20221207004815/https://github.com/atom/atom/discussions">
+                  <Link href="https://github.com/atom/atom/discussions">
                     Discussions
                   </Link>
                 </li>
               </ul>
 
               <div className="top-bar-right">
-                <Link href="https://web.archive.org/web/20221207004815/https://atom.io/login?last_url=%2F">
+                <Link href="https://atom.io/login?last_url=%2F">
                   <span className="octicon octicon-log-in"></span> Sign in
                 </Link>
               </div>
@@ -114,7 +100,7 @@ export default function Home() {
                   December 15, 2022
                   <a
                     className="sunset-text-color"
-                    href="https://web.archive.org/web/20221207004815/https://github.blog/2022-06-08-sunsetting-atom/"
+                    href="https://github.blog/2022-06-08-sunsetting-atom/"
                   >
                     {" "}
                     Learn more in our official statement
@@ -200,7 +186,7 @@ export default function Home() {
                       </li>
                       <li>
                         <span className="version">1.63</span>
-                        <Link href="https://web.archive.org/web/20221207004815/https://atom.io/releases">
+                        <Link href="https://atom.io/releases">
                           Release notes
                         </Link>
                       </li>
@@ -213,7 +199,7 @@ export default function Home() {
                       </li>
                       <li>
                         <a
-                          href="https://web.archive.org/web/20221207004815/https://atom.io/download/windows_x64"
+                          href="https://atom.io/download/windows_x64"
                           className="welcome-button js-download-button"
                         >
                           <span className="octicon octicon-move-down"></span>
@@ -225,18 +211,16 @@ export default function Home() {
                     <p className="hero-meta">
                       <span className="hero-tos">
                         By downloading, you agree to the{" "}
-                        <Link href="https://web.archive.org/web/20221207004815/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
+                        <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                           Terms and Conditions
                         </Link>
                         .
                       </span>
-                      <Link href="https://web.archive.org/web/20221207004815/https://github.com/atom/atom/releases/latest">
+                      <Link href="https://github.com/atom/atom/releases/latest">
                         Other platforms
                       </Link>
-                      <Link href="https://web.archive.org/web/20221207004815/https://atom.io/beta">
-                        Try Atom Beta
-                      </Link>
-                      <Link href="https://web.archive.org/web/20221207004815/https://atom.io/nightly">
+                      <Link href="https://atom.io/beta">Try Atom Beta</Link>
+                      <Link href="https://atom.io/nightly">
                         Try Atom Nightly
                       </Link>
                     </p>
@@ -283,7 +267,7 @@ export default function Home() {
                   <p>
                     Share your workspace and edit code together in real time. To
                     start collaborating,{" "}
-                    <Link href="https://web.archive.org/web/20221207004815/atom://settings-view/show-package?package=teletype">
+                    <Link href="atom://settings-view/show-package?package=teletype">
                       open Teletype in Atom{" "}
                     </Link>
                     and install the package.
@@ -291,7 +275,7 @@ export default function Home() {
 
                   <p className="welcome-cta">
                     <a
-                      href="https://web.archive.org/web/20221207004815/https://teletype.atom.io/"
+                      href="https://teletype.atom.io/"
                       className="welcome-button"
                     >
                       Learn more
@@ -305,9 +289,9 @@ export default function Home() {
                   <h3>GitHub for Atom</h3>
 
                   <p>
-                    A text editor is at the core of a developer’s toolbox, but
-                    it doesn't usually work alone. Work with Git and GitHub
-                    directly from Atom with the GitHub package.
+                    A text editor is at the core of a developer&apos;s toolbox,
+                    but it doesn&apos;t usually work alone. Work with Git and
+                    GitHub directly from Atom with the GitHub package.
                   </p>
 
                   <div className="welcome-bgs">
@@ -322,12 +306,12 @@ export default function Home() {
                     Create new branches, stage and commit, push and pull,
                     resolve merge conflicts, view pull requests and more—all
                     from within your editor. The GitHub package is already
-                    bundled with Atom, so you're ready to go!
+                    bundled with Atom, so you&apos;re ready to go!
                   </p>
 
                   <p className="welcome-cta">
                     <a
-                      href="https://web.archive.org/web/20221207004815/https://github.atom.io/"
+                      href="https://github.atom.io/"
                       className="welcome-button"
                     >
                       Learn more
@@ -399,7 +383,7 @@ export default function Home() {
                       <h4>Packages</h4>
                       <p>
                         Choose from thousands of{" "}
-                        <Link href="https://web.archive.org/web/20221207004815/https://atom.io/packages">
+                        <Link href="https://atom.io/packages">
                           open source packages{" "}
                         </Link>
                         that add new features and functionality to Atom, or
@@ -412,26 +396,24 @@ export default function Home() {
                       <h4>Themes</h4>
                       <p>
                         Atom comes pre-installed with four UI and eight syntax{" "}
-                        <Link href="https://web.archive.org/web/20221207004815/https://atom.io/themes">
-                          themes{" "}
-                        </Link>
-                        in both dark and light colors. Can't find what you're
-                        looking for? Install themes created by the Atom
-                        community or create your own.
+                        <Link href="https://atom.io/themes">themes </Link>
+                        in both dark and light colors. Can&apos;t find what
+                        you&apos;re looking for? Install themes created by the
+                        Atom community or create your own.
                       </p>
                     </div>
                     <div className="features-item">
                       <span className="mega-octicon octicon-tools"></span>
                       <h4>Customization</h4>
                       <p>
-                        It's easy to customize and style Atom. Tweak the look
-                        and feel of your UI with CSS/Less, and add major
+                        It&apos;s easy to customize and style Atom. Tweak the
+                        look and feel of your UI with CSS/Less, and add major
                         features with HTML and JavaScript.
                       </p>
                       <p>
                         <br />
                         <a
-                          href="https://web.archive.org/web/20221207004815/https://www.youtube.com/watch?v=U5POoGSrtGg"
+                          href="https://www.youtube.com/watch?v=U5POoGSrtGg"
                           target="_blank"
                         >
                           See how to set up Atom
@@ -444,10 +426,8 @@ export default function Home() {
                       <p>
                         Atom is a desktop application built with HTML,
                         JavaScript, CSS, and Node.js integration. It runs on{" "}
-                        <Link href="https://web.archive.org/web/20221207004815/https://electronjs.org/">
-                          Electron
-                        </Link>
-                        , a framework for building cross platform apps using web
+                        <Link href="https://electronjs.org/">Electron</Link>, a
+                        framework for building cross platform apps using web
                         technologies.
                       </p>
                     </div>
@@ -456,7 +436,6 @@ export default function Home() {
               </section>
 
               <section className="section section--contact">
-                <a name="contact"></a>
                 <div className="wrapper no-pad">
                   <div className="columns">
                     <div className="column">
@@ -467,7 +446,7 @@ export default function Home() {
                       </p>
                       <p className="welcome-cta">
                         <a
-                          href="https://web.archive.org/web/20221207004815/https://github.com/atom/atom"
+                          href="https://github.com/atom/atom"
                           className="welcome-button"
                         >
                           Fork on GitHub
@@ -482,7 +461,7 @@ export default function Home() {
                           <tr>
                             <td>GitHub</td>
                             <td>
-                              <Link href="https://web.archive.org/web/20221207004815/https://github.com/atom">
+                              <Link href="https://github.com/atom">
                                 github.com/atom
                               </Link>
                             </td>
@@ -490,7 +469,7 @@ export default function Home() {
                           <tr>
                             <td>Twitter</td>
                             <td>
-                              <Link href="https://web.archive.org/web/20221207004815/https://twitter.com/atomeditor">
+                              <Link href="https://twitter.com/atomeditor">
                                 @AtomEditor
                               </Link>
                             </td>
@@ -498,7 +477,7 @@ export default function Home() {
                           <tr>
                             <td>Discussions</td>
                             <td>
-                              <Link href="https://web.archive.org/web/20221207004815/https://github.com/atom/atom/discussions">
+                              <Link href="https://github.com/atom/atom/discussions">
                                 Github Discussions
                               </Link>
                             </td>
@@ -506,7 +485,7 @@ export default function Home() {
                           <tr>
                             <td>Stuff</td>
                             <td>
-                              <Link href="https://web.archive.org/web/20221207004815/https://github.myshopify.com/search?q=atom">
+                              <Link href="https://github.myshopify.com/search?q=atom">
                                 Atom Gear
                               </Link>
                             </td>
@@ -514,7 +493,7 @@ export default function Home() {
                           <tr>
                             <td>RSS Feed</td>
                             <td>
-                              <Link href="https://web.archive.org/web/20221207004815/https://atom.io/packages.atom">
+                              <Link href="https://atom.io/packages.atom">
                                 Packages &amp; Themes
                               </Link>
                             </td>
@@ -536,39 +515,33 @@ export default function Home() {
             <div className="wrapper no-pad">
               <ul className="footer-left">
                 <li>
-                  <Link href="https://web.archive.org/web/20221207004815/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
+                  <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                     Terms of Use
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://web.archive.org/web/20221207004815/https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
+                  <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
                     Privacy
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://web.archive.org/web/20221207004815/https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
+                  <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
                     Code of Conduct
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://web.archive.org/web/20221207004815/https://atom.io/releases">
-                    Releases
-                  </Link>
+                  <Link href="https://atom.io/releases">Releases</Link>
                 </li>
                 <li>
-                  <Link href="https://web.archive.org/web/20221207004815/https://flight-manual.atom.io/faq/">
-                    FAQ
-                  </Link>
+                  <Link href="https://flight-manual.atom.io/faq/">FAQ</Link>
                 </li>
                 <li>
-                  <Link href="https://web.archive.org/web/20221207004815/https://atom.io/contact">
-                    Contact
-                  </Link>
+                  <Link href="https://atom.io/contact">Contact</Link>
                 </li>
               </ul>
 
               <div className="footer-right">
-                <Link href="https://web.archive.org/web/20221207004815/https://github.com/">
+                <Link href="https://github.com/">
                   <span className="octicon octicon-code"></span> with{" "}
                   <span className="octicon octicon-heart"></span> by{" "}
                   <span className="octicon octicon-logo-github"></span>

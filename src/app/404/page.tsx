@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <>
       <head>
-        <title>The page you were looking for doesn't exist (404)</title>
+        <title>The page you were looking for doesn&apos;t exist (404)</title>
         <link rel="shortcut icon" href="favicon.ico" />
       </head>
 

@@ -51,7 +51,7 @@ export default function Home() {
           rel="alternate"
           type="application/atom+xml"
           title="Atom Packages and Themes"
-          href="https://atom.io/packages.atom"
+          href="/packages.atom"
         />
       </head>
       <body className="is-responsive">
@@ -60,19 +60,13 @@ export default function Home() {
             <div className="wrapper no-pad">
               <ul className="navigation">
                 <li>
-                  <a className="" href="https://atom.io/packages">
-                    Packages
-                  </a>
+                  <Link href="/packages">Packages</Link>
                 </li>
                 <li>
-                  <a className="" href="https://atom.io/themes">
-                    Themes
-                  </a>
+                  <Link href="/themes">Themes</Link>
                 </li>
                 <li>
-                  <a className="" href="https://atom.io/docs">
-                    Documentation
-                  </a>
+                  <Link href="/docs">Documentation</Link>
                 </li>
                 <li>
                   <Link href="https://blog.atom.io/">Blog</Link>
@@ -85,7 +79,7 @@ export default function Home() {
               </ul>
 
               <div className="top-bar-right">
-                <Link href="https://atom.io/login?last_url=%2F">
+                <Link href="/login?last_url=%2F">
                   <span className="octicon octicon-log-in"></span> Sign in
                 </Link>
               </div>
@@ -98,13 +92,13 @@ export default function Home() {
                 <p className="sunset-banner sunset-text-color">
                   Atom and all repositories under Atom will be archived on
                   December 15, 2022
-                  <a
+                  <Link
                     className="sunset-text-color"
                     href="https://github.blog/2022-06-08-sunsetting-atom/"
                   >
                     {" "}
                     Learn more in our official statement
-                  </a>
+                  </Link>
                 </p>
                 <div className="wrapper">
                   <header className="hero-header">
@@ -186,9 +180,7 @@ export default function Home() {
                       </li>
                       <li>
                         <span className="version">1.63</span>
-                        <Link href="https://atom.io/releases">
-                          Release notes
-                        </Link>
+                        <Link href="/releases">Release notes</Link>
                       </li>
 
                       <li>
@@ -198,13 +190,13 @@ export default function Home() {
                         </span>
                       </li>
                       <li>
-                        <a
-                          href="https://atom.io/download/windows_x64"
+                        <Link
+                          href="/download/windows_x64"
                           className="welcome-button js-download-button"
                         >
                           <span className="octicon octicon-move-down"></span>
                           Download
-                        </a>
+                        </Link>
                       </li>
                     </ul>
 
@@ -219,10 +211,8 @@ export default function Home() {
                       <Link href="https://github.com/atom/atom/releases/latest">
                         Other platforms
                       </Link>
-                      <Link href="https://atom.io/beta">Try Atom Beta</Link>
-                      <Link href="https://atom.io/nightly">
-                        Try Atom Nightly
-                      </Link>
+                      <Link href="/beta">Try Atom Beta</Link>
+                      <Link href="/nightly">Try Atom Nightly</Link>
                     </p>
                   </header>
 
@@ -274,12 +264,12 @@ export default function Home() {
                   </p>
 
                   <p className="welcome-cta">
-                    <a
+                    <Link
                       href="https://teletype.atom.io/"
                       className="welcome-button"
                     >
                       Learn more
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </section>
@@ -310,12 +300,12 @@ export default function Home() {
                   </p>
 
                   <p className="welcome-cta">
-                    <a
+                    <Link
                       href="https://github.atom.io/"
                       className="welcome-button"
                     >
                       Learn more
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </section>
@@ -383,9 +373,7 @@ export default function Home() {
                       <h4>Packages</h4>
                       <p>
                         Choose from thousands of{" "}
-                        <Link href="https://atom.io/packages">
-                          open source packages{" "}
-                        </Link>
+                        <Link href="/packages">open source packages </Link>
                         that add new features and functionality to Atom, or
                         build a package from scratch and publish it for everyone
                         else to use.
@@ -396,7 +384,7 @@ export default function Home() {
                       <h4>Themes</h4>
                       <p>
                         Atom comes pre-installed with four UI and eight syntax{" "}
-                        <Link href="https://atom.io/themes">themes </Link>
+                        <Link href="/themes">themes </Link>
                         in both dark and light colors. Can&apos;t find what
                         you&apos;re looking for? Install themes created by the
                         Atom community or create your own.
@@ -412,12 +400,12 @@ export default function Home() {
                       </p>
                       <p>
                         <br />
-                        <a
+                        <Link
                           href="https://www.youtube.com/watch?v=U5POoGSrtGg"
                           target="_blank"
                         >
                           See how to set up Atom
-                        </a>
+                        </Link>
                       </p>
                     </div>
                     <div className="features-item">
@@ -445,12 +433,12 @@ export default function Home() {
                         help improve your favorite text editor.
                       </p>
                       <p className="welcome-cta">
-                        <a
+                        <Link
                           href="https://github.com/atom/atom"
                           className="welcome-button"
                         >
                           Fork on GitHub
-                        </a>
+                        </Link>
                       </p>
                     </div>
 
@@ -493,7 +481,7 @@ export default function Home() {
                           <tr>
                             <td>RSS Feed</td>
                             <td>
-                              <Link href="https://atom.io/packages.atom">
+                              <Link href="/packages.atom">
                                 Packages &amp; Themes
                               </Link>
                             </td>
@@ -530,13 +518,13 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://atom.io/releases">Releases</Link>
+                  <Link href="/releases">Releases</Link>
                 </li>
                 <li>
                   <Link href="https://flight-manual.atom.io/faq/">FAQ</Link>
                 </li>
                 <li>
-                  <Link href="https://atom.io/contact">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
 

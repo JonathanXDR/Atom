@@ -179,9 +179,9 @@ export default function Teletype() {
             <h2>Getting started</h2>
             <h4>1. Install Atom</h4>
             <p>
-              Download and install <Link href="https://atom.io/">Atom</Link>.
-              It&apos;s free, open source, and cross-platform. You can use it on
-              Windows, macOS, or Linux.
+              Download and install <Link href="/">Atom</Link>. It&apos;s free,
+              open source, and cross-platform. You can use it on Windows, macOS,
+              or Linux.
             </p>
             <h4>2. Install Teletype for Atom</h4>
             <p>
@@ -241,7 +241,7 @@ export default function Teletype() {
           </div>
 
           <div className="wrapper love">
-            <a className="love" href="https://github.com/">
+            <Link className="love" href="https://github.com/">
               <span
                 className="octicon octicon-code"
                 role="img"
@@ -259,7 +259,7 @@ export default function Teletype() {
                 role="img"
                 aria-label="GitHub"
               ></span>
-            </a>
+            </Link>
           </div>
         </footer>
       </body>

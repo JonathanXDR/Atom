@@ -65,19 +65,13 @@ export default function Nightly() {
                   </h1>
                 </li>
                 <li>
-                  <a className="" href="/packages">
-                    Packages
-                  </a>
+                  <Link href="/packages">Packages</Link>
                 </li>
                 <li>
-                  <a className="" href="/themes">
-                    Themes
-                  </a>
+                  <Link href="/themes">Themes</Link>
                 </li>
                 <li>
-                  <a className="" href="/docs">
-                    Documentation
-                  </a>
+                  <Link href="/docs">Documentation</Link>
                 </li>
                 <li>
                   <Link href="https://blog.atom.io/">Blog</Link>
@@ -190,13 +184,13 @@ export default function Nightly() {
                         </span>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="/download/windows_x64?channel=nightly"
                           className="welcome-button js-download-button"
                         >
                           <span className="octicon octicon-move-down"></span>
                           Download
-                        </a>
+                        </Link>
                       </li>
                     </ul>
 

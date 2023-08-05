@@ -5,14 +5,17 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1.0",
-  metadataBase: new URL("https://atom.io"),
+  metadataBase: new URL("/"),
+  title: "Atom",
+  description:
+    "At GitHub, we're building the text editor we've always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can't wait to see what you build with it.",
   openGraph: {
-    url: "https://atom.io/",
+    url: "/",
     siteName: "Atom",
+    type: "website",
     title: "A hackable text editor for the 21st Century",
     description:
       "At GitHub, we're building the text editor we've always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can't wait to see what you build with it.",
-    type: "website",
     images: [
       {
         url: "assets/png/atom-mark@1200x630.png",
@@ -21,7 +24,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  title: "Atom",
   authors: [
     {
       name: "GitHub",
@@ -32,6 +34,20 @@ export const metadata: Metadata = {
       url: "https://jonathan-russ.com",
     },
   ],
+  icons: {
+    icon: "favicon.ico",
+  },
+  alternates: {
+    canonical: "/",
+    types: {
+      "application/atom+xml": [
+        {
+          url: "/packages.atom",
+          title: "Atom Packages and Themes",
+        },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({

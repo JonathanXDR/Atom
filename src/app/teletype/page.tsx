@@ -8,7 +8,7 @@ import realTimePrivacy1 from "/public/assets/svg/real-time-privacy-1.svg";
 import realTimePrivacy2 from "/public/assets/svg/real-time-privacy-2.svg";
 
 export default function Teletype() {
-  const [isPlaying, setIsPlaying] = React.useState(true);
+  const [isPlaying, setIsPlaying] = React.useState(false);
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const videoButtonRef = React.useRef<HTMLButtonElement>(null);
 

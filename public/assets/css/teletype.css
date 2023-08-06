@@ -10,6 +10,8 @@ html {
 
 /* line 34, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 body {
+  color: unset;
+  background: unset;
   margin: 0;
 }
 
@@ -190,6 +192,7 @@ code {
 /* Content -------------------------- */
 /* line 202, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 .logo {
+  display: unset;
   margin-top: 1rem;
   height: 60px;
 }

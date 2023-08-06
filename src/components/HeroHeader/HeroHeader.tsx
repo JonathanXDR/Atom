@@ -14,6 +14,7 @@ import portalRed from "/public/assets/svg/portal-red.svg";
 import portalYellowSemi from "/public/assets/svg/portal-yellow-semi.svg";
 import portalYellow from "/public/assets/svg/portal-yellow.svg";
 
+import { DownloadIcon } from "@primer/octicons-react";
 import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
 
 const HeroMeta: React.FC = () => {
@@ -120,7 +121,8 @@ const HeroMeta: React.FC = () => {
             }
             className="welcome-button js-download-button"
           >
-            <span className="octicon octicon-move-down"></span>
+            {/* <span className="octicon octicon-move-down"></span> */}
+            <DownloadIcon size={16} />
             Download
           </Link>
         </li>

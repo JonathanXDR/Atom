@@ -2,6 +2,7 @@
 import FooterItem from "@/components/FooterItem/FooterItem";
 import HeroHeader from "@/components/HeroHeader/HeroHeader";
 import NavItem from "@/components/NavItem/NavItem";
+import { BugIcon, CalendarIcon, RocketIcon } from "@primer/octicons-react";
 import Link from "next/link";
 import "/public/assets/css/application.css";
 
@@ -33,20 +34,50 @@ export default function Nightly() {
                 </p>
 
                 <div className="features-item">
-                  <span className="mega-octicon octicon-rocket"></span>
+                  {/* <span className="mega-octicon octicon-rocket"></span> */}
+                  <div
+                    className="mega-octicon"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <RocketIcon size={24} />
+                  </div>
                   <p>
                     Keep your current Atom configuration when using Atom Nightly
                   </p>
                 </div>
                 <div className="features-item">
-                  <span className="mega-octicon octicon-calendar"></span>
+                  {/* <span className="mega-octicon octicon-calendar"></span> */}
+                  <div
+                    className="mega-octicon"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <CalendarIcon size={24} />
+                  </div>
                   <p>
                     New Nightly releases are available every few days and
                     installed automatically
                   </p>
                 </div>
                 <div className="features-item">
-                  <span className="mega-octicon octicon-bug"></span>
+                  {/* <span className="mega-octicon octicon-bug"></span> */}
+                  <div
+                    className="mega-octicon"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <BugIcon size={24} />
+                  </div>
                   <p>
                     There may be bugs. If you have problems, please{" "}
                     <Link href="https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues">

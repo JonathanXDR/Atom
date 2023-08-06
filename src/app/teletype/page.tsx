@@ -1,4 +1,6 @@
 "use client";
+import CreditBadge from "@/components/CreditBadge/CreditBadge";
+import { BroadcastIcon, PlayIcon } from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -8,18 +10,15 @@ import realTimePrivacy1 from "/public/assets/svg/real-time-privacy-1.svg";
 import realTimePrivacy2 from "/public/assets/svg/real-time-privacy-2.svg";
 
 export default function Teletype() {
-  const [isPlaying, setIsPlaying] = React.useState(false);
   const videoRef = React.useRef<HTMLVideoElement>(null);
+  const videoHudRef = React.useRef<HTMLDivElement>(null);
   const videoButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const playVideo = () => {
-    setIsPlaying(true);
-    if (videoRef.current instanceof HTMLVideoElement) {
-      videoRef.current.style.zIndex = "1";
+    if (videoRef.current) {
       videoRef.current.play();
-    }
-    if (videoButtonRef.current instanceof HTMLButtonElement) {
-      videoButtonRef.current.style.display = "none";
+      videoRef.current.controls = true;
+      videoHudRef.current?.classList.add("is-hidden");
     }
   };
 
@@ -73,7 +72,6 @@ export default function Teletype() {
           </p>
         </div>
       </section>
-
       <section id="demo" className="section">
         <div className="wrapper wrapper--full wrapper--video">
           <div className="video-container">
@@ -82,18 +80,26 @@ export default function Teletype() {
               className="video"
               preload="auto"
               poster="/assets/png/real-time-video-poster.png"
-              controls={isPlaying}
+              controls={false}
             >
               <source src="/assets/videos/real-time.mp4" type="video/mp4" />
               <track kind="captions" />
             </video>
-            <div id="video-hud" className="video-hud">
+            <div ref={videoHudRef} className="video-hud">
               <button
                 ref={videoButtonRef}
-                className="video-play-button mega-octicon octicon-playback-play"
+                className="video-play-button mega-octicon"
                 aria-label="Play video"
                 onClick={playVideo}
-              ></button>
+                style={{
+                  border: "none",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <PlayIcon size={125} />
+              </button>
             </div>
           </div>
         </div>
@@ -127,7 +133,6 @@ export default function Teletype() {
           </p>
         </div>
       </section>
-
       <section id="privacy" className="section">
         <div className="wrapper">
           <h2>How code gets shared</h2>
@@ -170,7 +175,6 @@ export default function Teletype() {
           </p>
         </div>
       </section>
-
       <section id="getting-started" className="section">
         <div className="wrapper">
           <h2>Getting started</h2>
@@ -199,14 +203,15 @@ export default function Teletype() {
           <h4>Share a portal</h4>
           <p>
             Click the{" "}
-            <span
+            {/* <span
               className="octicon octicon-radio-tower"
               role="img"
               aria-label="Teletype"
-            ></span>{" "}
-            icon in the Atom status bar, and flip the switch to start sharing a
-            portal to your workspace. Then invite people to join your portal by
-            sending them your portal URL.
+            ></span>{" "} */}
+            <BroadcastIcon aria-label="Teletype" size={16} /> icon in the Atom
+            status bar, and flip the switch to start sharing a portal to your
+            workspace. Then invite people to join your portal by sending them
+            your portal URL.
           </p>
           <h4>Join a portal</h4>
           <p>
@@ -216,7 +221,6 @@ export default function Teletype() {
           </p>
         </div>
       </section>
-
       <footer id="feedback" className="section">
         <div className="wrapper">
           <h2>Feedback</h2>
@@ -238,25 +242,7 @@ export default function Teletype() {
         </div>
 
         <div className="wrapper love">
-          <Link className="love" href="https://github.com/">
-            <span
-              className="octicon octicon-code"
-              role="img"
-              aria-label="Made"
-            ></span>{" "}
-            with{" "}
-            <span
-              className="octicon octicon-heart"
-              role="img"
-              aria-label="Love"
-            ></span>{" "}
-            by{" "}
-            <span
-              className="octicon octicon-logo-github"
-              role="img"
-              aria-label="GitHub"
-            ></span>
-          </Link>
+          <CreditBadge />
         </div>
       </footer>
     </body>

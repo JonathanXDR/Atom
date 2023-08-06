@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import CreditBadge from "../CreditBadge/CreditBadge";
 
 const FooterItem: React.FC = () => {
   return (
@@ -34,11 +35,7 @@ const FooterItem: React.FC = () => {
           </ul>
 
           <div className="footer-right">
-            <Link href="https://github.com/">
-              <span className="octicon octicon-code"></span> with{" "}
-              <span className="octicon octicon-heart"></span> by{" "}
-              <span className="octicon octicon-logo-github"></span>
-            </Link>
+            <CreditBadge />
           </div>
         </div>
       </div>

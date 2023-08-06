@@ -1,4 +1,6 @@
 "use client";
+import { SignInIcon } from "@primer/octicons-react";
+import { Octicon } from "@primer/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -39,7 +41,15 @@ const NavItem: React.FC = () => {
 
         <div className="top-bar-right">
           <Link href="/login">
-            <span className="octicon octicon-log-in"></span> Sign in
+            {/* <span className="octicon octicon-log-in"></span> */}
+            <Octicon
+              icon={SignInIcon}
+              size={16}
+              sx={{
+                padding: "0",
+              }}
+            />{" "}
+            Sign in
           </Link>
         </div>
       </div>

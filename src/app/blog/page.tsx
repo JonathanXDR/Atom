@@ -1,23 +1,18 @@
 import "./main.css";
+import "/public/assets/css/application.css";
 
 export default function Blog() {
   return (
     <>
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/png/application.css" />
-        <link rel="shortcut icon" href="favicon.ico" />
         <link
           type="application/atom+xml"
           rel="alternate"
           href="https://web.archive.org/web/20221207004825/https://blog.atom.io/feed.xml"
           title="Atom Blog"
         />
-
         <title>Atom Blog | A hackable text editor for the 21st Century</title>
-        <meta name="generator" content="Jekyll v3.9.2" />
         <meta property="og:title" content="Atom Blog" />
         <meta property="og:locale" content="en_US" />
         <meta

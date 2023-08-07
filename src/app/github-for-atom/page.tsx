@@ -1,14 +1,12 @@
 import "./main.css";
+import "/public/assets/css/github.css";
 
 export default function GitHubForAtom() {
   return (
     <>
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>GitHub for Atom</title>
-        <link rel="shortcut icon" href="favicon.ico" />
-
         <link rel="stylesheet" media="all" href="assets/css/github.css" />
         <script src="assets/js/github.js" media="all"></script>
       </head>

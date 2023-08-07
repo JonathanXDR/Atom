@@ -1,10 +1,10 @@
 import "./main.css";
+import "/public/assets/css/application.css";
 
 export default function FAQ() {
   return (
     <>
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>FAQ</title>
         <link rel="icon" href="favicon.ico" />
         <link
@@ -13,7 +13,6 @@ export default function FAQ() {
           href="assets/css/application.css"
           data-proofer-ignore=""
         />
-
         <script type="text/javascript" src="assets/js/application.js"></script>
       </head>
       <body className="layout-article platform-switch platform-mac">

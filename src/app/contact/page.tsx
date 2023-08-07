@@ -1,10 +1,10 @@
 import "./main.css";
+import "/public/assets/css/application.css";
 
 export default function Contact() {
   return (
     <>
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Contact</title>
         <link
           rel="stylesheet"
@@ -16,11 +16,6 @@ export default function Contact() {
           src="assets/js/application.js"
           data-turbolinks-track="true"
         ></script>
-        <meta name="csrf-param" content="authenticity_token" />
-        <meta
-          name="csrf-token"
-          content="CkcpCB7Ds/dw08M1PHTLccRz+OsDaAuzwNV6U94n2QUbBQ/rqXek0oWEFNB8E5i2k/DSvMq5PdSv5/eRVFblYg=="
-        />
         <meta
           property="og:url"
           content="https://web.archive.org/web/20221207004846/https://atom.io/"
@@ -39,31 +34,10 @@ export default function Contact() {
         <meta property="og:image" content="assets/png/atom-mark@1200x630.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@AtomEditor" />
-        <meta property="twitter:creator" content="@github" />
-        <meta property="twitter:title" content="Atom" />
-        <meta
-          property="twitter:description"
-          content="A hackable text editor for the 21st Century"
-        />
-        <meta
-          property="twitter:image:src"
-          content="assets/png/atom-logo@1200x630.png"
-        />
-        <meta property="twitter:image:width" content="1200" />
-        <meta property="twitter:image:height" content="630" />
-
         <meta
           name="description"
           content="At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it."
         />
-        <meta
-          name="google-site-verification"
-          content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY"
-        />
-
         <link
           rel="shortcut icon"
           href="https://web.archive.org/web/20221207004846im_/https://atom.io/favicon.ico"

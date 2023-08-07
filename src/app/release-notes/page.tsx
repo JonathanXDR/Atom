@@ -1,10 +1,10 @@
 import "./main.css";
+import "/public/assets/css/application.css";
 
 export default function ReleaseNotes() {
   return (
     <>
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Release Notes</title>
         <link
           rel="stylesheet"
@@ -16,11 +16,6 @@ export default function ReleaseNotes() {
           src="assets/js/application.js"
           data-turbolinks-track="true"
         ></script>
-        <meta name="csrf-param" content="authenticity_token" />
-        <meta
-          name="csrf-token"
-          content="aF1sGF/JLy+YUXpJUs5fwPJ/kuVNAWO4MJ3tKElk3ThzJqI+8Fk4dHek1fMnw8WzQZasQ2vBOuMF5ZWEGhW2fQ=="
-        />
         <meta
           property="og:url"
           content="https://web.archive.org/web/20221207004857/https://atom.io/"
@@ -39,31 +34,10 @@ export default function ReleaseNotes() {
         <meta property="og:image" content="assets/png/atom-mark@1200x630.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@AtomEditor" />
-        <meta property="twitter:creator" content="@github" />
-        <meta property="twitter:title" content="Atom" />
-        <meta
-          property="twitter:description"
-          content="A hackable text editor for the 21st Century"
-        />
-        <meta
-          property="twitter:image:src"
-          content="assets/png/atom-logo@1200x630.png"
-        />
-        <meta property="twitter:image:width" content="1200" />
-        <meta property="twitter:image:height" content="630" />
-
         <meta
           name="description"
           content="At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it."
         />
-        <meta
-          name="google-site-verification"
-          content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY"
-        />
-
         <link
           rel="shortcut icon"
           href="https://web.archive.org/web/20221207004857im_/https://atom.io/favicon.ico"
@@ -76,22 +50,22 @@ export default function ReleaseNotes() {
         />
       </head>
       <body>
-        <div class="footer-push">
-          <nav class="top-bar" aria-label="Primary">
-            <div class="wrapper no-pad">
-              <ul class="navigation">
+        <div className="footer-push">
+          <nav className="top-bar" aria-label="Primary">
+            <div className="wrapper no-pad">
+              <ul className="navigation">
                 <li>
                   <h1>
                     <a
                       href="https://web.archive.org/web/20221207004857/https://atom.io/"
-                      class="logo-small"
+                      className="logo-small"
                       title="Atom: A hackable text editor for the 21st Century"
                     ></a>
                   </h1>
                 </li>
                 <li>
                   <a
-                    class=""
+                    className=""
                     href="https://web.archive.org/web/20221207004857/https://atom.io/packages"
                   >
                     Packages
@@ -99,7 +73,7 @@ export default function ReleaseNotes() {
                 </li>
                 <li>
                   <a
-                    class=""
+                    className=""
                     href="https://web.archive.org/web/20221207004857/https://atom.io/themes"
                   >
                     Themes
@@ -107,7 +81,7 @@ export default function ReleaseNotes() {
                 </li>
                 <li>
                   <a
-                    class=""
+                    className=""
                     href="https://web.archive.org/web/20221207004857/https://atom.io/docs"
                   >
                     Documentation
@@ -125,34 +99,34 @@ export default function ReleaseNotes() {
                 </li>
               </ul>
 
-              <div class="top-bar-right">
+              <div className="top-bar-right">
                 <a href="https://web.archive.org/web/20221207004857/https://atom.io/login?last_url=%2Freleases">
-                  <span class="octicon octicon-log-in"></span> Sign in
+                  <span className="octicon octicon-log-in"></span> Sign in
                 </a>
               </div>
             </div>
           </nav>
 
           <div id="js-pjax-container">
-            <div class="wrapper releases search-page content-push">
-              <div class="markdown-body">
-                <h1 class="releases-header">Release notes</h1>
-                <div class="release">
+            <div className="wrapper releases search-page content-push">
+              <div className="markdown-body">
+                <h1 className="releases-header">Release notes</h1>
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.63.1">
-                      v1.63.1 <span class="release-date">(2022-11-23)</span>
+                      v1.63.1 <span className="release-date">(2022-11-23)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -173,13 +147,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -197,22 +171,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.63.0">
-                      v1.63.0 <span class="release-date">(2022-11-18)</span>
+                      v1.63.0 <span className="release-date">(2022-11-18)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -260,13 +234,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -422,13 +396,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -462,13 +436,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-php"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-php"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php">
@@ -502,13 +476,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-ruby"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-ruby"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-ruby">
@@ -558,23 +532,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.61.0-beta0">
                       v1.61.0-beta0
-                      <span class="release-date">(2022-03-08)</span>
+                      <span className="release-date">(2022-03-08)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -622,13 +596,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -731,13 +705,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -771,13 +745,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-php"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-php"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php">
@@ -811,13 +785,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-ruby"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-ruby"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-ruby">
@@ -867,22 +841,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.60.0">
-                      v1.60.0 <span class="release-date">(2022-03-08)</span>
+                      v1.60.0 <span className="release-date">(2022-03-08)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -913,13 +887,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -1201,13 +1175,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="keybinding-resolver"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#keybinding-resolver"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/keybinding-resolver">
@@ -1240,13 +1214,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="notifications"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notifications"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/notifications">
@@ -1264,13 +1238,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tabs"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tabs"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tabs">
@@ -1299,13 +1273,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tree-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tree-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tree-view">
@@ -1334,13 +1308,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-css"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-css"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-css">
@@ -1403,7 +1377,8 @@ export default function ReleaseNotes() {
                     </li>
                     <li>
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-css/pull/178">
-                        atom/language-css#178 - Add :focus-visible pseudoclass
+                        atom/language-css#178 - Add :focus-visible
+                        pseudoclassName
                       </a>
                     </li>
                     <li>
@@ -1420,23 +1395,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.60.0-beta0">
                       v1.60.0-beta0
-                      <span class="release-date">(2022-02-08)</span>
+                      <span className="release-date">(2022-02-08)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -1461,13 +1436,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -1749,13 +1724,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="keybinding-resolver"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#keybinding-resolver"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/keybinding-resolver">
@@ -1788,13 +1763,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="notifications"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notifications"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/notifications">
@@ -1812,13 +1787,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tabs"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tabs"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tabs">
@@ -1847,13 +1822,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tree-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tree-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tree-view">
@@ -1882,13 +1857,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-css"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-css"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-css">
@@ -1951,7 +1926,8 @@ export default function ReleaseNotes() {
                     </li>
                     <li>
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-css/pull/178">
-                        atom/language-css#178 - Add :focus-visible pseudoclass
+                        atom/language-css#178 - Add :focus-visible
+                        pseudoclassName
                       </a>
                     </li>
                     <li>
@@ -1968,22 +1944,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.59.0">
-                      v1.59.0 <span class="release-date">(2022-02-08)</span>
+                      v1.59.0 <span className="release-date">(2022-02-08)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -2007,13 +1983,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -2176,23 +2152,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.59.0-beta0">
                       v1.59.0-beta0
-                      <span class="release-date">(2021-07-27)</span>
+                      <span className="release-date">(2021-07-27)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -2216,13 +2192,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -2385,22 +2361,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.58.0">
-                      v1.58.0 <span class="release-date">(2021-07-27)</span>
+                      v1.58.0 <span className="release-date">(2021-07-27)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -2449,13 +2425,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -2613,13 +2589,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="archive-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#archive-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/archive-view">
@@ -2643,13 +2619,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="bracket-matcher"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#bracket-matcher"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/bracket-matcher">
@@ -2684,13 +2660,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="find-and-replace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#find-and-replace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/find-and-replace">
@@ -2726,13 +2702,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="whitespace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#whitespace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/whitespace">
@@ -2768,13 +2744,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-php"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-php"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php">
@@ -2791,7 +2767,7 @@ export default function ReleaseNotes() {
                     <li>
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php/pull/397">
                         atom/language-php#397 - Support UTF-8 characters in
-                        namespaces and class names
+                        namespaces and className names
                       </a>
                     </li>
                     <li>
@@ -2847,13 +2823,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-python"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-python"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-python">
@@ -2882,22 +2858,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.57.0">
-                      v1.57.0 <span class="release-date">(2021-05-11)</span>
+                      v1.57.0 <span className="release-date">(2021-05-11)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -2914,13 +2890,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -2996,13 +2972,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="settings-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#settings-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/settings-view">
@@ -3026,13 +3002,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tree-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tree-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tree-view">
@@ -3050,23 +3026,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.58.0-beta0">
                       v1.58.0-beta0
-                      <span class="release-date">(2021-05-11)</span>
+                      <span className="release-date">(2021-05-11)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -3089,13 +3065,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -3134,13 +3110,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="find-and-replace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#find-and-replace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/find-and-replace">
@@ -3176,13 +3152,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="whitespace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#whitespace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/whitespace">
@@ -3217,23 +3193,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.57.0-beta0">
                       v1.57.0-beta0
-                      <span class="release-date">(2021-04-13)</span>
+                      <span className="release-date">(2021-04-13)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -3250,13 +3226,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -3332,13 +3308,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="settings-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#settings-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/settings-view">
@@ -3362,13 +3338,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tree-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tree-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tree-view">
@@ -3386,22 +3362,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.56.0">
-                      v1.56.0 <span class="release-date">(2021-04-13)</span>
+                      v1.56.0 <span className="release-date">(2021-04-13)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -3438,13 +3414,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -3492,13 +3468,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -3540,13 +3516,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="spell-check"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#spell-check"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/spell-check">
@@ -3568,22 +3544,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.55.0">
-                      v1.55.0 <span class="release-date">(2021-03-09)</span>
+                      v1.55.0 <span className="release-date">(2021-03-09)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -3600,13 +3576,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -3634,13 +3610,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -3738,23 +3714,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.56.0-beta0">
                       v1.56.0-beta0
-                      <span class="release-date">(2021-03-09)</span>
+                      <span className="release-date">(2021-03-09)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -3778,13 +3754,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -3832,13 +3808,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -3880,13 +3856,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="spell-check"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#spell-check"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/spell-check">
@@ -3908,22 +3884,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.54.0">
-                      v1.54.0 <span class="release-date">(2021-01-13)</span>
+                      v1.54.0 <span className="release-date">(2021-01-13)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -3964,13 +3940,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -4071,13 +4047,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="find-and-replace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#find-and-replace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/find-and-replace">
@@ -4096,13 +4072,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -4372,13 +4348,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="spell-check"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#spell-check"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/spell-check">
@@ -4402,13 +4378,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tree-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tree-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tree-view">
@@ -4431,23 +4407,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.55.0-beta0">
                       v1.55.0-beta0
-                      <span class="release-date">(2021-01-13)</span>
+                      <span className="release-date">(2021-01-13)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -4464,13 +4440,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -4498,13 +4474,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -4538,23 +4514,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.54.0-beta0">
                       v1.54.0-beta0
-                      <span class="release-date">(2020-11-10)</span>
+                      <span className="release-date">(2020-11-10)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -4601,13 +4577,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -4708,13 +4684,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="find-and-replace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#find-and-replace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/find-and-replace">
@@ -4733,13 +4709,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -5009,13 +4985,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="spell-check"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#spell-check"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/spell-check">
@@ -5039,13 +5015,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tree-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tree-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tree-view">
@@ -5068,22 +5044,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.53.0">
-                      v1.53.0 <span class="release-date">(2020-11-10)</span>
+                      v1.53.0 <span className="release-date">(2020-11-10)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -5131,13 +5107,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -5450,13 +5426,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="find-and-replace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#find-and-replace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/find-and-replace">
@@ -5474,13 +5450,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="fuzzy-finder"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#fuzzy-finder"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/fuzzy-finder">
@@ -5498,13 +5474,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -5556,13 +5532,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="settings-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#settings-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/settings-view">
@@ -5581,13 +5557,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="spell-check"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#spell-check"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/spell-check">
@@ -5611,13 +5587,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tree-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tree-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tree-view">
@@ -5650,23 +5626,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.53.0-beta0">
                       v1.53.0-beta0
-                      <span class="release-date">(2020-10-13)</span>
+                      <span className="release-date">(2020-10-13)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -5697,13 +5673,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -6016,13 +5992,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="find-and-replace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#find-and-replace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/find-and-replace">
@@ -6040,13 +6016,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="fuzzy-finder"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#fuzzy-finder"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/fuzzy-finder">
@@ -6064,13 +6040,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -6122,13 +6098,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="settings-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#settings-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/settings-view">
@@ -6147,13 +6123,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="tree-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#tree-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/tree-view">
@@ -6186,22 +6162,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.52.0">
-                      v1.52.0 <span class="release-date">(2020-10-13)</span>
+                      v1.52.0 <span className="release-date">(2020-10-13)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -6236,13 +6212,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -6315,13 +6291,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="find-and-replace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#find-and-replace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/find-and-replace">
@@ -6340,13 +6316,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="settings-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#settings-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/settings-view">
@@ -6365,13 +6341,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-php"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-php"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php">
@@ -6395,13 +6371,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-python"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-python"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-python">
@@ -6418,23 +6394,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.52.0-beta0">
                       v1.52.0-beta0
-                      <span class="release-date">(2020-09-09)</span>
+                      <span className="release-date">(2020-09-09)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -6469,13 +6445,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -6548,13 +6524,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="find-and-replace"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#find-and-replace"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/find-and-replace">
@@ -6573,13 +6549,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="settings-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#settings-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/settings-view">
@@ -6598,13 +6574,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-php"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-php"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php">
@@ -6628,13 +6604,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-python"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-python"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-python">
@@ -6651,22 +6627,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.51.0">
-                      v1.51.0 <span class="release-date">(2020-09-09)</span>
+                      v1.51.0 <span className="release-date">(2020-09-09)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -6683,13 +6659,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -6723,23 +6699,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.51.0-beta0">
                       v1.51.0-beta0
-                      <span class="release-date">(2020-08-11)</span>
+                      <span className="release-date">(2020-08-11)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -6757,13 +6733,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -6797,22 +6773,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.50.0">
-                      v1.50.0 <span class="release-date">(2020-08-11)</span>
+                      v1.50.0 <span className="release-date">(2020-08-11)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -6859,28 +6835,28 @@ export default function ReleaseNotes() {
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php/pull/380">
                         https://github.com/atom/language-php/pull/380
                       </a>
-                      - Add support for typed properties, anonymous classes,
+                      - Add support for typed properties, anonymous classNamees,
                       object serialization
                     </li>
                     <li>
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php/pull/384">
                         https://github.com/atom/language-php/pull/384
                       </a>
-                      - Fix parsing class with capital letter after instanceof
-                      correctly
+                      - Fix parsing className with capital letter after
+                      instanceof correctly
                     </li>
                   </ul>
 
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -6950,13 +6926,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-gfm"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-gfm"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-gfm">
@@ -6976,13 +6952,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-php"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-php"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php">
@@ -7010,26 +6986,26 @@ export default function ReleaseNotes() {
                     <li>
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php/pull/380">
                         atom/language-php#380 - Typed properties, anonymous
-                        classes, object serialization
+                        classNamees, object serialization
                       </a>
                     </li>
                     <li>
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php/pull/384">
-                        atom/language-php#384 - Parse class with capitol letter
-                        after instanceof correctly
+                        atom/language-php#384 - Parse className with capitol
+                        letter after instanceof correctly
                       </a>
                     </li>
                   </ul>
                   <h3>
                     <a
                       id="language-typescript"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-typescript"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-typescript">
@@ -7046,23 +7022,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.50.0-beta0">
                       v1.50.0-beta0
-                      <span class="release-date">(2020-07-14)</span>
+                      <span className="release-date">(2020-07-14)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -7091,13 +7067,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -7167,13 +7143,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-gfm"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-gfm"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-gfm">
@@ -7193,13 +7169,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-php"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-php"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php">
@@ -7227,26 +7203,26 @@ export default function ReleaseNotes() {
                     <li>
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php/pull/380">
                         atom/language-php#380 - Typed properties, anonymous
-                        classes, object serialization
+                        classNamees, object serialization
                       </a>
                     </li>
                     <li>
                       <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-php/pull/384">
-                        atom/language-php#384 - Parse class with capitol letter
-                        after instanceof correctly
+                        atom/language-php#384 - Parse className with capitol
+                        letter after instanceof correctly
                       </a>
                     </li>
                   </ul>
                   <h3>
                     <a
                       id="language-typescript"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-typescript"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-typescript">
@@ -7263,22 +7239,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.49.0">
-                      v1.49.0 <span class="release-date">(2020-07-14)</span>
+                      v1.49.0 <span className="release-date">(2020-07-14)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -7302,13 +7278,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -7364,22 +7340,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.48.0">
-                      v1.48.0 <span class="release-date">(2020-06-10)</span>
+                      v1.48.0 <span className="release-date">(2020-06-10)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -7433,13 +7409,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -7485,23 +7461,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.49.0-beta0">
                       v1.49.0-beta0
-                      <span class="release-date">(2020-06-10)</span>
+                      <span className="release-date">(2020-06-10)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -7525,13 +7501,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -7582,23 +7558,23 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.48.0-beta0">
                       v1.48.0-beta0
-                      <span class="release-date">(2020-05-19)</span>
+                      <span className="release-date">(2020-05-19)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -7633,13 +7609,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -7673,22 +7649,22 @@ export default function ReleaseNotes() {
                   </ul>
                 </div>
                 <hr />
-                <div class="release">
+                <div className="release">
                   <h2>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom/releases/tag/v1.47.0">
-                      v1.47.0 <span class="release-date">(2020-05-19)</span>
+                      v1.47.0 <span className="release-date">(2020-05-19)</span>
                     </a>
                   </h2>
                   <h2>
                     <a
                       id="notable-changes"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#notable-changes"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     Notable Changes
@@ -7730,13 +7706,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="atom-core"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#atom-core"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/atom">
@@ -7787,13 +7763,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="fuzzy-finder"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#fuzzy-finder"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/fuzzy-finder">
@@ -7811,13 +7787,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="github"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#github"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/github">
@@ -7835,13 +7811,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="settings-view"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#settings-view"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/settings-view">
@@ -7860,13 +7836,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="snippets"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#snippets"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/snippets">
@@ -7884,13 +7860,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="spell-check"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#spell-check"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/spell-check">
@@ -7909,13 +7885,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-c"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-c"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-c">
@@ -7942,13 +7918,13 @@ export default function ReleaseNotes() {
                   <h3>
                     <a
                       id="language-ruby"
-                      class="anchor"
+                      className="anchor"
                       href="https://web.archive.org/web/20221207004857/https://atom.io/releases#language-ruby"
                       aria-hidden="true"
                     >
                       <span
                         aria-hidden="true"
-                        class="octicon octicon-link"
+                        className="octicon octicon-link"
                       ></span>
                     </a>
                     <a href="https://web.archive.org/web/20221207004857/https://github.com/atom/language-ruby">
@@ -7970,13 +7946,13 @@ export default function ReleaseNotes() {
             </div>
           </div>
 
-          <div class="footer-pad"></div>
+          <div className="footer-pad"></div>
         </div>
 
         <footer>
-          <div class="footer">
-            <div class="wrapper no-pad">
-              <ul class="footer-left">
+          <div className="footer">
+            <div className="wrapper no-pad">
+              <ul className="footer-left">
                 <li>
                   <a href="https://web.archive.org/web/20221207004857/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                     Terms of Use
@@ -8009,11 +7985,11 @@ export default function ReleaseNotes() {
                 </li>
               </ul>
 
-              <div class="footer-right">
+              <div className="footer-right">
                 <a href="https://web.archive.org/web/20221207004857/https://github.com/">
-                  <span class="octicon octicon-code"></span> with
-                  <span class="octicon octicon-heart"></span> by
-                  <span class="octicon octicon-logo-github"></span>
+                  <span className="octicon octicon-code"></span> with
+                  <span className="octicon octicon-heart"></span> by
+                  <span className="octicon octicon-logo-github"></span>
                 </a>
               </div>
             </div>

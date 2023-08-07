@@ -1,10 +1,10 @@
 import "./main.css";
+import "/public/assets/css/application.css";
 
 export default function Themes() {
   return (
     <>
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Themes</title>
         <link
           rel="stylesheet"
@@ -16,11 +16,6 @@ export default function Themes() {
           src="assets/js/application.js"
           data-turbolinks-track="true"
         ></script>
-        <meta name="csrf-param" content="authenticity_token" />
-        <meta
-          name="csrf-token"
-          content="khEvawaS0r5b0MGjG7Ed95bY3zpXAvx04ws417Yz9P65KxNO0Q0hS5EqgL7gQP8bXx6q+e5aDLoMnRmHHBJTiA=="
-        />
         <meta
           property="og:url"
           content="https://web.archive.org/web/20221201075853/https://atom.io/"
@@ -39,31 +34,10 @@ export default function Themes() {
         <meta property="og:image" content="assets/png/atom-mark@1200x630.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@AtomEditor" />
-        <meta property="twitter:creator" content="@github" />
-        <meta property="twitter:title" content="Atom" />
-        <meta
-          property="twitter:description"
-          content="A hackable text editor for the 21st Century"
-        />
-        <meta
-          property="twitter:image:src"
-          content="assets/png/atom-logo@1200x630.png"
-        />
-        <meta property="twitter:image:width" content="1200" />
-        <meta property="twitter:image:height" content="630" />
-
         <meta
           name="description"
           content="At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it."
         />
-        <meta
-          name="google-site-verification"
-          content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY"
-        />
-
         <link
           rel="shortcut icon"
           href="https://web.archive.org/web/20221201075853im_/https://atom.io/favicon.ico"
@@ -76,22 +50,22 @@ export default function Themes() {
         />
       </head>
       <body>
-        <div class="footer-push">
-          <nav class="top-bar" aria-label="Primary">
-            <div class="wrapper no-pad">
-              <ul class="navigation">
+        <div className="footer-push">
+          <nav className="top-bar" aria-label="Primary">
+            <div className="wrapper no-pad">
+              <ul className="navigation">
                 <li>
                   <h1>
                     <a
                       href="https://web.archive.org/web/20221201075853/https://atom.io/"
-                      class="logo-small"
+                      className="logo-small"
                       title="Atom: A hackable text editor for the 21st Century"
                     ></a>
                   </h1>
                 </li>
                 <li>
                   <a
-                    class=""
+                    className=""
                     href="https://web.archive.org/web/20221201075853/https://atom.io/packages"
                   >
                     Packages
@@ -99,7 +73,7 @@ export default function Themes() {
                 </li>
                 <li>
                   <a
-                    class="is-selected"
+                    className="is-selected"
                     href="https://web.archive.org/web/20221201075853/https://atom.io/themes"
                   >
                     Themes
@@ -107,7 +81,7 @@ export default function Themes() {
                 </li>
                 <li>
                   <a
-                    class=""
+                    className=""
                     href="https://web.archive.org/web/20221201075853/https://atom.io/docs"
                   >
                     Documentation
@@ -125,22 +99,22 @@ export default function Themes() {
                 </li>
               </ul>
 
-              <div class="top-bar-right">
+              <div className="top-bar-right">
                 <a href="https://web.archive.org/web/20221201075853/https://atom.io/login?last_url=%2Fthemes">
-                  <span class="octicon octicon-log-in"></span> Sign in
+                  <span className="octicon octicon-log-in"></span> Sign in
                 </a>
               </div>
             </div>
           </nav>
 
           <div id="js-pjax-container">
-            <div class="wrapper content-push themes">
-              <h2 class="center index-title">
+            <div className="wrapper content-push themes">
+              <h2 className="center index-title">
                 Pick your favorite flavor of Atom.
               </h2>
 
               <form
-                class="search-form"
+                className="search-form"
                 action="https://web.archive.org/web/20221201075853/https://atom.io/themes/search"
                 accept-charset="UTF-8"
                 method="get"
@@ -149,39 +123,39 @@ export default function Themes() {
                 <input
                   type="search"
                   name="q"
-                  class="search-input"
+                  className="search-input"
                   placeholder="Search 664,454 themes"
                 />
                 <input
                   type="submit"
-                  class="button search-button"
+                  className="button search-button"
                   value="Search"
                 />
               </form>
-              <div class="package-list featured">
-                <div class="package-list-header">
-                  <h3 class="package-list-title">
-                    <span class="mega-octicon octicon-megaphone"></span>
+              <div className="package-list featured">
+                <div className="package-list-header">
+                  <h3 className="package-list-title">
+                    <span className="mega-octicon octicon-megaphone"></span>
                     Featured
                   </h3>
                 </div>
-                <div class="halves">
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                <div className="halves">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/atom-material-ui">
                               atom-material-ui
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           A dynamic UI theme for Atom that follows Google's
                           Material Design Guidelines
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:ui"
@@ -225,45 +199,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/atom-material">
                           <img
                             src="assets/png/atom-material.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/atom-material"
-                          class="author"
+                          className="author"
                         >
                           atom-material
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="2,509,605 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">2,509,605</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">2,509,605</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/atom-material-ui/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star atom-material-ui"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/atom-material-ui/stargazers"
                                 aria-label="1786 users starred atom-material-ui"
                               >
@@ -273,15 +247,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=atom-material-ui"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -291,30 +265,30 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/atom-material-syntax">
                               atom-material-syntax
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           A dark syntax theme for Atom that uses Google's
                           Material Design color palette
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:syntax"
@@ -350,45 +324,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/atom-material">
                           <img
                             src="assets/png/atom-material.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/atom-material"
-                          class="author"
+                          className="author"
                         >
                           atom-material
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="1,743,927 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">1,743,927</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">1,743,927</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/atom-material-syntax/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star atom-material-syntax"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/atom-material-syntax/stargazers"
                                 aria-label="1321 users starred atom-material-syntax"
                               >
@@ -398,15 +372,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=atom-material-syntax"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -416,8 +390,8 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
@@ -427,61 +401,61 @@ export default function Themes() {
                 </div>
               </div>
 
-              <div class="package-list trending">
-                <div class="package-list-header">
-                  <h3 class="package-list-title">
-                    <span class="mega-octicon octicon-flame"></span>
+              <div className="package-list trending">
+                <div className="package-list-header">
+                  <h3 className="package-list-title">
+                    <span className="mega-octicon octicon-flame"></span>
                     Trending
-                    <div class="trending-select">
-                      <div class="select-menu js-menu-container js-select-menu">
+                    <div className="trending-select">
+                      <div className="select-menu js-menu-container js-select-menu">
                         <a
-                          class="js-menu-target"
+                          className="js-menu-target"
                           href="https://web.archive.org/web/20221201075853/https://atom.io/themes/"
                         >
-                          <span class="js-select-button">this week</span>
-                          <span class="octicon octicon-triangle-down"></span>
+                          <span className="js-select-button">this week</span>
+                          <span className="octicon octicon-triangle-down"></span>
                         </a>
 
-                        <div class="select-menu-modal-holder js-menu-content js-navigation-container">
-                          <div class="select-menu-modal">
-                            <div class="select-menu-header">
-                              <span class="select-menu-title">
+                        <div className="select-menu-modal-holder js-menu-content js-navigation-container">
+                          <div className="select-menu-modal">
+                            <div className="select-menu-header">
+                              <span className="select-menu-title">
                                 Adjust time span
                               </span>
-                              <span class="octicon octicon-remove-close js-menu-close"></span>
+                              <span className="octicon octicon-remove-close js-menu-close"></span>
                             </div>
 
-                            <div class="select-menu-list">
+                            <div className="select-menu-list">
                               <div>
                                 <div
-                                  class="select-menu-item js-navigation-item"
+                                  className="select-menu-item js-navigation-item"
                                   data-trending-sort="daily"
                                   data-is-theme='"true"'
                                 >
-                                  <span class="select-menu-item-icon octicon octicon-check"></span>
-                                  <div class="select-menu-item-text js-select-button-text">
+                                  <span className="select-menu-item-icon octicon octicon-check"></span>
+                                  <div className="select-menu-item-text js-select-button-text">
                                     today
                                   </div>
                                 </div>
 
                                 <div
-                                  class="select-menu-item js-navigation-item selected"
+                                  className="select-menu-item js-navigation-item selected"
                                   data-trending-sort="weekly"
                                   data-is-theme='"true"'
                                 >
-                                  <span class="select-menu-item-icon octicon octicon-check"></span>
-                                  <div class="select-menu-item-text js-select-button-text">
+                                  <span className="select-menu-item-icon octicon octicon-check"></span>
+                                  <div className="select-menu-item-text js-select-button-text">
                                     this week
                                   </div>
                                 </div>
 
                                 <div
-                                  class="select-menu-item js-navigation-item"
+                                  className="select-menu-item js-navigation-item"
                                   data-trending-sort="monthly"
                                   data-is-theme='"true"'
                                 >
-                                  <span class="select-menu-item-icon octicon octicon-check"></span>
-                                  <div class="select-menu-item-text js-select-button-text">
+                                  <span className="select-menu-item-icon octicon octicon-check"></span>
+                                  <div className="select-menu-item-text js-select-button-text">
                                     this month
                                   </div>
                                 </div>
@@ -493,41 +467,41 @@ export default function Themes() {
                     </div>
                   </h3>
                 </div>
-                <div class="loading-overlay"></div>
-                <div class="trending-packages halves"></div>
+                <div className="loading-overlay"></div>
+                <div className="trending-packages halves"></div>
               </div>
 
-              <div class="package-list newest">
-                <div class="package-list-header">
-                  <h3 class="package-list-title">
-                    <span class="mega-octicon octicon-clock"></span>
+              <div className="package-list newest">
+                <div className="package-list-header">
+                  <h3 className="package-list-title">
+                    <span className="mega-octicon octicon-clock"></span>
                     Newest
                     <a
                       href="https://web.archive.org/web/20221201075853/https://atom.io/themes/list?sort=created_at&amp;direction=desc"
-                      class="package-list-see-all"
+                      className="package-list-see-all"
                       aria-label="See all newest"
                     >
                       See all{" "}
-                      <span class="octicon octicon-chevron-right"></span>
+                      <span className="octicon octicon-chevron-right"></span>
                     </a>
                   </h3>
                 </div>
-                <div class="halves">
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                <div className="halves">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A">
                               หนัง โป หนัง x ลาว สาว ใหญ่ โป๊
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           หนัง โป็ ฟ รั่ ง
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%E0%B9%89%20%E0%B8%AD%20%E0%B8%AD%E0%B8%A2"
@@ -571,45 +545,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/power-ads">
                           <img
                             src="assets/png/power-ads.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/power-ads"
-                          class="author"
+                          className="author"
                         >
                           power-ads
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star หนัง โป หนัง x ลาว สาว ใหญ่ โป๊"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A/stargazers"
                                 aria-label="0 users starred หนัง โป หนัง x ลาว สาว ใหญ่ โป๊"
                               >
@@ -619,15 +593,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -637,31 +611,31 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87">
                               ครู เอ ล ล่า เต็ม เรื่อง ดู หนัง ฝรั่ง ออนไลน์ ดู
                               หนัง เรื่อง ร่าง ทรง เต็ม เรื่อง
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           ดู หนัง กัปตัน อเมริกา รัก 2 ปี ยินดี คืน เงิน เต็ม
                           เรื่อง ดู หนัง กังฟู แพนด้า 1
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%94%20%E0%B9%82%E0%B8%A3%20%E0%B8%AD%E0%B8%B1%20%E0%B8%A5%20%E0%B8%94%E0%B9%8C%20%E0%B8%94%E0%B8%B2%20%E0%B8%AB%E0%B9%8C%20%E0%B8%A5%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B8%B1%E0%B8%81%202%20%E0%B8%9B%E0%B8%B5%20%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20%E0%B8%84%E0%B8%B7%E0%B8%99%20%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -691,45 +665,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai">
                           <img
                             src="assets/png/NungThai.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai"
-                          class="author"
+                          className="author"
                         >
                           NungThai
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star ครู เอ ล ล่า เต็ม เรื่อง ดู หนัง ฝรั่ง ออนไลน์ ดู หนัง เรื่อง ร่าง ทรง เต็ม เรื่อง"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/stargazers"
                                 aria-label="0 users starred ครู เอ ล ล่า เต็ม เรื่อง ดู หนัง ฝรั่ง ออนไลน์ ดู หนัง เรื่อง ร่าง ทรง เต็ม เรื่อง"
                               >
@@ -739,15 +713,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -757,30 +731,30 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD">
                               central หุ้น หุ้น com7 การ เทรด หุ้น คือ
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           หุ้น ตัว ไหน น่า ซื้อ เก็บ 2564 แอ พ ลอง เล่น หุ้น
                           ราคา หุ้น mk
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
@@ -824,45 +798,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/Featured-ads">
                           <img
                             src="assets/png/Featured-ads.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/Featured-ads"
-                          class="author"
+                          className="author"
                         >
                           Featured-ads
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star central หุ้น หุ้น com7 การ เทรด หุ้น คือ"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD/stargazers"
                                 aria-label="0 users starred central หุ้น หุ้น com7 การ เทรด หุ้น คือ"
                               >
@@ -872,15 +846,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -890,31 +864,31 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87">
                               หนัง ช่อง 7 ออนไลน์ ดู หนัง midway ดู หนัง ออนไลน์
                               ฟา ส 9 เต็ม เรื่อง
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           สามทหาร เสือ ดาบ ทะลุ จอ หนัง ออนไลน์ ช่อง 31 ดู หนัง
                           ชน โรง ฟรี
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:037hd%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%2031"
@@ -942,45 +916,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai">
                           <img
                             src="assets/png/NungThai.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai"
-                          class="author"
+                          className="author"
                         >
                           NungThai
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star หนัง ช่อง 7 ออนไลน์ ดู หนัง midway ดู หนัง ออนไลน์ ฟา ส 9 เต็ม เรื่อง"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/stargazers"
                                 aria-label="0 users starred หนัง ช่อง 7 ออนไลน์ ดู หนัง midway ดู หนัง ออนไลน์ ฟา ส 9 เต็ม เรื่อง"
                               >
@@ -990,15 +964,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -1008,31 +982,31 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87">
                               ดู กา ตู น ออ น ไล ดู หนัง ใหม่ ออนไลน์ hd เว น่
                               อม เต็ม เรื่อง
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           บอส ฉัน ขยัน เชือด เต็ม เรื่อง ดู หนัง ซอมบี้ ออนไลน์
                           movie24thai
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%9F%E0%B8%B9%20%E0%B9%81%E0%B8%9E%E0%B8%99%E0%B8%94%E0%B9%89%E0%B8%B2%201%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8B%E0%B8%AD%E0%B8%A1%E0%B8%9A%E0%B8%B5%E0%B9%89%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C"
@@ -1061,45 +1035,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai">
                           <img
                             src="assets/png/NungThai.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai"
-                          class="author"
+                          className="author"
                         >
                           NungThai
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star ดู กา ตู น ออ น ไล ดู หนัง ใหม่ ออนไลน์ hd เว น่ อม เต็ม เรื่อง"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/stargazers"
                                 aria-label="0 users starred ดู กา ตู น ออ น ไล ดู หนัง ใหม่ ออนไลน์ hd เว น่ อม เต็ม เรื่อง"
                               >
@@ -1109,15 +1083,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -1127,31 +1101,31 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99">
                               ตราสาร หนี้ อ สั ง หา ทรัพย์ เพื่อ การ ลงทุน ถั่ว
                               หุ้น
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           gunkul ขาย หุ้น ซื้อ คืน เปิด พอร์ต หุ้น กสิกร ออนไลน์
                           สอน เล่น หุ้น มือใหม่
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
@@ -1195,45 +1169,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/Featured-ads">
                           <img
                             src="assets/png/Featured-ads.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/Featured-ads"
-                          class="author"
+                          className="author"
                         >
                           Featured-ads
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star ตราสาร หนี้ อ สั ง หา ทรัพย์ เพื่อ การ ลงทุน ถั่ว หุ้น"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99/stargazers"
                                 aria-label="0 users starred ตราสาร หนี้ อ สั ง หา ทรัพย์ เพื่อ การ ลงทุน ถั่ว หุ้น"
                               >
@@ -1243,15 +1217,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -1261,8 +1235,8 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
@@ -1272,39 +1246,39 @@ export default function Themes() {
                 </div>
               </div>
 
-              <div class="package-list updated">
-                <div class="package-list-header">
-                  <h3 class="package-list-title">
-                    <span class="mega-octicon octicon-squirrel"></span>
+              <div className="package-list updated">
+                <div className="package-list-header">
+                  <h3 className="package-list-title">
+                    <span className="mega-octicon octicon-squirrel"></span>
                     Recently Updated
                     <a
                       href="https://web.archive.org/web/20221201075853/https://atom.io/themes/list?sort=updated_at&amp;direction=desc"
-                      class="package-list-see-all"
+                      className="package-list-see-all"
                       aria-label="See all recently updated"
                     >
                       See all{" "}
-                      <span class="octicon octicon-chevron-right"></span>
+                      <span className="octicon octicon-chevron-right"></span>
                     </a>
                   </h3>
                 </div>
-                <div class="halves">
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                <div className="halves">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87">
                               ครู เอ ล ล่า เต็ม เรื่อง ดู หนัง ฝรั่ง ออนไลน์ ดู
                               หนัง เรื่อง ร่าง ทรง เต็ม เรื่อง
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           ดู หนัง กัปตัน อเมริกา รัก 2 ปี ยินดี คืน เงิน เต็ม
                           เรื่อง ดู หนัง กังฟู แพนด้า 1
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%94%20%E0%B9%82%E0%B8%A3%20%E0%B8%AD%E0%B8%B1%20%E0%B8%A5%20%E0%B8%94%E0%B9%8C%20%E0%B8%94%E0%B8%B2%20%E0%B8%AB%E0%B9%8C%20%E0%B8%A5%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B8%B1%E0%B8%81%202%20%E0%B8%9B%E0%B8%B5%20%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20%E0%B8%84%E0%B8%B7%E0%B8%99%20%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -1334,45 +1308,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai">
                           <img
                             src="assets/png/NungThai.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai"
-                          class="author"
+                          className="author"
                         >
                           NungThai
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star ครู เอ ล ล่า เต็ม เรื่อง ดู หนัง ฝรั่ง ออนไลน์ ดู หนัง เรื่อง ร่าง ทรง เต็ม เรื่อง"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/stargazers"
                                 aria-label="0 users starred ครู เอ ล ล่า เต็ม เรื่อง ดู หนัง ฝรั่ง ออนไลน์ ดู หนัง เรื่อง ร่าง ทรง เต็ม เรื่อง"
                               >
@@ -1382,15 +1356,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -1400,29 +1374,29 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A">
                               หนัง โป หนัง x ลาว สาว ใหญ่ โป๊
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           หนัง โป็ ฟ รั่ ง
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%E0%B9%89%20%E0%B8%AD%20%E0%B8%AD%E0%B8%A2"
@@ -1466,45 +1440,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/power-ads">
                           <img
                             src="assets/png/power-ads.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/power-ads"
-                          class="author"
+                          className="author"
                         >
                           power-ads
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star หนัง โป หนัง x ลาว สาว ใหญ่ โป๊"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A/stargazers"
                                 aria-label="0 users starred หนัง โป หนัง x ลาว สาว ใหญ่ โป๊"
                               >
@@ -1514,15 +1488,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -1532,30 +1506,30 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD">
                               central หุ้น หุ้น com7 การ เทรด หุ้น คือ
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           หุ้น ตัว ไหน น่า ซื้อ เก็บ 2564 แอ พ ลอง เล่น หุ้น
                           ราคา หุ้น mk
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
@@ -1599,45 +1573,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/Featured-ads">
                           <img
                             src="assets/png/Featured-ads.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/Featured-ads"
-                          class="author"
+                          className="author"
                         >
                           Featured-ads
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star central หุ้น หุ้น com7 การ เทรด หุ้น คือ"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD/stargazers"
                                 aria-label="0 users starred central หุ้น หุ้น com7 การ เทรด หุ้น คือ"
                               >
@@ -1647,15 +1621,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -1665,31 +1639,31 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87">
                               หนัง ช่อง 7 ออนไลน์ ดู หนัง midway ดู หนัง ออนไลน์
                               ฟา ส 9 เต็ม เรื่อง
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           สามทหาร เสือ ดาบ ทะลุ จอ หนัง ออนไลน์ ช่อง 31 ดู หนัง
                           ชน โรง ฟรี
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:037hd%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%2031"
@@ -1717,45 +1691,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai">
                           <img
                             src="assets/png/NungThai.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai"
-                          class="author"
+                          className="author"
                         >
                           NungThai
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star หนัง ช่อง 7 ออนไลน์ ดู หนัง midway ดู หนัง ออนไลน์ ฟา ส 9 เต็ม เรื่อง"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/stargazers"
                                 aria-label="0 users starred หนัง ช่อง 7 ออนไลน์ ดู หนัง midway ดู หนัง ออนไลน์ ฟา ส 9 เต็ม เรื่อง"
                               >
@@ -1765,15 +1739,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -1783,31 +1757,31 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87">
                               ดู กา ตู น ออ น ไล ดู หนัง ใหม่ ออนไลน์ hd เว น่
                               อม เต็ม เรื่อง
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           บอส ฉัน ขยัน เชือด เต็ม เรื่อง ดู หนัง ซอมบี้ ออนไลน์
                           movie24thai
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%9F%E0%B8%B9%20%E0%B9%81%E0%B8%9E%E0%B8%99%E0%B8%94%E0%B9%89%E0%B8%B2%201%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8B%E0%B8%AD%E0%B8%A1%E0%B8%9A%E0%B8%B5%E0%B9%89%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C"
@@ -1836,45 +1810,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai">
                           <img
                             src="assets/png/NungThai.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/NungThai"
-                          class="author"
+                          className="author"
                         >
                           NungThai
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star ดู กา ตู น ออ น ไล ดู หนัง ใหม่ ออนไลน์ hd เว น่ อม เต็ม เรื่อง"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87/stargazers"
                                 aria-label="0 users starred ดู กา ตู น ออ น ไล ดู หนัง ใหม่ ออนไลน์ hd เว น่ อม เต็ม เรื่อง"
                               >
@@ -1884,15 +1858,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -1902,31 +1876,31 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="grid-cell">
-                    <div class="package-card card">
-                      <div class="body css-truncate">
-                        <h4 class="card-name">
-                          <span class="css-truncate-target">
+                  <div className="grid-cell">
+                    <div className="package-card card">
+                      <div className="body css-truncate">
+                        <h4 className="card-name">
+                          <span className="css-truncate-target">
                             <a href="https://web.archive.org/web/20221201075853/https://atom.io/themes/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99">
                               ตราสาร หนี้ อ สั ง หา ทรัพย์ เพื่อ การ ลงทุน ถั่ว
                               หุ้น
                             </a>
                           </span>
                         </h4>
-                        <span class="css-truncate-target card-description">
+                        <span className="css-truncate-target card-description">
                           gunkul ขาย หุ้น ซื้อ คืน เปิด พอร์ต หุ้น กสิกร ออนไลน์
                           สอน เล่น หุ้น มือใหม่
                         </span>
 
-                        <ul class="keywords">
+                        <ul className="keywords">
                           <li>
                             <a
                               href="https://web.archive.org/web/20221201075853/https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
@@ -1970,45 +1944,45 @@ export default function Themes() {
                         </ul>
                       </div>
 
-                      <div class="meta">
+                      <div className="meta">
                         <a href="https://web.archive.org/web/20221201075853/https://atom.io/users/Featured-ads">
                           <img
                             src="assets/png/Featured-ads.png"
                             alt=""
-                            class="gravatar"
+                            className="gravatar"
                           />
                         </a>
                         <a
                           href="https://web.archive.org/web/20221201075853/https://atom.io/users/Featured-ads"
-                          class="author"
+                          className="author"
                         >
                           Featured-ads
                         </a>
 
-                        <div class="meta-right">
+                        <div className="meta-right">
                           <span
-                            class="stat tooltipped tooltipped-n"
+                            className="stat tooltipped tooltipped-n"
                             aria-label="0 downloads"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
-                            <span class="value">0</span>
+                            <span className="octicon octicon-cloud-download"></span>
+                            <span className="value">0</span>
                           </span>
 
-                          <span class="js-star-wrap">
+                          <span className="js-star-wrap">
                             <div
-                              class="star-box tooltipped tooltipped-nw"
+                              className="star-box tooltipped tooltipped-nw"
                               aria-label="You must be signed in to star packages"
                             >
                               <a
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99/star"
-                                class="js-star-button star-button minibutton with-count disabled"
+                                className="js-star-button star-button minibutton with-count disabled"
                                 data-skip-pjax=""
                                 aria-label="Star ตราสาร หนี้ อ สั ง หา ทรัพย์ เพื่อ การ ลงทุน ถั่ว หุ้น"
                               >
-                                <span class="octicon octicon-star"></span>
+                                <span className="octicon octicon-star"></span>
                               </a>
                               <a
-                                class="social-count"
+                                className="social-count"
                                 href="https://web.archive.org/web/20221201075853/https://atom.io/packages/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99/stargazers"
                                 aria-label="0 users starred ตราสาร หนี้ อ สั ง หา ทรัพย์ เพื่อ การ ลงทุน ถั่ว หุ้น"
                               >
@@ -2018,15 +1992,15 @@ export default function Themes() {
                           </span>
 
                           <a
-                            class="card-install-button minibutton"
+                            className="card-install-button minibutton"
                             href="https://web.archive.org/web/20221201075853/atom://settings-view/show-package?package=%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
                           >
-                            <span class="octicon octicon-cloud-download"></span>
+                            <span className="octicon octicon-cloud-download"></span>
                             Install
                           </a>
                           <div
                             style="display: none"
-                            class="modal-download-atom"
+                            className="modal-download-atom"
                           >
                             <h4>Launching Atom...</h4>
                             <p>
@@ -2036,8 +2010,8 @@ export default function Themes() {
                               </a>
                               and try again.
                             </p>
-                            <button class="card-install-button-close">
-                              <span class="octicon octicon-x"></span>
+                            <button className="card-install-button-close">
+                              <span className="octicon octicon-x"></span>
                             </button>
                           </div>
                         </div>
@@ -2046,20 +2020,20 @@ export default function Themes() {
                   </div>
                 </div>
               </div>
-              <p class="stats-footnote">
+              <p className="stats-footnote">
                 1,080,752 packages &amp; themes have been downloaded 325,262,080
                 times.
               </p>
             </div>
           </div>
 
-          <div class="footer-pad"></div>
+          <div className="footer-pad"></div>
         </div>
 
         <footer>
-          <div class="footer">
-            <div class="wrapper no-pad">
-              <ul class="footer-left">
+          <div className="footer">
+            <div className="wrapper no-pad">
+              <ul className="footer-left">
                 <li>
                   <a href="https://web.archive.org/web/20221201075853/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                     Terms of Use
@@ -2092,11 +2066,11 @@ export default function Themes() {
                 </li>
               </ul>
 
-              <div class="footer-right">
+              <div className="footer-right">
                 <a href="https://web.archive.org/web/20221201075853/https://github.com/">
-                  <span class="octicon octicon-code"></span> with
-                  <span class="octicon octicon-heart"></span> by
-                  <span class="octicon octicon-logo-github"></span>
+                  <span className="octicon octicon-code"></span> with
+                  <span className="octicon octicon-heart"></span> by
+                  <span className="octicon octicon-logo-github"></span>
                 </a>
               </div>
             </div>

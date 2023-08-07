@@ -49,7 +49,6 @@ export default function Contact() {
 
         <div id="js-pjax-container">
           <div className="contact content-push">
-            <Link name="contact"></Link>
             <div className="wrapper">
               <div className="columns">
                 <div className="column main-column">
@@ -68,14 +67,14 @@ export default function Contact() {
                     />
                     <dl className="form">
                       <dt>
-                        <label for="name">Name</label>
+                        <label htmlFor="name">Name</label>
                       </dt>
                       <dd>
                         <input type="text" name="name" id="name" />
                       </dd>
 
                       <dt>
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                       </dt>
                       <dd>
                         <input
@@ -94,17 +93,17 @@ export default function Contact() {
                       </dd>
 
                       <dt>
-                        <label for="subject">Subject</label>
+                        <label htmlFor="subject">Subject</label>
                       </dt>
                       <dd>
                         <input type="text" name="subject" id="subject" />
                       </dd>
 
                       <dt>
-                        <label for="Message">Message</label>
+                        <label htmlFor="Message">Message</label>
                       </dt>
                       <dd>
-                        <textarea name="body" id="body" rows="10"></textarea>
+                        <textarea name="body" id="body" rows={10}></textarea>
                       </dd>
 
                       <input

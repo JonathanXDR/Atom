@@ -1,18 +1,17 @@
 import "./main.css";
 
-export default function Error() {
+export default function NotFound() {
   return (
     <body>
       <div className="dialog">
         <div className="wrapper-top">
-          <h1 className="message">Something has gone wrong</h1>
+          <h1 className="message">This page could not be found</h1>
         </div>
-        <span className="number">500</span>
+        <span className="number">404</span>
         <div className="wrapper-bottom">
-          <p className="warning">Do not panic</p>
+          <p className="warning-message">Do not panic</p>
           <p className="suggestion">
-            If refreshing doesn&apos;t help, <br />
-            let us know.
+            Perhaps you misspelled the url or it has been removed.
           </p>
         </div>
       </div>

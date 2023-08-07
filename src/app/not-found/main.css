@@ -3,10 +3,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html {
   height: 100%;
   background: #faf6ec;
 }
+
 body {
   position: relative;
   margin: 0;
@@ -25,7 +27,7 @@ body {
   width: 660px;
   margin-top: -330px;
   margin-left: -330px;
-  background-image: url(assets/svg/planets.svg);
+  background-image: url(/assets/svg/planets.svg);
 }
 
 p,
@@ -43,14 +45,16 @@ h1 {
   left: 0;
   right: 0;
 }
+
 .wrapper-top {
   bottom: 410px;
 }
+
 .wrapper-bottom {
   top: 410px;
 }
 
-.warning {
+.warning-message {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -65,7 +69,7 @@ h1 {
 .number {
   top: 0;
   bottom: 0;
-  background: url(assets/svg/500.svg) no-repeat center;
+  background: url(/assets/svg/404.svg) no-repeat center;
   text-indent: 100%;
   overflow: hidden;
 }
@@ -76,5 +80,5 @@ h1 {
   right: 0;
   bottom: 0;
   height: 180px;
-  background: url(assets/svg/footer.svg) no-repeat center bottom;
+  background: url(/assets/svg/footer.svg) no-repeat center bottom;
 }

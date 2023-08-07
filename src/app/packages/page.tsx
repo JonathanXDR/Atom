@@ -313,7 +313,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -447,7 +449,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -581,7 +585,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -713,7 +719,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -804,7 +812,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -853,7 +863,6 @@ export default function Packages() {
                               <div
                                 className="select-menu-item js-navigation-item"
                                 data-trending-sort="daily"
-                                false=""
                               >
                                 <span className="select-menu-item-icon octicon octicon-check"></span>
                                 <div className="select-menu-item-text js-select-button-text">
@@ -864,7 +873,6 @@ export default function Packages() {
                               <div
                                 className="select-menu-item js-navigation-item selected"
                                 data-trending-sort="weekly"
-                                false=""
                               >
                                 <span className="select-menu-item-icon octicon octicon-check"></span>
                                 <div className="select-menu-item-text js-select-button-text">
@@ -875,7 +883,6 @@ export default function Packages() {
                               <div
                                 className="select-menu-item js-navigation-item"
                                 data-trending-sort="monthly"
-                                false=""
                               >
                                 <span className="select-menu-item-icon octicon octicon-check"></span>
                                 <div className="select-menu-item-text js-select-button-text">
@@ -982,7 +989,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1101,7 +1110,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1233,7 +1244,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1349,7 +1362,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1438,7 +1453,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1527,7 +1544,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1635,7 +1654,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1754,7 +1775,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1886,7 +1909,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -2002,7 +2027,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -2091,7 +2118,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -2180,7 +2209,9 @@ export default function Packages() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>

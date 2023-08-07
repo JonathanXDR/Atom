@@ -975,7 +975,10 @@ export default function ReleaseNotes() {
                         src="assets/png/1f4dd.png"
                         height="20"
                         width="20"
-                        align="absmiddle"
+                        style={{
+                          display: "inline-block",
+                          verticalAlign: "middle",
+                        }}
                       />
                       Clarify that stack only has an effect if detail is present
                       as well
@@ -1514,7 +1517,10 @@ export default function ReleaseNotes() {
                         src="assets/png/1f4dd.png"
                         height="20"
                         width="20"
-                        align="absmiddle"
+                        style={{
+                          display: "inline-block",
+                          verticalAlign: "middle",
+                        }}
                       />
                       Clarify that stack only has an effect if detail is present
                       as well
@@ -3339,7 +3345,10 @@ export default function ReleaseNotes() {
                         src="assets/png/2b06.png"
                         height="20"
                         width="20"
-                        align="absmiddle"
+                        style={{
+                          display: "inline-block",
+                          verticalAlign: "middle",
+                        }}
                       />
                       github
                     </Link>
@@ -3669,7 +3678,10 @@ export default function ReleaseNotes() {
                         src="assets/png/2b06.png"
                         height="20"
                         width="20"
-                        align="absmiddle"
+                        style={{
+                          display: "inline-block",
+                          verticalAlign: "middle",
+                        }}
                       />
                       github
                     </Link>
@@ -7734,7 +7746,10 @@ export default function ReleaseNotes() {
                         src="assets/png/2b06.png"
                         height="20"
                         width="20"
-                        align="absmiddle"
+                        style={{
+                          display: "inline-block",
+                          verticalAlign: "middle",
+                        }}
                       />
                       tree-sitter-c and tree-sitter-cpp
                     </Link>

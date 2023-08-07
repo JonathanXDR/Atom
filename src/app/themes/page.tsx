@@ -197,7 +197,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -322,7 +324,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -531,7 +535,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -651,7 +657,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -904,7 +912,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1023,7 +1033,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1157,7 +1169,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1296,7 +1310,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1428,7 +1444,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1561,7 +1579,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1679,7 +1699,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>
@@ -1934,7 +1956,9 @@ export default function Themes() {
                           Install
                         </Link>
                         <div
-                          style="display: none"
+                          style={{
+                            display: "none",
+                          }}
                           className="modal-download-atom"
                         >
                           <h4>Launching Atom...</h4>

@@ -65,7 +65,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/jasonrudolph.png"
-                      srcset="
+                      sizes="
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
@@ -113,7 +113,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/rafeca.png"
-                      srcset="
+                      sizes="
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
@@ -175,7 +175,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/nathansobo.png"
-                      srcset="
+                      sizes="
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=54 3x,
@@ -225,7 +225,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/rafeca.png"
-                      srcset="
+                      sizes="
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
@@ -270,7 +270,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/smashwilson.png"
-                      srcset="
+                      sizes="
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=54 3x,
@@ -315,7 +315,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/annthurium.png"
-                      srcset="
+                      sizes="
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=36 2x,
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=54 3x,
@@ -360,7 +360,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/jasonrudolph.png"
-                      srcset="
+                      sizes="
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
@@ -405,7 +405,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/asheren.png"
-                      srcset="
+                      sizes="
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=18 1x,
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=36 2x,
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=54 3x,
@@ -449,7 +449,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/kuychaco.png"
-                      srcset="
+                      sizes="
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=36 2x,
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=54 3x,
@@ -493,7 +493,7 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src="assets/png/sguthals.png"
-                      srcset="
+                      sizes="
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=54 3x,

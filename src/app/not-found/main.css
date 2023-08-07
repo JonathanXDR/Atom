@@ -15,8 +15,10 @@ body {
   height: 100%;
   min-height: 660px;
   font-family: Verdana, 'Verdana Ref', sans-serif;
+  font-size: unset;
   text-align: center;
   color: #949189;
+  background: unset;
 }
 
 .dialog {
@@ -61,6 +63,7 @@ h1 {
 }
 
 .message {
+  font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
   color: #66595c;

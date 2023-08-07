@@ -17,8 +17,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import "/public/assets/css/application.css";
-import githubScreenshot from "/public/assets/png/github-screenshot.png";
-import teletypeScreenshot from "/public/assets/png/teletype-screenshot.png";
+import indexGithubScreenshot from "/public/assets/png/index-github-screenshot.png";
+import indexTeletypeScreenshot from "/public/assets/png/index-teletype-screenshot.png";
 import octonaut from "/public/assets/svg/octonaut.svg";
 
 export default function Home() {
@@ -64,8 +64,8 @@ export default function Home() {
                 <div className="welcome-bgs">
                   <Image
                     className="welcome-bg welcome-bg--screenshot"
-                    src={teletypeScreenshot}
-                    alt="teletype-screenshot"
+                    src={indexTeletypeScreenshot}
+                    alt="index-teletype-screenshot"
                   />
                 </div>
 
@@ -99,8 +99,8 @@ export default function Home() {
                 <div className="welcome-bgs">
                   <Image
                     className="welcome-bg welcome-bg--screenshot"
-                    src={githubScreenshot}
-                    alt="github-screenshot"
+                    src={indexGithubScreenshot}
+                    alt="index-github-screenshot"
                   />
                 </div>
 

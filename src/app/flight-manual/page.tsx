@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
+import flightManualCover from "/public/assets/png/flight-manual-cover.png";
 
 export default function FlightManual() {
   return (
@@ -37,31 +38,6 @@ export default function FlightManual() {
         </div>
 
         <div className="wrapper documents content-push">
-          <script id="quicksearch-results-template" type="text/mustache">
-            [[#entries]]
-            <Link href="[[url]]" className="js-articles-quicksearch-link">
-              [[title]]
-            </Link>
-            [[/entries]]
-            <Link className="initial quicksearch-seemore" href="/search?q=">
-              See more results
-            </Link>
-          </script>
-
-          <script id="search-results-template" type="text/mustache">
-            [[#entries]]
-            <li>
-              <h3>
-                <Link href="[[url]]">[[title]]</Link>
-                <div className="label">
-                  <Link href="[[category_url]]">[[category]]</Link>
-                </div>
-              </h3>
-              <p>[[excerpt]]</p>
-            </li>
-            [[/entries]]
-          </script>
-
           <div
             className="documents-search"
             style={{
@@ -434,10 +410,7 @@ export default function FlightManual() {
           <div className="markdown-body">
             <h1>Atom Flight Manual</h1>
             <div className="manual-ebooks">
-              <Image
-                alt="Atom Flight Manual cover"
-                src="assets/png/flight-manual-cover.png"
-              />
+              <Image alt="Atom Flight Manual cover" src={flightManualCover} />
             </div>
 
             <h3>

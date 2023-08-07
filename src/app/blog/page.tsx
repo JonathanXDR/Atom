@@ -2,6 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
+import Annthurium from "/public/assets/png/annthurium.png";
+import Asheren from "/public/assets/png/asheren.png";
+import Jasonrudolph from "/public/assets/png/jasonrudolph.png";
+import Kuychaco from "/public/assets/png/kuychaco.png";
+import Nathansobo from "/public/assets/png/nathansobo.png";
+import Rafeca from "/public/assets/png/rafeca.png";
+import Sguthals from "/public/assets/png/sguthals.png";
+import Smashwilson from "/public/assets/png/smashwilson.png";
+
+import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
 
 export default function Blog() {
   return (
@@ -64,7 +74,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/jasonrudolph.png"
+                      src={Jasonrudolph}
                       sizes="
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
@@ -112,7 +122,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/rafeca.png"
+                      src={Rafeca}
                       sizes="
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
@@ -126,10 +136,7 @@ export default function Blog() {
                 <div className="post markdown">
                   <p>
                     <Link href="https://atom.io/nightly">
-                      <Image
-                        src="assets/png/atom-nightly-heading.png"
-                        alt="Atom Nightly"
-                      />
+                      <Image src={atomNightlyHeading} alt="Atom Nightly" />
                     </Link>
                   </p>
 
@@ -174,7 +181,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/nathansobo.png"
+                      src={Nathansobo}
                       sizes="
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=36 2x,
@@ -224,7 +231,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/rafeca.png"
+                      src={Rafeca}
                       sizes="
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
@@ -269,7 +276,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/smashwilson.png"
+                      src={Smashwilson}
                       sizes="
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=36 2x,
@@ -314,7 +321,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/annthurium.png"
+                      src={Annthurium}
                       sizes="
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=36 2x,
@@ -359,7 +366,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/jasonrudolph.png"
+                      src={Jasonrudolph}
                       sizes="
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
@@ -404,7 +411,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/asheren.png"
+                      src={Asheren}
                       sizes="
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=18 1x,
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=36 2x,
@@ -448,7 +455,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/kuychaco.png"
+                      src={Kuychaco}
                       sizes="
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=36 2x,
@@ -492,7 +499,7 @@ export default function Blog() {
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src="assets/png/sguthals.png"
+                      src={Sguthals}
                       sizes="
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=36 2x,

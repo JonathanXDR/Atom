@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
+import _1f4dd from "/public/assets/png/1f4dd.png";
+import _2b06 from "/public/assets/png/2b06.png";
 
 export default function ReleaseNotes() {
   return (
@@ -972,7 +974,7 @@ export default function ReleaseNotes() {
                       <Image
                         title=":memo:"
                         alt=":memo:"
-                        src="assets/png/1f4dd.png"
+                        src={_1f4dd}
                         height="20"
                         width="20"
                         style={{
@@ -1514,7 +1516,7 @@ export default function ReleaseNotes() {
                       <Image
                         title=":memo:"
                         alt=":memo:"
-                        src="assets/png/1f4dd.png"
+                        src={_1f4dd}
                         height="20"
                         width="20"
                         style={{
@@ -3342,7 +3344,7 @@ export default function ReleaseNotes() {
                       <Image
                         title=":arrow_up:"
                         alt=":arrow_up:"
-                        src="assets/png/2b06.png"
+                        src={_2b06}
                         height="20"
                         width="20"
                         style={{
@@ -3675,7 +3677,7 @@ export default function ReleaseNotes() {
                       <Image
                         title=":arrow_up:"
                         alt=":arrow_up:"
-                        src="assets/png/2b06.png"
+                        src={_2b06}
                         height="20"
                         width="20"
                         style={{
@@ -7743,7 +7745,7 @@ export default function ReleaseNotes() {
                       <Image
                         title=":arrow_up:"
                         alt=":arrow_up:"
-                        src="assets/png/2b06.png"
+                        src={_2b06}
                         height="20"
                         width="20"
                         style={{

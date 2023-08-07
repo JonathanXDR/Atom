@@ -1,5 +1,5 @@
 import "@primer/css/index.scss";
-import "./globals.css";
+import "../globals.css";
 
 import { Metadata } from "next";
 

@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
+import NungThai from "/public/assets/png/NungThai.png";
+import atomMaterial from "/public/assets/png/atom-material.png";
+import FeaturedAds from "/public/assets/png/featured-ads.png";
+import PowerAds from "/public/assets/png/power-ads.png";
 
 export default function Themes() {
   return (
@@ -142,11 +146,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/atom-material">
-                        <Image
-                          src="assets/png/atom-material.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={atomMaterial} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/atom-material"
@@ -269,11 +269,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/atom-material">
-                        <Image
-                          src="assets/png/atom-material.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={atomMaterial} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/atom-material"
@@ -480,11 +476,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/power-ads">
-                        <Image
-                          src="assets/png/power-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={PowerAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/power-ads"
@@ -602,11 +594,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -737,11 +725,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/Featured-ads">
-                        <Image
-                          src="assets/png/Featured-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={FeaturedAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/Featured-ads"
@@ -857,11 +841,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -978,11 +958,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -1114,11 +1090,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/Featured-ads">
-                        <Image
-                          src="assets/png/Featured-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={FeaturedAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/Featured-ads"
@@ -1255,11 +1227,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -1389,11 +1357,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/power-ads">
-                        <Image
-                          src="assets/png/power-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={PowerAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/power-ads"
@@ -1524,11 +1488,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/Featured-ads">
-                        <Image
-                          src="assets/png/Featured-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={FeaturedAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/Featured-ads"
@@ -1644,11 +1604,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -1765,11 +1721,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -1901,11 +1853,7 @@ export default function Themes() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/Featured-ads">
-                        <Image
-                          src="assets/png/Featured-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={FeaturedAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/Featured-ads"

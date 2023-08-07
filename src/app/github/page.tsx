@@ -2,6 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/github.css";
+import githubBottomStars from "/public/assets/svg/github-bottom-stars.svg";
+import githubBottom from "/public/assets/svg/github-bottom.svg";
+import githubOctonaut from "/public/assets/svg/github-octonaut.svg";
+import githubPlanet1 from "/public/assets/svg/github-planet-1.svg";
+import githubPlanet2 from "/public/assets/svg/github-planet-2.svg";
+import githubPlanet3 from "/public/assets/svg/github-planet-3.svg";
+import githubRocket from "/public/assets/svg/github-rocket.svg";
+import githubSwoosh from "/public/assets/svg/github-swoosh.svg";
 
 export default function GitHub() {
   return (
@@ -10,27 +18,27 @@ export default function GitHub() {
         <div className="bg" aria-hidden="true">
           <Image
             className="bg-item bg-item--rocket"
-            src="assets/svg/github-rocket.svg"
+            src={githubRocket}
             alt="github-rocket"
           />
           <Image
             className="bg-item bg-item--planet-3"
-            src="assets/svg/github-planet-3.svg"
+            src={githubPlanet3}
             alt="github-planet-3"
           />
           <Image
             className="bg-item bg-item--planet-2"
-            src="assets/svg/github-planet-2.svg"
+            src={githubPlanet2}
             alt="github-planet-2"
           />
           <Image
             className="bg-item bg-item--octonaut"
-            src="assets/svg/github-octonaut.svg"
+            src={githubOctonaut}
             alt="github-octonaut"
           />
           <Image
             className="bg-item bg-item--planet-1"
-            src="assets/svg/github-planet-1.svg"
+            src={githubPlanet1}
             alt="github-planet-1"
           />
         </div>
@@ -164,17 +172,17 @@ export default function GitHub() {
         <div className="bg" aria-hidden="true">
           <Image
             className="bg-item bg-item--bottom-stars"
-            src="assets/svg/github-bottom-stars.svg"
+            src={githubBottomStars}
             alt="github-bottom-stars"
           />
           <Image
             className="bg-item bg-item--swoosh"
-            src="assets/svg/github-swoosh.svg"
+            src={githubSwoosh}
             alt="github-swoosh"
           />
           <Image
             className="bg-item bg-item--bottom"
-            src="assets/svg/github-bottom.svg"
+            src={githubBottom}
             alt="github-bottom"
           />
         </div>

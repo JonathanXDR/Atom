@@ -36,31 +36,6 @@ export default function FAQ() {
         </div>
 
         <div className="wrapper documents content-push wide">
-          <script id="quicksearch-results-template" type="text/mustache">
-            [[#entries]]
-            <Link href="[[url]]" className="js-articles-quicksearch-link">
-              [[title]]
-            </Link>
-            [[/entries]]
-            <Link className="initial quicksearch-seemore" href="/search?q=">
-              See more results
-            </Link>
-          </script>
-
-          <script id="search-results-template" type="text/mustache">
-            [[#entries]]
-            <li>
-              <h3>
-                <Link href="[[url]]">[[title]]</Link>
-                <div className="label">
-                  <Link href="[[category_url]]">[[category]]</Link>
-                </div>
-              </h3>
-              <p>[[excerpt]]</p>
-            </li>
-            [[/entries]]
-          </script>
-
           <div
             className="documents-search"
             style={{

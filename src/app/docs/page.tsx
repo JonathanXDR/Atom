@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
+import flightManualCover from "/public/assets/png/flight-manual-cover.png";
 
-export default function Documentation() {
+export default function Docs() {
   return (
     <body>
       <div className="footer-push">
@@ -99,7 +100,7 @@ export default function Documentation() {
                               style={{
                                 width: "200px",
                               }}
-                              src="assets/png/flight-manual-cover.png"
+                              src={flightManualCover}
                               alt="flight-manual-cover"
                             />
                           </Link>

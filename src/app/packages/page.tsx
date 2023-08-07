@@ -2,6 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
+import ArnaudRinquin from "/public/assets/png/arnaudrinquin.png";
+import Atom from "/public/assets/png/atom.png";
+import B3by from "/public/assets/png/b3by.png";
+import Mathieudutour from "/public/assets/png/mathieudutour.png";
+import Nteract from "/public/assets/png/nteract.png";
+import NungThai from "/public/assets/png/nungthai.png";
+import PowerAds from "/public/assets/png/power-ads.png";
+import Timomeh from "/public/assets/png/timomeh.png";
 
 export default function Packages() {
   return (
@@ -132,11 +140,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/atom">
-                        <Image
-                          src="assets/png/atom.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={Atom} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/atom"
@@ -259,7 +263,7 @@ export default function Packages() {
                     <div className="meta">
                       <Link href="https://atom.io/users/mathieudutour">
                         <Image
-                          src="assets/png/mathieudutour.png"
+                          src={Mathieudutour}
                           alt=""
                           className="gravatar"
                         />
@@ -394,11 +398,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/nteract">
-                        <Image
-                          src="assets/png/nteract.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={Nteract} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/nteract"
@@ -530,11 +530,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/timomeh">
-                        <Image
-                          src="assets/png/timomeh.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={Timomeh} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/timomeh"
@@ -664,11 +660,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/b3by">
-                        <Image
-                          src="assets/png/b3by.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={B3by} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/b3by"
@@ -758,7 +750,7 @@ export default function Packages() {
                     <div className="meta">
                       <Link href="https://atom.io/users/ArnaudRinquin">
                         <Image
-                          src="assets/png/ArnaudRinquin.png"
+                          src={ArnaudRinquin}
                           alt=""
                           className="gravatar"
                         />
@@ -934,11 +926,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/power-ads">
-                        <Image
-                          src="assets/png/power-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={PowerAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/power-ads"
@@ -1055,11 +1043,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -1189,11 +1173,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/power-ads">
-                        <Image
-                          src="assets/png/power-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={PowerAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/power-ads"
@@ -1307,11 +1287,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -1398,11 +1374,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/power-ads">
-                        <Image
-                          src="assets/png/power-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={PowerAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/power-ads"
@@ -1489,11 +1461,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/nungthai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/nungthai"
@@ -1599,11 +1567,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/power-ads">
-                        <Image
-                          src="assets/png/power-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={PowerAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/power-ads"
@@ -1720,11 +1684,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -1854,11 +1814,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/power-ads">
-                        <Image
-                          src="assets/png/power-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={PowerAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/power-ads"
@@ -1972,11 +1928,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/NungThai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/NungThai"
@@ -2063,11 +2015,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/power-ads">
-                        <Image
-                          src="assets/png/power-ads.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={PowerAds} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/power-ads"
@@ -2154,11 +2102,7 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/nungthai">
-                        <Image
-                          src="assets/png/NungThai.png"
-                          alt=""
-                          className="gravatar"
-                        />
+                        <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
                         href="https://atom.io/users/nungthai"

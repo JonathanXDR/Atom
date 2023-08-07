@@ -16,11 +16,7 @@ export default function FAQ() {
 
         <script type="text/javascript" src="assets/js/application.js"></script>
       </head>
-      <body
-        className="layout-article platform-switch platform-mac"
-        data-new-gr-c-s-check-loaded="14.1117.0"
-        data-gr-ext-installed=""
-      >
+      <body className="layout-article platform-switch platform-mac">
         <div className="footer-push">
           <div className="top-bar">
             <div className="wrapper no-pad">

@@ -75,11 +75,7 @@ export default function ReleaseNotes() {
           href="https://web.archive.org/web/20221207004857/https://atom.io/packages.atom"
         />
       </head>
-      <body
-        class=""
-        data-new-gr-c-s-check-loaded="14.1117.0"
-        data-gr-ext-installed=""
-      >
+      <body>
         <div class="footer-push">
           <nav class="top-bar" aria-label="Primary">
             <div class="wrapper no-pad">

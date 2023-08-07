@@ -12,7 +12,7 @@ export default function GitHubForAtom() {
         <link rel="stylesheet" media="all" href="assets/css/github.css" />
         <script src="assets/js/github.js" media="all"></script>
       </head>
-      <body data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
+      <body>
         <section className="section hero">
           <div className="bg" aria-hidden="true">
             <img

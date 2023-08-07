@@ -75,11 +75,7 @@ export default function Packages() {
           href="https://web.archive.org/web/20221207004846/https://atom.io/packages.atom"
         />
       </head>
-      <body
-        className=""
-        data-new-gr-c-s-check-loaded="14.1117.0"
-        data-gr-ext-installed=""
-      >
+      <body>
         <div className="footer-push">
           <nav className="top-bar" aria-label="Primary">
             <div className="wrapper no-pad">

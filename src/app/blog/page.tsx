@@ -50,7 +50,7 @@ export default function Blog() {
           content="https://www.facebook.com/GitHub"
         />
       </head>
-      <body data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
+      <body>
         <div className="footer-push">
           <div className="top-bar">
             <div className="wrapper">

@@ -2,29 +2,21 @@ import "./main.css";
 
 export default function Error() {
   return (
-    <>
-      <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Something has gone wrong (500)</title>
-        <link rel="shortcut icon" href="favicon.ico" />
-      </head>
-
-      <body>
-        <div className="dialog">
-          <div className="wrapper-top">
-            <h1 className="message">Something has gone wrong</h1>
-          </div>
-          <span className="number">500</span>
-          <div className="wrapper-bottom">
-            <p className="warning">Do not panic</p>
-            <p className="suggestion">
-              If refreshing doesn&apos;t help, <br />
-              let us know.
-            </p>
-          </div>
+    <body>
+      <div className="dialog">
+        <div className="wrapper-top">
+          <h1 className="message">Something has gone wrong</h1>
         </div>
-        <footer className="footer"></footer>
-      </body>
-    </>
+        <span className="number">500</span>
+        <div className="wrapper-bottom">
+          <p className="warning">Do not panic</p>
+          <p className="suggestion">
+            If refreshing doesn&apos;t help, <br />
+            let us know.
+          </p>
+        </div>
+      </div>
+      <footer className="footer"></footer>
+    </body>
   );
 }

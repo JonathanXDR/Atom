@@ -4,6 +4,7 @@ import HeroHeader from "@/components/HeroHeader/HeroHeader";
 import NavItem from "@/components/NavItem/NavItem";
 import { BugIcon, CalendarIcon, RocketIcon } from "@primer/octicons-react";
 import Link from "next/link";
+import "./main.css";
 import "/public/assets/css/application.css";
 
 export default function Nightly() {

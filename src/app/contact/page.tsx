@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
 
@@ -10,67 +11,52 @@ export default function Contact() {
             <ul className="navigation">
               <li>
                 <h1>
-                  <a
-                    href="https://web.archive.org/web/20221207004846/https://atom.io/"
-                    className="logo-small"
-                    title="Atom: A hackable text editor for the 21st Century"
-                  ></a>
+                  <Link href="https://atom.io/" className="logo-small"></Link>
                 </h1>
               </li>
               <li>
-                <a
-                  className=""
-                  href="https://web.archive.org/web/20221207004846/https://atom.io/packages"
-                >
+                <Link className="" href="https://atom.io/packages">
                   Packages
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className=""
-                  href="https://web.archive.org/web/20221207004846/https://atom.io/themes"
-                >
+                <Link className="" href="https://atom.io/themes">
                   Themes
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className=""
-                  href="https://web.archive.org/web/20221207004846/https://atom.io/docs"
-                >
+                <Link className="" href="https://atom.io/docs">
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004846/https://blog.atom.io/">
-                  Blog
-                </a>
+                <Link href="https://blog.atom.io/">Blog</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004846/https://github.com/atom/atom/discussions">
+                <Link href="https://github.com/atom/atom/discussions">
                   Discussions
-                </a>
+                </Link>
               </li>
             </ul>
 
             <div className="top-bar-right">
-              <a href="https://web.archive.org/web/20221207004846/https://atom.io/login?last_url=%2Fcontact">
+              <Link href="https://atom.io/login?last_url=%2Fcontact">
                 <span className="octicon octicon-log-in"></span> Sign in
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
 
         <div id="js-pjax-container">
           <div className="contact content-push">
-            <a name="contact"></a>
+            <Link name="contact"></Link>
             <div className="wrapper">
               <div className="columns">
                 <div className="column main-column">
                   <h3 className="contact-title">Get in touch</h3>
                   <form
                     className="contact-form"
-                    action="https://web.archive.org/web/20221207004846/https://atom.io/contact"
+                    action="https://atom.io/contact"
                     accept-charset="UTF-8"
                     method="post"
                   >
@@ -96,13 +82,13 @@ export default function Contact() {
                           type="text"
                           name="email"
                           id="email"
-                          style="
-                          background-image: url('data:image/png;base64,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') !important;
-                          background-repeat: no-repeat;
-                          background-size: 20px;
-                          background-position: 97% center;
-                          cursor: auto;
-                        "
+                          style={{
+                            backgroundImage: `url('data:image/png;base64,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') !important;`,
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "20px",
+                            backgroundPosition: "97% center",
+                            cursor: "auto",
+                          }}
                           data-minemail-com="0"
                         />
                       </dd>
@@ -138,25 +124,23 @@ export default function Contact() {
                       <tr>
                         <td>GitHub</td>
                         <td>
-                          <a href="https://web.archive.org/web/20221207004846/https://github.com/atom">
-                            @atom
-                          </a>
+                          <Link href="https://github.com/atom">@atom</Link>
                         </td>
                       </tr>
                       <tr>
                         <td>Twitter</td>
                         <td>
-                          <a href="https://web.archive.org/web/20221207004846/https://twitter.com/atomeditor">
+                          <Link href="https://twitter.com/atomeditor">
                             @AtomEditor
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>Github Discussions</td>
                         <td>
-                          <a href="https://web.archive.org/web/20221207004846/https://github.com/atom/atom/discussions">
+                          <Link href="https://github.com/atom/atom/discussions">
                             Github Discussions
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>
@@ -175,43 +159,37 @@ export default function Contact() {
           <div className="wrapper no-pad">
             <ul className="footer-left">
               <li>
-                <a href="https://web.archive.org/web/20221207004846/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
+                <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                   Terms of Use
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004846/https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
+                <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004846/https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
+                <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
                   Code of Conduct
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004846/https://atom.io/releases">
-                  Releases
-                </a>
+                <Link href="https://atom.io/releases">Releases</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004846/https://flight-manual.atom.io/faq/">
-                  FAQ
-                </a>
+                <Link href="https://flight-manual.atom.io/faq/">FAQ</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004846/https://atom.io/contact">
-                  Contact
-                </a>
+                <Link href="https://atom.io/contact">Contact</Link>
               </li>
             </ul>
 
             <div className="footer-right">
-              <a href="https://web.archive.org/web/20221207004846/https://github.com/">
+              <Link href="https://github.com/">
                 <span className="octicon octicon-code"></span> with
                 <span className="octicon octicon-heart"></span> by
                 <span className="octicon octicon-logo-github"></span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

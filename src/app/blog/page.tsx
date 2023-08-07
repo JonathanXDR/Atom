@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
 
@@ -9,50 +11,33 @@ export default function Blog() {
           <div className="wrapper">
             <ul className="navigation">
               <li>
-                <h1 title="Atom: A hackable text editor for the 21st Century">
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://atom.io/"
-                    className="logo-small"
-                  ></a>
+                <h1>
+                  <Link href="https://atom.io/" className="logo-small"></Link>
                 </h1>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004825/https://atom.io/packages">
-                  Packages
-                </a>
+                <Link href="https://atom.io/packages">Packages</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004825/https://atom.io/themes">
-                  Themes
-                </a>
+                <Link href="https://atom.io/themes">Themes</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004825/https://atom.io/docs">
-                  Documentation
-                </a>
+                <Link href="https://atom.io/docs">Documentation</Link>
               </li>
               <li>
-                <a
-                  href="https://web.archive.org/web/20221207004825/https://blog.atom.io/"
-                  className="is-selected"
-                >
+                <Link href="https://blog.atom.io/" className="is-selected">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004825/https://discuss.atom.io/">
-                  Discuss
-                </a>
+                <Link href="https://discuss.atom.io/">Discuss</Link>
               </li>
             </ul>
 
             <div className="top-bar-right">
-              <a
-                href="https://web.archive.org/web/20221207004825/https://blog.atom.io/feed.xml"
-                className="rss-link"
-              >
+              <Link href="https://blog.atom.io/feed.xml" className="rss-link">
                 <span className="octicon octicon-rss"></span> Subscribe
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -62,18 +47,18 @@ export default function Blog() {
             <ul className="posts">
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/07/23/atom-1-39.html">
+                  <Link href="https://blog.atom.io/2019/07/23/atom-1-39.html">
                     Atom 1.39
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> July 23,
                   2019
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/jasonrudolph"
+                  <Link
+                    href="https://github.com/jasonrudolph"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="jasonrudolph"
                       width="18"
@@ -81,14 +66,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/jasonrudolph.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=72 4x
+                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
+                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
+                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
+                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=72 4x
                     "
                     />
                     jasonrudolph
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -101,27 +86,27 @@ export default function Blog() {
                     programming languages.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/07/23/atom-1-39.html">
+                  <Link href="https://blog.atom.io/2019/07/23/atom-1-39.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
+                  <Link href="https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
                     Introducing Atom Nightly Releases
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> June 21,
                   2019
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/rafeca"
+                  <Link
+                    href="https://github.com/rafeca"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="rafeca"
                       width="18"
@@ -129,30 +114,30 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/rafeca.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=72 4x
                     "
                     />
                     rafeca
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
-                    <a href="https://web.archive.org/web/20221207004825/https://atom.io/nightly">
-                      <img
+                    <Link href="https://atom.io/nightly">
+                      <Image
                         src="assets/png/atom-nightly-heading.png"
                         alt="Atom Nightly"
                       />
-                    </a>
+                    </Link>
                   </p>
 
                   <p>
                     Today we’re excited to introduce
-                    <a href="https://web.archive.org/web/20221207004825/https://atom.io/nightly">
+                    <Link href="https://atom.io/nightly">
                       Atom Nightly releases
-                    </a>
+                    </Link>
                     ! This new release channel gives you access to Atom’s latest
                     feature improvements and bug fixes each day as they are
                     merged into our
@@ -163,27 +148,27 @@ export default function Blog() {
                     Atom, this release channel is for you.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
+                  <Link href="https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/06/11/atom-1-38.html">
+                  <Link href="https://blog.atom.io/2019/06/11/atom-1-38.html">
                     Atom 1.38
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> June 11,
                   2019
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/nathansobo"
+                  <Link
+                    href="https://github.com/nathansobo"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="nathansobo"
                       width="18"
@@ -191,14 +176,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/nathansobo.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=72 4x
                     "
                     />
                     nathansobo
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -213,27 +198,27 @@ export default function Blog() {
                     containing only a single line of text.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/06/11/atom-1-38.html">
+                  <Link href="https://blog.atom.io/2019/06/11/atom-1-38.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/05/12/atom-1-37.html">
+                  <Link href="https://blog.atom.io/2019/05/12/atom-1-37.html">
                     Atom 1.37
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> May 12,
                   2019
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/rafeca"
+                  <Link
+                    href="https://github.com/rafeca"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="rafeca"
                       width="18"
@@ -241,14 +226,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/rafeca.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=72 4x
                     "
                     />
                     rafeca
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -258,27 +243,27 @@ export default function Blog() {
                     dramatically improves its performance.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/05/12/atom-1-37.html">
+                  <Link href="https://blog.atom.io/2019/05/12/atom-1-37.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/04/09/atom-1-36.html">
+                  <Link href="https://blog.atom.io/2019/04/09/atom-1-36.html">
                     Atom 1.36
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> April 9,
                   2019
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/smashwilson"
+                  <Link
+                    href="https://github.com/smashwilson"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="smashwilson"
                       width="18"
@@ -286,14 +271,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/smashwilson.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=72 4x
                     "
                     />
                     smashwilson
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -303,27 +288,27 @@ export default function Blog() {
                     and more.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/04/09/atom-1-36.html">
+                  <Link href="https://blog.atom.io/2019/04/09/atom-1-36.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/03/12/atom-1-35.html">
+                  <Link href="https://blog.atom.io/2019/03/12/atom-1-35.html">
                     Atom 1.35
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> March 12,
                   2019
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/annthurium"
+                  <Link
+                    href="https://github.com/annthurium"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="annthurium"
                       width="18"
@@ -331,14 +316,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/annthurium.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=72 4x
+                      https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=18 1x,
+                      https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=36 2x,
+                      https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=54 3x,
+                      https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=72 4x
                     "
                     />
                     annthurium
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -348,27 +333,27 @@ export default function Blog() {
                     and stability improvements.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/03/12/atom-1-35.html">
+                  <Link href="https://blog.atom.io/2019/03/12/atom-1-35.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/01/08/atom-1-34.html">
+                  <Link href="https://blog.atom.io/2019/01/08/atom-1-34.html">
                     Atom 1.34
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> January 8,
                   2019
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/jasonrudolph"
+                  <Link
+                    href="https://github.com/jasonrudolph"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="jasonrudolph"
                       width="18"
@@ -376,14 +361,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/jasonrudolph.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=72 4x
+                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
+                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
+                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
+                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=72 4x
                     "
                     />
                     jasonrudolph
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -393,27 +378,27 @@ export default function Blog() {
                     changes, and support for commit message templates.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2019/01/08/atom-1-34.html">
+                  <Link href="https://blog.atom.io/2019/01/08/atom-1-34.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2018/12/12/facebook-retires-nuclide-extension.html">
+                  <Link href="https://blog.atom.io/2018/12/12/facebook-retires-nuclide-extension.html">
                     Facebook retires Nuclide extension
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> December
                   12, 2018
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/asheren"
+                  <Link
+                    href="https://github.com/asheren"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="asheren"
                       width="18"
@@ -421,14 +406,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/asheren.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars2.githubusercontent.com/asheren?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars2.githubusercontent.com/asheren?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars2.githubusercontent.com/asheren?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars2.githubusercontent.com/asheren?v=3&amp;s=72 4x
+                      https://avatars2.githubusercontent.com/asheren?v=3&amp;s=18 1x,
+                      https://avatars2.githubusercontent.com/asheren?v=3&amp;s=36 2x,
+                      https://avatars2.githubusercontent.com/asheren?v=3&amp;s=54 3x,
+                      https://avatars2.githubusercontent.com/asheren?v=3&amp;s=72 4x
                     "
                     />
                     asheren
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -437,27 +422,27 @@ export default function Blog() {
                     associated repos.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2018/12/12/facebook-retires-nuclide-extension.html">
+                  <Link href="https://blog.atom.io/2018/12/12/facebook-retires-nuclide-extension.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2018/11/28/atom-1-33.html">
+                  <Link href="https://blog.atom.io/2018/11/28/atom-1-33.html">
                     Atom 1.33
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> November
                   28, 2018
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/kuychaco"
+                  <Link
+                    href="https://github.com/kuychaco"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="kuychaco"
                       width="18"
@@ -465,14 +450,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/kuychaco.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=72 4x
+                      https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=18 1x,
+                      https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=36 2x,
+                      https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=54 3x,
+                      https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=72 4x
                     "
                     />
                     kuychaco
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -481,27 +466,27 @@ export default function Blog() {
                     functionality, and faster performance for bracket matching.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2018/11/28/atom-1-33.html">
+                  <Link href="https://blog.atom.io/2018/11/28/atom-1-33.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2018/11/14/github-package-uxr.html">
+                  <Link href="https://blog.atom.io/2018/11/14/github-package-uxr.html">
                     Usability Interviews for Atom
-                  </a>
+                  </Link>
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> November
                   14, 2018
-                  <a
-                    href="https://web.archive.org/web/20221207004825/https://github.com/sguthals"
+                  <Link
+                    href="https://github.com/sguthals"
                     className="author-link"
                   >
-                    <img
+                    <Image
                       className="avatar avatar-small"
                       alt="sguthals"
                       width="18"
@@ -509,14 +494,14 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="assets/png/sguthals.png"
                       srcset="
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=18 1x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=36 2x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=54 3x,
-                      https://web.archive.org/web/20221207004825im_/https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=72 4x
                     "
                     />
                     sguthals
-                  </a>
+                  </Link>
                 </p>
                 <div className="post markdown">
                   <p>
@@ -526,10 +511,10 @@ export default function Blog() {
                     we build affects that workflow.
                   </p>
 
-                  <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/2018/11/14/github-package-uxr.html">
+                  <Link href="https://blog.atom.io/2018/11/14/github-package-uxr.html">
                     Read more{" "}
                     <span className="octicon octicon-chevron-right"></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
             </ul>
@@ -539,64 +524,38 @@ export default function Blog() {
 
               <em>1</em>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page2">
-                2
-              </a>
+              <Link href="https://blog.atom.io/page2">2</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page3">
-                3
-              </a>
+              <Link href="https://blog.atom.io/page3">3</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page4">
-                4
-              </a>
+              <Link href="https://blog.atom.io/page4">4</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page5">
-                5
-              </a>
+              <Link href="https://blog.atom.io/page5">5</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page6">
-                6
-              </a>
+              <Link href="https://blog.atom.io/page6">6</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page7">
-                7
-              </a>
+              <Link href="https://blog.atom.io/page7">7</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page8">
-                8
-              </a>
+              <Link href="https://blog.atom.io/page8">8</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page9">
-                9
-              </a>
+              <Link href="https://blog.atom.io/page9">9</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page10">
-                10
-              </a>
+              <Link href="https://blog.atom.io/page10">10</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page11">
-                11
-              </a>
+              <Link href="https://blog.atom.io/page11">11</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page12">
-                12
-              </a>
+              <Link href="https://blog.atom.io/page12">12</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page13">
-                13
-              </a>
+              <Link href="https://blog.atom.io/page13">13</Link>
 
-              <a href="https://web.archive.org/web/20221207004825/https://blog.atom.io/page2">
-                Next →
-              </a>
+              <Link href="https://blog.atom.io/page2">Next →</Link>
 
-              <a
+              <Link
                 className="pagination-archive"
-                href="https://web.archive.org/web/20221207004825/https://blog.atom.io/archive/"
+                href="https://blog.atom.io/archive/"
               >
                 <span className="octicon octicon-calendar"></span> Archive
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -609,33 +568,25 @@ export default function Blog() {
           <div className="wrapper">
             <ul className="footer-left">
               <li>
-                <a href="https://web.archive.org/web/20221207004825/https://github.com/site/terms">
-                  Terms of Use
-                </a>
+                <Link href="https://github.com/site/terms">Terms of Use</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004825/https://atom.io/releases">
-                  Releases
-                </a>
+                <Link href="https://atom.io/releases">Releases</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004825/https://atom.io/faq">
-                  FAQ
-                </a>
+                <Link href="https://atom.io/faq">FAQ</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004825/https://atom.io/contact">
-                  Contact
-                </a>
+                <Link href="https://atom.io/contact">Contact</Link>
               </li>
             </ul>
 
             <div className="footer-right">
-              <a href="https://web.archive.org/web/20221207004825/https://github.com/">
+              <Link href="https://github.com/">
                 <span className="octicon octicon-code"></span> with
                 <span className="octicon octicon-heart"></span> by
                 <span className="octicon octicon-logo-github"></span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

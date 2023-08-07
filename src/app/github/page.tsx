@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/github.css";
 
@@ -6,25 +8,30 @@ export default function GitHub() {
     <body>
       <section className="section hero">
         <div className="bg" aria-hidden="true">
-          <img
+          <Image
             className="bg-item bg-item--rocket"
-            src="assets/svg//github-rocket.svg"
+            src="assets/svg/github-rocket.svg"
+            alt="github-rocket"
           />
-          <img
+          <Image
             className="bg-item bg-item--planet-3"
-            src="assets/svg//github-planet-3.svg"
+            src="assets/svg/github-planet-3.svg"
+            alt="github-planet-3"
           />
-          <img
+          <Image
             className="bg-item bg-item--planet-2"
-            src="assets/svg//github-planet-2.svg"
+            src="assets/svg/github-planet-2.svg"
+            alt="github-planet-2"
           />
-          <img
+          <Image
             className="bg-item bg-item--octonaut"
-            src="assets/svg//github-octonaut.svg"
+            src="assets/svg/github-octonaut.svg"
+            alt="github-octonaut"
           />
-          <img
+          <Image
             className="bg-item bg-item--planet-1"
-            src="assets/svg//github-planet-1.svg"
+            src="assets/svg/github-planet-1.svg"
+            alt="github-planet-1"
           />
         </div>
         <div className="section-content">
@@ -70,6 +77,7 @@ export default function GitHub() {
               <span className="logos-plus">+</span>
               <span
                 className="octicon octicon-mark-github"
+                role="img"
                 aria-label="GitHub"
               ></span>
             </div>
@@ -82,15 +90,16 @@ export default function GitHub() {
               <video
                 className="video"
                 poster="assets/png/github-atom.png"
-                autoplay=""
-                loop=""
-                muted=""
-                playsinline=""
+                autoPlay
+                loop
+                muted
+                playsInline
               >
                 <source
                   src="assets/videos/github-for-atom.mp4"
                   type="video/mp4"
                 />
+                <track kind="captions" />
               </video>
             </div>
 
@@ -106,12 +115,12 @@ export default function GitHub() {
 
               <p>
                 Visit the 🚀
-                <a
+                <Link
                   className="features-button"
-                  href="https://web.archive.org/web/20221207004834/https://flight-manual.atom.io/using-atom/sections/github-package/"
+                  href="https://flight-manual.atom.io/using-atom/sections/github-package/"
                 >
                   documentation
-                </a>
+                </Link>
                 to learn how to use all the features.
               </p>
             </div>
@@ -125,10 +134,8 @@ export default function GitHub() {
             <h2>Install</h2>
             <p>
               The GitHub package comes already bundled with
-              <a href="https://web.archive.org/web/20221207004834/https://atom.io/">
-                Atom
-              </a>
-              , so there is nothing extra to install.&nbsp;🎉
+              <Link href="https://atom.io/">Atom</Link>, so there is nothing
+              extra to install.&nbsp;🎉
             </p>
           </div>
 
@@ -136,17 +143,17 @@ export default function GitHub() {
             <h2>Feedback</h2>
             <p>
               We would love to hear your
-              <a href="https://web.archive.org/web/20221207004834/https://github.com/atom/atom/discussions">
+              <Link href="https://github.com/atom/atom/discussions">
                 feedback
-              </a>
+              </Link>
               . If you run into any problems, please
-              <a href="https://web.archive.org/web/20221207004834/https://github.com/atom/github/issues">
+              <Link href="https://github.com/atom/github/issues">
                 open an issue
-              </a>
+              </Link>
               . For contributions, take a look at the
-              <a href="https://web.archive.org/web/20221207004834/https://github.com/atom/github/blob/master/CONTRIBUTING.md">
+              <Link href="https://github.com/atom/github/blob/master/CONTRIBUTING.md">
                 contribution guide
-              </a>
+              </Link>
               .
             </p>
           </div>
@@ -155,17 +162,20 @@ export default function GitHub() {
 
       <footer className="section footer">
         <div className="bg" aria-hidden="true">
-          <img
+          <Image
             className="bg-item bg-item--bottom-stars"
-            src="assets/svg//github-bottom-stars.svg"
+            src="assets/svg/github-bottom-stars.svg"
+            alt="github-bottom-stars"
           />
-          <img
+          <Image
             className="bg-item bg-item--swoosh"
-            src="assets/svg//github-swoosh.svg"
+            src="assets/svg/github-swoosh.svg"
+            alt="github-swoosh"
           />
-          <img
+          <Image
             className="bg-item bg-item--bottom"
-            src="assets/svg//github-bottom.svg"
+            src="assets/svg/github-bottom.svg"
+            alt="github-bottom"
           />
         </div>
         <div className="section-content community columns">
@@ -173,9 +183,9 @@ export default function GitHub() {
             <h2>Community packages</h2>
             <p>
               We also would like to point out all the
-              <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
+              <Link href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
                 amazing packages
-              </a>
+              </Link>
               the Atom community has already created.
             </p>
             <p>
@@ -186,61 +196,64 @@ export default function GitHub() {
             <p>Here just a few to check out:</p>
             <ul>
               <li>
-                <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/git-plus">
-                  git-plus
-                </a>
+                <Link href="https://atom.io/packages/git-plus">git-plus</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/git-control">
+                <Link href="https://atom.io/packages/git-control">
                   git-control
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/git-time-machine">
+                <Link href="https://atom.io/packages/git-time-machine">
                   git-time-machine
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/git-history">
+                <Link href="https://atom.io/packages/git-history">
                   git-history
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/git-blame">
-                  git-blame
-                </a>
+                <Link href="https://atom.io/packages/git-blame">git-blame</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/context-git">
+                <Link href="https://atom.io/packages/context-git">
                   context-git
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/simple-git">
+                <Link href="https://atom.io/packages/simple-git">
                   simple-git
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004834/https://atom.io/packages/split-diff">
+                <Link href="https://atom.io/packages/split-diff">
                   split-diff
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="section-content love">
-          <a
-            className="love"
-            href="https://web.archive.org/web/20221207004834/https://github.com/"
-          >
-            <span className="octicon octicon-code" aria-label="Made"></span>{" "}
+          <Link className="love" href="https://github.com/">
+            <span
+              className="octicon octicon-code"
+              role="img"
+              aria-label="Made"
+            ></span>{" "}
             with
-            <span className="octicon octicon-heart" aria-label="love"></span> by
+            <span
+              className="octicon octicon-heart"
+              role="img"
+              aria-label="Love"
+            ></span>{" "}
+            by
             <span
               className="octicon octicon-logo-github"
+              role="img"
               aria-label="GitHub"
             ></span>
-          </a>
+          </Link>
         </div>
       </footer>
     </body>

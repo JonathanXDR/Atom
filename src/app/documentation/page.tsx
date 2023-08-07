@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
 
@@ -10,53 +12,38 @@ export default function Documentation() {
             <ul className="navigation">
               <li>
                 <h1>
-                  <a
-                    href="https://web.archive.org/web/20221207004847/https://atom.io/"
-                    className="logo-small"
-                    title="Atom: A hackable text editor for the 21st Century"
-                  ></a>
+                  <Link href="https://atom.io/" className="logo-small"></Link>
                 </h1>
               </li>
               <li>
-                <a
-                  className=""
-                  href="https://web.archive.org/web/20221207004847/https://atom.io/packages"
-                >
+                <Link className="" href="https://atom.io/packages">
                   Packages
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className=""
-                  href="https://web.archive.org/web/20221207004847/https://atom.io/themes"
-                >
+                <Link className="" href="https://atom.io/themes">
                   Themes
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className="is-selected"
-                  href="https://web.archive.org/web/20221207004847/https://atom.io/docs"
-                >
+                <Link className="is-selected" href="https://atom.io/docs">
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004847/https://blog.atom.io/">
-                  Blog
-                </a>
+                <Link href="https://blog.atom.io/">Blog</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004847/https://github.com/atom/atom/discussions">
+                <Link href="https://github.com/atom/atom/discussions">
                   Discussions
-                </a>
+                </Link>
               </li>
             </ul>
 
             <div className="top-bar-right">
-              <a href="https://web.archive.org/web/20221207004847/https://atom.io/login?last_url=%2Fdocs">
+              <Link href="https://atom.io/login?last_url=%2Fdocs">
                 <span className="octicon octicon-log-in"></span> Sign in
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
@@ -70,15 +57,15 @@ export default function Documentation() {
               <div className="training-video-cta">
                 New to Atom? Check out the getting started video.
                 <span className="training-video-link">
-                  <a
-                    href="https://web.archive.org/web/20221207004847/https://www.youtube.com/watch?v=U5POoGSrtGg"
+                  <Link
+                    href="https://www.youtube.com/watch?v=U5POoGSrtGg"
                     target="_blank"
                   >
                     <span className="training-video-play">
                       <span className="octicon octicon-playback-play"></span>
                     </span>
                     Play video
-                  </a>
+                  </Link>
                 </span>
               </div>
 
@@ -93,26 +80,29 @@ export default function Documentation() {
                         </h3>
                         <p>
                           The
-                          <a
+                          <Link
                             data-skip-pjax="yeahokiguess"
-                            href="https://web.archive.org/web/20221207004847/https://flight-manual.atom.io/"
+                            href="https://flight-manual.atom.io/"
                           >
                             Atom Flight Manual
-                          </a>
+                          </Link>
                           covers everything from getting off the ground to
                           replacing the engine.
-                          <a href="https://web.archive.org/web/20221207004847/https://flight-manual.atom.io/">
+                          <Link href="https://flight-manual.atom.io/">
                             Go here to read the one and only book on everything
                             Atom.
-                          </a>
+                          </Link>
                         </p>
                         <p>
-                          <a href="https://web.archive.org/web/20221207004847/https://flight-manual.atom.io/">
-                            <img
-                              style="width: 200px"
+                          <Link href="https://flight-manual.atom.io/">
+                            <Image
+                              style={{
+                                width: "200px",
+                              }}
                               src="assets/png/flight-manual-cover.png"
+                              alt="flight-manual-cover"
                             />
-                          </a>
+                          </Link>
                         </p>
                       </div>
                     </td>
@@ -124,16 +114,16 @@ export default function Documentation() {
                         </h3>
                         <p>
                           The
-                          <a href="https://web.archive.org/web/20221207004847/https://flight-manual.atom.io/api">
+                          <Link href="https://flight-manual.atom.io/api">
                             Atom API reference documentation
-                          </a>
+                          </Link>
                           is automatically generated from the Atom source code.
                           Go here to see what tools you can use to build your
                           own plugins.
                         </p>
-                        <a href="https://web.archive.org/web/20221207004847/https://flight-manual.atom.io/api">
+                        <Link href="https://flight-manual.atom.io/api">
                           View all API docs
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td valign="top" width="33%">
@@ -144,9 +134,9 @@ export default function Documentation() {
                         </h3>
                         <p>
                           The
-                          <a href="https://web.archive.org/web/20221207004847/https://github.com/atom/atom/discussions">
+                          <Link href="https://github.com/atom/atom/discussions">
                             Atom Discussions
-                          </a>
+                          </Link>
                           is the place to discuss anything and everything Atom
                           related with the entire Atom community. If you have
                           problems or are looking for help, this is your place.
@@ -168,43 +158,37 @@ export default function Documentation() {
           <div className="wrapper no-pad">
             <ul className="footer-left">
               <li>
-                <a href="https://web.archive.org/web/20221207004847/https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
+                <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                   Terms of Use
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004847/https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
+                <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004847/https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
+                <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
                   Code of Conduct
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004847/https://atom.io/releases">
-                  Releases
-                </a>
+                <Link href="https://atom.io/releases">Releases</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004847/https://flight-manual.atom.io/faq/">
-                  FAQ
-                </a>
+                <Link href="https://flight-manual.atom.io/faq/">FAQ</Link>
               </li>
               <li>
-                <a href="https://web.archive.org/web/20221207004847/https://atom.io/contact">
-                  Contact
-                </a>
+                <Link href="https://atom.io/contact">Contact</Link>
               </li>
             </ul>
 
             <div className="footer-right">
-              <a href="https://web.archive.org/web/20221207004847/https://github.com/">
+              <Link href="https://github.com/">
                 <span className="octicon octicon-code"></span> with
                 <span className="octicon octicon-heart"></span> by
                 <span className="octicon octicon-logo-github"></span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

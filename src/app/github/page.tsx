@@ -108,7 +108,7 @@ export default function GitHub() {
                 playsInline
               >
                 <source
-                  src="assets/videos/github-for-atom.mp4"
+                  src="assets/video/github-for-atom.mp4"
                   type="video/mp4"
                 />
                 <track kind="captions" />

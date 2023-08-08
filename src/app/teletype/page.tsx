@@ -83,7 +83,7 @@ export default function Teletype() {
               poster="/assets/png/real-time-video-poster.png"
               controls={false}
             >
-              <source src="/assets/videos/real-time.mp4" type="video/mp4" />
+              <source src="/assets/video/real-time.mp4" type="video/mp4" />
               <track kind="captions" />
             </video>
             <div ref={videoHudRef} className="video-hud">

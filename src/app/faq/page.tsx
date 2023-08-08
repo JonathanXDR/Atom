@@ -8,7 +8,7 @@ import {
 } from "@primer/octicons-react";
 import Link from "next/link";
 import "./main.css";
-import "/public/assets/css/faq.css";
+import "/public/assets/css/flight-manual.css";
 
 export default function FAQ() {
   return (

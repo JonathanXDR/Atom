@@ -4,7 +4,7 @@ import NavItem from "@/components/NavItem/NavItem";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
-import "/public/assets/css/application.css";
+import "/public/assets/css/flight-manual.css";
 import flightManualCover from "/public/assets/png/flight-manual-cover.png";
 
 export default function FlightManual() {
@@ -1099,27 +1099,27 @@ export default function FlightManual() {
 
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-using-an-international-keyboard-and-keys-that-use-altgr-or-ctrl-alt-aren-t-working">
-                  I’m using an international keyboard and keys that use AltGr or
-                  Ctrl+Alt aren’t working
+                  I&apos;m using an international keyboard and keys that use
+                  AltGr or Ctrl+Alt aren&apos;t working
                 </Link>
               </li>
 
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-julia-what-do-i-do">
-                  I’m having a problem with Julia! What do I do?
+                  I&apos;m having a problem with Julia! What do I do?
                 </Link>
               </li>
 
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-getting-an-error-about-a-self-signed-certificate-what-do-i-do">
-                  I’m getting an error about a “self-signed certificate”. What
-                  do I do?
+                  I&apos;m getting an error about a “self-signed certificate”.
+                  What do I do?
                 </Link>
               </li>
 
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-platformio-what-do-i-do">
-                  I’m having a problem with PlatformIO! What do I do?
+                  I&apos;m having a problem with PlatformIO! What do I do?
                 </Link>
               </li>
 
@@ -1158,8 +1158,8 @@ export default function FlightManual() {
 
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-trying-to-change-my-syntax-colors-from-styles-less-but-it-isn-t-working">
-                  I’m trying to change my syntax colors from styles.less, but it
-                  isn’t working!
+                  I&apos;m trying to change my syntax colors from styles.less,
+                  but it isn&apos;t working!
                 </Link>
               </li>
 
@@ -1270,7 +1270,6 @@ export default function FlightManual() {
               </li>
             </ul>
           </div>
-          N
         </div>
         <div className="footer-pad"></div>
       </div>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
-import "/public/assets/css/application.css";
+import "/public/assets/css/blog.css";
 import Annthurium from "/public/assets/png/annthurium.png";
 import Asheren from "/public/assets/png/asheren.png";
 import Jasonrudolph from "/public/assets/png/jasonrudolph.png";
@@ -44,13 +44,16 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Jasonrudolph}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     jasonrudolph
                   </Link>
                 </p>
@@ -93,13 +96,16 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Rafeca}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     rafeca
                   </Link>
                 </p>
@@ -111,13 +117,14 @@ export default function Blog() {
                   </p>
 
                   <p>
-                    Today we’re excited to introduce
+                    Today we&apos;re excited to introduce
                     <Link href="https://atom.io/nightly">
-                      Atom Nightly releases
+                      {" "}
+                      Atom Nightly releases{" "}
                     </Link>
-                    ! This new release channel gives you access to Atom’s latest
-                    feature improvements and bug fixes each day as they are
-                    merged into our
+                    ! This new release channel gives you access to Atom&apos;s
+                    latest feature improvements and bug fixes each day as they
+                    are merged into our
                     <code className="language-plaintext highlighter-rouge">
                       master
                     </code>
@@ -151,13 +158,16 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Nathansobo}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     nathansobo
                   </Link>
                 </p>
@@ -200,22 +210,25 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Rafeca}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     rafeca
                   </Link>
                 </p>
                 <div className="post markdown">
                   <p>
                     Atom 1.37 has shipped! This version introduces a complete
-                    flow for handling review comments you’ve received on a pull
-                    request and an experimental faster mode in fuzzy finder that
-                    dramatically improves its performance.
+                    flow for handling review comments you&apos;ve received on a
+                    pull request and an experimental faster mode in fuzzy finder
+                    that dramatically improves its performance.
                   </p>
 
                   <Link href="/blog2019/05/12/atom-1-37.html">
@@ -244,13 +257,16 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Smashwilson}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     smashwilson
                   </Link>
                 </p>
@@ -288,13 +304,16 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Annthurium}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=36 2x,
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=54 3x,
                       https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     annthurium
                   </Link>
                 </p>
@@ -332,22 +351,25 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Jasonrudolph}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
                       https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     jasonrudolph
                   </Link>
                 </p>
                 <div className="post markdown">
                   <p>
-                    Atom 1.34 is out! With this release, you’ll enjoy a host of
-                    enhancements to help you craft the perfect commit, including
-                    a faster diff view, the ability to preview all staged
-                    changes, and support for commit message templates.
+                    Atom 1.34 is out! With this release, you&apos;ll enjoy a
+                    host of enhancements to help you craft the perfect commit,
+                    including a faster diff view, the ability to preview all
+                    staged changes, and support for commit message templates.
                   </p>
 
                   <Link href="/blog2019/01/08/atom-1-34.html">
@@ -378,13 +400,16 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Asheren}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=18 1x,
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=36 2x,
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=54 3x,
                       https://avatars2.githubusercontent.com/asheren?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     asheren
                   </Link>
                 </p>
@@ -421,21 +446,25 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Kuychaco}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=18 1x,
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=36 2x,
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=54 3x,
                       https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     kuychaco
                   </Link>
                 </p>
                 <div className="post markdown">
                   <p>
-                    Atom 1.33 is out! With this release, you’ll enjoy built-in
-                    Rust support, improved discoverability for Git and GitHub
-                    functionality, and faster performance for bracket matching.
+                    Atom 1.33 is out! With this release, you&apos;ll enjoy
+                    built-in Rust support, improved discoverability for Git and
+                    GitHub functionality, and faster performance for bracket
+                    matching.
                   </p>
 
                   <Link href="/blog2018/11/28/atom-1-33.html">
@@ -466,22 +495,25 @@ export default function Blog() {
                       height="18"
                       data-proofer-ignore="true"
                       src={Sguthals}
+                      style={{
+                        verticalAlign: "baseline",
+                      }}
                       sizes="
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=18 1x,
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=36 2x,
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=72 4x
                     "
-                    />
+                    />{" "}
                     sguthals
                   </Link>
                 </p>
                 <div className="post markdown">
                   <p>
-                    We want to make Atom better, and we need your help. We’ve
-                    started conducting usability interviews where we can get
-                    direct feedback from humans about how they work and how what
-                    we build affects that workflow.
+                    We want to make Atom better, and we need your help.
+                    We&apos;ve started conducting usability interviews where we
+                    can get direct feedback from humans about how they work and
+                    how what we build affects that workflow.
                   </p>
 
                   <Link href="/blog2018/11/14/github-package-uxr.html">

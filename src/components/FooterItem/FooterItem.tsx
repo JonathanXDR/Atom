@@ -33,7 +33,7 @@ const FooterItem: React.FC = () => {
               <Link href="/releases">Releases</Link>
             </li>
             <li>
-              <Link href="https://flight-manual.atom.io/faq/">FAQ</Link>
+              <Link href="/faq">FAQ</Link>
             </li>
             <li>
               <Link href="/contact">Contact</Link>

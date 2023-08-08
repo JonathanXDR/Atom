@@ -84,7 +84,7 @@ export default function Themes() {
                           >
                             #ui
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:theme"
@@ -92,7 +92,7 @@ export default function Themes() {
                           >
                             #theme
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:material"
@@ -100,7 +100,7 @@ export default function Themes() {
                           >
                             #material
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:md"
@@ -108,7 +108,7 @@ export default function Themes() {
                           >
                             #md
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:dynamic"
@@ -116,7 +116,7 @@ export default function Themes() {
                           >
                             #dynamic
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -128,6 +128,7 @@ export default function Themes() {
                         href="https://atom.io/users/atom-material"
                         className="author"
                       >
+                        {" "}
                         atom-material
                       </Link>
 
@@ -138,7 +139,7 @@ export default function Themes() {
                           aria-label="2,509,605 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">2,509,605</span>
                         </span>
 
@@ -172,8 +173,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=atom-material-ui"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -219,7 +219,7 @@ export default function Themes() {
                           >
                             #syntax
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:theme"
@@ -227,7 +227,7 @@ export default function Themes() {
                           >
                             #theme
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:material"
@@ -235,7 +235,7 @@ export default function Themes() {
                           >
                             #material
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:material%20design"
@@ -243,7 +243,7 @@ export default function Themes() {
                           >
                             #material design
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -255,6 +255,7 @@ export default function Themes() {
                         href="https://atom.io/users/atom-material"
                         className="author"
                       >
+                        {" "}
                         atom-material
                       </Link>
 
@@ -265,7 +266,7 @@ export default function Themes() {
                           aria-label="1,743,927 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">1,743,927</span>
                         </span>
 
@@ -299,8 +300,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=atom-material-syntax"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -330,7 +330,7 @@ export default function Themes() {
               <div className="package-list-header">
                 <h3 className="package-list-title">
                   {/* <span className="mega-octicon octicon-flame"></span> */}
-                  <FlameIcon size={32} /> Trending
+                  <FlameIcon size={32} /> Trending{" "}
                   <div className="trending-select">
                     <div className="select-menu js-menu-container js-select-menu">
                       <Link
@@ -428,7 +428,7 @@ export default function Themes() {
                           >
                             #หนัง โป้ อ อย
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%E0%B9%89%20%E0%B9%81%E0%B8%95%E0%B8%81%20%E0%B9%83%E0%B8%99"
@@ -436,7 +436,7 @@ export default function Themes() {
                           >
                             #หนัง โป้ แตก ใน
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%84%20%E0%B8%A5%E0%B8%B4%E0%B9%8A%20%E0%B8%9B%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
@@ -444,7 +444,7 @@ export default function Themes() {
                           >
                             #ค ลิ๊ ป โป๊
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%AD%E0%B8%B4%E0%B8%AA%E0%B8%A5%E0%B8%B2%E0%B8%A1"
@@ -452,7 +452,7 @@ export default function Themes() {
                           >
                             #หนัง x อิสลาม
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%84%E0%B8%A7%E0%B8%A2%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88"
@@ -460,7 +460,7 @@ export default function Themes() {
                           >
                             #ควย ใหญ่
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -472,6 +472,7 @@ export default function Themes() {
                         href="https://atom.io/users/power-ads"
                         className="author"
                       >
+                        {" "}
                         power-ads
                       </Link>
 
@@ -482,7 +483,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -516,8 +517,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -565,7 +565,7 @@ export default function Themes() {
                             #แม่มด โร อั ล ด์ ดา ห์ ล เต็ม เรื่อง รัก 2 ปี ยินดี
                             คืน เงิน เต็ม เรื่อง
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%A5%E0%B8%B9%20%E0%B8%81%E0%B9%89%E0%B8%B2%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%9F%E0%B8%B9%20%E0%B9%81%E0%B8%9E%E0%B8%99%E0%B8%94%E0%B9%89%E0%B8%B2%201"
@@ -573,7 +573,7 @@ export default function Themes() {
                           >
                             #ดู หนัง ลู ก้า ดู หนัง กังฟู แพนด้า 1
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%A3%E0%B8%B5%20%E0%B9%84%E0%B8%A1%E0%B9%88%20%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B8%E0%B8%81%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%20%E0%B9%82%E0%B8%86%E0%B8%A9%E0%B8%93%E0%B8%B2%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%81%E0%B8%B1%E0%B8%9B%E0%B8%95%E0%B8%B1%E0%B8%99%20%E0%B8%AD%E0%B9%80%E0%B8%A1%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2"
@@ -582,7 +582,7 @@ export default function Themes() {
                             #ดู หนัง ออนไลน์ ฟรี ไม่ กระตุก ไม่มี โฆษณา ดู หนัง
                             กัปตัน อเมริกา
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -594,6 +594,7 @@ export default function Themes() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -604,7 +605,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -638,8 +639,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -685,7 +685,7 @@ export default function Themes() {
                           >
                             #มือใหม่ เล่น หุ้น
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%9A%E0%B8%B1%E0%B8%A7%20%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87"
@@ -693,7 +693,7 @@ export default function Themes() {
                           >
                             #เปิดบัญชี หุ้น บัว หลวง
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%20%E0%B8%9B%E0%B8%B9"
@@ -701,7 +701,7 @@ export default function Themes() {
                           >
                             #หุ้น บ้าน ปู
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%81%E0%B8%AD%20%E0%B8%9E%20%E0%B8%A5%E0%B8%AD%E0%B8%87%20%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
@@ -709,7 +709,7 @@ export default function Themes() {
                           >
                             #แอ พ ลอง เล่น หุ้น
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%95%E0%B8%B1%E0%B8%A7%20%E0%B9%84%E0%B8%AB%E0%B8%99%20%E0%B8%99%E0%B9%88%E0%B8%B2%20%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%20%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%202564"
@@ -717,7 +717,7 @@ export default function Themes() {
                           >
                             #หุ้น ตัว ไหน น่า ซื้อ เก็บ 2564
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -729,6 +729,7 @@ export default function Themes() {
                         href="https://atom.io/users/Featured-ads"
                         className="author"
                       >
+                        {" "}
                         Featured-ads
                       </Link>
 
@@ -739,7 +740,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -773,8 +774,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -821,7 +821,7 @@ export default function Themes() {
                           >
                             #037hd หนัง ออนไลน์ ช่อง 31
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3%20%E0%B8%AD%E0%B8%98%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%99%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B8%99%20%E0%B9%82%E0%B8%A3%E0%B8%87%20%E0%B8%9F%E0%B8%A3%E0%B8%B5"
@@ -829,7 +829,7 @@ export default function Themes() {
                           >
                             #ดู มังกร อธิษฐาน ดู หนัง ชน โรง ฟรี
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AD%E0%B8%B1%E0%B8%88%E0%B8%89%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B8%B0%20%E0%B8%AA%E0%B8%B8%E0%B8%94%20%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%83%E0%B8%88%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%20%E0%B8%94%E0%B8%B2%E0%B8%9A%20%E0%B8%97%E0%B8%B0%E0%B8%A5%E0%B8%B8%20%E0%B8%88%E0%B8%AD"
@@ -837,7 +837,7 @@ export default function Themes() {
                           >
                             #อัจฉริยะ สุด ดวงใจ สามทหาร เสือ ดาบ ทะลุ จอ
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -849,6 +849,7 @@ export default function Themes() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -859,7 +860,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -893,8 +894,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -941,7 +941,7 @@ export default function Themes() {
                           >
                             #หนัง กังฟู แพนด้า 1 ดู หนัง ซอมบี้ ออนไลน์
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%A5%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%A2%20%E0%B9%81%E0%B8%84%E0%B9%89%E0%B8%99%20movie24thai"
@@ -949,7 +949,7 @@ export default function Themes() {
                           >
                             #ลบรอย แค้น movie24thai
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20300%20%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A8%E0%B8%B6%E0%B8%81%20%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%20%E0%B8%AA%E0%B8%B0%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%99%20%E0%B9%82%E0%B8%A5%E0%B8%81%20%E0%B8%9A%E0%B8%AD%E0%B8%AA%20%E0%B8%89%E0%B8%B1%E0%B8%99%20%E0%B8%82%E0%B8%A2%E0%B8%B1%E0%B8%99%20%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B8%AD%E0%B8%94%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -958,7 +958,7 @@ export default function Themes() {
                             #ดู หนัง 300 ขุนศึก พันธุ์ สะท้าน โลก บอส ฉัน ขยัน
                             เชือด เต็ม เรื่อง
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -970,6 +970,7 @@ export default function Themes() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -980,7 +981,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1014,8 +1015,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1062,7 +1062,7 @@ export default function Themes() {
                           >
                             #ตราสาร หนี้ คือ
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:bbl%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
@@ -1070,7 +1070,7 @@ export default function Themes() {
                           >
                             #bbl หุ้น
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
@@ -1078,7 +1078,7 @@ export default function Themes() {
                           >
                             #หุ้น ทุน คือ
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%20%E0%B8%9E%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%95%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%81%E0%B8%A3%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C"
@@ -1086,7 +1086,7 @@ export default function Themes() {
                           >
                             #เปิด พอร์ต หุ้น กสิกร ออนไลน์
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:gunkul%20%E0%B8%82%E0%B8%B2%E0%B8%A2%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%20%E0%B8%84%E0%B8%B7%E0%B8%99"
@@ -1094,7 +1094,7 @@ export default function Themes() {
                           >
                             #gunkul ขาย หุ้น ซื้อ คืน
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1106,6 +1106,7 @@ export default function Themes() {
                         href="https://atom.io/users/Featured-ads"
                         className="author"
                       >
+                        {" "}
                         Featured-ads
                       </Link>
 
@@ -1116,7 +1117,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1150,8 +1151,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1219,7 +1219,7 @@ export default function Themes() {
                             #แม่มด โร อั ล ด์ ดา ห์ ล เต็ม เรื่อง รัก 2 ปี ยินดี
                             คืน เงิน เต็ม เรื่อง
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%A5%E0%B8%B9%20%E0%B8%81%E0%B9%89%E0%B8%B2%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%9F%E0%B8%B9%20%E0%B9%81%E0%B8%9E%E0%B8%99%E0%B8%94%E0%B9%89%E0%B8%B2%201"
@@ -1227,7 +1227,7 @@ export default function Themes() {
                           >
                             #ดู หนัง ลู ก้า ดู หนัง กังฟู แพนด้า 1
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%A3%E0%B8%B5%20%E0%B9%84%E0%B8%A1%E0%B9%88%20%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B8%E0%B8%81%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%20%E0%B9%82%E0%B8%86%E0%B8%A9%E0%B8%93%E0%B8%B2%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%81%E0%B8%B1%E0%B8%9B%E0%B8%95%E0%B8%B1%E0%B8%99%20%E0%B8%AD%E0%B9%80%E0%B8%A1%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2"
@@ -1236,7 +1236,7 @@ export default function Themes() {
                             #ดู หนัง ออนไลน์ ฟรี ไม่ กระตุก ไม่มี โฆษณา ดู หนัง
                             กัปตัน อเมริกา
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1248,6 +1248,7 @@ export default function Themes() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -1258,7 +1259,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1292,8 +1293,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1338,7 +1338,7 @@ export default function Themes() {
                           >
                             #หนัง โป้ อ อย
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%E0%B9%89%20%E0%B9%81%E0%B8%95%E0%B8%81%20%E0%B9%83%E0%B8%99"
@@ -1346,7 +1346,7 @@ export default function Themes() {
                           >
                             #หนัง โป้ แตก ใน
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%84%20%E0%B8%A5%E0%B8%B4%E0%B9%8A%20%E0%B8%9B%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
@@ -1354,7 +1354,7 @@ export default function Themes() {
                           >
                             #ค ลิ๊ ป โป๊
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%AD%E0%B8%B4%E0%B8%AA%E0%B8%A5%E0%B8%B2%E0%B8%A1"
@@ -1362,7 +1362,7 @@ export default function Themes() {
                           >
                             #หนัง x อิสลาม
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%84%E0%B8%A7%E0%B8%A2%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88"
@@ -1370,7 +1370,7 @@ export default function Themes() {
                           >
                             #ควย ใหญ่
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1382,6 +1382,7 @@ export default function Themes() {
                         href="https://atom.io/users/power-ads"
                         className="author"
                       >
+                        {" "}
                         power-ads
                       </Link>
 
@@ -1392,7 +1393,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1426,8 +1427,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1473,7 +1473,7 @@ export default function Themes() {
                           >
                             #มือใหม่ เล่น หุ้น
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B5%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%9A%E0%B8%B1%E0%B8%A7%20%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87"
@@ -1481,7 +1481,7 @@ export default function Themes() {
                           >
                             #เปิดบัญชี หุ้น บัว หลวง
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%20%E0%B8%9B%E0%B8%B9"
@@ -1489,7 +1489,7 @@ export default function Themes() {
                           >
                             #หุ้น บ้าน ปู
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%81%E0%B8%AD%20%E0%B8%9E%20%E0%B8%A5%E0%B8%AD%E0%B8%87%20%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
@@ -1497,7 +1497,7 @@ export default function Themes() {
                           >
                             #แอ พ ลอง เล่น หุ้น
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%95%E0%B8%B1%E0%B8%A7%20%E0%B9%84%E0%B8%AB%E0%B8%99%20%E0%B8%99%E0%B9%88%E0%B8%B2%20%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%20%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%202564"
@@ -1505,7 +1505,7 @@ export default function Themes() {
                           >
                             #หุ้น ตัว ไหน น่า ซื้อ เก็บ 2564
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1517,6 +1517,7 @@ export default function Themes() {
                         href="https://atom.io/users/Featured-ads"
                         className="author"
                       >
+                        {" "}
                         Featured-ads
                       </Link>
 
@@ -1527,7 +1528,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1561,8 +1562,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1609,7 +1609,7 @@ export default function Themes() {
                           >
                             #037hd หนัง ออนไลน์ ช่อง 31
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A3%20%E0%B8%AD%E0%B8%98%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B8%B2%E0%B8%99%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B8%99%20%E0%B9%82%E0%B8%A3%E0%B8%87%20%E0%B8%9F%E0%B8%A3%E0%B8%B5"
@@ -1617,7 +1617,7 @@ export default function Themes() {
                           >
                             #ดู มังกร อธิษฐาน ดู หนัง ชน โรง ฟรี
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AD%E0%B8%B1%E0%B8%88%E0%B8%89%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B8%B0%20%E0%B8%AA%E0%B8%B8%E0%B8%94%20%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%83%E0%B8%88%20%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%97%E0%B8%AB%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%20%E0%B8%94%E0%B8%B2%E0%B8%9A%20%E0%B8%97%E0%B8%B0%E0%B8%A5%E0%B8%B8%20%E0%B8%88%E0%B8%AD"
@@ -1625,7 +1625,7 @@ export default function Themes() {
                           >
                             #อัจฉริยะ สุด ดวงใจ สามทหาร เสือ ดาบ ทะลุ จอ
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1637,6 +1637,7 @@ export default function Themes() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -1647,7 +1648,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1681,8 +1682,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1729,7 +1729,7 @@ export default function Themes() {
                           >
                             #หนัง กังฟู แพนด้า 1 ดู หนัง ซอมบี้ ออนไลน์
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%A5%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%A2%20%E0%B9%81%E0%B8%84%E0%B9%89%E0%B8%99%20movie24thai"
@@ -1737,7 +1737,7 @@ export default function Themes() {
                           >
                             #ลบรอย แค้น movie24thai
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20300%20%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A8%E0%B8%B6%E0%B8%81%20%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%20%E0%B8%AA%E0%B8%B0%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%99%20%E0%B9%82%E0%B8%A5%E0%B8%81%20%E0%B8%9A%E0%B8%AD%E0%B8%AA%20%E0%B8%89%E0%B8%B1%E0%B8%99%20%E0%B8%82%E0%B8%A2%E0%B8%B1%E0%B8%99%20%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B8%AD%E0%B8%94%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -1746,7 +1746,7 @@ export default function Themes() {
                             #ดู หนัง 300 ขุนศึก พันธุ์ สะท้าน โลก บอส ฉัน ขยัน
                             เชือด เต็ม เรื่อง
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1758,6 +1758,7 @@ export default function Themes() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -1768,7 +1769,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1802,8 +1803,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1850,7 +1850,7 @@ export default function Themes() {
                           >
                             #ตราสาร หนี้ คือ
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:bbl%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
@@ -1858,7 +1858,7 @@ export default function Themes() {
                           >
                             #bbl หุ้น
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
@@ -1866,7 +1866,7 @@ export default function Themes() {
                           >
                             #หุ้น ทุน คือ
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%20%E0%B8%9E%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%95%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%81%E0%B8%A3%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C"
@@ -1874,7 +1874,7 @@ export default function Themes() {
                           >
                             #เปิด พอร์ต หุ้น กสิกร ออนไลน์
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:gunkul%20%E0%B8%82%E0%B8%B2%E0%B8%A2%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%8B%E0%B8%B7%E0%B9%89%E0%B8%AD%20%E0%B8%84%E0%B8%B7%E0%B8%99"
@@ -1882,7 +1882,7 @@ export default function Themes() {
                           >
                             #gunkul ขาย หุ้น ซื้อ คืน
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1894,6 +1894,7 @@ export default function Themes() {
                         href="https://atom.io/users/Featured-ads"
                         className="author"
                       >
+                        {" "}
                         Featured-ads
                       </Link>
 
@@ -1904,7 +1905,7 @@ export default function Themes() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1938,8 +1939,7 @@ export default function Themes() {
                           href="atom://settings-view/show-package?package=%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{

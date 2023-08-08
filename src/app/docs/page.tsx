@@ -23,7 +23,7 @@ export default function Docs() {
           <div id="docs-pjax-container">
             <div className="wrapper documents content-push wide atom-doc-index">
               <h2 className="center index-title">Atom Documentation</h2>
-              <h3 className="center subheader">Current Version: v1.60.0</h3>
+              <h3 className="center subheader">Current Version: v1.63.1</h3>
 
               <div className="training-video-cta">
                 New to Atom? Check out the getting started video.
@@ -56,11 +56,13 @@ export default function Docs() {
                             data-skip-pjax="yeahokiguess"
                             href="https://flight-manual.atom.io/"
                           >
-                            Atom Flight Manual
+                            {" "}
+                            Atom Flight Manual{" "}
                           </Link>
                           covers everything from getting off the ground to
                           replacing the engine.
                           <Link href="https://flight-manual.atom.io/">
+                            {" "}
                             Go here to read the one and only book on everything
                             Atom.
                           </Link>
@@ -87,7 +89,8 @@ export default function Docs() {
                         <p>
                           The
                           <Link href="https://flight-manual.atom.io/api">
-                            Atom API reference documentation
+                            {" "}
+                            Atom API reference documentation{" "}
                           </Link>
                           is automatically generated from the Atom source code.
                           Go here to see what tools you can use to build your
@@ -107,7 +110,8 @@ export default function Docs() {
                         <p>
                           The
                           <Link href="https://github.com/atom/atom/discussions">
-                            Atom Discussions
+                            {" "}
+                            Atom Discussions{" "}
                           </Link>
                           is the place to discuss anything and everything Atom
                           related with the entire Atom community. If you have
@@ -120,7 +124,6 @@ export default function Docs() {
               </table>
             </div>
           </div>
-          N
         </div>
 
         <div className="footer-pad"></div>

@@ -17,12 +17,12 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
+import NungThai from "/public/assets/png/NungThai.png";
 import ArnaudRinquin from "/public/assets/png/arnaudrinquin.png";
 import Atom from "/public/assets/png/atom.png";
 import B3by from "/public/assets/png/b3by.png";
 import Mathieudutour from "/public/assets/png/mathieudutour.png";
 import Nteract from "/public/assets/png/nteract.png";
-import NungThai from "/public/assets/png/nungthai.png";
 import PowerAds from "/public/assets/png/power-ads.png";
 import Timomeh from "/public/assets/png/timomeh.png";
 
@@ -86,7 +86,7 @@ export default function Packages() {
                           >
                             #collaboration
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:collaborative-editing"
@@ -94,7 +94,7 @@ export default function Packages() {
                           >
                             #collaborative-editing
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:pair-programming"
@@ -102,7 +102,7 @@ export default function Packages() {
                           >
                             #pair-programming
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:real-time"
@@ -110,7 +110,7 @@ export default function Packages() {
                           >
                             #real-time
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -122,6 +122,7 @@ export default function Packages() {
                         href="https://atom.io/users/atom"
                         className="author"
                       >
+                        {" "}
                         atom
                       </Link>
 
@@ -132,7 +133,7 @@ export default function Packages() {
                           aria-label="1,473,857 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">1,473,857</span>
                         </span>
 
@@ -166,8 +167,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=teletype"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -212,7 +212,7 @@ export default function Packages() {
                           >
                             #scroll
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:time"
@@ -220,7 +220,7 @@ export default function Packages() {
                           >
                             #time
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:space"
@@ -228,7 +228,7 @@ export default function Packages() {
                           >
                             #space
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:xkcd"
@@ -236,7 +236,7 @@ export default function Packages() {
                           >
                             #xkcd
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -252,6 +252,7 @@ export default function Packages() {
                         href="https://atom.io/users/mathieudutour"
                         className="author"
                       >
+                        {" "}
                         mathieudutour
                       </Link>
 
@@ -262,7 +263,7 @@ export default function Packages() {
                           aria-label="134,525 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">134,525</span>
                         </span>
 
@@ -296,8 +297,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=scroll-through-time"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -344,7 +344,7 @@ export default function Packages() {
                           >
                             #execute
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:run"
@@ -352,7 +352,7 @@ export default function Packages() {
                           >
                             #run
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:jupyter"
@@ -360,7 +360,7 @@ export default function Packages() {
                           >
                             #jupyter
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:ipython"
@@ -368,7 +368,7 @@ export default function Packages() {
                           >
                             #ipython
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:julia"
@@ -376,7 +376,7 @@ export default function Packages() {
                           >
                             #julia
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -388,6 +388,7 @@ export default function Packages() {
                         href="https://atom.io/users/nteract"
                         className="author"
                       >
+                        {" "}
                         nteract
                       </Link>
 
@@ -398,7 +399,7 @@ export default function Packages() {
                           aria-label="2,562,842 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">2,562,842</span>
                         </span>
 
@@ -432,8 +433,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=hydrogen"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -480,7 +480,7 @@ export default function Packages() {
                           >
                             #pane
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:focus"
@@ -488,7 +488,7 @@ export default function Packages() {
                           >
                             #focus
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:origami"
@@ -496,7 +496,7 @@ export default function Packages() {
                           >
                             #origami
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:zoom"
@@ -504,7 +504,7 @@ export default function Packages() {
                           >
                             #zoom
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:autozoom"
@@ -512,7 +512,7 @@ export default function Packages() {
                           >
                             #autozoom
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -524,6 +524,7 @@ export default function Packages() {
                         href="https://atom.io/users/timomeh"
                         className="author"
                       >
+                        {" "}
                         timomeh
                       </Link>
 
@@ -534,7 +535,7 @@ export default function Packages() {
                           aria-label="206,804 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">206,804</span>
                         </span>
 
@@ -568,8 +569,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=hey-pane"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -614,7 +614,7 @@ export default function Packages() {
                           >
                             #clock
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:time"
@@ -622,7 +622,7 @@ export default function Packages() {
                           >
                             #time
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:date"
@@ -630,7 +630,7 @@ export default function Packages() {
                           >
                             #date
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:statusbar"
@@ -638,7 +638,7 @@ export default function Packages() {
                           >
                             #statusbar
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:momentjs"
@@ -646,7 +646,7 @@ export default function Packages() {
                           >
                             #momentjs
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -658,6 +658,7 @@ export default function Packages() {
                         href="https://atom.io/users/b3by"
                         className="author"
                       >
+                        {" "}
                         b3by
                       </Link>
 
@@ -668,7 +669,7 @@ export default function Packages() {
                           aria-label="1,090,897 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">1,090,897</span>
                         </span>
 
@@ -702,8 +703,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=atom-clock"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -755,6 +755,7 @@ export default function Packages() {
                         href="https://atom.io/users/ArnaudRinquin"
                         className="author"
                       >
+                        {" "}
                         ArnaudRinquin
                       </Link>
 
@@ -765,7 +766,7 @@ export default function Packages() {
                           aria-label="149,086 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">149,086</span>
                         </span>
 
@@ -799,8 +800,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=zentabs"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -830,7 +830,7 @@ export default function Packages() {
               <div className="package-list-header">
                 <h3 className="package-list-title">
                   {/* <span className="mega-octicon octicon-flame"></span> */}
-                  <FlameIcon size={32} /> Trending
+                  <FlameIcon size={32} /> Trending{" "}
                   <div className="trending-select">
                     <div className="select-menu js-menu-container js-select-menu">
                       <Link
@@ -938,6 +938,7 @@ export default function Packages() {
                         href="https://atom.io/users/power-ads"
                         className="author"
                       >
+                        {" "}
                         power-ads
                       </Link>
 
@@ -948,7 +949,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -982,8 +983,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=jp69ucn4zdjjnrc"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1031,7 +1031,7 @@ export default function Packages() {
                             #ดู หนัง hidden figures ดู มนต์ รัก ดอก ผักบุ้ง เต็ม
                             เรื่อง ออนไลน์
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%9A%E0%B8%AD%E0%B8%AA%20%E0%B8%89%E0%B8%B1%E0%B8%99%20%E0%B8%82%E0%B8%A2%E0%B8%B1%E0%B8%99%20%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B8%AD%E0%B8%94%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20v8movie"
@@ -1039,7 +1039,7 @@ export default function Packages() {
                           >
                             #บอส ฉัน ขยัน เชือด เต็ม เรื่อง v8movie
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20nobody%20secret%20millionaire%20%E0%B8%9E%E0%B8%B2%E0%B8%81%E0%B8%A2%E0%B9%8C%20%E0%B9%84%E0%B8%97%E0%B8%A2"
@@ -1047,7 +1047,7 @@ export default function Packages() {
                           >
                             #ดู หนัง nobody secret millionaire พากย์ ไทย
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1059,6 +1059,7 @@ export default function Packages() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -1069,7 +1070,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1103,8 +1104,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9F%E0%B8%A3%E0%B8%B5%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%202021%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%2018%20%E0%B8%94%E0%B8%B2%E0%B8%9A%20%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B8%B2%E0%B8%95%20%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%A3%20%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%20%E0%B8%A1%E0%B8%B9%E0%B8%9F%20%E0%B8%A7%E0%B8%B5%E0%B9%88%20%E0%B8%94%E0%B8%B9%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1149,7 +1149,7 @@ export default function Packages() {
                           >
                             #โป๊ มัน ๆ
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%82%E0%B8%9B%E0%B9%8A%20%E0%B8%84%E0%B8%99%20%E0%B9%81%E0%B8%81%E0%B9%88"
@@ -1157,7 +1157,7 @@ export default function Packages() {
                           >
                             #โป๊ คน แก่
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%B5%20%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2"
@@ -1165,7 +1165,7 @@ export default function Packages() {
                           >
                             #หี ดารา
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%A3%E0%B8%B9%E0%B8%9B%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
@@ -1173,7 +1173,7 @@ export default function Packages() {
                           >
                             #ดู รูป โป๊
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%9D%20%E0%B8%A3%E0%B8%B1%E0%B8%87"
@@ -1181,7 +1181,7 @@ export default function Packages() {
                           >
                             #หนัง โป ฝ รัง
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1193,6 +1193,7 @@ export default function Packages() {
                         href="https://atom.io/users/power-ads"
                         className="author"
                       >
+                        {" "}
                         power-ads
                       </Link>
 
@@ -1203,7 +1204,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1237,8 +1238,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%9B%20%E0%B9%82%E0%B8%9B%E0%B9%8A%20%E0%B8%9F%E0%B8%A3%E0%B8%B5%20%E0%B8%84%E0%B8%A7%E0%B8%A2%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B9%82%E0%B8%9B%E0%B9%89%E0%B8%94%E0%B8%B9%E0%B8%9F%E0%B8%A3%E0%B8%B5"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1283,7 +1283,7 @@ export default function Packages() {
                           >
                             #หนัง ออนไลน์ ตลก เงียบ ให้ รอด
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%84%E0%B8%B7%E0%B8%99%20%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%9C%E0%B8%B5%20%E0%B8%A1%E0%B8%B2%20%E0%B8%95%E0%B8%B2%E0%B8%A1%20%E0%B8%99%E0%B8%B1%E0%B8%94%20imovie%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87"
@@ -1291,7 +1291,7 @@ export default function Packages() {
                           >
                             #คืน นี้ ผี มา ตาม นัด imovie หนัง
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%9A%20%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%87%20%E0%B8%99%E0%B8%A3%E0%B8%81%20037%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C"
@@ -1299,7 +1299,7 @@ export default function Packages() {
                           >
                             #สลับ หน้า ล่า ล้าง นรก 037 ดู หนัง ออนไลน์
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1311,6 +1311,7 @@ export default function Packages() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -1321,7 +1322,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1355,8 +1356,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20luca%20%E0%B9%81%E0%B8%88%E0%B9%87%20%E0%B8%84%20%E0%B8%9C%E0%B8%B9%E0%B9%89%20%E0%B8%AA%E0%B8%A2%E0%B8%9A%20%E0%B8%A2%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B9%8C%20hd%20gomovieon"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1402,6 +1402,7 @@ export default function Packages() {
                         href="https://atom.io/users/power-ads"
                         className="author"
                       >
+                        {" "}
                         power-ads
                       </Link>
 
@@ -1412,7 +1413,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1446,8 +1447,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=1fslmgcjbtmfwzp"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1486,14 +1486,15 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/nungthai">
+                      <Link href="https://atom.io/users/NungThai">
                         <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
-                        href="https://atom.io/users/nungthai"
+                        href="https://atom.io/users/NungThai"
                         className="author"
                       >
-                        nungthai
+                        {" "}
+                        NungThai
                       </Link>
 
                       <div className="meta-right">
@@ -1503,7 +1504,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1537,8 +1538,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=drmoilwulgjdlct"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1604,6 +1604,7 @@ export default function Packages() {
                         href="https://atom.io/users/power-ads"
                         className="author"
                       >
+                        {" "}
                         power-ads
                       </Link>
 
@@ -1614,7 +1615,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1648,8 +1649,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=jp69ucn4zdjjnrc"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1697,7 +1697,7 @@ export default function Packages() {
                             #ดู หนัง hidden figures ดู มนต์ รัก ดอก ผักบุ้ง เต็ม
                             เรื่อง ออนไลน์
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%9A%E0%B8%AD%E0%B8%AA%20%E0%B8%89%E0%B8%B1%E0%B8%99%20%E0%B8%82%E0%B8%A2%E0%B8%B1%E0%B8%99%20%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B8%AD%E0%B8%94%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20v8movie"
@@ -1705,7 +1705,7 @@ export default function Packages() {
                           >
                             #บอส ฉัน ขยัน เชือด เต็ม เรื่อง v8movie
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20nobody%20secret%20millionaire%20%E0%B8%9E%E0%B8%B2%E0%B8%81%E0%B8%A2%E0%B9%8C%20%E0%B9%84%E0%B8%97%E0%B8%A2"
@@ -1713,7 +1713,7 @@ export default function Packages() {
                           >
                             #ดู หนัง nobody secret millionaire พากย์ ไทย
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1725,6 +1725,7 @@ export default function Packages() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -1735,7 +1736,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1769,8 +1770,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9F%E0%B8%A3%E0%B8%B5%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%202021%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%2018%20%E0%B8%94%E0%B8%B2%E0%B8%9A%20%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B8%B2%E0%B8%95%20%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%A3%20%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%20%E0%B8%A1%E0%B8%B9%E0%B8%9F%20%E0%B8%A7%E0%B8%B5%E0%B9%88%20%E0%B8%94%E0%B8%B9%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1815,7 +1815,7 @@ export default function Packages() {
                           >
                             #โป๊ มัน ๆ
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B9%82%E0%B8%9B%E0%B9%8A%20%E0%B8%84%E0%B8%99%20%E0%B9%81%E0%B8%81%E0%B9%88"
@@ -1823,7 +1823,7 @@ export default function Packages() {
                           >
                             #โป๊ คน แก่
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%B5%20%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2"
@@ -1831,7 +1831,7 @@ export default function Packages() {
                           >
                             #หี ดารา
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%94%E0%B8%B9%20%E0%B8%A3%E0%B8%B9%E0%B8%9B%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
@@ -1839,7 +1839,7 @@ export default function Packages() {
                           >
                             #ดู รูป โป๊
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%9D%20%E0%B8%A3%E0%B8%B1%E0%B8%87"
@@ -1847,7 +1847,7 @@ export default function Packages() {
                           >
                             #หนัง โป ฝ รัง
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1859,6 +1859,7 @@ export default function Packages() {
                         href="https://atom.io/users/power-ads"
                         className="author"
                       >
+                        {" "}
                         power-ads
                       </Link>
 
@@ -1869,7 +1870,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1903,8 +1904,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%9B%20%E0%B9%82%E0%B8%9B%E0%B9%8A%20%E0%B8%9F%E0%B8%A3%E0%B8%B5%20%E0%B8%84%E0%B8%A7%E0%B8%A2%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B9%82%E0%B8%9B%E0%B9%89%E0%B8%94%E0%B8%B9%E0%B8%9F%E0%B8%A3%E0%B8%B5"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -1949,7 +1949,7 @@ export default function Packages() {
                           >
                             #หนัง ออนไลน์ ตลก เงียบ ให้ รอด
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%84%E0%B8%B7%E0%B8%99%20%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%9C%E0%B8%B5%20%E0%B8%A1%E0%B8%B2%20%E0%B8%95%E0%B8%B2%E0%B8%A1%20%E0%B8%99%E0%B8%B1%E0%B8%94%20imovie%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87"
@@ -1957,7 +1957,7 @@ export default function Packages() {
                           >
                             #คืน นี้ ผี มา ตาม นัด imovie หนัง
                           </Link>
-                        </li>
+                        </li>{" "}
                         <li>
                           <Link
                             href="https://atom.io/themes/search?utf8=%E2%9C%93&amp;q=keyword:%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%9A%20%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%87%20%E0%B8%99%E0%B8%A3%E0%B8%81%20037%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C"
@@ -1965,7 +1965,7 @@ export default function Packages() {
                           >
                             #สลับ หน้า ล่า ล้าง นรก 037 ดู หนัง ออนไลน์
                           </Link>
-                        </li>
+                        </li>{" "}
                       </ul>
                     </div>
 
@@ -1977,6 +1977,7 @@ export default function Packages() {
                         href="https://atom.io/users/NungThai"
                         className="author"
                       >
+                        {" "}
                         NungThai
                       </Link>
 
@@ -1987,7 +1988,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -2021,8 +2022,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20luca%20%E0%B9%81%E0%B8%88%E0%B9%87%20%E0%B8%84%20%E0%B8%9C%E0%B8%B9%E0%B9%89%20%E0%B8%AA%E0%B8%A2%E0%B8%9A%20%E0%B8%A2%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B9%8C%20hd%20gomovieon"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -2068,6 +2068,7 @@ export default function Packages() {
                         href="https://atom.io/users/power-ads"
                         className="author"
                       >
+                        {" "}
                         power-ads
                       </Link>
 
@@ -2078,7 +2079,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -2112,8 +2113,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=1fslmgcjbtmfwzp"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{
@@ -2152,14 +2152,15 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/nungthai">
+                      <Link href="https://atom.io/users/NungThai">
                         <Image src={NungThai} alt="" className="gravatar" />
                       </Link>
                       <Link
-                        href="https://atom.io/users/nungthai"
+                        href="https://atom.io/users/NungThai"
                         className="author"
                       >
-                        nungthai
+                        {" "}
+                        NungThai
                       </Link>
 
                       <div className="meta-right">
@@ -2169,7 +2170,7 @@ export default function Packages() {
                           aria-label="0 downloads"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
+                          <DownloadIcon size={16} />{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -2203,8 +2204,7 @@ export default function Packages() {
                           href="atom://settings-view/show-package?package=drmoilwulgjdlct"
                         >
                           {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />
-                          Install
+                          <DownloadIcon size={16} /> Install
                         </Link>
                         <div
                           style={{

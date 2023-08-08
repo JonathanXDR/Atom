@@ -41,6 +41,18 @@ export default function Home() {
                     </span>{" "}
                     for the 21st Century
                   </h1>
+                  {/* <Link
+                    className="hero-link hero-link--teletype"
+                    href="#teletype"
+                  >
+                    Real-time collaboration
+                  </Link>
+                  <Link className="hero-link hero-link--ide" href="#ide">
+                    IDE features
+                  </Link>
+                  <Link className="hero-link hero-link--github" href="#github">
+                    Git and GitHub integration
+                  </Link> */}
                 </div>
                 <Image
                   className="hero-octonaut"
@@ -86,6 +98,39 @@ export default function Home() {
               </div>
             </section>
 
+            {/* <section id="ide" className="section section--ide">
+              <div className="wrapper">
+                <h3>Atom IDE</h3>
+                <p>
+                  Atom-IDE is a set of optional packages to bring IDE-like
+                  functionality to Atom and improve language integrations.
+                </p>
+                <div className="welcome-bgs">
+                  <Image
+                    className="welcome-bg welcome-bg--screenshot"
+                    src={indexIdeScreenshot}
+                    alt="index-ide-screenshot"
+                  />
+                </div>
+                <p>
+                  Get smarter context-aware auto-completion, code navigation
+                  features such as an outline view, go to definition and find
+                  all references. You can also hover-to-reveal information,
+                  diagnostics (errors and warnings) and document formatting. To
+                  get all these IDE features,
+                  <Link href="atom://settings-view/show-package?package=atom-ide-ui">
+                    open Atom IDE UI in Atom
+                  </Link>
+                  and install the package.
+                </p>
+                <p className="welcome-cta">
+                  <Link href="/ide" className="welcome-button">
+                    Learn more
+                  </Link>
+                </p>
+              </div>
+            </section> */}
+
             <section id="github" className="section section--github">
               <div className="wrapper">
                 <h3>GitHub for Atom</h3>
@@ -126,6 +171,8 @@ export default function Home() {
               <div className="wrapper no-pad">
                 <h3>Everything you would expect</h3>
 
+                {/* <div className="columns">
+                  <div className="column"> */}
                 <div className="features">
                   <div className="features-item">
                     {/* <span className="mega-octicon octicon-device-desktop"></span> */}
@@ -163,6 +210,9 @@ export default function Home() {
                       right from Atom.
                     </p>
                   </div>
+                  {/* </div>
+
+                  <div className="column"> */}
                   <div className="features-item">
                     {/* <span className="mega-octicon octicon-light-bulb"></span> */}
                     <div
@@ -236,9 +286,12 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
+                {/* </div> */}
 
                 <h3>Make it your editor</h3>
 
+                {/* <div className="columns">
+                  <div className="column"> */}
                 <div className="features">
                   <div className="features-item">
                     {/* <span className="mega-octicon octicon-package"></span> */}
@@ -282,6 +335,9 @@ export default function Home() {
                       Atom community or create your own.
                     </p>
                   </div>
+                  {/* </div>
+
+                  <div className="column"> */}
                   <div className="features-item">
                     {/* <span className="mega-octicon octicon-tools"></span> */}
                     <div
@@ -333,6 +389,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              {/* </div> */}
             </section>
 
             <section className="section section--contact">

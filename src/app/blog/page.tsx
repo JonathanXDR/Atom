@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -11,59 +12,26 @@ import Rafeca from "/public/assets/png/rafeca.png";
 import Sguthals from "/public/assets/png/sguthals.png";
 import Smashwilson from "/public/assets/png/smashwilson.png";
 
+import NavItem from "@/components/NavItem/NavItem";
+import { CalendarIcon, ChevronRightIcon } from "@primer/octicons-react";
 import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
 
 export default function Blog() {
   return (
     <body>
       <div className="footer-push">
-        <div className="top-bar">
-          <div className="wrapper">
-            <ul className="navigation">
-              <li>
-                <h1>
-                  <Link href="https://atom.io/" className="logo-small"></Link>
-                </h1>
-              </li>
-              <li>
-                <Link href="https://atom.io/packages">Packages</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/themes">Themes</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/docs">Documentation</Link>
-              </li>
-              <li>
-                <Link href="https://blog.atom.io/" className="is-selected">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="https://discuss.atom.io/">Discuss</Link>
-              </li>
-            </ul>
-
-            <div className="top-bar-right">
-              <Link href="https://blog.atom.io/feed.xml" className="rss-link">
-                <span className="octicon octicon-rss"></span> Subscribe
-              </Link>
-            </div>
-          </div>
-        </div>
+        <NavItem />
 
         <div className="wrapper content-push">
           <div id="home">
             <ul className="posts">
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2019/07/23/atom-1-39.html">
-                    Atom 1.39
-                  </Link>
+                  <Link href="/blog2019/07/23/atom-1-39.html">Atom 1.39</Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> July 23,
-                  2019
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> July 23, 2019
                   <Link
                     href="https://github.com/jasonrudolph"
                     className="author-link"
@@ -96,22 +64,23 @@ export default function Blog() {
                     programming languages.
                   </p>
 
-                  <Link href="https://blog.atom.io/2019/07/23/atom-1-39.html">
+                  <Link href="/blog2019/07/23/atom-1-39.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
+                  <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
                     Introducing Atom Nightly Releases
                   </Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> June 21,
-                  2019
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> June 21, 2019
                   <Link
                     href="https://github.com/rafeca"
                     className="author-link"
@@ -155,22 +124,21 @@ export default function Blog() {
                     Atom, this release channel is for you.
                   </p>
 
-                  <Link href="https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
+                  <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2019/06/11/atom-1-38.html">
-                    Atom 1.38
-                  </Link>
+                  <Link href="/blog2019/06/11/atom-1-38.html">Atom 1.38</Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> June 11,
-                  2019
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> June 11, 2019
                   <Link
                     href="https://github.com/nathansobo"
                     className="author-link"
@@ -205,22 +173,21 @@ export default function Blog() {
                     containing only a single line of text.
                   </p>
 
-                  <Link href="https://blog.atom.io/2019/06/11/atom-1-38.html">
+                  <Link href="/blog2019/06/11/atom-1-38.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2019/05/12/atom-1-37.html">
-                    Atom 1.37
-                  </Link>
+                  <Link href="/blog2019/05/12/atom-1-37.html">Atom 1.37</Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> May 12,
-                  2019
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> May 12, 2019
                   <Link
                     href="https://github.com/rafeca"
                     className="author-link"
@@ -250,22 +217,21 @@ export default function Blog() {
                     dramatically improves its performance.
                   </p>
 
-                  <Link href="https://blog.atom.io/2019/05/12/atom-1-37.html">
+                  <Link href="/blog2019/05/12/atom-1-37.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2019/04/09/atom-1-36.html">
-                    Atom 1.36
-                  </Link>
+                  <Link href="/blog2019/04/09/atom-1-36.html">Atom 1.36</Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> April 9,
-                  2019
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> April 9, 2019
                   <Link
                     href="https://github.com/smashwilson"
                     className="author-link"
@@ -295,22 +261,21 @@ export default function Blog() {
                     and more.
                   </p>
 
-                  <Link href="https://blog.atom.io/2019/04/09/atom-1-36.html">
+                  <Link href="/blog2019/04/09/atom-1-36.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2019/03/12/atom-1-35.html">
-                    Atom 1.35
-                  </Link>
+                  <Link href="/blog2019/03/12/atom-1-35.html">Atom 1.35</Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> March 12,
-                  2019
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> March 12, 2019
                   <Link
                     href="https://github.com/annthurium"
                     className="author-link"
@@ -340,22 +305,21 @@ export default function Blog() {
                     and stability improvements.
                   </p>
 
-                  <Link href="https://blog.atom.io/2019/03/12/atom-1-35.html">
+                  <Link href="/blog2019/03/12/atom-1-35.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2019/01/08/atom-1-34.html">
-                    Atom 1.34
-                  </Link>
+                  <Link href="/blog2019/01/08/atom-1-34.html">Atom 1.34</Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> January 8,
-                  2019
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> January 8, 2019
                   <Link
                     href="https://github.com/jasonrudolph"
                     className="author-link"
@@ -385,22 +349,23 @@ export default function Blog() {
                     changes, and support for commit message templates.
                   </p>
 
-                  <Link href="https://blog.atom.io/2019/01/08/atom-1-34.html">
+                  <Link href="/blog2019/01/08/atom-1-34.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2018/12/12/facebook-retires-nuclide-extension.html">
+                  <Link href="/blog2018/12/12/facebook-retires-nuclide-extension.html">
                     Facebook retires Nuclide extension
                   </Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> December
-                  12, 2018
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> December 12, 2018
                   <Link
                     href="https://github.com/asheren"
                     className="author-link"
@@ -429,22 +394,21 @@ export default function Blog() {
                     associated repos.
                   </p>
 
-                  <Link href="https://blog.atom.io/2018/12/12/facebook-retires-nuclide-extension.html">
+                  <Link href="/blog2018/12/12/facebook-retires-nuclide-extension.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2018/11/28/atom-1-33.html">
-                    Atom 1.33
-                  </Link>
+                  <Link href="/blog2018/11/28/atom-1-33.html">Atom 1.33</Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> November
-                  28, 2018
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> November 28, 2018
                   <Link
                     href="https://github.com/kuychaco"
                     className="author-link"
@@ -473,22 +437,23 @@ export default function Blog() {
                     functionality, and faster performance for bracket matching.
                   </p>
 
-                  <Link href="https://blog.atom.io/2018/11/28/atom-1-33.html">
+                  <Link href="/blog2018/11/28/atom-1-33.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
 
               <li className="post">
                 <h2 className="post-name">
-                  <Link href="https://blog.atom.io/2018/11/14/github-package-uxr.html">
+                  <Link href="/blog2018/11/14/github-package-uxr.html">
                     Usability Interviews for Atom
                   </Link>
                 </h2>
                 <p className="who-when">
-                  <span className="octicon octicon-calendar"></span> November
-                  14, 2018
+                  {/* <span className="octicon octicon-calendar"></span> */}
+                  <CalendarIcon size={16} /> November 14, 2018
                   <Link
                     href="https://github.com/sguthals"
                     className="author-link"
@@ -518,9 +483,10 @@ export default function Blog() {
                     we build affects that workflow.
                   </p>
 
-                  <Link href="https://blog.atom.io/2018/11/14/github-package-uxr.html">
+                  <Link href="/blog2018/11/14/github-package-uxr.html">
                     Read more{" "}
-                    <span className="octicon octicon-chevron-right"></span>
+                    {/* <span className="octicon octicon-chevron-right"></span> */}
+                    <ChevronRightIcon size={16} />
                   </Link>
                 </div>
               </li>
@@ -531,37 +497,35 @@ export default function Blog() {
 
               <em>1</em>
 
-              <Link href="https://blog.atom.io/page2">2</Link>
+              <Link href="/blogpage2">2</Link>
 
-              <Link href="https://blog.atom.io/page3">3</Link>
+              <Link href="/blogpage3">3</Link>
 
-              <Link href="https://blog.atom.io/page4">4</Link>
+              <Link href="/blogpage4">4</Link>
 
-              <Link href="https://blog.atom.io/page5">5</Link>
+              <Link href="/blogpage5">5</Link>
 
-              <Link href="https://blog.atom.io/page6">6</Link>
+              <Link href="/blogpage6">6</Link>
 
-              <Link href="https://blog.atom.io/page7">7</Link>
+              <Link href="/blogpage7">7</Link>
 
-              <Link href="https://blog.atom.io/page8">8</Link>
+              <Link href="/blogpage8">8</Link>
 
-              <Link href="https://blog.atom.io/page9">9</Link>
+              <Link href="/blogpage9">9</Link>
 
-              <Link href="https://blog.atom.io/page10">10</Link>
+              <Link href="/blogpage10">10</Link>
 
-              <Link href="https://blog.atom.io/page11">11</Link>
+              <Link href="/blogpage11">11</Link>
 
-              <Link href="https://blog.atom.io/page12">12</Link>
+              <Link href="/blogpage12">12</Link>
 
-              <Link href="https://blog.atom.io/page13">13</Link>
+              <Link href="/blogpage13">13</Link>
 
-              <Link href="https://blog.atom.io/page2">Next →</Link>
+              <Link href="/blogpage2">Next →</Link>
 
-              <Link
-                className="pagination-archive"
-                href="https://blog.atom.io/archive/"
-              >
-                <span className="octicon octicon-calendar"></span> Archive
+              <Link className="pagination-archive" href="/blogarchive/">
+                {/* <span className="octicon octicon-calendar"></span> */}
+                <CalendarIcon size={16} /> Archive
               </Link>
             </div>
           </div>

@@ -1,3 +1,5 @@
+"use client";
+import NavItem from "@/components/NavItem/NavItem";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -8,34 +10,7 @@ export default function FlightManual() {
   return (
     <body className="layout-toc platform-switch platform-mac">
       <div className="footer-push">
-        <div className="top-bar">
-          <div className="wrapper no-pad">
-            <ul className="navigation">
-              <li>
-                <h1>
-                  <Link href="https://atom.io/" className="logo-small"></Link>
-                </h1>
-              </li>
-              <li>
-                <Link href="https://atom.io/packages">Packages</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/themes">Themes</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/docs" className="is-selected">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="https://blog.atom.io/">Blog</Link>
-              </li>
-              <li>
-                <Link href="https://discuss.atom.io/">Discuss</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <NavItem />
 
         <div className="wrapper documents content-push">
           <div
@@ -397,7 +372,6 @@ export default function FlightManual() {
               />
             </form>
           </div>
-
           <div
             className="autocomplete-results"
             style={{
@@ -406,7 +380,6 @@ export default function FlightManual() {
           >
             <div className="result-group"></div>
           </div>
-
           <div className="markdown-body">
             <h1>Atom Flight Manual</h1>
             <div className="manual-ebooks">
@@ -1296,6 +1269,7 @@ export default function FlightManual() {
               </li>
             </ul>
           </div>
+          N
         </div>
         <div className="footer-pad"></div>
       </div>

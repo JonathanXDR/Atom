@@ -1,15 +1,16 @@
 "use client";
-import { SignInIcon } from "@primer/octicons-react";
+import { RssIcon, SignInIcon } from "@primer/octicons-react";
 import { Octicon } from "@primer/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NavItem: React.FC = () => {
+  const pathname = usePathname();
   return (
     <nav className="top-bar" aria-label="Primary">
       <div className="wrapper no-pad">
         <ul className="navigation">
-          {["/nightly", "/beta"].includes(usePathname()) && (
+          {pathname !== "/" && (
             <li>
               <h1>
                 <Link
@@ -21,16 +22,36 @@ const NavItem: React.FC = () => {
             </li>
           )}
           <li>
-            <Link href="/packages">Packages</Link>
+            <Link
+              href="/packages"
+              className={pathname === "/packages" ? "is-selected" : ""}
+            >
+              Packages
+            </Link>
           </li>
           <li>
-            <Link href="/themes">Themes</Link>
+            <Link
+              href="/themes"
+              className={pathname === "/themes" ? "is-selected" : ""}
+            >
+              Themes
+            </Link>
           </li>
           <li>
-            <Link href="/docs">Documentation</Link>
+            <Link
+              href="/docs"
+              className={pathname === "/docs" ? "is-selected" : ""}
+            >
+              Documentation
+            </Link>
           </li>
           <li>
-            <Link href="https://blog.atom.io/">Blog</Link>
+            <Link
+              href="/blog"
+              className={pathname === "/blog" ? "is-selected" : ""}
+            >
+              Blog
+            </Link>
           </li>
           <li>
             <Link href="https://github.com/atom/atom/discussions">
@@ -40,17 +61,31 @@ const NavItem: React.FC = () => {
         </ul>
 
         <div className="top-bar-right">
-          <Link href="/login">
-            {/* <span className="octicon octicon-log-in"></span> */}
-            <Octicon
-              icon={SignInIcon}
-              size={16}
-              sx={{
-                padding: "0",
-              }}
-            />{" "}
-            Sign in
-          </Link>
+          {pathname === "/blog" ? (
+            <Link href="/blog/feed.xml" className="rss-link">
+              {/* <span className="octicon octicon-rss"></span> */}
+              <Octicon
+                icon={RssIcon}
+                size={16}
+                sx={{
+                  padding: "0",
+                }}
+              />{" "}
+              Subscribe
+            </Link>
+          ) : (
+            <Link href="/login">
+              {/* <span className="octicon octicon-log-in"></span> */}
+              <Octicon
+                icon={SignInIcon}
+                size={16}
+                sx={{
+                  padding: "0",
+                }}
+              />{" "}
+              Sign in
+            </Link>
+          )}
         </div>
       </div>
     </nav>

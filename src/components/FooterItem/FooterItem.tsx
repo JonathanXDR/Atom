@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import CreditBadge from "../CreditBadge/CreditBadge";
 
@@ -13,16 +14,20 @@ const FooterItem: React.FC = () => {
                 Terms of Use
               </Link>
             </li>
-            <li>
-              <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
-                Privacy
-              </Link>
-            </li>
-            <li>
-              <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
-                Code of Conduct
-              </Link>
-            </li>
+            {usePathname() !== "/blog" && (
+              <>
+                <li>
+                  <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
+                    Privacy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
+                    Code of Conduct
+                  </Link>
+                </li>
+              </>
+            )}
             <li>
               <Link href="/releases">Releases</Link>
             </li>

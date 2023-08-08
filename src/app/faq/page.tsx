@@ -1,3 +1,5 @@
+"use client";
+import NavItem from "@/components/NavItem/NavItem";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
@@ -6,34 +8,7 @@ export default function FAQ() {
   return (
     <body className="layout-article platform-switch platform-mac">
       <div className="footer-push">
-        <div className="top-bar">
-          <div className="wrapper no-pad">
-            <ul className="navigation">
-              <li>
-                <h1>
-                  <Link href="https://atom.io/" className="logo-small"></Link>
-                </h1>
-              </li>
-              <li>
-                <Link href="https://atom.io/packages">Packages</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/themes">Themes</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/docs" className="is-selected">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="https://blog.atom.io/">Blog</Link>
-              </li>
-              <li>
-                <Link href="https://discuss.atom.io/">Discuss</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <NavItem />
 
         <div className="wrapper documents content-push wide">
           <div
@@ -395,7 +370,6 @@ export default function FAQ() {
               />
             </form>
           </div>
-
           <div
             className="autocomplete-results"
             style={{
@@ -404,7 +378,6 @@ export default function FAQ() {
           >
             <div className="result-group"></div>
           </div>
-
           <div className="toc">
             <h4>
               <Link href="https://flight-manual.atom.io/getting-started">
@@ -1289,7 +1262,6 @@ export default function FAQ() {
               </li>
             </ul>
           </div>
-
           <h1 className="document-title">
             <div id="platform-nav">
               <span className="octicon octicon-device-desktop"></span>
@@ -1329,7 +1301,6 @@ export default function FAQ() {
               <span className="octicon octicon-pencil"></span> Improve this page
             </Link>
           </h1>
-
           <div className="markdown-body document-content">
             <h2>
               <Link
@@ -1530,6 +1501,7 @@ export default function FAQ() {
               </li>
             </ul>
           </div>
+          N
         </div>
         <div className="footer-pad"></div>
       </div>

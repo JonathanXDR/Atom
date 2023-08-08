@@ -28,7 +28,7 @@ export default function Beta() {
                   features and bug fixes before they land on the{" "}
                   <Link href="/">stable channel</Link>. It is intended for
                   developers and early adopters. See the{" "}
-                  <Link href="https://blog.atom.io/2015/10/21/introducing-the-atom-beta-channel.html">
+                  <Link href="/blog2015/10/21/introducing-the-atom-beta-channel.html">
                     blog post{" "}
                   </Link>
                   for more information.

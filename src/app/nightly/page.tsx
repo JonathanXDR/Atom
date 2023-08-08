@@ -28,7 +28,7 @@ export default function Nightly() {
                   contains new features and bug fixes as soon as they get merged
                   into master. It is intended for developers and very early
                   adopters. See the{" "}
-                  <Link href="https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html">
+                  <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
                     blog post{" "}
                   </Link>
                   for more information.

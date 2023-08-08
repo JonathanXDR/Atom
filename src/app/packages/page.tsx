@@ -1,3 +1,6 @@
+"use client";
+import FooterItem from "@/components/FooterItem/FooterItem";
+import NavItem from "@/components/NavItem/NavItem";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -15,46 +18,7 @@ export default function Packages() {
   return (
     <body>
       <div className="footer-push">
-        <nav className="top-bar" aria-label="Primary">
-          <div className="wrapper no-pad">
-            <ul className="navigation">
-              <li>
-                <h1>
-                  <Link href="https://atom.io/" className="logo-small"></Link>
-                </h1>
-              </li>
-              <li>
-                <Link className="is-selected" href="https://atom.io/packages">
-                  Packages
-                </Link>
-              </li>
-              <li>
-                <Link className="" href="https://atom.io/themes">
-                  Themes
-                </Link>
-              </li>
-              <li>
-                <Link className="" href="https://atom.io/docs">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="https://blog.atom.io/">Blog</Link>
-              </li>
-              <li>
-                <Link href="https://github.com/atom/atom/discussions">
-                  Discussions
-                </Link>
-              </li>
-            </ul>
-
-            <div className="top-bar-right">
-              <Link href="https://atom.io/login?last_url=%2Fpackages">
-                <span className="octicon octicon-log-in"></span> Sign in
-              </Link>
-            </div>
-          </div>
-        </nav>
+        <NavItem />
 
         <div id="js-pjax-container">
           <div className="wrapper content-push packages">
@@ -2180,51 +2144,13 @@ export default function Packages() {
               times.
             </p>
           </div>
+          N
         </div>
 
         <div className="footer-pad"></div>
       </div>
 
-      <footer>
-        <div className="footer">
-          <div className="wrapper no-pad">
-            <ul className="footer-left">
-              <li>
-                <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
-                  Terms of Use
-                </Link>
-              </li>
-              <li>
-                <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
-                  Code of Conduct
-                </Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/releases">Releases</Link>
-              </li>
-              <li>
-                <Link href="https://flight-manual.atom.io/faq/">FAQ</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/contact">Contact</Link>
-              </li>
-            </ul>
-
-            <div className="footer-right">
-              <Link href="https://github.com/">
-                <span className="octicon octicon-code"></span> with
-                <span className="octicon octicon-heart"></span> by
-                <span className="octicon octicon-logo-github"></span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <FooterItem />
 
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>

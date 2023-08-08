@@ -87,6 +87,7 @@ a {
 
 /* line 81, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/github_package.scss */
 .logos .icon-atom {
+  display: unset;
   width: 1em;
   height: 1em;
   vertical-align: middle;

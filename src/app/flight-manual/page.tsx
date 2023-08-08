@@ -1,4 +1,5 @@
 "use client";
+import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
 import Image from "next/image";
 import Link from "next/link";
@@ -1273,49 +1274,7 @@ export default function FlightManual() {
         </div>
         <div className="footer-pad"></div>
       </div>
-      <footer>
-        <div className="footer">
-          <div className="wrapper no-pad">
-            <ul className="footer-left">
-              <li>
-                <Link href="https://atom.io/terms">Terms of Use</Link>
-              </li>
-              <li>
-                <Link href="https://help.github.com/articles/github-privacy-policy/">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
-                  Code of Conduct
-                </Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/releases">Releases</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/faq">FAQ</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/contact">Contact</Link>
-              </li>
-              <li>
-                <Link href="https://github.com/atom/flight-manual.atom.io/blob/master/CONTRIBUTING.md">
-                  Contribute!
-                </Link>
-              </li>
-            </ul>
-
-            <div className="footer-right">
-              <Link href="https://github.com/">
-                <span className="octicon octicon-code"></span> with
-                <span className="octicon octicon-heart"></span> by
-                <span className="octicon octicon-logo-github"></span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <FooterItem />
     </body>
   );
 }

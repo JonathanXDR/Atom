@@ -12,6 +12,7 @@ import Rafeca from "/public/assets/png/rafeca.png";
 import Sguthals from "/public/assets/png/sguthals.png";
 import Smashwilson from "/public/assets/png/smashwilson.png";
 
+import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
 import { CalendarIcon, ChevronRightIcon } from "@primer/octicons-react";
 import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
@@ -534,34 +535,7 @@ export default function Blog() {
         <div className="footer-pad"></div>
       </div>
 
-      <footer>
-        <div className="footer">
-          <div className="wrapper">
-            <ul className="footer-left">
-              <li>
-                <Link href="https://github.com/site/terms">Terms of Use</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/releases">Releases</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/faq">FAQ</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/contact">Contact</Link>
-              </li>
-            </ul>
-
-            <div className="footer-right">
-              <Link href="https://github.com/">
-                <span className="octicon octicon-code"></span> with
-                <span className="octicon octicon-heart"></span> by
-                <span className="octicon octicon-logo-github"></span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <FooterItem />
     </body>
   );
 }

@@ -1,4 +1,6 @@
 "use client";
+import CreditBadge from "@/components/CreditBadge/CreditBadge";
+import { MarkGithubIcon } from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -84,11 +86,12 @@ export default function GitHub() {
                 </g>
               </svg>
               <span className="logos-plus">+</span>
-              <span
+              {/* <span
                 className="octicon octicon-mark-github"
                 role="img"
                 aria-label="GitHub"
-              ></span>
+              ></span> */}
+              <MarkGithubIcon size={32} />
             </div>
 
             <h1 className="tagline">GitHub for Atom</h1>
@@ -244,25 +247,7 @@ export default function GitHub() {
           </div>
         </div>
         <div className="section-content love">
-          <Link className="love" href="https://github.com/">
-            <span
-              className="octicon octicon-code"
-              role="img"
-              aria-label="Made"
-            ></span>{" "}
-            with
-            <span
-              className="octicon octicon-heart"
-              role="img"
-              aria-label="Love"
-            ></span>{" "}
-            by
-            <span
-              className="octicon octicon-logo-github"
-              role="img"
-              aria-label="GitHub"
-            ></span>
-          </Link>
+          <CreditBadge />
         </div>
       </footer>
     </body>

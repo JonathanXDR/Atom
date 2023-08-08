@@ -4,6 +4,7 @@ import React from "react";
 import CreditBadge from "../CreditBadge/CreditBadge";
 
 const FooterItem: React.FC = () => {
+  const pathname = usePathname();
   return (
     <footer>
       <div className="footer">
@@ -14,7 +15,7 @@ const FooterItem: React.FC = () => {
                 Terms of Use
               </Link>
             </li>
-            {usePathname() !== "/blog" && (
+            {pathname !== "/blog" && (
               <>
                 <li>
                   <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
@@ -37,6 +38,14 @@ const FooterItem: React.FC = () => {
             <li>
               <Link href="/contact">Contact</Link>
             </li>
+            {pathname === "/faq" ||
+              (pathname === "/flight-manual" && (
+                <li>
+                  <Link href="https://github.com/atom/flight-manual.atom.io/blob/master/CONTRIBUTING.md">
+                    Contribute!
+                  </Link>
+                </li>
+              ))}
           </ul>
 
           <div className="footer-right">

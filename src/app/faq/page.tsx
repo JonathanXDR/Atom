@@ -1,5 +1,11 @@
 "use client";
+import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
+import {
+  DeviceDesktopIcon,
+  LinkIcon,
+  PencilIcon,
+} from "@primer/octicons-react";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
@@ -1264,7 +1270,8 @@ export default function FAQ() {
           </div>
           <h1 className="document-title">
             <div id="platform-nav">
-              <span className="octicon octicon-device-desktop"></span>
+              {/* <span className="octicon octicon-device-desktop"></span> */}
+              <DeviceDesktopIcon />
               <ul>
                 <li className="platform-mac">
                   <Link
@@ -1298,7 +1305,8 @@ export default function FAQ() {
               href="https://github.com/atom/flight-manual.atom.io/edit/master/content/faq/index.md"
               data-proofer-ignore=""
             >
-              <span className="octicon octicon-pencil"></span> Improve this page
+              {/* <span className="octicon octicon-pencil"></span> */}
+              <PencilIcon /> Improve this page
             </Link>
           </h1>
           <div className="markdown-body document-content">
@@ -1309,7 +1317,8 @@ export default function FAQ() {
                 href="https://flight-manual.atom.io/faq/#faq"
                 aria-hidden="true"
               >
-                <span className="octicon octicon-link"></span>
+                {/* <span className="octicon octicon-link"></span> */}
+                <LinkIcon />
               </Link>
               FAQ
             </h2>
@@ -1505,49 +1514,7 @@ export default function FAQ() {
         </div>
         <div className="footer-pad"></div>
       </div>
-      <footer>
-        <div className="footer">
-          <div className="wrapper no-pad">
-            <ul className="footer-left">
-              <li>
-                <Link href="https://atom.io/terms">Terms of Use</Link>
-              </li>
-              <li>
-                <Link href="https://help.github.com/articles/github-privacy-policy/">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
-                  Code of Conduct
-                </Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/releases">Releases</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/faq">FAQ</Link>
-              </li>
-              <li>
-                <Link href="https://atom.io/contact">Contact</Link>
-              </li>
-              <li>
-                <Link href="https://github.com/atom/flight-manual.atom.io/blob/master/CONTRIBUTING.md">
-                  Contribute!
-                </Link>
-              </li>
-            </ul>
-
-            <div className="footer-right">
-              <Link href="https://github.com/">
-                <span className="octicon octicon-code"></span> with
-                <span className="octicon octicon-heart"></span> by
-                <span className="octicon octicon-logo-github"></span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <FooterItem />
     </body>
   );
 }

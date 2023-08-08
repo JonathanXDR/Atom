@@ -328,7 +328,7 @@ dl.form.required > dt > label:after {
   width: 47px;
   height: 31px;
   text-indent: -9999px;
-  background-image: url('../png/credit-cards-@1x.png');
+  background-image: url('https://github.com/images/modules/pricing/credit-cards-@1x.png');
   background-position: 0 0;
   opacity: 0.6;
 }
@@ -388,7 +388,7 @@ dl.form.required > dt > label:after {
   only screen and (min-resolution: 2dppx) {
   /* line 344, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/primer/basecoat/forms.scss */
   .form-cards > .cards .card {
-    background-image: url('../png/credit-cards-@2x.png');
+    background-image: url('https://github.com/images/modules/pricing/credit-cards-@2x.png');
     background-size: 300px 31px;
   }
 }
@@ -6152,7 +6152,7 @@ hr {
   only screen and (min-device-pixel-ratio: 2) {
   /* line 13, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
   .package-list .loading-overlay {
-    background-image: url(../gif/octocat-spinner-64@2x.gif);
+    background-image: url(../gif/octocat-spinner-128.gif);
     -webkit-background-size: 64px 64px;
     -moz-background-size: 64px 64px;
     -o-background-size: 64px 64px;
@@ -6837,7 +6837,7 @@ input.search-input {
   only screen and (min-device-pixel-ratio: 2) {
   /* line 635, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
   #crop-modal .spinner {
-    background-image: url(../gif/octocat-spinner-64@2x.gif);
+    background-image: url(../gif/octocat-spinner-128.gif);
     -webkit-background-size: 64px 64px;
     -moz-background-size: 64px 64px;
     -o-background-size: 64px 64px;

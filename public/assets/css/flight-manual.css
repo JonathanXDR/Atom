@@ -2522,7 +2522,8 @@ div.article-form-action-bar .custom-markup-injectors ul li a:hover {
 .preview-tabs a.selected {
   color: #8e6965;
   cursor: default;
-  background: url(../gif/under-triangle.gif) center bottom no-repeat;
+  background: url(https://github.com/assets/images/under-triangle.gif) center
+    bottom no-repeat;
 }
 div.search-form.small button,
 div.search-form.small input {

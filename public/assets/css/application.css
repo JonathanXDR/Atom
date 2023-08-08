@@ -8004,15 +8004,13 @@ a.hero-link {
 .section--realtime .wrapper {
   padding-right: 470px;
 }
-/* line 329, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-/* .section--realtime .wrapper {
-  padding-left: 470px;
-} */
 /* line 330, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-/* .section--realtime .welcome-bg--screenshot {
+.section--realtime .welcome-bg--screenshot {
+  left: 50%;
+  margin-left: 40px;
   filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg)
     saturate(3.5);
-} */
+}
 /* line 331, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--ide {
   background-repeat: no-repeat;
@@ -8023,14 +8021,12 @@ a.hero-link {
 .section--ide .wrapper {
   padding-right: 470px;
 }
-/* line 333, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.section--realtime .welcome-bg--screenshot {
+/* line 332, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+.section--ide .welcome-bg--screenshot {
   left: 50%;
   margin-left: 40px;
-  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg)
-    saturate(3.5);
+  filter: brightness(0.7) contrast(0.8) sepia(1) hue-rotate(160deg) saturate(3);
 }
-
 /* line 343, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--github {
   background-repeat: no-repeat;

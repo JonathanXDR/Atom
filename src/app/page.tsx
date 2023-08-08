@@ -18,6 +18,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "/public/assets/css/application.css";
 import indexGithubScreenshot from "/public/assets/png/index-github-screenshot.png";
+import indexIdeScreenshot from "/public/assets/png/index-ide-screenshot.png";
 import indexTeletypeScreenshot from "/public/assets/png/index-teletype-screenshot.png";
 import octonaut from "/public/assets/svg/octonaut.svg";
 
@@ -171,8 +172,6 @@ export default function Home() {
               <div className="wrapper no-pad">
                 <h3>Everything you would expect</h3>
 
-                {/* <div className="columns">
-                  <div className="column"> */}
                 <div className="features">
                   <div className="features-item">
                     {/* <span className="mega-octicon octicon-device-desktop"></span> */}
@@ -210,9 +209,7 @@ export default function Home() {
                       right from Atom.
                     </p>
                   </div>
-                  {/* </div>
 
-                  <div className="column"> */}
                   <div className="features-item">
                     {/* <span className="mega-octicon octicon-light-bulb"></span> */}
                     <div
@@ -286,12 +283,9 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                {/* </div> */}
 
                 <h3>Make it your editor</h3>
 
-                {/* <div className="columns">
-                  <div className="column"> */}
                 <div className="features">
                   <div className="features-item">
                     {/* <span className="mega-octicon octicon-package"></span> */}
@@ -335,9 +329,7 @@ export default function Home() {
                       Atom community or create your own.
                     </p>
                   </div>
-                  {/* </div>
 
-                  <div className="column"> */}
                   <div className="features-item">
                     {/* <span className="mega-octicon octicon-tools"></span> */}
                     <div
@@ -389,7 +381,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* </div> */}
             </section>
 
             <section className="section section--contact">

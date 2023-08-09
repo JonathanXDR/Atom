@@ -42,7 +42,7 @@ export default function Home() {
                     </span>{" "}
                     for the 21st Century
                   </h1>
-                  {/* <Link
+                  <Link
                     className="hero-link hero-link--teletype"
                     href="#teletype"
                   >
@@ -53,7 +53,7 @@ export default function Home() {
                   </Link>
                   <Link className="hero-link hero-link--github" href="#github">
                     Git and GitHub integration
-                  </Link> */}
+                  </Link>
                 </div>
                 <Image
                   className="hero-octonaut"
@@ -67,7 +67,11 @@ export default function Home() {
               <div className="wrapper">
                 <h3>Teletype for Atom</h3>
 
-                <p>
+                <p
+                  style={{
+                    marginBlock: "1em",
+                  }}
+                >
                   Great things happen when developers work together—from
                   teaching and sharing knowledge to building better software.
                   Teletype for Atom makes collaborating on code just as easy as
@@ -99,10 +103,14 @@ export default function Home() {
               </div>
             </section>
 
-            {/* <section id="ide" className="section section--ide">
+            <section id="ide" className="section section--ide">
               <div className="wrapper">
                 <h3>Atom IDE</h3>
-                <p>
+                <p
+                  style={{
+                    marginBlock: "1em",
+                  }}
+                >
                   Atom-IDE is a set of optional packages to bring IDE-like
                   functionality to Atom and improve language integrations.
                 </p>
@@ -120,7 +128,8 @@ export default function Home() {
                   diagnostics (errors and warnings) and document formatting. To
                   get all these IDE features,
                   <Link href="atom://settings-view/show-package?package=atom-ide-ui">
-                    open Atom IDE UI in Atom
+                    {" "}
+                    open Atom IDE UI in Atom{" "}
                   </Link>
                   and install the package.
                 </p>
@@ -130,13 +139,17 @@ export default function Home() {
                   </Link>
                 </p>
               </div>
-            </section> */}
+            </section>
 
             <section id="github" className="section section--github">
               <div className="wrapper">
                 <h3>GitHub for Atom</h3>
 
-                <p>
+                <p
+                  style={{
+                    marginBlock: "1em",
+                  }}
+                >
                   A text editor is at the core of a developer&apos;s toolbox,
                   but it doesn&apos;t usually work alone. Work with Git and
                   GitHub directly from Atom with the GitHub package.
@@ -158,10 +171,7 @@ export default function Home() {
                 </p>
 
                 <p className="welcome-cta">
-                  <Link
-                    href="https://github.atom.io/"
-                    className="welcome-button"
-                  >
+                  <Link href="/github" className="welcome-button">
                     Learn more
                   </Link>
                 </p>

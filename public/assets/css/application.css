@@ -7806,6 +7806,17 @@ body.menu-active .modal-backdrop {
   color: #78b0a0;
 }
 
+/* line 179, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+a.hero-link {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.25em 0.75em;
+  font-size: 1.1em;
+  color: #ffd152;
+  border: 1px solid #4e4b4d;
+  border-radius: 0.25em;
+}
+
 /* line 184, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-logo {
   flex: 0 0 500px;
@@ -7998,20 +8009,45 @@ body.menu-active .modal-backdrop {
 .section--realtime {
   background-repeat: no-repeat;
   background-image: url(../svg/teletype-graphic.svg);
-  background-position: calc(50% - 1140px) center;
+  background-position: calc(50% + 1000px) center;
 }
 /* line 329, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--realtime .wrapper {
-  padding-right: 470px;
+  padding-left: 470px;
 }
 /* line 333, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--realtime .welcome-bg--screenshot {
-  left: 50%;
-  margin-left: 40px;
   filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg)
     saturate(3.5);
 }
-
+/* line 334, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+.section--ide {
+  background-repeat: no-repeat;
+  background-image: url(//web.archive.org/web/20181210171118im_/https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-ide-graphic-099c2e3eacf7ab74afc6cc259e8df4b5.svg);
+  background-position: calc(50% - 600px) center;
+}
+/* line 335, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+.section--ide .wrapper {
+  padding-right: 470px;
+}
+/* line 336, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+.section--ide .welcome-bg--screenshot {
+  left: 50%;
+  margin-left: 40px;
+  filter: brightness(0.7) contrast(0.8) sepia(1) hue-rotate(160deg) saturate(3);
+}
+/* line 338, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+.section--ide .welcome-button {
+  background-color: #52dfff;
+}
+/* line 339, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+.section--ide .welcome-button:hover {
+  background-color: #33daff;
+}
+/* line 340, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+.section--ide .welcome-button:active {
+  background-color: #14d4ff;
+}
 /* line 343, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--github {
   background-repeat: no-repeat;
@@ -8230,7 +8266,11 @@ body.menu-active .modal-backdrop {
   }
   /* line 563, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .welcome .section--realtime {
-    background-position: calc(50% - 845px) calc(100% + -130px);
+    background-position: calc(50% + 770px) calc(100% + -56px);
+  }
+  /* line 565, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
+  .welcome .section--ide {
+    background-position: calc(50% - 410px) 120px;
   }
   /* line 567, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .welcome .section--github {

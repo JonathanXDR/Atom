@@ -2,7 +2,12 @@ import Link from "next/link";
 
 const SunsetBanner: React.FC = () => {
   return (
-    <p className="sunset-banner sunset-text-color">
+    <p
+      className="sunset-banner sunset-text-color"
+      style={{
+        marginBlock: "1em",
+      }}
+    >
       Atom and all repositories under Atom will be archived on December 15, 2022
       <Link
         className="sunset-text-color"

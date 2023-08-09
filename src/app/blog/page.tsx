@@ -3,14 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/blog.css";
-import Annthurium from "/public/assets/png/annthurium.png";
-import Asheren from "/public/assets/png/asheren.png";
-import Jasonrudolph from "/public/assets/png/jasonrudolph.png";
-import Kuychaco from "/public/assets/png/kuychaco.png";
-import Nathansobo from "/public/assets/png/nathansobo.png";
-import Rafeca from "/public/assets/png/rafeca.png";
-import Sguthals from "/public/assets/png/sguthals.png";
-import Smashwilson from "/public/assets/png/smashwilson.png";
 
 import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
@@ -33,28 +25,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> July 23, 2019
-                  <Link
-                    href="https://github.com/jasonrudolph"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="jasonrudolph"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Jasonrudolph}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
-                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
-                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
-                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=72 4x
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    jasonrudolph
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -85,28 +74,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> June 21, 2019
-                  <Link
-                    href="https://github.com/rafeca"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="rafeca"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Rafeca}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
-                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
-                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
-                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    rafeca
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -147,28 +133,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> June 11, 2019
-                  <Link
-                    href="https://github.com/nathansobo"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="nathansobo"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Nathansobo}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=18 1x,
-                      https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=36 2x,
-                      https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=54 3x,
-                      https://avatars1.githubusercontent.com/nathansobo?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    nathansobo
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -199,28 +182,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> May 12, 2019
-                  <Link
-                    href="https://github.com/rafeca"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="rafeca"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Rafeca}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=18 1x,
-                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=36 2x,
-                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=54 3x,
-                      https://avatars1.githubusercontent.com/rafeca?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    rafeca
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -246,28 +226,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> April 9, 2019
-                  <Link
-                    href="https://github.com/smashwilson"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="smashwilson"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Smashwilson}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=18 1x,
-                      https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=36 2x,
-                      https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=54 3x,
-                      https://avatars1.githubusercontent.com/smashwilson?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    smashwilson
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -293,28 +270,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> March 12, 2019
-                  <Link
-                    href="https://github.com/annthurium"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="annthurium"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Annthurium}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=18 1x,
-                      https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=36 2x,
-                      https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=54 3x,
-                      https://avatars3.githubusercontent.com/annthurium?v=3&amp;s=72 4x
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    annthurium
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -340,28 +314,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> January 8, 2019
-                  <Link
-                    href="https://github.com/jasonrudolph"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="jasonrudolph"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Jasonrudolph}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=18 1x,
-                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=36 2x,
-                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=54 3x,
-                      https://avatars3.githubusercontent.com/jasonrudolph?v=3&amp;s=72 4x
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    jasonrudolph
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -389,28 +360,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> December 12, 2018
-                  <Link
-                    href="https://github.com/asheren"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="asheren"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Asheren}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars2.githubusercontent.com/asheren?v=3&amp;s=18 1x,
-                      https://avatars2.githubusercontent.com/asheren?v=3&amp;s=36 2x,
-                      https://avatars2.githubusercontent.com/asheren?v=3&amp;s=54 3x,
-                      https://avatars2.githubusercontent.com/asheren?v=3&amp;s=72 4x
+                      https://avatars2.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars2.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars2.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars2.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    asheren
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -435,28 +403,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> November 28, 2018
-                  <Link
-                    href="https://github.com/kuychaco"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="kuychaco"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Kuychaco}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=18 1x,
-                      https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=36 2x,
-                      https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=54 3x,
-                      https://avatars3.githubusercontent.com/kuychaco?v=3&amp;s=72 4x
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars3.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    kuychaco
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">
@@ -484,28 +449,25 @@ export default function Blog() {
                 <p className="who-when">
                   {/* <span className="octicon octicon-calendar"></span> */}
                   <CalendarIcon size={16} /> November 14, 2018
-                  <Link
-                    href="https://github.com/sguthals"
-                    className="author-link"
-                  >
+                  <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
-                      alt="sguthals"
+                      alt="Atom"
                       width="18"
                       height="18"
                       data-proofer-ignore="true"
-                      src={Sguthals}
+                      src="https://avatars.githubusercontent.com/atom"
                       style={{
                         verticalAlign: "baseline",
                       }}
                       sizes="
-                      https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=18 1x,
-                      https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=36 2x,
-                      https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=54 3x,
-                      https://avatars1.githubusercontent.com/sguthals?v=3&amp;s=72 4x
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=36 2x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
+                      https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
                     />{" "}
-                    sguthals
+                    Atom
                   </Link>
                 </p>
                 <div className="post markdown">

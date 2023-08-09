@@ -17,10 +17,6 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
-import NungThai from "/public/assets/png/NungThai.png";
-import atomMaterial from "/public/assets/png/atom-material.png";
-import FeaturedAds from "/public/assets/png/featured-ads.png";
-import PowerAds from "/public/assets/png/power-ads.png";
 
 export default function Themes() {
   return (
@@ -121,15 +117,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/atom-material">
-                        <Image src={atomMaterial} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/atom-material"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        atom-material
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -248,15 +247,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/atom-material">
-                        <Image src={atomMaterial} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/atom-material"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        atom-material
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -465,15 +467,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/power-ads">
-                        <Image src={PowerAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/power-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        power-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -587,15 +592,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -722,15 +730,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/Featured-ads">
-                        <Image src={FeaturedAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/Featured-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        Featured-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -842,15 +853,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -963,15 +977,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1099,15 +1116,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/Featured-ads">
-                        <Image src={FeaturedAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/Featured-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        Featured-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1241,15 +1261,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1375,15 +1398,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/power-ads">
-                        <Image src={PowerAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/power-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        power-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1510,15 +1536,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/Featured-ads">
-                        <Image src={FeaturedAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/Featured-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        Featured-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1630,15 +1659,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1751,15 +1783,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1887,15 +1922,18 @@ export default function Themes() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/Featured-ads">
-                        <Image src={FeaturedAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/Featured-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        Featured-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">

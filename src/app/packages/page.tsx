@@ -17,14 +17,6 @@ import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
-import NungThai from "/public/assets/png/NungThai.png";
-import ArnaudRinquin from "/public/assets/png/arnaudrinquin.png";
-import Atom from "/public/assets/png/atom.png";
-import B3by from "/public/assets/png/b3by.png";
-import Mathieudutour from "/public/assets/png/mathieudutour.png";
-import Nteract from "/public/assets/png/nteract.png";
-import PowerAds from "/public/assets/png/power-ads.png";
-import Timomeh from "/public/assets/png/timomeh.png";
 
 export default function Packages() {
   return (
@@ -116,14 +108,20 @@ export default function Packages() {
 
                     <div className="meta">
                       <Link href="https://atom.io/users/atom">
-                        <Image src={Atom} alt="" className="gravatar" />
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
                       <Link
                         href="https://atom.io/users/atom"
                         className="author"
                       >
                         {" "}
-                        atom
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -241,19 +239,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/mathieudutour">
+                      <Link href="https://github.com/atom">
                         <Image
-                          src={Mathieudutour}
-                          alt=""
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
                           className="gravatar"
                         />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/mathieudutour"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        mathieudutour
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -381,15 +378,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/nteract">
-                        <Image src={Nteract} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/nteract"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        nteract
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -517,15 +517,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/timomeh">
-                        <Image src={Timomeh} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/timomeh"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        timomeh
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -651,15 +654,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/b3by">
-                        <Image src={B3by} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/b3by"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        b3by
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -744,19 +750,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/ArnaudRinquin">
+                      <Link href="https://github.com/atom">
                         <Image
-                          src={ArnaudRinquin}
-                          alt=""
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
                           className="gravatar"
                         />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/ArnaudRinquin"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        ArnaudRinquin
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -931,15 +936,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/power-ads">
-                        <Image src={PowerAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/power-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        power-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1052,15 +1060,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1186,15 +1197,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/power-ads">
-                        <Image src={PowerAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/power-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        power-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1304,15 +1318,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1395,15 +1412,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/power-ads">
-                        <Image src={PowerAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/power-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        power-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1486,15 +1506,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1597,15 +1620,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/power-ads">
-                        <Image src={PowerAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/power-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        power-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1718,15 +1744,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1852,15 +1881,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/power-ads">
-                        <Image src={PowerAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/power-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        power-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -1970,15 +2002,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -2061,15 +2096,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/power-ads">
-                        <Image src={PowerAds} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/power-ads"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        power-ads
+                        Atom
                       </Link>
 
                       <div className="meta-right">
@@ -2152,15 +2190,18 @@ export default function Packages() {
                     </div>
 
                     <div className="meta">
-                      <Link href="https://atom.io/users/NungThai">
-                        <Image src={NungThai} alt="" className="gravatar" />
+                      <Link href="https://github.com/atom">
+                        <Image
+                          src="https://avatars.githubusercontent.com/atom"
+                          width="24"
+                          height="24"
+                          alt="Atom"
+                          className="gravatar"
+                        />
                       </Link>
-                      <Link
-                        href="https://atom.io/users/NungThai"
-                        className="author"
-                      >
+                      <Link href="https://github.com/atom" className="author">
                         {" "}
-                        NungThai
+                        Atom
                       </Link>
 
                       <div className="meta-right">

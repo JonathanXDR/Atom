@@ -97,6 +97,7 @@ img {
 
 /* line 92, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
 .video {
+  display: unset;
   position: absolute;
   top: 0;
   left: 0;
@@ -132,6 +133,7 @@ video::-webkit-media-controls-start-playback-button {
 
 /* line 124, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
 .logo {
+  display: unset;
   font-size: 12em;
   width: 1em;
 }
@@ -296,6 +298,7 @@ video::-webkit-media-controls-start-playback-button {
 
   /* line 265, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
   .video {
+    display: unset;
     position: relative;
     top: initial;
     left: initial;

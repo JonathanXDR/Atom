@@ -1,6 +1,7 @@
 "use client";
 import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
+import PackageCard from "@/components/PackageCardLegacy/PackageCardLegacy";
 import {
   CheckIcon,
   ChevronRightIcon,
@@ -16,13 +17,15 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
-import "/public/assets/css/application.css";
+// import "/public/assets/css/application.css";
 
 export default function Packages() {
   return (
     <body>
       <div className="footer-push">
         <NavItem />
+
+        <PackageCard />
 
         <div id="js-pjax-container">
           <div className="wrapper content-push packages">
@@ -2276,6 +2279,7 @@ export default function Packages() {
               times.
             </p>
           </div>
+          P
         </div>
 
         <div className="footer-pad"></div>

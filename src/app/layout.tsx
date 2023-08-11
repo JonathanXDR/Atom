@@ -2,6 +2,7 @@ import "@primer/css/index.scss";
 import "@primer/react-brand/lib/css/main.css";
 import "./globals.css";
 
+import PrimerProvider from "@/providers/PrimerProvider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -57,7 +58,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <PrimerProvider>{children}</PrimerProvider>
+      </body>
     </html>
   );
 }

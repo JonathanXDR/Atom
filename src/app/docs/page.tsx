@@ -33,7 +33,6 @@ export default function Docs() {
                     target="_blank"
                   >
                     <span className="training-video-play">
-                      {/* <span className="octicon octicon-playback-play"></span> */}
                       <PlayIcon size={16} />
                     </span>
                     Play video
@@ -47,7 +46,6 @@ export default function Docs() {
                     <td valign="top" width="33%">
                       <div className="doc-section">
                         <h3>
-                          {/* <span className="octicon octicon-book"></span> */}
                           <BookIcon size={16} /> Atom Flight Manual
                         </h3>
                         <p>
@@ -83,7 +81,6 @@ export default function Docs() {
                     <td valign="top" width="33%">
                       <div className="doc-section">
                         <h3>
-                          {/* <span className="octicon octicon-gear"></span> */}
                           <GearIcon size={16} /> API Reference
                         </h3>
                         <p>
@@ -104,7 +101,6 @@ export default function Docs() {
                     <td valign="top" width="33%">
                       <div className="doc-section">
                         <h3>
-                          {/* <span className="octicon octicon-comment-discussion"></span> */}
                           <CommentDiscussionIcon size={16} /> Atom Discussions
                         </h3>
                         <p>

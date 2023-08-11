@@ -63,7 +63,6 @@ const NavItem: React.FC = () => {
         <div className="top-bar-right">
           {pathname === "/blog" ? (
             <Link href="/blog/feed.xml" className="rss-link">
-              {/* <span className="octicon octicon-rss"></span> */}
               <Octicon
                 icon={RssIcon}
                 size={16}
@@ -75,7 +74,6 @@ const NavItem: React.FC = () => {
             </Link>
           ) : (
             <Link href="/login">
-              {/* <span className="octicon octicon-log-in"></span> */}
               <Octicon
                 icon={SignInIcon}
                 size={16}

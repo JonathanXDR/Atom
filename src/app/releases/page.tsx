@@ -32,10 +32,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -61,10 +57,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -93,10 +85,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -147,10 +135,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -309,10 +293,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -348,10 +328,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-php"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-php">
@@ -389,10 +365,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-ruby"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-ruby">
@@ -455,10 +427,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -509,10 +477,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -617,10 +581,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -656,10 +616,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-php"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-php">
@@ -697,10 +653,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-ruby"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-ruby">
@@ -762,10 +714,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -799,10 +747,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -1086,10 +1030,6 @@ export default function Releases() {
                     href="https://atom.io/releases#keybinding-resolver"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/keybinding-resolver">
@@ -1126,10 +1066,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notifications"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/notifications">
@@ -1151,10 +1087,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tabs"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tabs">tabs</Link>
@@ -1185,10 +1117,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tree-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tree-view">
@@ -1221,10 +1149,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-css"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-css">
@@ -1317,10 +1241,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -1348,10 +1268,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -1635,10 +1551,6 @@ export default function Releases() {
                     href="https://atom.io/releases#keybinding-resolver"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/keybinding-resolver">
@@ -1675,10 +1587,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notifications"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/notifications">
@@ -1700,10 +1608,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tabs"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tabs">tabs</Link>
@@ -1734,10 +1638,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tree-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tree-view">
@@ -1770,10 +1670,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-css"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-css">
@@ -1865,10 +1761,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -1896,10 +1788,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -2072,10 +1960,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -2103,10 +1987,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -2278,10 +2158,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -2334,10 +2210,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -2496,10 +2368,6 @@ export default function Releases() {
                     href="https://atom.io/releases#archive-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/archive-view">
@@ -2526,10 +2394,6 @@ export default function Releases() {
                     href="https://atom.io/releases#bracket-matcher"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/bracket-matcher">
@@ -2568,10 +2432,6 @@ export default function Releases() {
                     href="https://atom.io/releases#find-and-replace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/find-and-replace">
@@ -2612,10 +2472,6 @@ export default function Releases() {
                     href="https://atom.io/releases#whitespace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/whitespace">
@@ -2654,10 +2510,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-php"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-php">
@@ -2733,10 +2585,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-python"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-python">
@@ -2778,10 +2626,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -2802,10 +2646,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -2883,10 +2723,6 @@ export default function Releases() {
                     href="https://atom.io/releases#settings-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/settings-view">
@@ -2914,10 +2750,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tree-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tree-view">
@@ -2948,10 +2780,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -2978,10 +2806,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -3022,10 +2846,6 @@ export default function Releases() {
                     href="https://atom.io/releases#find-and-replace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/find-and-replace">
@@ -3066,10 +2886,6 @@ export default function Releases() {
                     href="https://atom.io/releases#whitespace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/whitespace">
@@ -3117,10 +2933,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -3141,10 +2953,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -3222,10 +3030,6 @@ export default function Releases() {
                     href="https://atom.io/releases#settings-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/settings-view">
@@ -3253,10 +3057,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tree-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tree-view">
@@ -3286,10 +3086,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -3330,10 +3126,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -3386,10 +3178,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -3433,10 +3221,6 @@ export default function Releases() {
                     href="https://atom.io/releases#spell-check"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/spell-check">
@@ -3471,10 +3255,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -3495,10 +3275,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -3528,10 +3304,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -3639,10 +3411,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -3670,10 +3438,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -3726,10 +3490,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -3773,10 +3533,6 @@ export default function Releases() {
                     href="https://atom.io/releases#spell-check"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/spell-check">
@@ -3811,10 +3567,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -3859,10 +3611,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -3965,10 +3713,6 @@ export default function Releases() {
                     href="https://atom.io/releases#find-and-replace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/find-and-replace">
@@ -3991,10 +3735,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -4264,10 +4004,6 @@ export default function Releases() {
                     href="https://atom.io/releases#spell-check"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/spell-check">
@@ -4295,10 +4031,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tree-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tree-view">
@@ -4335,10 +4067,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -4359,10 +4087,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -4392,10 +4116,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -4441,10 +4161,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -4495,10 +4211,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -4601,10 +4313,6 @@ export default function Releases() {
                     href="https://atom.io/releases#find-and-replace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/find-and-replace">
@@ -4627,10 +4335,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -4900,10 +4604,6 @@ export default function Releases() {
                     href="https://atom.io/releases#spell-check"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/spell-check">
@@ -4931,10 +4631,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tree-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tree-view">
@@ -4970,10 +4666,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -5025,10 +4717,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -5343,10 +5031,6 @@ export default function Releases() {
                     href="https://atom.io/releases#find-and-replace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/find-and-replace">
@@ -5368,10 +5052,6 @@ export default function Releases() {
                     href="https://atom.io/releases#fuzzy-finder"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/fuzzy-finder">
@@ -5393,10 +5073,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -5450,10 +5126,6 @@ export default function Releases() {
                     href="https://atom.io/releases#settings-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/settings-view">
@@ -5476,10 +5148,6 @@ export default function Releases() {
                     href="https://atom.io/releases#spell-check"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/spell-check">
@@ -5507,10 +5175,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tree-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tree-view">
@@ -5557,10 +5221,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -5595,10 +5255,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -5913,10 +5569,6 @@ export default function Releases() {
                     href="https://atom.io/releases#find-and-replace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/find-and-replace">
@@ -5938,10 +5590,6 @@ export default function Releases() {
                     href="https://atom.io/releases#fuzzy-finder"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/fuzzy-finder">
@@ -5963,10 +5611,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -6020,10 +5664,6 @@ export default function Releases() {
                     href="https://atom.io/releases#settings-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/settings-view">
@@ -6046,10 +5686,6 @@ export default function Releases() {
                     href="https://atom.io/releases#tree-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/tree-view">
@@ -6095,10 +5731,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -6137,10 +5769,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -6215,10 +5843,6 @@ export default function Releases() {
                     href="https://atom.io/releases#find-and-replace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/find-and-replace">
@@ -6241,10 +5865,6 @@ export default function Releases() {
                     href="https://atom.io/releases#settings-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/settings-view">
@@ -6267,10 +5887,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-php"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-php">
@@ -6298,10 +5914,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-python"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-python">
@@ -6332,10 +5944,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -6374,10 +5982,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -6452,10 +6056,6 @@ export default function Releases() {
                     href="https://atom.io/releases#find-and-replace"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/find-and-replace">
@@ -6478,10 +6078,6 @@ export default function Releases() {
                     href="https://atom.io/releases#settings-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/settings-view">
@@ -6504,10 +6100,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-php"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-php">
@@ -6535,10 +6127,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-python"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-python">
@@ -6568,10 +6156,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -6592,10 +6176,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -6641,10 +6221,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -6666,10 +6242,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -6714,10 +6286,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -6783,10 +6351,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -6858,10 +6422,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-gfm"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-gfm">
@@ -6885,10 +6445,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-php"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-php">
@@ -6933,10 +6489,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-typescript"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-typescript">
@@ -6967,10 +6519,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -7003,10 +6551,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -7078,10 +6622,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-gfm"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-gfm">
@@ -7105,10 +6645,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-php"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-php">
@@ -7153,10 +6689,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-typescript"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-typescript">
@@ -7186,10 +6718,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -7217,10 +6745,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -7288,10 +6812,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -7349,10 +6869,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -7410,10 +6926,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -7441,10 +6953,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -7508,10 +7016,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -7550,10 +7054,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -7598,10 +7098,6 @@ export default function Releases() {
                     href="https://atom.io/releases#notable-changes"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   Notable Changes
@@ -7647,10 +7143,6 @@ export default function Releases() {
                     href="https://atom.io/releases#atom-core"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/atom">Atom Core</Link>
@@ -7703,10 +7195,6 @@ export default function Releases() {
                     href="https://atom.io/releases#fuzzy-finder"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/fuzzy-finder">
@@ -7728,10 +7216,6 @@ export default function Releases() {
                     href="https://atom.io/releases#github"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/github">github</Link>
@@ -7751,10 +7235,6 @@ export default function Releases() {
                     href="https://atom.io/releases#settings-view"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/settings-view">
@@ -7777,10 +7257,6 @@ export default function Releases() {
                     href="https://atom.io/releases#snippets"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/snippets">snippets</Link>
@@ -7800,10 +7276,6 @@ export default function Releases() {
                     href="https://atom.io/releases#spell-check"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/spell-check">
@@ -7826,10 +7298,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-c"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-c">
@@ -7863,10 +7331,6 @@ export default function Releases() {
                     href="https://atom.io/releases#language-ruby"
                     aria-hidden="true"
                   >
-                    {/* <span
-                      aria-hidden="true"
-                      className="octicon octicon-link"
-                    ></span> */}
                     <LinkIcon size={16} />
                   </Link>
                   <Link href="https://github.com/atom/language-ruby">

@@ -184,7 +184,6 @@ export default function Home() {
 
                 <div className="features">
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-device-desktop"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -202,7 +201,6 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-package"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -221,7 +219,6 @@ export default function Home() {
                   </div>
 
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-light-bulb"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -239,7 +236,6 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-file-code"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -257,7 +253,6 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-mirror"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -275,7 +270,6 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-search"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -298,7 +292,6 @@ export default function Home() {
 
                 <div className="features">
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-package"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -319,7 +312,6 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-paintcan"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -341,7 +333,6 @@ export default function Home() {
                   </div>
 
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-tools"></span> */}
                     <div
                       className="mega-octicon"
                       style={{
@@ -369,7 +360,6 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-code"></span> */}
                     <div
                       className="mega-octicon"
                       style={{

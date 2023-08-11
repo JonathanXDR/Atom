@@ -121,7 +121,6 @@ const HeroMeta: React.FC = () => {
             }
             className="welcome-button js-download-button"
           >
-            {/* <span className="octicon octicon-move-down"></span> */}
             <DownloadIcon size={16} />
             Download
           </Link>

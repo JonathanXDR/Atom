@@ -1120,7 +1120,6 @@ export default function FAQ() {
           </div>
           <h1 className="document-title">
             <div id="platform-nav">
-              {/* <span className="octicon octicon-device-desktop"></span> */}
               <DeviceDesktopIcon />
               <ul>
                 <li className="platform-mac">
@@ -1155,7 +1154,6 @@ export default function FAQ() {
               href="https://github.com/atom/flight-manual.atom.io/edit/master/content/faq/index.md"
               data-proofer-ignore=""
             >
-              {/* <span className="octicon octicon-pencil"></span> */}
               <PencilIcon /> Improve this page
             </Link>
           </h1>
@@ -1167,7 +1165,6 @@ export default function FAQ() {
                 href="https://flight-manual.atom.io/faq/#faq"
                 aria-hidden="true"
               >
-                {/* <span className="octicon octicon-link"></span> */}
                 <LinkIcon size={16} />
               </Link>
               FAQ

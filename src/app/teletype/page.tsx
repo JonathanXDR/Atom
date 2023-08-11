@@ -203,16 +203,10 @@ export default function Teletype() {
 
           <h4>Share a portal</h4>
           <p>
-            Click the{" "}
-            {/* <span
-              className="octicon octicon-radio-tower"
-              role="img"
-              aria-label="Teletype"
-            ></span>{" "} */}
-            <BroadcastIcon aria-label="Teletype" size={16} /> icon in the Atom
-            status bar, and flip the switch to start sharing a portal to your
-            workspace. Then invite people to join your portal by sending them
-            your portal URL.
+            Click the <BroadcastIcon aria-label="Teletype" size={16} /> icon in
+            the Atom status bar, and flip the switch to start sharing a portal
+            to your workspace. Then invite people to join your portal by sending
+            them your portal URL.
           </p>
           <h4>Join a portal</h4>
           <p>

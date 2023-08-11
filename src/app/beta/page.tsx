@@ -35,7 +35,6 @@ export default function Beta() {
                 </p>
 
                 <div className="features-item">
-                  {/* <span className="mega-octicon octicon-rocket"></span> */}
                   <div
                     className="mega-octicon"
                     style={{
@@ -51,7 +50,6 @@ export default function Beta() {
                   </p>
                 </div>
                 <div className="features-item">
-                  {/* <span className="mega-octicon octicon-calendar"></span> */}
                   <div
                     className="mega-octicon"
                     style={{
@@ -68,7 +66,6 @@ export default function Beta() {
                   </p>
                 </div>
                 <div className="features-item">
-                  {/* <span className="mega-octicon octicon-bug"></span> */}
                   <div
                     className="mega-octicon"
                     style={{

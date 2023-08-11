@@ -132,7 +132,7 @@ const GitHubRepoCard: React.FC = () => {
                     />
                   </ActionMenu.Anchor>
 
-                  <ActionMenu.Overlay>
+                  <ActionMenu.Overlay width="medium">
                     <ActionList>
                       <ActionList.Group
                         title="Lists"

@@ -86,11 +86,6 @@ export default function GitHub() {
                 </g>
               </svg>
               <span className="logos-plus">+</span>
-              {/* <span
-                className="octicon octicon-mark-github"
-                role="img"
-                aria-label="GitHub"
-              ></span> */}
               <MarkGithubIcon size={32} />
             </div>
 

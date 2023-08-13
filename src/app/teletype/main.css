@@ -255,8 +255,8 @@ code {
 /* line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 .hero {
   padding-top: 100px;
-  background-image: url(../svg/real-time-lines.svg),
-    url(../svg/real-time-bg.svg);
+  background-image: url(../../../public/assets/svg/real-time-lines.svg),
+    url(../../../public/assets/svg/real-time-bg.svg);
   background-repeat: no-repeat;
   background-position: -580px 30px, calc(100% + 215px) -260px;
   background-size: auto 68px, auto 340px;
@@ -264,7 +264,7 @@ code {
 
 /* line 265, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 .wrapper--video {
-  background-image: url(../svg/real-time-lines.svg);
+  background-image: url(../../../public/assets/svg/real-time-lines.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 68px;
@@ -273,8 +273,8 @@ code {
 /* line 272, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
 body {
   padding-bottom: 200px;
-  background-image: url(../svg/real-time-lines.svg),
-    url(../svg/real-time-bg.svg);
+  background-image: url(../../../public/assets/svg/real-time-lines.svg),
+    url(../../../public/assets/svg/real-time-bg.svg);
   background-repeat: no-repeat;
   background-position: calc(100% + 500px) calc(100% - 50px),
     -170px calc(100% - -155px);
@@ -354,8 +354,8 @@ body {
 
   /* line 341, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
   .wrapper--video {
-    background-image: url(../svg/real-time-lines.svg),
-      url(../svg/real-time-bg.svg);
+    background-image: url(../../../public/assets/svg/real-time-lines.svg),
+      url(../../../public/assets/svg/real-time-bg.svg);
     background-position: center;
     background-size: auto;
     margin-bottom: 5rem;
@@ -363,8 +363,8 @@ body {
 
   /* line 348, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/teletype.scss */
   body {
-    background-image: url(../svg/real-time-lines.svg),
-      url(../svg/real-time-bg.svg);
+    background-image: url(../../../public/assets/svg/real-time-lines.svg),
+      url(../../../public/assets/svg/real-time-bg.svg);
     background-position: calc(100% + 1140px) calc(100% - 60px),
       -420px calc(100% - -500px);
     background-size: auto;
@@ -523,10 +523,11 @@ body {
 @charset "UTF-8";
 @font-face {
   font-family: 'octicons';
-  src: url(../octicons/octicons.eot#iefix) format('embedded-opentype'),
-    url(../octicons/octicons.woff) format('woff'),
-    url(../octicons/octicons.ttf) format('truetype'),
-    url(../svg/octicons.svg#octicons) format('svg');
+  src: url(../../../public/assets/octicons/octicons.eot#iefix)
+      format('embedded-opentype'),
+    url(../../../public/assets/octicons/octicons.woff) format('woff'),
+    url(../../../public/assets/octicons/octicons.ttf) format('truetype'),
+    url(../../../public/assets/svg/octicons.svg#octicons) format('svg');
   font-weight: normal;
   font-style: normal;
 }

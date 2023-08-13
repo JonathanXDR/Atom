@@ -5,19 +5,26 @@ import {
   DeviceDesktopIcon,
   LinkIcon,
   PencilIcon,
+  TriangleDownIcon,
 } from '@primer/octicons-react';
 import {
-  Autocomplete,
   Box,
+  Button,
   FormControl,
   Heading,
+  SelectPanel,
   Text,
   TextInput,
 } from '@primer/react';
 import Link from 'next/link';
-import './main.css';
+import React from 'react';
 
 export default function FAQ() {
+  type Token = {
+    text: string;
+    id: number;
+  };
+
   const versions = [
     { text: '1.63.1', id: 165 },
     { text: '1.63.0', id: 164 },
@@ -185,6 +192,41 @@ export default function FAQ() {
     { text: '1.0.1', id: 2 },
     { text: '1.0.0', id: 1 },
   ];
+
+  const VersionPicker = () => {
+    const [selected, setSelected] = React.useState<Token | undefined>(
+      versions[0]
+    );
+    const [filter, setFilter] = React.useState('');
+    const filteredItems = versions.filter((version) =>
+      version.text.toLowerCase().startsWith(filter.toLowerCase())
+    );
+    const [open, setOpen] = React.useState(false);
+
+    return (
+      <SelectPanel
+        renderAnchor={({ children, ...anchorProps }) => (
+          <Button
+            size="large"
+            trailingAction={TriangleDownIcon}
+            {...anchorProps}
+          >
+            {children || 'Select version'}
+          </Button>
+        )}
+        placeholderText="Search versions"
+        open={open}
+        onOpenChange={setOpen}
+        items={filteredItems}
+        selected={selected}
+        onSelectedChange={setSelected}
+        onFilterChange={setFilter}
+        showItemDividers={true}
+        overlayProps={{ width: 'small', height: 'xsmall' }}
+      />
+    );
+  };
+
   return (
     <Box className="layout-article platform-switch platform-mac">
       <Box className="footer-push">
@@ -201,12 +243,7 @@ export default function FAQ() {
           >
             <FormControl>
               <FormControl.Label visuallyHidden>Versions</FormControl.Label>
-              <Autocomplete>
-                <Autocomplete.Input size="large" />
-                <Autocomplete.Overlay>
-                  <Autocomplete.Menu items={versions} selectedItemIds={[]} />
-                </Autocomplete.Overlay>
-              </Autocomplete>
+              <VersionPicker />
             </FormControl>
 
             <FormControl

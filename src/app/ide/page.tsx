@@ -1,4 +1,5 @@
 'use client';
+import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
 import './main.css';
 import '/public/assets/css/ide.css';
@@ -9,8 +10,9 @@ export default function IDE() {
       <section className="wrapper notice-wrapper">
         <h1 className="notice-title text-center">Community Powered</h1>
 
-        <p
-          style={{
+        <Text
+          as="p"
+          sx={{
             marginBlock: '1em',
           }}
         >
@@ -23,9 +25,9 @@ export default function IDE() {
           you&apos;re interested, we encourage you to check it out and continue
           to build on top of it. More details on
           <Link href="https://nuclide.io/"> Nuclide.io</Link>.
-        </p>
+        </Text>
 
-        <p>
+        <Text as="p">
           Also many thanks to Atom IDE language package authors. To get started
           with your own language integration, check out
           <Link href="https://github.com/atom/atom-languageclient">
@@ -33,7 +35,7 @@ export default function IDE() {
             atom-languageclient
           </Link>
           . 🚀
-        </p>
+        </Text>
       </section>
 
       <section className="section hero dark">
@@ -84,9 +86,9 @@ export default function IDE() {
           </svg>
         </header>
 
-        <div className="wrapper">
-          <h2>Improved language integration</h2>
-          <p className="intro">
+        <Box className="wrapper">
+          <Heading as="h2">Improved language integration</Heading>
+          <Text as="p" className="intro">
             Get smarter context-aware <strong>auto-completion</strong>, code
             navigation features such as an <strong>outline view</strong>,
             <strong>go to</strong> definition and
@@ -94,11 +96,11 @@ export default function IDE() {
             <strong>hover-to-reveal</strong> information,
             <strong>diagnostics</strong> (errors and warnings) and document
             <strong>formatting</strong>.
-          </p>
-        </div>
+          </Text>
+        </Box>
 
-        <div className="wrapper wrapper--full">
-          <div className="video-container">
+        <Box className="wrapper wrapper--full">
+          <Box className="video-container">
             <video
               className="video"
               poster="assets/png/ide-atom.png"
@@ -109,15 +111,16 @@ export default function IDE() {
               <source src="hassets/video/ide.mp4" type="video/mp4" />
               <track kind="captions" />
             </video>
-          </div>
-        </div>
+          </Box>
+        </Box>
       </section>
 
       <section className="section details">
-        <div className="wrapper getting-started">
-          <h2>Getting started</h2>
-          <p
-            style={{
+        <Box className="wrapper getting-started">
+          <Heading as="h2">Getting started</Heading>
+          <Text
+            as="p"
+            sx={{
               marginBlock: '1em',
             }}
           >
@@ -129,23 +132,25 @@ export default function IDE() {
               how to install Atom packages
             </Link>
             .
-          </p>
+          </Text>
 
-          <div className="getting-started-step">
-            <span className="getting-started-step-nr">1</span>
-            <p>
+          <Box className="getting-started-step">
+            <Text className="getting-started-step-nr">1</Text>
+            <Text as="p">
               Install the
               <Link href="https://atom.io/packages/atom-ide-ui">
                 {' '}
                 atom-ide-ui{' '}
               </Link>
               package. This will add Atom IDE&apos;s user interface.
-            </p>
-          </div>
+            </Text>
+          </Box>
 
-          <div className="getting-started-step">
-            <span className="getting-started-step-nr">2</span>
-            <p>Install an IDE language package that you like to use:</p>
+          <Box className="getting-started-step">
+            <Text className="getting-started-step-nr">2</Text>
+            <Text as="p">
+              Install an IDE language package that you like to use:
+            </Text>
             <ul className="language-packages">
               <li>
                 <strong>TypeScript &amp; JavaScript</strong>
@@ -168,26 +173,26 @@ export default function IDE() {
               <li>
                 <strong>Java</strong>
                 <Link href="https://github.com/atom/ide-java/">ide-java</Link>
-                <span className="language-packages-note">
+                <Text className="language-packages-note">
                   (Java 8 runtime required)
-                </span>
+                </Text>
               </li>
               <li>
                 <strong>PHP</strong>
                 <Link href="https://github.com/atom/ide-php/">ide-php</Link>
-                <span className="language-packages-note">
+                <Text className="language-packages-note">
                   (PHP 7 runtime required)
-                </span>
+                </Text>
               </li>
             </ul>
-          </div>
+          </Box>
 
-          <p>
+          <Text as="p">
             You can also
             <Link href="https://atom.io/packages/search?q=IDE"> search </Link>
             for packages created by the Atom community.
-          </p>
-        </div>
+          </Text>
+        </Box>
       </section>
     </>
   );

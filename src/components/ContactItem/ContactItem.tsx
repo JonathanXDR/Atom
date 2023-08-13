@@ -1,29 +1,30 @@
+import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
 import React from 'react';
 
 const ContactItem: React.FC = () => {
   return (
     <section className="section section--contact">
-      <div className="wrapper no-pad">
-        <div className="columns">
-          <div className="column">
-            <h3>Open source</h3>
-            <p>
+      <Box className="wrapper no-pad">
+        <Box className="columns">
+          <Box className="column">
+            <Heading as="h3">Open source</Heading>
+            <Text as="p">
               Atom is open source. Be part of the Atom community or help improve
               your favorite text editor.
-            </p>
-            <p className="welcome-cta">
+            </Text>
+            <Text as="p" className="welcome-cta">
               <Link
                 href="https://github.com/atom/atom"
                 className="welcome-button"
               >
                 Fork on GitHub
               </Link>
-            </p>
-          </div>
+            </Text>
+          </Box>
 
-          <div className="column">
-            <h3>Keep in touch</h3>
+          <Box className="column">
+            <Heading as="h3">Keep in touch</Heading>
             <table className="welcome-contact-table">
               <tbody>
                 <tr>
@@ -64,9 +65,9 @@ const ContactItem: React.FC = () => {
                 </tr>
               </tbody>
             </table>
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Box>
+      </Box>
     </section>
   );
 };

@@ -1,3 +1,4 @@
+import { Box } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
@@ -7,8 +8,8 @@ const FooterItemLegacy: React.FC = () => {
   const pathname = usePathname();
   return (
     <footer>
-      <div className="footer">
-        <div className="wrapper no-pad">
+      <Box className="footer">
+        <Box className="wrapper no-pad">
           <ul className="footer-left">
             <li>
               <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
@@ -48,11 +49,11 @@ const FooterItemLegacy: React.FC = () => {
               ))}
           </ul>
 
-          <div className="footer-right">
+          <Box className="footer-right">
             <CreditBadge />
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Box>
+      </Box>
     </footer>
   );
 };

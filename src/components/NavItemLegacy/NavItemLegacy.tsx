@@ -1,6 +1,6 @@
 'use client';
 import { RssIcon, SignInIcon } from '@primer/octicons-react';
-import { Octicon } from '@primer/react';
+import { Box, Octicon } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -8,7 +8,7 @@ const NavItemLegacy: React.FC = () => {
   const pathname = usePathname();
   return (
     <nav className="top-bar" aria-label="Primary">
-      <div className="wrapper no-pad">
+      <Box className="wrapper no-pad">
         <ul className="navigation">
           {pathname !== '/' && (
             <li>
@@ -60,7 +60,7 @@ const NavItemLegacy: React.FC = () => {
           </li>
         </ul>
 
-        <div className="top-bar-right">
+        <Box className="top-bar-right">
           {pathname === '/blog' ? (
             <Link href="/blog/feed.xml" className="rss-link">
               <Octicon
@@ -84,8 +84,8 @@ const NavItemLegacy: React.FC = () => {
               Sign in
             </Link>
           )}
-        </div>
-      </div>
+        </Box>
+      </Box>
     </nav>
   );
 };

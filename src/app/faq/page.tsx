@@ -6,7 +6,14 @@ import {
   LinkIcon,
   PencilIcon,
 } from '@primer/octicons-react';
-import { Autocomplete, Box, FormControl, TextInput } from '@primer/react';
+import {
+  Autocomplete,
+  Box,
+  FormControl,
+  Heading,
+  Text,
+  TextInput,
+} from '@primer/react';
 import Link from 'next/link';
 import './main.css';
 import '/public/assets/css/flight-manual.css';
@@ -180,11 +187,11 @@ export default function FAQ() {
     { text: '1.0.0', id: 1 },
   ];
   return (
-    <div className="layout-article platform-switch platform-mac">
-      <div className="footer-push">
+    <Box className="layout-article platform-switch platform-mac">
+      <Box className="footer-push">
         <NavItemLegacy />
 
-        <div className="wrapper documents content-push wide">
+        <Box className="wrapper documents content-push wide">
           <Box
             className="documents-search"
             sx={{
@@ -220,15 +227,15 @@ export default function FAQ() {
               />
             </FormControl>
           </Box>
-          <div
+          <Box
             className="autocomplete-results"
-            style={{
+            sx={{
               display: 'none',
             }}
           >
-            <div className="result-group"></div>
-          </div>
-          <div className="toc">
+            <Box className="result-group"></Box>
+          </Box>
+          <Box className="toc">
             <h4>
               <Link href="https://flight-manual.atom.io/getting-started">
                 Chapter 1: Getting Started
@@ -1111,9 +1118,9 @@ export default function FAQ() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </Box>
           <h1 className="document-title">
-            <div id="platform-nav">
+            <Box id="platform-nav">
               <DeviceDesktopIcon />
               <ul>
                 <li className="platform-mac">
@@ -1141,18 +1148,18 @@ export default function FAQ() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </Box>
 
             <Link
               className="improve-link"
               href="https://github.com/atom/flight-manual.atom.io/edit/master/content/faq/index.md"
               data-proofer-ignore=""
             >
-              <PencilIcon /> Improve this page
+              <PencilIcon size={16} /> Improve this page
             </Link>
           </h1>
-          <div className="markdown-body document-content">
-            <h2>
+          <Box className="markdown-body document-content">
+            <Heading as="h2">
               <Link
                 id="faq"
                 className="anchor"
@@ -1162,9 +1169,11 @@ export default function FAQ() {
                 <LinkIcon size={16} />
               </Link>
               FAQ
-            </h2>
+            </Heading>
 
-            <p>The collection of Frequently Asked Questions about Atom.</p>
+            <Text as="p">
+              The collection of Frequently Asked Questions about Atom.
+            </Text>
 
             <ul>
               <li className="unselected">
@@ -1350,11 +1359,11 @@ export default function FAQ() {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="footer-pad"></div>
-      </div>
+          </Box>
+        </Box>
+        <Box className="footer-pad"></Box>
+      </Box>
       <FooterItem />
-    </div>
+    </Box>
   );
 }

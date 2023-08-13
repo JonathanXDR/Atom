@@ -1,8 +1,10 @@
 'use client';
+import { DownloadIcon } from '@primer/octicons-react';
+import { Box, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
+import atomWordmark from '/public/assets/svg/atom-wordmark.svg';
 import portalBlueSemi from '/public/assets/svg/portal-blue-semi.svg';
 import portalBlue from '/public/assets/svg/portal-blue.svg';
 import portalGreenSemi from '/public/assets/svg/portal-green-semi.svg';
@@ -14,16 +16,13 @@ import portalRed from '/public/assets/svg/portal-red.svg';
 import portalYellowSemi from '/public/assets/svg/portal-yellow-semi.svg';
 import portalYellow from '/public/assets/svg/portal-yellow.svg';
 
-import { DownloadIcon } from '@primer/octicons-react';
-import atomWordmark from '/public/assets/svg/atom-wordmark.svg';
-
 const HeroMeta: React.FC = () => {
   const pathname = usePathname();
 
   return (
     <header className="hero-header">
-      <div className="hero-header-item hero-logo" aria-hidden="true">
-        <div className="hero-logo-circles">
+      <Box className="hero-header-item hero-logo" aria-hidden="true">
+        <Box className="hero-logo-circles">
           <Image
             className="hero-logo-circle"
             src={portalRedSemi}
@@ -84,8 +83,8 @@ const HeroMeta: React.FC = () => {
             alt="portal-blue"
             style={{ width: '100%', height: '100%' }}
           />
-        </div>
-      </div>
+        </Box>
+      </Box>
       <ul className="hero-header-item hero-download">
         <li>
           <Image
@@ -96,19 +95,19 @@ const HeroMeta: React.FC = () => {
           />
         </li>
         <li>
-          <span className="version">
+          <Text className="version">
             {pathname === '/nightly'
               ? 'Nightly'
               : pathname === '/beta'
               ? 'BETA'
               : '1.63'}
-          </span>
+          </Text>
           <Link href="/releases">Release notes</Link>
         </li>
 
         <li>
-          <span className="platform">macOS</span>
-          <span className="support">For macOS 10.10 or later</span>
+          <Text className="platform">macOS</Text>
+          <Text className="support">For macOS 10.10 or later</Text>
         </li>
         <li>
           <Link
@@ -119,21 +118,21 @@ const HeroMeta: React.FC = () => {
                 ? '/download/mac?channel=beta'
                 : '/download/mac'
             }
-            className="welcome-button js-download-button"
+            className="welcome-button"
           >
             <DownloadIcon size={16} />
             Download
           </Link>
         </li>
       </ul>
-      <p className="hero-meta">
-        <span className="hero-tos">
+      <Text as="p" className="hero-meta">
+        <Text className="hero-tos">
           By downloading, you agree to the{' '}
           <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
             Terms and Conditions
           </Link>
           .
-        </span>
+        </Text>
         <Link
           href={
             pathname === '/nightly'
@@ -153,7 +152,7 @@ const HeroMeta: React.FC = () => {
             <Link href="/nightly">Try Atom Nightly</Link>
           </>
         )}
-      </p>
+      </Text>
     </header>
   );
 };

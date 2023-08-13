@@ -1,6 +1,7 @@
 'use client';
 import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
 import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import { Box, Heading } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './main.css';
@@ -9,14 +10,14 @@ import flightManualCover from '/public/assets/png/flight-manual-cover.png';
 
 export default function FlightManual() {
   return (
-    <div className="layout-toc platform-switch platform-mac">
-      <div className="footer-push">
+    <Box className="layout-toc platform-switch platform-mac">
+      <Box className="footer-push">
         <NavItemLegacy />
 
-        <div className="wrapper documents content-push">
-          <div
+        <Box className="wrapper documents content-push">
+          <Box
             className="documents-search"
-            style={{
+            sx={{
               display: 'flex',
               alignItems: 'center',
             }}
@@ -204,44 +205,44 @@ export default function FlightManual() {
                 width: '100%',
               }}
             >
-              <div
-                style={{
+              <Box
+                sx={{
                   margin: '0',
                   padding: '0',
                   display: 'inline',
                 }}
               >
                 <input name="utf8" type="hidden" value="✓" />
-              </div>
+              </Box>
               <input
                 type="text"
                 name="q"
                 id="quicksearch-query"
-                className="documents-search-input js-articles-quicksearch"
+                className="documents-search-input"
                 placeholder="Search the Flight Manual"
                 autoComplete="off"
               />
             </form>
-          </div>
-          <div
+          </Box>
+          <Box
             className="autocomplete-results"
-            style={{
+            sx={{
               display: 'none',
             }}
           >
-            <div className="result-group"></div>
-          </div>
-          <div className="markdown-body">
+            <Box className="result-group"></Box>
+          </Box>
+          <Box className="markdown-body">
             <h1>Atom Flight Manual</h1>
-            <div className="manual-ebooks">
+            <Box className="manual-ebooks">
               <Image alt="Atom Flight Manual cover" src={flightManualCover} />
-            </div>
+            </Box>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/getting-started">
                 Chapter 1: Getting Started
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/getting-started/sections/why-atom">
@@ -268,11 +269,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/using-atom">
                 Chapter 2: Using Atom
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages">
@@ -371,11 +372,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/hacking-atom">
                 Chapter 3: Hacking Atom
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/tools-of-the-trade">
@@ -498,11 +499,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/behind-atom">
                 Chapter 4: Behind Atom
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/configuration-api">
@@ -559,11 +560,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/api/v1.57.0/">
                 Reference: API
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li>
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/AtomEnvironment/">
@@ -860,11 +861,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/resources">
                 Appendix A: Resources
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/resources/sections/glossary">
@@ -873,11 +874,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/faq">
                 Appendix B: FAQ
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/is-atom-open-source">
@@ -1063,11 +1064,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/shadow-dom">
                 Appendix C: Shadow DOM
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/shadow-dom/sections/removing-shadow-dom-styles">
@@ -1076,11 +1077,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis">
                 Appendix D: Upgrading to 1.0 APIs
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-package">
@@ -1101,11 +1102,11 @@ export default function FlightManual() {
               </li>
             </ul>
 
-            <h3>
+            <Heading as="h3">
               <Link href="https://flight-manual.atom.io/atom-server-side-apis">
                 Appendix E: Atom server-side APIs
               </Link>
-            </h3>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/atom-server-side-apis/sections/atom-package-server-api">
@@ -1119,11 +1120,11 @@ export default function FlightManual() {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="footer-pad"></div>
-      </div>
+          </Box>
+        </Box>
+        <Box className="footer-pad"></Box>
+      </Box>
       <FooterItem />
-    </div>
+    </Box>
   );
 }

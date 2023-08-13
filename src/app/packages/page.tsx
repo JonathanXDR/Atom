@@ -1,6 +1,6 @@
 'use client';
+import '@/app/tailwind.css';
 import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import GitHubRepoCard from '@/components/GitHubRepoCard/GitHubRepoCard';
 import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
 import {
   ChevronRightIcon,
@@ -14,8 +14,10 @@ import {
 import {
   ActionList,
   ActionMenu,
+  Box,
   Button,
   FormControl,
+  Heading,
   Text,
   TextInput,
 } from '@primer/react';
@@ -111,109 +113,103 @@ export default function Packages() {
   };
 
   return (
-    <body>
-      <div className="footer-push">
+    <>
+      <Box className="footer-push">
         <NavItemLegacy />
 
-        <GitHubRepoCard />
+        <Box className="wrapper content-push packages">
+          <Heading as="h2" className="center index-title">
+            Packages make Atom do amazing things.
+          </Heading>
 
-        <div id="js-pjax-container">
-          <div className="wrapper content-push packages">
-            <h2 className="center index-title">
-              Packages make Atom do amazing things.
-            </h2>
-
-            <FormControl
+          <FormControl
+            sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              gap: 2,
+            }}
+          >
+            <FormControl.Label visuallyHidden>Search</FormControl.Label>
+            <TextInput
+              leadingVisual={SearchIcon}
+              size="large"
+              placeholder="Search 431,802 packages"
               sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: 2,
+                width: '100%',
               }}
-            >
-              <TextInput
-                leadingVisual={SearchIcon}
-                size="large"
-                placeholder="Search 431,802 packages"
-                sx={{
-                  width: '100%',
-                }}
-              />
-              <Filter />
-              <Button size="large" type="submit">
-                Search
-              </Button>
-            </FormControl>
+            />
+            <Filter />
+            <Button size="large" type="submit">
+              Search
+            </Button>
+          </FormControl>
 
-            <div className="package-list featured">
-              <div className="package-list-header">
-                <h3 className="package-list-title">
-                  <MegaphoneIcon size={32} /> Featured
-                </h3>
-              </div>
-              <div className="halves">{/* TODO: Add cards here */}</div>
-            </div>
+          <Box className="package-list featured">
+            <Box className="package-list-header">
+              <Heading as="h3" className="package-list-title">
+                <MegaphoneIcon size={32} /> Featured
+              </Heading>
+            </Box>
+            <Box className="halves">{/* TODO: Add cards here */}</Box>
+          </Box>
 
-            <div className="package-list trending">
-              <div className="package-list-header">
-                <h3 className="package-list-title">
-                  <FlameIcon size={32} /> Trending <TimeSpan />
-                </h3>
-              </div>
-              <div className="loading-overlay"></div>
-              <div className="trending-packages halves">
-                {/* TODO: Add cards here */}
-              </div>
-            </div>
+          <Box className="package-list trending">
+            <Box className="package-list-header">
+              <Heading as="h3" className="package-list-title">
+                <FlameIcon size={32} /> Trending <TimeSpan />
+              </Heading>
+            </Box>
+            <Box className="loading-overlay"></Box>
+            <Box className="trending-packages halves">
+              {/* TODO: Add cards here */}
+            </Box>
+          </Box>
 
-            <div className="package-list newest">
-              <div className="package-list-header">
-                <h3 className="package-list-title">
-                  <ClockIcon size={32} /> Newest
-                  <Link
-                    href="https://atom.io/packages/list?sort=created_at&amp;direction=desc"
-                    className="package-list-see-all"
-                    aria-label="See all newest"
-                  >
-                    See all <ChevronRightIcon size={16} />
-                  </Link>
-                </h3>
-              </div>
-              <div className="halves">{/* TODO: Add cards here */}</div>
-            </div>
+          <Box className="package-list newest">
+            <Box className="package-list-header">
+              <Heading as="h3" className="package-list-title">
+                <ClockIcon size={32} /> Newest
+                <Link
+                  href="https://atom.io/packages/list?sort=created_at&amp;direction=desc"
+                  className="package-list-see-all"
+                  aria-label="See all newest"
+                >
+                  See all <ChevronRightIcon size={16} />
+                </Link>
+              </Heading>
+            </Box>
+            <Box className="halves">{/* TODO: Add cards here */}</Box>
+          </Box>
 
-            <div className="package-list updated">
-              <div className="package-list-header">
-                <h3 className="package-list-title">
-                  <SquirrelIcon size={32} /> Recently Updated
-                  <Link
-                    href="https://atom.io/packages/list?sort=updated_at&amp;direction=desc"
-                    className="package-list-see-all"
-                    aria-label="See all recently updated"
-                  >
-                    See all <ChevronRightIcon size={16} />
-                  </Link>
-                </h3>
-              </div>
-              <div className="halves">{/* TODO: Add cards here */}</div>
-            </div>
+          <Box className="package-list updated">
+            <Box className="package-list-header">
+              <Heading as="h3" className="package-list-title">
+                <SquirrelIcon size={32} /> Recently Updated
+                <Link
+                  href="https://atom.io/packages/list?sort=updated_at&amp;direction=desc"
+                  className="package-list-see-all"
+                  aria-label="See all recently updated"
+                >
+                  See all <ChevronRightIcon size={16} />
+                </Link>
+              </Heading>
+            </Box>
+            <Box className="halves">{/* TODO: Add cards here */}</Box>
+          </Box>
 
-            <p className="stats-footnote">
-              1,113,135 packages &amp; themes have been downloaded 325,262,080
-              times.
-            </p>
-          </div>
-          G
-        </div>
+          <Text className="stats-footnote">
+            1,113,135 packages &amp; themes have been downloaded 325,262,080
+            times.
+          </Text>
+        </Box>
 
-        <div className="footer-pad"></div>
-      </div>
-
+        <Box className="footer-pad"></Box>
+      </Box>
       <FooterItem />
-
-      <div id="lean_overlay"></div>
-      <div id="lean_overlay"></div>
-      <div id="lean_overlay"></div>
-    </body>
+      <Box id="lean_overlay"></Box>
+      <Box id="lean_overlay"></Box>
+      <Box id="lean_overlay"></Box>
+    </>
   );
 }

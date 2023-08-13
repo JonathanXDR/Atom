@@ -1,6 +1,7 @@
 'use client';
 import CreditBadge from '@/components/CreditBadge/CreditBadge';
 import { MarkGithubIcon } from '@primer/octicons-react';
+import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './main.css';
@@ -18,7 +19,7 @@ export default function GitHub() {
   return (
     <>
       <section className="section hero">
-        <div className="bg" aria-hidden="true">
+        <Box className="bg" aria-hidden="true">
           <Image
             className="bg-item bg-item--rocket"
             src={githubRocket}
@@ -44,10 +45,10 @@ export default function GitHub() {
             src={githubPlanet1}
             alt="github-planet-1"
           />
-        </div>
-        <div className="section-content">
+        </Box>
+        <Box className="section-content">
           <header className="header">
-            <div className="logos">
+            <Box className="logos">
               <svg
                 className="icon-svg icon-atom"
                 viewBox="0 0 64 64"
@@ -85,15 +86,15 @@ export default function GitHub() {
                   </g>
                 </g>
               </svg>
-              <span className="logos-plus">+</span>
+              <Text className="logos-plus">+</Text>
               <MarkGithubIcon size={32} />
-            </div>
+            </Box>
 
             <h1 className="tagline">GitHub for Atom</h1>
           </header>
 
           <main className="features">
-            <div className="video-container">
+            <Box className="video-container">
               <video
                 className="video"
                 poster="assets/png/github-atom.png"
@@ -108,19 +109,19 @@ export default function GitHub() {
                 />
                 <track kind="captions" />
               </video>
-            </div>
+            </Box>
 
-            <div className="features-description">
-              <p>
+            <Box className="features-description">
+              <Text as="p">
                 The GitHub package brings Git and GitHub integration right
                 inside your editor! Now you can switch or create
                 <strong>branches</strong>, <strong>stage</strong> changes,
                 <strong>commit</strong>, <strong>pull</strong> and
                 <strong>push</strong>, <strong>resolve merge conflicts</strong>,
                 view and checkout <strong>pull requests</strong> and more.
-              </p>
+              </Text>
 
-              <p>
+              <Text as="p">
                 Visit the 🚀
                 <Link
                   className="features-button"
@@ -129,26 +130,26 @@ export default function GitHub() {
                   documentation
                 </Link>
                 to learn how to use all the features.
-              </p>
-            </div>
+              </Text>
+            </Box>
           </main>
-        </div>
+        </Box>
       </section>
 
       <section className="section details">
-        <div className="section-content columns">
-          <div className="column">
-            <h2>Install</h2>
-            <p>
+        <Box className="section-content columns">
+          <Box className="column">
+            <Heading as="h2">Install</Heading>
+            <Text as="p">
               The GitHub package comes already bundled with
               <Link href="https://atom.io/">Atom</Link>, so there is nothing
               extra to install.&nbsp;🎉
-            </p>
-          </div>
+            </Text>
+          </Box>
 
-          <div className="column">
-            <h2>Feedback</h2>
-            <p>
+          <Box className="column">
+            <Heading as="h2">Feedback</Heading>
+            <Text as="p">
               We would love to hear your
               <Link href="https://github.com/atom/atom/discussions">
                 feedback
@@ -162,13 +163,13 @@ export default function GitHub() {
                 contribution guide
               </Link>
               .
-            </p>
-          </div>
-        </div>
+            </Text>
+          </Box>
+        </Box>
       </section>
 
       <footer className="section footer">
-        <div className="bg" aria-hidden="true">
+        <Box className="bg" aria-hidden="true">
           <Image
             className="bg-item bg-item--bottom-stars"
             src={githubBottomStars}
@@ -184,23 +185,23 @@ export default function GitHub() {
             src={githubBottom}
             alt="github-bottom"
           />
-        </div>
-        <div className="section-content community columns">
-          <div className="column">
-            <h2>Community packages</h2>
-            <p>
+        </Box>
+        <Box className="section-content community columns">
+          <Box className="column">
+            <Heading as="h2">Community packages</Heading>
+            <Text as="p">
               We also would like to point out all the
               <Link href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
                 amazing packages
               </Link>
               the Atom community has already created.
-            </p>
-            <p>
+            </Text>
+            <Text as="p">
               Give them a try to further improve your Git workflows.&nbsp;🙌
-            </p>
-          </div>
-          <div className="column">
-            <p>Here just a few to check out:</p>
+            </Text>
+          </Box>
+          <Box className="column">
+            <Text as="p">Here just a few to check out:</Text>
             <ul>
               <li>
                 <Link href="https://atom.io/packages/git-plus">git-plus</Link>
@@ -239,11 +240,11 @@ export default function GitHub() {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="section-content love">
+          </Box>
+        </Box>
+        <Box className="section-content love">
           <CreditBadge />
-        </div>
+        </Box>
       </footer>
     </>
   );

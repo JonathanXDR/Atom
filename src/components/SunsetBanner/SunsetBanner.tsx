@@ -1,10 +1,12 @@
+import { Text } from '@primer/react';
 import Link from 'next/link';
 
 const SunsetBanner: React.FC = () => {
   return (
-    <p
+    <Text
+      as="p"
       className="sunset-banner sunset-text-color"
-      style={{
+      sx={{
         marginBlock: '1em',
       }}
     >
@@ -16,7 +18,7 @@ const SunsetBanner: React.FC = () => {
         {' '}
         Learn more in our official statement
       </Link>
-    </p>
+    </Text>
   );
 };
 

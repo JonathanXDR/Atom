@@ -1,6 +1,7 @@
 'use client';
 import CreditBadge from '@/components/CreditBadge/CreditBadge';
 import { BroadcastIcon, PlayIcon } from '@primer/octicons-react';
+import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -26,7 +27,7 @@ export default function Teletype() {
   return (
     <>
       <section className="section hero">
-        <div className="wrapper wrapper--full">
+        <Box className="wrapper wrapper--full">
           <header className="header">
             <svg className="logo" viewBox="0 0 116 106" aria-label="Atom">
               <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -57,25 +58,25 @@ export default function Teletype() {
               </g>
             </svg>
           </header>
-        </div>
+        </Box>
 
-        <div className="wrapper intro">
-          <h2>Collaborate in real time in Atom</h2>
-          <p>
+        <Box className="wrapper intro">
+          <Heading as="h2">Collaborate in real time in Atom</Heading>
+          <Text as="p">
             <strong>
               Teletype<sup>(beta)</sup> for Atom
             </strong>{' '}
             lets developers share their workspace with team members and
             collaborate on code in real time.
-          </p>
-          <p>
+          </Text>
+          <Text as="p">
             <Link href="#getting-started">Get started</Link>
-          </p>
-        </div>
+          </Text>
+        </Box>
       </section>
       <section id="demo" className="section">
-        <div className="wrapper wrapper--full wrapper--video">
-          <div className="video-container">
+        <Box className="wrapper wrapper--full wrapper--video">
+          <Box className="video-container">
             <video
               ref={videoRef}
               className="video"
@@ -86,7 +87,7 @@ export default function Teletype() {
               <source src="/assets/video/real-time.mp4" type="video/mp4" />
               <track kind="captions" />
             </video>
-            <div ref={videoHudRef} className="video-hud">
+            <Box ref={videoHudRef} className="video-hud">
               <button
                 ref={videoButtonRef}
                 className="video-play-button mega-octicon"
@@ -101,92 +102,92 @@ export default function Teletype() {
               >
                 <PlayIcon size={125} />
               </button>
-            </div>
-          </div>
-        </div>
+            </Box>
+          </Box>
+        </Box>
       </section>
 
       <section id="portals" className="section">
-        <div className="wrapper">
-          <h2>Code better, together</h2>
-          <p>
+        <Box className="wrapper">
+          <Heading as="h2">Code better, together</Heading>
+          <Text as="p">
             Working on code together in real time is valuable for knowledge
             sharing and producing quality software. The
             <strong> Teletype </strong> package for Atom aspires to make it as
             easy for developers to code together as it is for them to code
             alone.
-          </p>
-          <p>
+          </Text>
+          <Text as="p">
             Teletype introduces the concept of
             <strong> real-time &quot;portals&quot; </strong> for sharing
             workspaces. When a host opens a portal, their active tab becomes a
             shared workspace. There, invited collaborators can join in and make
             edits in real time. As the host moves between files, collaborators
             follow along with the active tab automatically.
-          </p>
-          <p className="is-centered">
+          </Text>
+          <Text as="p" className="is-centered">
             <Image
               className="img"
               src={realTimePortals}
               alt="real-time-portals"
               style={{ width: '100%', height: '100%' }}
             />
-          </p>
-        </div>
+          </Text>
+        </Box>
       </section>
       <section id="privacy" className="section">
-        <div className="wrapper">
-          <h2>How code gets shared</h2>
-          <p>Each portal comes to life in two steps:</p>
+        <Box className="wrapper">
+          <Heading as="h2">How code gets shared</Heading>
+          <Text as="p">Each portal comes to life in two steps:</Text>
           <ol className="privacy-list">
             <li>
-              <p className="privacy-img-wrapper">
+              <Text as="p" className="privacy-img-wrapper">
                 <Image
                   className="privacy-img"
                   src={realTimePrivacy1}
                   alt="real-time-privacy-1"
                   style={{ width: '100%', height: '100%' }}
                 />
-              </p>
-              <p>
+              </Text>
+              <Text as="p">
                 First you connect to our servers to see who is collaborating. 👋
                 &nbsp; Hi there.
-              </p>
+              </Text>
             </li>
             <li>
-              <p className="privacy-img-wrapper">
+              <Text as="p" className="privacy-img-wrapper">
                 <Image
                   className="privacy-img"
                   src={realTimePrivacy2}
                   alt="real-time-privacy-2"
                   style={{ width: '100%', height: '100%' }}
                 />
-              </p>
-              <p>
+              </Text>
+              <Text as="p">
                 After that, collaborators share code directly with each other (
                 <strong>peer-to-peer</strong>).
-              </p>
+              </Text>
             </li>
           </ol>
-          <p>
+          <Text as="p">
             There&apos;s no centralized server to spy on your keystrokes, and
             Teletype uses <strong>WebRTC</strong> to encrypt all communication
             between collaborators. What happens in the portal stays in the
             portal.
-          </p>
-        </div>
+          </Text>
+        </Box>
       </section>
       <section id="getting-started" className="section">
-        <div className="wrapper">
-          <h2>Getting started</h2>
+        <Box className="wrapper">
+          <Heading as="h2">Getting started</Heading>
           <h4>1. Install Atom</h4>
-          <p>
+          <Text as="p">
             Download and install <Link href="/">Atom</Link>. It&apos;s free,
             open source, and cross-platform. You can use it on Windows, macOS,
             or Linux.
-          </p>
+          </Text>
           <h4>2. Install Teletype for Atom</h4>
-          <p>
+          <Text as="p">
             Install the{' '}
             <Link href="atom://settings-view/show-package?package=teletype">
               teletype{' '}
@@ -197,29 +198,29 @@ export default function Teletype() {
               how to install Atom packages
             </Link>
             .
-          </p>
+          </Text>
 
           <hr />
 
           <h4>Share a portal</h4>
-          <p>
+          <Text as="p">
             Click the <BroadcastIcon aria-label="Teletype" size={16} /> icon in
             the Atom status bar, and flip the switch to start sharing a portal
             to your workspace. Then invite people to join your portal by sending
             them your portal URL.
-          </p>
+          </Text>
           <h4>Join a portal</h4>
-          <p>
+          <Text as="p">
             Once someone has provided you with a link to their portal, simply
             follow the link to join the portal. The portal opens and all
             collaborators can edit together in real time.
-          </p>
-        </div>
+          </Text>
+        </Box>
       </section>
       <footer id="feedback" className="section">
-        <div className="wrapper">
-          <h2>Feedback</h2>
-          <p>
+        <Box className="wrapper">
+          <Heading as="h2">Feedback</Heading>
+          <Text as="p">
             We welcome your{' '}
             <Link href="https://github.com/atom/atom/discussions">
               feedback{' '}
@@ -233,12 +234,12 @@ export default function Teletype() {
               contribution guide{' '}
             </Link>
             and start contributing.
-          </p>
-        </div>
+          </Text>
+        </Box>
 
-        <div className="wrapper love">
+        <Box className="wrapper love">
           <CreditBadge />
-        </div>
+        </Box>
       </footer>
     </>
   );

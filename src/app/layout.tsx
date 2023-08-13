@@ -1,5 +1,6 @@
 import '@primer/css/index.scss';
 import '@primer/react-brand/lib/css/main.css';
+import '../../public/assets/css/application.css';
 import './tailwind.css';
 
 import PrimerProvider from '@/providers/PrimerProvider';
@@ -58,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="is-responsive">
         <PrimerProvider>{children}</PrimerProvider>
       </body>
     </html>

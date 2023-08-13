@@ -24,7 +24,6 @@ import {
 import Link from 'next/link';
 import React from 'react';
 import './main.css';
-import '/public/assets/css/application.css';
 
 export default function Packages() {
   const timeSpans = [

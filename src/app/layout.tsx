@@ -1,7 +1,7 @@
 import '@primer/css/index.scss';
 import '@primer/react-brand/lib/css/main.css';
-import '../../public/assets/css/application.css';
 import './tailwind.css';
+import '/public/assets/css/atom.css';
 
 import PrimerProvider from '@/providers/PrimerProvider';
 import { Metadata } from 'next';

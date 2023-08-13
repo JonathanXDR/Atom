@@ -1,6 +1,7 @@
 import '@primer/css/index.scss';
 import '@primer/react-brand/lib/css/main.css';
 import '../tailwind.css';
+import './main.css';
 
 import { Metadata } from 'next';
 

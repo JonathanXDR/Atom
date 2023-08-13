@@ -2,7 +2,6 @@
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
 import './main.css';
-import '/public/assets/css/ide.css';
 
 export default function IDE() {
   return (

@@ -5,7 +5,6 @@ import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './main.css';
-import '/public/assets/css/github.css';
 import githubBottomStars from '/public/assets/svg/github-bottom-stars.svg';
 import githubBottom from '/public/assets/svg/github-bottom.svg';
 import githubOctonaut from '/public/assets/svg/github-octonaut.svg';

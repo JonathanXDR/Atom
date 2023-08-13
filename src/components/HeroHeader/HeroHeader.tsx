@@ -4,6 +4,7 @@ import { Box, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import './main.css';
 import atomWordmark from '/public/assets/svg/atom-wordmark.svg';
 import portalBlueSemi from '/public/assets/svg/portal-blue-semi.svg';
 import portalBlue from '/public/assets/svg/portal-blue.svg';

@@ -1,5 +1,6 @@
 import { Text } from '@primer/react';
 import Link from 'next/link';
+import './main.css';
 
 const SunsetBanner: React.FC = () => {
   return (

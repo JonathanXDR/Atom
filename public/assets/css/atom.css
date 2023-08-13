@@ -180,10 +180,11 @@
 }
 @font-face {
   font-family: octicons;
-  src: url(../octicons/octicons.eot#iefix) format('embedded-opentype'),
-    url(../octicons/octicons.woff) format('woff'),
-    url(../octicons/octicons.ttf) format('truetype'),
-    url(../svg/octicons.svg#octicons) format('svg');
+  src: url(../../../public/assets/octicons/octicons.eot#iefix)
+      format('embedded-opentype'),
+    url(../../../public/assets/octicons/octicons.woff) format('woff'),
+    url(../../../public/assets/octicons/octicons.ttf) format('truetype'),
+    url(../../../public/assets/svg/octicons.svg#octicons) format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -624,7 +625,7 @@ a.hero-link {
 }
 .section--realtime {
   background-repeat: no-repeat;
-  background-image: url(../svg/teletype-graphic.svg);
+  background-image: url(../../../public/assets/svg/teletype-graphic.svg);
   background-position: calc(50% + 1000px) center;
 }
 .section--realtime .wrapper {
@@ -658,7 +659,7 @@ a.hero-link {
 }
 .section--github {
   background-repeat: no-repeat;
-  background-image: url(../svg/github-graphic.svg);
+  background-image: url(../../../public/assets/svg/github-graphic.svg);
   background-position: calc(50% + 550px) center;
 }
 .section--github .wrapper {
@@ -707,7 +708,7 @@ a.hero-link {
   border-top: 1px solid #1a191a;
   background-color: #2c2a2b;
   background-repeat: no-repeat;
-  background-image: url(../svg/rocket.svg);
+  background-image: url(../../../public/assets/svg/rocket.svg);
   background-position: calc(50% + 380px) 60px;
 }
 .section--contact td:first-child {

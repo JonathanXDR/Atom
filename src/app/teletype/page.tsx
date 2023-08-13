@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import './main.css';
-import '/public/assets/css/teletype.css';
 import realTimePortals from '/public/assets/svg/real-time-portals.svg';
 import realTimePrivacy1 from '/public/assets/svg/real-time-privacy-1.svg';
 import realTimePrivacy2 from '/public/assets/svg/real-time-privacy-2.svg';

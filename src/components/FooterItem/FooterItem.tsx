@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 import CreditBadge from '../CreditBadge/CreditBadge';
+import './main.css';
 
 const FooterItem: React.FC = () => {
   const pathname = usePathname();

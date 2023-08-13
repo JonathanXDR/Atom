@@ -120,10 +120,11 @@
 }
 @font-face {
   font-family: octicons;
-  src: url(../octicons/octicons.eot#iefix) format('embedded-opentype'),
-    url(../octicons/octicons.woff) format('woff'),
-    url(../octicons/octicons.ttf) format('truetype'),
-    url(../svg/octicons.svg#octicons) format('svg');
+  src: url(../../../public/assets/octicons/octicons.eot#iefix)
+      format('embedded-opentype'),
+    url(../../../public/assets/octicons/octicons.woff) format('woff'),
+    url(../../../public/assets/octicons/octicons.ttf) format('truetype'),
+    url(../../../public/assets/svg/octicons.svg#octicons) format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -167,12 +168,12 @@ a:hover {
   text-indent: 230px;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url(../png/logo.png);
+  background-image: url(../../../public/assets/png/logo.png);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
   .header .logo {
-    background-image: url(../png/logo@2x.png);
+    background-image: url(../../../public/assets/png/logo@2x.png);
     -webkit-background-size: 290px 60px;
     -moz-background-size: 290px 60px;
     -o-background-size: 290px 60px;
@@ -279,7 +280,8 @@ a:hover {
   flex: 0 0 500px;
   height: 366px;
   background-repeat: no-repeat;
-  background-image: url(../svg/logo.svg), url(../svg/portal-sides.svg);
+  background-image: url(../../../public/assets/svg/logo.svg),
+    url(../../../public/assets/svg/portal-sides.svg);
   background-position: center;
   -webkit-user-select: none;
   user-select: none;

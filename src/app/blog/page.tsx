@@ -6,7 +6,6 @@ import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './main.css';
-import '/public/assets/css/blog.css';
 import atomNightlyHeading from '/public/assets/png/atom-nightly-heading.png';
 
 export default function Blog() {

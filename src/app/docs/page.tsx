@@ -11,7 +11,7 @@ import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './main.css';
-import '/public/assets/css/application.css';
+
 import flightManualCover from '/public/assets/png/flight-manual-cover.png';
 
 export default function Docs() {

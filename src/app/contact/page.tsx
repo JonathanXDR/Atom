@@ -11,7 +11,6 @@ import {
 } from '@primer/react';
 import Link from 'next/link';
 import './main.css';
-import '/public/assets/css/application.css';
 
 export default function Contact() {
   return (

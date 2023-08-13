@@ -3,6 +3,7 @@ import { RssIcon, SignInIcon } from '@primer/octicons-react';
 import { Box, Octicon } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import './main.css';
 
 const NavItemLegacy: React.FC = () => {
   const pathname = usePathname();

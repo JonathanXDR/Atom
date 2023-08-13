@@ -6,7 +6,6 @@ import { BugIcon, CalendarIcon, RocketIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
 import './main.css';
-import '/public/assets/css/application.css';
 
 export default function Beta() {
   return (

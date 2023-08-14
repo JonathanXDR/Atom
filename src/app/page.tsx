@@ -35,14 +35,14 @@ export default function Home() {
             <Box className="wrapper">
               <HeroHeader />
               <Box className="hero-features">
-                <h1 className="hero-tagline">
+                <Heading as="h1" className="hero-tagline">
                   A hackable
                   <Text className="hero-tagline-highlight">
                     {' '}
                     text editor
                   </Text>{' '}
                   for the 21st Century
-                </h1>
+                </Heading>
                 <Link
                   className="hero-link hero-link--teletype"
                   href="#teletype"
@@ -194,7 +194,7 @@ export default function Home() {
                   >
                     <DeviceDesktopIcon size={24} />
                   </Box>
-                  <h4>Cross-platform editing</h4>
+                  <Heading as="h4">Cross-platform editing</Heading>
                   <Text as="p">
                     Atom works across operating systems. Use it on OS X,
                     Windows, or Linux.
@@ -211,7 +211,7 @@ export default function Home() {
                   >
                     <PackageIcon size={24} />
                   </Box>
-                  <h4>Built-in package manager</h4>
+                  <Heading as="h4">Built-in package manager</Heading>
                   <Text as="p">
                     Search for and install new packages or create your own right
                     from Atom.
@@ -229,7 +229,7 @@ export default function Home() {
                   >
                     <LightBulbIcon size={24} />
                   </Box>
-                  <h4>Smart autocompletion</h4>
+                  <Heading as="h4">Smart autocompletion</Heading>
                   <Text as="p">
                     Atom helps you write code faster with a smart and flexible
                     autocomplete.
@@ -246,7 +246,7 @@ export default function Home() {
                   >
                     <FileCodeIcon size={24} />
                   </Box>
-                  <h4>File system browser</h4>
+                  <Heading as="h4">File system browser</Heading>
                   <Text as="p">
                     Easily browse and open a single file, a whole project, or
                     multiple projects in one window.
@@ -263,7 +263,7 @@ export default function Home() {
                   >
                     <MirrorIcon size={24} />
                   </Box>
-                  <h4>Multiple panes</h4>
+                  <Heading as="h4">Multiple panes</Heading>
                   <Text as="p">
                     Split your Atom interface into multiple panes to compare and
                     edit code across files.
@@ -280,7 +280,7 @@ export default function Home() {
                   >
                     <SearchIcon size={24} />
                   </Box>
-                  <h4>Find and replace</h4>
+                  <Heading as="h4">Find and replace</Heading>
                   <Text as="p">
                     Find, preview, and replace text as you type in a file or
                     across all your projects.
@@ -302,7 +302,7 @@ export default function Home() {
                   >
                     <PackageIcon size={24} />
                   </Box>
-                  <h4>Packages</h4>
+                  <Heading as="h4">Packages</Heading>
                   <Text as="p">
                     Choose from thousands of{' '}
                     <Link href="/packages">open source packages </Link>
@@ -322,7 +322,7 @@ export default function Home() {
                   >
                     <PaintbrushIcon size={24} />
                   </Box>
-                  <h4>Themes</h4>
+                  <Heading as="h4">Themes</Heading>
                   <Text as="p">
                     Atom comes pre-installed with four UI and eight syntax{' '}
                     <Link href="/themes">themes </Link>
@@ -343,7 +343,7 @@ export default function Home() {
                   >
                     <ToolsIcon size={24} />
                   </Box>
-                  <h4>Customization</h4>
+                  <Heading as="h4">Customization</Heading>
                   <Text as="p">
                     It&apos;s easy to customize and style Atom. Tweak the look
                     and feel of your UI with CSS/Less, and add major features
@@ -370,7 +370,7 @@ export default function Home() {
                   >
                     <CodeIcon size={24} />
                   </Box>
-                  <h4>Under the hood</h4>
+                  <Heading as="h4">Under the hood</Heading>
                   <Text as="p">
                     Atom is a desktop application built with HTML, JavaScript,
                     CSS, and Node.js integration. It runs on{' '}

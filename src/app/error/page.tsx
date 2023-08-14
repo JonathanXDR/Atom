@@ -1,4 +1,5 @@
-import { Box, Text } from '@primer/react';
+'use client';
+import { Box, Heading, Text } from '@primer/react';
 import './main.css';
 
 export default function Error() {
@@ -6,7 +7,9 @@ export default function Error() {
     <>
       <Box className="dialog">
         <Box className="wrapper-top">
-          <h1 className="message">Something has gone wrong</h1>
+          <Heading as="h1" className="message">
+            Something has gone wrong
+          </Heading>
         </Box>
         <Text className="number">500</Text>
         <Box className="wrapper-bottom">

@@ -272,11 +272,11 @@ export default function FAQ() {
             <Box className="result-group"></Box>
           </Box>
           <Box className="toc">
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/getting-started">
                 Chapter 1: Getting Started
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/getting-started/sections/why-atom">
@@ -303,11 +303,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/using-atom">
                 Chapter 2: Using Atom
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages">
@@ -406,11 +406,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/hacking-atom">
                 Chapter 3: Hacking Atom
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/tools-of-the-trade">
@@ -533,11 +533,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/behind-atom">
                 Chapter 4: Behind Atom
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/configuration-api">
@@ -594,11 +594,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/api/v1.57.0/">
                 Reference: API
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li>
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/AtomEnvironment/">
@@ -895,11 +895,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/resources">
                 Appendix A: Resources
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/resources/sections/glossary">
@@ -908,11 +908,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/faq">
                 Appendix B: FAQ
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/is-atom-open-source">
@@ -1098,11 +1098,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/shadow-dom">
                 Appendix C: Shadow DOM
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/shadow-dom/sections/removing-shadow-dom-styles">
@@ -1111,11 +1111,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis">
                 Appendix D: Upgrading to 1.0 APIs
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-package">
@@ -1136,11 +1136,11 @@ export default function FAQ() {
               </li>
             </ul>
 
-            <h4>
+            <Heading as="h4">
               <Link href="https://flight-manual.atom.io/atom-server-side-apis">
                 Appendix E: Atom server-side APIs
               </Link>
-            </h4>
+            </Heading>
             <ul>
               <li className="unselected">
                 <Link href="https://flight-manual.atom.io/atom-server-side-apis/sections/atom-package-server-api">
@@ -1155,7 +1155,7 @@ export default function FAQ() {
               </li>
             </ul>
           </Box>
-          <h1 className="document-title">
+          <Heading as="h1" className="document-title">
             <Box id="platform-nav">
               <DeviceDesktopIcon />
               <ul>
@@ -1193,7 +1193,7 @@ export default function FAQ() {
             >
               <PencilIcon size={16} /> Improve this page
             </Link>
-          </h1>
+          </Heading>
           <Box className="markdown-body document-content">
             <Heading as="h2">
               <Link

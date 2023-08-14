@@ -179,13 +179,13 @@ export default function Teletype() {
       <section id="getting-started" className="section">
         <Box className="wrapper">
           <Heading as="h2">Getting started</Heading>
-          <h4>1. Install Atom</h4>
+          <Heading as="h4">1. Install Atom</Heading>
           <Text as="p">
             Download and install <Link href="/">Atom</Link>. It&apos;s free,
             open source, and cross-platform. You can use it on Windows, macOS,
             or Linux.
           </Text>
-          <h4>2. Install Teletype for Atom</h4>
+          <Heading as="h4">2. Install Teletype for Atom</Heading>
           <Text as="p">
             Install the{' '}
             <Link href="atom://settings-view/show-package?package=teletype">
@@ -201,14 +201,14 @@ export default function Teletype() {
 
           <hr />
 
-          <h4>Share a portal</h4>
+          <Heading as="h4">Share a portal</Heading>
           <Text as="p">
             Click the <BroadcastIcon aria-label="Teletype" size={16} /> icon in
             the Atom status bar, and flip the switch to start sharing a portal
             to your workspace. Then invite people to join your portal by sending
             them your portal URL.
           </Text>
-          <h4>Join a portal</h4>
+          <Heading as="h4">Join a portal</Heading>
           <Text as="p">
             Once someone has provided you with a link to their portal, simply
             follow the link to join the portal. The portal opens and all

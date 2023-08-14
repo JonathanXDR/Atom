@@ -1,6 +1,6 @@
 'use client';
 import { RssIcon, SignInIcon } from '@primer/octicons-react';
-import { Box, Octicon } from '@primer/react';
+import { Box, Heading, Octicon } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './main.css';
@@ -13,13 +13,13 @@ const NavItemLegacy: React.FC = () => {
         <ul className="navigation">
           {pathname !== '/' && (
             <li>
-              <h1>
+              <Heading as="h1">
                 <Link
                   href="/"
                   className="logo-small"
                   title="Atom: A hackable text editor for the 21st Century"
                 ></Link>
-              </h1>
+              </Heading>
             </li>
           )}
           <li>

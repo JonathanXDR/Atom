@@ -18,7 +18,9 @@ export default function Releases() {
 
         <Box className="wrapper releases search-page content-push">
           <Box className="markdown-body">
-            <h1 className="releases-header">Release notes</h1>
+            <Heading as="h1" className="releases-header">
+              Release notes
+            </Heading>
             <Box className="release">
               <Heading as="h2">
                 <Link href="https://github.com/atom/atom/releases/tag/v1.63.1">

@@ -89,7 +89,9 @@ export default function GitHub() {
               <MarkGithubIcon size={32} />
             </Box>
 
-            <h1 className="tagline">GitHub for Atom</h1>
+            <Heading as="h1" className="tagline">
+              GitHub for Atom
+            </Heading>
           </header>
 
           <main className="features">

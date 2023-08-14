@@ -1,4 +1,5 @@
-import { Box, Text } from '@primer/react';
+'use client';
+import { Box, Heading, Text } from '@primer/react';
 import './main.css';
 
 export default function NotFound() {
@@ -6,7 +7,9 @@ export default function NotFound() {
     <>
       <Box className="dialog">
         <Box className="wrapper-top">
-          <h1 className="message">This page could not be found</h1>
+          <Heading as="h1" className="message">
+            This page could not be found
+          </Heading>
         </Box>
         <Text className="number">404</Text>
         <Box className="wrapper-bottom">

@@ -7,7 +7,9 @@ export default function IDE() {
   return (
     <>
       <section className="wrapper notice-wrapper">
-        <h1 className="notice-title text-center">Community Powered</h1>
+        <Heading as="h1" className="notice-title text-center">
+          Community Powered
+        </Heading>
 
         <Text
           as="p"

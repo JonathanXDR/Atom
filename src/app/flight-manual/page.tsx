@@ -232,7 +232,7 @@ export default function FlightManual() {
             <Box className="result-group"></Box>
           </Box>
           <Box className="markdown-body">
-            <h1>Atom Flight Manual</h1>
+            <Heading as="h1">Atom Flight Manual</Heading>
             <Box className="manual-ebooks">
               <Image alt="Atom Flight Manual cover" src={flightManualCover} />
             </Box>

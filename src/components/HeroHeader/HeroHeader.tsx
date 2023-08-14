@@ -21,7 +21,7 @@ const HeroMeta: React.FC = () => {
   const pathname = usePathname();
 
   return (
-    <header className="hero-header">
+    <Box as="header" className="hero-header">
       <Box className="hero-header-item hero-logo" aria-hidden="true">
         <Box className="hero-logo-circles">
           <Image
@@ -86,16 +86,16 @@ const HeroMeta: React.FC = () => {
           />
         </Box>
       </Box>
-      <ul className="hero-header-item hero-download">
-        <li>
+      <Box as="ul" className="hero-header-item hero-download">
+        <Box as="li">
           <Image
             className="logo-wordmark"
             src={atomWordmark}
             alt="atom-wordmark"
             style={{ width: '100%', height: '100%' }}
           />
-        </li>
-        <li>
+        </Box>
+        <Box as="li">
           <Text className="version">
             {pathname === '/nightly'
               ? 'Nightly'
@@ -104,13 +104,13 @@ const HeroMeta: React.FC = () => {
               : '1.63'}
           </Text>
           <Link href="/releases">Release notes</Link>
-        </li>
+        </Box>
 
-        <li>
+        <Box as="li">
           <Text className="platform">macOS</Text>
           <Text className="support">For macOS 10.10 or later</Text>
-        </li>
-        <li>
+        </Box>
+        <Box as="li">
           <Link
             href={
               pathname === '/nightly'
@@ -124,8 +124,8 @@ const HeroMeta: React.FC = () => {
             <DownloadIcon size={16} />
             Download
           </Link>
-        </li>
-      </ul>
+        </Box>
+      </Box>
       <Text as="p" className="hero-meta">
         <Text className="hero-tos">
           By downloading, you agree to the{' '}
@@ -154,7 +154,7 @@ const HeroMeta: React.FC = () => {
           </>
         )}
       </Text>
-    </header>
+    </Box>
   );
 };
 

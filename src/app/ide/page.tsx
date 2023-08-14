@@ -6,7 +6,7 @@ import './main.css';
 export default function IDE() {
   return (
     <>
-      <section className="wrapper notice-wrapper">
+      <Box as="section" className="wrapper notice-wrapper">
         <Heading as="h1" className="notice-title text-center">
           Community Powered
         </Heading>
@@ -37,10 +37,10 @@ export default function IDE() {
           </Link>
           . 🚀
         </Text>
-      </section>
+      </Box>
 
-      <section className="section hero dark">
-        <header className="header wrapper wrapper--full">
+      <Box as="section" className="section hero dark">
+        <Box as="header" className="header wrapper wrapper--full">
           <svg
             className="icon-svg logo"
             viewBox="0 0 214 144"
@@ -85,7 +85,7 @@ export default function IDE() {
               </g>
             </g>
           </svg>
-        </header>
+        </Box>
 
         <Box className="wrapper">
           <Heading as="h2">Improved language integration</Heading>
@@ -114,9 +114,9 @@ export default function IDE() {
             </video>
           </Box>
         </Box>
-      </section>
+      </Box>
 
-      <section className="section details">
+      <Box as="section" className="section details">
         <Box className="wrapper getting-started">
           <Heading as="h2">Getting started</Heading>
           <Text
@@ -152,40 +152,40 @@ export default function IDE() {
             <Text as="p">
               Install an IDE language package that you like to use:
             </Text>
-            <ul className="language-packages">
-              <li>
+            <Box as="ul" className="language-packages">
+              <Box as="li">
                 <strong>TypeScript &amp; JavaScript</strong>
                 <Link href="https://github.com/atom/ide-typescript/">
                   ide-typescript
                 </Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <strong>Flow</strong>
                 <Link href="https://github.com/flowtype/ide-flowtype">
                   ide-flowtype
                 </Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <strong>C#</strong>
                 <Link href="https://github.com/atom/ide-csharp/">
                   ide-csharp
                 </Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <strong>Java</strong>
                 <Link href="https://github.com/atom/ide-java/">ide-java</Link>
                 <Text className="language-packages-note">
                   (Java 8 runtime required)
                 </Text>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <strong>PHP</strong>
                 <Link href="https://github.com/atom/ide-php/">ide-php</Link>
                 <Text className="language-packages-note">
                   (PHP 7 runtime required)
                 </Text>
-              </li>
-            </ul>
+              </Box>
+            </Box>
           </Box>
 
           <Text as="p">
@@ -194,7 +194,7 @@ export default function IDE() {
             for packages created by the Atom community.
           </Text>
         </Box>
-      </section>
+      </Box>
     </>
   );
 }

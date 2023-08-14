@@ -14,12 +14,12 @@ export default function Nightly() {
         <NavItemLegacy />
 
         <Box className="welcome welcome-nightly">
-          <section className="section section--hero">
+          <Box as="section" className="section section--hero">
             <Box className="wrapper">
               <HeroHeader />
             </Box>
-          </section>
-          <section className="section section--features">
+          </Box>
+          <Box as="section" className="section section--features">
             <Box className="wrapper wrapper--nightly">
               <Heading as="h3">Try Atom Nightly✨</Heading>
 
@@ -84,7 +84,7 @@ export default function Nightly() {
                 </Text>
               </Box>
             </Box>
-          </section>
+          </Box>
         </Box>
 
         <Box className="footer-pad"></Box>

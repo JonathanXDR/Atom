@@ -8,54 +8,54 @@ import './main.css';
 const FooterItemLegacy: React.FC = () => {
   const pathname = usePathname();
   return (
-    <footer>
+    <Box as="footer">
       <Box className="footer">
         <Box className="wrapper no-pad">
-          <ul className="footer-left">
-            <li>
+          <Box as="ul" className="footer-left">
+            <Box as="li">
               <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                 Terms of Use
               </Link>
-            </li>
+            </Box>
             {pathname !== '/blog' && (
               <>
-                <li>
+                <Box as="li">
                   <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
                     Privacy
                   </Link>
-                </li>
-                <li>
+                </Box>
+                <Box as="li">
                   <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
                     Code of Conduct
                   </Link>
-                </li>
+                </Box>
               </>
             )}
-            <li>
+            <Box as="li">
               <Link href="/releases">Releases</Link>
-            </li>
-            <li>
+            </Box>
+            <Box as="li">
               <Link href="/faq">FAQ</Link>
-            </li>
-            <li>
+            </Box>
+            <Box as="li">
               <Link href="/contact">Contact</Link>
-            </li>
+            </Box>
             {pathname === '/faq' ||
               (pathname === '/flight-manual' && (
-                <li>
+                <Box as="li">
                   <Link href="https://github.com/atom/flight-manual.atom.io/blob/master/CONTRIBUTING.md">
                     Contribute!
                   </Link>
-                </li>
+                </Box>
               ))}
-          </ul>
+          </Box>
 
           <Box className="footer-right">
             <CreditBadge />
           </Box>
         </Box>
       </Box>
-    </footer>
+    </Box>
   );
 };
 

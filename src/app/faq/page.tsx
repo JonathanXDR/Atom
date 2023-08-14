@@ -277,913 +277,913 @@ export default function FAQ() {
                 Chapter 1: Getting Started
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/getting-started/sections/why-atom">
                   Why Atom?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/getting-started/sections/installing-atom">
                   Installing Atom
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/getting-started/sections/atom-basics">
                   Atom Basics
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/getting-started/sections/summary">
                   Summary
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/using-atom">
                 Chapter 2: Using Atom
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages">
                   Atom Packages
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/moving-in-atom">
                   Moving in Atom
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/atom-selections">
                   Atom Selections
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/editing-and-deleting-text">
                   Editing and Deleting Text
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/find-and-replace">
                   Find and Replace
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/snippets">
                   Snippets
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/autocomplete">
                   Autocomplete
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/folding">
                   Folding
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/panes">
                   Panes
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/pending-pane-items">
                   Pending Pane Items
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/grammar">
                   Grammar
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/version-control-in-atom">
                   Version Control in Atom
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/github-package">
                   GitHub package
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/writing-in-atom">
                   Writing in Atom
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/basic-customization">
                   Basic Customization
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/using-atom/sections/summary">
                   Summary
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/hacking-atom">
                 Chapter 3: Hacking Atom
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/tools-of-the-trade">
                   Tools of the Trade
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/the-init-file">
                   The Init File
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/package-word-count">
                   Package: Word Count
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/package-modifying-text">
                   Package: Modifying Text
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/package-active-editor-info">
                   Package: Active Editor Info
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/creating-a-theme">
                   Creating a Theme
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar">
                   Creating a Grammar
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/creating-a-legacy-textmate-grammar">
                   Creating a Legacy TextMate Grammar
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/publishing">
                   Publishing
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/iconography">
                   Iconography
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/debugging">
                   Debugging
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/writing-specs">
                   Writing specs
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/handling-uris">
                   Handling URIs
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/cross-platform-compatibility">
                   Cross-Platform Compatibility
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/converting-from-textmate">
                   Converting from TextMate
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core">
                   Hacking on Atom Core
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/contributing-to-official-atom-packages">
                   Contributing to Official Atom Packages
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/creating-a-fork-of-a-core-package-in-atom-atom">
                   Creating a Fork of a Core Package in atom/atom
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/maintaining-a-fork-of-a-core-package-in-atom-atom">
                   Maintaining a Fork of a Core Package in atom/atom
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/hacking-atom/sections/summary">
                   Summary
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/behind-atom">
                 Chapter 4: Behind Atom
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/configuration-api">
                   Configuration API
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth">
                   Keymaps In-Depth
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors">
                   Scoped Settings, Scopes and Scope Descriptors
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/serialization-in-atom">
                   Serialization in Atom
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/developing-node-modules">
                   Developing Node Modules
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/interacting-with-other-packages-via-services">
                   Interacting With Other Packages Via Services
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/maintaining-your-packages">
                   Maintaining Your Packages
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/how-atom-uses-chromium-snapshots">
                   How Atom Uses Chromium Snapshots
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/behind-atom/sections/summary">
                   Summary
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/api/v1.57.0/">
                 Reference: API
               </Link>
             </Heading>
-            <ul>
-              <li>
+            <Box as="ul">
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/AtomEnvironment/">
                   AtomEnvironment
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/BufferedNodeProcess/">
                   BufferedNodeProcess
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/BufferedProcess/">
                   BufferedProcess
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Clipboard/">
                   Clipboard
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Color/">
                   Color
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/CommandRegistry/">
                   CommandRegistry
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/CompositeDisposable/">
                   CompositeDisposable
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Config/">
                   Config
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/ContextMenuManager/">
                   ContextMenuManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Cursor/">
                   Cursor
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Decoration/">
                   Decoration
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/DeserializerManager/">
                   DeserializerManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Directory/">
                   Directory
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/DisplayMarker/">
                   DisplayMarker
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/DisplayMarkerLayer/">
                   DisplayMarkerLayer
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Disposable/">
                   Disposable
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Dock/">
                   Dock
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Emitter/">
                   Emitter
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/File/">
                   File
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/GitRepository/">
                   GitRepository
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Grammar/">
                   Grammar
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/GrammarRegistry/">
                   GrammarRegistry
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Gutter/">
                   Gutter
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/HistoryManager/">
                   HistoryManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/KeymapManager/">
                   KeymapManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/LayerDecoration/">
                   LayerDecoration
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/MarkerLayer/">
                   MarkerLayer
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/MenuManager/">
                   MenuManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Notification/">
                   Notification
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/NotificationManager/">
                   NotificationManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Package/">
                   Package
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/PackageManager/">
                   PackageManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Pane/">
                   Pane
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Panel/">
                   Panel
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/PathWatcher/">
                   PathWatcher
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Point/">
                   Point
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Project/">
                   Project
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Range/">
                   Range
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/ScopeDescriptor/">
                   ScopeDescriptor
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Selection/">
                   Selection
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/StyleManager/">
                   StyleManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Task/">
                   Task
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/TextBuffer/">
                   TextBuffer
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/TextEditor/">
                   TextEditor
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/ThemeManager/">
                   ThemeManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/TooltipManager/">
                   TooltipManager
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/ViewRegistry/">
                   ViewRegistry
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/Workspace/">
                   Workspace
                 </Link>
-              </li>
+              </Box>
 
-              <li>
+              <Box as="li">
                 <Link href="https://flight-manual.atom.io/api/v1.57.0/WorkspaceCenter/">
                   WorkspaceCenter
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/resources">
                 Appendix A: Resources
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/resources/sections/glossary">
                   Glossary
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/faq">
                 Appendix B: FAQ
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/is-atom-open-source">
                   Is Atom open source?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-does-atom-cost">
                   What does Atom cost?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-platforms-does-atom-run-on">
                   What platforms does Atom run on?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-can-i-contribute-to-atom">
                   How can I contribute to Atom?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/why-does-atom-collect-usage-data">
                   Why does Atom collect usage data?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/atom-in-the-cloud">
                   Atom in the cloud?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-s-the-difference-between-an-ide-and-an-editor">
                   What&apos;s the difference between an IDE and an editor?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-can-i-tell-if-subpixel-antialiasing-is-working">
                   How can I tell if subpixel antialiasing is working?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/why-is-atom-deleting-trailing-whitespace-why-is-there-a-newline-at-the-end-of-the-file">
                   Why is Atom deleting trailing whitespace? Why is there a
                   newline at the end of the file?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-does-safe-mode-do">
                   What does Safe Mode do?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-have-a-question-about-a-specific-atom-community-package-where-is-the-best-place-to-ask-it">
                   I have a question about a specific Atom community package.
                   Where is the best place to ask it?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-using-an-international-keyboard-and-keys-that-use-altgr-or-ctrl-alt-aren-t-working">
                   I&apos;m using an international keyboard and keys that use
                   AltGr or Ctrl+Alt aren&apos;t working
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-julia-what-do-i-do">
                   I&apos;m having a problem with Julia! What do I do?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-getting-an-error-about-a-self-signed-certificate-what-do-i-do">
                   I&apos;m getting an error about a “self-signed certificate”.
                   What do I do?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-platformio-what-do-i-do">
                   I&apos;m having a problem with PlatformIO! What do I do?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-make-atom-recognize-a-file-with-extension-x-as-language-y">
                   How do I make Atom recognize a file with extension X as
                   language Y?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-make-the-welcome-screen-stop-showing-up">
                   How do I make the Welcome screen stop showing up?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-preview-web-page-changes-automatically">
                   How do I preview web page changes automatically?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-accept-input-from-my-program-or-script-when-using-the-script-package">
                   How do I accept input from my program or script when using the
                   script package?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-am-unable-to-update-to-the-latest-version-of-atom-on-macos-how-do-i-fix-this">
                   I am unable to update to the latest version of Atom on macOS.
                   How do I fix this?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-trying-to-change-my-syntax-colors-from-styles-less-but-it-isn-t-working">
                   I&apos;m trying to change my syntax colors from styles.less,
                   but it isn&apos;t working!
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-build-or-execute-code-i-ve-written-in-atom">
                   How do I build or execute code I&apos;ve written in Atom?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-uninstall-atom-on-macos">
                   How do I uninstall Atom on macOS?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/macos-mojave-font-rendering-change">
                   macOS Mojave font rendering change
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/why-does-macos-say-that-atom-wants-to-access-my-calendar-contacts-photos-etc">
                   Why does macOS say that Atom wants to access my calendar,
                   contacts, photos, etc.?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-turn-on-line-wrap">
                   How do I turn on line wrap?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/the-menu-bar-disappeared-how-do-i-get-it-back">
                   The menu bar disappeared, how do I get it back?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-use-a-newline-in-the-result-of-find-and-replace">
                   How do I use a newline in the result of find and replace?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-is-this-line-on-the-right-in-the-editor-view">
                   What is this line on the right in the editor view?
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/shadow-dom">
                 Appendix C: Shadow DOM
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/shadow-dom/sections/removing-shadow-dom-styles">
                   Removing Shadow DOM styles
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis">
                 Appendix D: Upgrading to 1.0 APIs
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-package">
                   Upgrading Your Package
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-ui-theme-or-package-selectors">
                   Upgrading Your UI Theme Or Package Selectors
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-syntax-theme">
                   Upgrading Your Syntax Theme
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Heading as="h4">
               <Link href="https://flight-manual.atom.io/atom-server-side-apis">
                 Appendix E: Atom server-side APIs
               </Link>
             </Heading>
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/atom-server-side-apis/sections/atom-package-server-api">
                   Atom package server API
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/atom-server-side-apis/sections/atom-update-server-api">
                   Atom update server API
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
           </Box>
           <Heading as="h1" className="document-title">
             <Box id="platform-nav">
               <DeviceDesktopIcon />
-              <ul>
-                <li className="platform-mac">
+              <Box as="ul">
+                <Box as="li" className="platform-mac">
                   <Link
                     href="https://flight-manual.atom.io/faq/#platform-mac"
                     data-platform="mac"
                   >
                     mac
                   </Link>
-                </li>
-                <li className="platform-windows">
+                </Box>
+                <Box as="li" className="platform-windows">
                   <Link
                     href="https://flight-manual.atom.io/faq/#platform-windows"
                     data-platform="windows"
                   >
                     windows
                   </Link>
-                </li>
-                <li className="platform-linux">
+                </Box>
+                <Box as="li" className="platform-linux">
                   <Link
                     href="https://flight-manual.atom.io/faq/#platform-linux"
                     data-platform="linux"
                   >
                     linux
                   </Link>
-                </li>
-              </ul>
+                </Box>
+              </Box>
             </Box>
 
             <Link
@@ -1211,190 +1211,190 @@ export default function FAQ() {
               The collection of Frequently Asked Questions about Atom.
             </Text>
 
-            <ul>
-              <li className="unselected">
+            <Box as="ul">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/is-atom-open-source">
                   Is Atom open source?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-does-atom-cost">
                   What does Atom cost?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-platforms-does-atom-run-on">
                   What platforms does Atom run on?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-can-i-contribute-to-atom">
                   How can I contribute to Atom?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/why-does-atom-collect-usage-data">
                   Why does Atom collect usage data?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/atom-in-the-cloud">
                   Atom in the cloud?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-s-the-difference-between-an-ide-and-an-editor">
                   What&apos;s the difference between an IDE and an editor?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-can-i-tell-if-subpixel-antialiasing-is-working">
                   How can I tell if subpixel antialiasing is working?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/why-is-atom-deleting-trailing-whitespace-why-is-there-a-newline-at-the-end-of-the-file">
                   Why is Atom deleting trailing whitespace? Why is there a
                   newline at the end of the file?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-does-safe-mode-do">
                   What does Safe Mode do?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-have-a-question-about-a-specific-atom-community-package-where-is-the-best-place-to-ask-it">
                   I have a question about a specific Atom community package.
                   Where is the best place to ask it?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-using-an-international-keyboard-and-keys-that-use-altgr-or-ctrl-alt-aren-t-working">
                   I&apos;m using an international keyboard and keys that use
                   AltGr or Ctrl+Alt aren&apos;t working
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-julia-what-do-i-do">
                   I&apos;m having a problem with Julia! What do I do?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-getting-an-error-about-a-self-signed-certificate-what-do-i-do">
                   I&apos;m getting an error about a “self-signed certificate”.
                   What do I do?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-platformio-what-do-i-do">
                   I&apos;m having a problem with PlatformIO! What do I do?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-make-atom-recognize-a-file-with-extension-x-as-language-y">
                   How do I make Atom recognize a file with extension X as
                   language Y?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-make-the-welcome-screen-stop-showing-up">
                   How do I make the Welcome screen stop showing up?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-preview-web-page-changes-automatically">
                   How do I preview web page changes automatically?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-accept-input-from-my-program-or-script-when-using-the-script-package">
                   How do I accept input from my program or script when using the
                   script package?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-am-unable-to-update-to-the-latest-version-of-atom-on-macos-how-do-i-fix-this">
                   I am unable to update to the latest version of Atom on macOS.
                   How do I fix this?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/i-m-trying-to-change-my-syntax-colors-from-styles-less-but-it-isn-t-working">
                   I&apos;m trying to change my syntax colors from styles.less,
                   but it isn&apos;t working!
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-build-or-execute-code-i-ve-written-in-atom">
                   How do I build or execute code I&apos;ve written in Atom?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-uninstall-atom-on-macos">
                   How do I uninstall Atom on macOS?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/macos-mojave-font-rendering-change">
                   macOS Mojave font rendering change
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/why-does-macos-say-that-atom-wants-to-access-my-calendar-contacts-photos-etc">
                   Why does macOS say that Atom wants to access my calendar,
                   contacts, photos, etc.?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-turn-on-line-wrap">
                   How do I turn on line wrap?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/the-menu-bar-disappeared-how-do-i-get-it-back">
                   The menu bar disappeared, how do I get it back?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-use-a-newline-in-the-result-of-find-and-replace">
                   How do I use a newline in the result of find and replace?
                 </Link>
-              </li>
+              </Box>
 
-              <li className="unselected">
+              <Box as="li" className="unselected">
                 <Link href="https://flight-manual.atom.io/faq/sections/what-is-this-line-on-the-right-in-the-editor-view">
                   What is this line on the right in the editor view?
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
           </Box>
         </Box>
         <Box className="footer-pad"></Box>

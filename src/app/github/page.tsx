@@ -17,7 +17,7 @@ import githubSwoosh from '/public/assets/svg/github-swoosh.svg';
 export default function GitHub() {
   return (
     <>
-      <section className="section hero">
+      <Box as="section" className="section hero">
         <Box className="bg" aria-hidden="true">
           <Image
             className="bg-item bg-item--rocket"
@@ -46,7 +46,7 @@ export default function GitHub() {
           />
         </Box>
         <Box className="section-content">
-          <header className="header">
+          <Box as="header" className="header">
             <Box className="logos">
               <svg
                 className="icon-svg icon-atom"
@@ -92,9 +92,9 @@ export default function GitHub() {
             <Heading as="h1" className="tagline">
               GitHub for Atom
             </Heading>
-          </header>
+          </Box>
 
-          <main className="features">
+          <Box as="main" className="features">
             <Box className="video-container">
               <video
                 className="video"
@@ -133,11 +133,11 @@ export default function GitHub() {
                 to learn how to use all the features.
               </Text>
             </Box>
-          </main>
+          </Box>
         </Box>
-      </section>
+      </Box>
 
-      <section className="section details">
+      <Box as="section" className="section details">
         <Box className="section-content columns">
           <Box className="column">
             <Heading as="h2">Install</Heading>
@@ -167,9 +167,9 @@ export default function GitHub() {
             </Text>
           </Box>
         </Box>
-      </section>
+      </Box>
 
-      <footer className="section footer">
+      <Box as="footer" className="section footer">
         <Box className="bg" aria-hidden="true">
           <Image
             className="bg-item bg-item--bottom-stars"
@@ -203,50 +203,50 @@ export default function GitHub() {
           </Box>
           <Box className="column">
             <Text as="p">Here just a few to check out:</Text>
-            <ul>
-              <li>
+            <Box as="ul">
+              <Box as="li">
                 <Link href="https://atom.io/packages/git-plus">git-plus</Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <Link href="https://atom.io/packages/git-control">
                   git-control
                 </Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <Link href="https://atom.io/packages/git-time-machine">
                   git-time-machine
                 </Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <Link href="https://atom.io/packages/git-history">
                   git-history
                 </Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <Link href="https://atom.io/packages/git-blame">git-blame</Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <Link href="https://atom.io/packages/context-git">
                   context-git
                 </Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <Link href="https://atom.io/packages/simple-git">
                   simple-git
                 </Link>
-              </li>
-              <li>
+              </Box>
+              <Box as="li">
                 <Link href="https://atom.io/packages/split-diff">
                   split-diff
                 </Link>
-              </li>
-            </ul>
+              </Box>
+            </Box>
           </Box>
         </Box>
         <Box className="section-content love">
           <CreditBadge />
         </Box>
-      </footer>
+      </Box>
     </>
   );
 }

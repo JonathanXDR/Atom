@@ -22,7 +22,7 @@ export default function Error() {
           </Text>
         </Box>
       </Box>
-      <footer className="footer"></footer>
+      <Box as="footer" className="footer"></Box>
     </>
   );
 }

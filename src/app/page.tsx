@@ -30,7 +30,7 @@ export default function Home() {
         <NavItemLegacy />
 
         <Box className="welcome">
-          <section className="section section--hero">
+          <Box as="section" className="section section--hero">
             <SunsetBanner />
             <Box className="wrapper">
               <HeroHeader />
@@ -58,9 +58,9 @@ export default function Home() {
               </Box>
               <Image className="hero-octonaut" src={octonaut} alt="octonaut" />
             </Box>
-          </section>
+          </Box>
 
-          <section id="teletype" className="section section--realtime">
+          <Box as="section" id="teletype" className="section section--realtime">
             <Box className="wrapper">
               <Heading as="h3">Teletype for Atom</Heading>
 
@@ -99,9 +99,9 @@ export default function Home() {
                 </Link>
               </Text>
             </Box>
-          </section>
+          </Box>
 
-          <section id="ide" className="section section--ide">
+          <Box as="section" id="ide" className="section section--ide">
             <Box className="wrapper">
               <Heading as="h3">Atom IDE</Heading>
               <Text
@@ -138,9 +138,9 @@ export default function Home() {
                 </Link>
               </Text>
             </Box>
-          </section>
+          </Box>
 
-          <section id="github" className="section section--github">
+          <Box as="section" id="github" className="section section--github">
             <Box className="wrapper">
               <Heading as="h3">GitHub for Atom</Heading>
 
@@ -176,9 +176,9 @@ export default function Home() {
                 </Link>
               </Text>
             </Box>
-          </section>
+          </Box>
 
-          <section className="section section--features">
+          <Box as="section" className="section section--features">
             <Box className="wrapper no-pad">
               <Heading as="h3">Everything you would expect</Heading>
 
@@ -381,9 +381,9 @@ export default function Home() {
                 </Box>
               </Box>
             </Box>
-          </section>
+          </Box>
 
-          <section className="section section--contact">
+          <Box as="section" className="section section--contact">
             <Box className="wrapper no-pad">
               <Box className="columns">
                 <Box className="column">
@@ -451,7 +451,7 @@ export default function Home() {
                 </Box>
               </Box>
             </Box>
-          </section>
+          </Box>
         </Box>
 
         <Box className="footer-pad"></Box>

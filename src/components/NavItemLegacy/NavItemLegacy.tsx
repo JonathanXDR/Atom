@@ -8,11 +8,11 @@ import './main.css';
 const NavItemLegacy: React.FC = () => {
   const pathname = usePathname();
   return (
-    <nav className="top-bar" aria-label="Primary">
+    <Box as="nav" className="top-bar" aria-label="Primary">
       <Box className="wrapper no-pad">
-        <ul className="navigation">
+        <Box as="ul" className="navigation">
           {pathname !== '/' && (
-            <li>
+            <Box as="li">
               <Heading as="h1">
                 <Link
                   href="/"
@@ -20,46 +20,46 @@ const NavItemLegacy: React.FC = () => {
                   title="Atom: A hackable text editor for the 21st Century"
                 ></Link>
               </Heading>
-            </li>
+            </Box>
           )}
-          <li>
+          <Box as="li">
             <Link
               href="/packages"
               className={pathname === '/packages' ? 'is-selected' : ''}
             >
               Packages
             </Link>
-          </li>
-          <li>
+          </Box>
+          <Box as="li">
             <Link
               href="/themes"
               className={pathname === '/themes' ? 'is-selected' : ''}
             >
               Themes
             </Link>
-          </li>
-          <li>
+          </Box>
+          <Box as="li">
             <Link
               href="/docs"
               className={pathname === '/docs' ? 'is-selected' : ''}
             >
               Documentation
             </Link>
-          </li>
-          <li>
+          </Box>
+          <Box as="li">
             <Link
               href="/blog"
               className={pathname === '/blog' ? 'is-selected' : ''}
             >
               Blog
             </Link>
-          </li>
-          <li>
+          </Box>
+          <Box as="li">
             <Link href="https://github.com/atom/atom/discussions">
               Discussions
             </Link>
-          </li>
-        </ul>
+          </Box>
+        </Box>
 
         <Box className="top-bar-right">
           {pathname === '/blog' ? (
@@ -87,7 +87,7 @@ const NavItemLegacy: React.FC = () => {
           )}
         </Box>
       </Box>
-    </nav>
+    </Box>
   );
 };
 

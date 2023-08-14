@@ -14,12 +14,12 @@ export default function Beta() {
         <NavItemLegacy />
 
         <Box className="welcome welcome-beta">
-          <section className="section section--hero">
+          <Box as="section" className="section section--hero">
             <Box className="wrapper">
               <HeroHeader />
             </Box>
-          </section>
-          <section className="section section--features">
+          </Box>
+          <Box as="section" className="section section--features">
             <Box className="wrapper wrapper--beta">
               <Heading as="h3">Try Atom Beta</Heading>
 
@@ -84,7 +84,7 @@ export default function Beta() {
                 </Text>
               </Box>
             </Box>
-          </section>
+          </Box>
         </Box>
 
         <Box className="footer-pad"></Box>

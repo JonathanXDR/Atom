@@ -5,7 +5,7 @@ import './main.css';
 
 const ContactItem: React.FC = () => {
   return (
-    <section className="section section--contact">
+    <Box as="section" className="section section--contact">
       <Box className="wrapper no-pad">
         <Box className="columns">
           <Box className="column">
@@ -69,7 +69,7 @@ const ContactItem: React.FC = () => {
           </Box>
         </Box>
       </Box>
-    </section>
+    </Box>
   );
 };
 

@@ -16,8 +16,8 @@ export default function Blog() {
 
         <Box className="wrapper content-push">
           <Box id="home">
-            <ul className="posts">
-              <li className="post">
+            <Box as="ul" className="posts">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2019/07/23/atom-1-39.html">Atom 1.39</Link>
                 </Heading>
@@ -59,9 +59,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
                     Introducing Atom Nightly Releases
@@ -117,9 +117,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2019/06/11/atom-1-38.html">Atom 1.38</Link>
                 </Heading>
@@ -163,9 +163,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2019/05/12/atom-1-37.html">Atom 1.37</Link>
                 </Heading>
@@ -204,9 +204,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2019/04/09/atom-1-36.html">Atom 1.36</Link>
                 </Heading>
@@ -245,9 +245,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2019/03/12/atom-1-35.html">Atom 1.35</Link>
                 </Heading>
@@ -286,9 +286,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2019/01/08/atom-1-34.html">Atom 1.34</Link>
                 </Heading>
@@ -327,9 +327,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2018/12/12/facebook-retires-nuclide-extension.html">
                     Facebook retires Nuclide extension
@@ -369,9 +369,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2018/11/28/atom-1-33.html">Atom 1.33</Link>
                 </Heading>
@@ -410,9 +410,9 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
+              </Box>
 
-              <li className="post">
+              <Box as="li" className="post">
                 <Heading as="h2" className="post-name">
                   <Link href="/blog2018/11/14/github-package-uxr.html">
                     Usability Interviews for Atom
@@ -453,8 +453,8 @@ export default function Blog() {
                     Read more <ChevronRightIcon size={16} />
                   </Link>
                 </Box>
-              </li>
-            </ul>
+              </Box>
+            </Box>
 
             <Box className="pagination">
               <Text>← Previous</Text>

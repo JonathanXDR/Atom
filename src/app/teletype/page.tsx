@@ -25,9 +25,9 @@ export default function Teletype() {
 
   return (
     <>
-      <section className="section hero">
+      <Box as="section" className="section hero">
         <Box className="wrapper wrapper--full">
-          <header className="header">
+          <Box as="header" className="header">
             <svg className="logo" viewBox="0 0 116 106" aria-label="Atom">
               <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g transform="translate(2.000000, 2.000000)">
@@ -56,7 +56,7 @@ export default function Teletype() {
                 </g>
               </g>
             </svg>
-          </header>
+          </Box>
         </Box>
 
         <Box className="wrapper intro">
@@ -72,8 +72,8 @@ export default function Teletype() {
             <Link href="#getting-started">Get started</Link>
           </Text>
         </Box>
-      </section>
-      <section id="demo" className="section">
+      </Box>
+      <Box as="section" id="demo" className="section">
         <Box className="wrapper wrapper--full wrapper--video">
           <Box className="video-container">
             <video
@@ -104,9 +104,9 @@ export default function Teletype() {
             </Box>
           </Box>
         </Box>
-      </section>
+      </Box>
 
-      <section id="portals" className="section">
+      <Box as="section" id="portals" className="section">
         <Box className="wrapper">
           <Heading as="h2">Code better, together</Heading>
           <Text as="p">
@@ -133,13 +133,13 @@ export default function Teletype() {
             />
           </Text>
         </Box>
-      </section>
-      <section id="privacy" className="section">
+      </Box>
+      <Box as="section" id="privacy" className="section">
         <Box className="wrapper">
           <Heading as="h2">How code gets shared</Heading>
           <Text as="p">Each portal comes to life in two steps:</Text>
           <ol className="privacy-list">
-            <li>
+            <Box as="li">
               <Text as="p" className="privacy-img-wrapper">
                 <Image
                   className="privacy-img"
@@ -152,8 +152,8 @@ export default function Teletype() {
                 First you connect to our servers to see who is collaborating. 👋
                 &nbsp; Hi there.
               </Text>
-            </li>
-            <li>
+            </Box>
+            <Box as="li">
               <Text as="p" className="privacy-img-wrapper">
                 <Image
                   className="privacy-img"
@@ -166,7 +166,7 @@ export default function Teletype() {
                 After that, collaborators share code directly with each other (
                 <strong>peer-to-peer</strong>).
               </Text>
-            </li>
+            </Box>
           </ol>
           <Text as="p">
             There&apos;s no centralized server to spy on your keystrokes, and
@@ -175,8 +175,8 @@ export default function Teletype() {
             portal.
           </Text>
         </Box>
-      </section>
-      <section id="getting-started" className="section">
+      </Box>
+      <Box as="section" id="getting-started" className="section">
         <Box className="wrapper">
           <Heading as="h2">Getting started</Heading>
           <Heading as="h4">1. Install Atom</Heading>
@@ -215,8 +215,8 @@ export default function Teletype() {
             collaborators can edit together in real time.
           </Text>
         </Box>
-      </section>
-      <footer id="feedback" className="section">
+      </Box>
+      <Box as="footer" id="feedback" className="section">
         <Box className="wrapper">
           <Heading as="h2">Feedback</Heading>
           <Text as="p">
@@ -239,7 +239,7 @@ export default function Teletype() {
         <Box className="wrapper love">
           <CreditBadge />
         </Box>
-      </footer>
+      </Box>
     </>
   );
 }

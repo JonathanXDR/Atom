@@ -1,11 +1,11 @@
-"use client";
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
-import Image from "next/image";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/flight-manual.css";
-import flightManualCover from "/public/assets/png/flight-manual-cover.png";
+'use client';
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import Image from 'next/image';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/flight-manual.css';
+import flightManualCover from '/public/assets/png/flight-manual-cover.png';
 
 export default function FlightManual() {
   return (
@@ -17,16 +17,16 @@ export default function FlightManual() {
           <div
             className="documents-search"
             style={{
-              display: "flex",
-              alignItems: "center",
+              display: 'flex',
+              alignItems: 'center',
             }}
           >
             <select
               id="documents-search-versions"
               style={{
-                display: "inline",
-                marginRight: "20px",
-                height: "40px",
+                display: 'inline',
+                marginRight: '20px',
+                height: '40px',
               }}
             >
               <option value="1.63.1">v1.63.1</option>
@@ -201,14 +201,14 @@ export default function FlightManual() {
               id="articles-search"
               method="get"
               style={{
-                width: "100%",
+                width: '100%',
               }}
             >
               <div
                 style={{
-                  margin: "0",
-                  padding: "0",
-                  display: "inline",
+                  margin: '0',
+                  padding: '0',
+                  display: 'inline',
                 }}
               >
                 <input name="utf8" type="hidden" value="✓" />
@@ -226,7 +226,7 @@ export default function FlightManual() {
           <div
             className="autocomplete-results"
             style={{
-              display: "none",
+              display: 'none',
             }}
           >
             <div className="result-group"></div>

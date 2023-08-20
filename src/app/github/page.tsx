@@ -1,22 +1,22 @@
-"use client";
-import CreditBadge from "@/components/CreditBadge/CreditBadge";
-import { MarkGithubIcon } from "@primer/octicons-react";
-import Image from "next/image";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/github.css";
-import githubBottomStars from "/public/assets/svg/github-bottom-stars.svg";
-import githubBottom from "/public/assets/svg/github-bottom.svg";
-import githubOctonaut from "/public/assets/svg/github-octonaut.svg";
-import githubPlanet1 from "/public/assets/svg/github-planet-1.svg";
-import githubPlanet2 from "/public/assets/svg/github-planet-2.svg";
-import githubPlanet3 from "/public/assets/svg/github-planet-3.svg";
-import githubRocket from "/public/assets/svg/github-rocket.svg";
-import githubSwoosh from "/public/assets/svg/github-swoosh.svg";
+'use client';
+import CreditBadge from '@/components/CreditBadge/CreditBadge';
+import { MarkGithubIcon } from '@primer/octicons-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/github.css';
+import githubBottomStars from '/public/assets/svg/github-bottom-stars.svg';
+import githubBottom from '/public/assets/svg/github-bottom.svg';
+import githubOctonaut from '/public/assets/svg/github-octonaut.svg';
+import githubPlanet1 from '/public/assets/svg/github-planet-1.svg';
+import githubPlanet2 from '/public/assets/svg/github-planet-2.svg';
+import githubPlanet3 from '/public/assets/svg/github-planet-3.svg';
+import githubRocket from '/public/assets/svg/github-rocket.svg';
+import githubSwoosh from '/public/assets/svg/github-swoosh.svg';
 
 export default function GitHub() {
   return (
-    <div>
+    <>
       <section className="section hero">
         <div className="bg" aria-hidden="true">
           <Image
@@ -245,6 +245,6 @@ export default function GitHub() {
           <CreditBadge />
         </div>
       </footer>
-    </div>
+    </>
   );
 }

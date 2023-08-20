@@ -1,4 +1,4 @@
-import { DownloadIcon, StarIcon } from "@primer/octicons-react";
+import { DownloadIcon, StarIcon } from '@primer/octicons-react';
 import {
   Avatar,
   Box,
@@ -8,26 +8,26 @@ import {
   Text,
   Token,
   Tooltip,
-} from "@primer/react";
-import React from "react";
+} from '@primer/react';
+import React from 'react';
 
 const PackageCardLegacy: React.FC = () => {
   return (
     <>
       <Box
         sx={{
-          border: "1px solid",
-          borderColor: "border.default",
-          borderRadius: "0.25rem",
+          border: '1px solid',
+          borderColor: 'border.default',
+          borderRadius: '0.25rem',
           marginY: 4,
-          backgroundColor: "canvas.subtle",
-          boxShadow: "shadow.small",
+          backgroundColor: 'canvas.subtle',
+          boxShadow: 'shadow.small',
         }}
       >
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
+            display: 'flex',
+            flexDirection: 'column',
           }}
         >
           <Box
@@ -39,26 +39,26 @@ const PackageCardLegacy: React.FC = () => {
             <Heading
               as="h3"
               sx={{
-                fontSize: "1.25rem",
-                color: "fg.muted",
-                fontWeight: "normal",
-                lineHeight: "1.25",
+                fontSize: '1.25rem',
+                color: 'fg.muted',
+                fontWeight: 'normal',
+                lineHeight: '1.25',
               }}
             >
               <Link
                 href="/n64decomp/mk64"
                 sx={{
-                  fontWeight: "bold",
-                  wordBreak: "break-word",
+                  fontWeight: 'bold',
+                  wordBreak: 'break-word',
                 }}
               >
                 mk64
-              </Link>{" "}
+              </Link>{' '}
             </Heading>
             <Text
               as="p"
               sx={{
-                color: "fg.muted",
+                color: 'fg.muted',
                 marginBottom: 0,
               }}
             >
@@ -68,7 +68,7 @@ const PackageCardLegacy: React.FC = () => {
             <Box
               sx={{
                 marginTop: 2,
-                display: "flex",
+                display: 'flex',
                 gap: 1,
               }}
             >
@@ -80,8 +80,8 @@ const PackageCardLegacy: React.FC = () => {
 
           <Box
             sx={{
-              backgroundColor: "canvas.default",
-              borderRadius: "0 0 0.25rem 0.25rem",
+              backgroundColor: 'canvas.default',
+              borderRadius: '0 0 0.25rem 0.25rem',
             }}
           >
             <Box
@@ -91,19 +91,19 @@ const PackageCardLegacy: React.FC = () => {
             >
               <Box
                 sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  flexWrap: "wrap",
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
                   gap: 2,
-                  fontSize: "0.75rem",
-                  listStyle: "none",
-                  color: "fg.muted",
+                  fontSize: '0.75rem',
+                  listStyle: 'none',
+                  color: 'fg.muted',
                 }}
               >
                 <Box
                   sx={{
-                    display: "flex",
-                    alignItems: "center",
+                    display: 'flex',
+                    alignItems: 'center',
                     gap: 1,
                   }}
                 >
@@ -114,25 +114,23 @@ const PackageCardLegacy: React.FC = () => {
                   <Link
                     href="/atom"
                     sx={{
-                      color: "fg.subtle",
+                      color: 'fg.subtle',
                     }}
                   >
-                    {" "}
+                    {' '}
                     Atom
                   </Link>
                 </Box>
                 <Box
                   sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    flexWrap: "wrap",
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    flexWrap: 'wrap',
                     gap: 2,
                   }}
                 >
-                  <Tooltip aria-label="1,473,857 downloads">
-                    <DownloadIcon size={16} /> <Text>1,473,857</Text>
-                  </Tooltip>
+                  <DownloadIcon size={16} /> <Text>1,473,857</Text>
                   <Tooltip aria-label="You must be signed in to star packages">
                     <Button leadingIcon={StarIcon} size="small">
                       Star
@@ -142,9 +140,9 @@ const PackageCardLegacy: React.FC = () => {
                   <Link
                     href="atom://settings-view/show-package?package=teletype"
                     sx={{
-                      textDecoration: "none",
-                      "&:hover": {
-                        textDecoration: "none",
+                      textDecoration: 'none',
+                      '&:hover': {
+                        textDecoration: 'none',
                       },
                     }}
                   >

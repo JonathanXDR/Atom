@@ -1,17 +1,17 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/blog.css";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/blog.css';
 
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
-import { CalendarIcon, ChevronRightIcon } from "@primer/octicons-react";
-import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import { CalendarIcon, ChevronRightIcon } from '@primer/octicons-react';
+import atomNightlyHeading from '/public/assets/png/atom-nightly-heading.png';
 
 export default function Blog() {
   return (
-    <div>
+    <>
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -33,7 +33,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -41,7 +41,7 @@ export default function Blog() {
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -79,7 +79,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -87,7 +87,7 @@ export default function Blog() {
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -101,8 +101,8 @@ export default function Blog() {
                   <p>
                     Today we&apos;re excited to introduce
                     <Link href="https://atom.io/nightly">
-                      {" "}
-                      Atom Nightly releases{" "}
+                      {' '}
+                      Atom Nightly releases{' '}
                     </Link>
                     ! This new release channel gives you access to Atom&apos;s
                     latest feature improvements and bug fixes each day as they
@@ -135,7 +135,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -143,7 +143,7 @@ export default function Blog() {
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -181,7 +181,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -189,7 +189,7 @@ export default function Blog() {
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -222,7 +222,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -230,7 +230,7 @@ export default function Blog() {
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -263,7 +263,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -271,7 +271,7 @@ export default function Blog() {
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -304,7 +304,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -312,7 +312,7 @@ export default function Blog() {
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -347,7 +347,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars2.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -355,7 +355,7 @@ export default function Blog() {
                       https://avatars2.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars2.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -387,7 +387,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -395,7 +395,7 @@ export default function Blog() {
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars3.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -430,7 +430,7 @@ export default function Blog() {
                       data-proofer-ignore="true"
                       src="https://avatars.githubusercontent.com/atom"
                       style={{
-                        verticalAlign: "baseline",
+                        verticalAlign: 'baseline',
                       }}
                       sizes="
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
@@ -438,7 +438,7 @@ export default function Blog() {
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
                       https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
                     "
-                    />{" "}
+                    />{' '}
                     Atom
                   </Link>
                 </p>
@@ -500,6 +500,6 @@ export default function Blog() {
       </div>
 
       <FooterItem />
-    </div>
+    </>
   );
 }

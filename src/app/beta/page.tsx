@@ -1,11 +1,11 @@
-"use client";
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import HeroHeader from "@/components/HeroHeader/HeroHeader";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
-import { BugIcon, CalendarIcon, RocketIcon } from "@primer/octicons-react";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/application.css";
+'use client';
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import HeroHeader from '@/components/HeroHeader/HeroHeader';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import { BugIcon, CalendarIcon, RocketIcon } from '@primer/octicons-react';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/application.css';
 
 export default function Beta() {
   return (
@@ -25,11 +25,11 @@ export default function Beta() {
 
                 <p>
                   Want to be on the bleeding edge? The Beta channel contains new
-                  features and bug fixes before they land on the{" "}
+                  features and bug fixes before they land on the{' '}
                   <Link href="/">stable channel</Link>. It is intended for
-                  developers and early adopters. See the{" "}
+                  developers and early adopters. See the{' '}
                   <Link href="/blog2015/10/21/introducing-the-atom-beta-channel.html">
-                    blog post{" "}
+                    blog post{' '}
                   </Link>
                   for more information.
                 </p>
@@ -38,9 +38,9 @@ export default function Beta() {
                   <div
                     className="mega-octicon"
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                     }}
                   >
                     <RocketIcon size={24} />
@@ -53,9 +53,9 @@ export default function Beta() {
                   <div
                     className="mega-octicon"
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                     }}
                   >
                     <CalendarIcon size={24} />
@@ -69,15 +69,15 @@ export default function Beta() {
                   <div
                     className="mega-octicon"
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                     }}
                   >
                     <BugIcon size={24} />
                   </div>
                   <p>
-                    There may be bugs. If you have problems, please{" "}
+                    There may be bugs. If you have problems, please{' '}
                     <Link href="https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues">
                       file an issue
                     </Link>

@@ -1,11 +1,11 @@
-"use client";
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import HeroHeader from "@/components/HeroHeader/HeroHeader";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
-import { BugIcon, CalendarIcon, RocketIcon } from "@primer/octicons-react";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/application.css";
+'use client';
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import HeroHeader from '@/components/HeroHeader/HeroHeader';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import { BugIcon, CalendarIcon, RocketIcon } from '@primer/octicons-react';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/application.css';
 
 export default function Nightly() {
   return (
@@ -27,9 +27,9 @@ export default function Nightly() {
                   Want to never wait for new improvements? The Nightly channel
                   contains new features and bug fixes as soon as they get merged
                   into master. It is intended for developers and very early
-                  adopters. See the{" "}
+                  adopters. See the{' '}
                   <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
-                    blog post{" "}
+                    blog post{' '}
                   </Link>
                   for more information.
                 </p>
@@ -38,9 +38,9 @@ export default function Nightly() {
                   <div
                     className="mega-octicon"
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                     }}
                   >
                     <RocketIcon size={24} />
@@ -53,9 +53,9 @@ export default function Nightly() {
                   <div
                     className="mega-octicon"
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                     }}
                   >
                     <CalendarIcon size={24} />
@@ -69,15 +69,15 @@ export default function Nightly() {
                   <div
                     className="mega-octicon"
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                     }}
                   >
                     <BugIcon size={24} />
                   </div>
                   <p>
-                    There may be bugs. If you have problems, please{" "}
+                    There may be bugs. If you have problems, please{' '}
                     <Link href="https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues">
                       file an issue
                     </Link>

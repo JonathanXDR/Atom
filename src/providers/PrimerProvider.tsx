@@ -1,5 +1,6 @@
-"use client";
-import { BaseStyles, ThemeProvider } from "@primer/react";
+'use client';
+import '@/app/tailwind.css';
+import { BaseStyles, ThemeProvider } from '@primer/react';
 
 // const AtomOneLight = deepmerge(Atom, {
 //   colorSchemes: {
@@ -40,7 +41,7 @@ import { BaseStyles, ThemeProvider } from "@primer/react";
 const PrimerProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider colorMode="auto" preventSSRMismatch>
-      <BaseStyles>{children}</BaseStyles>
+      <BaseStyles className="w-full h-full">{children}</BaseStyles>
     </ThemeProvider>
   );
 };

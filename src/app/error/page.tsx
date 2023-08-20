@@ -1,8 +1,8 @@
-import "./main.css";
+import './main.css';
 
 export default function Error() {
   return (
-    <div>
+    <>
       <div className="dialog">
         <div className="wrapper-top">
           <h1 className="message">Something has gone wrong</h1>
@@ -17,6 +17,6 @@ export default function Error() {
         </div>
       </div>
       <footer className="footer"></footer>
-    </div>
+    </>
   );
 }

@@ -1,17 +1,17 @@
-"use client";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/ide.css";
+'use client';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/ide.css';
 
-export default function Ide() {
+export default function IDE() {
   return (
-    <div>
+    <>
       <section className="wrapper notice-wrapper">
         <h1 className="notice-title text-center">Community Powered</h1>
 
         <p
           style={{
-            marginBlock: "1em",
+            marginBlock: '1em',
           }}
         >
           A special thanks goes to Facebook&apos;s Nuclide team for providing
@@ -29,7 +29,7 @@ export default function Ide() {
           Also many thanks to Atom IDE language package authors. To get started
           with your own language integration, check out
           <Link href="https://github.com/atom/atom-languageclient">
-            {" "}
+            {' '}
             atom-languageclient
           </Link>
           . 🚀
@@ -118,14 +118,14 @@ export default function Ide() {
           <h2>Getting started</h2>
           <p
             style={{
-              marginBlock: "1em",
+              marginBlock: '1em',
             }}
           >
             Start using IDE-like features in
             <Link href="https://atom.io/"> Atom </Link>
             by following the steps below. If you need help, take a look at
             <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages/">
-              {" "}
+              {' '}
               how to install Atom packages
             </Link>
             .
@@ -136,8 +136,8 @@ export default function Ide() {
             <p>
               Install the
               <Link href="https://atom.io/packages/atom-ide-ui">
-                {" "}
-                atom-ide-ui{" "}
+                {' '}
+                atom-ide-ui{' '}
               </Link>
               package. This will add Atom IDE&apos;s user interface.
             </p>
@@ -189,6 +189,6 @@ export default function Ide() {
           </p>
         </div>
       </section>
-    </div>
+    </>
   );
 }

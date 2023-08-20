@@ -1,14 +1,14 @@
-"use client";
-import CreditBadge from "@/components/CreditBadge/CreditBadge";
-import { BroadcastIcon, PlayIcon } from "@primer/octicons-react";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import "./main.css";
-import "/public/assets/css/teletype.css";
-import realTimePortals from "/public/assets/svg/real-time-portals.svg";
-import realTimePrivacy1 from "/public/assets/svg/real-time-privacy-1.svg";
-import realTimePrivacy2 from "/public/assets/svg/real-time-privacy-2.svg";
+'use client';
+import CreditBadge from '@/components/CreditBadge/CreditBadge';
+import { BroadcastIcon, PlayIcon } from '@primer/octicons-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import './main.css';
+import '/public/assets/css/teletype.css';
+import realTimePortals from '/public/assets/svg/real-time-portals.svg';
+import realTimePrivacy1 from '/public/assets/svg/real-time-privacy-1.svg';
+import realTimePrivacy2 from '/public/assets/svg/real-time-privacy-2.svg';
 
 export default function Teletype() {
   const videoRef = React.useRef<HTMLVideoElement>(null);
@@ -19,12 +19,12 @@ export default function Teletype() {
     if (videoRef.current) {
       videoRef.current.play();
       videoRef.current.controls = true;
-      videoHudRef.current?.classList.add("is-hidden");
+      videoHudRef.current?.classList.add('is-hidden');
     }
   };
 
   return (
-    <div>
+    <>
       <section className="section hero">
         <div className="wrapper wrapper--full">
           <header className="header">
@@ -64,7 +64,7 @@ export default function Teletype() {
           <p>
             <strong>
               Teletype<sup>(beta)</sup> for Atom
-            </strong>{" "}
+            </strong>{' '}
             lets developers share their workspace with team members and
             collaborate on code in real time.
           </p>
@@ -93,10 +93,10 @@ export default function Teletype() {
                 aria-label="Play video"
                 onClick={playVideo}
                 style={{
-                  border: "none",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
+                  border: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
                 }}
               >
                 <PlayIcon size={125} />
@@ -129,7 +129,7 @@ export default function Teletype() {
               className="img"
               src={realTimePortals}
               alt="real-time-portals"
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: '100%', height: '100%' }}
             />
           </p>
         </div>
@@ -145,7 +145,7 @@ export default function Teletype() {
                   className="privacy-img"
                   src={realTimePrivacy1}
                   alt="real-time-privacy-1"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: '100%', height: '100%' }}
                 />
               </p>
               <p>
@@ -159,7 +159,7 @@ export default function Teletype() {
                   className="privacy-img"
                   src={realTimePrivacy2}
                   alt="real-time-privacy-2"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: '100%', height: '100%' }}
                 />
               </p>
               <p>
@@ -187,12 +187,12 @@ export default function Teletype() {
           </p>
           <h4>2. Install Teletype for Atom</h4>
           <p>
-            Install the{" "}
+            Install the{' '}
             <Link href="atom://settings-view/show-package?package=teletype">
-              teletype{" "}
+              teletype{' '}
             </Link>
             package to start collaborating today. If you need help, take a look
-            at{" "}
+            at{' '}
             <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages/">
               how to install Atom packages
             </Link>
@@ -220,17 +220,17 @@ export default function Teletype() {
         <div className="wrapper">
           <h2>Feedback</h2>
           <p>
-            We welcome your{" "}
+            We welcome your{' '}
             <Link href="https://github.com/atom/atom/discussions">
-              feedback{" "}
+              feedback{' '}
             </Link>
-            on this beta release. If you run into any problems, please{" "}
+            on this beta release. If you run into any problems, please{' '}
             <Link href="https://github.com/atom/teletype/issues">
-              open an issue{" "}
+              open an issue{' '}
             </Link>
-            or take a look at the{" "}
+            or take a look at the{' '}
             <Link href="https://github.com/atom/teletype/blob/master/CONTRIBUTING.md">
-              contribution guide{" "}
+              contribution guide{' '}
             </Link>
             and start contributing.
           </p>
@@ -240,6 +240,6 @@ export default function Teletype() {
           <CreditBadge />
         </div>
       </footer>
-    </div>
+    </>
   );
 }

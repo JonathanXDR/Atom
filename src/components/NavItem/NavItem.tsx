@@ -1,13 +1,13 @@
-"use client";
-import { RssIcon, SignInIcon } from "@primer/octicons-react";
-import { Header, Octicon } from "@primer/react";
-import { usePathname } from "next/navigation";
+'use client';
+import { RssIcon, SignInIcon } from '@primer/octicons-react';
+import { Header, Octicon } from '@primer/react';
+import { usePathname } from 'next/navigation';
 
 const NavItem: React.FC = () => {
   const pathname = usePathname();
   return (
     <Header>
-      {pathname !== "/" && (
+      {pathname !== '/' && (
         <Header.Item>
           <Header.Link
             href="/"
@@ -17,31 +17,31 @@ const NavItem: React.FC = () => {
         </Header.Item>
       )}
       <Header.Item>
-        {pathname !== "/packages" ? (
+        {pathname !== '/packages' ? (
           <Header.Link href="/packages">Packages</Header.Link>
         ) : (
-          "Packages"
+          'Packages'
         )}
       </Header.Item>
       <Header.Item>
-        {pathname !== "/themes" ? (
+        {pathname !== '/themes' ? (
           <Header.Link href="/themes">Themes</Header.Link>
         ) : (
-          "Themes"
+          'Themes'
         )}
       </Header.Item>
       <Header.Item>
-        {pathname !== "/docs" ? (
+        {pathname !== '/docs' ? (
           <Header.Link href="/docs">Documentation</Header.Link>
         ) : (
-          "Documentation"
+          'Documentation'
         )}
       </Header.Item>
       <Header.Item>
-        {pathname !== "/blog" ? (
+        {pathname !== '/blog' ? (
           <Header.Link href="/blog">Blog</Header.Link>
         ) : (
-          "Blog"
+          'Blog'
         )}
       </Header.Item>
       <Header.Item full>
@@ -50,15 +50,15 @@ const NavItem: React.FC = () => {
         </Header.Link>
       </Header.Item>
       <Header.Item>
-        {pathname === "/blog" ? (
+        {pathname === '/blog' ? (
           <Header.Link href="/blog/feed.xml" className="rss-link">
             <Octicon
               icon={RssIcon}
               size={16}
               sx={{
-                padding: "0",
+                padding: '0',
               }}
-            />{" "}
+            />{' '}
             Subscribe
           </Header.Link>
         ) : (
@@ -67,9 +67,9 @@ const NavItem: React.FC = () => {
               icon={SignInIcon}
               size={16}
               sx={{
-                padding: "0",
+                padding: '0',
               }}
-            />{" "}
+            />{' '}
             Sign in
           </Header.Link>
         )}

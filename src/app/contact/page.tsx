@@ -1,14 +1,14 @@
-"use client";
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
-import { Box, Button, FormControl, TextInput, Textarea } from "@primer/react";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/application.css";
+'use client';
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import { Box, Button, FormControl, TextInput, Textarea } from '@primer/react';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/application.css';
 
 export default function Contact() {
   return (
-    <div>
+    <>
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -20,9 +20,9 @@ export default function Contact() {
                   <h3 className="contact-title">Get in touch</h3>
                   <Box
                     sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      width: "100%",
+                      display: 'flex',
+                      flexDirection: 'column',
+                      width: '100%',
                     }}
                   >
                     <FormControl
@@ -33,7 +33,7 @@ export default function Contact() {
                       <FormControl.Label>Name</FormControl.Label>
                       <TextInput
                         sx={{
-                          width: "100%",
+                          width: '100%',
                         }}
                       />
                     </FormControl>
@@ -46,7 +46,7 @@ export default function Contact() {
                       <FormControl.Label>Email</FormControl.Label>
                       <TextInput
                         sx={{
-                          width: "100%",
+                          width: '100%',
                         }}
                       />
                     </FormControl>
@@ -59,7 +59,7 @@ export default function Contact() {
                       <FormControl.Label>Subject</FormControl.Label>
                       <TextInput
                         sx={{
-                          width: "100%",
+                          width: '100%',
                         }}
                       />
                     </FormControl>
@@ -72,7 +72,7 @@ export default function Contact() {
                       <FormControl.Label>Message</FormControl.Label>
                       <Textarea
                         sx={{
-                          width: "100%",
+                          width: '100%',
                         }}
                       />
                     </FormControl>
@@ -80,7 +80,7 @@ export default function Contact() {
                     <FormControl
                       sx={{
                         marginBottom: 3,
-                        alignSelf: "flex-end",
+                        alignSelf: 'flex-end',
                       }}
                     >
                       <FormControl.Label visuallyHidden>
@@ -134,6 +134,6 @@ export default function Contact() {
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
-    </div>
+    </>
   );
 }

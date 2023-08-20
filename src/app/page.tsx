@@ -1,8 +1,8 @@
-"use client";
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import HeroHeader from "@/components/HeroHeader/HeroHeader";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
-import SunsetBanner from "@/components/SunsetBanner/SunsetBanner";
+'use client';
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import HeroHeader from '@/components/HeroHeader/HeroHeader';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import SunsetBanner from '@/components/SunsetBanner/SunsetBanner';
 import {
   CodeIcon,
   DeviceDesktopIcon,
@@ -13,14 +13,14 @@ import {
   PaintbrushIcon,
   SearchIcon,
   ToolsIcon,
-} from "@primer/octicons-react";
-import Image from "next/image";
-import Link from "next/link";
-import "/public/assets/css/application.css";
-import indexGithubScreenshot from "/public/assets/png/index-github-screenshot.png";
-import indexIdeScreenshot from "/public/assets/png/index-ide-screenshot.png";
-import indexTeletypeScreenshot from "/public/assets/png/index-teletype-screenshot.png";
-import octonaut from "/public/assets/svg/octonaut.svg";
+} from '@primer/octicons-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import '/public/assets/css/application.css';
+import indexGithubScreenshot from '/public/assets/png/index-github-screenshot.png';
+import indexIdeScreenshot from '/public/assets/png/index-ide-screenshot.png';
+import indexTeletypeScreenshot from '/public/assets/png/index-teletype-screenshot.png';
+import octonaut from '/public/assets/svg/octonaut.svg';
 
 export default function Home() {
   return (
@@ -37,9 +37,9 @@ export default function Home() {
                   <h1 className="hero-tagline">
                     A hackable
                     <span className="hero-tagline-highlight">
-                      {" "}
+                      {' '}
                       text editor
-                    </span>{" "}
+                    </span>{' '}
                     for the 21st Century
                   </h1>
                   <Link
@@ -69,7 +69,7 @@ export default function Home() {
 
                 <p
                   style={{
-                    marginBlock: "1em",
+                    marginBlock: '1em',
                   }}
                 >
                   Great things happen when developers work together—from
@@ -88,9 +88,9 @@ export default function Home() {
 
                 <p>
                   Share your workspace and edit code together in real time. To
-                  start collaborating,{" "}
+                  start collaborating,{' '}
                   <Link href="atom://settings-view/show-package?package=teletype">
-                    open Teletype in Atom{" "}
+                    open Teletype in Atom{' '}
                   </Link>
                   and install the package.
                 </p>
@@ -108,7 +108,7 @@ export default function Home() {
                 <h3>Atom IDE</h3>
                 <p
                   style={{
-                    marginBlock: "1em",
+                    marginBlock: '1em',
                   }}
                 >
                   Atom-IDE is a set of optional packages to bring IDE-like
@@ -128,8 +128,8 @@ export default function Home() {
                   diagnostics (errors and warnings) and document formatting. To
                   get all these IDE features,
                   <Link href="atom://settings-view/show-package?package=atom-ide-ui">
-                    {" "}
-                    open Atom IDE UI in Atom{" "}
+                    {' '}
+                    open Atom IDE UI in Atom{' '}
                   </Link>
                   and install the package.
                 </p>
@@ -147,7 +147,7 @@ export default function Home() {
 
                 <p
                   style={{
-                    marginBlock: "1em",
+                    marginBlock: '1em',
                   }}
                 >
                   A text editor is at the core of a developer&apos;s toolbox,
@@ -187,9 +187,9 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <DeviceDesktopIcon size={24} />
@@ -204,9 +204,9 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <PackageIcon size={24} />
@@ -222,9 +222,9 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <LightBulbIcon size={24} />
@@ -239,9 +239,9 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <FileCodeIcon size={24} />
@@ -256,9 +256,9 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <MirrorIcon size={24} />
@@ -273,9 +273,9 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <SearchIcon size={24} />
@@ -295,16 +295,16 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <PackageIcon size={24} />
                     </div>
                     <h4>Packages</h4>
                     <p>
-                      Choose from thousands of{" "}
+                      Choose from thousands of{' '}
                       <Link href="/packages">open source packages </Link>
                       that add new features and functionality to Atom, or build
                       a package from scratch and publish it for everyone else to
@@ -315,16 +315,16 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <PaintbrushIcon size={24} />
                     </div>
                     <h4>Themes</h4>
                     <p>
-                      Atom comes pre-installed with four UI and eight syntax{" "}
+                      Atom comes pre-installed with four UI and eight syntax{' '}
                       <Link href="/themes">themes </Link>
                       in both dark and light colors. Can&apos;t find what
                       you&apos;re looking for? Install themes created by the
@@ -336,9 +336,9 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <ToolsIcon size={24} />
@@ -363,9 +363,9 @@ export default function Home() {
                     <div
                       className="mega-octicon"
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <CodeIcon size={24} />
@@ -373,7 +373,7 @@ export default function Home() {
                     <h4>Under the hood</h4>
                     <p>
                       Atom is a desktop application built with HTML, JavaScript,
-                      CSS, and Node.js integration. It runs on{" "}
+                      CSS, and Node.js integration. It runs on{' '}
                       <Link href="https://electronjs.org/">Electron</Link>, a
                       framework for building cross platform apps using web
                       technologies.

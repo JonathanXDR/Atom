@@ -1,7 +1,7 @@
-"use client";
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import GitHubRepoCard from "@/components/GitHubRepoCard/GitHubRepoCard";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
+'use client';
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import GitHubRepoCard from '@/components/GitHubRepoCard/GitHubRepoCard';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
 import {
   ChevronRightIcon,
   ClockIcon,
@@ -10,7 +10,7 @@ import {
   SearchIcon,
   SquirrelIcon,
   TriangleDownIcon,
-} from "@primer/octicons-react";
+} from '@primer/octicons-react';
 import {
   ActionList,
   ActionMenu,
@@ -18,17 +18,17 @@ import {
   FormControl,
   Text,
   TextInput,
-} from "@primer/react";
-import Link from "next/link";
-import React from "react";
-import "./main.css";
-import "/public/assets/css/application.css";
+} from '@primer/react';
+import Link from 'next/link';
+import React from 'react';
+import './main.css';
+import '/public/assets/css/application.css';
 
 export default function Packages() {
   const timeSpans = [
-    { name: "today" },
-    { name: "this week" },
-    { name: "this month" },
+    { name: 'today' },
+    { name: 'this week' },
+    { name: 'this month' },
   ];
 
   const TimeSpan = () => {
@@ -41,7 +41,7 @@ export default function Packages() {
           <Text
             as="a"
             sx={{
-              cursor: "pointer",
+              cursor: 'pointer',
             }}
           >
             {selectedType.name}
@@ -69,9 +69,9 @@ export default function Packages() {
   };
 
   const filters = [
-    { name: "Best Match" },
-    { name: "Recently added" },
-    { name: "Most installed/starred" },
+    { name: 'Best Match' },
+    { name: 'Recently added' },
+    { name: 'Most installed/starred' },
   ];
 
   const Filter = () => {
@@ -83,10 +83,10 @@ export default function Packages() {
         <ActionMenu.Button size="large">
           <Text
             sx={{
-              color: "fg.muted",
+              color: 'fg.muted',
             }}
           >
-            Sort:{" "}
+            Sort:{' '}
           </Text>
           {selectedType.name}
         </ActionMenu.Button>
@@ -125,9 +125,9 @@ export default function Packages() {
 
             <FormControl
               sx={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
                 gap: 2,
               }}
             >
@@ -136,7 +136,7 @@ export default function Packages() {
                 size="large"
                 placeholder="Search 431,802 packages"
                 sx={{
-                  width: "100%",
+                  width: '100%',
                 }}
               />
               <Filter />

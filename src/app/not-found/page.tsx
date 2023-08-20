@@ -1,8 +1,8 @@
-import "./main.css";
+import './main.css';
 
 export default function NotFound() {
   return (
-    <div>
+    <>
       <div className="dialog">
         <div className="wrapper-top">
           <h1 className="message">This page could not be found</h1>
@@ -16,6 +16,6 @@ export default function NotFound() {
         </div>
       </div>
       <footer className="footer"></footer>
-    </div>
+    </>
   );
 }

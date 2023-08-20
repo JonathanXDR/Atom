@@ -1,17 +1,17 @@
-"use client";
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
-import { LinkIcon } from "@primer/octicons-react";
-import Image from "next/image";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/application.css";
-import _1f4dd from "/public/assets/png/1f4dd.png";
-import _2b06 from "/public/assets/png/2b06.png";
+'use client';
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import { LinkIcon } from '@primer/octicons-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/application.css';
+import _1f4dd from '/public/assets/png/1f4dd.png';
+import _2b06 from '/public/assets/png/2b06.png';
 
 export default function Releases() {
   return (
-    <div>
+    <>
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -44,7 +44,7 @@ export default function Releases() {
                 <p>
                   You can learn more about the official sunset of Atom in our
                   <Link href="https://github.blog/2022-06-08-sunsetting-atom/">
-                    {" "}
+                    {' '}
                     blog post
                   </Link>
                   .
@@ -902,8 +902,8 @@ export default function Releases() {
                         height="20"
                         width="20"
                         style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
+                          display: 'inline-block',
+                          verticalAlign: 'middle',
                         }}
                       />
                       Clarify that stack only has an effect if detail is present
@@ -1423,8 +1423,8 @@ export default function Releases() {
                         height="20"
                         width="20"
                         style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
+                          display: 'inline-block',
+                          verticalAlign: 'middle',
                         }}
                       />
                       Clarify that stack only has an effect if detail is present
@@ -3158,8 +3158,8 @@ export default function Releases() {
                         height="20"
                         width="20"
                         style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
+                          display: 'inline-block',
+                          verticalAlign: 'middle',
                         }}
                       />
                       github
@@ -3470,8 +3470,8 @@ export default function Releases() {
                         height="20"
                         width="20"
                         style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
+                          display: 'inline-block',
+                          verticalAlign: 'middle',
                         }}
                       />
                       github
@@ -7316,8 +7316,8 @@ export default function Releases() {
                         height="20"
                         width="20"
                         style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
+                          display: 'inline-block',
+                          verticalAlign: 'middle',
                         }}
                       />
                       tree-sitter-c and tree-sitter-cpp
@@ -7360,6 +7360,6 @@ export default function Releases() {
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
-    </div>
+    </>
   );
 }

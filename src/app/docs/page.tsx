@@ -1,21 +1,21 @@
-"use client";
-import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
-import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
+'use client';
+import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
+import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
 import {
   BookIcon,
   CommentDiscussionIcon,
   GearIcon,
   PlayIcon,
-} from "@primer/octicons-react";
-import Image from "next/image";
-import Link from "next/link";
-import "./main.css";
-import "/public/assets/css/application.css";
-import flightManualCover from "/public/assets/png/flight-manual-cover.png";
+} from '@primer/octicons-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import './main.css';
+import '/public/assets/css/application.css';
+import flightManualCover from '/public/assets/png/flight-manual-cover.png';
 
 export default function Docs() {
   return (
-    <div>
+    <>
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -54,13 +54,13 @@ export default function Docs() {
                             data-skip-pjax="yeahokiguess"
                             href="https://flight-manual.atom.io/"
                           >
-                            {" "}
-                            Atom Flight Manual{" "}
+                            {' '}
+                            Atom Flight Manual{' '}
                           </Link>
                           covers everything from getting off the ground to
                           replacing the engine.
                           <Link href="https://flight-manual.atom.io/">
-                            {" "}
+                            {' '}
                             Go here to read the one and only book on everything
                             Atom.
                           </Link>
@@ -69,7 +69,7 @@ export default function Docs() {
                           <Link href="https://flight-manual.atom.io/">
                             <Image
                               style={{
-                                width: "200px",
+                                width: '200px',
                               }}
                               src={flightManualCover}
                               alt="flight-manual-cover"
@@ -86,8 +86,8 @@ export default function Docs() {
                         <p>
                           The
                           <Link href="https://flight-manual.atom.io/api">
-                            {" "}
-                            Atom API reference documentation{" "}
+                            {' '}
+                            Atom API reference documentation{' '}
                           </Link>
                           is automatically generated from the Atom source code.
                           Go here to see what tools you can use to build your
@@ -106,8 +106,8 @@ export default function Docs() {
                         <p>
                           The
                           <Link href="https://github.com/atom/atom/discussions">
-                            {" "}
-                            Atom Discussions{" "}
+                            {' '}
+                            Atom Discussions{' '}
                           </Link>
                           is the place to discuss anything and everything Atom
                           related with the entire Atom community. If you have
@@ -130,6 +130,6 @@ export default function Docs() {
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
-    </div>
+    </>
   );
 }

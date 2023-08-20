@@ -1,8 +1,8 @@
-"use client";
-import { RssIcon, SignInIcon } from "@primer/octicons-react";
-import { Octicon } from "@primer/react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+'use client';
+import { RssIcon, SignInIcon } from '@primer/octicons-react';
+import { Octicon } from '@primer/react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const NavItemLegacy: React.FC = () => {
   const pathname = usePathname();
@@ -10,7 +10,7 @@ const NavItemLegacy: React.FC = () => {
     <nav className="top-bar" aria-label="Primary">
       <div className="wrapper no-pad">
         <ul className="navigation">
-          {pathname !== "/" && (
+          {pathname !== '/' && (
             <li>
               <h1>
                 <Link
@@ -24,7 +24,7 @@ const NavItemLegacy: React.FC = () => {
           <li>
             <Link
               href="/packages"
-              className={pathname === "/packages" ? "is-selected" : ""}
+              className={pathname === '/packages' ? 'is-selected' : ''}
             >
               Packages
             </Link>
@@ -32,7 +32,7 @@ const NavItemLegacy: React.FC = () => {
           <li>
             <Link
               href="/themes"
-              className={pathname === "/themes" ? "is-selected" : ""}
+              className={pathname === '/themes' ? 'is-selected' : ''}
             >
               Themes
             </Link>
@@ -40,7 +40,7 @@ const NavItemLegacy: React.FC = () => {
           <li>
             <Link
               href="/docs"
-              className={pathname === "/docs" ? "is-selected" : ""}
+              className={pathname === '/docs' ? 'is-selected' : ''}
             >
               Documentation
             </Link>
@@ -48,7 +48,7 @@ const NavItemLegacy: React.FC = () => {
           <li>
             <Link
               href="/blog"
-              className={pathname === "/blog" ? "is-selected" : ""}
+              className={pathname === '/blog' ? 'is-selected' : ''}
             >
               Blog
             </Link>
@@ -61,15 +61,15 @@ const NavItemLegacy: React.FC = () => {
         </ul>
 
         <div className="top-bar-right">
-          {pathname === "/blog" ? (
+          {pathname === '/blog' ? (
             <Link href="/blog/feed.xml" className="rss-link">
               <Octicon
                 icon={RssIcon}
                 size={16}
                 sx={{
-                  padding: "0",
+                  padding: '0',
                 }}
-              />{" "}
+              />{' '}
               Subscribe
             </Link>
           ) : (
@@ -78,9 +78,9 @@ const NavItemLegacy: React.FC = () => {
                 icon={SignInIcon}
                 size={16}
                 sx={{
-                  padding: "0",
+                  padding: '0',
                 }}
-              />{" "}
+              />{' '}
               Sign in
             </Link>
           )}

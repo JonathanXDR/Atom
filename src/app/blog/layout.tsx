@@ -1,49 +1,48 @@
-import "@primer/css/index.scss";
-import "@primer/react-brand/lib/css/main.css";
-import "../globals.css";
+import '@primer/css/index.scss';
+import '@primer/react-brand/lib/css/main.css';
+import '../tailwind.css';
 
-import PrimerProvider from "@/providers/PrimerProvider";
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://atom.io/blog"),
-  title: "Atom Blog | A hackable text editor for the 21st Century",
-  description: "A hackable text editor for the 21st Century",
+  metadataBase: new URL('https://atom.io/blog'),
+  title: 'Atom Blog | A hackable text editor for the 21st Century',
+  description: 'A hackable text editor for the 21st Century',
   openGraph: {
-    url: "/blog",
-    siteName: "Atom Blog",
-    type: "website",
-    title: "Atom Blog",
-    description: "A hackable text editor for the 21st Century",
+    url: '/blog',
+    siteName: 'Atom Blog',
+    type: 'website',
+    title: 'Atom Blog',
+    description: 'A hackable text editor for the 21st Century',
     images: [
       {
-        url: "/assets/png/atom-mark@1200x630.png",
+        url: '/assets/png/atom-mark@1200x630.png',
         width: 1200,
         height: 630,
       },
     ],
   },
-  publisher: "https://github.com",
+  publisher: 'https://github.com',
   authors: [
     {
-      name: "GitHub",
-      url: "https://github.com",
+      name: 'GitHub',
+      url: 'https://github.com',
     },
     {
-      name: "Jonathan Russ",
-      url: "https://jonathan-russ.com",
+      name: 'Jonathan Russ',
+      url: 'https://jonathan-russ.com',
     },
   ],
   icons: {
-    icon: "/favicon.ico",
+    icon: '/favicon.ico',
   },
   alternates: {
-    canonical: "/",
+    canonical: '/',
     types: {
-      "application/atom+xml": [
+      'application/atom+xml': [
         {
-          url: "/blog/feed.xml",
-          title: "Atom Blog",
+          url: '/blog/feed.xml',
+          title: 'Atom Blog',
         },
       ],
     },
@@ -55,11 +54,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>
-        <PrimerProvider>{children}</PrimerProvider>
-      </body>
-    </html>
-  );
+  return children;
 }

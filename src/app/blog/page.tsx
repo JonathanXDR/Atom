@@ -4,8 +4,8 @@ import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/blog.css";
 
-import FooterItem from "@/components/FooterItem/FooterItem";
-import NavItem from "@/components/NavItem/NavItem";
+import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
+import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
 import { CalendarIcon, ChevronRightIcon } from "@primer/octicons-react";
 import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
 
@@ -13,7 +13,7 @@ export default function Blog() {
   return (
     <body>
       <div className="footer-push">
-        <NavItem />
+        <NavItemLegacy />
 
         <div className="wrapper content-push">
           <div id="home">
@@ -493,6 +493,7 @@ export default function Blog() {
               </Link>
             </div>
           </div>
+          P
         </div>
 
         <div className="footer-pad"></div>

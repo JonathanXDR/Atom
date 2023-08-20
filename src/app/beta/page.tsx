@@ -1,7 +1,7 @@
 "use client";
-import FooterItem from "@/components/FooterItem/FooterItem";
+import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
 import HeroHeader from "@/components/HeroHeader/HeroHeader";
-import NavItem from "@/components/NavItem/NavItem";
+import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
 import { BugIcon, CalendarIcon, RocketIcon } from "@primer/octicons-react";
 import Link from "next/link";
 import "./main.css";
@@ -11,7 +11,7 @@ export default function Beta() {
   return (
     <body className="is-responsive">
       <div className="footer-push">
-        <NavItem />
+        <NavItemLegacy />
         <div id="js-pjax-container">
           <div className="welcome welcome-beta">
             <section className="section section--hero">

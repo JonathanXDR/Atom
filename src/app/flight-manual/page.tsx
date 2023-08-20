@@ -1,6 +1,5 @@
 "use client";
-import FooterItem from "@/components/FooterItem/FooterItem";
-import NavItem from "@/components/NavItem/NavItem";
+import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -11,7 +10,7 @@ export default function FlightManual() {
   return (
     <body className="layout-toc platform-switch platform-mac">
       <div className="footer-push">
-        <NavItem />
+        <NavItemLegacy />
 
         <div className="wrapper documents content-push">
           <div

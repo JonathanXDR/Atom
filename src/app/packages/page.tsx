@@ -1,6 +1,6 @@
 "use client";
-import FooterItem from "@/components/FooterItem/FooterItem";
-import NavItem from "@/components/NavItem/NavItem";
+import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
+import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
 import {
   ChevronRightIcon,
   ClockIcon,
@@ -112,7 +112,7 @@ export default function Packages() {
   return (
     <body>
       <div className="footer-push">
-        <NavItem />
+        <NavItemLegacy />
 
         <div id="js-pjax-container">
           <div className="wrapper content-push packages">
@@ -200,6 +200,7 @@ export default function Packages() {
               times.
             </p>
           </div>
+          N
         </div>
 
         <div className="footer-pad"></div>

@@ -1,6 +1,6 @@
 "use client";
-import FooterItem from "@/components/FooterItem/FooterItem";
-import NavItem from "@/components/NavItem/NavItem";
+import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
+import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
 import { LinkIcon } from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ export default function Releases() {
   return (
     <body>
       <div className="footer-push">
-        <NavItem />
+        <NavItemLegacy />
 
         <div id="js-pjax-container">
           <div className="wrapper releases search-page content-push">

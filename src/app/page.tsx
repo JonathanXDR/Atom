@@ -1,7 +1,7 @@
 "use client";
-import FooterItem from "@/components/FooterItem/FooterItem";
+import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
 import HeroHeader from "@/components/HeroHeader/HeroHeader";
-import NavItem from "@/components/NavItem/NavItem";
+import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
 import SunsetBanner from "@/components/SunsetBanner/SunsetBanner";
 import {
   CodeIcon,
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <body className="is-responsive">
       <div className="footer-push">
-        <NavItem />
+        <NavItemLegacy />
         <div id="js-pjax-container">
           <div className="welcome">
             <section className="section section--hero">

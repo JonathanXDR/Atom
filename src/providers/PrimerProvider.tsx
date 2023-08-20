@@ -28,8 +28,8 @@ const Atom = deepmerge(theme, {
           subtle: '#f9f6ed',
         },
         accent: {
-          fg: '#3b9b6d',
-          emphasis: '#358b62',
+          fg: '#40a977',
+          emphasis: '#3b9b6d',
           muted: '#b0d7c4',
           subtle: '#c4e1d3',
         },

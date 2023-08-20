@@ -180,7 +180,7 @@ export default function FAQ() {
     { text: "1.0.0", id: 1 },
   ];
   return (
-    <body className="layout-article platform-switch platform-mac">
+    <div className="layout-article platform-switch platform-mac">
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -194,6 +194,7 @@ export default function FAQ() {
             }}
           >
             <FormControl>
+              <FormControl.Label visuallyHidden>Versions</FormControl.Label>
               <Autocomplete>
                 <Autocomplete.Input size="large" />
                 <Autocomplete.Overlay>
@@ -207,6 +208,9 @@ export default function FAQ() {
                 width: "100%",
               }}
             >
+              <FormControl.Label visuallyHidden>
+                Search the Flight Manual
+              </FormControl.Label>
               <TextInput
                 size="large"
                 placeholder="Search the Flight Manual"
@@ -1351,6 +1355,6 @@ export default function FAQ() {
         <div className="footer-pad"></div>
       </div>
       <FooterItem />
-    </body>
+    </div>
   );
 }

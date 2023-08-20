@@ -1,5 +1,6 @@
 "use client";
 import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
+import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -8,7 +9,7 @@ import flightManualCover from "/public/assets/png/flight-manual-cover.png";
 
 export default function FlightManual() {
   return (
-    <body className="layout-toc platform-switch platform-mac">
+    <div className="layout-toc platform-switch platform-mac">
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -195,7 +196,7 @@ export default function FlightManual() {
               <option value="1.0.0">v1.0.0</option>
             </select>
             <form
-              accept-charset="UTF-8"
+              acceptCharset="UTF-8"
               action="https://flight-manual.atom.io/search"
               id="articles-search"
               method="get"
@@ -1123,6 +1124,6 @@ export default function FlightManual() {
         <div className="footer-pad"></div>
       </div>
       <FooterItem />
-    </body>
+    </div>
   );
 }

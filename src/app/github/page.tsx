@@ -16,7 +16,7 @@ import githubSwoosh from "/public/assets/svg/github-swoosh.svg";
 
 export default function GitHub() {
   return (
-    <body>
+    <div>
       <section className="section hero">
         <div className="bg" aria-hidden="true">
           <Image
@@ -245,6 +245,6 @@ export default function GitHub() {
           <CreditBadge />
         </div>
       </footer>
-    </body>
+    </div>
   );
 }

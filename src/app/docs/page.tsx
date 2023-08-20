@@ -15,7 +15,7 @@ import flightManualCover from "/public/assets/png/flight-manual-cover.png";
 
 export default function Docs() {
   return (
-    <body>
+    <div>
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -130,6 +130,6 @@ export default function Docs() {
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
-    </body>
+    </div>
   );
 }

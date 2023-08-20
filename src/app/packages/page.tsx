@@ -1,5 +1,6 @@
 "use client";
 import FooterItem from "@/components/FooterItemLegacy/FooterItemLegacy";
+import GitHubRepoCard from "@/components/GitHubRepoCard/GitHubRepoCard";
 import NavItemLegacy from "@/components/NavItemLegacy/NavItemLegacy";
 import {
   ChevronRightIcon,
@@ -114,6 +115,8 @@ export default function Packages() {
       <div className="footer-push">
         <NavItemLegacy />
 
+        <GitHubRepoCard />
+
         <div id="js-pjax-container">
           <div className="wrapper content-push packages">
             <h2 className="center index-title">
@@ -200,7 +203,7 @@ export default function Packages() {
               times.
             </p>
           </div>
-          N
+          G
         </div>
 
         <div className="footer-pad"></div>

@@ -5,7 +5,7 @@ import "/public/assets/css/ide.css";
 
 export default function Ide() {
   return (
-    <body>
+    <div>
       <section className="wrapper notice-wrapper">
         <h1 className="notice-title text-center">Community Powered</h1>
 
@@ -189,6 +189,6 @@ export default function Ide() {
           </p>
         </div>
       </section>
-    </body>
+    </div>
   );
 }

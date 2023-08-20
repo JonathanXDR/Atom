@@ -24,7 +24,7 @@ export default function Teletype() {
   };
 
   return (
-    <body>
+    <div>
       <section className="section hero">
         <div className="wrapper wrapper--full">
           <header className="header">
@@ -240,6 +240,6 @@ export default function Teletype() {
           <CreditBadge />
         </div>
       </footer>
-    </body>
+    </div>
   );
 }

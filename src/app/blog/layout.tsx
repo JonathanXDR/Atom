@@ -57,7 +57,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <PrimerProvider>{children}</PrimerProvider>
+      <body>
+        <PrimerProvider>{children}</PrimerProvider>
+      </body>
     </html>
   );
 }

@@ -24,7 +24,7 @@ import octonaut from "/public/assets/svg/octonaut.svg";
 
 export default function Home() {
   return (
-    <body className="is-responsive">
+    <div className="is-responsive">
       <div className="footer-push">
         <NavItemLegacy />
         <div id="js-pjax-container">
@@ -459,6 +459,6 @@ export default function Home() {
       </div>
 
       <FooterItem />
-    </body>
+    </div>
   );
 }

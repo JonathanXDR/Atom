@@ -9,7 +9,7 @@ import "/public/assets/css/application.css";
 
 export default function Beta() {
   return (
-    <body className="is-responsive">
+    <div className="is-responsive">
       <div className="footer-push">
         <NavItemLegacy />
         <div id="js-pjax-container">
@@ -92,6 +92,6 @@ export default function Beta() {
       </div>
 
       <FooterItem />
-    </body>
+    </div>
   );
 }

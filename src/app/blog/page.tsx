@@ -11,7 +11,7 @@ import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
 
 export default function Blog() {
   return (
-    <body>
+    <div>
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -500,6 +500,6 @@ export default function Blog() {
       </div>
 
       <FooterItem />
-    </body>
+    </div>
   );
 }

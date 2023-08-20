@@ -8,7 +8,7 @@ import "/public/assets/css/application.css";
 
 export default function Contact() {
   return (
-    <body>
+    <div>
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -30,9 +30,8 @@ export default function Contact() {
                         marginBottom: 3,
                       }}
                     >
-                      <FormControl.Label htmlFor="name">Name</FormControl.Label>
+                      <FormControl.Label>Name</FormControl.Label>
                       <TextInput
-                        id="name"
                         sx={{
                           width: "100%",
                         }}
@@ -44,11 +43,8 @@ export default function Contact() {
                         marginBottom: 3,
                       }}
                     >
-                      <FormControl.Label htmlFor="email">
-                        Email
-                      </FormControl.Label>
+                      <FormControl.Label>Email</FormControl.Label>
                       <TextInput
-                        id="email"
                         sx={{
                           width: "100%",
                         }}
@@ -60,11 +56,8 @@ export default function Contact() {
                         marginBottom: 3,
                       }}
                     >
-                      <FormControl.Label htmlFor="subject">
-                        Subject
-                      </FormControl.Label>
+                      <FormControl.Label>Subject</FormControl.Label>
                       <TextInput
-                        id="subject"
                         sx={{
                           width: "100%",
                         }}
@@ -76,11 +69,8 @@ export default function Contact() {
                         marginBottom: 3,
                       }}
                     >
-                      <FormControl.Label htmlFor="message">
-                        Message
-                      </FormControl.Label>
+                      <FormControl.Label>Message</FormControl.Label>
                       <Textarea
-                        id="message"
                         sx={{
                           width: "100%",
                         }}
@@ -93,6 +83,9 @@ export default function Contact() {
                         alignSelf: "flex-end",
                       }}
                     >
+                      <FormControl.Label visuallyHidden>
+                        Send request
+                      </FormControl.Label>
                       <Button variant="primary" size="large">
                         Send request
                       </Button>
@@ -141,6 +134,6 @@ export default function Contact() {
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
-    </body>
+    </div>
   );
 }

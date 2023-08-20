@@ -11,7 +11,7 @@ import _2b06 from "/public/assets/png/2b06.png";
 
 export default function Releases() {
   return (
-    <body>
+    <div>
       <div className="footer-push">
         <NavItemLegacy />
 
@@ -7360,6 +7360,6 @@ export default function Releases() {
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
       <div id="lean_overlay"></div>
-    </body>
+    </div>
   );
 }

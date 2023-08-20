@@ -1,38 +1,71 @@
 'use client';
 import '@/app/tailwind.css';
-import { BaseStyles, ThemeProvider } from '@primer/react';
+import '@primer/css/index.scss';
+import { BaseStyles, ThemeProvider, theme } from '@primer/react';
+import '@primer/react-brand/lib/css/main.css';
 import deepmerge from 'deepmerge';
 
-const AtomOneLight = deepmerge(Atom, {
+const Atom = deepmerge(theme, {
+  fonts: {
+    normal:
+      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    mono: "'Helvetica Neue', Helvetica, arial, freesans, clean, sans-serif",
+    error: "Verdana, 'Verdana Ref', sans-serif",
+  },
   colorSchemes: {
     light: {
       colors: {
-        canvas: {
-          default: '#FAFAFA',
-        },
         fg: {
-          default: '#383A42',
+          default: '#574c4f',
+          muted: '#949189',
+          subtle: '#9e9b95',
+          emphasis: '#ffffff',
         },
-        border: {
-          default: '#DBDBDC',
+        canvas: {
+          default: '#ffffff',
+          overlay: '#ffffff',
+          inset: '#efeae1',
+          subtle: '#f9f6ed',
+        },
+        accent: {
+          fg: '#3b9b6d',
+          emphasis: '#358b62',
+          muted: '#b0d7c4',
+          subtle: '#c4e1d3',
+        },
+        header: {
+          text: '#efeae1',
+          bg: '#584b4f',
+          divider: '#efeae1',
+          logo: '#efeae1',
         },
       },
     },
-  },
-});
-
-const AtomOneDark = deepmerge(Atom, {
-  colorSchemes: {
     dark: {
       colors: {
-        canvas: {
-          default: '#282C34',
-        },
         fg: {
-          default: '#ABB2BF',
+          default: '#efdab9',
+          muted: '#786f63',
+          subtle: '#8e8373',
+          emphasis: '#ffffff',
         },
-        border: {
-          default: '#181A1F',
+        canvas: {
+          default: '#343233',
+          overlay: '#343233',
+          inset: '#2c2a2b',
+          subtle: '#3d3a3a',
+        },
+        accent: {
+          fg: '#ffd152',
+          emphasis: '#ebac00',
+          muted: '#ffecb9',
+          subtle: '#fff1cb',
+        },
+        header: {
+          text: '#efeae1',
+          bg: '#584b4f',
+          divider: '#efeae1',
+          logo: '#efeae1',
         },
       },
     },
@@ -41,8 +74,10 @@ const AtomOneDark = deepmerge(Atom, {
 
 const PrimerProvider = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ThemeProvider colorMode="light" preventSSRMismatch>
-      <BaseStyles className="w-full h-full">{children}</BaseStyles>
+    <ThemeProvider colorMode="auto" theme={Atom} preventSSRMismatch>
+      <BaseStyles bg="canvas.default" className="w-full h-full">
+        {children}
+      </BaseStyles>
     </ThemeProvider>
   );
 };

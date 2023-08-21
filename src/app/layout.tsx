@@ -1,6 +1,8 @@
 import PrimerProvider from '@/providers/PrimerProvider';
+import '@primer/css/index.scss';
+import '@primer/react-brand/lib/css/main.css';
 import { Metadata } from 'next';
-import './globals.css';
+import './tailwind.css';
 import '/public/assets/css/application.css';
 
 export const metadata: Metadata = {

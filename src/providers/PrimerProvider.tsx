@@ -1,5 +1,4 @@
 'use client';
-import '@/app/globals.css';
 import { BaseStyles, ThemeProvider, theme } from '@primer/react';
 import deepmerge from 'deepmerge';
 

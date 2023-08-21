@@ -1,6 +1,5 @@
 'use client';
 import { Box, Heading, Text } from '@primer/react';
-import './main.css';
 
 export default function Error() {
   return (

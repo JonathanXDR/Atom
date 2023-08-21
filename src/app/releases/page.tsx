@@ -5,8 +5,6 @@ import { LinkIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import './main.css';
-
 import _1f4dd from '/public/assets/png/1f4dd.png';
 import _2b06 from '/public/assets/png/2b06.png';
 

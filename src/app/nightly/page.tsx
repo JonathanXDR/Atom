@@ -5,7 +5,6 @@ import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
 import { BugIcon, CalendarIcon, RocketIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
-import './main.css';
 
 export default function Nightly() {
   return (

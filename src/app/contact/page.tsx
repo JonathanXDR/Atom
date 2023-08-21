@@ -10,7 +10,6 @@ import {
   Textarea,
 } from '@primer/react';
 import Link from 'next/link';
-import './main.css';
 
 export default function Contact() {
   return (

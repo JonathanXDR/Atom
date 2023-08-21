@@ -1,5 +1,4 @@
 'use client';
-import '@/app/tailwind.css';
 import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
 import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
 import {
@@ -23,7 +22,6 @@ import {
 } from '@primer/react';
 import Link from 'next/link';
 import React from 'react';
-import './main.css';
 
 export default function Packages() {
   const timeSpans = [

@@ -1,0 +1,6 @@
+@import '../../node_modules/@primer/css/index.scss';
+@import '../../node_modules/@primer/react-brand/lib/css/main.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -17,7 +17,6 @@ import {
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import '/public/assets/css/atom.css';
 import indexGithubScreenshot from '/public/assets/png/index-github-screenshot.png';
 import indexIdeScreenshot from '/public/assets/png/index-ide-screenshot.png';
 import indexTeletypeScreenshot from '/public/assets/png/index-teletype-screenshot.png';

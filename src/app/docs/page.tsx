@@ -10,7 +10,6 @@ import {
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import './main.css';
 
 import flightManualCover from '/public/assets/png/flight-manual-cover.png';
 

@@ -1,8 +1,6 @@
 'use client';
-import '@/app/tailwind.css';
-import '@primer/css/index.scss';
+import '@/app/globals.css';
 import { BaseStyles, ThemeProvider, theme } from '@primer/react';
-import '@primer/react-brand/lib/css/main.css';
 import deepmerge from 'deepmerge';
 
 const Atom = deepmerge(theme, {

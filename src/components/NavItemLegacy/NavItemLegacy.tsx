@@ -1,12 +1,80 @@
 'use client';
 import { RssIcon, SignInIcon } from '@primer/octicons-react';
-import { Box, Heading, Octicon } from '@primer/react';
+import { Box, Heading, Octicon, OcticonProps } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './main.css';
 
+const pages = [
+  {
+    href: '/packages',
+    text: 'Packages',
+    topBarRight: {
+      icon: SignInIcon,
+      href: '/login',
+      text: 'Sign in',
+      className: '',
+    },
+  },
+  {
+    href: '/themes',
+    text: 'Themes',
+    topBarRight: {
+      icon: SignInIcon,
+      href: '/login',
+      text: 'Sign in',
+      className: '',
+    },
+  },
+  {
+    href: '/docs',
+    text: 'Documentation',
+    topBarRight: {
+      icon: SignInIcon,
+      href: '/login',
+      text: 'Sign in',
+      className: '',
+    },
+  },
+  {
+    href: '/blog',
+    text: 'Blog',
+    topBarRight: {
+      icon: RssIcon,
+      href: '/blog/feed.xml',
+      text: 'Subscribe',
+      className: 'rss-link',
+    },
+  },
+  {
+    href: 'https://github.com/atom/atom/discussions',
+    text: ' Discussions',
+    topBarRight: {
+      icon: SignInIcon,
+      href: '/login',
+      text: 'Sign in',
+      className: '',
+    },
+  },
+];
+
+interface NavItemProps {
+  href: string;
+  text: string;
+  topBarRight: {
+    icon: OcticonProps['icon'];
+    href: string;
+    text: string;
+    className: string;
+  };
+}
+
 const NavItemLegacy: React.FC = () => {
   const pathname = usePathname();
+  const currentPage = pages.find(
+    (page: NavItemProps) => page.href === pathname
+  );
+
   return (
     <Box as="nav" className="top-bar" aria-label="Primary">
       <Box className="wrapper no-pad">
@@ -22,67 +90,33 @@ const NavItemLegacy: React.FC = () => {
               </Heading>
             </Box>
           )}
-          <Box as="li">
-            <Link
-              href="/packages"
-              className={pathname === '/packages' ? 'is-selected' : ''}
-            >
-              Packages
-            </Link>
-          </Box>
-          <Box as="li">
-            <Link
-              href="/themes"
-              className={pathname === '/themes' ? 'is-selected' : ''}
-            >
-              Themes
-            </Link>
-          </Box>
-          <Box as="li">
-            <Link
-              href="/docs"
-              className={pathname === '/docs' ? 'is-selected' : ''}
-            >
-              Documentation
-            </Link>
-          </Box>
-          <Box as="li">
-            <Link
-              href="/blog"
-              className={pathname === '/blog' ? 'is-selected' : ''}
-            >
-              Blog
-            </Link>
-          </Box>
-          <Box as="li">
-            <Link href="https://github.com/atom/atom/discussions">
-              Discussions
-            </Link>
-          </Box>
+          {pages.map((page: NavItemProps) => (
+            <Box as="li" key={page.href}>
+              <Link
+                href={page.href}
+                className={pathname === page.href ? 'is-selected' : ''}
+              >
+                {page.text}
+              </Link>
+            </Box>
+          ))}
         </Box>
 
         <Box className="top-bar-right">
-          {pathname === '/blog' ? (
-            <Link href="/blog/feed.xml" className="rss-link">
+          {currentPage?.topBarRight && (
+            <Link
+              href={currentPage.topBarRight.href}
+              key={currentPage.topBarRight.href}
+              className={currentPage.topBarRight.className}
+            >
               <Octicon
-                icon={RssIcon}
+                icon={currentPage.topBarRight.icon}
                 size={16}
                 sx={{
                   padding: '0',
                 }}
               />{' '}
-              Subscribe
-            </Link>
-          ) : (
-            <Link href="/login">
-              <Octicon
-                icon={SignInIcon}
-                size={16}
-                sx={{
-                  padding: '0',
-                }}
-              />{' '}
-              Sign in
+              {currentPage.topBarRight.text}
             </Link>
           )}
         </Box>

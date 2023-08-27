@@ -71,7 +71,7 @@ const Atom = deepmerge(theme, {
 
 const PrimerProvider = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ThemeProvider colorMode="auto" theme={Atom} preventSSRMismatch>
+    <ThemeProvider colorMode="auto" preventSSRMismatch>
       <BaseStyles bg="canvas.default" className="w-full h-full">
         {children}
       </BaseStyles>

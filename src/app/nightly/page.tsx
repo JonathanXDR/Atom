@@ -1,7 +1,7 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import HeroHeader from '@/components/HeroHeader/HeroHeader';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import HeroHeader from '@/components/common/HeroHeader/HeroHeader';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import { BugIcon, CalendarIcon, RocketIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ export default function Nightly() {
   return (
     <Box className="is-responsive">
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="welcome welcome-nightly">
           <Box as="section" className="section section--hero">
@@ -89,7 +89,7 @@ export default function Nightly() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterItem />
+      <FooterLegacy />
     </Box>
   );
 }

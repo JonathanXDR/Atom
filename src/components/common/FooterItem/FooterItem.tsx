@@ -5,7 +5,7 @@ import React from 'react';
 import CreditBadge from '../CreditBadge/CreditBadge';
 import './main.css';
 
-const FooterItem: React.FC = () => {
+const FooterLegacy: React.FC = () => {
   const pathname = usePathname();
   return (
     <Box as="footer">
@@ -59,4 +59,4 @@ const FooterItem: React.FC = () => {
   );
 };
 
-export default FooterItem;
+export default FooterLegacy;

@@ -1,6 +1,6 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import { LinkIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
@@ -12,7 +12,7 @@ export default function Releases() {
   return (
     <>
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="wrapper releases search-page content-push">
           <Box className="markdown-body">
@@ -7308,7 +7308,7 @@ export default function Releases() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterItem />
+      <FooterLegacy />
 
       <Box id="lean_overlay"></Box>
       <Box id="lean_overlay"></Box>

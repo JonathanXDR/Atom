@@ -1,6 +1,6 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import {
   Box,
   Button,
@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <>
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="contact content-push">
           <Box className="wrapper">
@@ -136,7 +136,7 @@ export default function Contact() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterItem />
+      <FooterLegacy />
 
       <Box id="lean_overlay"></Box>
       <Box id="lean_overlay"></Box>

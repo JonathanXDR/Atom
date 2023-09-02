@@ -1,5 +1,5 @@
 'use client';
-import CreditBadge from '@/components/CreditBadge/CreditBadge';
+import CreditBadge from '@/components/common/CreditBadge/CreditBadge';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';

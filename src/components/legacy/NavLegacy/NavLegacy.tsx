@@ -69,7 +69,7 @@ interface NavItemProps {
   };
 }
 
-const NavItemLegacy: React.FC = () => {
+const NavLegacy: React.FC = () => {
   const pathname = usePathname();
   const currentPage = pages.find(
     (page: NavItemProps) => page.href === pathname
@@ -125,4 +125,4 @@ const NavItemLegacy: React.FC = () => {
   );
 };
 
-export default NavItemLegacy;
+export default NavLegacy;

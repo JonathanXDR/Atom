@@ -1,6 +1,6 @@
 'use client';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 
 export default function Themes() {
-  return <NavItemLegacy />;
+  return <NavLegacy />;
 }

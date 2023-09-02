@@ -1,9 +1,9 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import HeroHeader from '@/components/HeroHeader/HeroHeader';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
-import RiverItem from '@/components/RiverItem/RiverItem';
-import SunsetBanner from '@/components/SunsetBanner/SunsetBanner';
+import HeroHeader from '@/components/common/HeroHeader/HeroHeader';
+import RiverItem from '@/components/common/RiverItem/RiverItem';
+import SunsetBanner from '@/components/common/SunsetBanner/SunsetBanner';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import {
   CodeIcon,
   DeviceDesktopIcon,
@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="welcome">
           <Box as="section" className="section section--hero">
@@ -339,7 +339,7 @@ export default function Home() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterItem />
+      <FooterLegacy />
     </>
   );
 }

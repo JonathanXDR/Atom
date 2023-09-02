@@ -1,6 +1,6 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import { CalendarIcon, ChevronRightIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
@@ -11,7 +11,7 @@ export default function Blog() {
   return (
     <>
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="wrapper content-push">
           <Box id="home">
@@ -497,7 +497,7 @@ export default function Blog() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterItem />
+      <FooterLegacy />
     </>
   );
 }

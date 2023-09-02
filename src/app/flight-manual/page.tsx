@@ -1,6 +1,6 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import { Box, Heading } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ export default function FlightManual() {
   return (
     <Box className="layout-toc platform-switch platform-mac">
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="wrapper documents content-push">
           <Box
@@ -1122,7 +1122,7 @@ export default function FlightManual() {
         </Box>
         <Box className="footer-pad"></Box>
       </Box>
-      <FooterItem />
+      <FooterLegacy />
     </Box>
   );
 }

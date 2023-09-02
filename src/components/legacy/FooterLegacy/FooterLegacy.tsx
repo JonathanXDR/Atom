@@ -1,11 +1,11 @@
+import CreditBadge from '@/components/common/CreditBadge/CreditBadge';
 import { Box } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
-import CreditBadge from '../CreditBadge/CreditBadge';
 import './main.css';
 
-const FooterItemLegacy: React.FC = () => {
+const FooterLegacy: React.FC = () => {
   const pathname = usePathname();
   return (
     <Box as="footer">
@@ -59,4 +59,4 @@ const FooterItemLegacy: React.FC = () => {
   );
 };
 
-export default FooterItemLegacy;
+export default FooterLegacy;

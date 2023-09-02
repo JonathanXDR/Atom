@@ -1,6 +1,6 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import {
   ChevronRightIcon,
   ClockIcon,
@@ -112,7 +112,7 @@ export default function Packages() {
   return (
     <>
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="wrapper content-push packages">
           <Heading as="h2" className="center index-title">
@@ -203,7 +203,7 @@ export default function Packages() {
 
         <Box className="footer-pad"></Box>
       </Box>
-      <FooterItem />
+      <FooterLegacy />
       <Box id="lean_overlay"></Box>
       <Box id="lean_overlay"></Box>
       <Box id="lean_overlay"></Box>

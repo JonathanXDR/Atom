@@ -1,6 +1,6 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import {
   DeviceDesktopIcon,
   LinkIcon,
@@ -230,7 +230,7 @@ export default function FAQ() {
   return (
     <Box className="layout-article platform-switch platform-mac">
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="wrapper documents content-push wide">
           <Box
@@ -1399,7 +1399,7 @@ export default function FAQ() {
         </Box>
         <Box className="footer-pad"></Box>
       </Box>
-      <FooterItem />
+      <FooterLegacy />
     </Box>
   );
 }

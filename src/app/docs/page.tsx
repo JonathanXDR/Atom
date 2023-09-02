@@ -1,6 +1,6 @@
 'use client';
-import FooterItem from '@/components/FooterItemLegacy/FooterItemLegacy';
-import NavItemLegacy from '@/components/NavItemLegacy/NavItemLegacy';
+import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import {
   BookIcon,
   CommentDiscussionIcon,
@@ -17,7 +17,7 @@ export default function Docs() {
   return (
     <>
       <Box className="footer-push">
-        <NavItemLegacy />
+        <NavLegacy />
 
         <Box className="wrapper documents content-push wide atom-doc-index">
           <Heading as="h2" className="center index-title">
@@ -125,7 +125,7 @@ export default function Docs() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterItem />
+      <FooterLegacy />
 
       <Box id="lean_overlay"></Box>
       <Box id="lean_overlay"></Box>

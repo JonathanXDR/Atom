@@ -1,5 +1,5 @@
 {
-  "pillars": {
+  "home": {
     "everythingYouExpect": [
       {
         "icon": "DeviceDesktopIcon",
@@ -81,6 +81,54 @@
           "mainText": "Atom is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on { Link }, a framework for building cross platform apps using web technologies.",
           "linkText": "Electron",
           "linkUrl": "https://electronjs.org/"
+        }
+      }
+    ]
+  },
+  "beta": {
+    "tryAtomBeta": [
+      {
+        "icon": "RocketIcon",
+        "description": {
+          "mainText": "Keep your current Atom configuration when using Atom Beta"
+        }
+      },
+      {
+        "icon": "CalendarIcon",
+        "description": {
+          "mainText": "New Beta releases are available regularly and installed automatically"
+        }
+      },
+      {
+        "icon": "BugIcon",
+        "description": {
+          "mainText": "There may be bugs. If you have problems, please { Link }",
+          "linkText": "file an issue",
+          "linkUrl": "https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues"
+        }
+      }
+    ]
+  },
+  "nightly": {
+    "tryAtomNightly": [
+      {
+        "icon": "RocketIcon",
+        "description": {
+          "mainText": "Keep your current Atom configuration when using Atom Nightly"
+        }
+      },
+      {
+        "icon": "CalendarIcon",
+        "description": {
+          "mainText": "New Nightly releases are available every few days and installed automatically"
+        }
+      },
+      {
+        "icon": "BugIcon",
+        "description": {
+          "mainText": "There may be bugs. If you have problems, please { Link }",
+          "linkText": "file an issue",
+          "linkUrl": "https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues"
         }
       }
     ]

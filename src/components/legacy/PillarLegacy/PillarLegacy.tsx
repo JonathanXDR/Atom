@@ -15,7 +15,6 @@ const PillarLegacy: React.FC<PillarLegacyProps> = ({ pillars }) => {
           pillar.icon as keyof typeof octicons
         ] as React.ComponentType<OcticonProps>;
 
-        // Split the mainText around the { Link } placeholder
         const [beforeLink, afterLink] =
           pillar.description.mainText.split('{ Link }');
 
@@ -31,7 +30,7 @@ const PillarLegacy: React.FC<PillarLegacyProps> = ({ pillars }) => {
             >
               <Octicon icon={icon} size={24} />
             </Box>
-            <Heading as="h4">{pillar.title}</Heading>
+            {pillar.title && <Heading as="h4">{pillar.title}</Heading>}
             <Text as="p">
               {beforeLink}
               {pillar.description.linkText && pillar.description.linkUrl && (

@@ -2,7 +2,7 @@ import { OcticonProps } from '@primer/react';
 
 export interface PillarProps {
   icon: OcticonProps['icon'] | string;
-  title: string;
+  title?: string;
   description: {
     mainText: string;
     linkText?: string;

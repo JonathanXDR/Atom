@@ -56,13 +56,13 @@ export default function Home() {
               <Heading as="h3">Everything you would expect</Heading>
 
               <Box className="features">
-                <PillarLegacy pillars={pillars.pillars.everythingYouExpect} />
+                <PillarLegacy pillars={pillars.home.everythingYouExpect} />
               </Box>
 
               <Heading as="h3">Make it your editor</Heading>
 
               <Box className="features">
-                <PillarLegacy pillars={pillars.pillars.makeItYourEditor} />
+                <PillarLegacy pillars={pillars.home.makeItYourEditor} />
               </Box>
             </Box>
           </Box>

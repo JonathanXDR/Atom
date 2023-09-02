@@ -2,9 +2,8 @@ import PrimerProvider from '@/providers/PrimerProvider';
 import '@primer/css/index.scss';
 import '@primer/react-brand/lib/css/main.css';
 import { Metadata } from 'next';
-import { usePathname } from 'next/navigation';
 import './tailwind.css';
-// import '/public/assets/css/application.css';
+import '/public/assets/css/application.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://atom.io'),
@@ -97,19 +96,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname();
-  const currentPage = brandPages.find(
-    (page: BrandPageProps) => page.href === pathname
-  );
-
   return (
     <html lang="en">
       <body className="is-responsive">
-        {currentPage && currentPage.href !== '/' ? (
-          children
-        ) : (
-          <PrimerProvider>{children}</PrimerProvider>
-        )}
+        <PrimerProvider>{children}</PrimerProvider>
       </body>
     </html>
   );

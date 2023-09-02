@@ -1,5 +1,5 @@
 'use client';
-import SunsetBanner from '@/components/common/SunsetBanner/SunsetBanner';
+import SunsetBannerLegacy from '@/components/common/SunsetBannerLegacy/SunsetBannerLegacy';
 import ContactLegacy from '@/components/legacy/ContactLegacy/ContactLegacy';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import HeroHeaderLegacy from '@/components/legacy/HeroHeaderLegacy/HeroHeaderLegacy';
@@ -20,7 +20,7 @@ export default function Home() {
 
         <Box className="welcome">
           <Box as="section" className="section section--hero">
-            <SunsetBanner />
+            <SunsetBannerLegacy />
             <Box className="wrapper">
               <HeroHeaderLegacy />
               <Box className="hero-features">

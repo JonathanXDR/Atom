@@ -1,6 +1,6 @@
 'use client';
-import HeroHeader from '@/components/common/HeroHeader/HeroHeader';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
+import HeroHeaderLegacy from '@/components/legacy/HeroHeaderLegacy/HeroHeaderLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import { BugIcon, CalendarIcon, RocketIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
@@ -15,7 +15,7 @@ export default function Nightly() {
         <Box className="welcome welcome-nightly">
           <Box as="section" className="section section--hero">
             <Box className="wrapper">
-              <HeroHeader />
+              <HeroHeaderLegacy />
             </Box>
           </Box>
           <Box as="section" className="section section--features">

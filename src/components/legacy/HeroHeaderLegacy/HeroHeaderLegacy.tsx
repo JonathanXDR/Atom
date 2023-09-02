@@ -17,7 +17,7 @@ import portalRed from '/public/assets/svg/portal-red.svg';
 import portalYellowSemi from '/public/assets/svg/portal-yellow-semi.svg';
 import portalYellow from '/public/assets/svg/portal-yellow.svg';
 
-const HeroMeta: React.FC = () => {
+const HeroHeaderLegacyLegacy: React.FC = () => {
   const pathname = usePathname();
 
   return (
@@ -158,4 +158,4 @@ const HeroMeta: React.FC = () => {
   );
 };
 
-export default HeroMeta;
+export default HeroHeaderLegacyLegacy;

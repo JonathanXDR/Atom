@@ -1,4 +1,4 @@
-import CreditBadge from '@/components/common/CreditBadge/CreditBadge';
+import CreditBadgeLegacy from '@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy';
 import { Box } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -51,7 +51,7 @@ const FooterLegacy: React.FC = () => {
           </Box>
 
           <Box className="footer-right">
-            <CreditBadge />
+            <CreditBadgeLegacy />
           </Box>
         </Box>
       </Box>

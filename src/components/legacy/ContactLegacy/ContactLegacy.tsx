@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import './main.css';
 
-const ContactItem: React.FC = () => {
+const ContactLegacy: React.FC = () => {
   return (
     <Box as="section" className="section section--contact">
       <Box className="wrapper no-pad">
@@ -26,46 +26,46 @@ const ContactItem: React.FC = () => {
 
           <Box className="column">
             <Heading as="h3">Keep in touch</Heading>
-            <table className="welcome-contact-table">
-              <tbody>
-                <tr>
-                  <td>GitHub</td>
-                  <td>
+            <Box as="table" className="welcome-contact-table">
+              <Box as="tbody">
+                <Box as="tr">
+                  <Box as="td">GitHub</Box>
+                  <Box as="td">
                     <Link href="https://github.com/atom">github.com/atom</Link>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Twitter</td>
-                  <td>
+                  </Box>
+                </Box>
+                <Box as="tr">
+                  <Box as="td">Twitter</Box>
+                  <Box as="td">
                     <Link href="https://twitter.com/atomeditor">
                       @AtomEditor
                     </Link>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Discussions</td>
-                  <td>
+                  </Box>
+                </Box>
+                <Box as="tr">
+                  <Box as="td">Discussions</Box>
+                  <Box as="td">
                     <Link href="https://github.com/atom/atom/discussions">
                       Github Discussions
                     </Link>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Stuff</td>
-                  <td>
+                  </Box>
+                </Box>
+                <Box as="tr">
+                  <Box as="td">Stuff</Box>
+                  <Box as="td">
                     <Link href="https://github.myshopify.com/search?q=atom">
                       Atom Gear
                     </Link>
-                  </td>
-                </tr>
-                <tr>
-                  <td>RSS Feed</td>
-                  <td>
+                  </Box>
+                </Box>
+                <Box as="tr">
+                  <Box as="td">RSS Feed</Box>
+                  <Box as="td">
                     <Link href="/packages.atom">Packages &amp; Themes</Link>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>
@@ -73,4 +73,4 @@ const ContactItem: React.FC = () => {
   );
 };
 
-export default ContactItem;
+export default ContactLegacy;

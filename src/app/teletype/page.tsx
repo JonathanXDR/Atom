@@ -1,5 +1,5 @@
 'use client';
-import CreditBadge from '@/components/common/CreditBadge/CreditBadge';
+import CreditBadgeLegacy from '@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy';
 import { BroadcastIcon, PlayIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
@@ -236,7 +236,7 @@ export default function Teletype() {
         </Box>
 
         <Box className="wrapper love">
-          <CreditBadge />
+          <CreditBadgeLegacy />
         </Box>
       </Box>
     </>

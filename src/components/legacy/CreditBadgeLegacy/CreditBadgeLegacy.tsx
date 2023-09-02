@@ -6,7 +6,7 @@ import {
 import { Octicon } from '@primer/react';
 import Link from 'next/link';
 
-const CreditBadge: React.FC = () => {
+const CreditBadgeLegacyLegacy: React.FC = () => {
   return (
     <Link className="love" href="https://github.com/">
       <Octicon icon={CodeIcon} aria-label="Made" size={16} /> with{' '}
@@ -23,4 +23,4 @@ const CreditBadge: React.FC = () => {
   );
 };
 
-export default CreditBadge;
+export default CreditBadgeLegacyLegacy;

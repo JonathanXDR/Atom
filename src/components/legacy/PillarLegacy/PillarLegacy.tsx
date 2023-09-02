@@ -1,54 +1,59 @@
-/* eslint-disable primer-react/no-system-props */
-import { CalendarIcon, CopilotIcon } from '@primer/octicons-react';
-import { Avatar, Box, Text } from '@primer/react';
-import { Pillar } from '@primer/react-brand';
-import Image from 'next/image';
+import * as octicons from '@primer/octicons-react';
+import { Box, Heading, Link, Octicon, OcticonProps, Text } from '@primer/react';
 import React from 'react';
-import atomNightlyHeading from '/public/assets/png/atom-nightly-heading.png';
+import { PillarProps } from './PillarProps';
 
-const PillarLegacy: React.FC = () => {
+interface PillarLegacyProps {
+  pillars: PillarProps[];
+}
+
+const PillarLegacy: React.FC<PillarLegacyProps> = ({ pillars }) => {
   return (
-    <Pillar>
-      <Pillar.Icon icon={CopilotIcon} color="purple" />
-      <Pillar.Heading>Code search & code view</Pillar.Heading>
-      <Pillar.Description>
-        <Box
-          sx={{
-            marginBottom: 4,
-            display: 'flex',
-            alignItems: 'center',
-            gap: 2,
-          }}
-        >
-          <Box
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 1,
-            }}
-          >
-            <CalendarIcon size={16} /> July 23, 2019
-          </Box>
-          <Box
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 1,
-            }}
-          >
-            <Avatar square src="https://avatars.githubusercontent.com/atom" />
-            <Text sx={{ color: 'fg.muted' }}>Atom</Text>
-          </Box>
-        </Box>
-        <Image src={atomNightlyHeading} alt="Atom Nightly" />
-      </Pillar.Description>
+    <>
+      {pillars.map((pillar: PillarProps, index: number) => {
+        const icon = octicons[
+          pillar.icon as keyof typeof octicons
+        ] as React.ComponentType<OcticonProps>;
 
-      <Pillar.Description>
-        Enables you to rapidly search, navigate, and understand code, right from
-        GitHub.com.
-      </Pillar.Description>
-      <Pillar.Link href="#">Learn more</Pillar.Link>
-    </Pillar>
+        // Split the mainText around the { Link } placeholder
+        const [beforeLink, afterLink] =
+          pillar.description.mainText.split('{ Link }');
+
+        return (
+          <Box className="features-item" key={index}>
+            <Box
+              className="mega-octicon"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <Octicon icon={icon} size={24} />
+            </Box>
+            <Heading as="h4">{pillar.title}</Heading>
+            <Text as="p">
+              {beforeLink}
+              {pillar.description.linkText && pillar.description.linkUrl && (
+                <Link href={pillar.description.linkUrl}>
+                  {pillar.description.linkText}
+                </Link>
+              )}
+              {afterLink}
+            </Text>
+
+            {pillar.externalLink && (
+              <Text as="p">
+                <br />
+                <Link href={pillar.externalLink.url} target="_blank">
+                  {pillar.externalLink.text}
+                </Link>
+              </Text>
+            )}
+          </Box>
+        );
+      })}
+    </>
   );
 };
 

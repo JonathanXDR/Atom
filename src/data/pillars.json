@@ -1,0 +1,88 @@
+{
+  "pillars": {
+    "everythingYouExpect": [
+      {
+        "icon": "DeviceDesktopIcon",
+        "title": "Cross-platform editing",
+        "description": {
+          "mainText": "Atom works across operating systems. Use it on OS X, Windows, or Linux."
+        }
+      },
+      {
+        "icon": "PackageIcon",
+        "title": "Built-in package manager",
+        "description": {
+          "mainText": "Search for and install new packages or create your own right from Atom."
+        }
+      },
+      {
+        "icon": "LightBulbIcon",
+        "title": "Smart autocompletion",
+        "description": {
+          "mainText": "Atom helps you write code faster with a smart and flexible autocomplete."
+        }
+      },
+      {
+        "icon": "FileCodeIcon",
+        "title": "File system browser",
+        "description": {
+          "mainText": "Easily browse and open a single file, a whole project, or multiple projects in one window."
+        }
+      },
+      {
+        "icon": "MirrorIcon",
+        "title": "Multiple panes",
+        "description": {
+          "mainText": "Split your Atom interface into multiple panes to compare and edit code across files."
+        }
+      },
+      {
+        "icon": "SearchIcon",
+        "title": "Find and replace",
+        "description": {
+          "mainText": "Find, preview, and replace text as you type in a file or across all your projects."
+        }
+      }
+    ],
+    "makeItYourEditor": [
+      {
+        "icon": "PackageIcon",
+        "title": "Packages",
+        "description": {
+          "mainText": "Choose from thousands of { Link } that add new features and functionality to Atom, or build a package from scratch and publish it for everyone else to use.",
+          "linkText": "open source packages",
+          "linkUrl": "/packages"
+        }
+      },
+      {
+        "icon": "PaintbrushIcon",
+        "title": "Themes",
+        "description": {
+          "mainText": "Atom comes pre-installed with four UI and eight syntax { Link } in both dark and light colors. Can't find what you're looking for? Install themes created by the Atom community or create your own.",
+          "linkText": "themes",
+          "linkUrl": "/themes"
+        }
+      },
+      {
+        "icon": "ToolsIcon",
+        "title": "Customization",
+        "description": {
+          "mainText": "It's easy to customize and style Atom. Tweak the look and feel of your UI with CSS/Less, and add major features with HTML and JavaScript."
+        },
+        "externalLink": {
+          "text": "See how to set up Atom",
+          "url": "https://www.youtube.com/watch?v=U5POoGSrtGg"
+        }
+      },
+      {
+        "icon": "CodeIcon",
+        "title": "Under the hood",
+        "description": {
+          "mainText": "Atom is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on { Link }, a framework for building cross platform apps using web technologies.",
+          "linkText": "Electron",
+          "linkUrl": "https://electronjs.org/"
+        }
+      }
+    ]
+  }
+}

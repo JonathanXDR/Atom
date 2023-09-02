@@ -1,5 +1,5 @@
 'use client';
-import CreditBadge from '@/components/common/CreditBadge/CreditBadge';
+import CreditBadgeLegacy from '@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
@@ -243,7 +243,7 @@ export default function GitHub() {
           </Box>
         </Box>
         <Box className="section-content love">
-          <CreditBadge />
+          <CreditBadgeLegacy />
         </Box>
       </Box>
     </>

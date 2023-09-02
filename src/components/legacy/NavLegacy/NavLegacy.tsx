@@ -5,6 +5,17 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './main.css';
 
+interface NavProps {
+  href: string;
+  text: string;
+  topBarRight: {
+    icon: OcticonProps['icon'];
+    href: string;
+    text: string;
+    className: string;
+  };
+}
+
 const pages = [
   {
     href: '/packages',
@@ -58,22 +69,9 @@ const pages = [
   },
 ];
 
-interface NavItemProps {
-  href: string;
-  text: string;
-  topBarRight: {
-    icon: OcticonProps['icon'];
-    href: string;
-    text: string;
-    className: string;
-  };
-}
-
 const NavLegacy: React.FC = () => {
   const pathname = usePathname();
-  const currentPage = pages.find(
-    (page: NavItemProps) => page.href === pathname
-  );
+  const currentPage = pages.find((page: NavProps) => page.href === pathname);
 
   return (
     <Box as="nav" className="top-bar" aria-label="Primary">
@@ -90,7 +88,7 @@ const NavLegacy: React.FC = () => {
               </Heading>
             </Box>
           )}
-          {pages.map((page: NavItemProps) => (
+          {pages.map((page: NavProps) => (
             <Box as="li" key={page.href}>
               <Link
                 href={page.href}

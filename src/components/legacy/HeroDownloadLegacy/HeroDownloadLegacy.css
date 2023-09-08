@@ -70,12 +70,12 @@
   text-indent: 230px;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url(/public/assets/png/logo.png);
+  background-image: url(/assets/png/logo.png);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
   .header .logo {
-    background-image: url(/public/assets/png/logo@2x.png);
+    background-image: url(/assets/png/logo@2x.png);
     -webkit-background-size: 290px 60px;
     -moz-background-size: 290px 60px;
     -o-background-size: 290px 60px;
@@ -138,8 +138,7 @@
   flex: 0 0 500px;
   height: 366px;
   background-repeat: no-repeat;
-  background-image: url(/public/assets/svg/logo.svg),
-    url(/public/assets/svg/portal-sides.svg);
+  background-image: url(/assets/svg/logo.svg), url(/assets/svg/portal-sides.svg);
   background-position: center;
   -webkit-user-select: none;
   user-select: none;

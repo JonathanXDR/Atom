@@ -71,10 +71,10 @@ label {
 @font-face {
   font-family: octicons;
   src:
-    url(/public/assets/octicons/octicons.eot#iefix) format('embedded-opentype'),
-    url(/public/assets/octicons/octicons.woff) format('woff'),
-    url(/public/assets/octicons/octicons.ttf) format('truetype'),
-    url(/public/assets/svg/octicons.svg#octicons) format('svg');
+    url(/assets/octicons/octicons.eot#iefix) format('embedded-opentype'),
+    url(/assets/octicons/octicons.woff) format('woff'),
+    url(/assets/octicons/octicons.ttf) format('truetype'),
+    url(/assets/svg/octicons.svg#octicons) format('svg');
   font-weight: 400;
   font-style: normal;
 }

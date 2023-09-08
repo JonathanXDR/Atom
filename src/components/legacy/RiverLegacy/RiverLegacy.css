@@ -241,7 +241,7 @@
 }
 .section--realtime {
   background-repeat: no-repeat;
-  background-image: url(/public/assets/svg/teletype-graphic.svg);
+  background-image: url(/assets/svg/teletype-graphic.svg);
   background-position: calc(50% + 1000px) center;
 }
 .section--realtime .wrapper {
@@ -253,7 +253,7 @@
 }
 .section--ide {
   background-repeat: no-repeat;
-  background-image: url(//web.archive.org/web/20181210171118im_/https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-ide-graphic-099c2e3eacf7ab74afc6cc259e8df4b5.svg);
+  background-image: url(/assets/svg/ide-graphic.svg);
   background-position: calc(50% - 600px) center;
 }
 .section--ide .wrapper {
@@ -275,7 +275,7 @@
 }
 .section--github {
   background-repeat: no-repeat;
-  background-image: url(/public/assets/svg/github-graphic.svg);
+  background-image: url(/assets/svg/github-graphic.svg);
   background-position: calc(50% + 550px) center;
 }
 .section--github .wrapper {

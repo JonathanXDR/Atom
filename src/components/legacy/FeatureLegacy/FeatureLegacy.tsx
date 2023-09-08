@@ -1,18 +1,19 @@
 import * as octicons from '@primer/octicons-react';
 import { Box, Heading, Link, Octicon, OcticonProps, Text } from '@primer/react';
 import React from 'react';
-import { PillarProps } from './PillarProps';
+import { FeatureProps } from './FeatureProps';
 
-interface PillarLegacyProps {
-  pillar: PillarProps;
+interface FeatureLegacyProps {
+  feature: FeatureProps;
 }
 
-const PillarLegacy: React.FC<PillarLegacyProps> = ({ pillar }) => {
+const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
   const icon = octicons[
-    pillar.icon as keyof typeof octicons
+    feature.icon as keyof typeof octicons
   ] as React.ComponentType<OcticonProps>;
 
-  const [beforeLink, afterLink] = pillar.description.mainText.split('{ Link }');
+  const [beforeLink, afterLink] =
+    feature.description.mainText.split('{ Link }');
 
   return (
     <>
@@ -27,22 +28,22 @@ const PillarLegacy: React.FC<PillarLegacyProps> = ({ pillar }) => {
         >
           <Octicon icon={icon} size={24} />
         </Box>
-        {pillar.title && <Heading as="h4">{pillar.title}</Heading>}
+        {feature.title && <Heading as="h4">{feature.title}</Heading>}
         <Text as="p">
           {beforeLink}
-          {pillar.description.linkText && pillar.description.linkUrl && (
-            <Link href={pillar.description.linkUrl}>
-              {pillar.description.linkText}
+          {feature.description.linkText && feature.description.linkUrl && (
+            <Link href={feature.description.linkUrl}>
+              {feature.description.linkText}
             </Link>
           )}
           {afterLink}
         </Text>
 
-        {pillar.externalLink && (
+        {feature.externalLink && (
           <Text as="p">
             <br />
-            <Link href={pillar.externalLink.url} target="_blank">
-              {pillar.externalLink.text}
+            <Link href={feature.externalLink.url} target="_blank">
+              {feature.externalLink.text}
             </Link>
           </Text>
         )}
@@ -51,4 +52,4 @@ const PillarLegacy: React.FC<PillarLegacyProps> = ({ pillar }) => {
   );
 };
 
-export default PillarLegacy;
+export default FeatureLegacy;

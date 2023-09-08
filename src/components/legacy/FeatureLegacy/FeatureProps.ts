@@ -1,6 +1,6 @@
 import { OcticonProps } from '@primer/react';
 
-export interface PillarProps {
+export interface FeatureProps {
   icon: OcticonProps['icon'] | string;
   title?: string;
   description: {

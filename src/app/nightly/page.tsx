@@ -1,8 +1,8 @@
 'use client';
+import FeatureLegacy from '@/components/legacy/FeatureLegacy/FeatureLegacy';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import HeroHeaderLegacy from '@/components/legacy/HeroHeaderLegacy/HeroHeaderLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import PillarLegacy from '@/components/legacy/PillarLegacy/PillarLegacy';
 import pillars from '@/data/pillars.json';
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
@@ -34,7 +34,7 @@ export default function Nightly() {
                 for more information.
               </Text>
 
-              <PillarLegacy pillars={pillars.nightly.tryAtomNightly} />
+              <FeatureLegacy pillars={pillars.nightly.tryAtomNightly} />
             </Box>
           </Box>
         </Box>

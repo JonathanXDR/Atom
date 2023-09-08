@@ -1,11 +1,7 @@
 'use client';
-import { DownloadIcon } from '@primer/octicons-react';
-import { Box, Text } from '@primer/react';
+import { Box } from '@primer/react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import './main.css';
-import atomWordmark from '/public/assets/svg/atom-wordmark.svg';
 import portalBlueSemi from '/public/assets/svg/portal-blue-semi.svg';
 import portalBlue from '/public/assets/svg/portal-blue.svg';
 import portalGreenSemi from '/public/assets/svg/portal-green-semi.svg';
@@ -17,11 +13,9 @@ import portalRed from '/public/assets/svg/portal-red.svg';
 import portalYellowSemi from '/public/assets/svg/portal-yellow-semi.svg';
 import portalYellow from '/public/assets/svg/portal-yellow.svg';
 
-const HeroHeaderLegacyLegacy: React.FC = () => {
-  const pathname = usePathname();
-
+const HeroLogoLegacy: React.FC = () => {
   return (
-    <Box as="header" className="hero-header">
+    <>
       <Box className="hero-header-item hero-logo" aria-hidden="true">
         <Box className="hero-logo-circles">
           <Image
@@ -86,76 +80,8 @@ const HeroHeaderLegacyLegacy: React.FC = () => {
           />
         </Box>
       </Box>
-      <Box as="ul" className="hero-header-item hero-download">
-        <Box as="li">
-          <Image
-            className="logo-wordmark"
-            src={atomWordmark}
-            alt="atom-wordmark"
-            style={{ width: '100%', height: '100%' }}
-          />
-        </Box>
-        <Box as="li">
-          <Text className="version">
-            {pathname === '/nightly'
-              ? 'Nightly'
-              : pathname === '/beta'
-              ? 'BETA'
-              : '1.63'}
-          </Text>
-          <Link href="/releases">Release notes</Link>
-        </Box>
-
-        <Box as="li">
-          <Text className="platform">macOS</Text>
-          <Text className="support">For macOS 10.10 or later</Text>
-        </Box>
-        <Box as="li">
-          <Link
-            href={
-              pathname === '/nightly'
-                ? '/download/mac?channel=nightly'
-                : pathname === '/beta'
-                ? '/download/mac?channel=beta'
-                : '/download/mac'
-            }
-            className="welcome-button"
-          >
-            <DownloadIcon size={16} />
-            Download
-          </Link>
-        </Box>
-      </Box>
-      <Text as="p" className="hero-meta">
-        <Text className="hero-tos">
-          By downloading, you agree to the{' '}
-          <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
-            Terms and Conditions
-          </Link>
-          .
-        </Text>
-        <Link
-          href={
-            pathname === '/nightly'
-              ? 'https://github.com/atom/atom-nightly-releases/releases'
-              : pathname === '/beta'
-              ? 'https://github.com/atom/atom/releases'
-              : 'https://github.com/atom/atom/releases/latest'
-          }
-        >
-          Other platforms
-        </Link>
-        {pathname === '/nightly' || pathname === '/beta' ? (
-          <Link href="/">Back to Atom Stable</Link>
-        ) : (
-          <>
-            <Link href="/beta">Try Atom Beta</Link>
-            <Link href="/nightly">Try Atom Nightly</Link>
-          </>
-        )}
-      </Text>
-    </Box>
+    </>
   );
 };
 
-export default HeroHeaderLegacyLegacy;
+export default HeroLogoLegacy;

@@ -1,13 +1,15 @@
 'use client';
-import SunsetBannerLegacy from '@/components/common/SunsetBannerLegacy/SunsetBannerLegacy';
 import ContactLegacy from '@/components/legacy/ContactLegacy/ContactLegacy';
+import FeatureLegacy from '@/components/legacy/FeatureLegacy/FeatureLegacy';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
-import HeroHeaderLegacy from '@/components/legacy/HeroHeaderLegacy/HeroHeaderLegacy';
+import HeroDownloadLegacy from '@/components/legacy/HeroDownloadLegacy/HeroDownloadLegacy';
+import HeroLogoLegacy from '@/components/legacy/HeroLogoLegacy/HeroLogoLegacy';
+import HeroMetaLegacy from '@/components/legacy/HeroMetaLegacy/HeroMetaLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import PillarLegacy from '@/components/legacy/PillarLegacy/PillarLegacy';
 import RiverLegacy from '@/components/legacy/RiverLegacy/RiverLegacy';
+import SunsetBannerLegacy from '@/components/legacy/SunsetBannerLegacy/SunsetBannerLegacy';
 import TagLegacy from '@/components/legacy/TagLegacy/TagLegacy';
-import pillars from '@/data/pillars.json';
+import features from '@/data/features.json';
 import tags from '@/data/tags.json';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
@@ -23,7 +25,11 @@ export default function Home() {
           <Box as="section" className="section section--hero">
             <SunsetBannerLegacy />
             <Box className="wrapper">
-              <HeroHeaderLegacy />
+              <Box as="header" className="hero-header">
+                <HeroLogoLegacy />
+                <HeroDownloadLegacy />
+                <HeroMetaLegacy />
+              </Box>
               <Box className="hero-features">
                 <Heading as="h1" className="hero-tagline">
                   A hackable
@@ -47,15 +53,15 @@ export default function Home() {
             <Box className="wrapper no-pad">
               <Heading as="h3">Everything you would expect</Heading>
               <Box className="features">
-                {pillars.home.everythingYouExpect.map((pillar, index) => {
-                  return <PillarLegacy pillar={pillar} key={index} />;
+                {features.home.everythingYouExpect.map((feature, index) => {
+                  return <FeatureLegacy feature={feature} key={index} />;
                 })}
               </Box>
 
               <Heading as="h3">Make it your editor</Heading>
               <Box className="features">
-                {pillars.home.makeItYourEditor.map((pillar, index) => {
-                  return <PillarLegacy pillar={pillar} key={index} />;
+                {features.home.makeItYourEditor.map((feature, index) => {
+                  return <FeatureLegacy feature={feature} key={index} />;
                 })}
               </Box>
             </Box>

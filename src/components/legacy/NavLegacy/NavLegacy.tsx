@@ -3,7 +3,7 @@ import { RssIcon, SignInIcon } from '@primer/octicons-react';
 import { Box, Heading, Octicon, OcticonProps } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import './main.css';
+import './NavLegacy.module.css';
 
 interface NavProps {
   href: string;

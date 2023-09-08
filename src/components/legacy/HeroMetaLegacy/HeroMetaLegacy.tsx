@@ -2,7 +2,7 @@
 import { Text } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import './main.css';
+import './HeroMetaLegacy.module.css';
 
 const HeroMetaLegacy: React.FC = () => {
   const pathname = usePathname();

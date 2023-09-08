@@ -3,7 +3,7 @@ import { Box } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
-import './main.css';
+import './FooterLegacy.module.css';
 
 const FooterLegacy: React.FC = () => {
   const pathname = usePathname();

@@ -1,7 +1,7 @@
 'use client';
 import { Box } from '@primer/react';
 import Image from 'next/image';
-import './main.css';
+import './HeroLogoLegacy.module.css';
 import portalBlueSemi from '/public/assets/svg/portal-blue-semi.svg';
 import portalBlue from '/public/assets/svg/portal-blue.svg';
 import portalGreenSemi from '/public/assets/svg/portal-green-semi.svg';

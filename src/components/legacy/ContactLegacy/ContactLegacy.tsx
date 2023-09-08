@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
 import React from 'react';
-import './main.css';
+import './ContactLegacy.module.css';
 
 const ContactLegacy: React.FC = () => {
   return (

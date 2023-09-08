@@ -1,7 +1,7 @@
 import * as octicons from '@primer/octicons-react';
 import { Box, Heading, Link, Octicon, OcticonProps, Text } from '@primer/react';
 import React from 'react';
-import './FeatureLegacy.module.css';
+import './FeatureLegacy.css';
 import { FeatureProps } from './FeatureProps';
 
 interface FeatureLegacyProps {

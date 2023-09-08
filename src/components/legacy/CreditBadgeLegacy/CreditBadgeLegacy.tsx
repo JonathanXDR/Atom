@@ -5,7 +5,7 @@ import {
 } from '@primer/octicons-react';
 import { Octicon } from '@primer/react';
 import Link from 'next/link';
-import './CreditBadgeLegacy.module.css';
+import './CreditBadgeLegacy.css';
 
 const CreditBadgeLegacyLegacy: React.FC = () => {
   return (

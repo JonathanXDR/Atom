@@ -1,0 +1,18 @@
+{
+  "home": {
+    "hackableTextEditor": [
+      {
+        "title": "Real-time collaboration",
+        "link": "#teletype"
+      },
+      {
+        "title": "IDE features",
+        "link": "#ide"
+      },
+      {
+        "title": "Git and GitHub integration",
+        "link": "#github"
+      }
+    ]
+  }
+}

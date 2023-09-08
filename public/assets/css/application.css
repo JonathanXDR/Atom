@@ -70,7 +70,8 @@ input[type='search']:focus,
 textarea.focus,
 textarea:focus {
   border-color: #51a7e8;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.075),
     0 0 5px rgba(81, 167, 232, 0.5);
 }
 
@@ -1406,8 +1407,14 @@ p.explain .minibutton {
   z-index: 1000000;
   display: none;
   padding: 5px 8px;
-  font: normal normal 10px/1.5 Helvetica, arial, freesans, clean, sans-serif,
-    'Segoe UI Emoji', 'Segoe UI Symbol';
+  font:
+    normal normal 10px/1.5 Helvetica,
+    arial,
+    freesans,
+    clean,
+    sans-serif,
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -2613,7 +2620,8 @@ body.menu-active .modal-backdrop {
 @charset "UTF-8";
 @font-face {
   font-family: 'octicons';
-  src: url(../octicons/octicons.eot#iefix) format('embedded-opentype'),
+  src:
+    url(../octicons/octicons.eot#iefix) format('embedded-opentype'),
     url(../octicons/octicons.woff) format('woff'),
     url(../octicons/octicons.ttf) format('truetype'),
     url(../svg/octicons.svg#octicons) format('svg');
@@ -8632,7 +8640,8 @@ a.hero-link {
   line-height: 1;
   color: #ccc;
   border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2),
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.2),
     inset 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 /* line 46, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek.scss */

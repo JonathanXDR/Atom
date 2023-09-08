@@ -6,10 +6,11 @@ import HeroHeaderLegacy from '@/components/legacy/HeroHeaderLegacy/HeroHeaderLeg
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import PillarLegacy from '@/components/legacy/PillarLegacy/PillarLegacy';
 import RiverLegacy from '@/components/legacy/RiverLegacy/RiverLegacy';
+import TagLegacy from '@/components/legacy/TagLegacy/TagLegacy';
 import pillars from '@/data/pillars.json';
+import tags from '@/data/tags.json';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
-import Link from 'next/link';
 import octonaut from '/public/assets/svg/octonaut.svg';
 
 export default function Home() {
@@ -32,18 +33,9 @@ export default function Home() {
                   </Text>{' '}
                   for the 21st Century
                 </Heading>
-                <Link
-                  className="hero-link hero-link--teletype"
-                  href="#teletype"
-                >
-                  Real-time collaboration
-                </Link>
-                <Link className="hero-link hero-link--ide" href="#ide">
-                  IDE features
-                </Link>
-                <Link className="hero-link hero-link--github" href="#github">
-                  Git and GitHub integration
-                </Link>
+                {tags.home.hackableTextEditor.map((tag, index) => {
+                  return <TagLegacy tag={tag} key={index} />;
+                })}
               </Box>
               <Image className="hero-octonaut" src={octonaut} alt="octonaut" />
             </Box>
@@ -54,15 +46,17 @@ export default function Home() {
           <Box as="section" className="section section--features">
             <Box className="wrapper no-pad">
               <Heading as="h3">Everything you would expect</Heading>
-
               <Box className="features">
-                <PillarLegacy pillars={pillars.home.everythingYouExpect} />
+                {pillars.home.everythingYouExpect.map((pillar, index) => {
+                  return <PillarLegacy pillar={pillar} key={index} />;
+                })}
               </Box>
 
               <Heading as="h3">Make it your editor</Heading>
-
               <Box className="features">
-                <PillarLegacy pillars={pillars.home.makeItYourEditor} />
+                {pillars.home.makeItYourEditor.map((pillar, index) => {
+                  return <PillarLegacy pillar={pillar} key={index} />;
+                })}
               </Box>
             </Box>
           </Box>

@@ -1,6 +1,7 @@
 'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
+import nav from '@/data/nav.json';
 import {
   ChevronRightIcon,
   ClockIcon,
@@ -112,7 +113,7 @@ export default function Packages() {
   return (
     <>
       <Box className="footer-push">
-        <NavLegacy />
+        <NavLegacy pages={nav.pages} />
 
         <Box className="wrapper content-push packages">
           <Heading as="h2" className="center index-title">

@@ -1,6 +1,7 @@
 'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
+import nav from '@/data/nav.json';
 import {
   DeviceDesktopIcon,
   LinkIcon,
@@ -230,7 +231,7 @@ export default function FAQ() {
   return (
     <Box className="layout-article platform-switch platform-mac">
       <Box className="footer-push">
-        <NavLegacy />
+        <NavLegacy pages={nav.pages} />
 
         <Box className="wrapper documents content-push wide">
           <Box

@@ -1,6 +1,6 @@
 'use client';
-import * as octicons from '@primer/octicons-react';
-import { Box, Heading, Octicon, OcticonProps } from '@primer/react';
+import { RssIcon, SignInIcon } from '@primer/octicons-react';
+import { Box, Heading, Octicon } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './NavLegacy.css';
@@ -12,13 +12,6 @@ interface NavLegacyProps {
 
 const NavLegacy: React.FC<NavLegacyProps> = ({ pages }) => {
   const pathname = usePathname();
-  const currentPage = pages.find((page: PageProps) => {
-    page.href === pathname;
-  });
-  console.log(currentPage?.topBarRight.icon);
-  const icon = octicons[
-    currentPage?.topBarRight.icon as keyof typeof octicons
-  ] as React.ComponentType<OcticonProps>;
 
   return (
     <Box as="nav" className="top-bar" aria-label="Primary">
@@ -36,35 +29,42 @@ const NavLegacy: React.FC<NavLegacyProps> = ({ pages }) => {
             </Box>
           )}
           {pages.map((page: PageProps) => (
-            <Box as="li" key={page.href}>
+            <Box as="li" key={page.link}>
               <Link
-                href={page.href}
-                className={pathname === page.href ? 'is-selected' : ''}
+                href={page.link}
+                className={pathname === page.link ? 'is-selected' : ''}
               >
-                {page.text}
+                {page.title}
               </Link>
             </Box>
           ))}
         </Box>
 
-        {currentPage?.topBarRight && (
-          <Box className="top-bar-right">
-            <Link
-              href={currentPage.topBarRight.href}
-              key={currentPage.topBarRight.href}
-              className={currentPage.topBarRight.className}
-            >
+        <Box className="top-bar-right">
+          {pathname === '/blog' ? (
+            <Link href="/blog/feed.xml" className="rss-link">
               <Octicon
-                icon={icon}
+                icon={RssIcon}
                 size={16}
                 sx={{
                   padding: '0',
                 }}
               />{' '}
-              {currentPage.topBarRight.text}
+              Subscribe
             </Link>
-          </Box>
-        )}
+          ) : (
+            <Link href="/login">
+              <Octicon
+                icon={SignInIcon}
+                size={16}
+                sx={{
+                  padding: '0',
+                }}
+              />{' '}
+              Sign in
+            </Link>
+          )}
+        </Box>
       </Box>
     </Box>
   );

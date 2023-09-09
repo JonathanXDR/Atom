@@ -1,6 +1,7 @@
 'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
+import nav from '@/data/nav.json';
 import {
   Box,
   Button,
@@ -15,7 +16,7 @@ export default function Contact() {
   return (
     <>
       <Box className="footer-push">
-        <NavLegacy />
+        <NavLegacy pages={nav.pages} />
 
         <Box className="contact content-push">
           <Box className="wrapper">

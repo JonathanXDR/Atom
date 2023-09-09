@@ -1,54 +1,12 @@
 {
   "pages": [
+    { "title": "Packages", "link": "/packages" },
+    { "title": "Themes", "link": "/themes" },
+    { "title": "Documentation", "link": "/docs" },
+    { "title": "Blog", "link": "/blog" },
     {
-      "href": "/packages",
-      "text": "Packages",
-      "topBarRight": {
-        "icon": "SignInIcon",
-        "href": "/login",
-        "text": "Sign in",
-        "className": ""
-      }
-    },
-    {
-      "href": "/themes",
-      "text": "Themes",
-      "topBarRight": {
-        "icon": "SignInIcon",
-        "href": "/login",
-        "text": "Sign in",
-        "className": ""
-      }
-    },
-    {
-      "href": "/docs",
-      "text": "Documentation",
-      "topBarRight": {
-        "icon": "SignInIcon",
-        "href": "/login",
-        "text": "Sign in",
-        "className": ""
-      }
-    },
-    {
-      "href": "/blog",
-      "text": "Blog",
-      "topBarRight": {
-        "icon": "RssIcon",
-        "href": "/blog/feed.xml",
-        "text": "Subscribe",
-        "className": "rss-link"
-      }
-    },
-    {
-      "href": "https://github.com/atom/atom/discussions",
-      "text": " Discussions",
-      "topBarRight": {
-        "icon": "SignInIcon",
-        "href": "/login",
-        "text": "Sign in",
-        "className": ""
-      }
+      "title": " Discussions",
+      "link": "https://github.com/atom/atom/discussions"
     }
   ]
 }

@@ -1,5 +1,7 @@
+import { fetchImageDimensions } from '@/helpers/image-size';
 import { Box, Heading, Link, Text } from '@primer/react';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import './RiverLegacy.css';
 import { RiverProps } from './RiverProps';
 
@@ -8,6 +10,20 @@ interface RiverLegacyProps {
 }
 
 const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
+  const [dimensions, setDimensions] = useState<{
+    width?: number;
+    height?: number;
+  }>({});
+
+  useEffect(() => {
+    const fetchDimensions = async () => {
+      const dimensions = await fetchImageDimensions(river.image.url);
+      setDimensions(dimensions);
+    };
+
+    fetchDimensions();
+  }, [river.image.url]);
+
   const [beforeLink, afterLink] = river.description.text.split('{ Link }');
 
   return (
@@ -24,13 +40,17 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
             )}
             {afterLink}
           </Text>
-          <Box className="welcome-bgs">
-            <Image
-              className="welcome-bg welcome-bg--screenshot"
-              src={river.image.url}
-              alt={river.image.alt}
-            />
-          </Box>
+          {dimensions.width && dimensions.height && (
+            <Box className="welcome-bgs">
+              <Image
+                className="welcome-bg welcome-bg--screenshot"
+                width={dimensions.width}
+                height={dimensions.height}
+                src={river.image.url}
+                alt={river.image.alt}
+              />
+            </Box>
+          )}
           {river.link && (
             <Text as="p" className="welcome-cta">
               <Link href={river.link.url} className="welcome-button">

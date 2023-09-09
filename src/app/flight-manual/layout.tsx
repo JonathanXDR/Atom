@@ -2,6 +2,7 @@ import '@primer/css/index.scss';
 import '@primer/react-brand/lib/css/main.css';
 import { Metadata } from 'next';
 import '../tailwind.css';
+import './main.css';
 
 import '/public/assets/css/flight-manual.css';
 

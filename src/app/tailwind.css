@@ -340,18 +340,3 @@ h6 {
     transform: rotate(-1turn);
   }
 }
-@media (min-width: 1101px) {
-  @supports (display: grid) {
-    .welcome .section--features .wrapper {
-      max-width: none;
-    }
-    .welcome .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 100px 66.6666666667px;
-    }
-    .welcome .features-item.features-item {
-      margin-top: 0;
-    }
-  }
-}

@@ -4,7 +4,7 @@ import { Box, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-// import './HeroDownloadLegacy.css';
+import './HeroDownloadLegacy.css';
 import atomWordmark from '/public/assets/svg/atom-wordmark.svg';
 
 const HeroDownloadLegacy: React.FC = () => {

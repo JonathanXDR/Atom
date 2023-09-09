@@ -15,12 +15,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 /* line 18, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 html {
   height: 100%;
 }
-
 /* line 22, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 body {
   height: 100%;
@@ -30,7 +28,6 @@ body {
   font: 16px/1.7 normal normal;
   font-family: 'Helvetica Neue', Helvetica, arial, freesans, clean, sans-serif;
 }
-
 /* line 31, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .wrapper {
   width: 860px;
@@ -48,13 +45,11 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
-
 /* line 50, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .content-push {
   margin-top: 40px;
   height: 100%;
 }
-
 /* line 55, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .footer-push {
   min-height: 100%;
@@ -62,12 +57,10 @@ body {
   height: 100%;
   margin-bottom: -55px;
 }
-
 /* line 62, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .footer-pad {
   height: 95px;
 }
-
 /* line 66, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 a {
   color: #3b9b6d;
@@ -77,7 +70,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 /* line 73, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 h1,
 h2,
@@ -96,7 +88,6 @@ h5.center,
 h6.center {
   text-align: center;
 }
-
 /* line 78, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 hr {
   border: 0;
@@ -106,7 +97,6 @@ hr {
   width: 100%;
   clear: both;
 }
-
 /* line 87, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .top-bar {
   text-align: left;
@@ -167,7 +157,6 @@ hr {
 .top-bar .minibutton {
   margin: 4px 0;
 }
-
 /* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .logo-small {
   width: 114px;
@@ -186,7 +175,6 @@ hr {
     background-size: 114px 24px;
   }
 }
-
 /* line 155, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .header {
   width: 100%;
@@ -235,7 +223,6 @@ hr {
   padding: 5px 10px;
   font-size: 14px;
 }
-
 /* line 194, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .navigation {
   list-style-type: none;
@@ -266,7 +253,6 @@ hr {
 .navigation a:hover {
   text-decoration: none;
 }
-
 /* line 219, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .footer {
   background-color: #efeae1;
@@ -311,7 +297,6 @@ hr {
 .footer .octicon-logo-github {
   top: 2px;
 }
-
 /* line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .tabs {
   display: inline-block;
@@ -333,7 +318,6 @@ hr {
   padding: 10px 16px;
   font-size: 18px;
 }
-
 /* line 278, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .columns {
   overflow: hidden;
@@ -378,7 +362,6 @@ hr {
   font-weight: 300;
   font-size: 36px;
 }
-
 /* line 316, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .search-page .search-results {
   padding-left: 0;
@@ -420,7 +403,6 @@ hr {
 .search-page .markdown a {
   color: #574c4f;
 }
-
 /* line 352, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .docs-search-results h3 {
   margin: 0;
@@ -436,25 +418,21 @@ hr {
 .docs-search-results li:first-child {
   border-top-color: #ddd;
 }
-
 /* line 368, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .docs-search-results-header {
   margin: 0;
   line-height: 18px;
 }
-
 /* line 373, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .sidebar-search-field {
   width: 100%;
   font-size: 14px;
   padding: 5px;
 }
-
 /* line 379, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .octicon:hover {
   text-decoration: none;
 }
-
 /* line 383, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .flash {
   text-align: left;
@@ -479,13 +457,11 @@ hr {
   border-top: 1px solid #edddd8;
   background-color: #ffede7;
 }
-
 /* line 406, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .gravatar {
   border-radius: 3px;
   border: 0;
 }
-
 /* line 413, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .hero .flash.notice,
 .hero .flash.alert,
@@ -494,7 +470,6 @@ hr {
   background-color: transparent;
   border-top: 0;
 }
-
 /* line 420, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .card {
   list-style-type: none;
@@ -514,13 +489,11 @@ hr {
   background-color: #fafafa;
   line-height: 1;
 }
-
 /* line 439, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .index-title {
   font-size: 32px;
   font-weight: 400;
 }
-
 /* line 444, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .thirds,
 .halves {
@@ -533,17 +506,14 @@ hr {
   float: left;
   padding-right: 20px;
 }
-
 /* line 454, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .halves .grid-cell {
   width: 50%;
 }
-
 /* line 458, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .thirds .grid-cell {
   width: 33.3%;
 }
-
 /* line 462, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .nope {
   position: absolute;
@@ -567,12 +537,10 @@ hr {
     background-size: 256px 86px;
   }
 }
-
 /* line 474, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .sunset-text-color {
   color: #ffd152;
 }
-
 /* line 478, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/main.scss */
 .sunset-banner {
   padding: 10px;
@@ -624,7 +592,6 @@ hr {
   font-size: 80%;
   color: #9e9b95;
 }
-
 /* line 12, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .package-list {
   margin-bottom: 20px;
@@ -722,7 +689,6 @@ hr {
   vertical-align: middle;
   margin-left: 5px;
 }
-
 /* line 90, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .card {
   position: relative;
@@ -803,7 +769,6 @@ hr {
   height: 132px;
   line-height: 132px;
 }
-
 /* line 173, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .package-card .card-name,
 .project-card .card-name {
@@ -938,27 +903,23 @@ hr {
   height: 24px;
   width: 24px;
 }
-
 /* line 290, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .search-form {
   display: flex;
   margin-bottom: 40px;
 }
-
 /* line 295, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 input.search-input {
   flex: 1;
   font-size: 18px;
   -webkit-appearance: none;
 }
-
 /* line 301, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .search-button {
   margin-left: 7px;
   padding: 7px 14px;
   line-height: 21px;
 }
-
 /* line 307, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .package-header {
   margin-bottom: 40px;
@@ -977,7 +938,6 @@ input.search-input {
   font-weight: bold;
   font-size: 16px;
 }
-
 /* line 325, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .manual-install {
   margin-top: 2px;
@@ -996,7 +956,6 @@ input.search-input {
   position: absolute;
   left: 5px;
 }
-
 /* line 343, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .star-box {
   display: inline-block;
@@ -1014,7 +973,6 @@ input.search-input {
 .star-box .star-button .octicon {
   margin-right: 0px;
 }
-
 /* line 359, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .package-meta {
   font-size: 14px;
@@ -1160,7 +1118,6 @@ input.search-input {
 .package-meta .minibutton {
   margin-top: 20px;
 }
-
 /* line 500, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .all-packages {
   margin-top: 20px;
@@ -1170,13 +1127,11 @@ input.search-input {
 .all-packages .button {
   margin-top: 20px;
 }
-
 /* line 507, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .version-callout {
   font-size: 16px;
   color: #9e9b95;
 }
-
 /* line 512, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .official-package {
   font-size: 16px;
@@ -1186,12 +1141,10 @@ input.search-input {
   display: block;
   height: 50px;
 }
-
 /* line 521, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .readme {
   margin-top: 40px;
 }
-
 /* line 525, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .malicious-package-warning {
   position: relative;
@@ -1220,13 +1173,11 @@ input.search-input {
   top: 16px;
   right: 14px;
 }
-
 /* line 549, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .stargazers-header {
   font-size: 30px;
   font-weight: 300;
 }
-
 /* line 555, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .theme-card .upload-image.button {
   margin: 0px;
@@ -1289,7 +1240,6 @@ input.search-input {
   top: 0;
   left: 0;
 }
-
 /* line 616, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .card-cells {
   display: table;
@@ -1304,7 +1254,6 @@ input.search-input {
 .card-cells .gravatar-cell {
   width: 53px;
 }
-
 /* line 630, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 #crop-modal {
   background: #efeae1;
@@ -1371,7 +1320,6 @@ input.search-input {
 #crop-modal .jcrop-holder img {
   border: 1px solid #ddd !important;
 }
-
 /* line 686, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/packages.scss */
 .package-show .css-truncate-target {
   max-width: auto;
@@ -1465,7 +1413,6 @@ input.search-input {
 .select-menu-button.icon-only:before {
   right: 8px;
 }
-
 /* line 40, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-button.primary:before {
   border-top-color: #fff;
@@ -1474,7 +1421,6 @@ input.search-input {
 .select-menu-button.primary:hover:active {
   background-color: #4a993e;
 }
-
 /* line 61, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu .spinner {
   float: left;
@@ -1519,7 +1465,6 @@ input.search-input {
 .select-menu.has-error .select-menu-error-shell {
   display: block;
 }
-
 /* line 100, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-loading-overlay {
   display: none;
@@ -1550,7 +1495,6 @@ input.search-input {
   -webkit-font-smoothing: antialiased;
   text-indent: 0;
 }
-
 @keyframes pulse {
   0% {
     color: rgba(170, 170, 170, 0.1);
@@ -1610,14 +1554,12 @@ input.search-input {
   background-color: #ffeaea;
   border: 1px solid #e2a0a0;
 }
-
 /* line 161, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-modal-holder {
   position: absolute;
   display: none;
   z-index: 21;
 }
-
 /* line 170, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-modal {
   position: relative;
@@ -1634,7 +1576,6 @@ input.search-input {
   border-radius: 5px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
 }
-
 /* line 189, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-header {
   padding: 8px 10px;
@@ -1662,12 +1603,10 @@ input.search-input {
 .select-menu-header .octicon:hover {
   color: #555;
 }
-
 /* line 213, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-filters {
   background-color: #f8f8f8;
 }
-
 /* line 220, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-text-filter {
   padding: 10px 10px 0;
@@ -1691,7 +1630,6 @@ input.search-input {
 .select-menu-text-filter input:-moz-placeholder {
   color: #aaa;
 }
-
 /* line 244, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-tabs {
   height: 33px;
@@ -1730,7 +1668,6 @@ input.search-input {
   background-color: #fff;
   color: #333;
 }
-
 /* line 289, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-list {
   max-height: 400px;
@@ -1745,7 +1682,6 @@ input.search-input {
 .select-menu-list.select-menu-tab-bucket.selected {
   display: block;
 }
-
 /* line 304, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item {
   cursor: pointer;
@@ -1870,19 +1806,16 @@ input.search-input {
   display: table-cell;
   max-width: 100%;
 }
-
 /* line 389, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 form.select-menu-item > div:first-child {
   display: none !important;
 }
-
 /* line 393, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item.last-visible,
 .select-menu-list:last-child .select-menu-item:last-child {
   border-bottom: 0;
   border-radius: 0 0 3px 3px;
 }
-
 /* line 401, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-actions .select-menu-item:hover {
   background-color: #4183c4;
@@ -1896,7 +1829,6 @@ form.select-menu-item > div:first-child {
 .select-menu-actions .select-menu-item:hover .description {
   color: #fff;
 }
-
 /* line 415, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-no-results {
   padding: 9px;
@@ -1909,7 +1841,6 @@ form.select-menu-item > div:first-child {
 .select-menu-no-results:only-child {
   display: block;
 }
-
 /* line 432, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-button-gravatar,
 .select-menu-item-gravatar {
@@ -1925,7 +1856,6 @@ form.select-menu-item > div:first-child {
   display: inline-block;
   border-radius: 3px;
 }
-
 /* line 446, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item-gravatar {
   display: table-cell;
@@ -1933,7 +1863,6 @@ form.select-menu-item > div:first-child {
   vertical-align: top;
   width: 28px;
 }
-
 /* line 453, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-button-gravatar {
   display: inline-block;
@@ -1941,7 +1870,6 @@ form.select-menu-item > div:first-child {
   margin-right: 5px;
   vertical-align: middle;
 }
-
 /* line 463, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-item-text {
   display: table-cell;
@@ -1971,7 +1899,6 @@ form.select-menu-item > div:first-child {
   font-weight: normal;
   display: inline;
 }
-
 /* line 493, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-footer {
   padding: 8px;
@@ -1988,7 +1915,6 @@ form.select-menu-item > div:first-child {
 .select-menu-footer .octicon {
   color: #666;
 }
-
 /* line 511, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-new-item-form {
   display: none;
@@ -1997,7 +1923,6 @@ form.select-menu-item > div:first-child {
 .select-menu-new-item-form .octicon {
   color: #4183c4;
 }
-
 /* line 517, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .select-menu-list.is-showing-new-item-form .select-menu-new-item-form {
   display: table;
@@ -2007,7 +1932,6 @@ form.select-menu-item > div:first-child {
 .select-menu-list.is-showing-new-item-form .select-menu-clear-item {
   display: none;
 }
-
 /* line 525, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/select-menu.scss */
 .modal-backdrop {
   display: none;
@@ -2070,7 +1994,6 @@ body.menu-active .modal-backdrop {
   padding: 2px 5px;
   vertical-align: 4px;
 }
-
 /* line 49, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/users.scss */
 .user-card .user-login {
   font-weight: 300;
@@ -2128,23 +2051,19 @@ body.menu-active .modal-backdrop {
   font-size: 0.9em;
   color: #8e8373;
 }
-
 /* line 153, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-header {
   align-items: center;
 }
-
 /* line 157, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-header-item {
   flex: 1;
 }
-
 /* line 164, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-features {
   margin: 133.3333333333px 0 0 0;
   padding: 0 10px;
 }
-
 /* line 169, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-tagline {
   margin: 0 0 0.5em 0;
@@ -2152,13 +2071,11 @@ body.menu-active .modal-backdrop {
   letter-spacing: 0.05em;
   font-weight: 200;
 }
-
 /* line 176, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-tagline-highlight {
   font-weight: inherit;
   color: #78b0a0;
 }
-
 /* line 179, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 a.hero-link {
   display: inline-block;
@@ -2169,176 +2086,6 @@ a.hero-link {
   border: 1px solid #4e4b4d;
   border-radius: 0.25em;
 }
-
-/* line 184, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo {
-  flex: 0 0 500px;
-  height: 366px;
-  background-repeat: no-repeat;
-  background-image: url(../svg/logo.svg), url(../svg/portal-sides.svg);
-  background-position: center;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-/* line 194, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circles {
-  width: 366px;
-  height: 366px;
-  margin: auto;
-  position: relative;
-}
-
-/* line 201, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle {
-  position: absolute;
-  left: 0;
-  top: 0;
-  animation: hero-logo-circle 1s linear infinite;
-  will-change: transform;
-}
-
-/* line 210, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(1) {
-  animation-duration: 30s;
-}
-
-/* line 211, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(2) {
-  animation-duration: 40s;
-}
-
-/* line 212, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(3) {
-  animation-duration: 50s;
-}
-
-/* line 213, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(4) {
-  animation-duration: 60s;
-}
-
-/* line 214, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(5) {
-  animation-duration: 70s;
-}
-
-/* line 215, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(6) {
-  animation-duration: 80s;
-}
-
-/* line 216, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(7) {
-  animation-duration: 90s;
-}
-
-/* line 217, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(8) {
-  animation-duration: 100s;
-}
-
-/* line 218, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(9) {
-  animation-duration: 110s;
-}
-
-/* line 219, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-logo-circle:nth-child(10) {
-  animation-duration: 120s;
-}
-
-@keyframes hero-logo-circle {
-  100% {
-    transform: rotate(1turn);
-  }
-}
-/* line 228, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download {
-  display: inline-flex;
-  margin: 4em 0 0 0;
-  border-radius: 20px;
-  border: 1px solid #4e4b4d;
-  list-style: none;
-  padding: 0;
-}
-/* line 236, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download li {
-  padding: 1em 1.75em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-/* line 242, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download li:last-child {
-  padding: 1em;
-}
-/* line 245, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download li + li {
-  border-left: 1px solid #4e4b4d;
-}
-/* line 249, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download .logo-wordmark {
-  display: block;
-}
-/* line 253, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download .version {
-  display: block;
-  font-size: 1.4em;
-  line-height: 2rem;
-  letter-spacing: 0.15em;
-  font-weight: 500;
-}
-/* line 261, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download .platform {
-  display: block;
-  font-size: 1.4em;
-  line-height: 2rem;
-  letter-spacing: 0.05em;
-}
-/* line 268, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download .support {
-  display: block;
-  font-size: 0.9em;
-  color: #8e8373;
-}
-/* line 274, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download .welcome-button {
-  display: block;
-  font-size: 1.1em;
-  padding: 1em 1.5em;
-  white-space: nowrap;
-}
-/* line 279, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download .welcome-button .octicon {
-  margin-right: 0.8em;
-}
-/* line 284, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-download .welcome-button + .welcome-button {
-  margin-top: 0.5em;
-}
-
-/* line 289, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-meta {
-  margin: 2rem 0 0 0;
-}
-/* line 291, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-meta a + a {
-  margin-left: 2rem;
-}
-
-/* line 296, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-tos {
-  display: block;
-  margin-bottom: 2em;
-  color: #786f63;
-  font-size: 0.8em;
-}
-/* line 301, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-.hero-tos a {
-  font-size: inherit;
-}
-
 /* line 306, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-octonaut {
   position: absolute;
@@ -2349,7 +2096,6 @@ a.hero-link {
   -webkit-user-select: none;
   user-select: none;
 }
-
 @keyframes hero-octonaut {
   0% {
     transform: translateY(-8px);
@@ -2427,7 +2173,6 @@ a.hero-link {
 .section--github .welcome-button:active {
   background-color: #2aeabd;
 }
-
 /* line 373, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--features h3 {
   margin-bottom: 50px;
@@ -2459,7 +2204,6 @@ a.hero-link {
 .section--features p {
   margin: 0;
 }
-
 /* line 407, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--contact {
   margin-bottom: -40px;
@@ -2473,65 +2217,29 @@ a.hero-link {
 .section--contact td:first-child {
   padding-right: 2em;
 }
-
 @media (min-width: 1101px) and (max-height: 1000px) {
   /* line 432, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .section--hero .wrapper {
     padding-top: 100px;
   }
-
   /* line 436, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .hero-header {
     display: flex;
     flex-wrap: wrap;
   }
-
-  /* line 441, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-  .hero-download {
-    margin-top: 0;
-    margin-left: 50px;
-    flex-direction: column;
-  }
-  /* line 446, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-  .hero-download li {
-    padding: 1em;
-  }
-  /* line 449, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-  .hero-download li:first-child {
-    padding: 2em 1em;
-  }
-  /* line 452, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-  .hero-download li + li {
-    border-left: none;
-    border-top: 1px solid #4e4b4d;
-  }
-
-  /* line 458, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
-  .hero-meta {
-    flex: 1;
-    margin-top: 50px;
-  }
-
   /* line 463, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .hero-features {
     margin-top: 100px;
   }
-
   /* line 467, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .hero-octonaut {
     left: calc(50% - 520px);
-  }
-}
-@keyframes hero-logo-circle--reverse {
-  100% {
-    transform: rotate(-1turn);
   }
 }
 /* line 670, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .is-responsive {
   min-width: auto;
 }
-
 @media (max-width: 900px) {
   /* line 677, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .is-responsive .top-bar {
@@ -2583,7 +2291,6 @@ a.hero-link {
   padding: 5px;
   z-index: 100000;
 }
-
 /* line 2, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-inner {
   background-color: #000;
@@ -2592,7 +2299,6 @@ a.hero-link {
   padding: 5px 8px 4px 8px;
   text-align: center;
 }
-
 /* Rounded corners */
 /* line 5, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-inner {
@@ -2600,7 +2306,6 @@ a.hero-link {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
-
 /* line 7, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-arrow {
   position: absolute;
@@ -2609,28 +2314,23 @@ a.hero-link {
   line-height: 0;
   border: 5px dashed #000;
 }
-
 /* Rules to colour arrows */
 /* line 10, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-arrow-n {
   border-bottom-color: #000;
 }
-
 /* line 11, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-arrow-s {
   border-top-color: #000;
 }
-
 /* line 12, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-arrow-e {
   border-left-color: #000;
 }
-
 /* line 13, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-arrow-w {
   border-right-color: #000;
 }
-
 /* line 15, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-n .tipsy-arrow {
   top: 0px;
@@ -2641,7 +2341,6 @@ a.hero-link {
   border-left-color: transparent;
   border-right-color: transparent;
 }
-
 /* line 16, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-nw .tipsy-arrow {
   top: 0;
@@ -2651,7 +2350,6 @@ a.hero-link {
   border-left-color: transparent;
   border-right-color: transparent;
 }
-
 /* line 17, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-ne .tipsy-arrow {
   top: 0;
@@ -2661,7 +2359,6 @@ a.hero-link {
   border-left-color: transparent;
   border-right-color: transparent;
 }
-
 /* line 18, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-s .tipsy-arrow {
   bottom: 0;
@@ -2672,7 +2369,6 @@ a.hero-link {
   border-left-color: transparent;
   border-right-color: transparent;
 }
-
 /* line 19, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-sw .tipsy-arrow {
   bottom: 0;
@@ -2682,7 +2378,6 @@ a.hero-link {
   border-left-color: transparent;
   border-right-color: transparent;
 }
-
 /* line 20, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-se .tipsy-arrow {
   bottom: 0;
@@ -2692,7 +2387,6 @@ a.hero-link {
   border-left-color: transparent;
   border-right-color: transparent;
 }
-
 /* line 21, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-e .tipsy-arrow {
   right: 0;
@@ -2703,7 +2397,6 @@ a.hero-link {
   border-top-color: transparent;
   border-bottom-color: transparent;
 }
-
 /* line 22, /opt/hostedtoolcache/Ruby/2.7.3/x64/lib/ruby/gems/2.7.0/gems/peek-1.0.1/app/assets/stylesheets/peek/vendor/tipsy.scss */
 .tipsy-w .tipsy-arrow {
   left: 0;
@@ -2825,7 +2518,6 @@ a.hero-link {
   opacity: 1;
   cursor: default;
 }
-
 /*
      FILE ARCHIVED ON 00:48:16 Dec 07, 2022 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 15:07:13 Jun 04, 2023.

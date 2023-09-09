@@ -1,4 +1,3 @@
-import PrimerProvider from '@/providers/PrimerProvider';
 import '@primer/css/index.scss';
 import '@primer/react-brand/lib/css/main.css';
 import { Metadata } from 'next';
@@ -100,7 +99,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="is-responsive">
-        <PrimerProvider>{children}</PrimerProvider>
+        {/* <PrimerProvider> */}
+        {children}
+        {/* </PrimerProvider> */}
       </body>
     </html>
   );

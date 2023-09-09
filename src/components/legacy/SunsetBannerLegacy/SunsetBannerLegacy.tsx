@@ -1,6 +1,6 @@
 import { Text } from '@primer/react';
 import Link from 'next/link';
-// import './SunsetBannerLegacy.css';
+import './SunsetBannerLegacy.css';
 
 const SunsetBannerLegacy: React.FC = () => {
   return (

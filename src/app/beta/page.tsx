@@ -1,9 +1,12 @@
 'use client';
 import FeatureLegacy from '@/components/legacy/FeatureLegacy/FeatureLegacy';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
-import HeroHeaderLegacy from '@/components/legacy/HeroHeaderLegacy/HeroHeaderLegacy';
+import HeroDownloadLegacy from '@/components/legacy/HeroDownloadLegacy/HeroDownloadLegacy';
+import HeroLogoLegacy from '@/components/legacy/HeroLogoLegacy/HeroLogoLegacy';
+import HeroMetaLegacy from '@/components/legacy/HeroMetaLegacy/HeroMetaLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import pillars from '@/data/pillars.json';
+import features from '@/data/features.json';
+import nav from '@/data/nav.json';
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
 
@@ -11,12 +14,14 @@ export default function Beta() {
   return (
     <Box className="is-responsive">
       <Box className="footer-push">
-        <NavLegacy />
+        <NavLegacy pages={nav.pages} />
 
         <Box className="welcome welcome-beta">
           <Box as="section" className="section section--hero">
             <Box className="wrapper">
-              <HeroHeaderLegacy />
+              <HeroLogoLegacy />
+              <HeroDownloadLegacy />
+              <HeroMetaLegacy />
             </Box>
           </Box>
           <Box as="section" className="section section--features">
@@ -34,7 +39,9 @@ export default function Beta() {
                 for more information.
               </Text>
 
-              <FeatureLegacy pillars={pillars.beta.tryAtomBeta} />
+              {features.beta.tryAtomBeta.map((feature, index) => {
+                return <FeatureLegacy feature={feature} key={index} />;
+              })}
             </Box>
           </Box>
         </Box>

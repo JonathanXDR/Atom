@@ -1,77 +1,24 @@
 'use client';
-import { RssIcon, SignInIcon } from '@primer/octicons-react';
+import * as octicons from '@primer/octicons-react';
 import { Box, Heading, Octicon, OcticonProps } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-// import './NavLegacy.css';
+import './NavLegacy.css';
+import { PageProps } from './PageProps';
 
-interface NavProps {
-  href: string;
-  text: string;
-  topBarRight: {
-    icon: OcticonProps['icon'];
-    href: string;
-    text: string;
-    className: string;
-  };
+interface NavLegacyProps {
+  pages: PageProps[];
 }
 
-const pages = [
-  {
-    href: '/packages',
-    text: 'Packages',
-    topBarRight: {
-      icon: SignInIcon,
-      href: '/login',
-      text: 'Sign in',
-      className: '',
-    },
-  },
-  {
-    href: '/themes',
-    text: 'Themes',
-    topBarRight: {
-      icon: SignInIcon,
-      href: '/login',
-      text: 'Sign in',
-      className: '',
-    },
-  },
-  {
-    href: '/docs',
-    text: 'Documentation',
-    topBarRight: {
-      icon: SignInIcon,
-      href: '/login',
-      text: 'Sign in',
-      className: '',
-    },
-  },
-  {
-    href: '/blog',
-    text: 'Blog',
-    topBarRight: {
-      icon: RssIcon,
-      href: '/blog/feed.xml',
-      text: 'Subscribe',
-      className: 'rss-link',
-    },
-  },
-  {
-    href: 'https://github.com/atom/atom/discussions',
-    text: ' Discussions',
-    topBarRight: {
-      icon: SignInIcon,
-      href: '/login',
-      text: 'Sign in',
-      className: '',
-    },
-  },
-];
-
-const NavLegacy: React.FC = () => {
+const NavLegacy: React.FC<NavLegacyProps> = ({ pages }) => {
   const pathname = usePathname();
-  const currentPage = pages.find((page: NavProps) => page.href === pathname);
+  const currentPage = pages.find((page: PageProps) => {
+    page.href === pathname;
+  });
+  console.log(currentPage?.topBarRight.icon);
+  const icon = octicons[
+    currentPage?.topBarRight.icon as keyof typeof octicons
+  ] as React.ComponentType<OcticonProps>;
 
   return (
     <Box as="nav" className="top-bar" aria-label="Primary">
@@ -88,7 +35,7 @@ const NavLegacy: React.FC = () => {
               </Heading>
             </Box>
           )}
-          {pages.map((page: NavProps) => (
+          {pages.map((page: PageProps) => (
             <Box as="li" key={page.href}>
               <Link
                 href={page.href}
@@ -100,15 +47,15 @@ const NavLegacy: React.FC = () => {
           ))}
         </Box>
 
-        <Box className="top-bar-right">
-          {currentPage?.topBarRight && (
+        {currentPage?.topBarRight && (
+          <Box className="top-bar-right">
             <Link
               href={currentPage.topBarRight.href}
               key={currentPage.topBarRight.href}
               className={currentPage.topBarRight.className}
             >
               <Octicon
-                icon={currentPage.topBarRight.icon}
+                icon={icon}
                 size={16}
                 sx={{
                   padding: '0',
@@ -116,8 +63,8 @@ const NavLegacy: React.FC = () => {
               />{' '}
               {currentPage.topBarRight.text}
             </Link>
-          )}
-        </Box>
+          </Box>
+        )}
       </Box>
     </Box>
   );

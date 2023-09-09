@@ -10,6 +10,7 @@ import RiverLegacy from '@/components/legacy/RiverLegacy/RiverLegacy';
 import SunsetBannerLegacy from '@/components/legacy/SunsetBannerLegacy/SunsetBannerLegacy';
 import TagLegacy from '@/components/legacy/TagLegacy/TagLegacy';
 import features from '@/data/features.json';
+import nav from '@/data/nav.json';
 import tags from '@/data/tags.json';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
@@ -19,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Box className="footer-push">
-        <NavLegacy />
+        <NavLegacy pages={nav.pages} />
 
         <Box className="welcome">
           <Box as="section" className="section section--hero">

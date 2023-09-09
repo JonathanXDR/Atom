@@ -1949,10 +1949,10 @@ body.menu-active .modal-backdrop {
 }
 /* line 169, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-tagline {
-  margin: 0 0 0.5em 0;
-  font-size: 2.3em;
-  letter-spacing: 0.05em;
-  font-weight: 200;
+  margin: 0 0 0.5em 0 !important;
+  font-size: 2.3em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 200 !important;
 }
 /* line 176, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-tagline-highlight {
@@ -1961,13 +1961,13 @@ body.menu-active .modal-backdrop {
 }
 /* line 179, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 a.hero-link {
-  display: inline-block;
-  margin: 0.5em;
-  padding: 0.25em 0.75em;
-  font-size: 1.1em;
-  color: #ffd152;
-  border: 1px solid #4e4b4d;
-  border-radius: 0.25em;
+  display: inline-block !important;
+  margin: 0.5em !important;
+  padding: 0.25em 0.75em !important;
+  font-size: 1.1em !important;
+  color: #ffd152 !important;
+  border: 1px solid #4e4b4d !important;
+  border-radius: 0.25em !important;
 }
 /* line 306, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-octonaut {

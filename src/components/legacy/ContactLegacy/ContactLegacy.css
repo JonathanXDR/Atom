@@ -56,13 +56,7 @@
   border-color: rgba(197, 197, 197, 0.5);
   box-shadow: none;
 }
-.wrapper {
-  width: 860px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  overflow: hidden;
-}
+
 .wrapper.no-pad {
   padding-left: 0;
   padding-right: 0;

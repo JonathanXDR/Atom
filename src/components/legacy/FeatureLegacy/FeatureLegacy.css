@@ -1,30 +1,37 @@
-.octicon {
-  font: normal normal 16px octicons;
-  line-height: 1;
-  display: inline-block;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.features-item {
+  position: relative;
+  padding-left: 60px;
 }
-.mega-octicon {
-  font: normal normal 32px octicons;
-  line-height: 1;
-  display: inline-block;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.octicon-x:before {
-  content: '\f081';
-}
-h1.center,
-h2.center,
-h3.center,
-h4.center,
-h5.center,
-h6.center {
+.features-item .mega-octicon {
+  position: absolute;
+  top: -0.25em;
+  left: 0;
+  width: 1.75em;
+  height: 1.75em;
+  line-height: 1.75em;
+  font-size: 24px;
   text-align: center;
+  border-radius: 6px;
+  color: #efdab9;
+  background-color: #3d3a3a;
 }
-.octicon:hover {
-  text-decoration: none;
+@keyframes hero-logo-circle--reverse {
+  100% {
+    transform: rotate(-1turn);
+  }
+}
+@media (min-width: 1101px) {
+  @supports (display: grid) {
+    .welcome .section--features .wrapper {
+      max-width: none;
+    }
+    .welcome .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 100px 66.6666666667px;
+    }
+    .welcome .features-item.features-item {
+      margin-top: 0;
+    }
+  }
 }

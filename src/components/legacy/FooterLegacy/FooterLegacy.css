@@ -8,13 +8,7 @@
   margin-top: 4px;
   font-size: 1.2em;
 }
-.wrapper {
-  width: 860px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  overflow: hidden;
-}
+
 .wrapper.no-pad {
   padding-left: 0;
   padding-right: 0;

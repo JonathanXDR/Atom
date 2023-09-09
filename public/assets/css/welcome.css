@@ -136,7 +136,6 @@
   top: -2px;
   left: 0;
 }
-
 @media (max-width: 1100px) {
   /* line 478, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .welcome .wrapper {
@@ -260,7 +259,6 @@
     background-image: none;
   }
 }
-
 @media (min-width: 1101px) {
   /* line 724, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .welcome .section--features .wrapper {
@@ -288,7 +286,6 @@
     }
   }
 }
-
 /* line 600, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta .wrapper--beta,
 .welcome-beta .welcome--nightly,

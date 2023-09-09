@@ -15,7 +15,7 @@ export default function Nightly() {
   return (
     <Box className="is-responsive">
       <Box className="footer-push">
-        <NavLegacy pages={nav.pages} />
+        <NavLegacy nav={nav} />
 
         <Box className="welcome welcome-nightly">
           <Box as="section" className="section section--hero">

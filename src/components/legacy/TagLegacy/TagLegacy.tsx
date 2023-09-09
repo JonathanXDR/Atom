@@ -10,8 +10,8 @@ interface TagLegacyProps {
 const TagLegacy: React.FC<TagLegacyProps> = ({ tag }) => {
   return (
     <>
-      <Link className="hero-link" href={tag.link}>
-        {tag.title}
+      <Link className="hero-link" href={tag.link.url}>
+        {tag.link.title}
       </Link>
     </>
   );

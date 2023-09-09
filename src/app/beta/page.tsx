@@ -14,7 +14,7 @@ export default function Beta() {
   return (
     <Box className="is-responsive">
       <Box className="footer-push">
-        <NavLegacy pages={nav.pages} />
+        <NavLegacy nav={nav} />
 
         <Box className="welcome welcome-beta">
           <Box as="section" className="section section--hero">

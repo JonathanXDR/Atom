@@ -1,12 +1,12 @@
-{
-  "pages": [
-    { "title": "Packages", "link": "/packages" },
-    { "title": "Themes", "link": "/themes" },
-    { "title": "Documentation", "link": "/docs" },
-    { "title": "Blog", "link": "/blog" },
-    {
+[
+  { "link": { "title": "Packages", "url": "/packages" } },
+  { "link": { "title": "Themes", "url": "/themes" } },
+  { "link": { "title": "Documentation", "url": "/docs" } },
+  { "link": { "title": "Blog", "url": "/blog" } },
+  {
+    "link": {
       "title": " Discussions",
-      "link": "https://github.com/atom/atom/discussions"
+      "url": "https://github.com/atom/atom/discussions"
     }
-  ]
-}
+  }
+]

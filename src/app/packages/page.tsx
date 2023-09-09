@@ -113,7 +113,7 @@ export default function Packages() {
   return (
     <>
       <Box className="footer-push">
-        <NavLegacy pages={nav.pages} />
+        <NavLegacy nav={nav} />
 
         <Box className="wrapper content-push packages">
           <Heading as="h2" className="center index-title">

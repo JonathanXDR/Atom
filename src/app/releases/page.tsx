@@ -13,7 +13,7 @@ export default function Releases() {
   return (
     <>
       <Box className="footer-push">
-        <NavLegacy pages={nav.pages} />
+        <NavLegacy nav={nav} />
 
         <Box className="wrapper releases search-page content-push">
           <Box className="markdown-body">

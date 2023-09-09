@@ -12,7 +12,7 @@ export default function Blog() {
   return (
     <>
       <Box className="footer-push">
-        <NavLegacy pages={nav.pages} />
+        <NavLegacy nav={nav} />
 
         <Box className="wrapper content-push">
           <Box id="home">

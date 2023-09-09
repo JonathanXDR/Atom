@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <>
       <Box className="footer-push">
-        <NavLegacy pages={nav.pages} />
+        <NavLegacy nav={nav} />
 
         <Box className="contact content-push">
           <Box className="wrapper">

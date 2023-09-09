@@ -17,7 +17,7 @@ export default function Docs() {
   return (
     <>
       <Box className="footer-push">
-        <NavLegacy pages={nav.pages} />
+        <NavLegacy nav={nav} />
 
         <Box className="wrapper documents content-push wide atom-doc-index">
           <Heading as="h2" className="center index-title">

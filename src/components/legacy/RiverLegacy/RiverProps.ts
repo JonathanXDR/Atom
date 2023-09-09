@@ -1,8 +1,7 @@
-import { OcticonProps } from '@primer/react';
-
-export interface FeatureProps {
-  icon: OcticonProps['icon'] | string;
-  title?: string;
+export interface RiverProps {
+  id: string;
+  class: string;
+  title: string;
   description: {
     text: string;
     link?: {
@@ -13,5 +12,9 @@ export interface FeatureProps {
   link?: {
     title: string;
     url: string;
+  };
+  image: {
+    url: string;
+    alt: string;
   };
 }

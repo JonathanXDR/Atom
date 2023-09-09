@@ -1,15 +1,46 @@
 import { Box, Heading, Link, Text } from '@primer/react';
 import Image from 'next/image';
-import React from 'react';
-// import './RiverLegacy.css';
-import indexGithubScreenshot from '/public/assets/png/index-github-screenshot.png';
-import indexIdeScreenshot from '/public/assets/png/index-ide-screenshot.png';
-import indexTeletypeScreenshot from '/public/assets/png/index-teletype-screenshot.png';
+import './RiverLegacy.css';
+import { RiverProps } from './RiverProps';
 
-const RiverLegacy: React.FC = () => {
+interface RiverLegacyProps {
+  river: RiverProps;
+}
+
+const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
+  const [beforeLink, afterLink] = river.description.text.split('{ Link }');
+
   return (
     <>
-      <Box as="section" id="teletype" className="section section--realtime">
+      <Box as="section" id={river.id} className={`section ${river.class}`}>
+        <Box className="wrapper">
+          <Heading as="h3">{river.title}</Heading>
+          <Text as="p" sx={{ marginBlock: '1em' }}>
+            {beforeLink}
+            {river.description.link && (
+              <Link href={river.description.link.url}>
+                {river.description.link.title}
+              </Link>
+            )}
+            {afterLink}
+          </Text>
+          <Box className="welcome-bgs">
+            <Image
+              className="welcome-bg welcome-bg--screenshot"
+              src={river.image.url}
+              alt={river.image.alt}
+            />
+          </Box>
+          {river.link && (
+            <Text as="p" className="welcome-cta">
+              <Link href={river.link.url} className="welcome-button">
+                {river.link.title}
+              </Link>
+            </Text>
+          )}
+        </Box>
+      </Box>
+      {/* <Box as="section" id="teletype" className="section section--realtime">
         <Box className="wrapper">
           <Heading as="h3">Teletype for Atom</Heading>
 
@@ -124,7 +155,7 @@ const RiverLegacy: React.FC = () => {
             </Link>
           </Text>
         </Box>
-      </Box>
+      </Box> */}
     </>
   );
 };

@@ -52,43 +52,19 @@ export const metadata: Metadata = {
 };
 
 const brandPages = [
-  {
-    href: '/',
-    text: 'Home',
-  },
-  {
-    href: '/beta',
-    text: 'Beta',
-  },
-  {
-    href: '/nightly',
-    text: 'Nightly',
-  },
-  {
-    href: '/teletype',
-    text: 'Teletype',
-  },
-  {
-    href: '/github',
-    text: 'GitHub',
-  },
-  {
-    href: '/ide',
-    text: 'IDE',
-  },
-  {
-    href: '/not-found',
-    text: '404',
-  },
-  {
-    href: '/error',
-    text: '500',
-  },
+  { title: 'Home', url: '/' },
+  { title: 'Beta', url: '/beta' },
+  { title: 'Nightly', url: '/nightly' },
+  { title: 'Teletype', url: '/teletype' },
+  { title: 'GitHub', url: '/github' },
+  { title: 'IDE', url: '/ide' },
+  { title: '404', url: '/not-found' },
+  { title: '500', url: '/error' },
 ];
 
 interface BrandPageProps {
-  href: string;
-  text: string;
+  title: string;
+  url: string;
 }
 
 export default function RootLayout({

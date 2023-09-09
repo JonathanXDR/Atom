@@ -1,0 +1,52 @@
+{
+  "home": [
+    {
+      "id": "teletype",
+      "class": "section section--realtime",
+      "title": "Teletype for Atom",
+      "description": {
+        "text": "Great things happen when developers work together\u2014from teaching and sharing knowledge to building better software. Teletype for Atom makes collaborating on code just as easy as it is to code alone, right from your editor."
+      },
+      "image": {
+        "url": "/assets/png/index-teletype-screenshot.png",
+        "alt": "index-teletype-screenshot"
+      },
+      "link": {
+        "title": "Learn more",
+        "url": "/teletype"
+      }
+    },
+    {
+      "id": "ide",
+      "class": "section section--ide",
+      "title": "Atom IDE",
+      "description": {
+        "text": "Atom-IDE is a set of optional packages to bring IDE-like functionality to Atom and improve language integrations."
+      },
+      "image": {
+        "url": "/assets/png/index-ide-screenshot.png",
+        "alt": "index-ide-screenshot"
+      },
+      "link": {
+        "title": "Learn more",
+        "url": "/ide"
+      }
+    },
+    {
+      "id": "github",
+      "class": "section section--github",
+      "title": "GitHub for Atom",
+      "description": {
+        "text": "A text editor is at the core of a developer&apos;s toolbox, but it doesn&apos;t usually work alone. Work with Git and GitHub directly from Atom with the GitHub package."
+      },
+      "image": {
+        "url": "/assets/png/index-github-screenshot.png",
+        "alt": "index-github-screenshot"
+      },
+      "link": {
+        "title": "Learn more",
+        "url": "/github"
+      }
+    }
+  ]
+}

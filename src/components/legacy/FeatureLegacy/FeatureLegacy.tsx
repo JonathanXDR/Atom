@@ -13,8 +13,7 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
     feature.icon as keyof typeof octicons
   ] as React.ComponentType<OcticonProps>;
 
-  const [beforeLink, afterLink] =
-    feature.description.mainText.split('{ Link }');
+  const [beforeLink, afterLink] = feature.description.text.split('{ Link }');
 
   return (
     <>
@@ -32,19 +31,20 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
         {feature.title && <Heading as="h4">{feature.title}</Heading>}
         <Text as="p">
           {beforeLink}
-          {feature.description.linkText && feature.description.linkUrl && (
-            <Link href={feature.description.linkUrl}>
-              {feature.description.linkText}
-            </Link>
-          )}
+          {feature.description?.link?.title &&
+            feature.description?.link.url && (
+              <Link href={feature.description?.link.url}>
+                {feature.description?.link.title}
+              </Link>
+            )}
           {afterLink}
         </Text>
 
-        {feature.externalLink && (
+        {feature.link && (
           <Text as="p">
             <br />
-            <Link href={feature.externalLink.url} target="_blank">
-              {feature.externalLink.text}
+            <Link href={feature.link.url} target="_blank">
+              {feature.link.title}
             </Link>
           </Text>
         )}

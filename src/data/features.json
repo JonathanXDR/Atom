@@ -5,42 +5,42 @@
         "icon": "DeviceDesktopIcon",
         "title": "Cross-platform editing",
         "description": {
-          "mainText": "Atom works across operating systems. Use it on OS X, Windows, or Linux."
+          "text": "Atom works across operating systems. Use it on OS X, Windows, or Linux."
         }
       },
       {
         "icon": "PackageIcon",
         "title": "Built-in package manager",
         "description": {
-          "mainText": "Search for and install new packages or create your own right from Atom."
+          "text": "Search for and install new packages or create your own right from Atom."
         }
       },
       {
         "icon": "LightBulbIcon",
         "title": "Smart autocompletion",
         "description": {
-          "mainText": "Atom helps you write code faster with a smart and flexible autocomplete."
+          "text": "Atom helps you write code faster with a smart and flexible autocomplete."
         }
       },
       {
         "icon": "FileCodeIcon",
         "title": "File system browser",
         "description": {
-          "mainText": "Easily browse and open a single file, a whole project, or multiple projects in one window."
+          "text": "Easily browse and open a single file, a whole project, or multiple projects in one window."
         }
       },
       {
         "icon": "MirrorIcon",
         "title": "Multiple panes",
         "description": {
-          "mainText": "Split your Atom interface into multiple panes to compare and edit code across files."
+          "text": "Split your Atom interface into multiple panes to compare and edit code across files."
         }
       },
       {
         "icon": "SearchIcon",
         "title": "Find and replace",
         "description": {
-          "mainText": "Find, preview, and replace text as you type in a file or across all your projects."
+          "text": "Find, preview, and replace text as you type in a file or across all your projects."
         }
       }
     ],
@@ -49,28 +49,32 @@
         "icon": "PackageIcon",
         "title": "Packages",
         "description": {
-          "mainText": "Choose from thousands of { Link } that add new features and functionality to Atom, or build a package from scratch and publish it for everyone else to use.",
-          "linkText": "open source packages",
-          "linkUrl": "/packages"
+          "text": "Choose from thousands of { Link } that add new features and functionality to Atom, or build a package from scratch and publish it for everyone else to use.",
+          "link": {
+            "title": "open source packages",
+            "url": "/packages"
+          }
         }
       },
       {
         "icon": "PaintbrushIcon",
         "title": "Themes",
         "description": {
-          "mainText": "Atom comes pre-installed with four UI and eight syntax { Link } in both dark and light colors. Can't find what you're looking for? Install themes created by the Atom community or create your own.",
-          "linkText": "themes",
-          "linkUrl": "/themes"
+          "text": "Atom comes pre-installed with four UI and eight syntax { Link } in both dark and light colors. Can't find what you're looking for? Install themes created by the Atom community or create your own.",
+          "link": {
+            "title": "themes",
+            "url": "/themes"
+          }
         }
       },
       {
         "icon": "ToolsIcon",
         "title": "Customization",
         "description": {
-          "mainText": "It's easy to customize and style Atom. Tweak the look and feel of your UI with CSS/Less, and add major features with HTML and JavaScript."
+          "text": "It's easy to customize and style Atom. Tweak the look and feel of your UI with CSS/Less, and add major features with HTML and JavaScript."
         },
-        "externalLink": {
-          "text": "See how to set up Atom",
+        "link": {
+          "title": "See how to set up Atom",
           "url": "https://www.youtube.com/watch?v=U5POoGSrtGg"
         }
       },
@@ -78,9 +82,11 @@
         "icon": "CodeIcon",
         "title": "Under the hood",
         "description": {
-          "mainText": "Atom is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on { Link }, a framework for building cross platform apps using web technologies.",
-          "linkText": "Electron",
-          "linkUrl": "https://electronjs.org/"
+          "text": "Atom is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on { Link }, a framework for building cross platform apps using web technologies.",
+          "link": {
+            "title": "Electron",
+            "url": "https://electronjs.org/"
+          }
         }
       }
     ]
@@ -90,21 +96,23 @@
       {
         "icon": "RocketIcon",
         "description": {
-          "mainText": "Keep your current Atom configuration when using Atom Beta"
+          "text": "Keep your current Atom configuration when using Atom Beta"
         }
       },
       {
         "icon": "CalendarIcon",
         "description": {
-          "mainText": "New Beta releases are available regularly and installed automatically"
+          "text": "New Beta releases are available regularly and installed automatically"
         }
       },
       {
         "icon": "BugIcon",
         "description": {
-          "mainText": "There may be bugs. If you have problems, please { Link }",
-          "linkText": "file an issue",
-          "linkUrl": "https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues"
+          "text": "There may be bugs. If you have problems, please { Link }",
+          "link": {
+            "title": "file an issue",
+            "url": "https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues"
+          }
         }
       }
     ]
@@ -114,21 +122,23 @@
       {
         "icon": "RocketIcon",
         "description": {
-          "mainText": "Keep your current Atom configuration when using Atom Nightly"
+          "text": "Keep your current Atom configuration when using Atom Nightly"
         }
       },
       {
         "icon": "CalendarIcon",
         "description": {
-          "mainText": "New Nightly releases are available every few days and installed automatically"
+          "text": "New Nightly releases are available every few days and installed automatically"
         }
       },
       {
         "icon": "BugIcon",
         "description": {
-          "mainText": "There may be bugs. If you have problems, please { Link }",
-          "linkText": "file an issue",
-          "linkUrl": "https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues"
+          "text": "There may be bugs. If you have problems, please { Link }",
+          "link": {
+            "title": "file an issue",
+            "url": "https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues"
+          }
         }
       }
     ]

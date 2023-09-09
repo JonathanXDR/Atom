@@ -4,13 +4,13 @@ import { Box, Heading, Octicon } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './NavLegacy.css';
-import { PageProps } from './PageProps';
+import { NavProps } from './NavProps';
 
 interface NavLegacyProps {
-  pages: PageProps[];
+  nav: NavProps[];
 }
 
-const NavLegacy: React.FC<NavLegacyProps> = ({ pages }) => {
+const NavLegacy: React.FC<NavLegacyProps> = ({ nav }) => {
   const pathname = usePathname();
 
   return (
@@ -28,13 +28,13 @@ const NavLegacy: React.FC<NavLegacyProps> = ({ pages }) => {
               </Heading>
             </Box>
           )}
-          {pages.map((page: PageProps) => (
-            <Box as="li" key={page.link}>
+          {nav.map((item: NavProps) => (
+            <Box as="li" key={item.link.title}>
               <Link
-                href={page.link}
-                className={pathname === page.link ? 'is-selected' : ''}
+                href={item.link.url}
+                className={pathname === item.link.url ? 'is-selected' : ''}
               >
-                {page.title}
+                {item.link.title}
               </Link>
             </Box>
           ))}

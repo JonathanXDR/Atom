@@ -231,7 +231,7 @@ export default function FAQ() {
   return (
     <Box className="layout-article platform-switch platform-mac">
       <Box className="footer-push">
-        <NavLegacy pages={nav.pages} />
+        <NavLegacy nav={nav} />
 
         <Box className="wrapper documents content-push wide">
           <Box

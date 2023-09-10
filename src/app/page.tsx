@@ -10,6 +10,7 @@ import RiverLegacy from '@/components/legacy/RiverLegacy/RiverLegacy';
 import SunsetBannerLegacy from '@/components/legacy/SunsetBannerLegacy/SunsetBannerLegacy';
 import TagLegacy from '@/components/legacy/TagLegacy/TagLegacy';
 import features from '@/data/features.json';
+import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import rivers from '@/data/rivers.json';
 import tags from '@/data/tags.json';
@@ -77,7 +78,7 @@ export default function Home() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterLegacy />
+      <FooterLegacy footer={footer} />
     </>
   );
 }

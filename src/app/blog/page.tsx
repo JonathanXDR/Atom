@@ -1,6 +1,7 @@
 'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
+import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import { CalendarIcon, ChevronRightIcon } from '@primer/octicons-react';
 import { Box, Heading, Text } from '@primer/react';
@@ -497,7 +498,7 @@ export default function Blog() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterLegacy />
+      <FooterLegacy footer={footer} />
     </>
   );
 }

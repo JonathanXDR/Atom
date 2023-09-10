@@ -3,51 +3,44 @@ import { Box } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
-// import './FooterLegacy.css';
+import './FooterLegacy.css';
+import { FooterProps } from './FooterProps';
+interface FooterLegacyProps {
+  footer: FooterProps[];
+}
 
-const FooterLegacy: React.FC = () => {
+const FooterLegacy: React.FC<FooterLegacyProps> = ({ footer }) => {
   const pathname = usePathname();
+
+  const exclusionRules: { [key: string]: string[] } = {
+    '/': ['Contribute!'],
+    '/blog': ['Privacy', 'Code of Conduct'],
+    '/faq': ['Contribute!'],
+    '/flight-manual': ['Contribute!'],
+  };
+
+  const shouldExcludeLink = (title: string) => {
+    if (exclusionRules[pathname]) {
+      return exclusionRules[pathname].includes(title);
+    }
+    return false;
+  };
+
   return (
     <Box as="footer">
       <Box className="footer">
         <Box className="wrapper no-pad">
           <Box as="ul" className="footer-left">
-            <Box as="li">
-              <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
-                Terms of Use
-              </Link>
-            </Box>
-            {pathname !== '/blog' && (
-              <>
-                <Box as="li">
-                  <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
-                    Privacy
-                  </Link>
+            {footer.map((item: FooterProps, index) => {
+              if (shouldExcludeLink(item.link.title)) {
+                return null;
+              }
+              return (
+                <Box as="li" key={index}>
+                  <Link href={item.link.url}>{item.link.title}</Link>
                 </Box>
-                <Box as="li">
-                  <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
-                    Code of Conduct
-                  </Link>
-                </Box>
-              </>
-            )}
-            <Box as="li">
-              <Link href="/releases">Releases</Link>
-            </Box>
-            <Box as="li">
-              <Link href="/faq">FAQ</Link>
-            </Box>
-            <Box as="li">
-              <Link href="/contact">Contact</Link>
-            </Box>
-            {pathname === '/faq' ||
-              (pathname === '/flight-manual' && (
-                <Box as="li">
-                  <Link href="https://github.com/atom/flight-manual.atom.io/blob/master/CONTRIBUTING.md">
-                    Contribute!
-                  </Link>
-                </Box>
-              ))}
+              );
+            })}
           </Box>
 
           <Box className="footer-right">

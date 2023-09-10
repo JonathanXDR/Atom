@@ -1,6 +1,7 @@
 'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
+import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import { Box, Heading } from '@primer/react';
 import Image from 'next/image';
@@ -1123,7 +1124,7 @@ export default function FlightManual() {
         </Box>
         <Box className="footer-pad"></Box>
       </Box>
-      <FooterLegacy />
+      <FooterLegacy footer={footer} />
     </Box>
   );
 }

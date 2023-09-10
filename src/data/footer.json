@@ -1,0 +1,44 @@
+[
+  {
+    "link": {
+      "title": "Terms of Use",
+      "url": "https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions"
+    }
+  },
+  {
+    "link": {
+      "title": "Privacy",
+      "url": "https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement"
+    }
+  },
+  {
+    "link": {
+      "title": "Code of Conduct",
+      "url": "https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md"
+    }
+  },
+  {
+    "link": {
+      "title": "Releases",
+      "url": "/releases"
+    }
+  },
+  {
+    "link": {
+      "title": "FAQ",
+      "url": "/faq"
+    }
+  },
+  {
+    "link": {
+      "title": "Contact",
+      "url": "/contact"
+    }
+  },
+  {
+    "link": {
+      "title": "Contribute!",
+      "url": "https://github.com/atom/flight-manual.atom.io/blob/master/CONTRIBUTING.md"
+    }
+  }
+]

@@ -1,6 +1,7 @@
 'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
+import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import {
   ChevronRightIcon,
@@ -204,7 +205,7 @@ export default function Packages() {
 
         <Box className="footer-pad"></Box>
       </Box>
-      <FooterLegacy />
+      <FooterLegacy footer={footer} />
       <Box id="lean_overlay"></Box>
       <Box id="lean_overlay"></Box>
       <Box id="lean_overlay"></Box>

@@ -7,6 +7,7 @@ import HeroLogoLegacy from '@/components/legacy/HeroLogoLegacy/HeroLogoLegacy';
 import HeroMetaLegacy from '@/components/legacy/HeroMetaLegacy/HeroMetaLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import features from '@/data/features.json';
+import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
@@ -50,7 +51,7 @@ export default function Nightly() {
         <Box className="footer-pad"></Box>
       </Box>
 
-      <FooterLegacy />
+      <FooterLegacy footer={footer} />
     </Box>
   );
 }

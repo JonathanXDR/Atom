@@ -1,0 +1,292 @@
+{
+  "home": {
+    "everythingYouExpect": {
+      "title": {
+        "text": "Everything you would expect"
+      },
+      "features": [
+        {
+          "icon": "DeviceDesktopIcon",
+          "title": {
+            "text": "Cross-platform editing"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Atom works across operating systems. Use it on OS X, Windows, or Linux."
+              }
+            ]
+          }
+        },
+        {
+          "icon": "PackageIcon",
+          "title": {
+            "text": "Built-in package manager"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Search for and install new packages or create your own right from Atom."
+              }
+            ]
+          }
+        },
+        {
+          "icon": "LightBulbIcon",
+          "title": {
+            "text": "Smart autocompletion"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Atom helps you write code faster with a smart and flexible autocomplete."
+              }
+            ]
+          }
+        },
+        {
+          "icon": "FileCodeIcon",
+          "title": {
+            "text": "File system browser"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Easily browse and open a single file, a whole project, or multiple projects in one window."
+              }
+            ]
+          }
+        },
+        {
+          "icon": "MirrorIcon",
+          "title": {
+            "text": "Multiple panes"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Split your Atom interface into multiple panes to compare and edit code across files."
+              }
+            ]
+          }
+        },
+        {
+          "icon": "SearchIcon",
+          "title": {
+            "text": "Find and replace"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Find, preview, and replace text as you type in a file or across all your projects."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "makeItYourEditor": {
+      "title": {
+        "text": "Make it your editor"
+      },
+      "features": [
+        {
+          "icon": "PackageIcon",
+          "title": {
+            "text": "Packages"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Choose from thousands of { Link } that add new features and functionality to Atom, or build a package from scratch and publish it for everyone else to use.",
+                "links": [
+                  {
+                    "title": "open source packages",
+                    "url": "/packages"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "PaintbrushIcon",
+          "title": {
+            "text": "Themes"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Atom comes pre-installed with four UI and eight syntax { Link } in both dark and light colors. Can't find what you're looking for? Install themes created by the Atom community or create your own.",
+                "links": [
+                  {
+                    "title": "themes",
+                    "url": "/themes"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "icon": "ToolsIcon",
+          "title": {
+            "text": "Customization"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "It's easy to customize and style Atom. Tweak the look and feel of your UI with CSS/Less, and add major features with HTML and JavaScript."
+              }
+            ]
+          },
+          "links": [
+            {
+              "title": "See how to set up Atom",
+              "url": "https://www.youtube.com/watch?v=U5POoGSrtGg"
+            }
+          ]
+        },
+        {
+          "icon": "CodeIcon",
+          "title": {
+            "text": "Under the hood"
+          },
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Atom is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on { Link }, a framework for building cross platform apps using web technologies.",
+                "links": [
+                  {
+                    "title": "Electron",
+                    "url": "https://electronjs.org/"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "beta": {
+    "tryAtomBeta": {
+      "title": {
+        "text": "Try Atom Beta"
+      },
+      "description": {
+        "paragraphs": [
+          {
+            "text": "Want to be on the bleeding edge? The Beta channel contains new features and bug fixes before they land on the { Link[0] }. It is intended for developers and early adopters. See the { Link[1] } for more information.",
+            "links": [
+              {
+                "title": "stable channel",
+                "url": "/"
+              },
+              {
+                "title": "blog post",
+                "url": "https://blog.atom.io/2015/10/21/introducing-the-atom-beta-channel.html"
+              }
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "icon": "RocketIcon",
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Keep your current Atom configuration when using Atom Beta"
+              }
+            ]
+          }
+        },
+        {
+          "icon": "CalendarIcon",
+          "description": {
+            "paragraphs": [
+              {
+                "text": "New Beta releases are available regularly and installed automatically"
+              }
+            ]
+          }
+        },
+        {
+          "icon": "BugIcon",
+          "description": {
+            "paragraphs": [
+              {
+                "text": "There may be bugs. If you have problems, please { Link }",
+                "links": [
+                  {
+                    "title": "file an issue",
+                    "url": "https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "nightly": {
+    "tryAtomNightly": {
+      "title": {
+        "text": "Try Atom Nightly✨"
+      },
+      "description": {
+        "paragraphs": [
+          {
+            "text": "Want to never wait for new improvements? The Nightly channel contains new features and bug fixes as soon as they get merged into master. It is intended for developers and very early adopters. See the { Link } for more information.",
+            "links": [
+              {
+                "title": "blog post",
+                "url": "https://blog.atom.io/2019/06/21/introducing-atom-nightly-releases.html"
+              }
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "icon": "RocketIcon",
+          "description": {
+            "paragraphs": [
+              {
+                "text": "Keep your current Atom configuration when using Atom Nightly"
+              }
+            ]
+          }
+        },
+        {
+          "icon": "CalendarIcon",
+          "description": {
+            "paragraphs": [
+              {
+                "text": "New Nightly releases are available every few days and installed automatically"
+              }
+            ]
+          }
+        },
+        {
+          "icon": "BugIcon",
+          "description": {
+            "paragraphs": [
+              {
+                "text": "There may be bugs. If you have problems, please { Link }",
+                "links": [
+                  {
+                    "title": "file an issue",
+                    "url": "https://github.com/atom/atom/blob/master/CONTRIBUTING.md#submitting-issues"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

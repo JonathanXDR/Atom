@@ -45,11 +45,11 @@
 }
 /* line 52, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome a:hover {
-  color: #ebac00;
+  color: #ebac00 !important;
 }
 /* line 53, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome a:active {
-  color: #d36e2d;
+  color: #d36e2d !important;
 }
 /* line 55, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome .section {
@@ -125,7 +125,7 @@
 }
 /* line 118, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome .welcome-bg--screenshot:hover {
-  filter: none;
+  filter: none !important;
 }
 /* line 122, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome ::after {

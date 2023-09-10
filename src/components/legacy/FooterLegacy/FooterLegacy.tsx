@@ -1,12 +1,12 @@
 import CreditBadgeLegacy from '@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy';
+import { LinkType } from '@/types/common/Link';
 import { Box } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 import './FooterLegacy.css';
-import { FooterProps } from './FooterProps';
 interface FooterLegacyProps {
-  footer: FooterProps[];
+  footer: LinkType[];
 }
 
 const FooterLegacy: React.FC<FooterLegacyProps> = ({ footer }) => {
@@ -31,13 +31,13 @@ const FooterLegacy: React.FC<FooterLegacyProps> = ({ footer }) => {
       <Box className="footer">
         <Box className="wrapper no-pad">
           <Box as="ul" className="footer-left">
-            {footer.map((item: FooterProps, index) => {
-              if (shouldExcludeLink(item.link.title)) {
+            {footer.map((item: LinkType, index) => {
+              if (shouldExcludeLink(item.title)) {
                 return null;
               }
               return (
                 <Box as="li" key={index}>
-                  <Link href={item.link.url}>{item.link.title}</Link>
+                  <Link href={item.url}>{item.title}</Link>
                 </Box>
               );
             })}

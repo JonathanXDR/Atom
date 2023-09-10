@@ -1,9 +1,10 @@
 import { fetchImageDimensions } from '@/helpers/image-size';
+import { stringTemplateParser } from '@/helpers/template-parser';
 import { Box, Heading, Link, Text } from '@primer/react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { RiverProps } from '../../../types/RiverProps';
 import './RiverLegacy.css';
-import { RiverProps } from './RiverProps';
 
 interface RiverLegacyProps {
   river: RiverProps;
@@ -25,25 +26,12 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
   }, [river.image.url]);
 
   const description = river.description.paragraphs.map((paragraph, index) => {
-    if (paragraph.text.includes('{ Link }')) {
-      const [beforeLink, afterLink] = paragraph.text.split('{ Link }');
-      const link = paragraph.link;
-      return (
-        link && (
-          <Text
-            key={index}
-            as="p"
-            sx={{
-              marginBlock: '1em',
-            }}
-          >
-            {beforeLink}
-            <Link href={link.url}>{link.title}</Link>
-            {afterLink}
-          </Text>
-        )
-      );
-    } else {
+    const parsedParagraph: any = stringTemplateParser(
+      { text: paragraph.text },
+      { links: paragraph.links }
+    );
+
+    if (typeof parsedParagraph === 'string') {
       return (
         <Text
           key={index}
@@ -52,8 +40,26 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
             marginBlock: '1em',
           }}
         >
-          {paragraph.text}
+          {parsedParagraph}
         </Text>
+      );
+    } else {
+      return (
+        paragraph.links && (
+          <Text
+            key={index}
+            as="p"
+            sx={{
+              marginBlock: '1em',
+            }}
+          >
+            {(parsedParagraph as any).beforeLink}
+            <Link href={(parsedParagraph as any).link.url}>
+              {(parsedParagraph as any).link.title}
+            </Link>
+            {(parsedParagraph as any).afterLink}
+          </Text>
+        )
       );
     }
   });
@@ -62,7 +68,7 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
     <>
       <Box as="section" id={river.id} className={`section ${river.class}`}>
         <Box className="wrapper">
-          <Heading as="h3">{river.title}</Heading>
+          <Heading as="h3">{river.title.text}</Heading>
           {description[0]}
           {dimensions.width && dimensions.height && (
             <Box className="welcome-bgs">

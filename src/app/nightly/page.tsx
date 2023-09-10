@@ -1,16 +1,14 @@
 'use client';
-'use client';
-import FeatureLegacy from '@/components/legacy/FeatureLegacy/FeatureLegacy';
+import FeatureListLegacy from '@/components/legacy/FeatureListLegacy/FeatureListLegacy';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import HeroDownloadLegacy from '@/components/legacy/HeroDownloadLegacy/HeroDownloadLegacy';
 import HeroLogoLegacy from '@/components/legacy/HeroLogoLegacy/HeroLogoLegacy';
 import HeroMetaLegacy from '@/components/legacy/HeroMetaLegacy/HeroMetaLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import features from '@/data/features.json';
+import featureLists from '@/data/featureLists.json';
 import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
-import { Box, Heading, Text } from '@primer/react';
-import Link from 'next/link';
+import { Box } from '@primer/react';
 
 export default function Nightly() {
   return (
@@ -28,22 +26,9 @@ export default function Nightly() {
           </Box>
           <Box as="section" className="section section--features">
             <Box className="wrapper wrapper--nightly">
-              <Heading as="h3">Try Atom Nightly✨</Heading>
-
-              <Text as="p">
-                Want to never wait for new improvements? The Nightly channel
-                contains new features and bug fixes as soon as they get merged
-                into master. It is intended for developers and very early
-                adopters. See the{' '}
-                <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
-                  blog post{' '}
-                </Link>
-                for more information.
-              </Text>
-
-              {features.nightly.tryAtomNightly.map((feature, index) => {
-                return <FeatureLegacy feature={feature} key={index} />;
-              })}
+              <FeatureListLegacy
+                featureList={featureLists.nightly.tryAtomNightly}
+              />
             </Box>
           </Box>
         </Box>

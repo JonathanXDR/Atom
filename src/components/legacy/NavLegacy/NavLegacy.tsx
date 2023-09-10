@@ -1,5 +1,5 @@
 'use client';
-import { LinkType } from '@/types/common/Link';
+import { LinkProps } from '@/types/LinkProps';
 import { RssIcon, SignInIcon } from '@primer/octicons-react';
 import { Box, Heading, Octicon } from '@primer/react';
 import Link from 'next/link';
@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import './NavLegacy.css';
 
 interface NavLegacyProps {
-  nav: LinkType[];
+  nav: LinkProps[];
 }
 
 const NavLegacy: React.FC<NavLegacyProps> = ({ nav }) => {
@@ -28,13 +28,13 @@ const NavLegacy: React.FC<NavLegacyProps> = ({ nav }) => {
               </Heading>
             </Box>
           )}
-          {nav.map((item: LinkType) => (
-            <Box as="li" key={item.title}>
+          {nav.map((item: LinkProps) => (
+            <Box as="li" key={item.link.title}>
               <Link
-                href={item.url}
-                className={pathname === item.url ? 'is-selected' : ''}
+                href={item.link.url}
+                className={pathname === item.link.url ? 'is-selected' : ''}
               >
-                {item.title}
+                {item.link.title}
               </Link>
             </Box>
           ))}

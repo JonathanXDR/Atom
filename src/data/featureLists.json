@@ -98,7 +98,7 @@
           "description": {
             "paragraphs": [
               {
-                "text": "Choose from thousands of { Link } that add new features and functionality to Atom, or build a package from scratch and publish it for everyone else to use.",
+                "text": "Choose from thousands of {{ link }} that add new features and functionality to Atom, or build a package from scratch and publish it for everyone else to use.",
                 "links": [
                   {
                     "title": "open source packages",
@@ -117,7 +117,7 @@
           "description": {
             "paragraphs": [
               {
-                "text": "Atom comes pre-installed with four UI and eight syntax { Link } in both dark and light colors. Can't find what you're looking for? Install themes created by the Atom community or create your own.",
+                "text": "Atom comes pre-installed with four UI and eight syntax {{ link }} in both dark and light colors. Can't find what you're looking for? Install themes created by the Atom community or create your own.",
                 "links": [
                   {
                     "title": "themes",
@@ -155,7 +155,7 @@
           "description": {
             "paragraphs": [
               {
-                "text": "Atom is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on { Link }, a framework for building cross platform apps using web technologies.",
+                "text": "Atom is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on {{ link }}, a framework for building cross platform apps using web technologies.",
                 "links": [
                   {
                     "title": "Electron",
@@ -177,7 +177,7 @@
       "description": {
         "paragraphs": [
           {
-            "text": "Want to be on the bleeding edge? The Beta channel contains new features and bug fixes before they land on the { Link[0] }. It is intended for developers and early adopters. See the { Link[1] } for more information.",
+            "text": "Want to be on the bleeding edge? The Beta channel contains new features and bug fixes before they land on the {{ link[0] }}. It is intended for developers and early adopters. See the {{ link[1] }} for more information.",
             "links": [
               {
                 "title": "stable channel",
@@ -217,7 +217,7 @@
           "description": {
             "paragraphs": [
               {
-                "text": "There may be bugs. If you have problems, please { Link }",
+                "text": "There may be bugs. If you have problems, please {{ link }}",
                 "links": [
                   {
                     "title": "file an issue",
@@ -239,7 +239,7 @@
       "description": {
         "paragraphs": [
           {
-            "text": "Want to never wait for new improvements? The Nightly channel contains new features and bug fixes as soon as they get merged into master. It is intended for developers and very early adopters. See the { Link } for more information.",
+            "text": "Want to never wait for new improvements? The Nightly channel contains new features and bug fixes as soon as they get merged into master. It is intended for developers and very early adopters. See the {{ link }} for more information.",
             "links": [
               {
                 "title": "blog post",
@@ -275,7 +275,7 @@
           "description": {
             "paragraphs": [
               {
-                "text": "There may be bugs. If you have problems, please { Link }",
+                "text": "There may be bugs. If you have problems, please {{ link }}",
                 "links": [
                   {
                     "title": "file an issue",

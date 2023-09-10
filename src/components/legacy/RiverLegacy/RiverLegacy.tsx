@@ -30,7 +30,7 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
       { text: paragraph.text },
       { links: paragraph.links }
     );
-
+    console.log('parsedParagraph', parsedParagraph.beforeLink);
     if (typeof parsedParagraph === 'string') {
       return (
         <Text
@@ -54,8 +54,8 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
             }}
           >
             {(parsedParagraph as any).beforeLink}
-            <Link href={(parsedParagraph as any).link.url}>
-              {(parsedParagraph as any).link.title}
+            <Link href={(parsedParagraph as any).link?.url}>
+              {(parsedParagraph as any).link?.title}
             </Link>
             {(parsedParagraph as any).afterLink}
           </Text>

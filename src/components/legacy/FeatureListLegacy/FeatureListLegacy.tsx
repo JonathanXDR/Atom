@@ -43,8 +43,8 @@ const FeatureListLegacy: React.FC<FeatureListLegacyProps> = ({
               }}
             >
               {(parsedParagraph as any).beforeLink}
-              <Link href={(parsedParagraph as any).link.url}>
-                {(parsedParagraph as any).link.title}
+              <Link href={(parsedParagraph as any).link?.url}>
+                {(parsedParagraph as any).link?.title}
               </Link>
               {(parsedParagraph as any).afterLink}
             </Text>

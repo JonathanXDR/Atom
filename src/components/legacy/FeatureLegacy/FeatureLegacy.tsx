@@ -43,8 +43,8 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
             }}
           >
             {(parsedParagraph as any).beforeLink}
-            <Link href={(parsedParagraph as any).link.url}>
-              {(parsedParagraph as any).link.title}
+            <Link href={(parsedParagraph as any).link?.url}>
+              {(parsedParagraph as any).link?.title}
             </Link>
             {(parsedParagraph as any).afterLink}
           </Text>
@@ -69,14 +69,15 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
         {feature.title && <Heading as="h4">{feature.title.text}</Heading>}
         {description}
 
-        {feature.links && (
-          <Text as="p">
-            <br />
-            <Link href={feature.link.url} target="_blank">
-              {feature.link.title}
-            </Link>
-          </Text>
-        )}
+        {feature.links &&
+          feature.links.map((link, index) => (
+            <Text as="p" key={index}>
+              <br />
+              <Link href={link.url} target="_blank">
+                {link.title}
+              </Link>
+            </Text>
+          ))}
       </Box>
     </>
   );

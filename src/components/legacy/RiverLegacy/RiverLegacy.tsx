@@ -24,22 +24,46 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
     fetchDimensions();
   }, [river.image.url]);
 
-  const [beforeLink, afterLink] = river.description.text.split('{ Link }');
+  const description = river.description.paragraphs.map((paragraph, index) => {
+    if (paragraph.text.includes('{ Link }')) {
+      const [beforeLink, afterLink] = paragraph.text.split('{ Link }');
+      const link = paragraph.link;
+      return (
+        link && (
+          <Text
+            key={index}
+            as="p"
+            sx={{
+              marginBlock: '1em',
+            }}
+          >
+            {beforeLink}
+            <Link href={link.url}>{link.title}</Link>
+            {afterLink}
+          </Text>
+        )
+      );
+    } else {
+      return (
+        <Text
+          key={index}
+          as="p"
+          sx={{
+            marginBlock: '1em',
+          }}
+        >
+          {paragraph.text}
+        </Text>
+      );
+    }
+  });
 
   return (
     <>
       <Box as="section" id={river.id} className={`section ${river.class}`}>
         <Box className="wrapper">
           <Heading as="h3">{river.title}</Heading>
-          <Text as="p" sx={{ marginBlock: '1em' }}>
-            {beforeLink}
-            {river.description.link && (
-              <Link href={river.description.link.url}>
-                {river.description.link.title}
-              </Link>
-            )}
-            {afterLink}
-          </Text>
+          {description[0]}
           {dimensions.width && dimensions.height && (
             <Box className="welcome-bgs">
               <Image
@@ -51,15 +75,17 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
               />
             </Box>
           )}
+          {description[1]}
           {river.link && (
             <Text as="p" className="welcome-cta">
-              <Link href={river.link.url} className="welcome-button">
-                {river.link.title}
+              <Link href={river.link?.title} className="welcome-button">
+                {river.link?.title}
               </Link>
             </Text>
           )}
         </Box>
       </Box>
+
       {/* <Box as="section" id="teletype" className="section section--realtime">
         <Box className="wrapper">
           <Heading as="h3">Teletype for Atom</Heading>

@@ -6,7 +6,7 @@ export function stringTemplateParser(
   values: ValueObject
 ): object {
   const templateMatcher =
-    /{{\s?([a-zA-Z0-9]*)(\[\d+\])?\s?([/+\-*]\s?\d+)?\s?}}/g;
+    /{{\s?([a-zA-Z0-9]*)(\[\d+\])?\s?([/+*-]\s?\d+)?\s?}}/g;
 
   const description = JSON.stringify(expression).replace(
     templateMatcher,
@@ -19,21 +19,24 @@ export function stringTemplateParser(
       if (operation) {
         value = performOperation(value, operation.trim());
       }
-      return value;
+      return JSON.stringify(value);
     }
   );
 
   return JSON.parse(description);
 }
 
-function extractValueWithIndex(value: any, index: string): any {
-  const parsedIndex = parseInt(index.replace(/[^\d]/g, ''), 10);
+function extractValueWithIndex(value: any[], index: string): any {
+  const parsedIndex = parseInt(index.replace(/\D/g, ''), 10);
   return value[parsedIndex];
 }
 
-function performOperation(value: any, operation: string): any {
-  const operator = operation.charAt(0) as Operator;
-  const operand = parseFloat(operation.slice(1));
+function performOperation(value: number, operation: string): number {
+  const [operator, operandStr] = [
+    operation.charAt(0) as Operator,
+    operation.slice(1),
+  ];
+  const operand = parseFloat(operandStr);
 
   switch (operator) {
     case '+':
@@ -45,9 +48,8 @@ function performOperation(value: any, operation: string): any {
     case '/':
       if (operand !== 0) {
         return value / operand;
-      } else {
-        throw new Error('Division by zero');
       }
+      throw new Error('Division by zero');
     default:
       throw new Error(`Invalid operator: ${operator}`);
   }

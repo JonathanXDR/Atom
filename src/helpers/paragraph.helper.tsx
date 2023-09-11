@@ -5,7 +5,7 @@ export function paragraphProcessor(
   paragraph: string,
   links?: LinkType[]
 ): (string | JSX.Element)[] {
-  const linkMatcher = /{{\s?([a-zA-Z0-9]*)(\[\d+\])?\s?}}/g;
+  const linkMatcher = /{{\s?([a-zA-Z0-9]+)(\[\d+\])?\s?}}/g;
   const segments: (string | JSX.Element)[] = [];
   let lastIndex = 0;
 
@@ -16,7 +16,7 @@ export function paragraphProcessor(
     }
 
     if (index) {
-      const parsedIndex = parseInt(index.replace(/\\D/g, ''), 10);
+      const parsedIndex = parseInt(index.replace(/\D/g, ''), 10);
       const link = links && links[parsedIndex];
       if (link) {
         segments.push(<Link href={link.url}>{link.title}</Link>);

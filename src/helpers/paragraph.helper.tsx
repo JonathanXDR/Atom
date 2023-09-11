@@ -1,10 +1,13 @@
 import { LinkType } from '@/types/common/Link';
+import { Text } from '@primer/react';
 import Link from 'next/link';
+import React from 'react';
 
 export function paragraphProcessor(
   paragraph: string,
-  links?: LinkType[]
-): (string | JSX.Element)[] {
+  links?: LinkType[],
+  p_index: number = 0
+): JSX.Element {
   const linkMatcher = /{{\s?([a-zA-Z0-9]+)(\[\d+\])?\s?}}/g;
   const segments: (string | JSX.Element)[] = [];
   let lastIndex = 0;
@@ -38,5 +41,21 @@ export function paragraphProcessor(
     segments.push(afterLastLink);
   }
 
-  return segments;
+  return (
+    <Text
+      key={p_index}
+      as="p"
+      sx={{
+        marginBlock: '1em',
+      }}
+    >
+      {segments.map((segment, segIndex) =>
+        typeof segment === 'string' ? (
+          segment
+        ) : (
+          <React.Fragment key={segIndex}>{segment}</React.Fragment>
+        )
+      )}
+    </Text>
+  );
 }

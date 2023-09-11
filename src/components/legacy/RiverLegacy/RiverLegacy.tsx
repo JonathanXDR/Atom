@@ -1,8 +1,8 @@
-import { fetchImageDimensions } from '@/helpers/image-size';
-import { stringTemplateParser } from '@/helpers/template-parser';
+import { fetchImageDimensions } from '@/helpers/image.helper';
+import { paragraphProcessor } from '@/helpers/paragraph.helper';
 import { Box, Heading, Link, Text } from '@primer/react';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RiverProps } from '../../../types/RiverProps';
 import './RiverLegacy.css';
 
@@ -25,44 +25,9 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
     fetchDimensions();
   }, [river.image.url]);
 
-  const description = river.description.paragraphs.map((paragraph, index) => {
-    const parsedParagraph: any = stringTemplateParser(
-      { text: paragraph.text },
-      { links: paragraph.links }
-    );
-    console.log('parsedParagraph', parsedParagraph.beforeLink);
-    if (typeof parsedParagraph === 'string') {
-      return (
-        <Text
-          key={index}
-          as="p"
-          sx={{
-            marginBlock: '1em',
-          }}
-        >
-          {parsedParagraph}
-        </Text>
-      );
-    } else {
-      return (
-        paragraph.links && (
-          <Text
-            key={index}
-            as="p"
-            sx={{
-              marginBlock: '1em',
-            }}
-          >
-            {(parsedParagraph as any).beforeLink}
-            <Link href={(parsedParagraph as any).link?.url}>
-              {(parsedParagraph as any).link?.title}
-            </Link>
-            {(parsedParagraph as any).afterLink}
-          </Text>
-        )
-      );
-    }
-  });
+  const description = river.description.paragraphs.map((paragraph, index) =>
+    paragraphProcessor(paragraph.text, paragraph.links, index)
+  );
 
   return (
     <>

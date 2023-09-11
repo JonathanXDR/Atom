@@ -1,4 +1,4 @@
-import { stringTemplateParser } from '@/helpers/template-parser';
+import { paragraphProcessor } from '@/helpers/paragraph.helper';
 import * as octicons from '@primer/octicons-react';
 import { Box, Heading, Link, Octicon, OcticonProps, Text } from '@primer/react';
 import React from 'react';
@@ -14,44 +14,9 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
     feature.icon as keyof typeof octicons
   ] as React.ComponentType<OcticonProps>;
 
-  const description = feature.description.paragraphs.map((paragraph, index) => {
-    const parsedParagraph: any = stringTemplateParser(
-      { text: paragraph.text },
-      { links: paragraph.links }
-    );
-
-    if (typeof parsedParagraph === 'string') {
-      return (
-        <Text
-          key={index}
-          as="p"
-          sx={{
-            marginBlock: '1em',
-          }}
-        >
-          {parsedParagraph}
-        </Text>
-      );
-    } else {
-      return (
-        paragraph.links && (
-          <Text
-            key={index}
-            as="p"
-            sx={{
-              marginBlock: '1em',
-            }}
-          >
-            {(parsedParagraph as any).beforeLink}
-            <Link href={(parsedParagraph as any).link?.url}>
-              {(parsedParagraph as any).link?.title}
-            </Link>
-            {(parsedParagraph as any).afterLink}
-          </Text>
-        )
-      );
-    }
-  });
+  const description = feature.description.paragraphs.map((paragraph, index) =>
+    paragraphProcessor(paragraph.text, paragraph.links, index)
+  );
 
   return (
     <>

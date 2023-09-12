@@ -20,7 +20,7 @@ const FeatureListLegacy: React.FC<FeatureListLegacyProps> = ({
   return (
     <>
       <Box as="section" className="section section--features">
-        <Box className="wrapper no-pad">
+        <Box className={featureList.class}>
           <Heading as="h3">{featureList.title.text}</Heading>
 
           {description}

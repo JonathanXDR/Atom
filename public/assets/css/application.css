@@ -1926,12 +1926,12 @@ body.menu-active .modal-backdrop {
 }
 /* line 142, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--hero .wrapper {
-  padding-top: 133.3333333333px !important;
-  padding-bottom: 0 !important;
+  padding-top: 133.3333333333px;
+  padding-bottom: 0;
 }
 /* line 147, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .section--hero a {
-  font-size: 0.9em !important;
+  font-size: 0.9em;
   color: #8e8373 !important;
 }
 /* line 153, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */

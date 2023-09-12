@@ -2,7 +2,7 @@
   "home": [
     {
       "id": "teletype",
-      "class": "section--realtime",
+      "class": "section section--realtime",
       "title": {
         "text": "Teletype for Atom"
       },
@@ -33,7 +33,7 @@
     },
     {
       "id": "ide",
-      "class": "section--ide",
+      "class": "section section--ide",
       "title": {
         "text": "Atom IDE"
       },
@@ -64,7 +64,7 @@
     },
     {
       "id": "github",
-      "class": "section--github",
+      "class": "section section--github",
       "title": {
         "text": "GitHub for Atom"
       },

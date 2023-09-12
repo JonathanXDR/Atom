@@ -4,6 +4,7 @@ import { TitleType } from './common/Title';
 
 export interface FeatureListProps {
   title: TitleType;
+  class?: string;
   description?: DescriptionType;
   features: FeatureProps[];
 }

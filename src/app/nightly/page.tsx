@@ -19,18 +19,20 @@ export default function Nightly() {
         <Box className="welcome welcome-nightly">
           <Box as="section" className="section section--hero">
             <Box className="wrapper">
-              <HeroLogoLegacy />
-              <HeroDownloadLegacy />
-              <HeroMetaLegacy />
+              <Box as="header" className="hero-header">
+                <HeroLogoLegacy />
+                <HeroDownloadLegacy />
+                <HeroMetaLegacy />
+              </Box>
             </Box>
           </Box>
-          <Box as="section" className="section section--features">
-            <Box className="wrapper wrapper--nightly">
-              <FeatureListLegacy
-                featureList={featureLists.nightly.tryAtomNightly}
-              />
-            </Box>
-          </Box>
+          {/* <Box as="section" className="section section--features">
+            <Box className="wrapper wrapper--nightly"> */}
+          <FeatureListLegacy
+            featureList={featureLists.nightly.tryAtomNightly}
+          />
+          {/* </Box>
+          </Box> */}
         </Box>
 
         <Box className="footer-pad"></Box>

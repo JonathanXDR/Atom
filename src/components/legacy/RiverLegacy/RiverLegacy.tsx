@@ -31,7 +31,7 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
 
   return (
     <>
-      <Box as="section" id={river.id} className={`section ${river.class}`}>
+      <Box as="section" id={river.id} className={river.class}>
         <Box className="wrapper">
           <Heading as="h3">{river.title.text}</Heading>
           {description[0]}

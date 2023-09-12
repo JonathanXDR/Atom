@@ -4,6 +4,7 @@
       "title": {
         "text": "Everything you would expect"
       },
+      "class": "wrapper no-pad",
       "features": [
         {
           "icon": "DeviceDesktopIcon",
@@ -89,6 +90,7 @@
       "title": {
         "text": "Make it your editor"
       },
+      "class": "wrapper no-pad",
       "features": [
         {
           "icon": "PackageIcon",
@@ -174,6 +176,7 @@
       "title": {
         "text": "Try Atom Beta"
       },
+      "class": "wrapper wrapper--beta",
       "description": {
         "paragraphs": [
           {
@@ -236,6 +239,7 @@
       "title": {
         "text": "Try Atom Nightly✨"
       },
+      "class": "wrapper wrapper--nightly",
       "description": {
         "paragraphs": [
           {

@@ -152,7 +152,7 @@
   }
   /* line 491, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .welcome .hero-tagline {
-    font-size: 2.4em;
+    font-size: 2.4em !important;
   }
   /* line 495, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .welcome .hero-download {
@@ -296,7 +296,7 @@
 /* line 605, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta .section--hero,
 .welcome-nightly .section--hero {
-  background-image: none;
+  background-image: none !important;
 }
 /* line 607, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta .section--hero .wrapper,
@@ -322,4 +322,12 @@
 .welcome-beta .section--features,
 .welcome-nightly .section--features {
   margin-bottom: -40px;
+}
+@media (min-width: 1101px) {
+  @supports (display: grid) {
+    .welcome-beta .features,
+    .welcome-nightly .features {
+      display: unset !important;
+    }
+  }
 }

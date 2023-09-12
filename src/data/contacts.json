@@ -1,3 +1,78 @@
 {
-  "home": []
+  "home": {
+    "openSource": {
+      "description": {
+        "paragraphs": [
+          {
+            "text": "Atom is open source. Be part of the Atom community or help improve your favorite text editor."
+          }
+        ]
+      },
+      "links": [
+        {
+          "title": "Fork on GitHub",
+          "url": "https://github.com/atom/atom"
+        }
+      ]
+    },
+    "keepInTouch": {
+      "description": {
+        "paragraphs": [
+          {
+            "tables": [
+              {
+                "data": [
+                  {
+                    "title": "GitHub",
+                    "links": [
+                      {
+                        "title": "github.com/atom",
+                        "url": "https://github.com/atom"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Twitter",
+                    "links": [
+                      {
+                        "title": "@AtomEditor",
+                        "url": "https://twitter.com/atomeditor"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Discussions",
+                    "links": [
+                      {
+                        "title": "Github Discussions",
+                        "url": "https://github.com/atom/atom/discussions"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Stuff",
+                    "links": [
+                      {
+                        "title": "Atom Gear",
+                        "url": "https://github.myshopify.com/search?q=atom"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "RSS Feed",
+                    "links": [
+                      {
+                        "title": "Packages & Themes",
+                        "url": "/packages.atom"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import { paragraphProcessor } from '@/helpers/paragraph.helper';
+import { injectDescriptionLinks } from '@/helpers/descriptionHelper';
 import * as octicons from '@primer/octicons-react';
 import { Box, Heading, Link, Octicon, OcticonProps, Text } from '@primer/react';
 import React from 'react';
@@ -10,12 +10,14 @@ interface FeatureLegacyProps {
 }
 
 const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
-  const icon = octicons[
-    feature.icon as keyof typeof octicons
-  ] as React.ComponentType<OcticonProps>;
+  const icon =
+    feature.icon &&
+    (octicons[
+      feature.icon as keyof typeof octicons
+    ] as React.ComponentType<OcticonProps>);
 
   const description = feature.description.paragraphs.map((paragraph, index) =>
-    paragraphProcessor(paragraph.text, paragraph.links, index)
+    injectDescriptionLinks(paragraph.text ?? '', paragraph.links, index)
   );
 
   return (
@@ -29,7 +31,7 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
             justifyContent: 'center',
           }}
         >
-          <Octicon icon={icon} size={24} />
+          {icon && <Octicon icon={icon} size={24} />}
         </Box>
         {feature.title && <Heading as="h4">{feature.title.text}</Heading>}
         {description}

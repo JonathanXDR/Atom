@@ -1,4 +1,4 @@
-import { paragraphProcessor } from '@/helpers/paragraph.helper';
+import { injectDescriptionLinks } from '@/helpers/descriptionHelper';
 import { FeatureListProps } from '@/types/FeatureListProps';
 import { Box, Heading } from '@primer/react';
 import React from 'react';
@@ -14,7 +14,7 @@ const FeatureListLegacy: React.FC<FeatureListLegacyProps> = ({
 }) => {
   const description = featureList?.description?.paragraphs.map(
     (paragraph, index) =>
-      paragraphProcessor(paragraph.text, paragraph.links, index)
+      injectDescriptionLinks(paragraph.text ?? '', paragraph.links, index)
   );
 
   return (

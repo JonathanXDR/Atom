@@ -3,7 +3,7 @@ import { Text } from '@primer/react';
 import Link from 'next/link';
 import React from 'react';
 
-export function paragraphProcessor(
+export function injectDescriptionLinks(
   paragraph: string,
   links?: LinkType[],
   p_index: number = 0

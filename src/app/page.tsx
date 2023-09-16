@@ -15,6 +15,7 @@ import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import rivers from '@/data/rivers.json';
 import tags from '@/data/tags.json';
+import { ContactProps } from '@/types/ContactProps';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import octonaut from '/public/assets/svg/octonaut.svg';
@@ -60,7 +61,7 @@ export default function Home() {
           />
           <FeatureListLegacy featureList={featureLists.home.makeItYourEditor} />
 
-          <ContactLegacy contacts={contacts.home} />
+          <ContactLegacy contacts={contacts.home as ContactProps[]} />
         </Box>
 
         <Box className="footer-pad"></Box>

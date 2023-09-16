@@ -6,7 +6,7 @@ import React from 'react';
 export function injectDescriptionLinks(
   paragraphs: DescriptionType['paragraphs']
 ): JSX.Element[] {
-  return paragraphs.map((paragraph, index) => {
+  return paragraphs?.map((paragraph, index) => {
     const text = paragraph.text;
     const links = paragraph.links;
 

@@ -56,10 +56,14 @@ export default function Home() {
             return <RiverLegacy river={river} key={index} />;
           })}
 
-          <FeatureListLegacy
-            featureList={featureLists.home.everythingYouExpect}
-          />
-          <FeatureListLegacy featureList={featureLists.home.makeItYourEditor} />
+          <Box as="section" className="section section--features">
+            <FeatureListLegacy
+              featureList={featureLists.home.everythingYouExpect}
+            />
+            <FeatureListLegacy
+              featureList={featureLists.home.makeItYourEditor}
+            />
+          </Box>
 
           <ContactLegacy contacts={contacts.home as ContactProps[]} />
         </Box>

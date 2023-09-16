@@ -18,17 +18,15 @@ const FeatureListLegacy: React.FC<FeatureListLegacyProps> = ({
 
   return (
     <>
-      <Box as="section" className="section section--features">
-        <Box className={featureList.class}>
-          <Heading as="h3">{featureList.title.text}</Heading>
+      <Box className={featureList.class}>
+        <Heading as="h3">{featureList.title.text}</Heading>
 
-          {description}
+        {description}
 
-          <Box className="features">
-            {featureList.features.map((feature, index) => {
-              return <FeatureLegacy feature={feature} key={index} />;
-            })}
-          </Box>
+        <Box className="features">
+          {featureList.features.map((feature, index) => {
+            return <FeatureLegacy feature={feature} key={index} />;
+          })}
         </Box>
       </Box>
     </>

@@ -25,9 +25,7 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
     fetchDimensions();
   }, [river.image.url]);
 
-  const description = river.description.paragraphs.map((paragraph, index) =>
-    injectDescriptionLinks(paragraph.text ?? '', paragraph.links, index)
-  );
+  const description = injectDescriptionLinks(river.description.paragraphs);
 
   return (
     <>

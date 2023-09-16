@@ -16,9 +16,7 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
       feature.icon as keyof typeof octicons
     ] as React.ComponentType<OcticonProps>);
 
-  const description = feature.description.paragraphs.map((paragraph, index) =>
-    injectDescriptionLinks(paragraph.text ?? '', paragraph.links, index)
-  );
+  const description = injectDescriptionLinks(feature.description.paragraphs);
 
   return (
     <>

@@ -14,13 +14,8 @@ const ContactLegacy: React.FC<ContactLegacyProps> = ({ contacts }) => {
       <Box className="wrapper no-pad">
         <Box className="columns">
           {contacts.map((contact, index) => {
-            const description = contact.description?.paragraphs.map(
-              (paragraph, index) =>
-                injectDescriptionLinks(
-                  paragraph.text ?? '',
-                  paragraph.links,
-                  index
-                )
+            const description = injectDescriptionLinks(
+              contact.description?.paragraphs
             );
 
             return (

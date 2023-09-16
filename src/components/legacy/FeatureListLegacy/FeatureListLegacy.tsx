@@ -12,9 +12,8 @@ interface FeatureListLegacyProps {
 const FeatureListLegacy: React.FC<FeatureListLegacyProps> = ({
   featureList,
 }) => {
-  const description = featureList?.description?.paragraphs.map(
-    (paragraph, index) =>
-      injectDescriptionLinks(paragraph.text ?? '', paragraph.links, index)
+  const description = injectDescriptionLinks(
+    featureList?.description?.paragraphs || []
   );
 
   return (

@@ -57,12 +57,14 @@ export default function Home() {
           })}
 
           <Box as="section" className="section section--features">
-            <FeatureListLegacy
-              featureList={featureLists.home.everythingYouExpect}
-            />
-            <FeatureListLegacy
-              featureList={featureLists.home.makeItYourEditor}
-            />
+            <Box className="wrapper no-pad">
+              <FeatureListLegacy
+                featureList={featureLists.home.everythingYouExpect}
+              />
+              <FeatureListLegacy
+                featureList={featureLists.home.makeItYourEditor}
+              />
+            </Box>
           </Box>
 
           <ContactLegacy contacts={contacts.home as ContactProps[]} />

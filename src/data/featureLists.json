@@ -4,7 +4,6 @@
       "title": {
         "text": "Everything you would expect"
       },
-      "class": "wrapper no-pad",
       "features": [
         {
           "icon": "DeviceDesktopIcon",
@@ -90,7 +89,6 @@
       "title": {
         "text": "Make it your editor"
       },
-      "class": "wrapper no-pad",
       "features": [
         {
           "icon": "PackageIcon",

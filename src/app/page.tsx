@@ -9,6 +9,7 @@ import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import RiverLegacy from '@/components/legacy/RiverLegacy/RiverLegacy';
 import SunsetBannerLegacy from '@/components/legacy/SunsetBannerLegacy/SunsetBannerLegacy';
 import TagLegacy from '@/components/legacy/TagLegacy/TagLegacy';
+import contacts from '@/data/contacts.json';
 import featureLists from '@/data/featureLists.json';
 import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
@@ -59,7 +60,7 @@ export default function Home() {
           />
           <FeatureListLegacy featureList={featureLists.home.makeItYourEditor} />
 
-          <ContactLegacy />
+          <ContactLegacy contacts={contacts.home} />
         </Box>
 
         <Box className="footer-pad"></Box>

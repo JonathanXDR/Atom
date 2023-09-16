@@ -1,6 +1,9 @@
 {
-  "home": {
-    "openSource": {
+  "home": [
+    {
+      "title": {
+        "text": "Open source"
+      },
       "description": {
         "paragraphs": [
           {
@@ -15,64 +18,61 @@
         }
       ]
     },
-    "keepInTouch": {
-      "description": {
-        "paragraphs": [
-          {
-            "tables": [
-              {
-                "data": [
-                  {
-                    "title": "GitHub",
-                    "links": [
-                      {
-                        "title": "github.com/atom",
-                        "url": "https://github.com/atom"
-                      }
-                    ]
-                  },
-                  {
-                    "title": "Twitter",
-                    "links": [
-                      {
-                        "title": "@AtomEditor",
-                        "url": "https://twitter.com/atomeditor"
-                      }
-                    ]
-                  },
-                  {
-                    "title": "Discussions",
-                    "links": [
-                      {
-                        "title": "Github Discussions",
-                        "url": "https://github.com/atom/atom/discussions"
-                      }
-                    ]
-                  },
-                  {
-                    "title": "Stuff",
-                    "links": [
-                      {
-                        "title": "Atom Gear",
-                        "url": "https://github.myshopify.com/search?q=atom"
-                      }
-                    ]
-                  },
-                  {
-                    "title": "RSS Feed",
-                    "links": [
-                      {
-                        "title": "Packages & Themes",
-                        "url": "/packages.atom"
-                      }
-                    ]
-                  }
-                ]
+    {
+      "title": {
+        "text": "Keep in touch"
+      },
+      "tables": [
+        {
+          "data": [
+            {
+              "title": {
+                "text": "GitHub"
+              },
+              "link": {
+                "title": "github.com/atom",
+                "url": "https://github.com/atom"
               }
-            ]
-          }
-        ]
-      }
+            },
+            {
+              "title": {
+                "text": "Twitter"
+              },
+              "link": {
+                "title": "@AtomEditor",
+                "url": "https://twitter.com/atomeditor"
+              }
+            },
+            {
+              "title": {
+                "text": "Discussions"
+              },
+              "link": {
+                "title": "Github Discussions",
+                "url": "https://github.com/atom/atom/discussions"
+              }
+            },
+            {
+              "title": {
+                "text": "Stuff"
+              },
+              "link": {
+                "title": "Atom Gear",
+                "url": "https://github.myshopify.com/search?q=atom"
+              }
+            },
+            {
+              "title": {
+                "text": "RSS Feed"
+              },
+              "link": {
+                "title": "Packages & Themes",
+                "url": "/packages.atom"
+              }
+            }
+          ]
+        }
+      ]
     }
-  }
+  ]
 }

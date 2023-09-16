@@ -1,72 +1,69 @@
-import { Box, Heading, Text } from '@primer/react';
-import Link from 'next/link';
+import { injectDescriptionLinks } from '@/helpers/descriptionHelper';
+import { ContactProps } from '@/types/ContactProps';
+import { Box, Heading, Link, Text } from '@primer/react';
 import React from 'react';
-// import './ContactLegacy.css';
+import './ContactLegacy.css';
 
-const ContactLegacy: React.FC = () => {
+interface ContactLegacyProps {
+  contacts: ContactProps[];
+}
+
+const ContactLegacy: React.FC<ContactLegacyProps> = ({ contacts }) => {
   return (
     <Box as="section" className="section section--contact">
       <Box className="wrapper no-pad">
         <Box className="columns">
-          <Box className="column">
-            <Heading as="h3">Open source</Heading>
-            <Text as="p">
-              Atom is open source. Be part of the Atom community or help improve
-              your favorite text editor.
-            </Text>
-            <Text as="p" className="welcome-cta">
-              <Link
-                href="https://github.com/atom/atom"
-                className="welcome-button"
-              >
-                Fork on GitHub
-              </Link>
-            </Text>
-          </Box>
+          {contacts.map((contact, index) => {
+            const description = contact.description?.paragraphs.map(
+              (paragraph, index) =>
+                injectDescriptionLinks(
+                  paragraph.text ?? '',
+                  paragraph.links,
+                  index
+                )
+            );
 
-          <Box className="column">
-            <Heading as="h3">Keep in touch</Heading>
-            <Box as="table" className="welcome-contact-table">
-              <Box as="tbody">
-                <Box as="tr">
-                  <Box as="td">GitHub</Box>
-                  <Box as="td">
-                    <Link href="https://github.com/atom">github.com/atom</Link>
-                  </Box>
-                </Box>
-                <Box as="tr">
-                  <Box as="td">Twitter</Box>
-                  <Box as="td">
-                    <Link href="https://twitter.com/atomeditor">
-                      @AtomEditor
-                    </Link>
-                  </Box>
-                </Box>
-                <Box as="tr">
-                  <Box as="td">Discussions</Box>
-                  <Box as="td">
-                    <Link href="https://github.com/atom/atom/discussions">
-                      Github Discussions
-                    </Link>
-                  </Box>
-                </Box>
-                <Box as="tr">
-                  <Box as="td">Stuff</Box>
-                  <Box as="td">
-                    <Link href="https://github.myshopify.com/search?q=atom">
-                      Atom Gear
-                    </Link>
-                  </Box>
-                </Box>
-                <Box as="tr">
-                  <Box as="td">RSS Feed</Box>
-                  <Box as="td">
-                    <Link href="/packages.atom">Packages &amp; Themes</Link>
-                  </Box>
-                </Box>
+            return (
+              <Box className="column" key={index}>
+                <Heading as="h3">{contact.title.text}</Heading>
+                {description}
+
+                {contact.tables &&
+                  contact.tables.map((table, index) => (
+                    <Box
+                      as="table"
+                      className="welcome-contact-table"
+                      key={index}
+                    >
+                      <Box as="tbody">
+                        {table.data.map((row, index) => (
+                          <Box as="tr" key={index}>
+                            <Box as="td">{row.title?.text}</Box>
+                            <Box as="td">
+                              <Link href={row.link?.url}>
+                                {row.link?.title}
+                              </Link>
+                            </Box>
+                          </Box>
+                        ))}
+                      </Box>
+                    </Box>
+                  ))}
+                {contact.links &&
+                  contact.links.map((link, index) => (
+                    <Text as="p" className="welcome-cta" key={index}>
+                      <Link
+                        href={link.url}
+                        className="welcome-button"
+                        target="_blank"
+                      >
+                        {link.title}
+                      </Link>
+                    </Text>
+                  ))}
               </Box>
-            </Box>
-          </Box>
+            );
+          })}
         </Box>
       </Box>
     </Box>

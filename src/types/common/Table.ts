@@ -1,4 +1,9 @@
+import { LinkType } from './Link';
+import { TitleType } from './Title';
+
 export type TableType = {
-  headers: string[];
-  data: string[][];
+  data: {
+    title: TitleType;
+    link: LinkType;
+  }[];
 };

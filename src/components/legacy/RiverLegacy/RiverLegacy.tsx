@@ -47,7 +47,7 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
           {description[1]}
           {river.link && (
             <Text as="p" className="welcome-cta">
-              <Link href={river.link?.title} className="welcome-button">
+              <Link href={river.link?.url} className="welcome-button">
                 {river.link?.title}
               </Link>
             </Text>

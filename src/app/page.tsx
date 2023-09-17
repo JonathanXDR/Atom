@@ -18,6 +18,8 @@ import tags from '@/data/tags.json';
 import { ContactProps } from '@/types/ContactProps';
 import { Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
+import '/public/assets/css/application.css';
+import '/public/assets/css/welcome.css';
 import octonaut from '/public/assets/svg/octonaut.svg';
 
 export default function Home() {

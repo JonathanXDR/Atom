@@ -174,7 +174,6 @@
       "title": {
         "text": "Try Atom Beta"
       },
-      "class": "wrapper wrapper--beta",
       "description": {
         "paragraphs": [
           {
@@ -237,7 +236,6 @@
       "title": {
         "text": "Try Atom Nightly✨"
       },
-      "class": "wrapper wrapper--nightly",
       "description": {
         "paragraphs": [
           {

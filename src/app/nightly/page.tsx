@@ -26,13 +26,13 @@ export default function Nightly() {
               </Box>
             </Box>
           </Box>
-          {/* <Box as="section" className="section section--features">
-            <Box className="wrapper wrapper--nightly"> */}
-          <FeatureListLegacy
-            featureList={featureLists.nightly.tryAtomNightly}
-          />
-          {/* </Box>
-          </Box> */}
+          <Box as="section" className="section section--features">
+            <Box className="wrapper wrapper--nightly">
+              <FeatureListLegacy
+                featureList={featureLists.nightly.tryAtomNightly}
+              />
+            </Box>
+          </Box>
         </Box>
 
         <Box className="footer-pad"></Box>

@@ -3,7 +3,6 @@ import '@primer/react-brand/lib/css/main.css';
 import { Metadata } from 'next';
 import '../tailwind.css';
 import './main.css';
-
 import '/public/assets/css/blog.css';
 
 export const metadata: Metadata = {

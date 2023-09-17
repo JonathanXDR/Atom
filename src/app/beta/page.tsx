@@ -26,11 +26,11 @@ export default function Beta() {
               </Box>
             </Box>
           </Box>
-          {/* <Box as="section" className="section section--features">
-            <Box className="wrapper wrapper--beta"> */}
-          <FeatureListLegacy featureList={featureLists.beta.tryAtomBeta} />
-          {/* </Box>
-          </Box> */}
+          <Box as="section" className="section section--features">
+            <Box className="wrapper wrapper--beta">
+              <FeatureListLegacy featureList={featureLists.beta.tryAtomBeta} />
+            </Box>
+          </Box>
         </Box>
 
         <Box className="footer-pad"></Box>

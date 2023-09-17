@@ -9,27 +9,50 @@ export function injectDescriptionLinks(
   return paragraphs?.map((paragraph, index) => {
     const text = paragraph.text;
     const links = paragraph.links;
+    const highlights = paragraph.highlights;
 
-    const linkMatcher = /{{\s?([a-zA-Z0-9]+)(\[\d+\])?\s?}}/g;
+    const matcher = /{{\s?([a-zA-Z0-9]+)(\[\d+\])?\s?}}/g;
     const segments: (string | JSX.Element)[] = [];
     let lastIndex = 0;
 
-    text?.replace(linkMatcher, (match, key, index, offset) => {
-      const beforeLink = text?.slice(lastIndex, offset);
-      if (beforeLink) {
-        segments.push(beforeLink);
+    text?.replace(matcher, (match, key, index, offset) => {
+      const beforeSegment = text?.slice(lastIndex, offset);
+      if (beforeSegment) {
+        segments.push(beforeSegment);
       }
 
-      if (index) {
-        const parsedIndex = parseInt(index.replace(/\D/g, ''), 10);
-        const link = links && links[parsedIndex];
-        if (link) {
-          segments.push(<Link href={link.url}>{link.title}</Link>);
+      if (key === 'link') {
+        if (index) {
+          const parsedIndex = parseInt(index.replace(/\D/g, ''), 10);
+          const link = links && links[parsedIndex];
+          if (link) {
+            segments.push(<Link href={link.url}>{link.title}</Link>);
+          } else {
+            segments.push(match);
+          }
+        } else if (links && links[0]) {
+          segments.push(<Link href={links[0].url}>{links[0].title}</Link>);
         } else {
           segments.push(match);
         }
-      } else if (key === 'link' && links && links[0]) {
-        segments.push(<Link href={links[0].url}>{links[0].title}</Link>);
+      } else if (key === 'highlight') {
+        if (index) {
+          const parsedIndex = parseInt(index.replace(/\D/g, ''), 10);
+          const highlight = highlights && highlights[parsedIndex];
+          if (highlight) {
+            segments.push(
+              <Text className={highlight.class}>{highlight.title}</Text>
+            );
+          } else {
+            segments.push(match);
+          }
+        } else if (highlights && highlights[0]) {
+          segments.push(
+            <Text className={highlights[0].class}>{highlights[0].title}</Text>
+          );
+        } else {
+          segments.push(match);
+        }
       } else {
         segments.push(match);
       }
@@ -38,9 +61,9 @@ export function injectDescriptionLinks(
       return match;
     });
 
-    const afterLastLink = text?.slice(lastIndex);
-    if (afterLastLink) {
-      segments.push(afterLastLink);
+    const afterLastSegment = text?.slice(lastIndex);
+    if (afterLastSegment) {
+      segments.push(afterLastSegment);
     }
 
     return (

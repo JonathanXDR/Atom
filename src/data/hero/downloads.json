@@ -1,0 +1,101 @@
+{
+  "home": [
+    {
+      "title": {
+        "text": "1.63"
+      },
+      "links": [
+        {
+          "title": "Release notes",
+          "url": "/releases"
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "macOS"
+      },
+      "description": {
+        "paragraphs": [
+          {
+            "text": "For macOS 10.10 or later"
+          }
+        ]
+      }
+    },
+    {
+      "links": [
+        {
+          "title": "Download",
+          "url": "/download/mac"
+        }
+      ]
+    }
+  ],
+  "beta": [
+    {
+      "title": {
+        "text": "BETA"
+      },
+      "links": [
+        {
+          "title": "Release notes",
+          "url": "/releases"
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "macOS"
+      },
+      "description": {
+        "paragraphs": [
+          {
+            "text": "For macOS 10.10 or later"
+          }
+        ]
+      }
+    },
+    {
+      "links": [
+        {
+          "title": "Download",
+          "url": "/download/mac?channel=beta"
+        }
+      ]
+    }
+  ],
+  "nightly": [
+    {
+      "title": {
+        "text": "Nightly"
+      },
+      "links": [
+        {
+          "title": "Release notes",
+          "url": "/releases"
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "macOS"
+      },
+      "description": {
+        "paragraphs": [
+          {
+            "text": "For macOS 10.10 or later"
+          }
+        ]
+      }
+    },
+    {
+      "links": [
+        {
+          "title": "Download",
+          "url": "/download/mac?channel=nightly"
+        }
+      ]
+    }
+  ]
+}

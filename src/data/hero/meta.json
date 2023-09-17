@@ -1,0 +1,75 @@
+{
+  "home": [
+    {
+      "title": {
+        "text": "By downloading, you agree to the {{ link }}.",
+        "links": [
+          {
+            "title": "Terms and Conditions",
+            "url": "https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions"
+          }
+        ]
+      },
+      "links": [
+        {
+          "title": "Other platforms",
+          "url": "https://github.com/atom/atom/releases/latest"
+        },
+        {
+          "title": "Try Atom Beta",
+          "url": "/beta"
+        },
+        {
+          "title": "Try Atom Nightly",
+          "url": "/nightly"
+        }
+      ]
+    }
+  ],
+  "beta": [
+    {
+      "title": {
+        "text": "By downloading, you agree to the {{ link }}.",
+        "links": [
+          {
+            "title": "Terms and Conditions",
+            "url": "https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions"
+          }
+        ]
+      },
+      "links": [
+        {
+          "title": "Other platforms",
+          "url": "https://github.com/atom/atom/releases"
+        },
+        {
+          "title": "Back to Atom Stable",
+          "url": "/"
+        }
+      ]
+    }
+  ],
+  "nightly": [
+    {
+      "title": {
+        "text": "By downloading, you agree to the {{ link }}.",
+        "links": [
+          {
+            "title": "Terms and Conditions",
+            "url": "https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions"
+          }
+        ]
+      },
+      "links": [
+        {
+          "title": "Other platforms",
+          "url": "https://github.com/atom/atom-nightly-releases/releases"
+        },
+        {
+          "title": "Back to Atom Stable",
+          "url": "/"
+        }
+      ]
+    }
+  ]
+}

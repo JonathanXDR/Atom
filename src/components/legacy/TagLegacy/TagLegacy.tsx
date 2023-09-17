@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 // import './TagLegacy.css';
-import { TagProps } from '../../../types/TagProps';
+import { TagProps } from '../../../types/Hero/TagProps';
 
 interface TagLegacyProps {
   tag: TagProps;

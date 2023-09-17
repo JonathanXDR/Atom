@@ -1,0 +1,35 @@
+{
+  "home": {
+    "hackableTextEditor": {
+      "title": {
+        "text": "A hackable {{ highlight }} for the 21st Century",
+        "highlights": [
+          {
+            "title": "text editor",
+            "class": "hero-tagline-highlight"
+          }
+        ]
+      },
+      "tags": [
+        {
+          "link": {
+            "title": "Real-time collaboration",
+            "url": "#teletype"
+          }
+        },
+        {
+          "link": {
+            "title": "IDE features",
+            "url": "#ide"
+          }
+        },
+        {
+          "link": {
+            "title": "Git and GitHub integration",
+            "url": "#github"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -253,7 +253,6 @@
   .welcome .hero-octonaut {
     display: none;
   }
-
   /* line 587, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
   .section--contact {
     background-image: none;
@@ -268,7 +267,6 @@
   .welcome .features-item + .features-item {
     margin-top: 50px;
   }
-
   @supports (display: grid) {
     /* line 736, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
     .welcome .section--features .wrapper {

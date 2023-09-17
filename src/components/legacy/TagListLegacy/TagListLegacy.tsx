@@ -1,18 +1,18 @@
-import tags from '@/data/tags.json';
 import { injectDescriptionLinks } from '@/helpers/descriptionHelper';
-import { FeatureListProps } from '@/types/FeatureListProps';
+import { TagListProps } from '@/types/Hero/TagListProps';
+import { TagProps } from '@/types/Hero/TagProps';
 import { Box, Heading, Text } from '@primer/react';
 import React from 'react';
 import TagLegacy from '../TagLegacy/TagLegacy';
 import './TagListLegacy.css';
 
 interface TagListLegacyProps {
-  featureList: FeatureListProps;
+  tagList: TagListProps;
 }
 
-const TagListLegacy: React.FC<TagListLegacyProps> = ({ featureList }) => {
+const TagListLegacy: React.FC<TagListLegacyProps> = ({ tagList }) => {
   const description = injectDescriptionLinks(
-    featureList?.description?.paragraphs || []
+    tagList?.description?.paragraphs || []
   );
 
   return (
@@ -23,7 +23,7 @@ const TagListLegacy: React.FC<TagListLegacyProps> = ({ featureList }) => {
           <Text className="hero-tagline-highlight"> text editor</Text> for the
           21st Century
         </Heading>
-        {tags.home.hackableTextEditor.map((tag, index) => {
+        {tagList.tags.map((tag: TagProps, index: number) => {
           return <TagLegacy tag={tag} key={index} />;
         })}
       </Box>

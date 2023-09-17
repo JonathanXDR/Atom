@@ -1,8 +1,13 @@
+import { BannerProps } from '@/types/Hero/BannerProps';
 import { Text } from '@primer/react';
 import Link from 'next/link';
 import './SunsetBannerLegacy.css';
 
-const SunsetBannerLegacy: React.FC = () => {
+interface SunsetBannerLegacyProps {
+  banner: BannerProps;
+}
+
+const SunsetBannerLegacy: React.FC<SunsetBannerLegacyProps> = ({ banner }) => {
   return (
     <Text
       as="p"
@@ -11,14 +16,13 @@ const SunsetBannerLegacy: React.FC = () => {
         marginBlock: '1em',
       }}
     >
-      Atom and all repositories under Atom will be archived on December 15, 2022
-      <Link
-        className="sunset-text-color"
-        href="https://github.blog/2022-06-08-sunsetting-atom/"
-      >
-        {' '}
-        Learn more in our official statement
-      </Link>
+      {banner.title.text}
+      {banner.link && (
+        <Link className="sunset-text-color" href={banner.link.url}>
+          {' '}
+          {banner.link.title}
+        </Link>
+      )}
     </Text>
   );
 };

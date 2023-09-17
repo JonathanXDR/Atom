@@ -1,5 +1,8 @@
 'use client';
-import { HeroProps } from '@/types/Hero/HeroProps';
+import { BannerProps } from '@/types/Hero/BannerProps';
+import { DownloadProps } from '@/types/Hero/DownloadProps';
+import { MetaProps } from '@/types/Hero/MetaProps';
+import { TagListProps } from '@/types/Hero/TagListProps';
 import { Box } from '@primer/react';
 import Image from 'next/image';
 import HeroDownloadLegacy from '../HeroDownloadLegacy/HeroDownloadLegacy';
@@ -11,26 +14,38 @@ import './HeroLegacy.css';
 import octonaut from '/public/assets/svg/octonaut.svg';
 
 interface HeroLegacyProps {
-  hero: HeroProps;
+  banner?: BannerProps;
+  meta: MetaProps;
+  download: DownloadProps;
+  tagList?: TagListProps;
+  octonautImage?: boolean | true;
 }
 
-const HeroLegacy: React.FC<HeroLegacyProps> = ({ hero }) => {
+const HeroLegacy: React.FC<HeroLegacyProps> = ({
+  banner,
+  meta,
+  download,
+  tagList,
+  octonautImage,
+}) => {
   return (
     <>
       <Box as="section" className="section section--hero">
-        {hero. && <SunsetBannerLegacy />}
+        {banner && <SunsetBannerLegacy banner={banner} />}
         <Box className="wrapper">
           <Box as="header" className="hero-header">
             <HeroLogoLegacy />
-            <HeroDownloadLegacy />
-            <HeroMetaLegacy />
+            <HeroDownloadLegacy download={download} />
+            <HeroMetaLegacy meta={meta} />
           </Box>
+          {tagList && <TagListLegacy tagList={tagList} />}
 
-          <TagListLegacy tags={hero.features} />
-          <Image className="hero-octonaut" src={octonaut} alt="octonaut" />
+          {octonautImage && (
+            <Image className="hero-octonaut" src={octonaut} alt="octonaut" />
+          )}
         </Box>
       </Box>
-      <Box as="section" className="section section--hero">
+      {/* <Box as="section" className="section section--hero">
         <Box className="wrapper">
           <Box as="header" className="hero-header">
             <HeroLogoLegacy />
@@ -38,7 +53,7 @@ const HeroLegacy: React.FC<HeroLegacyProps> = ({ hero }) => {
             <HeroMetaLegacy />
           </Box>
         </Box>
-      </Box>
+      </Box> */}
     </>
   );
 };

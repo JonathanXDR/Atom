@@ -1,4 +1,5 @@
 'use client';
+import { DownloadProps } from '@/types/Hero/DownloadProps';
 import { DownloadIcon } from '@primer/octicons-react';
 import { Box, Text } from '@primer/react';
 import Image from 'next/image';
@@ -7,7 +8,13 @@ import { usePathname } from 'next/navigation';
 import './HeroDownloadLegacy.css';
 import atomWordmark from '/public/assets/svg/atom-wordmark.svg';
 
-const HeroDownloadLegacy: React.FC = () => {
+interface HeroDownloadLegacyProps {
+  downloads: DownloadProps[];
+}
+
+const HeroDownloadLegacy: React.FC<HeroDownloadLegacyProps> = ({
+  downloads,
+}) => {
   const pathname = usePathname();
 
   return (

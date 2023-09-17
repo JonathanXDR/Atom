@@ -1,10 +1,15 @@
 'use client';
+import { MetaProps } from '@/types/Hero/MetaProps';
 import { Text } from '@primer/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './HeroMetaLegacy.css';
 
-const HeroMetaLegacy: React.FC = () => {
+interface HeroMetaLegacyProps {
+  meta: MetaProps;
+}
+
+const HeroMetaLegacy: React.FC<HeroMetaLegacyProps> = ({ meta }) => {
   const pathname = usePathname();
 
   return (

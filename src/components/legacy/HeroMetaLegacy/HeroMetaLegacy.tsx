@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import './HeroMetaLegacy.css';
 
 interface HeroMetaLegacyProps {
-  meta: MetaProps;
+  meta: MetaProps[];
 }
 
 const HeroMetaLegacy: React.FC<HeroMetaLegacyProps> = ({ meta }) => {

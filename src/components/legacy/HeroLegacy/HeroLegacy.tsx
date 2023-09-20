@@ -15,18 +15,18 @@ import octonaut from '/public/assets/svg/octonaut.svg';
 
 interface HeroLegacyProps {
   banner?: BannerProps;
-  meta: MetaProps;
-  download: DownloadProps;
+  meta: MetaProps[];
+  downloads: DownloadProps[];
   tagList?: TagListProps;
-  octonautImage?: boolean | true;
+  octonautImage?: boolean;
 }
 
 const HeroLegacy: React.FC<HeroLegacyProps> = ({
   banner,
   meta,
-  download,
+  downloads,
   tagList,
-  octonautImage,
+  octonautImage = true,
 }) => {
   return (
     <>
@@ -35,7 +35,7 @@ const HeroLegacy: React.FC<HeroLegacyProps> = ({
         <Box className="wrapper">
           <Box as="header" className="hero-header">
             <HeroLogoLegacy />
-            <HeroDownloadLegacy download={download} />
+            <HeroDownloadLegacy downloads={downloads} />
             <HeroMetaLegacy meta={meta} />
           </Box>
           {tagList && <TagListLegacy tagList={tagList} />}

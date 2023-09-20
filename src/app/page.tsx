@@ -29,7 +29,7 @@ export default function Home() {
           <HeroLegacy
             banner={banners.home}
             meta={meta.home}
-            download={downloads.home}
+            downloads={downloads.home}
             tagList={tagLists.home.hackableTextEditor}
           />
 

@@ -1,10 +1,9 @@
 'use client';
 import { DownloadProps } from '@/types/Hero/DownloadProps';
-import { DownloadIcon } from '@primer/octicons-react';
-import { Box, Text } from '@primer/react';
+import * as octicons from '@primer/octicons-react';
+import { Box, Octicon, OcticonProps, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import './HeroDownloadLegacy.css';
 import atomWordmark from '/public/assets/svg/atom-wordmark.svg';
 
@@ -15,8 +14,6 @@ interface HeroDownloadLegacyProps {
 const HeroDownloadLegacy: React.FC<HeroDownloadLegacyProps> = ({
   downloads,
 }) => {
-  const pathname = usePathname();
-
   return (
     <>
       <Box as="ul" className="hero-header-item hero-download">
@@ -28,7 +25,34 @@ const HeroDownloadLegacy: React.FC<HeroDownloadLegacyProps> = ({
             style={{ width: '100%', height: '100%' }}
           />
         </Box>
-        <Box as="li">
+
+        {downloads?.map((download, index) => (
+          <Box as="li" key={index}>
+            {download.description &&
+              download.description.paragraphs.map((paragraph, index) => (
+                <Text className={paragraph.class} key={index}>
+                  {paragraph.text}
+                </Text>
+              ))}
+
+            {download.links &&
+              download.links.map((link, index) => {
+                const icon =
+                  link.leadingIcon &&
+                  (octicons[
+                    link.leadingIcon as keyof typeof octicons
+                  ] as React.ComponentType<OcticonProps>);
+                return (
+                  <Link href={link.url} className={link.class} key={index}>
+                    {icon && <Octicon icon={icon} size={16} />}
+                    {link.title}
+                  </Link>
+                );
+              })}
+          </Box>
+        ))}
+
+        {/* <Box as="li">
           <Text className="version">
             {pathname === '/nightly'
               ? 'Nightly'
@@ -57,7 +81,7 @@ const HeroDownloadLegacy: React.FC<HeroDownloadLegacyProps> = ({
             <DownloadIcon size={16} />
             Download
           </Link>
-        </Box>
+        </Box> */}
       </Box>
     </>
   );

@@ -7,18 +7,21 @@
       "links": [
         {
           "title": "Release notes",
+          "class": "version",
           "url": "/releases"
         }
       ]
     },
     {
       "title": {
-        "text": "macOS"
+        "text": "macOS",
+        "class": "platform"
       },
       "description": {
         "paragraphs": [
           {
-            "text": "For macOS 10.10 or later"
+            "text": "For macOS 10.10 or later",
+            "class": "support"
           }
         ]
       }
@@ -26,7 +29,9 @@
     {
       "links": [
         {
+          "leadingIcon": "DownloadIcon",
           "title": "Download",
+          "class": "welcome-button",
           "url": "/download/mac"
         }
       ]
@@ -40,18 +45,21 @@
       "links": [
         {
           "title": "Release notes",
+          "class": "version",
           "url": "/releases"
         }
       ]
     },
     {
       "title": {
-        "text": "macOS"
+        "text": "macOS",
+        "class": "platform"
       },
       "description": {
         "paragraphs": [
           {
-            "text": "For macOS 10.10 or later"
+            "text": "For macOS 10.10 or later",
+            "class": "support"
           }
         ]
       }
@@ -59,7 +67,9 @@
     {
       "links": [
         {
+          "leadingIcon": "DownloadIcon",
           "title": "Download",
+          "class": "welcome-button",
           "url": "/download/mac?channel=beta"
         }
       ]
@@ -73,18 +83,21 @@
       "links": [
         {
           "title": "Release notes",
+          "class": "version",
           "url": "/releases"
         }
       ]
     },
     {
       "title": {
-        "text": "macOS"
+        "text": "macOS",
+        "class": "platform"
       },
       "description": {
         "paragraphs": [
           {
-            "text": "For macOS 10.10 or later"
+            "text": "For macOS 10.10 or later",
+            "class": "support"
           }
         ]
       }
@@ -92,7 +105,9 @@
     {
       "links": [
         {
+          "leadingIcon": "DownloadIcon",
           "title": "Download",
+          "class": "welcome-button",
           "url": "/download/mac?channel=nightly"
         }
       ]

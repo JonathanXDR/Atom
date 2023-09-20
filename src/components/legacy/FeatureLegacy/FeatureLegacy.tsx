@@ -1,4 +1,4 @@
-import { injectDescriptionLinks } from '@/helpers/descriptionHelper';
+import { injectTextSegments } from '@/helpers/textHelper';
 import * as octicons from '@primer/octicons-react';
 import { Box, Heading, Link, Octicon, OcticonProps, Text } from '@primer/react';
 import React from 'react';
@@ -16,7 +16,7 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
       feature.icon as keyof typeof octicons
     ] as React.ComponentType<OcticonProps>);
 
-  const description = injectDescriptionLinks(feature.description.paragraphs);
+  const description = injectTextSegments(feature.description.paragraphs);
 
   return (
     <>

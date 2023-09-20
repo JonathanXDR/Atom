@@ -1,4 +1,4 @@
-import { injectDescriptionLinks } from '@/helpers/descriptionHelper';
+import { injectTextSegments } from '@/helpers/textHelper';
 import { ContactProps } from '@/types/ContactProps';
 import { Box, Heading, Link, Text } from '@primer/react';
 import React from 'react';
@@ -14,7 +14,7 @@ const ContactLegacy: React.FC<ContactLegacyProps> = ({ contacts }) => {
       <Box className="wrapper no-pad">
         <Box className="columns">
           {contacts.map((contact, index) => {
-            const description = injectDescriptionLinks(
+            const description = injectTextSegments(
               contact.description?.paragraphs
             );
 

@@ -1,4 +1,4 @@
-import { injectDescriptionLinks } from '@/helpers/descriptionHelper';
+import { injectTextSegments } from '@/helpers/textHelper';
 import { FeatureListProps } from '@/types/FeatureListProps';
 import { Box, Heading } from '@primer/react';
 import React from 'react';
@@ -12,7 +12,7 @@ interface FeatureListLegacyProps {
 const FeatureListLegacy: React.FC<FeatureListLegacyProps> = ({
   featureList,
 }) => {
-  const description = injectDescriptionLinks(
+  const description = injectTextSegments(
     featureList?.description?.paragraphs || []
   );
 

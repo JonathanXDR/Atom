@@ -1,5 +1,5 @@
-import { injectDescriptionLinks } from '@/helpers/descriptionHelper';
 import { getImageDimensions } from '@/helpers/imageHelper';
+import { injectTextSegments } from '@/helpers/textHelper';
 import { Box, Heading, Link, Text } from '@primer/react';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
@@ -25,7 +25,7 @@ const RiverLegacy: React.FC<RiverLegacyProps> = ({ river }) => {
     fetchDimensions();
   }, [river.image.url]);
 
-  const description = injectDescriptionLinks(river.description.paragraphs);
+  const description = injectTextSegments(river.description.paragraphs);
 
   return (
     <>

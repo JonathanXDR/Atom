@@ -4,56 +4,37 @@ import { Text } from '@primer/react';
 import Link from 'next/link';
 import React from 'react';
 
-const linkMatcher = /{{\s?link(\[\d+\])?\s?}}/g;
-const highlightMatcher = /{{\s?highlight(\[\d+\])?\s?}}/g;
-
 function replacePattern<T>(
   text: string,
-  replacements: T[] | T,
-  matcher: RegExp,
-  renderReplacement: (
-    replacement: T,
-    match: string,
-    index?: number
-  ) => JSX.Element | string
+  items: T[] | T,
+  pattern: RegExp,
+  replaceFunction: (item: T, match: string) => JSX.Element
 ): (string | JSX.Element)[] {
   const segments: (string | JSX.Element)[] = [];
   let lastIndex = 0;
 
-  text.replace(matcher, (match, index, offset) => {
-    const beforePattern = text.slice(lastIndex, offset);
-    if (beforePattern) segments.push(beforePattern);
+  text.replace(pattern, (match, index, offset) => {
+    const before = text.slice(lastIndex, offset);
+    if (before) segments.push(before);
 
-    let replacementItem;
-    if (index) {
-      const parsedIndex = parseInt(index.replace(/\D/g, ''), 10);
-      replacementItem = Array.isArray(replacements)
-        ? replacements[parsedIndex]
-        : replacements;
-    } else {
-      replacementItem = Array.isArray(replacements)
-        ? replacements[0]
-        : replacements;
-    }
+    const parsedIndex = index ? parseInt(index.replace(/\D/g, ''), 10) : 0;
+    const item = Array.isArray(items) ? items[parsedIndex] : items;
 
-    segments.push(renderReplacement(replacementItem, match, index));
-
+    segments.push(item ? replaceFunction(item, match) : match);
     lastIndex = offset + match.length;
     return match;
   });
 
-  const afterPattern = text.slice(lastIndex);
-  if (afterPattern) segments.push(afterPattern);
+  const after = text.slice(lastIndex);
+  if (after) segments.push(after);
 
   return segments;
 }
 
 export function injectTextSegments(
-  descriptionContent: DescriptionType['paragraphs'] | TitleType
+  textContent: DescriptionType['paragraphs'] | TitleType
 ): JSX.Element[] {
-  const contentArray = Array.isArray(descriptionContent)
-    ? descriptionContent
-    : [descriptionContent];
+  const contentArray = Array.isArray(textContent) ? textContent : [textContent];
 
   return contentArray.map((content, index) => {
     let segments: (string | JSX.Element)[] = [content?.text || ''];
@@ -64,9 +45,8 @@ export function injectTextSegments(
           ? replacePattern(
               segment,
               content.links || [],
-              linkMatcher,
-              (link, match) =>
-                link ? <Link href={link.url}>{link.title}</Link> : match
+              /{{\s?link(\[\d+\])?\s?}}/g,
+              (link) => <Link href={link.url}>{link.title}</Link>
             )
           : segment
       );
@@ -78,13 +58,10 @@ export function injectTextSegments(
           ? replacePattern(
               segment,
               content.highlights || [],
-              highlightMatcher,
-              (highlight, match) =>
-                highlight ? (
-                  <Text className={highlight.class}>{highlight.title}</Text>
-                ) : (
-                  match
-                )
+              /{{\s?highlight(\[\d+\])?\s?}}/g,
+              (highlight) => (
+                <Text className={highlight.class}>{highlight.title}</Text>
+              )
             )
           : segment
       );

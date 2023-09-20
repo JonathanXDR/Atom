@@ -41,7 +41,7 @@
 /* line 51, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome a {
   color: #ffd152;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 /* line 52, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome a:hover {
@@ -82,13 +82,13 @@
 }
 /* line 78, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome .welcome-button {
-  display: inline-block !important;
-  padding: 0.5em 1em !important;
-  line-height: inherit !important;
-  font-size: inherit !important;
-  font-weight: 500 !important;
-  text-decoration: none !important;
-  border-radius: 5px !important;
+  display: inline-block;
+  padding: 0.5em 1em;
+  line-height: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 5px;
   color: #343233 !important;
   background-color: #ffd152;
 }

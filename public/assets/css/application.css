@@ -2207,10 +2207,10 @@ a.hero-link {
 }
 /* line 274, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-download .welcome-button {
-  display: block;
-  font-size: 1.1em;
-  padding: 1em 1.5em;
-  white-space: nowrap;
+  display: block !important;
+  font-size: 1.1em !important;
+  padding: 1em 1.5em !important;
+  white-space: nowrap !important;
 }
 /* line 279, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .hero-download .welcome-button .octicon {

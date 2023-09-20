@@ -28,6 +28,12 @@ const HeroDownloadLegacy: React.FC<HeroDownloadLegacyProps> = ({
 
         {downloads?.map((download, index) => (
           <Box as="li" key={index}>
+            {download.title && (
+              <Text className={download.title.class} key={index}>
+                {download.title.text}
+              </Text>
+            )}
+
             {download.description &&
               download.description.paragraphs.map((paragraph, index) => (
                 <Text className={paragraph.class} key={index}>
@@ -44,7 +50,9 @@ const HeroDownloadLegacy: React.FC<HeroDownloadLegacyProps> = ({
                   ] as React.ComponentType<OcticonProps>);
                 return (
                   <Link href={link.url} className={link.class} key={index}>
-                    {icon && <Octicon icon={icon} size={16} />}
+                    {icon && (
+                      <Octicon icon={icon} size={16} className="octicon" />
+                    )}
                     {link.title}
                   </Link>
                 );

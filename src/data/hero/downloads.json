@@ -2,12 +2,12 @@
   "home": [
     {
       "title": {
-        "text": "1.63"
+        "text": "1.63",
+        "class": "version"
       },
       "links": [
         {
           "title": "Release notes",
-          "class": "version",
           "url": "/releases"
         }
       ]

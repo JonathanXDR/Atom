@@ -304,7 +304,7 @@
 /* line 612, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta h3,
 .welcome-nightly h3 {
-  margin: 0 0 1em 0;
+  margin: 0 0 1em 0 !important;
 }
 /* line 616, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta .features-item.features-item.features-item,

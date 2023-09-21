@@ -40,12 +40,12 @@
   "beta": [
     {
       "title": {
-        "text": "BETA"
+        "text": "BETA",
+        "class": "version"
       },
       "links": [
         {
           "title": "Release notes",
-          "class": "version",
           "url": "/releases"
         }
       ]
@@ -78,12 +78,12 @@
   "nightly": [
     {
       "title": {
-        "text": "Nightly"
+        "text": "Nightly",
+        "class": "version"
       },
       "links": [
         {
           "title": "Release notes",
-          "class": "version",
           "url": "/releases"
         }
       ]

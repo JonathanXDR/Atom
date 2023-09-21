@@ -1,29 +1,29 @@
 /* line 641, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .hero-logo {
   filter: brightness(0.8) contrast(0.6) sepia(0.9) hue-rotate(215deg)
-    saturate(6);
+    saturate(6) !important;
 }
 /* line 646, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .hero-logo-circle:nth-child(4) {
-  animation-name: hero-logo-circle--reverse;
+  animation-name: hero-logo-circle--reverse !important;
 }
 /* line 647, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .hero-logo-circle:nth-child(8) {
-  animation-name: hero-logo-circle--reverse;
+  animation-name: hero-logo-circle--reverse !important;
 }
 /* line 648, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .hero-logo-circle:nth-child(10) {
-  animation-name: hero-logo-circle--reverse;
+  animation-name: hero-logo-circle--reverse !important;
 }
 /* line 650, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .welcome-button {
-  background-color: #c67aff;
+  background-color: #c67aff !important;
 }
 /* line 652, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .welcome-button:hover {
-  background-color: #c170ff;
+  background-color: #c170ff !important;
 }
 /* line 657, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-nightly .version {
-  letter-spacing: 0.08em;
+  letter-spacing: 0.08em !important;
 }

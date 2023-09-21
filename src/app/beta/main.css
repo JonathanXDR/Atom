@@ -1,9 +1,9 @@
 /* line 631, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta .hero-logo {
   filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg)
-    saturate(3.5);
+    saturate(3.5) !important;
 }
 /* line 636, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome-beta .hero-logo-circle:nth-child(4) {
-  animation-name: hero-logo-circle--reverse;
+  animation-name: hero-logo-circle--reverse !important;
 }

@@ -1,0 +1,175 @@
+[
+  {
+    "title": {
+      "text": "teletype",
+      "links": [
+        {
+          "title": "teletype",
+          "url": "https://atom.io/packages/teletype"
+        }
+      ]
+    },
+    "description": {
+      "paragraphs": [
+        {
+          "text": "Share your workspace with team members and collaborate on code in real time"
+        }
+      ]
+    },
+    "tags": [
+      "collaboration",
+      "collaborative-editing",
+      "pair-programming",
+      "real-time"
+    ],
+    "user": {
+      "username": "Atom",
+      "avatar": {
+        "url": "https://avatars.githubusercontent.com/atom",
+        "alt": "Atom"
+      }
+    },
+    "downloads": 1473857,
+    "stars": 763
+  },
+  {
+    "title": {
+      "text": "scroll-through-time",
+      "links": [
+        {
+          "title": "scroll-through-time",
+          "url": "https://atom.io/packages/scroll-through-time"
+        }
+      ]
+    },
+    "description": {
+      "paragraphs": [
+        {
+          "text": "Two fingers scroll moves through time instead of space"
+        }
+      ]
+    },
+    "tags": ["scroll", "time", "space", "xkcd"],
+    "user": {
+      "username": "Atom",
+      "avatar": {
+        "url": "https://avatars.githubusercontent.com/atom",
+        "alt": "Atom"
+      }
+    },
+    "downloads": 134525,
+    "stars": 188
+  },
+  {
+    "title": {
+      "text": "hydrogen",
+      "links": [
+        {
+          "title": "hydrogen",
+          "url": "https://atom.io/packages/hydrogen"
+        }
+      ]
+    },
+    "description": {
+      "paragraphs": [
+        {
+          "text": "Run code interactively, inspect data, and plot. All the power of Jupyter kernels, inside your favorite text editor."
+        }
+      ]
+    },
+    "tags": ["execute", "run", "jupyter", "ipython", "julia"],
+    "user": {
+      "username": "Atom",
+      "avatar": {
+        "url": "https://avatars.githubusercontent.com/atom",
+        "alt": "Atom"
+      }
+    },
+    "downloads": 2562842,
+    "stars": 831
+  },
+  {
+    "title": {
+      "text": "hey-pane",
+      "links": [
+        {
+          "title": "hey-pane",
+          "url": "https://atom.io/packages/hey-pane"
+        }
+      ]
+    },
+    "description": {
+      "paragraphs": [
+        {
+          "text": "Atom Plugin to enlarge the active pane, either with a shortcut or with a super handy follow mode. Inspired by Origami for Sublime Text."
+        }
+      ]
+    },
+    "tags": ["pane", "focus", "origami", "zoom", "autozoom"],
+    "user": {
+      "username": "Atom",
+      "avatar": {
+        "url": "https://avatars.githubusercontent.com/atom",
+        "alt": "Atom"
+      }
+    },
+    "downloads": 206804,
+    "stars": 182
+  },
+  {
+    "title": {
+      "text": "atom-clock",
+      "links": [
+        {
+          "title": "atom-clock",
+          "url": "https://atom.io/packages/atom-clock"
+        }
+      ]
+    },
+    "description": {
+      "paragraphs": [
+        {
+          "text": "Display a customizable clock in the status bar."
+        }
+      ]
+    },
+    "tags": ["clock", "time", "date", "statusbar", "momentjs"],
+    "user": {
+      "username": "Atom",
+      "avatar": {
+        "url": "https://avatars.githubusercontent.com/atom",
+        "alt": "Atom"
+      }
+    },
+    "downloads": 1090897,
+    "stars": 539
+  },
+  {
+    "title": {
+      "text": "zentabs",
+      "links": [
+        {
+          "title": "zentabs",
+          "url": "https://atom.io/packages/zentabs"
+        }
+      ]
+    },
+    "description": {
+      "paragraphs": [
+        {
+          "text": "Keep the opened tabs amount below specified limit"
+        }
+      ]
+    },
+    "tags": [],
+    "user": {
+      "username": "Atom",
+      "avatar": {
+        "url": "https://avatars.githubusercontent.com/atom",
+        "alt": "Atom"
+      }
+    },
+    "downloads": 149086,
+    "stars": 272
+  }
+]

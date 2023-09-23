@@ -1,21 +1,77 @@
-import { DownloadIcon, StarIcon } from '@primer/octicons-react';
+import { injectTextSegments } from '@/helpers/textHelper';
+import { PackageCardProps } from '@/types/PackageCardProps';
+import { DownloadIcon, StarIcon, XIcon } from '@primer/octicons-react';
 import {
   Avatar,
   Box,
   Button,
   Heading,
+  IconButton,
   Link,
+  Popover,
   Text,
   Token,
   Tooltip,
 } from '@primer/react';
-import React from 'react';
+import React, { useState } from 'react';
 
-const PackageCardLegacy: React.FC = () => {
+interface PackageCardLegacyProps {
+  packageCard: PackageCardProps;
+}
+
+const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
+  packageCard,
+}) => {
+  const [open, setOpen] = useState(false);
+  const description = injectTextSegments(packageCard.description.paragraphs);
+
+  const DownloadPopover = () => {
+    return (
+      <Popover
+        open={open}
+        caret="bottom"
+        sx={{
+          top: 0,
+        }}
+      >
+        <Popover.Content
+          sx={{
+            width: '260px',
+          }}
+        >
+          <Heading as="h4" sx={{ fontSize: 2 }}>
+            Launching Atom...
+          </Heading>
+          <IconButton
+            icon={XIcon}
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            sx={{
+              position: 'absolute',
+              top: 3,
+              right: 3,
+            }}
+          />
+          <Text
+            as="p"
+            sx={{
+              marginBlock: '1em',
+            }}
+          >
+            If nothing happens,
+            <Link href="https://atom.io/"> download Atom </Link>
+            and try again.
+          </Text>
+        </Popover.Content>
+      </Popover>
+    );
+  };
+
   return (
     <>
       <Box
         sx={{
+          position: 'relative',
           border: '1px solid',
           borderColor: 'border.default',
           borderRadius: '0.25rem',
@@ -37,7 +93,7 @@ const PackageCardLegacy: React.FC = () => {
             }}
           >
             <Heading
-              as="h3"
+              as="h4"
               sx={{
                 fontSize: '1.25rem',
                 color: 'fg.muted',
@@ -46,13 +102,13 @@ const PackageCardLegacy: React.FC = () => {
               }}
             >
               <Link
-                href="/n64decomp/mk64"
+                href="/teletype"
                 sx={{
                   fontWeight: 'bold',
                   wordBreak: 'break-word',
                 }}
               >
-                mk64
+                {packageCard.title.text}
               </Link>{' '}
             </Heading>
             <Text
@@ -60,10 +116,12 @@ const PackageCardLegacy: React.FC = () => {
               sx={{
                 color: 'fg.muted',
                 marginBottom: 0,
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
               }}
             >
-              A speedy Mario Kart 64 decompilation, brought to you by the cousin
-              of a tame racing driver.
+              {description}
             </Text>
             <Box
               sx={{
@@ -72,9 +130,24 @@ const PackageCardLegacy: React.FC = () => {
                 gap: 1,
               }}
             >
-              <Token text="#scroll" />
-              <Token text="#time" />
-              <Token text="#space" />
+              <Box
+                sx={{
+                  display: 'flex',
+                  gap: 1,
+                  flexWrap: 'nowrap',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  overflowX: 'auto',
+                  '::-webkit-scrollbar': {
+                    display: 'none',
+                  },
+                }}
+              >
+                {packageCard.tags &&
+                  packageCard.tags.map((tag, index) => (
+                    <Token key={index} text={`#${tag}`} />
+                  ))}
+              </Box>
             </Box>
           </Box>
 
@@ -107,10 +180,7 @@ const PackageCardLegacy: React.FC = () => {
                     gap: 1,
                   }}
                 >
-                  <Avatar
-                    square
-                    src="https://avatars.githubusercontent.com/atom"
-                  />
+                  <Avatar square src={packageCard.user.avatar.url} />
                   <Link
                     href="/atom"
                     sx={{
@@ -118,7 +188,7 @@ const PackageCardLegacy: React.FC = () => {
                     }}
                   >
                     {' '}
-                    Atom
+                    {packageCard.user.username}
                   </Link>
                 </Box>
                 <Box
@@ -130,26 +200,45 @@ const PackageCardLegacy: React.FC = () => {
                     gap: 2,
                   }}
                 >
-                  <DownloadIcon size={16} /> <Text>1,473,857</Text>
-                  <Tooltip aria-label="You must be signed in to star packages">
+                  <Tooltip aria-label={`${packageCard.downloads} downloads`}>
+                    <Box>
+                      <DownloadIcon size={16} />
+                      <Text> {packageCard.downloads}</Text>
+                    </Box>
+                  </Tooltip>
+                  <Tooltip aria-label="You must be signed in to star packageCards">
                     <Button leadingIcon={StarIcon} size="small">
-                      Star
-                      <Button.Counter>{1}</Button.Counter>
+                      {/* Star */}
+                      <Button.Counter>{packageCard.stars}</Button.Counter>
                     </Button>
                   </Tooltip>
-                  <Link
-                    href="atom://settings-view/show-package?package=teletype"
+                  <Box
                     sx={{
-                      textDecoration: 'none',
-                      '&:hover': {
-                        textDecoration: 'none',
-                      },
+                      display: 'flex',
+                      justifyContent: 'center',
                     }}
                   >
-                    <Button leadingIcon={DownloadIcon} size="small">
-                      Install
-                    </Button>
-                  </Link>
+                    <Link
+                      href="atom://settings-view/show-packageCard?packageCard=teletype"
+                      sx={{
+                        textDecoration: 'none',
+                        '&:hover': {
+                          textDecoration: 'none',
+                        },
+                      }}
+                    >
+                      <Button
+                        leadingIcon={DownloadIcon}
+                        size="small"
+                        onClick={() => {
+                          setOpen(true);
+                        }}
+                      >
+                        Install
+                      </Button>
+                    </Link>
+                    <DownloadPopover />
+                  </Box>
                 </Box>
               </Box>
             </Box>

@@ -1,9 +1,12 @@
 'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
+import PackageCardLegacy from '@/components/legacy/PackageCardLegacy/PackageCardLegacy';
 import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
+import packages from '@/data/packages.json';
 import {
+  CheckIcon,
   ChevronRightIcon,
   ClockIcon,
   FlameIcon,
@@ -11,6 +14,7 @@ import {
   SearchIcon,
   SquirrelIcon,
   TriangleDownIcon,
+  XIcon,
 } from '@primer/octicons-react';
 import {
   ActionList,
@@ -38,7 +42,7 @@ export default function Packages() {
 
     return (
       <ActionMenu>
-        <ActionMenu.Anchor aria-label="Adjust time span">
+        <ActionMenu.Anchor aria-label="Adjust time Text">
           <Text
             as="a"
             sx={{
@@ -51,7 +55,7 @@ export default function Packages() {
         </ActionMenu.Anchor>
         <ActionMenu.Overlay width="medium">
           <ActionList selectionVariant="single">
-            <ActionList.Group title="Adjust time span">
+            <ActionList.Group title="Adjust time Text">
               <ActionList.Divider />
               {timeSpans.map((type, index) => (
                 <ActionList.Item
@@ -120,7 +124,6 @@ export default function Packages() {
           <Heading as="h2" className="center index-title">
             Packages make Atom do amazing things.
           </Heading>
-
           <FormControl
             sx={{
               display: 'flex',
@@ -143,28 +146,113 @@ export default function Packages() {
               Search
             </Button>
           </FormControl>
-
           <Box className="package-list featured">
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
                 <MegaphoneIcon size={32} /> Featured
               </Heading>
             </Box>
-            <Box className="halves">{/* TODO: Add cards here */}</Box>
+            <Box
+              // className="halves"
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+                gap: 3,
+              }}
+            >
+              {packages.map((packageCard, index) => (
+                <Box
+                  // className="grid-cell"
+                  key={index}
+                >
+                  <PackageCardLegacy packageCard={packageCard} />
+                </Box>
+              ))}
+            </Box>
           </Box>
-
           <Box className="package-list trending">
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
-                <FlameIcon size={32} /> Trending <TimeSpan />
+                <FlameIcon size={32} /> Trending{' '}
+                <Box className="trending-select">
+                  <Box className="select-menu js-menu-container js-select-menu">
+                    <Link
+                      className="js-menu-target"
+                      href="https://atom.io/packages"
+                    >
+                      <Text className="js-select-button">this week</Text>
+                      <TriangleDownIcon size={32} />
+                    </Link>
+
+                    <Box className="select-menu-modal-holder js-menu-content js-navigation-container">
+                      <Box className="select-menu-modal">
+                        <Box className="select-menu-header">
+                          <Text className="select-menu-title">
+                            Adjust time Text
+                          </Text>
+                          <XIcon size={16} />
+                        </Box>
+
+                        <Box className="select-menu-list">
+                          <Box>
+                            <Box
+                              className="select-menu-item js-navigation-item"
+                              data-trending-sort="daily"
+                            >
+                              <CheckIcon size={16} />
+                              <Box className="select-menu-item-text js-select-button-text">
+                                today
+                              </Box>
+                            </Box>
+
+                            <Box
+                              className="select-menu-item js-navigation-item selected"
+                              data-trending-sort="weekly"
+                            >
+                              <CheckIcon size={16} />
+                              <Box className="select-menu-item-text js-select-button-text">
+                                this week
+                              </Box>
+                            </Box>
+
+                            <Box
+                              className="select-menu-item js-navigation-item"
+                              data-trending-sort="monthly"
+                            >
+                              <CheckIcon size={16} />
+                              <Box className="select-menu-item-text js-select-button-text">
+                                this month
+                              </Box>
+                            </Box>
+                          </Box>
+                        </Box>
+                      </Box>
+                    </Box>
+                  </Box>
+                </Box>
               </Heading>
             </Box>
             <Box className="loading-overlay"></Box>
-            <Box className="trending-packages halves">
-              {/* TODO: Add cards here */}
+            {/* <Box className="trending-packages halves"> */}
+            <Box
+              // className="halves"
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+                gap: 3,
+              }}
+            >
+              {packages.map((packageCard, index) => (
+                <Box
+                  // className="grid-cell"
+                  key={index}
+                >
+                  <PackageCardLegacy packageCard={packageCard} />
+                </Box>
+              ))}
+              {/* </Box> */}
             </Box>
           </Box>
-
           <Box className="package-list newest">
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
@@ -178,9 +266,24 @@ export default function Packages() {
                 </Link>
               </Heading>
             </Box>
-            <Box className="halves">{/* TODO: Add cards here */}</Box>
+            <Box
+              // className="halves"
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+                gap: 3,
+              }}
+            >
+              {packages.map((packageCard, index) => (
+                <Box
+                  // className="grid-cell"
+                  key={index}
+                >
+                  <PackageCardLegacy packageCard={packageCard} />
+                </Box>
+              ))}
+            </Box>
           </Box>
-
           <Box className="package-list updated">
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
@@ -194,9 +297,24 @@ export default function Packages() {
                 </Link>
               </Heading>
             </Box>
-            <Box className="halves">{/* TODO: Add cards here */}</Box>
+            <Box
+              // className="halves"
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+                gap: 3,
+              }}
+            >
+              {packages.map((packageCard, index) => (
+                <Box
+                  // className="grid-cell"
+                  key={index}
+                >
+                  <PackageCardLegacy packageCard={packageCard} />
+                </Box>
+              ))}
+            </Box>
           </Box>
-
           <Text className="stats-footnote">
             1,113,135 packages &amp; themes have been downloaded 325,262,080
             times.

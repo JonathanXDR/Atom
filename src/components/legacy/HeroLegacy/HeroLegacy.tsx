@@ -1,4 +1,3 @@
-'use client';
 import { BannerProps } from '@/types/Hero/BannerProps';
 import { DownloadProps } from '@/types/Hero/DownloadProps';
 import { MetaProps } from '@/types/Hero/MetaProps';

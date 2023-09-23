@@ -1,4 +1,3 @@
-'use client';
 import { DownloadProps } from '@/types/Hero/DownloadProps';
 import * as octicons from '@primer/octicons-react';
 import { Box, Octicon, OcticonProps, Text } from '@primer/react';

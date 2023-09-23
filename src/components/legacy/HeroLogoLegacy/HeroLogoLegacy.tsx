@@ -1,4 +1,3 @@
-'use client';
 import { Box } from '@primer/react';
 import Image from 'next/image';
 import './HeroLogoLegacy.css';

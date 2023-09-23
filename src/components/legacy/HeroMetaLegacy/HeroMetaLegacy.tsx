@@ -1,4 +1,3 @@
-'use client';
 import { injectTextSegments } from '@/helpers/textHelper';
 import { MetaProps } from '@/types/Hero/MetaProps';
 import { Text } from '@primer/react';

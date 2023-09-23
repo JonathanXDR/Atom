@@ -11,13 +11,13 @@ interface TagListLegacyProps {
 }
 
 const TagListLegacy: React.FC<TagListLegacyProps> = ({ tagList }) => {
-  const description = injectTextSegments(tagList.title);
+  const title = injectTextSegments(tagList.title);
 
   return (
     <>
       <Box className="hero-features">
         <Heading as="h1" className="hero-tagline">
-          <>{description}</>
+          <>{title}</>
         </Heading>
         {tagList.tags.map((tag: TagProps, index: number) => {
           return <TagLegacy tag={tag} key={index} />;

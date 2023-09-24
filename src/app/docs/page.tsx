@@ -43,12 +43,17 @@ export default function Docs() {
             </Text>
           </Box>
 
-          <table>
-            <tbody>
-              <tr>
-                <td valign="top" width="33%">
+          <Box as="table">
+            <Box as="tbody">
+              <Box as="tr">
+                <Box as="td" valign="top" width="33%">
                   <Box className="doc-section">
-                    <Heading as="h3">
+                    <Heading
+                      as="h3"
+                      sx={{
+                        fontSize: 'unset',
+                      }}
+                    >
                       <BookIcon size={16} /> Atom Flight Manual
                     </Heading>
                     <Text as="p">
@@ -80,10 +85,15 @@ export default function Docs() {
                       </Link>
                     </Text>
                   </Box>
-                </td>
-                <td valign="top" width="33%">
+                </Box>
+                <Box as="td" valign="top" width="33%">
                   <Box className="doc-section">
-                    <Heading as="h3">
+                    <Heading
+                      as="h3"
+                      sx={{
+                        fontSize: 'unset',
+                      }}
+                    >
                       <GearIcon size={16} /> API Reference
                     </Heading>
                     <Text as="p">
@@ -100,10 +110,15 @@ export default function Docs() {
                       View all API docs
                     </Link>
                   </Box>
-                </td>
-                <td valign="top" width="33%">
+                </Box>
+                <Box as="td" valign="top" width="33%">
                   <Box className="doc-section">
-                    <Heading as="h3">
+                    <Heading
+                      as="h3"
+                      sx={{
+                        fontSize: 'unset',
+                      }}
+                    >
                       <CommentDiscussionIcon size={16} /> Atom Discussions
                     </Heading>
                     <Text as="p">
@@ -117,20 +132,14 @@ export default function Docs() {
                       problems or are looking for help, this is your place.
                     </Text>
                   </Box>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
         </Box>
-
-        <Box className="footer-pad"></Box>
       </Box>
 
       <FooterLegacy footer={footer} />
-
-      <Box id="lean_overlay"></Box>
-      <Box id="lean_overlay"></Box>
-      <Box id="lean_overlay"></Box>
     </>
   );
 }

@@ -494,8 +494,6 @@ export default function Blog() {
             </Box>
           </Box>
         </Box>
-
-        <Box className="footer-pad"></Box>
       </Box>
 
       <FooterLegacy footer={footer} />

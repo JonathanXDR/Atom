@@ -30,8 +30,6 @@ export default function Nightly() {
             </Box>
           </Box>
         </Box>
-
-        <Box className="footer-pad"></Box>
       </Box>
 
       <FooterLegacy footer={footer} />

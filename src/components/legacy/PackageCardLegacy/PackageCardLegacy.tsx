@@ -34,7 +34,7 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
         open={open}
         caret="bottom"
         sx={{
-          top: 0,
+          top: -3,
         }}
       >
         <Popover.Content
@@ -207,13 +207,15 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
                     gap: 2,
                   }}
                 >
-                  <Tooltip aria-label={`${packageCard.downloads} downloads`}>
+                  <Tooltip
+                    aria-label={`${packageCard.downloads.toLocaleString()} downloads`}
+                  >
                     <Box>
                       <DownloadIcon size={16} />
-                      <Text> {packageCard.downloads}</Text>
+                      <Text> {packageCard.downloads.toLocaleString()}</Text>
                     </Box>
                   </Tooltip>
-                  <Tooltip aria-label="You must be signed in to star packageCards">
+                  <Tooltip aria-label="You must be signed in to star packages">
                     <Button leadingIcon={StarIcon} size="small">
                       {/* Star */}
                       <Button.Counter>{packageCard.stars}</Button.Counter>

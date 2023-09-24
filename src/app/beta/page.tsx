@@ -28,8 +28,6 @@ export default function Beta() {
             </Box>
           </Box>
         </Box>
-
-        <Box className="footer-pad"></Box>
       </Box>
 
       <FooterLegacy footer={footer} />

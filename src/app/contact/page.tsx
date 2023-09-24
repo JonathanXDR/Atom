@@ -134,15 +134,9 @@ export default function Contact() {
             </Box>
           </Box>
         </Box>
-
-        <Box className="footer-pad"></Box>
       </Box>
 
       <FooterLegacy footer={footer} />
-
-      <Box id="lean_overlay"></Box>
-      <Box id="lean_overlay"></Box>
-      <Box id="lean_overlay"></Box>
     </>
   );
 }

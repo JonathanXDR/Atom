@@ -50,8 +50,6 @@ export default function Home() {
 
           <ContactLegacy contacts={contacts.home as ContactProps[]} />
         </Box>
-
-        <Box className="footer-pad"></Box>
       </Box>
 
       <FooterLegacy footer={footer} />

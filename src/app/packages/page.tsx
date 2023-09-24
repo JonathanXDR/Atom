@@ -23,6 +23,7 @@ import {
   FormControl,
   Heading,
   IconButton,
+  PageLayout,
   Text,
   TextInput,
 } from '@primer/react';
@@ -130,147 +131,166 @@ export default function Packages() {
 
   return (
     <>
-      <Box className="footer-push">
-        <NavLegacy nav={nav} />
-
-        <Box className="wrapper content-push packages">
-          <Heading
-            as="h2"
-            className="center index-title"
+      <PageLayout containerWidth="full" padding="none">
+        <PageLayout.Header
+          sx={{
+            marginBottom: 6,
+          }}
+        >
+          <NavLegacy nav={nav} />
+        </PageLayout.Header>
+        <PageLayout.Content
+          padding="normal"
+          width="large"
+          sx={{
+            paddingTop: '0 !important',
+          }}
+        >
+          <Box
+            className="packages"
             sx={{
-              marginBlock: '1em',
-            }}
-          >
-            Packages make Atom do amazing things.
-          </Heading>
-          <FormControl
-            sx={{
-              marginBottom: 6,
+              width: '100%',
               display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'flex-end',
-              gap: 2,
+              flexDirection: 'column',
+              alignItems: 'center',
             }}
           >
-            <FormControl.Label visuallyHidden>Search</FormControl.Label>
-            <TextInput
-              leadingVisual={SearchIcon}
-              size="large"
-              placeholder="Search 431,802 packages"
+            <Heading
+              as="h2"
+              className="center index-title"
               sx={{
-                width: '100%',
-              }}
-            />
-            {/* <Filter /> */}
-            <Button size="large" type="submit">
-              Search
-            </Button>
-          </FormControl>
-          <Box className="package-list featured">
-            <Box className="package-list-header">
-              <Heading as="h3" className="package-list-title">
-                <MegaphoneIcon size={32} /> Featured
-              </Heading>
-            </Box>
-            <Box
-              // className="halves"
-              sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: 4,
+                marginBlock: '0.83em',
               }}
             >
-              {packages.map((packageCard, index) => (
-                <PackageCardLegacy packageCard={packageCard} key={index} />
-              ))}
-            </Box>
-          </Box>
-          <Box className="package-list trending">
-            <Box className="package-list-header">
-              <Heading as="h3" className="package-list-title">
-                <FlameIcon size={32} /> Trending <TimeSpan />
-              </Heading>
-            </Box>
-            <Box className="loading-overlay"></Box>
-            {/* <Box className="trending-packages halves"> */}
-            <Box
-              // className="halves"
+              Packages make Atom do amazing things.
+            </Heading>
+            <FormControl
               sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: 4,
+                width: '860px',
+                marginBottom: 6,
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'flex-end',
+                gap: 2,
               }}
             >
-              {packages.map((packageCard, index) => (
-                <PackageCardLegacy packageCard={packageCard} key={index} />
-              ))}
-              {/* </Box> */}
+              <FormControl.Label visuallyHidden>Search</FormControl.Label>
+              <TextInput
+                leadingVisual={SearchIcon}
+                size="large"
+                placeholder="Search 431,802 packages"
+                sx={{
+                  width: '100%',
+                }}
+              />
+              {/* <Filter /> */}
+              <Button size="large" type="submit">
+                Search
+              </Button>
+            </FormControl>
+            <Box className="package-list featured" sx={{ width: '100%' }}>
+              <Box className="package-list-header">
+                <Heading as="h3" className="package-list-title">
+                  <MegaphoneIcon size={32} /> Featured
+                </Heading>
+              </Box>
+              <Box
+                // className="halves"
+                sx={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                  gap: 4,
+                }}
+              >
+                {packages.map((packageCard, index) => (
+                  <PackageCardLegacy packageCard={packageCard} key={index} />
+                ))}
+              </Box>
             </Box>
+            <Box className="package-list trending" sx={{ width: '100%' }}>
+              <Box className="package-list-header">
+                <Heading as="h3" className="package-list-title">
+                  <FlameIcon size={32} /> Trending <TimeSpan />
+                </Heading>
+              </Box>
+              <Box className="loading-overlay"></Box>
+              {/* <Box className="trending-packages halves"> */}
+              <Box
+                // className="halves"
+                sx={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                  gap: 4,
+                }}
+              >
+                {packages.map((packageCard, index) => (
+                  <PackageCardLegacy packageCard={packageCard} key={index} />
+                ))}
+                {/* </Box> */}
+              </Box>
+            </Box>
+            <Box className="package-list newest" sx={{ width: '100%' }}>
+              <Box className="package-list-header">
+                <Heading as="h3" className="package-list-title">
+                  <ClockIcon size={32} /> Newest
+                  <Link
+                    href="https://atom.io/packages/list?sort=created_at&amp;direction=desc"
+                    className="package-list-see-all"
+                    aria-label="See all newest"
+                  >
+                    See all <ChevronRightIcon size={16} />
+                  </Link>
+                </Heading>
+              </Box>
+              <Box
+                // className="halves"
+                sx={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                  gap: 4,
+                }}
+              >
+                {packages.map((packageCard, index) => (
+                  <PackageCardLegacy packageCard={packageCard} key={index} />
+                ))}
+              </Box>
+            </Box>
+            <Box className="package-list updated" sx={{ width: '100%' }}>
+              <Box className="package-list-header">
+                <Heading as="h3" className="package-list-title">
+                  <SquirrelIcon size={32} /> Recently Updated
+                  <Link
+                    href="https://atom.io/packages/list?sort=updated_at&amp;direction=desc"
+                    className="package-list-see-all"
+                    aria-label="See all recently updated"
+                  >
+                    See all <ChevronRightIcon size={16} />
+                  </Link>
+                </Heading>
+              </Box>
+              <Box
+                // className="halves"
+                sx={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                  gap: 4,
+                }}
+              >
+                {packages.map((packageCard, index) => (
+                  <PackageCardLegacy packageCard={packageCard} key={index} />
+                ))}
+              </Box>
+            </Box>
+            <Text className="stats-footnote">
+              1,113,135 packages &amp; themes have been downloaded 325,262,080
+              times.
+            </Text>
           </Box>
-          <Box className="package-list newest">
-            <Box className="package-list-header">
-              <Heading as="h3" className="package-list-title">
-                <ClockIcon size={32} /> Newest
-                <Link
-                  href="https://atom.io/packages/list?sort=created_at&amp;direction=desc"
-                  className="package-list-see-all"
-                  aria-label="See all newest"
-                >
-                  See all <ChevronRightIcon size={16} />
-                </Link>
-              </Heading>
-            </Box>
-            <Box
-              // className="halves"
-              sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: 4,
-              }}
-            >
-              {packages.map((packageCard, index) => (
-                <PackageCardLegacy packageCard={packageCard} key={index} />
-              ))}
-            </Box>
-          </Box>
-          <Box className="package-list updated">
-            <Box className="package-list-header">
-              <Heading as="h3" className="package-list-title">
-                <SquirrelIcon size={32} /> Recently Updated
-                <Link
-                  href="https://atom.io/packages/list?sort=updated_at&amp;direction=desc"
-                  className="package-list-see-all"
-                  aria-label="See all recently updated"
-                >
-                  See all <ChevronRightIcon size={16} />
-                </Link>
-              </Heading>
-            </Box>
-            <Box
-              // className="halves"
-              sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: 4,
-              }}
-            >
-              {packages.map((packageCard, index) => (
-                <PackageCardLegacy packageCard={packageCard} key={index} />
-              ))}
-            </Box>
-          </Box>
-          <Text className="stats-footnote">
-            1,113,135 packages &amp; themes have been downloaded 325,262,080
-            times.
-          </Text>
-        </Box>
-
-        <Box className="footer-pad"></Box>
-      </Box>
-      <FooterLegacy footer={footer} />
-      <Box id="lean_overlay"></Box>
-      <Box id="lean_overlay"></Box>
-      <Box id="lean_overlay"></Box>
+        </PageLayout.Content>
+        <PageLayout.Footer>
+          <FooterLegacy footer={footer} />
+        </PageLayout.Footer>
+      </PageLayout>
     </>
   );
 }

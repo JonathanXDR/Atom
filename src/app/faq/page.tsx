@@ -1399,7 +1399,6 @@ export default function FAQ() {
             </Box>
           </Box>
         </Box>
-        <Box className="footer-pad"></Box>
       </Box>
       <FooterLegacy footer={footer} />
     </Box>

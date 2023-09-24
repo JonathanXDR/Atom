@@ -23,7 +23,10 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
   packageCard,
 }) => {
   const [open, setOpen] = useState(false);
-  const description = injectTextSegments(packageCard.description.paragraphs);
+  const description = injectTextSegments(
+    packageCard.description.paragraphs,
+    false
+  );
 
   const DownloadPopover = () => {
     return (
@@ -75,14 +78,17 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
           border: '1px solid',
           borderColor: 'border.default',
           borderRadius: '0.25rem',
-          marginY: 4,
+          // marginY: 4,
           backgroundColor: 'canvas.subtle',
           boxShadow: 'shadow.small',
         }}
       >
         <Box
           sx={{
+            width: '100%',
+            height: '100%',
             display: 'flex',
+            justifyContent: 'space-between',
             flexDirection: 'column',
           }}
         >

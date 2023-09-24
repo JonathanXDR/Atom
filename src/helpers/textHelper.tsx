@@ -32,7 +32,8 @@ function replacePattern<T>(
 }
 
 export function injectTextSegments(
-  textContent: DescriptionType['paragraphs'] | TitleType
+  textContent: DescriptionType['paragraphs'] | TitleType,
+  margin = true
 ): JSX.Element[] {
   const contentArray = Array.isArray(textContent) ? textContent : [textContent];
 
@@ -68,7 +69,7 @@ export function injectTextSegments(
     }
 
     return (
-      <Text key={index} as="p" sx={{ marginBlock: '1em' }}>
+      <Text key={index} as="p" {...(margin && { sx: { marginBlock: '1em' } })}>
         {segments.map((segment, idx) =>
           typeof segment === 'string' ? (
             segment

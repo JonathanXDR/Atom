@@ -121,14 +121,21 @@ export default function Packages() {
         <NavLegacy nav={nav} />
 
         <Box className="wrapper content-push packages">
-          <Heading as="h2" className="center index-title">
+          <Heading
+            as="h2"
+            className="center index-title"
+            sx={{
+              marginBlock: '1em',
+            }}
+          >
             Packages make Atom do amazing things.
           </Heading>
           <FormControl
             sx={{
+              marginBottom: 6,
               display: 'flex',
               flexDirection: 'row',
-              alignItems: 'center',
+              alignItems: 'flex-end',
               gap: 2,
             }}
           >
@@ -141,7 +148,7 @@ export default function Packages() {
                 width: '100%',
               }}
             />
-            <Filter />
+            {/* <Filter /> */}
             <Button size="large" type="submit">
               Search
             </Button>
@@ -157,16 +164,11 @@ export default function Packages() {
               sx={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: 3,
+                gap: 4,
               }}
             >
               {packages.map((packageCard, index) => (
-                <Box
-                  // className="grid-cell"
-                  key={index}
-                >
-                  <PackageCardLegacy packageCard={packageCard} />
-                </Box>
+                <PackageCardLegacy packageCard={packageCard} key={index} />
               ))}
             </Box>
           </Box>
@@ -239,16 +241,11 @@ export default function Packages() {
               sx={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: 3,
+                gap: 4,
               }}
             >
               {packages.map((packageCard, index) => (
-                <Box
-                  // className="grid-cell"
-                  key={index}
-                >
-                  <PackageCardLegacy packageCard={packageCard} />
-                </Box>
+                <PackageCardLegacy packageCard={packageCard} key={index} />
               ))}
               {/* </Box> */}
             </Box>
@@ -271,16 +268,11 @@ export default function Packages() {
               sx={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: 3,
+                gap: 4,
               }}
             >
               {packages.map((packageCard, index) => (
-                <Box
-                  // className="grid-cell"
-                  key={index}
-                >
-                  <PackageCardLegacy packageCard={packageCard} />
-                </Box>
+                <PackageCardLegacy packageCard={packageCard} key={index} />
               ))}
             </Box>
           </Box>
@@ -302,16 +294,11 @@ export default function Packages() {
               sx={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-                gap: 3,
+                gap: 4,
               }}
             >
               {packages.map((packageCard, index) => (
-                <Box
-                  // className="grid-cell"
-                  key={index}
-                >
-                  <PackageCardLegacy packageCard={packageCard} />
-                </Box>
+                <PackageCardLegacy packageCard={packageCard} key={index} />
               ))}
             </Box>
           </Box>

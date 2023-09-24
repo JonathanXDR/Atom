@@ -22,34 +22,32 @@ import '/public/assets/css/welcome.css';
 export default function Home() {
   return (
     <>
-      
-        <NavLegacy nav={nav} />
+      <NavLegacy nav={nav} />
 
-        <Box className="welcome">
-          <HeroLegacy
-            banner={banners.home}
-            meta={meta.home}
-            downloads={downloads.home}
-            tagList={tagLists.home.hackableTextEditor}
-          />
+      <Box className="welcome">
+        <HeroLegacy
+          banner={banners.home}
+          meta={meta.home}
+          downloads={downloads.home}
+          tagList={tagLists.home.hackableTextEditor}
+        />
 
-          {rivers.home.map((river, index) => {
-            return <RiverLegacy river={river} key={index} />;
-          })}
+        {rivers.home.map((river, index) => {
+          return <RiverLegacy river={river} key={index} />;
+        })}
 
-          <Box as="section" className="section section--features">
-            <Box className="wrapper no-pad">
-              <FeatureListLegacy
-                featureList={featureLists.home.everythingYouExpect}
-              />
-              <FeatureListLegacy
-                featureList={featureLists.home.makeItYourEditor}
-              />
-            </Box>
+        <Box as="section" className="section section--features">
+          <Box className="wrapper no-pad">
+            <FeatureListLegacy
+              featureList={featureLists.home.everythingYouExpect}
+            />
+            <FeatureListLegacy
+              featureList={featureLists.home.makeItYourEditor}
+            />
           </Box>
-
-          <ContactLegacy contacts={contacts.home as ContactProps[]} />
         </Box>
+
+        <ContactLegacy contacts={contacts.home as ContactProps[]} />
       </Box>
 
       <FooterLegacy footer={footer} />

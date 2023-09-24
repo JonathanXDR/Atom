@@ -47,12 +47,13 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
           </Heading>
           <IconButton
             icon={XIcon}
+            variant="invisible"
             aria-label="Close"
             onClick={() => setOpen(false)}
             sx={{
               position: 'absolute',
-              top: 3,
-              right: 3,
+              top: 2,
+              right: 2,
             }}
           />
           <Text

@@ -6,7 +6,6 @@ import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import packages from '@/data/packages.json';
 import {
-  CheckIcon,
   ChevronRightIcon,
   ClockIcon,
   FlameIcon,
@@ -23,11 +22,12 @@ import {
   Button,
   FormControl,
   Heading,
+  IconButton,
   Text,
   TextInput,
 } from '@primer/react';
 import Link from 'next/link';
-import React from 'react';
+import { useRef, useState } from 'react';
 
 export default function Packages() {
   const timeSpans = [
@@ -37,12 +37,14 @@ export default function Packages() {
   ];
 
   const TimeSpan = () => {
-    const [selectedTimeSpan, setSelectedTimeSpan] = React.useState(1);
+    const [selectedTimeSpan, setSelectedTimeSpan] = useState(1);
+    const [open, setOpen] = useState(false);
     const selectedType = timeSpans[selectedTimeSpan];
+    const anchorRef = useRef(null);
 
     return (
-      <ActionMenu>
-        <ActionMenu.Anchor aria-label="Adjust time Text">
+      <ActionMenu open={open} onOpenChange={setOpen} anchorRef={anchorRef}>
+        <ActionMenu.Anchor aria-label="Adjust time span">
           <Text
             as="a"
             sx={{
@@ -54,8 +56,19 @@ export default function Packages() {
           </Text>
         </ActionMenu.Anchor>
         <ActionMenu.Overlay width="medium">
+          <IconButton
+            icon={XIcon}
+            variant="invisible"
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            sx={{
+              position: 'absolute',
+              top: 2,
+              right: 2,
+            }}
+          />
           <ActionList selectionVariant="single">
-            <ActionList.Group title="Adjust time Text">
+            <ActionList.Group title="Adjust time span">
               <ActionList.Divider />
               {timeSpans.map((type, index) => (
                 <ActionList.Item
@@ -80,7 +93,7 @@ export default function Packages() {
   ];
 
   const Filter = () => {
-    const [selectedFilter, setSelectedFilter] = React.useState(1);
+    const [selectedFilter, setSelectedFilter] = useState(1);
     const selectedType = filters[selectedFilter];
 
     return (
@@ -175,63 +188,7 @@ export default function Packages() {
           <Box className="package-list trending">
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
-                <FlameIcon size={32} /> Trending{' '}
-                <Box className="trending-select">
-                  <Box className="select-menu js-menu-container js-select-menu">
-                    <Link
-                      className="js-menu-target"
-                      href="https://atom.io/packages"
-                    >
-                      <Text className="js-select-button">this week</Text>
-                      <TriangleDownIcon size={32} />
-                    </Link>
-
-                    <Box className="select-menu-modal-holder js-menu-content js-navigation-container">
-                      <Box className="select-menu-modal">
-                        <Box className="select-menu-header">
-                          <Text className="select-menu-title">
-                            Adjust time Text
-                          </Text>
-                          <XIcon size={16} />
-                        </Box>
-
-                        <Box className="select-menu-list">
-                          <Box>
-                            <Box
-                              className="select-menu-item js-navigation-item"
-                              data-trending-sort="daily"
-                            >
-                              <CheckIcon size={16} />
-                              <Box className="select-menu-item-text js-select-button-text">
-                                today
-                              </Box>
-                            </Box>
-
-                            <Box
-                              className="select-menu-item js-navigation-item selected"
-                              data-trending-sort="weekly"
-                            >
-                              <CheckIcon size={16} />
-                              <Box className="select-menu-item-text js-select-button-text">
-                                this week
-                              </Box>
-                            </Box>
-
-                            <Box
-                              className="select-menu-item js-navigation-item"
-                              data-trending-sort="monthly"
-                            >
-                              <CheckIcon size={16} />
-                              <Box className="select-menu-item-text js-select-button-text">
-                                this month
-                              </Box>
-                            </Box>
-                          </Box>
-                        </Box>
-                      </Box>
-                    </Box>
-                  </Box>
-                </Box>
+                <FlameIcon size={32} /> Trending <TimeSpan />
               </Heading>
             </Box>
             <Box className="loading-overlay"></Box>

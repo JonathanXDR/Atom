@@ -13,19 +13,17 @@ import { Box } from '@primer/react';
 export default function Beta() {
   return (
     <Box className="is-responsive">
-      <Box className="footer-push">
-        <NavLegacy nav={nav} />
+      <NavLegacy nav={nav} />
 
-        <Box className="welcome welcome-beta">
-          <HeroLegacy
-            meta={meta.beta}
-            downloads={downloads.beta}
-            octonautImage={false}
-          />
-          <Box as="section" className="section section--features">
-            <Box className="wrapper wrapper--beta">
-              <FeatureListLegacy featureList={featureLists.beta.tryAtomBeta} />
-            </Box>
+      <Box className="welcome welcome-beta">
+        <HeroLegacy
+          meta={meta.beta}
+          downloads={downloads.beta}
+          octonautImage={false}
+        />
+        <Box as="section" className="section section--features">
+          <Box className="wrapper wrapper--beta">
+            <FeatureListLegacy featureList={featureLists.beta.tryAtomBeta} />
           </Box>
         </Box>
       </Box>

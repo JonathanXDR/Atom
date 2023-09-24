@@ -287,6 +287,7 @@ export default function Packages() {
             </Text>
           </Box>
         </PageLayout.Content>
+
         <PageLayout.Footer>
           <FooterLegacy footer={footer} />
         </PageLayout.Footer>

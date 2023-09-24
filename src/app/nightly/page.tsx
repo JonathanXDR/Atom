@@ -13,21 +13,19 @@ import { Box } from '@primer/react';
 export default function Nightly() {
   return (
     <Box className="is-responsive">
-      <Box className="footer-push">
-        <NavLegacy nav={nav} />
+      <NavLegacy nav={nav} />
 
-        <Box className="welcome welcome-nightly">
-          <HeroLegacy
-            meta={meta.nightly}
-            downloads={downloads.nightly}
-            octonautImage={false}
-          />
-          <Box as="section" className="section section--features">
-            <Box className="wrapper wrapper--nightly">
-              <FeatureListLegacy
-                featureList={featureLists.nightly.tryAtomNightly}
-              />
-            </Box>
+      <Box className="welcome welcome-nightly">
+        <HeroLegacy
+          meta={meta.nightly}
+          downloads={downloads.nightly}
+          octonautImage={false}
+        />
+        <Box as="section" className="section section--features">
+          <Box className="wrapper wrapper--nightly">
+            <FeatureListLegacy
+              featureList={featureLists.nightly.tryAtomNightly}
+            />
           </Box>
         </Box>
       </Box>

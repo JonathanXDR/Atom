@@ -22,7 +22,7 @@ import '/public/assets/css/welcome.css';
 export default function Home() {
   return (
     <>
-      <Box className="footer-push">
+      
         <NavLegacy nav={nav} />
 
         <Box className="welcome">

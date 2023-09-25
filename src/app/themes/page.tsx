@@ -1,7 +1,6 @@
 'use client';
-import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import nav from '@/data/nav.json';
+import Loading from '../loading';
 
 export default function Themes() {
-  return <NavLegacy nav={nav} />;
+  return <Loading />;
 }

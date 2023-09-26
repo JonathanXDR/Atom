@@ -30,7 +30,7 @@ export default function Docs() {
           padding="normal"
           width="large"
           sx={{
-            paddingTop: '0 !important',
+            minHeight: '100vh',
           }}
         >
           <Box className="documents wide atom-doc-index">
@@ -75,7 +75,12 @@ export default function Docs() {
                 >
                   <BookIcon size={16} /> Atom Flight Manual
                 </Heading>
-                <Text as="p">
+                <Text
+                  as="p"
+                  sx={{
+                    marginBlock: '1em',
+                  }}
+                >
                   The
                   <Link
                     data-skip-pjax="yeahokiguess"
@@ -91,7 +96,12 @@ export default function Docs() {
                     Go here to read the one and only book on everything Atom.
                   </Link>
                 </Text>
-                <Text as="p">
+                <Text
+                  as="p"
+                  sx={{
+                    marginBlock: '1em',
+                  }}
+                >
                   <Link href="https://flight-manual.atom.io/">
                     <Image
                       style={{
@@ -114,7 +124,12 @@ export default function Docs() {
                 >
                   <GearIcon size={16} /> API Reference
                 </Heading>
-                <Text as="p">
+                <Text
+                  as="p"
+                  sx={{
+                    marginBlock: '1em',
+                  }}
+                >
                   The
                   <Link href="https://flight-manual.atom.io/api">
                     {' '}
@@ -138,7 +153,12 @@ export default function Docs() {
                 >
                   <CommentDiscussionIcon size={16} /> Atom Discussions
                 </Heading>
-                <Text as="p">
+                <Text
+                  as="p"
+                  sx={{
+                    marginBlock: '1em',
+                  }}
+                >
                   The
                   <Link href="https://github.com/atom/atom/discussions">
                     {' '}
@@ -153,7 +173,11 @@ export default function Docs() {
           </Box>
         </PageLayout.Content>
 
-        <PageLayout.Footer>
+        <PageLayout.Footer
+          sx={{
+            margin: '0 !important',
+          }}
+        >
           <FooterLegacy footer={footer} />
         </PageLayout.Footer>
       </PageLayout>

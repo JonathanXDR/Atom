@@ -899,8 +899,8 @@ export default function Releases() {
                 </Box>
                 <Box as="li">
                   <Link href="https://github.com/atom/atom/pull/13821">
-                    atom/atom#13821 - Clarify that stack only has an effect if
-                    detail is present as well
+                    atom/atom#13821 - 📝 Clarify that stack only has an effect
+                    if detail is present as well
                   </Link>
                 </Box>
                 <Box as="li">
@@ -1401,8 +1401,8 @@ export default function Releases() {
                 </Box>
                 <Box as="li">
                   <Link href="https://github.com/atom/atom/pull/13821">
-                    atom/atom#13821 - Clarify that stack only has an effect if
-                    detail is present as well
+                    atom/atom#13821 - 📝 Clarify that stack only has an effect
+                    if detail is present as well
                   </Link>
                 </Box>
                 <Box as="li">
@@ -3110,7 +3110,7 @@ export default function Releases() {
                 </Box>
                 <Box as="li">
                   <Link href="https://github.com/atom/atom/pull/21903">
-                    atom/atom#21903 - github
+                    atom/atom#21903 - ⬆️ github
                   </Link>
                 </Box>
                 <Box as="li">
@@ -3410,7 +3410,7 @@ export default function Releases() {
                 </Box>
                 <Box as="li">
                   <Link href="https://github.com/atom/atom/pull/21903">
-                    atom/atom#21903 - github
+                    atom/atom#21903 - ⬆️ github
                   </Link>
                 </Box>
                 <Box as="li">
@@ -7224,7 +7224,7 @@ export default function Releases() {
               <Box as="ul">
                 <Box as="li">
                   <Link href="https://github.com/atom/language-c/pull/330">
-                    atom/language-c#330 - Scopes after tree-sitter-c and
+                    atom/language-c#330 - Scopes after ⬆️ tree-sitter-c and
                     tree-sitter-cpp
                   </Link>
                 </Box>

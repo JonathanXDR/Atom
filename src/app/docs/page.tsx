@@ -33,7 +33,7 @@ export default function Docs() {
             minHeight: '100vh',
           }}
         >
-          <Box className="documents wide atom-doc-index">
+          <Box className="documents atom-doc-index">
             <Heading as="h2" className="center index-title">
               Atom Documentation
             </Heading>

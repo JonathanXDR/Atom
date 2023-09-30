@@ -4,7 +4,14 @@ import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import { CalendarIcon, ChevronRightIcon } from '@primer/octicons-react';
-import { Box, Heading, Text } from '@primer/react';
+import {
+  Box,
+  Button,
+  Heading,
+  PageLayout,
+  Pagination,
+  Text,
+} from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import atomNightlyHeading from '/public/assets/png/atom-nightly-heading.png';
@@ -12,10 +19,21 @@ import atomNightlyHeading from '/public/assets/png/atom-nightly-heading.png';
 export default function Blog() {
   return (
     <>
-      <NavLegacy nav={nav} />
-
-      <Box className="wrapper content-push">
-        <Box id="home">
+      <PageLayout containerWidth="full" padding="none">
+        <PageLayout.Header
+          sx={{
+            marginBottom: 6,
+          }}
+        >
+          <NavLegacy nav={nav} />
+        </PageLayout.Header>
+        <PageLayout.Content
+          padding="normal"
+          width="large"
+          sx={{
+            paddingTop: '0 !important',
+          }}
+        >
           <Box as="ul" className="posts">
             <Box as="li" className="post">
               <Heading as="h2" className="post-name">
@@ -454,45 +472,36 @@ export default function Blog() {
             </Box>
           </Box>
 
-          <Box className="pagination">
-            <Text>← Previous</Text>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              marginBottom: 4,
+            }}
+          >
+            <Pagination
+              pageCount={13}
+              currentPage={1}
+              onPageChange={(e) => e.preventDefault()}
+            />
 
-            <em>1</em>
-
-            <Link href="/blogpage2">2</Link>
-
-            <Link href="/blogpage3">3</Link>
-
-            <Link href="/blogpage4">4</Link>
-
-            <Link href="/blogpage5">5</Link>
-
-            <Link href="/blogpage6">6</Link>
-
-            <Link href="/blogpage7">7</Link>
-
-            <Link href="/blogpage8">8</Link>
-
-            <Link href="/blogpage9">9</Link>
-
-            <Link href="/blogpage10">10</Link>
-
-            <Link href="/blogpage11">11</Link>
-
-            <Link href="/blogpage12">12</Link>
-
-            <Link href="/blogpage13">13</Link>
-
-            <Link href="/blogpage2">Next →</Link>
-
-            <Link className="pagination-archive" href="/blogarchive/">
-              <CalendarIcon size={16} /> Archive
-            </Link>
+            <Button
+              as="a"
+              href="/blogarchive/"
+              variant="invisible"
+              leadingIcon={CalendarIcon}
+            >
+              Archive
+            </Button>
           </Box>
-        </Box>
-      </Box>
+        </PageLayout.Content>
 
-      <FooterLegacy footer={footer} />
+        <PageLayout.Footer>
+          <FooterLegacy footer={footer} />
+        </PageLayout.Footer>
+      </PageLayout>
     </>
   );
 }

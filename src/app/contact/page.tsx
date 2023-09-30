@@ -8,6 +8,7 @@ import {
   Button,
   FormControl,
   Heading,
+  PageLayout,
   TextInput,
   Textarea,
 } from '@primer/react';
@@ -16,10 +17,22 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <>
-      <NavLegacy nav={nav} />
+      <PageLayout containerWidth="full" padding="none">
+        <PageLayout.Header
+          sx={{
+            marginBottom: 6,
+          }}
+        >
+          <NavLegacy nav={nav} />
+        </PageLayout.Header>
 
-      <Box className="contact content-push">
-        <Box className="wrapper">
+        <PageLayout.Content
+          padding="normal"
+          width="large"
+          sx={{
+            minHeight: '100vh',
+          }}
+        >
           <Box className="columns">
             <Box className="column main-column">
               <Heading as="h3" className="contact-title">
@@ -103,38 +116,40 @@ export default function Contact() {
               <Heading as="h3" className="">
                 Join the community
               </Heading>
-              <table className="contact-list">
-                <tbody>
-                  <tr>
-                    <td>GitHub</td>
-                    <td>
+              <Box as="table" className="contact-list">
+                <Box as="tbody">
+                  <Box as="tr">
+                    <Box as="td">GitHub</Box>
+                    <Box as="td">
                       <Link href="https://github.com/atom">@atom</Link>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Twitter</td>
-                    <td>
+                    </Box>
+                  </Box>
+                  <Box as="tr">
+                    <Box as="td">Twitter</Box>
+                    <Box as="td">
                       <Link href="https://twitter.com/atomeditor">
                         @AtomEditor
                       </Link>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Github Discussions</td>
-                    <td>
+                    </Box>
+                  </Box>
+                  <Box as="tr">
+                    <Box as="td">Github Discussions</Box>
+                    <Box as="td">
                       <Link href="https://github.com/atom/atom/discussions">
                         Github Discussions
                       </Link>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </Box>
+        </PageLayout.Content>
 
-      <FooterLegacy footer={footer} />
+        <PageLayout.Footer>
+          <FooterLegacy footer={footer} />
+        </PageLayout.Footer>
+      </PageLayout>
     </>
   );
 }

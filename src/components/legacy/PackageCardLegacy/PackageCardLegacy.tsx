@@ -192,9 +192,11 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
                     href="/atom"
                     sx={{
                       color: 'fg.subtle',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '4px',
                     }}
                   >
-                    {' '}
                     {packageCard.user.username}
                   </Link>
                 </Box>

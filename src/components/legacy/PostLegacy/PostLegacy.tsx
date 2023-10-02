@@ -38,27 +38,49 @@ const PostLegacy: React.FC<PostLegacyProps> = ({ post }) => {
             </Link>
           ))}
         </Heading>
-        <Text as="p" className="who-when">
-          <CalendarIcon size={16} />
-          {post.date.toLocaleString()}
-          <Link href={post.user.avatar.url} className="author-link">
+        <Text
+          as="p"
+          className="who-when"
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '4px',
+          }}
+        >
+          <CalendarIcon size={16} />{' '}
+          {new Date(post.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+          <Link
+            href={post.user.avatar.url}
+            className="author-link"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '4px',
+            }}
+          >
             <Avatar square src={post.user.avatar.url} />
             {post.user.username}
           </Link>
         </Text>
         <Box className="post markdown">
-          <Text as="p">
-            {post.image.links?.map((link) => (
-              <Link href={link.url} key={link.url}>
-                <Image
-                  width={dimensions.width}
-                  height={dimensions.height}
-                  src={post.image.url}
-                  alt={post.image.alt}
-                />
-              </Link>
-            ))}
-          </Text>
+          {dimensions.width && dimensions.height && (
+            <Text as="p">
+              {post.image.links?.map((link) => (
+                <Link href={link.url} key={link.url}>
+                  <Image
+                    width={dimensions.width}
+                    height={dimensions.height}
+                    src={post.image.url}
+                    alt={post.image.alt}
+                  />
+                </Link>
+              ))}
+            </Text>
+          )}
 
           <Text as="p">{description}</Text>
 

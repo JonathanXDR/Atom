@@ -1,8 +1,10 @@
 'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
+import PostLegacy from '@/components/legacy/PostLegacy/PostLegacy';
 import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
+import posts from '@/data/posts.json';
 import { CalendarIcon, ChevronRightIcon } from '@primer/octicons-react';
 import {
   Box,
@@ -14,7 +16,6 @@ import {
 } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import atomNightlyHeading from '/public/assets/png/atom-nightly-heading.png';
 
 export default function Blog() {
   return (
@@ -78,63 +79,9 @@ export default function Blog() {
               </Box>
             </Box>
 
-            <Box as="li" className="post">
-              <Heading as="h2" className="post-name">
-                <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
-                  Introducing Atom Nightly Releases
-                </Link>
-              </Heading>
-              <Text as="p" className="who-when">
-                <CalendarIcon size={16} /> June 21, 2019
-                <Link href="https://github.com/atom" className="author-link">
-                  <Image
-                    className="avatar avatar-small"
-                    alt="Atom"
-                    width="18"
-                    height="18"
-                    data-proofer-ignore="true"
-                    src="https://avatars.githubusercontent.com/atom"
-                    style={{
-                      verticalAlign: 'baseline',
-                    }}
-                    sizes="
-                      https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
-                      https://avatars1.githubusercontent.com/github?v=3&amp;s=36 2x,
-                      https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
-                      https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
-                    "
-                  />{' '}
-                  Atom
-                </Link>
-              </Text>
-              <Box className="post markdown">
-                <Text as="p">
-                  <Link href="https://atom.io/nightly">
-                    <Image src={atomNightlyHeading} alt="Atom Nightly" />
-                  </Link>
-                </Text>
-
-                <Text as="p">
-                  Today we&apos;re excited to introduce
-                  <Link href="https://atom.io/nightly">
-                    {' '}
-                    Atom Nightly releases{' '}
-                  </Link>
-                  ! This new release channel gives you access to Atom&apos;s
-                  latest feature improvements and bug fixes each day as they are
-                  merged into our
-                  <code className="language-plaintext highlighter-rouge">
-                    master
-                  </code>
-                  branch. If you want to have an influence on the future of
-                  Atom, this release channel is for you.
-                </Text>
-
-                <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
-                  Read more <ChevronRightIcon size={16} />
-                </Link>
-              </Box>
-            </Box>
+            {posts.map((post) => (
+              <PostLegacy post={post} key={post.title} />
+            ))}
 
             <Box as="li" className="post">
               <Heading as="h2" className="post-name">
@@ -492,6 +439,9 @@ export default function Blog() {
               href="/blogarchive/"
               variant="invisible"
               leadingIcon={CalendarIcon}
+              sx={{
+                color: 'fg.muted',
+              }}
             >
               Archive
             </Button>

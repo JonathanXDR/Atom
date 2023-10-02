@@ -1,65 +1,76 @@
+import { getImageDimensions } from '@/helpers/imageHelper';
 import { injectTextSegments } from '@/helpers/textHelper';
 import { PostProps } from '@/types/PostProps';
 import { CalendarIcon, ChevronRightIcon } from '@primer/octicons-react';
-import { Box, Heading, Text } from '@primer/react';
+import { Avatar, Box, Heading, Text } from '@primer/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface PostLegacyProps {
   post: PostProps;
 }
 
-const PackageCardLegacy: React.FC<PostLegacyProps> = ({ post }) => {
+const PostLegacy: React.FC<PostLegacyProps> = ({ post }) => {
+  const [dimensions, setDimensions] = useState<{
+    width?: number;
+    height?: number;
+  }>({});
+
+  useEffect(() => {
+    const fetchDimensions = async () => {
+      const dimensions = await getImageDimensions(post.image.url);
+      setDimensions(dimensions);
+    };
+
+    fetchDimensions();
+  }, [post.image.url]);
+
   const description = injectTextSegments(post.description.paragraphs, false);
 
   return (
     <>
       <Box as="li" className="post">
         <Heading as="h2" className="post-name">
-          <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
-            Introducing Atom Nightly Releases
-          </Link>
+          {post.title.links?.map((link) => (
+            <Link href={link.url} key={link.url}>
+              {link.title}
+            </Link>
+          ))}
         </Heading>
         <Text as="p" className="who-when">
-          <CalendarIcon size={16} /> June 21, 2019
-          <Link href="https://github.com/atom" className="author-link">
-            <Image
-              className="avatar avatar-small"
-              alt="Atom"
-              width="18"
-              height="18"
-              data-proofer-ignore="true"
-              src="https://avatars.githubusercontent.com/atom"
-              style={{
-                verticalAlign: 'baseline',
-              }}
-              sizes="
-                      https://avatars1.githubusercontent.com/github?v=3&amp;s=18 1x,
-                      https://avatars1.githubusercontent.com/github?v=3&amp;s=36 2x,
-                      https://avatars1.githubusercontent.com/github?v=3&amp;s=54 3x,
-                      https://avatars1.githubusercontent.com/github?v=3&amp;s=72 4x
-                    "
-            />{' '}
-            Atom
+          <CalendarIcon size={16} />
+          {post.date.toLocaleString()}
+          <Link href={post.user.avatar.url} className="author-link">
+            <Avatar square src={post.user.avatar.url} />
+            {post.user.username}
           </Link>
         </Text>
         <Box className="post markdown">
           <Text as="p">
-            <Link href="https://atom.io/nightly">
-              <Image src={atomNightlyHeading} alt="Atom Nightly" />
-            </Link>
+            {post.image.links?.map((link) => (
+              <Link href={link.url} key={link.url}>
+                <Image
+                  width={dimensions.width}
+                  height={dimensions.height}
+                  src={post.image.url}
+                  alt={post.image.alt}
+                />
+              </Link>
+            ))}
           </Text>
 
           <Text as="p">{description}</Text>
 
-          <Link href="/blog2019/06/21/introducing-atom-nightly-releases.html">
-            Read more <ChevronRightIcon size={16} />
-          </Link>
+          {post.links?.map((link) => (
+            <Link href={link.url} key={link.url}>
+              {link.title} <ChevronRightIcon size={16} />
+            </Link>
+          ))}
         </Box>
       </Box>
     </>
   );
 };
 
-export default PackageCardLegacy;
+export default PostLegacy;

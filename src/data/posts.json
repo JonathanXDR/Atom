@@ -1,0 +1,46 @@
+[
+  {
+    "title": {
+      "links": [
+        {
+          "title": "Introducing Atom Nightly Releases",
+          "url": "/blog2019/06/21/introducing-atom-nightly-releases.html"
+        }
+      ]
+    },
+    "date": "2019-06-21",
+    "description": {
+      "paragraphs": [
+        {
+          "text": "Today we're excited to introduce { link[0] }! This new release channel gives you access to Atom's latest feature improvements and bug fixes each day as they are merged into our master branch. If you want to have an influence on the future of Atom, this release channel is for you.",
+          "links": {
+            "title": "Atom Nightly Releases",
+            "url": "/blog2019/06/21/introducing-atom-nightly-releases.html"
+          }
+        }
+      ]
+    },
+    "image": {
+      "url": "/assets/png/atom-nightly-heading.png",
+      "alt": "Atom Nightly",
+      "links": [
+        {
+          "url": "https://atom.io/nightly"
+        }
+      ]
+    },
+    "user": {
+      "username": "Atom",
+      "avatar": {
+        "url": "https://avatars.githubusercontent.com/atom",
+        "alt": "Atom"
+      }
+    },
+    "links": [
+      {
+        "title": "Read more",
+        "url": "/blog2019/06/21/introducing-atom-nightly-releases.html"
+      }
+    ]
+  }
+]

@@ -141,13 +141,9 @@ export default function Packages() {
         </PageLayout.Header>
         <PageLayout.Content
           padding="normal"
-          width="large"
+          width="full"
           sx={{
             paddingTop: '0 !important',
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
           }}
         >
           <Heading
@@ -159,30 +155,40 @@ export default function Packages() {
           >
             Packages make Atom do amazing things.
           </Heading>
-          <FormControl
+          <Box
             sx={{
-              width: '860px',
-              marginBottom: 6,
+              width: '100%',
               display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'flex-end',
-              gap: 2,
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
-            <FormControl.Label visuallyHidden>Search</FormControl.Label>
-            <TextInput
-              leadingVisual={SearchIcon}
-              size="large"
-              placeholder="Search 431,802 packages"
+            <FormControl
               sx={{
-                width: '100%',
+                width: '860px',
+                marginBottom: 6,
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'flex-end',
+                alignSelf: 'center',
+                gap: 2,
               }}
-            />
-            {/* <Filter /> */}
-            <Button size="large" type="submit">
-              Search
-            </Button>
-          </FormControl>
+            >
+              <FormControl.Label visuallyHidden>Search</FormControl.Label>
+              <TextInput
+                leadingVisual={SearchIcon}
+                size="large"
+                placeholder="Search 431,802 packages"
+                sx={{
+                  width: '100%',
+                }}
+              />
+              {/* <Filter /> */}
+              <Button size="large" type="submit">
+                Search
+              </Button>
+            </FormControl>
+          </Box>
           <Box className="package-list featured" sx={{ width: '100%' }}>
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">

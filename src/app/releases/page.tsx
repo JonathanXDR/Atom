@@ -20,7 +20,7 @@ export default function Releases() {
         </PageLayout.Header>
         <PageLayout.Content
           padding="normal"
-          width="large"
+          width="full"
           sx={{
             paddingTop: '0 !important',
           }}

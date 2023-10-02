@@ -28,7 +28,7 @@ export default function Contact() {
 
         <PageLayout.Content
           padding="normal"
-          width="large"
+          width="full"
           sx={{
             minHeight: '100vh',
           }}

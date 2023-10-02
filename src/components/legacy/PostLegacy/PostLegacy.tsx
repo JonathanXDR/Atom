@@ -19,24 +19,33 @@ const PostLegacy: React.FC<PostLegacyProps> = ({ post }) => {
 
   useEffect(() => {
     const fetchDimensions = async () => {
-      const dimensions = await getImageDimensions(post.image.url);
+      const dimensions = await getImageDimensions(post?.image?.url || '');
       setDimensions(dimensions);
     };
 
     fetchDimensions();
-  }, [post.image.url]);
+  }, [post?.image?.url]);
 
   const description = injectTextSegments(post.description.paragraphs, false);
+
+  function createBlogPostUrl(date: string, title: string): string {
+    const formattedDate = date.replace(/-/g, '/');
+    const slug = title.toLowerCase().replace(/\s+/g, '-');
+    return `/blog/${formattedDate}/${slug}`;
+  }
 
   return (
     <>
       <Box as="li" className="post">
         <Heading as="h2" className="post-name">
-          {post.title.links?.map((link) => (
-            <Link href={link.url} key={link.url}>
-              {link.title}
-            </Link>
-          ))}
+          <Link
+            href={createBlogPostUrl(
+              post.date.toString(),
+              post.title.text || ''
+            )}
+          >
+            {post.title.text}
+          </Link>
         </Heading>
         <Text
           as="p"
@@ -54,7 +63,7 @@ const PostLegacy: React.FC<PostLegacyProps> = ({ post }) => {
             day: 'numeric',
           })}
           <Link
-            href={post.user.avatar.url}
+            href={`/${post.user.username}`}
             className="author-link"
             style={{
               display: 'flex',
@@ -67,15 +76,15 @@ const PostLegacy: React.FC<PostLegacyProps> = ({ post }) => {
           </Link>
         </Text>
         <Box className="post markdown">
-          {dimensions.width && dimensions.height && (
+          {post.image && dimensions.width && dimensions.height && (
             <Text as="p">
               {post.image.links?.map((link) => (
                 <Link href={link.url} key={link.url}>
                   <Image
                     width={dimensions.width}
                     height={dimensions.height}
-                    src={post.image.url}
-                    alt={post.image.alt}
+                    src={post.image?.url || ''}
+                    alt={post.image?.alt || ''}
                   />
                 </Link>
               ))}
@@ -84,11 +93,14 @@ const PostLegacy: React.FC<PostLegacyProps> = ({ post }) => {
 
           <Text as="p">{description}</Text>
 
-          {post.links?.map((link) => (
-            <Link href={link.url} key={link.url}>
-              {link.title} <ChevronRightIcon size={16} />
-            </Link>
-          ))}
+          <Link
+            href={createBlogPostUrl(
+              post.date.toString(),
+              post.title.text || ''
+            )}
+          >
+            Read more <ChevronRightIcon size={16} />
+          </Link>
         </Box>
       </Box>
     </>

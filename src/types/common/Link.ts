@@ -1,7 +1,7 @@
 import { IconType } from './Icon';
 
 export type LinkType = {
-  title?: string;
+  title: string;
   class?: string;
   url: string;
   leadingIcon?: IconType;

@@ -189,7 +189,7 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
                 >
                   <Avatar square src={packageCard.user.avatar.url} />
                   <Link
-                    href="/atom"
+                    href={`/${packageCard.user.username}`}
                     sx={{
                       color: 'fg.subtle',
                       display: 'flex',

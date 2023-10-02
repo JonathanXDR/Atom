@@ -8,7 +8,7 @@ export interface PostProps {
   title: TitleType;
   date: Date;
   description: DescriptionType;
-  image: ImageType;
+  image?: ImageType;
   user: UserType;
   links?: LinkType[];
 }

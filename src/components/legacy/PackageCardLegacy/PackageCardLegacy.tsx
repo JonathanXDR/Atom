@@ -109,7 +109,7 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
               }}
             >
               <Link
-                href="/teletype"
+                href={`/packages/${packageCard.title.text}`}
                 sx={{
                   fontWeight: 'bold',
                   wordBreak: 'break-word',

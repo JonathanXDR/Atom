@@ -1,13 +1,7 @@
 [
   {
     "title": {
-      "text": "teletype",
-      "links": [
-        {
-          "title": "teletype",
-          "url": "https://atom.io/packages/teletype"
-        }
-      ]
+      "text": "teletype"
     },
     "description": {
       "paragraphs": [
@@ -34,13 +28,7 @@
   },
   {
     "title": {
-      "text": "scroll-through-time",
-      "links": [
-        {
-          "title": "scroll-through-time",
-          "url": "https://atom.io/packages/scroll-through-time"
-        }
-      ]
+      "text": "scroll-through-time"
     },
     "description": {
       "paragraphs": [
@@ -62,13 +50,7 @@
   },
   {
     "title": {
-      "text": "hydrogen",
-      "links": [
-        {
-          "title": "hydrogen",
-          "url": "https://atom.io/packages/hydrogen"
-        }
-      ]
+      "text": "hydrogen"
     },
     "description": {
       "paragraphs": [
@@ -90,13 +72,7 @@
   },
   {
     "title": {
-      "text": "hey-pane",
-      "links": [
-        {
-          "title": "hey-pane",
-          "url": "https://atom.io/packages/hey-pane"
-        }
-      ]
+      "text": "hey-pane"
     },
     "description": {
       "paragraphs": [
@@ -118,13 +94,7 @@
   },
   {
     "title": {
-      "text": "atom-clock",
-      "links": [
-        {
-          "title": "atom-clock",
-          "url": "https://atom.io/packages/atom-clock"
-        }
-      ]
+      "text": "atom-clock"
     },
     "description": {
       "paragraphs": [
@@ -146,13 +116,7 @@
   },
   {
     "title": {
-      "text": "zentabs",
-      "links": [
-        {
-          "title": "zentabs",
-          "url": "https://atom.io/packages/zentabs"
-        }
-      ]
+      "text": "zentabs"
     },
     "description": {
       "paragraphs": [

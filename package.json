@@ -11,18 +11,18 @@
   "dependencies": {
     "@primer/css": "^21.0.9",
     "@primer/octicons-react": "^19.8.0",
-    "@primer/react": "^35.30.0",
-    "@primer/react-brand": "^0.26.0",
-    "@types/node": "^20.7.0",
-    "@types/react": "^18.2.22",
-    "@types/react-dom": "^18.2.7",
+    "@primer/react": "^35.31.0",
+    "@primer/react-brand": "^0.27.0",
+    "@types/node": "^20.8.2",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
     "autoprefixer": "^10.4.16",
     "deepmerge-ts": "^5.1.0",
     "eslint": "^8.50.0",
-    "eslint-config-next": "^13.5.3",
+    "eslint-config-next": "^13.5.4",
     "image-size": "^1.0.2",
-    "next": "^13.5.3",
-    "postcss": "^8.4.30",
+    "next": "^13.5.4",
+    "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.68.0",
@@ -33,7 +33,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "eslint-plugin-primer-react": "^4.0.2",
-    "postcss": "^8.4.30",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3"
   }
 }

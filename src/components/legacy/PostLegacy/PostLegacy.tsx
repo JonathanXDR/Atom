@@ -19,7 +19,9 @@ const PostLegacy: React.FC<PostLegacyProps> = ({ post }) => {
 
   useEffect(() => {
     const fetchDimensions = async () => {
-      const dimensions = await getImageDimensions(post?.image?.url || '');
+      const dimensions = await getImageDimensions(
+        post?.image?.url || '/assets/gif/octocat-spinner-128.gif'
+      );
       setDimensions(dimensions);
     };
 
@@ -83,8 +85,10 @@ const PostLegacy: React.FC<PostLegacyProps> = ({ post }) => {
                   <Image
                     width={dimensions.width}
                     height={dimensions.height}
-                    src={post.image?.url || ''}
-                    alt={post.image?.alt || ''}
+                    src={
+                      post.image?.url || '/assets/gif/octocat-spinner-128.gif'
+                    }
+                    alt={post.image?.alt || 'octocat-spinner'}
                   />
                 </Link>
               ))}

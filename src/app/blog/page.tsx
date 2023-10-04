@@ -21,7 +21,7 @@ export default function Blog() {
         </PageLayout.Header>
         <PageLayout.Content
           padding="normal"
-          width="full"
+          width="large"
           sx={{
             paddingTop: '0 !important',
           }}

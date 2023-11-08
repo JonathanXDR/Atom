@@ -5,6 +5,7 @@ import {
   Avatar,
   Box,
   Button,
+  ButtonGroup,
   Heading,
   IconButton,
   Link,
@@ -218,10 +219,14 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
                     </Box>
                   </Tooltip>
                   <Tooltip aria-label="You must be signed in to star packages">
-                    <Button leadingVisual={StarIcon} size="small">
-                      {/* Star */}
-                      <Button count={packageCard.stars} />
-                    </Button>
+                    <ButtonGroup>
+                      <IconButton
+                        aria-label="Star"
+                        icon={StarIcon}
+                        size="small"
+                      />
+                      <Button count={packageCard.stars} size="small" />
+                    </ButtonGroup>
                   </Tooltip>
                   <Box
                     sx={{

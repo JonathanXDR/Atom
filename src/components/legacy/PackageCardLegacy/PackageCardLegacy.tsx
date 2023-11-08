@@ -218,9 +218,9 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
                     </Box>
                   </Tooltip>
                   <Tooltip aria-label="You must be signed in to star packages">
-                    <Button leadingIcon={StarIcon} size="small">
+                    <Button leadingVisual={StarIcon} size="small">
                       {/* Star */}
-                      <Button.Counter>{packageCard.stars}</Button.Counter>
+                      <Button count={packageCard.stars} />
                     </Button>
                   </Tooltip>
                   <Box

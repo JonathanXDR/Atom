@@ -114,9 +114,9 @@ const GitHubRepoCard: React.FC = () => {
               }}
             >
               <ButtonGroup>
-                <Button leadingIcon={StarIcon}>
+                <Button leadingVisual={StarIcon}>
                   Star
-                  <Button.Counter>{1}</Button.Counter>
+                  <Button count={1} />
                 </Button>
                 <ActionMenu>
                   <ActionMenu.Anchor>

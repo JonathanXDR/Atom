@@ -51,7 +51,7 @@ export default function Blog() {
               as="a"
               href="/blogarchive"
               variant="invisible"
-              leadingIcon={CalendarIcon}
+              leadingVisual={CalendarIcon}
               sx={{
                 color: 'fg.muted',
               }}

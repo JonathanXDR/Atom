@@ -18,13 +18,7 @@ export default function Releases() {
         >
           <NavLegacy nav={nav} />
         </PageLayout.Header>
-        <PageLayout.Content
-          padding="normal"
-          width="full"
-          sx={{
-            paddingTop: '0 !important',
-          }}
-        >
+        <PageLayout.Content padding="normal" width="full">
           <Box className="markdown-body">
             <Heading as="h1" className="releases-header">
               Release notes

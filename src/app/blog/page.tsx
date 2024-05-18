@@ -19,13 +19,7 @@ export default function Blog() {
         >
           <NavLegacy nav={nav} />
         </PageLayout.Header>
-        <PageLayout.Content
-          padding="normal"
-          width="large"
-          sx={{
-            paddingTop: '0 !important',
-          }}
-        >
+        <PageLayout.Content padding="normal" width="large">
           <Box as="ul" className="posts">
             {posts.map((post) => (
               <PostLegacy post={post} key={post.title} />

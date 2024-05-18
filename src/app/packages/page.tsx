@@ -143,13 +143,7 @@ export default function Packages() {
         >
           <NavLegacy nav={nav} />
         </PageLayout.Header>
-        <PageLayout.Content
-          padding="normal"
-          width="full"
-          sx={{
-            paddingTop: '0 !important',
-          }}
-        >
+        <PageLayout.Content padding="normal" width="full">
           <Heading
             as="h2"
             className="center index-title"

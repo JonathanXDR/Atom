@@ -30,13 +30,7 @@ export default function Home() {
         >
           <NavLegacy nav={nav} />
         </PageLayout.Header>
-        <PageLayout.Content
-          padding="none"
-          width="full"
-          sx={{
-            padding: '0 !important',
-          }}
-        >
+        <PageLayout.Content padding="none" width="full">
           <Box className="welcome">
             <HeroLegacy
               banner={banners.home}

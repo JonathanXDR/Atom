@@ -1,4 +1,3 @@
-'use client';
 import { Box, Spinner } from '@primer/react';
 
 export default function Loading() {

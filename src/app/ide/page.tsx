@@ -1,4 +1,3 @@
-'use client';
 import { Box, Heading, Text } from '@primer/react';
 import Link from 'next/link';
 

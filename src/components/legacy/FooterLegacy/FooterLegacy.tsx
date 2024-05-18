@@ -1,3 +1,4 @@
+'use client';
 import CreditBadgeLegacy from '@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy';
 import { LinkProps } from '@/types/LinkProps';
 import { Box } from '@primer/react';

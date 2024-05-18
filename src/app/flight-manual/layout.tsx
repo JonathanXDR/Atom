@@ -1,3 +1,5 @@
+import LayoutContent from '@/components/common/LayoutContent';
+import PathnameWrapper from '@/components/common/PathnameWrapper';
 import '@primer/css/index.scss';
 import '@primer/react-brand/lib/css/main.css';
 import { Metadata } from 'next';
@@ -56,5 +58,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <PathnameWrapper>
+      <LayoutContent pathname={''}>{children || undefined}</LayoutContent>
+    </PathnameWrapper>
+  );
 }

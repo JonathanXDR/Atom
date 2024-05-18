@@ -1,97 +1,101 @@
-'use client';
 import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
 import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import VersionPickerLegacy from '@/components/legacy/VersionPickerLegacy/VersionPickerLegacy';
 import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import versions from '@/data/versions.json';
-import {
-  DeviceDesktopIcon,
-  LinkIcon,
-  PencilIcon,
-} from '@primer/octicons-react';
+import '@primer/css/index.scss';
+import { DeviceDesktopIcon, PencilIcon } from '@primer/octicons-react';
 import {
   Box,
   FormControl,
   Heading,
   PageLayout,
-  Text,
   TextInput,
 } from '@primer/react';
+import '@primer/react-brand/lib/css/main.css';
 import Link from 'next/link';
 
-export default function FAQ() {
-  return (
-    <>
-      <NavLegacy nav={nav} />
-      <PageLayout containerWidth="full" padding="normal">
-        <PageLayout.Header
+const LayoutContent = ({
+  pathname,
+  children,
+}: {
+  pathname: string;
+  children: React.ReactNode;
+}) => (
+  <>
+    <NavLegacy nav={nav} />
+    <PageLayout containerWidth="full" padding="normal">
+      <PageLayout.Header
+        sx={
+          pathname !== '/flight-manual'
+            ? { marginBottom: 6 }
+            : { marginBottom: 3 }
+        }
+      >
+        <Box
           sx={{
-            marginBottom: 6,
+            marginTop: 3,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 4,
+            flex: '1 1 100%',
+            flexWrap: 'wrap',
+            maxWidth: '100%',
           }}
         >
-          <Box
+          <FormControl
             sx={{
-              marginTop: 3,
-              display: 'flex',
-              alignItems: 'center',
-              gap: 4,
-              flex: '1 1 100%',
-              flexWrap: 'wrap',
-              maxWidth: '100%',
+              width: 'var(--pane-width)',
+              overflow: 'auto',
+              '--pane-width': '320px',
+              '--pane-min-width': '256px',
+              '--pane-max-width': 'calc(100vw - var(--pane-max-width-diff))',
+              '--pane-max-width-diff': '959px',
             }}
           >
-            <FormControl
-              sx={{
-                width: 'var(--pane-width)',
-                overflow: 'auto',
-                '--pane-width': '320px',
-                '--pane-min-width': '256px',
-                '--pane-max-width': 'calc(100vw - var(--pane-max-width-diff))',
-                '--pane-max-width-diff': '959px',
-              }}
-            >
-              <FormControl.Label visuallyHidden>Versions</FormControl.Label>
-              <VersionPickerLegacy versions={versions} />
-            </FormControl>
+            <FormControl.Label visuallyHidden>Versions</FormControl.Label>
+            <VersionPickerLegacy versions={versions} />
+          </FormControl>
 
-            <FormControl
-              sx={{
-                width: 'auto',
-                flexBasis: 0,
-                flexGrow: 1,
-                flexShrink: 1,
-              }}
-            >
-              <FormControl.Label visuallyHidden>
-                Search the Flight Manual
-              </FormControl.Label>
-              <TextInput
-                size="large"
-                placeholder="Search the Flight Manual"
-                sx={{
-                  width: '100%',
-                }}
-              />
-            </FormControl>
-          </Box>
-          <Box
-            className="autocomplete-results"
+          <FormControl
             sx={{
-              display: 'none',
+              width: 'auto',
+              flexBasis: 0,
+              flexGrow: 1,
+              flexShrink: 1,
             }}
           >
-            <Box className="result-group"></Box>
-          </Box>
-        </PageLayout.Header>
-        <PageLayout.Content
-          padding="none"
-          width="large"
+            <FormControl.Label visuallyHidden>
+              Search the Flight Manual
+            </FormControl.Label>
+            <TextInput
+              size="large"
+              placeholder="Search the Flight Manual"
+              sx={{
+                width: '100%',
+              }}
+            />
+          </FormControl>
+        </Box>
+        <Box
+          className="autocomplete-results"
           sx={{
-            paddingTop: '0 !important',
+            display: 'none',
           }}
         >
-          <Box className="documents">
+          <Box className="result-group"></Box>
+        </Box>
+      </PageLayout.Header>
+      <PageLayout.Content
+        padding={pathname !== '/flight-manual' ? 'none' : 'normal'}
+        width={pathname !== '/flight-manual' ? 'large' : 'full'}
+        sx={{
+          paddingTop: '0 !important',
+        }}
+      >
+        <Box className="layout-toc platform-switch platform-mac documents">
+          {pathname !== '/flight-manual' && (
             <Heading as="h1" className="document-title">
               <Box id="platform-nav">
                 <DeviceDesktopIcon />
@@ -131,384 +135,13 @@ export default function FAQ() {
                 <PencilIcon size={16} /> Improve this page
               </Link>
             </Heading>
-            <Box className="markdown-body document-content">
-              <Heading as="h2">
-                <Link
-                  id="faq"
-                  className="anchor"
-                  href="https://flight-manual.atom.io/faq/#faq"
-                  aria-hidden="true"
-                >
-                  <LinkIcon size={16} />
-                </Link>
-                FAQ
-              </Heading>
+          )}
 
-              <Text as="p">
-                The collection of Frequently Asked Questions about Atom.
-              </Text>
+          {children}
+        </Box>
+      </PageLayout.Content>
 
-              <Box as="ul">
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/is-atom-open-source">
-                    Is Atom open source?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/what-does-atom-cost">
-                    What does Atom cost?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/what-platforms-does-atom-run-on">
-                    What platforms does Atom run on?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-can-i-contribute-to-atom">
-                    How can I contribute to Atom?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/why-does-atom-collect-usage-data">
-                    Why does Atom collect usage data?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/atom-in-the-cloud">
-                    Atom in the cloud?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/what-s-the-difference-between-an-ide-and-an-editor">
-                    What&apos;s the difference between an IDE and an editor?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-can-i-tell-if-subpixel-antialiasing-is-working">
-                    How can I tell if subpixel antialiasing is working?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/why-is-atom-deleting-trailing-whitespace-why-is-there-a-newline-at-the-end-of-the-file">
-                    Why is Atom deleting trailing whitespace? Why is there a
-                    newline at the end of the file?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/what-does-safe-mode-do">
-                    What does Safe Mode do?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/i-have-a-question-about-a-specific-atom-community-package-where-is-the-best-place-to-ask-it">
-                    I have a question about a specific Atom community package.
-                    Where is the best place to ask it?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/i-m-using-an-international-keyboard-and-keys-that-use-altgr-or-ctrl-alt-aren-t-working">
-                    I&apos;m using an international keyboard and keys that use
-                    AltGr or Ctrl+Alt aren&apos;t working
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-julia-what-do-i-do">
-                    I&apos;m having a problem with Julia! What do I do?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/i-m-getting-an-error-about-a-self-signed-certificate-what-do-i-do">
-                    I&apos;m getting an error about a “self-signed certificate”.
-                    What do I do?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-platformio-what-do-i-do">
-                    I&apos;m having a problem with PlatformIO! What do I do?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-make-atom-recognize-a-file-with-extension-x-as-language-y">
-                    How do I make Atom recognize a file with extension X as
-                    language Y?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-make-the-welcome-screen-stop-showing-up">
-                    How do I make the Welcome screen stop showing up?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-preview-web-page-changes-automatically">
-                    How do I preview web page changes automatically?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-accept-input-from-my-program-or-script-when-using-the-script-package">
-                    How do I accept input from my program or script when using
-                    the script package?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/i-am-unable-to-update-to-the-latest-version-of-atom-on-macos-how-do-i-fix-this">
-                    I am unable to update to the latest version of Atom on
-                    macOS. How do I fix this?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/i-m-trying-to-change-my-syntax-colors-from-styles-less-but-it-isn-t-working">
-                    I&apos;m trying to change my syntax colors from styles.less,
-                    but it isn&apos;t working!
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-build-or-execute-code-i-ve-written-in-atom">
-                    How do I build or execute code I&apos;ve written in Atom?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-uninstall-atom-on-macos">
-                    How do I uninstall Atom on macOS?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/macos-mojave-font-rendering-change">
-                    macOS Mojave font rendering change
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/why-does-macos-say-that-atom-wants-to-access-my-calendar-contacts-photos-etc">
-                    Why does macOS say that Atom wants to access my calendar,
-                    contacts, photos, etc.?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-turn-on-line-wrap">
-                    How do I turn on line wrap?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/the-menu-bar-disappeared-how-do-i-get-it-back">
-                    The menu bar disappeared, how do I get it back?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-use-a-newline-in-the-result-of-find-and-replace">
-                    How do I use a newline in the result of find and replace?
-                  </Link>
-                </Box>
-
-                <Box
-                  as="li"
-                  className="unselected"
-                  sx={{
-                    padding: '1px 1px 1px 15px',
-                  }}
-                >
-                  <Link href="https://flight-manual.atom.io/faq/sections/what-is-this-line-on-the-right-in-the-editor-view">
-                    What is this line on the right in the editor view?
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-          </Box>
-        </PageLayout.Content>
+      {pathname !== '/flight-manual' && (
         <PageLayout.Pane
           sticky
           resizable
@@ -522,7 +155,7 @@ export default function FAQ() {
               fontSize: 2,
             }}
           >
-            <Link href="https://flight-manual.atom.io/getting-started" muted>
+            <Link href="https://flight-manual.atom.io/getting-started">
               Chapter 1: Getting Started
             </Link>
           </Heading>
@@ -531,8 +164,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/getting-started/sections/why-atom">
@@ -544,8 +176,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/getting-started/sections/installing-atom">
@@ -557,8 +188,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/getting-started/sections/atom-basics">
@@ -570,8 +200,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/getting-started/sections/summary">
@@ -595,8 +224,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages">
@@ -608,8 +236,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/moving-in-atom">
@@ -621,8 +248,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/atom-selections">
@@ -634,8 +260,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/editing-and-deleting-text">
@@ -647,8 +272,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/find-and-replace">
@@ -660,8 +284,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/snippets">
@@ -673,8 +296,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/autocomplete">
@@ -686,8 +308,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/folding">
@@ -699,8 +320,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/panes">
@@ -712,8 +332,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/pending-pane-items">
@@ -725,8 +344,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/grammar">
@@ -738,8 +356,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/version-control-in-atom">
@@ -751,8 +368,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/github-package">
@@ -764,8 +380,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/writing-in-atom">
@@ -777,8 +392,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/basic-customization">
@@ -790,8 +404,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/using-atom/sections/summary">
@@ -815,8 +428,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/tools-of-the-trade">
@@ -828,8 +440,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/the-init-file">
@@ -841,8 +452,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/package-word-count">
@@ -854,8 +464,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/package-modifying-text">
@@ -867,8 +476,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/package-active-editor-info">
@@ -880,8 +488,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/creating-a-theme">
@@ -893,8 +500,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar">
@@ -906,8 +512,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/creating-a-legacy-textmate-grammar">
@@ -919,8 +524,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/publishing">
@@ -932,8 +536,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/iconography">
@@ -945,8 +548,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/debugging">
@@ -958,8 +560,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/writing-specs">
@@ -971,8 +572,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/handling-uris">
@@ -984,8 +584,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/cross-platform-compatibility">
@@ -997,8 +596,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/converting-from-textmate">
@@ -1010,8 +608,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core">
@@ -1023,8 +620,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/contributing-to-official-atom-packages">
@@ -1036,8 +632,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/creating-a-fork-of-a-core-package-in-atom-atom">
@@ -1049,8 +644,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/maintaining-a-fork-of-a-core-package-in-atom-atom">
@@ -1062,8 +656,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/hacking-atom/sections/summary">
@@ -1087,8 +680,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/configuration-api">
@@ -1100,8 +692,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth">
@@ -1113,8 +704,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors">
@@ -1126,8 +716,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/serialization-in-atom">
@@ -1139,8 +728,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/developing-node-modules">
@@ -1152,8 +740,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/interacting-with-other-packages-via-services">
@@ -1165,8 +752,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/maintaining-your-packages">
@@ -1178,8 +764,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/how-atom-uses-chromium-snapshots">
@@ -1191,8 +776,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/behind-atom/sections/summary">
@@ -1522,8 +1106,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/resources/sections/glossary">
@@ -1547,8 +1130,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/is-atom-open-source">
@@ -1560,8 +1142,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/what-does-atom-cost">
@@ -1573,8 +1154,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/what-platforms-does-atom-run-on">
@@ -1586,8 +1166,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-can-i-contribute-to-atom">
@@ -1599,8 +1178,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/why-does-atom-collect-usage-data">
@@ -1612,8 +1190,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/atom-in-the-cloud">
@@ -1625,8 +1202,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/what-s-the-difference-between-an-ide-and-an-editor">
@@ -1638,8 +1214,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-can-i-tell-if-subpixel-antialiasing-is-working">
@@ -1651,8 +1226,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/why-is-atom-deleting-trailing-whitespace-why-is-there-a-newline-at-the-end-of-the-file">
@@ -1665,8 +1239,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/what-does-safe-mode-do">
@@ -1678,8 +1251,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/i-have-a-question-about-a-specific-atom-community-package-where-is-the-best-place-to-ask-it">
@@ -1692,8 +1264,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/i-m-using-an-international-keyboard-and-keys-that-use-altgr-or-ctrl-alt-aren-t-working">
@@ -1706,8 +1277,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-julia-what-do-i-do">
@@ -1719,8 +1289,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/i-m-getting-an-error-about-a-self-signed-certificate-what-do-i-do">
@@ -1733,8 +1302,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/i-m-having-a-problem-with-platformio-what-do-i-do">
@@ -1746,8 +1314,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-make-atom-recognize-a-file-with-extension-x-as-language-y">
@@ -1760,8 +1327,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-make-the-welcome-screen-stop-showing-up">
@@ -1773,8 +1339,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-preview-web-page-changes-automatically">
@@ -1786,8 +1351,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-accept-input-from-my-program-or-script-when-using-the-script-package">
@@ -1800,8 +1364,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/i-am-unable-to-update-to-the-latest-version-of-atom-on-macos-how-do-i-fix-this">
@@ -1814,8 +1377,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/i-m-trying-to-change-my-syntax-colors-from-styles-less-but-it-isn-t-working">
@@ -1828,8 +1390,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-build-or-execute-code-i-ve-written-in-atom">
@@ -1841,8 +1402,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-uninstall-atom-on-macos">
@@ -1854,8 +1414,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/macos-mojave-font-rendering-change">
@@ -1867,8 +1426,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/why-does-macos-say-that-atom-wants-to-access-my-calendar-contacts-photos-etc">
@@ -1881,8 +1439,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-turn-on-line-wrap">
@@ -1894,8 +1451,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/the-menu-bar-disappeared-how-do-i-get-it-back">
@@ -1907,8 +1463,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/how-do-i-use-a-newline-in-the-result-of-find-and-replace">
@@ -1920,8 +1475,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/faq/sections/what-is-this-line-on-the-right-in-the-editor-view">
@@ -1945,8 +1499,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/shadow-dom/sections/removing-shadow-dom-styles">
@@ -1970,8 +1523,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-package">
@@ -1983,8 +1535,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-ui-theme-or-package-selectors">
@@ -1996,8 +1547,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/upgrading-to-1-0-apis/sections/upgrading-your-syntax-theme">
@@ -2021,8 +1571,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/atom-server-side-apis/sections/atom-package-server-api">
@@ -2034,8 +1583,7 @@ export default function FAQ() {
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 30px',
-                textIndent: '-15px',
+                padding: '1px 1px 1px 15px',
               }}
             >
               <Link href="https://flight-manual.atom.io/atom-server-side-apis/sections/atom-update-server-api">
@@ -2044,8 +1592,10 @@ export default function FAQ() {
             </Box>
           </Box>
         </PageLayout.Pane>
-      </PageLayout>
-      <FooterLegacy footer={footer} />
-    </>
-  );
-}
+      )}
+    </PageLayout>
+    <FooterLegacy footer={footer} />
+  </>
+);
+
+export default LayoutContent;

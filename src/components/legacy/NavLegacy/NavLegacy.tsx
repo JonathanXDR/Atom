@@ -1,3 +1,4 @@
+'use client';
 import { LinkProps } from '@/types/LinkProps';
 import { RssIcon, SignInIcon } from '@primer/octicons-react';
 import { Box, Heading, Octicon } from '@primer/react';

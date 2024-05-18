@@ -58,7 +58,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/Clipboard/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/Clipboard/">
                 Clipboard
               </Link>{' '}
               instance
@@ -90,7 +90,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/DeserializerManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/DeserializerManager/">
                 DeserializerManager
               </Link>{' '}
               instance
@@ -119,7 +119,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/ViewRegistry/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/ViewRegistry/">
                 ViewRegistry
               </Link>{' '}
               instance
@@ -151,7 +151,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/NotificationManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/NotificationManager/">
                 NotificationManager
               </Link>{' '}
               instance
@@ -180,7 +180,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/Config/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/Config/">
                 Config
               </Link>{' '}
               instance
@@ -209,7 +209,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/KeymapManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/KeymapManager/">
                 KeymapManager
               </Link>{' '}
               instance
@@ -238,7 +238,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/TooltipManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/TooltipManager/">
                 TooltipManager
               </Link>{' '}
               instance
@@ -267,7 +267,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/CommandRegistry/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/CommandRegistry/">
                 CommandRegistry
               </Link>{' '}
               instance
@@ -296,7 +296,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/GrammarRegistry/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/GrammarRegistry/">
                 GrammarRegistry
               </Link>{' '}
               instance
@@ -325,7 +325,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/StyleManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/StyleManager/">
                 StyleManager
               </Link>{' '}
               instance
@@ -354,7 +354,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/PackageManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/PackageManager/">
                 PackageManager
               </Link>{' '}
               instance
@@ -383,7 +383,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/ThemeManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/ThemeManager/">
                 ThemeManager
               </Link>{' '}
               instance
@@ -412,7 +412,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/MenuManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/MenuManager/">
                 MenuManager
               </Link>{' '}
               instance
@@ -444,7 +444,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/ContextMenuManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/ContextMenuManager/">
                 ContextMenuManager
               </Link>{' '}
               instance
@@ -473,7 +473,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/Project/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/Project/">
                 Project
               </Link>{' '}
               instance
@@ -534,7 +534,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/Workspace/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/Workspace/">
                 Workspace
               </Link>{' '}
               instance
@@ -563,7 +563,7 @@ const AtomEnvironmentContent: React.FC = () => {
           <Box className="summary markdown-body">
             <Text as="p">
               A{' '}
-              <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/HistoryManager/">
+              <Link href="/web/20221129200901//flight-manual/api/v1.57.0/HistoryManager/">
                 HistoryManager
               </Link>{' '}
               instance
@@ -649,7 +649,7 @@ const AtomEnvironmentContent: React.FC = () => {
                 <td className="markdown-body">
                   <Text as="p">
                     Returns a{' '}
-                    <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/Disposable/">
+                    <Link href="/web/20221129200901//flight-manual/api/v1.57.0/Disposable/">
                       Disposable
                     </Link>{' '}
                     on which <code>.dispose()</code> can be called to
@@ -839,7 +839,7 @@ const AtomEnvironmentContent: React.FC = () => {
                 <td className="markdown-body">
                   <Text as="p">
                     Returns a{' '}
-                    <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/Disposable/">
+                    <Link href="/web/20221129200901//flight-manual/api/v1.57.0/Disposable/">
                       Disposable
                     </Link>{' '}
                     on which <code>.dispose()</code> can be called to
@@ -1012,7 +1012,7 @@ const AtomEnvironmentContent: React.FC = () => {
                 <td className="markdown-body">
                   <Text as="p">
                     Returns a{' '}
-                    <Link href="/web/20221129200901/https://flight-manual.atom.io/api/v1.57.0/Disposable/">
+                    <Link href="/web/20221129200901//flight-manual/api/v1.57.0/Disposable/">
                       Disposable
                     </Link>{' '}
                     on which <code>.dispose()</code> can be called to

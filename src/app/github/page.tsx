@@ -125,7 +125,7 @@ export default function GitHub() {
                 Visit the 🚀
                 <Link
                   className="features-button"
-                  href="https://flight-manual.atom.io/using-atom/sections/github-package/"
+                  href="/flight-manual/using-atom/sections/github-package/"
                 >
                   documentation
                 </Link>

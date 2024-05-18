@@ -84,14 +84,14 @@ export default function Docs() {
                   The
                   <Link
                     data-skip-pjax="yeahokiguess"
-                    href="https://flight-manual.atom.io/"
+                    href="/flight-manual/"
                   >
                     {' '}
                     Atom Flight Manual{' '}
                   </Link>
                   covers everything from getting off the ground to replacing the
                   engine.
-                  <Link href="https://flight-manual.atom.io/">
+                  <Link href="/flight-manual/">
                     {' '}
                     Go here to read the one and only book on everything Atom.
                   </Link>
@@ -102,7 +102,7 @@ export default function Docs() {
                     marginBlock: '1em',
                   }}
                 >
-                  <Link href="https://flight-manual.atom.io/">
+                  <Link href="/flight-manual/">
                     <Image
                       style={{
                         width: '200px',
@@ -131,14 +131,14 @@ export default function Docs() {
                   }}
                 >
                   The
-                  <Link href="https://flight-manual.atom.io/api">
+                  <Link href="/flight-manual/api">
                     {' '}
                     Atom API reference documentation{' '}
                   </Link>
                   is automatically generated from the Atom source code. Go here
                   to see what tools you can use to build your own plugins.
                 </Text>
-                <Link href="https://flight-manual.atom.io/api">
+                <Link href="/flight-manual/api">
                   View all API docs
                 </Link>
               </Box>

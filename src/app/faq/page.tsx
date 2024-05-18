@@ -4,6 +4,7 @@ import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
 import VersionPickerLegacy from '@/components/legacy/VersionPickerLegacy/VersionPickerLegacy';
 import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
+import versions from '@/data/versions.json';
 import {
   DeviceDesktopIcon,
   LinkIcon,
@@ -34,7 +35,7 @@ export default function FAQ() {
               marginTop: 6,
               display: 'flex',
               alignItems: 'center',
-              gap: 3,
+              gap: 4,
               flex: '1 1 100%',
               flexWrap: 'wrap',
               maxWidth: '100%',
@@ -51,7 +52,7 @@ export default function FAQ() {
               }}
             >
               <FormControl.Label visuallyHidden>Versions</FormControl.Label>
-              <VersionPickerLegacy />
+              <VersionPickerLegacy versions={versions} />
             </FormControl>
 
             <FormControl

@@ -69,7 +69,10 @@ export default function Packages() {
             }}
           />
           <ActionList selectionVariant="single">
-            <ActionList.Group title="Adjust time span">
+            <ActionList.Group>
+              <ActionList.GroupHeading>
+                Adjust time span
+              </ActionList.GroupHeading>
               <ActionList.Divider />
               {timeSpans.map((type, index) => (
                 <ActionList.Item
@@ -111,7 +114,8 @@ export default function Packages() {
         </ActionMenu.Button>
         <ActionMenu.Overlay width="medium">
           <ActionList selectionVariant="single">
-            <ActionList.Group title="Sort options">
+            <ActionList.Group>
+              <ActionList.GroupHeading>Sort options</ActionList.GroupHeading>
               <ActionList.Divider />
               {filters.map((type, index) => (
                 <ActionList.Item

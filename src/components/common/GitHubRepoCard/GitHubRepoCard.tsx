@@ -128,10 +128,8 @@ const GitHubRepoCard: React.FC = () => {
 
                   <ActionMenu.Overlay width="medium">
                     <ActionList>
-                      <ActionList.Group
-                        title="Lists"
-                        selectionVariant="multiple"
-                      >
+                      <ActionList.Group selectionVariant="multiple">
+                        <ActionList.GroupHeading>Lists</ActionList.GroupHeading>
                         <ActionList.Divider />
                         <ActionList.Item>List 1</ActionList.Item>
                         <ActionList.Item>List 2</ActionList.Item>

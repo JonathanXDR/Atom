@@ -35,7 +35,13 @@ export default function Contact() {
         >
           <Box className="columns">
             <Box className="column main-column">
-              <Heading as="h3" className="contact-title">
+              <Heading
+                as="h3"
+                className="contact-title"
+                sx={{
+                  marginBottom: 4,
+                }}
+              >
                 Get in touch
               </Heading>
               <Box
@@ -113,19 +119,28 @@ export default function Contact() {
               </Box>
             </Box>
             <Box className="column sidebar">
-              <Heading as="h3" className="">
+              <Heading
+                as="h3"
+                sx={{
+                  marginBottom: 4,
+                }}
+              >
                 Join the community
               </Heading>
               <Box as="table" className="contact-list">
                 <Box as="tbody">
                   <Box as="tr">
-                    <Box as="td">GitHub</Box>
+                    <Box as="td" sx={{ paddingRight: '10px' }}>
+                      GitHub
+                    </Box>
                     <Box as="td">
                       <Link href="https://github.com/atom">@atom</Link>
                     </Box>
                   </Box>
                   <Box as="tr">
-                    <Box as="td">Twitter</Box>
+                    <Box as="td" sx={{ paddingRight: '10px' }}>
+                      Twitter
+                    </Box>
                     <Box as="td">
                       <Link href="https://twitter.com/atomeditor">
                         @AtomEditor
@@ -133,7 +148,9 @@ export default function Contact() {
                     </Box>
                   </Box>
                   <Box as="tr">
-                    <Box as="td">Github Discussions</Box>
+                    <Box as="td" sx={{ paddingRight: '10px' }}>
+                      Github Discussions
+                    </Box>
                     <Box as="td">
                       <Link href="https://github.com/atom/atom/discussions">
                         Github Discussions

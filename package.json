@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:trigger": "sh ./src/scripts/build-trigger.sh"
   },
   "dependencies": {
     "@primer/css": "^21.3.1",

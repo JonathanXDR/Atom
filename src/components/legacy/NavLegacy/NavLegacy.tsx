@@ -14,7 +14,15 @@ const NavLegacy: React.FC<NavLegacyProps> = ({ nav }) => {
   const pathname = usePathname();
 
   return (
-    <Box as="nav" className="top-bar" aria-label="Primary">
+    <Box
+      as="nav"
+      className="top-bar"
+      aria-label="Primary"
+      sx={{
+        position: 'relative',
+        zIndex: 9999,
+      }}
+    >
       <Box className="wrapper no-pad">
         <Box as="ul" className="navigation">
           {pathname !== '/' && (

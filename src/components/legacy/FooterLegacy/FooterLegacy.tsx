@@ -28,7 +28,13 @@ const FooterLegacy: React.FC<FooterLegacyProps> = ({ footer }) => {
   };
 
   return (
-    <Box as="footer">
+    <Box
+      as="footer"
+      sx={{
+        position: 'relative',
+        zIndex: 9999,
+      }}
+    >
       <Box className="footer">
         <Box className="wrapper no-pad">
           <Box as="ul" className="footer-left">

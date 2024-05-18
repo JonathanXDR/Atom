@@ -15,42 +15,59 @@ import footer from '@/data/footer.json';
 import nav from '@/data/nav.json';
 import rivers from '@/data/rivers.json';
 import { ContactProps } from '@/types/ContactProps';
-import { Box } from '@primer/react';
+import { Box, PageLayout } from '@primer/react';
 import '/public/assets/css/application.css';
 import '/public/assets/css/welcome.css';
 
 export default function Home() {
   return (
     <>
-      <NavLegacy nav={nav} />
-
-      <Box className="welcome">
-        <HeroLegacy
-          banner={banners.home}
-          meta={meta.home}
-          downloads={downloads.home}
-          tagList={tagLists.home.hackableTextEditor}
-        />
-
-        {rivers.home.map((river, index) => {
-          return <RiverLegacy river={river} key={index} />;
-        })}
-
-        <Box as="section" className="section section--features">
-          <Box className="wrapper no-pad">
-            <FeatureListLegacy
-              featureList={featureLists.home.everythingYouExpect}
+      <PageLayout containerWidth="full" padding="none">
+        <PageLayout.Header
+          sx={{
+            marginBottom: 0,
+          }}
+        >
+          <NavLegacy nav={nav} />
+        </PageLayout.Header>
+        <PageLayout.Content
+          padding="none"
+          width="full"
+          sx={{
+            padding: '0 !important',
+          }}
+        >
+          <Box className="welcome">
+            <HeroLegacy
+              banner={banners.home}
+              meta={meta.home}
+              downloads={downloads.home}
+              tagList={tagLists.home.hackableTextEditor}
             />
-            <FeatureListLegacy
-              featureList={featureLists.home.makeItYourEditor}
-            />
+
+            {rivers.home.map((river, index) => {
+              return <RiverLegacy river={river} key={index} />;
+            })}
+
+            <Box as="section" className="section section--features">
+              <Box className="wrapper no-pad">
+                <FeatureListLegacy
+                  featureList={featureLists.home.everythingYouExpect}
+                />
+                <FeatureListLegacy
+                  featureList={featureLists.home.makeItYourEditor}
+                />
+              </Box>
+            </Box>
+
+            <ContactLegacy contacts={contacts.home as ContactProps[]} />
           </Box>
-        </Box>
+        </PageLayout.Content>
 
-        <ContactLegacy contacts={contacts.home as ContactProps[]} />
-      </Box>
-
-      <FooterLegacy footer={footer} />
+        <PageLayout.Footer>
+          <FooterLegacy footer={footer} />
+        </PageLayout.Footer>
+      </PageLayout>
     </>
   );
 }

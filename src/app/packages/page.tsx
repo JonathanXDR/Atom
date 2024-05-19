@@ -4,7 +4,6 @@ import NavItem from "@/components/NavItem/NavItem";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
-import "/public/assets/css/application.css";
 
 export default function Packages() {
   return (

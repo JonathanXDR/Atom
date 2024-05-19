@@ -1,11 +1,9 @@
 "use client";
+import FooterItem from "@/components/FooterItem/FooterItem";
+import NavItem from "@/components/NavItem/NavItem";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
-import "/public/assets/css/blog.css";
-
-import FooterItem from "@/components/FooterItem/FooterItem";
-import NavItem from "@/components/NavItem/NavItem";
 import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
 
 export default function Blog() {

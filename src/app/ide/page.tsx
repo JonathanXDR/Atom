@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import "./main.css";
-import "/public/assets/css/ide.css";
 
 export default function Ide() {
   return (

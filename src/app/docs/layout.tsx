@@ -1,8 +1,6 @@
-import "@primer/css/index.scss";
-import "@primer/react-brand/lib/css/main.css";
-import "../globals.css";
-
 import { Metadata } from "next";
+import "../globals.css";
+import "/public/assets/css/application.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://atom.io/docs"),

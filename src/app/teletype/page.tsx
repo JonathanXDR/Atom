@@ -1,6 +1,5 @@
 "use client";
 import CreditBadge from "@/components/CreditBadge/CreditBadge";
-import { PlayIcon } from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -89,18 +88,10 @@ export default function Teletype() {
             <div ref={videoHudRef} className="video-hud">
               <button
                 ref={videoButtonRef}
-                className="video-play-button mega-octicon"
+                className="video-play-button mega-octicon octicon-playback-play"
                 aria-label="Play video"
                 onClick={playVideo}
-                style={{
-                  border: "none",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <PlayIcon size={125} />
-              </button>
+              ></button>
             </div>
           </div>
         </div>

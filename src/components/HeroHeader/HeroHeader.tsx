@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
 import portalBlueSemi from "/public/assets/svg/portal-blue-semi.svg";
 import portalBlue from "/public/assets/svg/portal-blue.svg";
 import portalGreenSemi from "/public/assets/svg/portal-green-semi.svg";
@@ -13,8 +13,6 @@ import portalRedSemi from "/public/assets/svg/portal-red-semi.svg";
 import portalRed from "/public/assets/svg/portal-red.svg";
 import portalYellowSemi from "/public/assets/svg/portal-yellow-semi.svg";
 import portalYellow from "/public/assets/svg/portal-yellow.svg";
-
-import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
 
 const HeroMeta: React.FC = () => {
   const pathname = usePathname();
@@ -120,7 +118,7 @@ const HeroMeta: React.FC = () => {
             }
             className="welcome-button js-download-button"
           >
-            <span className="octicon octicon-move-down"></span> Download
+            <span className="octicon octicon-move-down"></span>Download
           </Link>
         </li>
       </ul>

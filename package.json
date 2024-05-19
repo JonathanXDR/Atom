@@ -9,10 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@primer/css": "^21.3.1",
-    "@primer/octicons-react": "19.9.0",
-    "@primer/react": "^36.18.0",
-    "@primer/react-brand": "^0.34.0",
     "@types/node": "20.12.12",
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
@@ -23,11 +19,7 @@
     "postcss": "8.4.38",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sass": "1.77.2",
     "tailwindcss": "3.4.3",
     "typescript": "5.4.5"
-  },
-  "devDependencies": {
-    "eslint-plugin-primer-react": "^5.1.0"
   }
 }

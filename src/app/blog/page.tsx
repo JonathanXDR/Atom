@@ -21,7 +21,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> July 23,
-                  2019
+                  2019{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -69,7 +69,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> June 21,
-                  2019
+                  2019{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -124,7 +124,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> June 11,
-                  2019
+                  2019{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -172,7 +172,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> May 12,
-                  2019
+                  2019{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -215,7 +215,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> April 9,
-                  2019
+                  2019{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -258,7 +258,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> March 12,
-                  2019
+                  2019{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -301,7 +301,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> January 8,
-                  2019
+                  2019{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -346,7 +346,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> December
-                  12, 2018
+                  12, 2018{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -388,7 +388,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> November
-                  28, 2018
+                  28, 2018{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"
@@ -433,7 +433,7 @@ export default function Blog() {
                 </h2>
                 <p className="who-when">
                   <span className="octicon octicon-calendar"></span> November
-                  14, 2018
+                  14, 2018{" "}
                   <Link href="https://github.com/atom" className="author-link">
                     <Image
                       className="avatar avatar-small"

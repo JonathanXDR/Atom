@@ -140,12 +140,12 @@ const HeroMeta: React.FC = () => {
           }
         >
           Other platforms
-        </Link>
+        </Link>{" "}
         {pathname === "/nightly" || pathname === "/beta" ? (
           <Link href="/">Back to Atom Stable</Link>
         ) : (
           <>
-            <Link href="/beta">Try Atom Beta</Link>
+            <Link href="/beta">Try Atom Beta</Link>{" "}
             <Link href="/nightly">Try Atom Nightly</Link>
           </>
         )}

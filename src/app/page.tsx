@@ -36,10 +36,10 @@ export default function Home() {
                     href="#teletype"
                   >
                     Real-time collaboration
-                  </Link>
+                  </Link>{" "}
                   <Link className="hero-link hero-link--ide" href="#ide">
                     IDE features
-                  </Link>
+                  </Link>{" "}
                   <Link className="hero-link hero-link--github" href="#github">
                     Git and GitHub integration
                   </Link>
@@ -322,18 +322,40 @@ export default function Home() {
                           </td>
                         </tr>
                         <tr>
+                          <td>Chat</td>
+                          <td>
+                            <Link href="https://atom-slack.herokuapp.com/">
+                              Slack
+                            </Link>
+                          </td>
+                        </tr>
+                        {/* <tr>
                           <td>Discussions</td>
                           <td>
                             <Link href="https://github.com/atom/atom/discussions">
                               Github Discussions
                             </Link>
                           </td>
-                        </tr>
+                        </tr> */}
                         <tr>
+                          <td>Forum</td>
+                          <td>
+                            <Link href="https://discuss.atom.io/">Discuss</Link>
+                          </td>
+                        </tr>
+                        {/* <tr>
                           <td>Stuff</td>
                           <td>
                             <Link href="https://github.myshopify.com/search?q=atom">
                               Atom Gear
+                            </Link>
+                          </td>
+                        </tr> */}
+                        <tr>
+                          <td>Wear</td>
+                          <td>
+                            <Link href="https://github.myshopify.com/products/atom-shirt">
+                              Atom shirt
                             </Link>
                           </td>
                         </tr>

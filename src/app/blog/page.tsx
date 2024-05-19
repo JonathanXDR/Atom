@@ -472,33 +472,33 @@ export default function Blog() {
             </ul>
 
             <div className="pagination">
-              <span>← Previous</span>
+              <span>← Previous </span>
 
-              <em>1</em>
+              <em>1 </em>
 
-              <Link href="/blogpage2">2</Link>
+              <Link href="/blogpage2">2 </Link>
 
-              <Link href="/blogpage3">3</Link>
+              <Link href="/blogpage3">3 </Link>
 
-              <Link href="/blogpage4">4</Link>
+              <Link href="/blogpage4">4 </Link>
 
-              <Link href="/blogpage5">5</Link>
+              <Link href="/blogpage5">5 </Link>
 
-              <Link href="/blogpage6">6</Link>
+              <Link href="/blogpage6">6 </Link>
 
-              <Link href="/blogpage7">7</Link>
+              <Link href="/blogpage7">7 </Link>
 
-              <Link href="/blogpage8">8</Link>
+              <Link href="/blogpage8">8 </Link>
 
-              <Link href="/blogpage9">9</Link>
+              <Link href="/blogpage9">9 </Link>
 
-              <Link href="/blogpage10">10</Link>
+              <Link href="/blogpage10">10 </Link>
 
-              <Link href="/blogpage11">11</Link>
+              <Link href="/blogpage11">11 </Link>
 
-              <Link href="/blogpage12">12</Link>
+              <Link href="/blogpage12">12 </Link>
 
-              <Link href="/blogpage13">13</Link>
+              <Link href="/blogpage13">13 </Link>
 
               <Link href="/blogpage2">Next →</Link>
 

@@ -116,7 +116,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -240,7 +239,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -443,7 +441,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -562,7 +559,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -694,7 +690,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -811,7 +806,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -929,7 +923,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1062,7 +1055,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1200,7 +1192,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1331,7 +1322,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1463,7 +1453,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1580,7 +1569,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1698,7 +1686,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1831,7 +1818,6 @@ export default function Themes() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"

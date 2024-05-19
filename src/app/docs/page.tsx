@@ -27,8 +27,8 @@ export default function Docs() {
                   >
                     <span className="training-video-play">
                       <span className="octicon octicon-playback-play"></span>
-                    </span>
-                    {" "}Play video
+                    </span>{" "}
+                    Play video
                   </Link>
                 </span>
               </div>
@@ -64,6 +64,7 @@ export default function Docs() {
                             <Image
                               style={{
                                 width: "200px",
+                                height: "auto",
                               }}
                               src={flightManualCover}
                               alt="flight-manual-cover"

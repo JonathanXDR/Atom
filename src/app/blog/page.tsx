@@ -94,7 +94,14 @@ export default function Blog() {
                 <div className="post markdown">
                   <p>
                     <Link href="/nightly">
-                      <Image src={atomNightlyHeading} alt="Atom Nightly" />
+                      <Image
+                        style={{
+                          width: "auto",
+                          height: "auto",
+                        }}
+                        src={atomNightlyHeading}
+                        alt="Atom Nightly"
+                      />
                     </Link>
                   </p>
 

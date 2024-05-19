@@ -101,7 +101,6 @@ export default function Packages() {
                       <Link href="/users/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -224,7 +223,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -355,7 +353,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -486,7 +483,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -615,7 +611,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -703,7 +698,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -872,7 +866,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -990,7 +983,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1121,7 +1113,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1236,7 +1227,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1324,7 +1314,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1412,7 +1401,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1519,7 +1507,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1637,7 +1624,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1768,7 +1754,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1883,7 +1868,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -1971,7 +1955,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"
@@ -2059,7 +2042,6 @@ export default function Packages() {
                       <Link href="https://github.com/atom" className="author">
                         Atom
                       </Link>
-
                       <div className="meta-right">
                         <span
                           className="stat tooltipped tooltipped-n"

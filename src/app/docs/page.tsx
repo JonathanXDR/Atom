@@ -19,7 +19,7 @@ export default function Docs() {
               <h3 className="center subheader">Current Version: v1.63.1</h3>
 
               <div className="training-video-cta">
-                New to Atom? Check out the getting started video.
+                New to Atom? Check out the getting started video.{" "}
                 <span className="training-video-link">
                   <Link
                     href="https://www.youtube.com/watch?v=U5POoGSrtGg"
@@ -28,7 +28,7 @@ export default function Docs() {
                     <span className="training-video-play">
                       <span className="octicon octicon-playback-play"></span>
                     </span>
-                    Play video
+                    {" "}Play video
                   </Link>
                 </span>
               </div>

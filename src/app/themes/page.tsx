@@ -112,9 +112,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -126,8 +125,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">2,509,605</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -150,8 +148,7 @@ export default function Themes() {
                               1786
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=atom-material-ui"
@@ -239,9 +236,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -253,8 +249,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">1,743,927</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -277,8 +272,7 @@ export default function Themes() {
                               1321
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=atom-material-syntax"
@@ -445,9 +439,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -459,8 +452,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -483,8 +475,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
@@ -567,9 +558,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -581,8 +571,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -605,8 +594,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -702,9 +690,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -716,8 +703,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -740,8 +726,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
@@ -822,9 +807,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -836,8 +820,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -860,8 +843,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -943,9 +925,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -957,8 +938,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -981,8 +961,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -1079,9 +1058,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -1093,8 +1071,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -1117,8 +1094,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
@@ -1220,9 +1196,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -1234,8 +1209,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -1258,8 +1232,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -1354,9 +1327,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -1368,8 +1340,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -1392,8 +1363,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
@@ -1489,9 +1459,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -1503,8 +1472,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -1527,8 +1495,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
@@ -1609,9 +1576,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -1623,8 +1589,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -1647,8 +1612,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -1730,9 +1694,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -1744,8 +1707,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -1768,8 +1730,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
@@ -1866,9 +1827,8 @@ export default function Themes() {
                           alt="Atom"
                           className="gravatar"
                         />
-                      </Link>
+                      </Link>{" "}
                       <Link href="https://github.com/atom" className="author">
-                        {" "}
                         Atom
                       </Link>
 
@@ -1880,8 +1840,7 @@ export default function Themes() {
                         >
                           <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
-                        </span>
-
+                        </span>{" "}
                         <span className="js-star-wrap">
                           <div
                             className="star-box tooltipped tooltipped-nw"
@@ -1904,8 +1863,7 @@ export default function Themes() {
                               0
                             </Link>
                           </div>
-                        </span>
-
+                        </span>{" "}
                         <Link
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"

@@ -31,7 +31,11 @@ const NavItem: React.FC = () => {
 
   const displayConditions: { [key: string]: (path: string) => string } = {
     Discussions: (path) =>
-      path.startsWith("/blog") ? "Discuss" : "Discussions",
+      path.startsWith("/blog") ||
+      path.startsWith("/faq") ||
+      path.startsWith("/flight-manual")
+        ? "Discuss"
+        : "Discussions",
   };
 
   const shouldDisplayTitle = (title: string, path: string) => {

@@ -233,7 +233,14 @@ export default function FlightManual() {
           <div className="markdown-body">
             <h1>Atom Flight Manual</h1>
             <div className="manual-ebooks">
-              <Image alt="Atom Flight Manual cover" src={flightManualCover} />
+              <Image
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
+                alt="Atom Flight Manual cover"
+                src={flightManualCover}
+              />
             </div>
 
             <h3>

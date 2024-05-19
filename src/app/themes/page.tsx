@@ -20,7 +20,7 @@ export default function Themes() {
             <form
               className="search-form"
               action="/themes/search"
-              accept-charset="UTF-8"
+              acceptCharset="UTF-8"
               method="get"
             >
               <input name="utf8" type="hidden" value="✓" />

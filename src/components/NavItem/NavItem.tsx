@@ -18,7 +18,7 @@ const NavItem: React.FC = () => {
                 ></Link>
               </h1>
             </li>
-          )}
+          )}{" "}
           <li>
             <Link
               href="/packages"
@@ -26,7 +26,7 @@ const NavItem: React.FC = () => {
             >
               Packages
             </Link>
-          </li>
+          </li>{" "}
           <li>
             <Link
               href="/themes"
@@ -34,7 +34,7 @@ const NavItem: React.FC = () => {
             >
               Themes
             </Link>
-          </li>
+          </li>{" "}
           <li>
             <Link
               href="/docs"
@@ -42,7 +42,7 @@ const NavItem: React.FC = () => {
             >
               Documentation
             </Link>
-          </li>
+          </li>{" "}
           <li>
             <Link
               href="/blog"
@@ -50,12 +50,12 @@ const NavItem: React.FC = () => {
             >
               Blog
             </Link>
-          </li>
+          </li>{" "}
           <li>
             <Link href="https://github.com/atom/atom/discussions">
               Discussions
             </Link>
-          </li>
+          </li>{" "}
         </ul>
 
         <div className="top-bar-right">

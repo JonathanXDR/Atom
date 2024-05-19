@@ -14,30 +14,30 @@ const FooterItem: React.FC = () => {
               <Link href="https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions">
                 Terms of Use
               </Link>
-            </li>
+            </li>{" "}
             {pathname !== "/blog" && (
               <>
                 <li>
                   <Link href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">
                     Privacy
                   </Link>
-                </li>
+                </li>{" "}
                 <li>
                   <Link href="https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md">
                     Code of Conduct
                   </Link>
-                </li>
+                </li>{" "}
               </>
             )}
             <li>
               <Link href="/releases">Releases</Link>
-            </li>
+            </li>{" "}
             <li>
               <Link href="/faq">FAQ</Link>
-            </li>
+            </li>{" "}
             <li>
               <Link href="/contact">Contact</Link>
-            </li>
+            </li>{" "}
             {pathname === "/faq" ||
               (pathname === "/flight-manual" && (
                 <li>

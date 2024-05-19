@@ -193,7 +193,7 @@ export default function FAQ() {
               <option value="1.0.0">v1.0.0</option>
             </select>
             <form
-              accept-charset="UTF-8"
+              acceptCharset="UTF-8"
               action="/flight-manual/search"
               id="articles-search"
               method="get"

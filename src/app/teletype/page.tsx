@@ -1,6 +1,6 @@
 "use client";
 import CreditBadge from "@/components/CreditBadge/CreditBadge";
-import { BroadcastIcon, PlayIcon } from "@primer/octicons-react";
+import { PlayIcon } from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -204,15 +204,14 @@ export default function Teletype() {
           <h4>Share a portal</h4>
           <p>
             Click the{" "}
-            {/* <span
+            <span
               className="octicon octicon-radio-tower"
               role="img"
               aria-label="Teletype"
-            ></span>{" "} */}
-            <BroadcastIcon aria-label="Teletype" size={16} /> icon in the Atom
-            status bar, and flip the switch to start sharing a portal to your
-            workspace. Then invite people to join your portal by sending them
-            your portal URL.
+            ></span>{" "}
+            icon in the Atom status bar, and flip the switch to start sharing a
+            portal to your workspace. Then invite people to join your portal by
+            sending them your portal URL.
           </p>
           <h4>Join a portal</h4>
           <p>

@@ -1,6 +1,5 @@
 "use client";
 import CreditBadge from "@/components/CreditBadge/CreditBadge";
-import { MarkGithubIcon } from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -86,12 +85,11 @@ export default function GitHub() {
                 </g>
               </svg>
               <span className="logos-plus">+</span>
-              {/* <span
+              <span
                 className="octicon octicon-mark-github"
                 role="img"
                 aria-label="GitHub"
-              ></span> */}
-              <MarkGithubIcon size={32} />
+              ></span>
             </div>
 
             <h1 className="tagline">GitHub for Atom</h1>

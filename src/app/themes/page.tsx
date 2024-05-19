@@ -1,18 +1,6 @@
 "use client";
 import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
-import {
-  CheckIcon,
-  ChevronRightIcon,
-  ClockIcon,
-  DownloadIcon,
-  FlameIcon,
-  MegaphoneIcon,
-  SquirrelIcon,
-  StarIcon,
-  TriangleDownIcon,
-  XIcon,
-} from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -52,8 +40,8 @@ export default function Themes() {
             <div className="package-list featured">
               <div className="package-list-header">
                 <h3 className="package-list-title">
-                  {/* <span className="mega-octicon octicon-megaphone"></span> */}
-                  <MegaphoneIcon size={32} /> Featured
+                  <span className="mega-octicon octicon-megaphone"></span>{" "}
+                  Featured
                 </h3>
               </div>
               <div className="halves">
@@ -137,8 +125,7 @@ export default function Themes() {
                           role="button"
                           aria-label="2,509,605 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">2,509,605</span>
                         </span>
 
@@ -154,8 +141,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star atom-material-ui"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -171,8 +157,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=atom-material-ui"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -187,8 +173,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -267,8 +252,7 @@ export default function Themes() {
                           role="button"
                           aria-label="1,743,927 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">1,743,927</span>
                         </span>
 
@@ -284,8 +268,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star atom-material-syntax"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -301,8 +284,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=atom-material-syntax"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -317,8 +300,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -331,14 +313,12 @@ export default function Themes() {
             <div className="package-list trending">
               <div className="package-list-header">
                 <h3 className="package-list-title">
-                  {/* <span className="mega-octicon octicon-flame"></span> */}
-                  <FlameIcon size={32} /> Trending{" "}
+                  <span className="mega-octicon octicon-flame"></span> Trending{" "}
                   <div className="trending-select">
                     <div className="select-menu js-menu-container js-select-menu">
                       <Link className="js-menu-target" href="/themes/">
                         <span className="js-select-button">this week</span>
-                        {/* <span className="octicon octicon-triangle-down"></span> */}
-                        <TriangleDownIcon size={32} />
+                        <span className="octicon octicon-triangle-down"></span>
                       </Link>
 
                       <div className="select-menu-modal-holder js-menu-content js-navigation-container">
@@ -347,31 +327,27 @@ export default function Themes() {
                             <span className="select-menu-title">
                               Adjust time span
                             </span>
-                            {/* <span className="octicon octicon-remove-close js-menu-close"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-remove-close js-menu-close"></span>
                           </div>
 
                           <div className="select-menu-list">
                             <div>
                               <div className="select-menu-item js-navigation-item">
-                                {/* <span className="select-menu-item-icon octicon octicon-check"></span> */}
-                                <CheckIcon size={16} />
+                                <span className="select-menu-item-icon octicon octicon-check"></span>
                                 <div className="select-menu-item-text js-select-button-text">
                                   today
                                 </div>
                               </div>
 
                               <div className="select-menu-item js-navigation-item selected">
-                                {/* <span className="select-menu-item-icon octicon octicon-check"></span> */}
-                                <CheckIcon size={16} />
+                                <span className="select-menu-item-icon octicon octicon-check"></span>
                                 <div className="select-menu-item-text js-select-button-text">
                                   this week
                                 </div>
                               </div>
 
                               <div className="select-menu-item js-navigation-item">
-                                {/* <span className="select-menu-item-icon octicon octicon-check"></span> */}
-                                <CheckIcon size={16} />
+                                <span className="select-menu-item-icon octicon octicon-check"></span>
                                 <div className="select-menu-item-text js-select-button-text">
                                   this month
                                 </div>
@@ -391,16 +367,14 @@ export default function Themes() {
             <div className="package-list newest">
               <div className="package-list-header">
                 <h3 className="package-list-title">
-                  {/* <span className="mega-octicon octicon-clock"></span> */}
-                  <ClockIcon size={32} /> Newest
+                  <span className="mega-octicon octicon-clock"></span> Newest
                   <Link
                     href="/themes/list?sort=created_at&amp;direction=desc"
                     className="package-list-see-all"
                     aria-label="See all newest"
                   >
                     See all{" "}
-                    {/* <span className="octicon octicon-chevron-right"></span> */}
-                    <ChevronRightIcon size={16} />
+                    <span className="octicon octicon-chevron-right"></span>
                   </Link>
                 </h3>
               </div>
@@ -484,8 +458,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -501,8 +474,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star หนัง โป หนัง x ลาว สาว ใหญ่ โป๊"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -518,8 +490,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -534,8 +506,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -609,8 +580,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -626,8 +596,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star ครู เอ ล ล่า เต็ม เรื่อง ดู หนัง ฝรั่ง ออนไลน์ ดู หนัง เรื่อง ร่าง ทรง เต็ม เรื่อง"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -643,8 +612,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -659,8 +628,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -747,8 +715,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -764,8 +731,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star central หุ้น หุ้น com7 การ เทรด หุ้น คือ"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -781,8 +747,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -797,8 +763,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -870,8 +835,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -887,8 +851,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star หนัง ช่อง 7 ออนไลน์ ดู หนัง midway ดู หนัง ออนไลน์ ฟา ส 9 เต็ม เรื่อง"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -904,8 +867,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -920,8 +883,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -994,8 +956,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1011,8 +972,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star ดู กา ตู น ออ น ไล ดู หนัง ใหม่ ออนไลน์ hd เว น่ อม เต็ม เรื่อง"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -1028,8 +988,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -1044,8 +1004,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -1133,8 +1092,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1150,8 +1108,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star ตราสาร หนี้ อ สั ง หา ทรัพย์ เพื่อ การ ลงทุน ถั่ว หุ้น"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -1167,8 +1124,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -1183,8 +1140,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -1197,16 +1153,15 @@ export default function Themes() {
             <div className="package-list updated">
               <div className="package-list-header">
                 <h3 className="package-list-title">
-                  {/* <span className="mega-octicon octicon-squirrel"></span> */}
-                  <SquirrelIcon size={32} /> Recently Updated
+                  <span className="mega-octicon octicon-squirrel"></span>{" "}
+                  Recently Updated
                   <Link
                     href="/themes/list?sort=updated_at&amp;direction=desc"
                     className="package-list-see-all"
                     aria-label="See all recently updated"
                   >
                     See all{" "}
-                    {/* <span className="octicon octicon-chevron-right"></span> */}
-                    <ChevronRightIcon size={16} />
+                    <span className="octicon octicon-chevron-right"></span>
                   </Link>
                 </h3>
               </div>
@@ -1278,8 +1233,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1295,8 +1249,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star ครู เอ ล ล่า เต็ม เรื่อง ดู หนัง ฝรั่ง ออนไลน์ ดู หนัง เรื่อง ร่าง ทรง เต็ม เรื่อง"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -1312,8 +1265,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%84%E0%B8%A3%E0%B8%B9%20%E0%B9%80%E0%B8%AD%20%E0%B8%A5%20%E0%B8%A5%E0%B9%88%E0%B8%B2%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%97%E0%B8%A3%E0%B8%87%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -1328,8 +1281,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -1415,8 +1367,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1432,8 +1383,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star หนัง โป หนัง x ลาว สาว ใหญ่ โป๊"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -1449,8 +1399,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%82%E0%B8%9B%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20x%20%E0%B8%A5%E0%B8%B2%E0%B8%A7%20%E0%B8%AA%E0%B8%B2%E0%B8%A7%20%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B9%82%E0%B8%9B%E0%B9%8A"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -1465,8 +1415,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -1553,8 +1502,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1570,8 +1518,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star central หุ้น หุ้น com7 การ เทรด หุ้น คือ"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -1587,8 +1534,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=central%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20com7%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%94%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%20%E0%B8%84%E0%B8%B7%E0%B8%AD"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -1603,8 +1550,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -1676,8 +1622,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1693,8 +1638,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star หนัง ช่อง 7 ออนไลน์ ดู หนัง midway ดู หนัง ออนไลน์ ฟา ส 9 เต็ม เรื่อง"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -1710,8 +1654,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%207%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20midway%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20%E0%B8%9F%E0%B8%B2%20%E0%B8%AA%209%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -1726,8 +1670,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -1800,8 +1743,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1817,8 +1759,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star ดู กา ตู น ออ น ไล ดู หนัง ใหม่ ออนไลน์ hd เว น่ อม เต็ม เรื่อง"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -1834,8 +1775,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%94%E0%B8%B9%20%E0%B8%81%E0%B8%B2%20%E0%B8%95%E0%B8%B9%20%E0%B8%99%20%E0%B8%AD%E0%B8%AD%20%E0%B8%99%20%E0%B9%84%E0%B8%A5%20%E0%B8%94%E0%B8%B9%20%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%20%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20hd%20%E0%B9%80%E0%B8%A7%20%E0%B8%99%E0%B9%88%20%E0%B8%AD%E0%B8%A1%20%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -1850,8 +1791,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>
@@ -1939,8 +1879,7 @@ export default function Themes() {
                           role="button"
                           aria-label="0 downloads"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} />{" "}
+                          <span className="octicon octicon-cloud-download"></span>{" "}
                           <span className="value">0</span>
                         </span>
 
@@ -1956,8 +1895,7 @@ export default function Themes() {
                               data-skip-pjax=""
                               aria-label="Star ตราสาร หนี้ อ สั ง หา ทรัพย์ เพื่อ การ ลงทุน ถั่ว หุ้น"
                             >
-                              {/* <span className="octicon octicon-star"></span> */}
-                              <StarIcon size={16} />
+                              <span className="octicon octicon-star"></span>
                             </Link>
                             <Link
                               className="social-count"
@@ -1973,8 +1911,8 @@ export default function Themes() {
                           className="card-install-button minibutton"
                           href="atom://settings-view/show-package?package=%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A3%20%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%20%E0%B8%AD%20%E0%B8%AA%E0%B8%B1%20%E0%B8%87%20%E0%B8%AB%E0%B8%B2%20%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B9%8C%20%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%20%E0%B8%81%E0%B8%B2%E0%B8%A3%20%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%20%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%20%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99"
                         >
-                          {/* <span className="octicon octicon-cloud-download"></span> */}
-                          <DownloadIcon size={16} /> Install
+                          <span className="octicon octicon-cloud-download"></span>{" "}
+                          Install
                         </Link>
                         <div
                           style={{
@@ -1989,8 +1927,7 @@ export default function Themes() {
                             and try again.
                           </p>
                           <button className="card-install-button-close">
-                            {/* <span className="octicon octicon-x"></span> */}
-                            <XIcon size={16} />
+                            <span className="octicon octicon-x"></span>
                           </button>
                         </div>
                       </div>

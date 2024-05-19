@@ -1,6 +1,7 @@
 import "@primer/css/index.scss";
 import "@primer/react-brand/lib/css/main.css";
 import "./globals.css";
+import "/public/assets/css/application.css";
 
 import { Metadata } from "next";
 

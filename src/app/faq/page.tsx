@@ -1,11 +1,6 @@
 "use client";
 import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
-import {
-  DeviceDesktopIcon,
-  LinkIcon,
-  PencilIcon,
-} from "@primer/octicons-react";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/flight-manual.css";
@@ -1084,8 +1079,7 @@ export default function FAQ() {
           </div>
           <h1 className="document-title">
             <div id="platform-nav">
-              {/* <span className="octicon octicon-device-desktop"></span> */}
-              <DeviceDesktopIcon />
+              <span className="octicon octicon-device-desktop"></span>
               <ul>
                 <li className="platform-mac">
                   <Link
@@ -1119,8 +1113,7 @@ export default function FAQ() {
               href="https://github.com/atom/flight-manual.atom.io/edit/master/content/faq/index.md"
               data-proofer-ignore=""
             >
-              {/* <span className="octicon octicon-pencil"></span> */}
-              <PencilIcon /> Improve this page
+              <span className="octicon octicon-pencil"></span> Improve this page
             </Link>
           </h1>
           <div className="markdown-body document-content">
@@ -1131,8 +1124,7 @@ export default function FAQ() {
                 href="/flight-manual/faq/#faq"
                 aria-hidden="true"
               >
-                {/* <span className="octicon octicon-link"></span> */}
-                <LinkIcon size={16} />
+                <span className="octicon octicon-link"></span>
               </Link>
               FAQ
             </h2>

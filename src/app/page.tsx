@@ -3,20 +3,8 @@ import FooterItem from "@/components/FooterItem/FooterItem";
 import HeroHeader from "@/components/HeroHeader/HeroHeader";
 import NavItem from "@/components/NavItem/NavItem";
 import SunsetBanner from "@/components/SunsetBanner/SunsetBanner";
-import {
-  CodeIcon,
-  DeviceDesktopIcon,
-  FileCodeIcon,
-  LightBulbIcon,
-  MirrorIcon,
-  PackageIcon,
-  PaintbrushIcon,
-  SearchIcon,
-  ToolsIcon,
-} from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
-import "/public/assets/css/application.css";
 import indexGithubScreenshot from "/public/assets/png/index-github-screenshot.png";
 import indexIdeScreenshot from "/public/assets/png/index-ide-screenshot.png";
 import indexTeletypeScreenshot from "/public/assets/png/index-teletype-screenshot.png";
@@ -184,17 +172,7 @@ export default function Home() {
 
                 <div className="features">
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-device-desktop"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <DeviceDesktopIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-device-desktop"></span>
                     <h4>Cross-platform editing</h4>
                     <p>
                       Atom works across operating systems. Use it on OS X,
@@ -202,17 +180,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-package"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PackageIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-package"></span>
                     <h4>Built-in package manager</h4>
                     <p>
                       Search for and install new packages or create your own
@@ -221,17 +189,7 @@ export default function Home() {
                   </div>
 
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-light-bulb"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <LightBulbIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-light-bulb"></span>
                     <h4>Smart autocompletion</h4>
                     <p>
                       Atom helps you write code faster with a smart and flexible
@@ -239,17 +197,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-file-code"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <FileCodeIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-file-code"></span>
                     <h4>File system browser</h4>
                     <p>
                       Easily browse and open a single file, a whole project, or
@@ -257,17 +205,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-mirror"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <MirrorIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-mirror"></span>
                     <h4>Multiple panes</h4>
                     <p>
                       Split your Atom interface into multiple panes to compare
@@ -275,17 +213,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-search"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <SearchIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-search"></span>
                     <h4>Find and replace</h4>
                     <p>
                       Find, preview, and replace text as you type in a file or
@@ -298,17 +226,7 @@ export default function Home() {
 
                 <div className="features">
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-package"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PackageIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-package"></span>
                     <h4>Packages</h4>
                     <p>
                       Choose from thousands of{" "}
@@ -319,17 +237,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-paintcan"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <PaintbrushIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-paintcan"></span>
                     <h4>Themes</h4>
                     <p>
                       Atom comes pre-installed with four UI and eight syntax{" "}
@@ -341,17 +249,7 @@ export default function Home() {
                   </div>
 
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-tools"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <ToolsIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-tools"></span>
                     <h4>Customization</h4>
                     <p>
                       It&apos;s easy to customize and style Atom. Tweak the look
@@ -369,17 +267,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="features-item">
-                    {/* <span className="mega-octicon octicon-code"></span> */}
-                    <div
-                      className="mega-octicon"
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <CodeIcon size={24} />
-                    </div>
+                    <span className="mega-octicon octicon-code"></span>
                     <h4>Under the hood</h4>
                     <p>
                       Atom is a desktop application built with HTML, JavaScript,

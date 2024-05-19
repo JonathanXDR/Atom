@@ -1,12 +1,6 @@
 "use client";
 import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
-import {
-  BookIcon,
-  CommentDiscussionIcon,
-  GearIcon,
-  PlayIcon,
-} from "@primer/octicons-react";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
@@ -33,8 +27,7 @@ export default function Docs() {
                     target="_blank"
                   >
                     <span className="training-video-play">
-                      {/* <span className="octicon octicon-playback-play"></span> */}
-                      <PlayIcon size={16} />
+                      <span className="octicon octicon-playback-play"></span>
                     </span>
                     Play video
                   </Link>
@@ -47,8 +40,8 @@ export default function Docs() {
                     <td valign="top" width="33%">
                       <div className="doc-section">
                         <h3>
-                          {/* <span className="octicon octicon-book"></span> */}
-                          <BookIcon size={16} /> Atom Flight Manual
+                          <span className="octicon octicon-book"></span> Atom
+                          Flight Manual
                         </h3>
                         <p>
                           The
@@ -83,8 +76,8 @@ export default function Docs() {
                     <td valign="top" width="33%">
                       <div className="doc-section">
                         <h3>
-                          {/* <span className="octicon octicon-gear"></span> */}
-                          <GearIcon size={16} /> API Reference
+                          <span className="octicon octicon-gear"></span> API
+                          Reference
                         </h3>
                         <p>
                           The
@@ -102,8 +95,8 @@ export default function Docs() {
                     <td valign="top" width="33%">
                       <div className="doc-section">
                         <h3>
-                          {/* <span className="octicon octicon-comment-discussion"></span> */}
-                          <CommentDiscussionIcon size={16} /> Atom Discussions
+                          <span className="octicon octicon-comment-discussion"></span>{" "}
+                          Atom Discussions
                         </h3>
                         <p>
                           The

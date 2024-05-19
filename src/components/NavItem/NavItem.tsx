@@ -1,6 +1,4 @@
 "use client";
-import { RssIcon, SignInIcon } from "@primer/octicons-react";
-import { Octicon } from "@primer/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -63,27 +61,11 @@ const NavItem: React.FC = () => {
         <div className="top-bar-right">
           {pathname === "/blog" ? (
             <Link href="/blog/feed.xml" className="rss-link">
-              {/* <span className="octicon octicon-rss"></span> */}
-              <Octicon
-                icon={RssIcon}
-                size={16}
-                sx={{
-                  padding: "0",
-                }}
-              />{" "}
-              Subscribe
+              <span className="octicon octicon-rss"></span> Subscribe
             </Link>
           ) : (
             <Link href="/login">
-              {/* <span className="octicon octicon-log-in"></span> */}
-              <Octicon
-                icon={SignInIcon}
-                size={16}
-                sx={{
-                  padding: "0",
-                }}
-              />{" "}
-              Sign in
+              <span className="octicon octicon-log-in"></span> Sign in
             </Link>
           )}
         </div>

@@ -100,8 +100,8 @@ const HeroMeta: React.FC = () => {
             {pathname === "/nightly"
               ? "Nightly"
               : pathname === "/beta"
-              ? "BETA"
-              : "1.63"}
+                ? "BETA"
+                : "1.63"}
           </span>
           <Link href="/releases">Release notes</Link>
         </li>
@@ -116,8 +116,8 @@ const HeroMeta: React.FC = () => {
               pathname === "/nightly"
                 ? "/download/mac?channel=nightly"
                 : pathname === "/beta"
-                ? "/download/mac?channel=beta"
-                : "/download/mac"
+                  ? "/download/mac?channel=beta"
+                  : "/download/mac"
             }
             className="welcome-button js-download-button"
           >
@@ -140,8 +140,8 @@ const HeroMeta: React.FC = () => {
             pathname === "/nightly"
               ? "https://github.com/atom/atom-nightly-releases/releases"
               : pathname === "/beta"
-              ? "https://github.com/atom/atom/releases"
-              : "https://github.com/atom/atom/releases/latest"
+                ? "https://github.com/atom/atom/releases"
+                : "https://github.com/atom/atom/releases/latest"
           }
         >
           Other platforms

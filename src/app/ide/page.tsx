@@ -122,9 +122,9 @@ export default function Ide() {
             }}
           >
             Start using IDE-like features in
-            <Link href="https://atom.io/"> Atom </Link>
+            <Link href="/"> Atom </Link>
             by following the steps below. If you need help, take a look at
-            <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages/">
+            <Link href="/flight-manual/using-atom/sections/atom-packages/">
               {" "}
               how to install Atom packages
             </Link>
@@ -135,10 +135,7 @@ export default function Ide() {
             <span className="getting-started-step-nr">1</span>
             <p>
               Install the
-              <Link href="https://atom.io/packages/atom-ide-ui">
-                {" "}
-                atom-ide-ui{" "}
-              </Link>
+              <Link href="/packages/atom-ide-ui"> atom-ide-ui </Link>
               package. This will add Atom IDE&apos;s user interface.
             </p>
           </div>
@@ -184,7 +181,7 @@ export default function Ide() {
 
           <p>
             You can also
-            <Link href="https://atom.io/packages/search?q=IDE"> search </Link>
+            <Link href="/packages/search?q=IDE"> search </Link>
             for packages created by the Atom community.
           </p>
         </div>

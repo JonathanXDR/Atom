@@ -13,14 +13,14 @@ if (!self.__WB_pmw) {
   };
 }
 {
-  let window = _____WB$wombat$assign$function_____('window');
-  let self = _____WB$wombat$assign$function_____('self');
-  let document = _____WB$wombat$assign$function_____('document');
-  let location = _____WB$wombat$assign$function_____('location');
-  let top = _____WB$wombat$assign$function_____('top');
-  let parent = _____WB$wombat$assign$function_____('parent');
-  let frames = _____WB$wombat$assign$function_____('frames');
-  let opener = _____WB$wombat$assign$function_____('opener');
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
 
   /*!
    * clipboard.js v1.6.1
@@ -30,17 +30,17 @@ if (!self.__WB_pmw) {
    */
 
   (function (f) {
-    if (typeof exports === 'object' && typeof module !== 'undefined') {
+    if (typeof exports === "object" && typeof module !== "undefined") {
       module.exports = f();
-    } else if (typeof define === 'function' && define.amd) {
+    } else if (typeof define === "function" && define.amd) {
       define([], f);
     } else {
       var g;
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         g = window;
-      } else if (typeof global !== 'undefined') {
+      } else if (typeof global !== "undefined") {
         g = global;
-      } else if (typeof self !== 'undefined') {
+      } else if (typeof self !== "undefined") {
         g = self;
       } else {
         g = this;
@@ -53,11 +53,11 @@ if (!self.__WB_pmw) {
       function s(o, u) {
         if (!n[o]) {
           if (!t[o]) {
-            var a = typeof require == 'function' && require;
+            var a = typeof require == "function" && require;
             if (!u && a) return a(o, !0);
             if (i) return i(o, !0);
             var f = new Error("Cannot find module '" + o + "'");
-            throw ((f.code = 'MODULE_NOT_FOUND'), f);
+            throw ((f.code = "MODULE_NOT_FOUND"), f);
           }
           var l = (n[o] = { exports: {} });
           t[o][0].call(
@@ -71,12 +71,12 @@ if (!self.__WB_pmw) {
             e,
             t,
             n,
-            r
+            r,
           );
         }
         return n[o].exports;
       }
-      var i = typeof require == 'function' && require;
+      var i = typeof require == "function" && require;
       for (var o = 0; o < r.length; o++) s(r[o]);
       return s;
     })(
@@ -88,7 +88,7 @@ if (!self.__WB_pmw) {
             /**
              * A polyfill for Element.matches()
              */
-            if (typeof Element !== 'undefined' && !Element.prototype.matches) {
+            if (typeof Element !== "undefined" && !Element.prototype.matches) {
               var proto = Element.prototype;
 
               proto.matches =
@@ -119,7 +119,7 @@ if (!self.__WB_pmw) {
         ],
         2: [
           function (require, module, exports) {
-            var closest = require('./closest');
+            var closest = require("./closest");
 
             /**
              * Delegates event to a selector.
@@ -164,7 +164,7 @@ if (!self.__WB_pmw) {
 
             module.exports = delegate;
           },
-          { './closest': 1 },
+          { "./closest": 1 },
         ],
         3: [
           function (require, module, exports) {
@@ -193,9 +193,9 @@ if (!self.__WB_pmw) {
 
               return (
                 value !== undefined &&
-                (type === '[object NodeList]' ||
-                  type === '[object HTMLCollection]') &&
-                'length' in value &&
+                (type === "[object NodeList]" ||
+                  type === "[object HTMLCollection]") &&
+                "length" in value &&
                 (value.length === 0 || exports.node(value[0]))
               );
             };
@@ -207,7 +207,7 @@ if (!self.__WB_pmw) {
              * @return {Boolean}
              */
             exports.string = function (value) {
-              return typeof value === 'string' || value instanceof String;
+              return typeof value === "string" || value instanceof String;
             };
 
             /**
@@ -219,15 +219,15 @@ if (!self.__WB_pmw) {
             exports.fn = function (value) {
               var type = Object.prototype.toString.call(value);
 
-              return type === '[object Function]';
+              return type === "[object Function]";
             };
           },
           {},
         ],
         4: [
           function (require, module, exports) {
-            var is = require('./is');
-            var delegate = require('delegate');
+            var is = require("./is");
+            var delegate = require("delegate");
 
             /**
              * Validates all params and calls the right
@@ -240,15 +240,15 @@ if (!self.__WB_pmw) {
              */
             function listen(target, type, callback) {
               if (!target && !type && !callback) {
-                throw new Error('Missing required arguments');
+                throw new Error("Missing required arguments");
               }
 
               if (!is.string(type)) {
-                throw new TypeError('Second argument must be a String');
+                throw new TypeError("Second argument must be a String");
               }
 
               if (!is.fn(callback)) {
-                throw new TypeError('Third argument must be a Function');
+                throw new TypeError("Third argument must be a Function");
               }
 
               if (is.node(target)) {
@@ -259,7 +259,7 @@ if (!self.__WB_pmw) {
                 return listenSelector(target, type, callback);
               } else {
                 throw new TypeError(
-                  'First argument must be a String, HTMLElement, HTMLCollection, or NodeList'
+                  "First argument must be a String, HTMLElement, HTMLCollection, or NodeList",
                 );
               }
             }
@@ -321,37 +321,37 @@ if (!self.__WB_pmw) {
 
             module.exports = listen;
           },
-          { './is': 3, delegate: 2 },
+          { "./is": 3, delegate: 2 },
         ],
         5: [
           function (require, module, exports) {
             function select(element) {
               var selectedText;
 
-              if (element.nodeName === 'SELECT') {
+              if (element.nodeName === "SELECT") {
                 element.focus();
 
                 selectedText = element.value;
               } else if (
-                element.nodeName === 'INPUT' ||
-                element.nodeName === 'TEXTAREA'
+                element.nodeName === "INPUT" ||
+                element.nodeName === "TEXTAREA"
               ) {
-                var isReadOnly = element.hasAttribute('readonly');
+                var isReadOnly = element.hasAttribute("readonly");
 
                 if (!isReadOnly) {
-                  element.setAttribute('readonly', '');
+                  element.setAttribute("readonly", "");
                 }
 
                 element.select();
                 element.setSelectionRange(0, element.value.length);
 
                 if (!isReadOnly) {
-                  element.removeAttribute('readonly');
+                  element.removeAttribute("readonly");
                 }
 
                 selectedText = element.value;
               } else {
-                if (element.hasAttribute('contenteditable')) {
+                if (element.hasAttribute("contenteditable")) {
                   element.focus();
                 }
 
@@ -444,10 +444,10 @@ if (!self.__WB_pmw) {
         7: [
           function (require, module, exports) {
             (function (global, factory) {
-              if (typeof define === 'function' && define.amd) {
-                define(['module', 'select'], factory);
-              } else if (typeof exports !== 'undefined') {
-                factory(module, require('select'));
+              if (typeof define === "function" && define.amd) {
+                define(["module", "select"], factory);
+              } else if (typeof exports !== "undefined") {
+                factory(module, require("select"));
               } else {
                 var mod = {
                   exports: {},
@@ -456,7 +456,7 @@ if (!self.__WB_pmw) {
                 global.clipboardAction = mod.exports;
               }
             })(this, function (module, _select) {
-              'use strict';
+              "use strict";
 
               var _select2 = _interopRequireDefault(_select);
 
@@ -469,23 +469,23 @@ if (!self.__WB_pmw) {
               }
 
               var _typeof =
-                typeof Symbol === 'function' &&
-                typeof Symbol.iterator === 'symbol'
+                typeof Symbol === "function" &&
+                typeof Symbol.iterator === "symbol"
                   ? function (obj) {
                       return typeof obj;
                     }
                   : function (obj) {
                       return obj &&
-                        typeof Symbol === 'function' &&
+                        typeof Symbol === "function" &&
                         obj.constructor === Symbol &&
                         obj !== Symbol.prototype
-                        ? 'symbol'
+                        ? "symbol"
                         : typeof obj;
                     };
 
               function _classCallCheck(instance, Constructor) {
                 if (!(instance instanceof Constructor)) {
-                  throw new TypeError('Cannot call a class as a function');
+                  throw new TypeError("Cannot call a class as a function");
                 }
               }
 
@@ -495,7 +495,7 @@ if (!self.__WB_pmw) {
                     var descriptor = props[i];
                     descriptor.enumerable = descriptor.enumerable || false;
                     descriptor.configurable = true;
-                    if ('value' in descriptor) descriptor.writable = true;
+                    if ("value" in descriptor) descriptor.writable = true;
                     Object.defineProperty(target, descriptor.key, descriptor);
                   }
                 }
@@ -526,7 +526,7 @@ if (!self.__WB_pmw) {
 
                 _createClass(ClipboardAction, [
                   {
-                    key: 'resolveOptions',
+                    key: "resolveOptions",
                     value: function resolveOptions() {
                       var options =
                         arguments.length > 0 && arguments[0] !== undefined
@@ -539,11 +539,11 @@ if (!self.__WB_pmw) {
                       this.text = options.text;
                       this.trigger = options.trigger;
 
-                      this.selectedText = '';
+                      this.selectedText = "";
                     },
                   },
                   {
-                    key: 'initSelection',
+                    key: "initSelection",
                     value: function initSelection() {
                       if (this.text) {
                         this.selectFake();
@@ -553,12 +553,12 @@ if (!self.__WB_pmw) {
                     },
                   },
                   {
-                    key: 'selectFake',
+                    key: "selectFake",
                     value: function selectFake() {
                       var _this = this;
 
                       var isRTL =
-                        document.documentElement.getAttribute('dir') == 'rtl';
+                        document.documentElement.getAttribute("dir") == "rtl";
 
                       this.removeFake();
 
@@ -567,27 +567,27 @@ if (!self.__WB_pmw) {
                       };
                       this.fakeHandler =
                         document.body.addEventListener(
-                          'click',
-                          this.fakeHandlerCallback
+                          "click",
+                          this.fakeHandlerCallback,
                         ) || true;
 
-                      this.fakeElem = document.createElement('textarea');
+                      this.fakeElem = document.createElement("textarea");
                       // Prevent zooming on iOS
-                      this.fakeElem.style.fontSize = '12pt';
+                      this.fakeElem.style.fontSize = "12pt";
                       // Reset box model
-                      this.fakeElem.style.border = '0';
-                      this.fakeElem.style.padding = '0';
-                      this.fakeElem.style.margin = '0';
+                      this.fakeElem.style.border = "0";
+                      this.fakeElem.style.padding = "0";
+                      this.fakeElem.style.margin = "0";
                       // Move element out of screen horizontally
-                      this.fakeElem.style.position = 'absolute';
-                      this.fakeElem.style[isRTL ? 'right' : 'left'] = '-9999px';
+                      this.fakeElem.style.position = "absolute";
+                      this.fakeElem.style[isRTL ? "right" : "left"] = "-9999px";
                       // Move element to the same position vertically
                       var yPosition =
                         window.pageYOffset ||
                         document.documentElement.scrollTop;
-                      this.fakeElem.style.top = yPosition + 'px';
+                      this.fakeElem.style.top = yPosition + "px";
 
-                      this.fakeElem.setAttribute('readonly', '');
+                      this.fakeElem.setAttribute("readonly", "");
                       this.fakeElem.value = this.text;
 
                       document.body.appendChild(this.fakeElem);
@@ -597,12 +597,12 @@ if (!self.__WB_pmw) {
                     },
                   },
                   {
-                    key: 'removeFake',
+                    key: "removeFake",
                     value: function removeFake() {
                       if (this.fakeHandler) {
                         document.body.removeEventListener(
-                          'click',
-                          this.fakeHandlerCallback
+                          "click",
+                          this.fakeHandlerCallback,
                         );
                         this.fakeHandler = null;
                         this.fakeHandlerCallback = null;
@@ -615,14 +615,14 @@ if (!self.__WB_pmw) {
                     },
                   },
                   {
-                    key: 'selectTarget',
+                    key: "selectTarget",
                     value: function selectTarget() {
                       this.selectedText = (0, _select2.default)(this.target);
                       this.copyText();
                     },
                   },
                   {
-                    key: 'copyText',
+                    key: "copyText",
                     value: function copyText() {
                       var succeeded = void 0;
 
@@ -636,9 +636,9 @@ if (!self.__WB_pmw) {
                     },
                   },
                   {
-                    key: 'handleResult',
+                    key: "handleResult",
                     value: function handleResult(succeeded) {
-                      this.emitter.emit(succeeded ? 'success' : 'error', {
+                      this.emitter.emit(succeeded ? "success" : "error", {
                         action: this.action,
                         text: this.selectedText,
                         trigger: this.trigger,
@@ -647,7 +647,7 @@ if (!self.__WB_pmw) {
                     },
                   },
                   {
-                    key: 'clearSelection',
+                    key: "clearSelection",
                     value: function clearSelection() {
                       if (this.target) {
                         this.target.blur();
@@ -657,24 +657,24 @@ if (!self.__WB_pmw) {
                     },
                   },
                   {
-                    key: 'destroy',
+                    key: "destroy",
                     value: function destroy() {
                       this.removeFake();
                     },
                   },
                   {
-                    key: 'action',
+                    key: "action",
                     set: function set() {
                       var action =
                         arguments.length > 0 && arguments[0] !== undefined
                           ? arguments[0]
-                          : 'copy';
+                          : "copy";
 
                       this._action = action;
 
-                      if (this._action !== 'copy' && this._action !== 'cut') {
+                      if (this._action !== "copy" && this._action !== "cut") {
                         throw new Error(
-                          'Invalid "action" value, use either "copy" or "cut"'
+                          'Invalid "action" value, use either "copy" or "cut"',
                         );
                       }
                     },
@@ -683,39 +683,39 @@ if (!self.__WB_pmw) {
                     },
                   },
                   {
-                    key: 'target',
+                    key: "target",
                     set: function set(target) {
                       if (target !== undefined) {
                         if (
                           target &&
-                          (typeof target === 'undefined'
-                            ? 'undefined'
-                            : _typeof(target)) === 'object' &&
+                          (typeof target === "undefined"
+                            ? "undefined"
+                            : _typeof(target)) === "object" &&
                           target.nodeType === 1
                         ) {
                           if (
-                            this.action === 'copy' &&
-                            target.hasAttribute('disabled')
+                            this.action === "copy" &&
+                            target.hasAttribute("disabled")
                           ) {
                             throw new Error(
-                              'Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute'
+                              'Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute',
                             );
                           }
 
                           if (
-                            this.action === 'cut' &&
-                            (target.hasAttribute('readonly') ||
-                              target.hasAttribute('disabled'))
+                            this.action === "cut" &&
+                            (target.hasAttribute("readonly") ||
+                              target.hasAttribute("disabled"))
                           ) {
                             throw new Error(
-                              'Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes'
+                              'Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes',
                             );
                           }
 
                           this._target = target;
                         } else {
                           throw new Error(
-                            'Invalid "target" value, use a valid Element'
+                            'Invalid "target" value, use a valid Element',
                           );
                         }
                       }
@@ -737,19 +737,19 @@ if (!self.__WB_pmw) {
         8: [
           function (require, module, exports) {
             (function (global, factory) {
-              if (typeof define === 'function' && define.amd) {
+              if (typeof define === "function" && define.amd) {
                 define([
-                  'module',
-                  './clipboard-action',
-                  'tiny-emitter',
-                  'good-listener',
+                  "module",
+                  "./clipboard-action",
+                  "tiny-emitter",
+                  "good-listener",
                 ], factory);
-              } else if (typeof exports !== 'undefined') {
+              } else if (typeof exports !== "undefined") {
                 factory(
                   module,
-                  require('./clipboard-action'),
-                  require('tiny-emitter'),
-                  require('good-listener')
+                  require("./clipboard-action"),
+                  require("tiny-emitter"),
+                  require("good-listener"),
                 );
               } else {
                 var mod = {
@@ -759,14 +759,14 @@ if (!self.__WB_pmw) {
                   mod,
                   global.clipboardAction,
                   global.tinyEmitter,
-                  global.goodListener
+                  global.goodListener,
                 );
                 global.clipboard = mod.exports;
               }
             })(
               this,
               function (module, _clipboardAction, _tinyEmitter, _goodListener) {
-                'use strict';
+                "use strict";
 
                 var _clipboardAction2 =
                   _interopRequireDefault(_clipboardAction);
@@ -785,7 +785,7 @@ if (!self.__WB_pmw) {
 
                 function _classCallCheck(instance, Constructor) {
                   if (!(instance instanceof Constructor)) {
-                    throw new TypeError('Cannot call a class as a function');
+                    throw new TypeError("Cannot call a class as a function");
                   }
                 }
 
@@ -795,7 +795,7 @@ if (!self.__WB_pmw) {
                       var descriptor = props[i];
                       descriptor.enumerable = descriptor.enumerable || false;
                       descriptor.configurable = true;
-                      if ('value' in descriptor) descriptor.writable = true;
+                      if ("value" in descriptor) descriptor.writable = true;
                       Object.defineProperty(target, descriptor.key, descriptor);
                     }
                   }
@@ -811,21 +811,21 @@ if (!self.__WB_pmw) {
                 function _possibleConstructorReturn(self, call) {
                   if (!self) {
                     throw new ReferenceError(
-                      "this hasn't been initialised - super() hasn't been called"
+                      "this hasn't been initialised - super() hasn't been called",
                     );
                   }
 
                   return call &&
-                    (typeof call === 'object' || typeof call === 'function')
+                    (typeof call === "object" || typeof call === "function")
                     ? call
                     : self;
                 }
 
                 function _inherits(subClass, superClass) {
-                  if (typeof superClass !== 'function' && superClass !== null) {
+                  if (typeof superClass !== "function" && superClass !== null) {
                     throw new TypeError(
-                      'Super expression must either be null or a function, not ' +
-                        typeof superClass
+                      "Super expression must either be null or a function, not " +
+                        typeof superClass,
                     );
                   }
 
@@ -838,7 +838,7 @@ if (!self.__WB_pmw) {
                         writable: true,
                         configurable: true,
                       },
-                    }
+                    },
                   );
                   if (superClass)
                     Object.setPrototypeOf
@@ -860,7 +860,7 @@ if (!self.__WB_pmw) {
                       this,
                       (
                         Clipboard.__proto__ || Object.getPrototypeOf(Clipboard)
-                      ).call(this)
+                      ).call(this),
                     );
 
                     _this.resolveOptions(options);
@@ -878,7 +878,7 @@ if (!self.__WB_pmw) {
                     Clipboard,
                     [
                       {
-                        key: 'resolveOptions',
+                        key: "resolveOptions",
                         value: function resolveOptions() {
                           var options =
                             arguments.length > 0 && arguments[0] !== undefined
@@ -886,35 +886,35 @@ if (!self.__WB_pmw) {
                               : {};
 
                           this.action =
-                            typeof options.action === 'function'
+                            typeof options.action === "function"
                               ? options.action
                               : this.defaultAction;
                           this.target =
-                            typeof options.target === 'function'
+                            typeof options.target === "function"
                               ? options.target
                               : this.defaultTarget;
                           this.text =
-                            typeof options.text === 'function'
+                            typeof options.text === "function"
                               ? options.text
                               : this.defaultText;
                         },
                       },
                       {
-                        key: 'listenClick',
+                        key: "listenClick",
                         value: function listenClick(trigger) {
                           var _this2 = this;
 
                           this.listener = (0, _goodListener2.default)(
                             trigger,
-                            'click',
+                            "click",
                             function (e) {
                               return _this2.onClick(e);
-                            }
+                            },
                           );
                         },
                       },
                       {
-                        key: 'onClick',
+                        key: "onClick",
                         value: function onClick(e) {
                           var trigger = e.delegateTarget || e.currentTarget;
 
@@ -932,15 +932,15 @@ if (!self.__WB_pmw) {
                         },
                       },
                       {
-                        key: 'defaultAction',
+                        key: "defaultAction",
                         value: function defaultAction(trigger) {
-                          return getAttributeValue('action', trigger);
+                          return getAttributeValue("action", trigger);
                         },
                       },
                       {
-                        key: 'defaultTarget',
+                        key: "defaultTarget",
                         value: function defaultTarget(trigger) {
-                          var selector = getAttributeValue('target', trigger);
+                          var selector = getAttributeValue("target", trigger);
 
                           if (selector) {
                             return document.querySelector(selector);
@@ -948,13 +948,13 @@ if (!self.__WB_pmw) {
                         },
                       },
                       {
-                        key: 'defaultText',
+                        key: "defaultText",
                         value: function defaultText(trigger) {
-                          return getAttributeValue('text', trigger);
+                          return getAttributeValue("text", trigger);
                         },
                       },
                       {
-                        key: 'destroy',
+                        key: "destroy",
                         value: function destroy() {
                           this.listener.destroy();
 
@@ -967,15 +967,15 @@ if (!self.__WB_pmw) {
                     ],
                     [
                       {
-                        key: 'isSupported',
+                        key: "isSupported",
                         value: function isSupported() {
                           var action =
                             arguments.length > 0 && arguments[0] !== undefined
                               ? arguments[0]
-                              : ['copy', 'cut'];
+                              : ["copy", "cut"];
 
                           var actions =
-                            typeof action === 'string' ? [action] : action;
+                            typeof action === "string" ? [action] : action;
                           var support = !!document.queryCommandSupported;
 
                           actions.forEach(function (action) {
@@ -987,7 +987,7 @@ if (!self.__WB_pmw) {
                           return support;
                         },
                       },
-                    ]
+                    ],
                   );
 
                   return Clipboard;
@@ -999,7 +999,7 @@ if (!self.__WB_pmw) {
                  * @param {Element} element
                  */
                 function getAttributeValue(suffix, element) {
-                  var attribute = 'data-clipboard-' + suffix;
+                  var attribute = "data-clipboard-" + suffix;
 
                   if (!element.hasAttribute(attribute)) {
                     return;
@@ -1009,28 +1009,28 @@ if (!self.__WB_pmw) {
                 }
 
                 module.exports = Clipboard;
-              }
+              },
             );
           },
-          { './clipboard-action': 7, 'good-listener': 4, 'tiny-emitter': 6 },
+          { "./clipboard-action": 7, "good-listener": 4, "tiny-emitter": 6 },
         ],
       },
       {},
-      [8]
+      [8],
     )(8);
   });
 
   // Login
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var clipper = new Clipboard('#copy-api-token');
-    clipper.on('success', function (event) {
-      event.trigger.querySelector('.button-text').textContent = 'Token copied!';
+  document.addEventListener("DOMContentLoaded", function () {
+    var clipper = new Clipboard("#copy-api-token");
+    clipper.on("success", function (event) {
+      event.trigger.querySelector(".button-text").textContent = "Token copied!";
     });
 
-    var accountTokenForm = document.querySelector('.account-token-form');
+    var accountTokenForm = document.querySelector(".account-token-form");
     if (accountTokenForm) {
-      accountTokenForm.addEventListener('submit', function (event) {
+      accountTokenForm.addEventListener("submit", function (event) {
         event.preventDefault();
       });
     }

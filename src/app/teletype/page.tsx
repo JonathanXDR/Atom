@@ -193,7 +193,7 @@ export default function Teletype() {
             </Link>
             package to start collaborating today. If you need help, take a look
             at{" "}
-            <Link href="https://flight-manual.atom.io/using-atom/sections/atom-packages/">
+            <Link href="/flight-manual/using-atom/sections/atom-packages/">
               how to install Atom packages
             </Link>
             .

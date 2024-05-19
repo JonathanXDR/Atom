@@ -2,12 +2,9 @@
 import FooterItem from "@/components/FooterItem/FooterItem";
 import NavItem from "@/components/NavItem/NavItem";
 import { LinkIcon } from "@primer/octicons-react";
-import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
 import "/public/assets/css/application.css";
-import _1f4dd from "/public/assets/png/1f4dd.png";
-import _2b06 from "/public/assets/png/2b06.png";
 
 export default function Releases() {
   return (
@@ -29,7 +26,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -58,7 +55,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -90,7 +87,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -144,7 +141,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -306,7 +303,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -345,7 +342,7 @@ export default function Releases() {
                   <Link
                     id="language-php"
                     className="anchor"
-                    href="https://atom.io/releases#language-php"
+                    href="/releases#language-php"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -386,7 +383,7 @@ export default function Releases() {
                   <Link
                     id="language-ruby"
                     className="anchor"
-                    href="https://atom.io/releases#language-ruby"
+                    href="/releases#language-ruby"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -452,7 +449,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -506,7 +503,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -614,7 +611,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -653,7 +650,7 @@ export default function Releases() {
                   <Link
                     id="language-php"
                     className="anchor"
-                    href="https://atom.io/releases#language-php"
+                    href="/releases#language-php"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -694,7 +691,7 @@ export default function Releases() {
                   <Link
                     id="language-ruby"
                     className="anchor"
-                    href="https://atom.io/releases#language-ruby"
+                    href="/releases#language-ruby"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -759,7 +756,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -796,7 +793,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -950,20 +947,8 @@ export default function Releases() {
                   </li>
                   <li>
                     <Link href="https://github.com/atom/atom/pull/13821">
-                      atom/atom#13821 -
-                      <Image
-                        title=":memo:"
-                        alt=":memo:"
-                        src={_1f4dd}
-                        height="20"
-                        width="20"
-                        style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
-                        }}
-                      />
-                      Clarify that stack only has an effect if detail is present
-                      as well
+                      atom/atom#13821 - 📝 Clarify that stack only has an effect
+                      if detail is present as well
                     </Link>
                   </li>
                   <li>
@@ -1083,7 +1068,7 @@ export default function Releases() {
                   <Link
                     id="keybinding-resolver"
                     className="anchor"
-                    href="https://atom.io/releases#keybinding-resolver"
+                    href="/releases#keybinding-resolver"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1123,7 +1108,7 @@ export default function Releases() {
                   <Link
                     id="notifications"
                     className="anchor"
-                    href="https://atom.io/releases#notifications"
+                    href="/releases#notifications"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1148,7 +1133,7 @@ export default function Releases() {
                   <Link
                     id="tabs"
                     className="anchor"
-                    href="https://atom.io/releases#tabs"
+                    href="/releases#tabs"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1182,7 +1167,7 @@ export default function Releases() {
                   <Link
                     id="tree-view"
                     className="anchor"
-                    href="https://atom.io/releases#tree-view"
+                    href="/releases#tree-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1218,7 +1203,7 @@ export default function Releases() {
                   <Link
                     id="language-css"
                     className="anchor"
-                    href="https://atom.io/releases#language-css"
+                    href="/releases#language-css"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1314,7 +1299,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1345,7 +1330,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1499,20 +1484,8 @@ export default function Releases() {
                   </li>
                   <li>
                     <Link href="https://github.com/atom/atom/pull/13821">
-                      atom/atom#13821 -
-                      <Image
-                        title=":memo:"
-                        alt=":memo:"
-                        src={_1f4dd}
-                        height="20"
-                        width="20"
-                        style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
-                        }}
-                      />
-                      Clarify that stack only has an effect if detail is present
-                      as well
+                      atom/atom#13821 - 📝 Clarify that stack only has an effect
+                      if detail is present as well
                     </Link>
                   </li>
                   <li>
@@ -1632,7 +1605,7 @@ export default function Releases() {
                   <Link
                     id="keybinding-resolver"
                     className="anchor"
-                    href="https://atom.io/releases#keybinding-resolver"
+                    href="/releases#keybinding-resolver"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1672,7 +1645,7 @@ export default function Releases() {
                   <Link
                     id="notifications"
                     className="anchor"
-                    href="https://atom.io/releases#notifications"
+                    href="/releases#notifications"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1697,7 +1670,7 @@ export default function Releases() {
                   <Link
                     id="tabs"
                     className="anchor"
-                    href="https://atom.io/releases#tabs"
+                    href="/releases#tabs"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1731,7 +1704,7 @@ export default function Releases() {
                   <Link
                     id="tree-view"
                     className="anchor"
-                    href="https://atom.io/releases#tree-view"
+                    href="/releases#tree-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1767,7 +1740,7 @@ export default function Releases() {
                   <Link
                     id="language-css"
                     className="anchor"
-                    href="https://atom.io/releases#language-css"
+                    href="/releases#language-css"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1862,7 +1835,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -1893,7 +1866,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2069,7 +2042,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2100,7 +2073,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2275,7 +2248,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2331,7 +2304,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2493,7 +2466,7 @@ export default function Releases() {
                   <Link
                     id="archive-view"
                     className="anchor"
-                    href="https://atom.io/releases#archive-view"
+                    href="/releases#archive-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2523,7 +2496,7 @@ export default function Releases() {
                   <Link
                     id="bracket-matcher"
                     className="anchor"
-                    href="https://atom.io/releases#bracket-matcher"
+                    href="/releases#bracket-matcher"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2565,7 +2538,7 @@ export default function Releases() {
                   <Link
                     id="find-and-replace"
                     className="anchor"
-                    href="https://atom.io/releases#find-and-replace"
+                    href="/releases#find-and-replace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2609,7 +2582,7 @@ export default function Releases() {
                   <Link
                     id="whitespace"
                     className="anchor"
-                    href="https://atom.io/releases#whitespace"
+                    href="/releases#whitespace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2651,7 +2624,7 @@ export default function Releases() {
                   <Link
                     id="language-php"
                     className="anchor"
-                    href="https://atom.io/releases#language-php"
+                    href="/releases#language-php"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2730,7 +2703,7 @@ export default function Releases() {
                   <Link
                     id="language-python"
                     className="anchor"
-                    href="https://atom.io/releases#language-python"
+                    href="/releases#language-python"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2775,7 +2748,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2799,7 +2772,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2880,7 +2853,7 @@ export default function Releases() {
                   <Link
                     id="settings-view"
                     className="anchor"
-                    href="https://atom.io/releases#settings-view"
+                    href="/releases#settings-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2911,7 +2884,7 @@ export default function Releases() {
                   <Link
                     id="tree-view"
                     className="anchor"
-                    href="https://atom.io/releases#tree-view"
+                    href="/releases#tree-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2945,7 +2918,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -2975,7 +2948,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3019,7 +2992,7 @@ export default function Releases() {
                   <Link
                     id="find-and-replace"
                     className="anchor"
-                    href="https://atom.io/releases#find-and-replace"
+                    href="/releases#find-and-replace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3063,7 +3036,7 @@ export default function Releases() {
                   <Link
                     id="whitespace"
                     className="anchor"
-                    href="https://atom.io/releases#whitespace"
+                    href="/releases#whitespace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3114,7 +3087,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3138,7 +3111,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3219,7 +3192,7 @@ export default function Releases() {
                   <Link
                     id="settings-view"
                     className="anchor"
-                    href="https://atom.io/releases#settings-view"
+                    href="/releases#settings-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3250,7 +3223,7 @@ export default function Releases() {
                   <Link
                     id="tree-view"
                     className="anchor"
-                    href="https://atom.io/releases#tree-view"
+                    href="/releases#tree-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3283,7 +3256,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3327,7 +3300,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3358,19 +3331,7 @@ export default function Releases() {
                   </li>
                   <li>
                     <Link href="https://github.com/atom/atom/pull/21903">
-                      atom/atom#21903 -
-                      <Image
-                        title=":arrow_up:"
-                        alt=":arrow_up:"
-                        src={_2b06}
-                        height="20"
-                        width="20"
-                        style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
-                        }}
-                      />
-                      github
+                      atom/atom#21903 - ⬆️ github
                     </Link>
                   </li>
                   <li>
@@ -3383,7 +3344,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3430,7 +3391,7 @@ export default function Releases() {
                   <Link
                     id="spell-check"
                     className="anchor"
-                    href="https://atom.io/releases#spell-check"
+                    href="/releases#spell-check"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3468,7 +3429,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3492,7 +3453,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3525,7 +3486,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3636,7 +3597,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3667,7 +3628,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3698,19 +3659,7 @@ export default function Releases() {
                   </li>
                   <li>
                     <Link href="https://github.com/atom/atom/pull/21903">
-                      atom/atom#21903 -
-                      <Image
-                        title=":arrow_up:"
-                        alt=":arrow_up:"
-                        src={_2b06}
-                        height="20"
-                        width="20"
-                        style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
-                        }}
-                      />
-                      github
+                      atom/atom#21903 - ⬆️ github
                     </Link>
                   </li>
                   <li>
@@ -3723,7 +3672,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3770,7 +3719,7 @@ export default function Releases() {
                   <Link
                     id="spell-check"
                     className="anchor"
-                    href="https://atom.io/releases#spell-check"
+                    href="/releases#spell-check"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3808,7 +3757,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3856,7 +3805,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3962,7 +3911,7 @@ export default function Releases() {
                   <Link
                     id="find-and-replace"
                     className="anchor"
-                    href="https://atom.io/releases#find-and-replace"
+                    href="/releases#find-and-replace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -3988,7 +3937,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4261,7 +4210,7 @@ export default function Releases() {
                   <Link
                     id="spell-check"
                     className="anchor"
-                    href="https://atom.io/releases#spell-check"
+                    href="/releases#spell-check"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4292,7 +4241,7 @@ export default function Releases() {
                   <Link
                     id="tree-view"
                     className="anchor"
-                    href="https://atom.io/releases#tree-view"
+                    href="/releases#tree-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4332,7 +4281,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4356,7 +4305,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4389,7 +4338,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4438,7 +4387,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4492,7 +4441,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4598,7 +4547,7 @@ export default function Releases() {
                   <Link
                     id="find-and-replace"
                     className="anchor"
-                    href="https://atom.io/releases#find-and-replace"
+                    href="/releases#find-and-replace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4624,7 +4573,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4897,7 +4846,7 @@ export default function Releases() {
                   <Link
                     id="spell-check"
                     className="anchor"
-                    href="https://atom.io/releases#spell-check"
+                    href="/releases#spell-check"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4928,7 +4877,7 @@ export default function Releases() {
                   <Link
                     id="tree-view"
                     className="anchor"
-                    href="https://atom.io/releases#tree-view"
+                    href="/releases#tree-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -4967,7 +4916,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5022,7 +4971,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5340,7 +5289,7 @@ export default function Releases() {
                   <Link
                     id="find-and-replace"
                     className="anchor"
-                    href="https://atom.io/releases#find-and-replace"
+                    href="/releases#find-and-replace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5365,7 +5314,7 @@ export default function Releases() {
                   <Link
                     id="fuzzy-finder"
                     className="anchor"
-                    href="https://atom.io/releases#fuzzy-finder"
+                    href="/releases#fuzzy-finder"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5390,7 +5339,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5447,7 +5396,7 @@ export default function Releases() {
                   <Link
                     id="settings-view"
                     className="anchor"
-                    href="https://atom.io/releases#settings-view"
+                    href="/releases#settings-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5473,7 +5422,7 @@ export default function Releases() {
                   <Link
                     id="spell-check"
                     className="anchor"
-                    href="https://atom.io/releases#spell-check"
+                    href="/releases#spell-check"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5504,7 +5453,7 @@ export default function Releases() {
                   <Link
                     id="tree-view"
                     className="anchor"
-                    href="https://atom.io/releases#tree-view"
+                    href="/releases#tree-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5554,7 +5503,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5592,7 +5541,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5910,7 +5859,7 @@ export default function Releases() {
                   <Link
                     id="find-and-replace"
                     className="anchor"
-                    href="https://atom.io/releases#find-and-replace"
+                    href="/releases#find-and-replace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5935,7 +5884,7 @@ export default function Releases() {
                   <Link
                     id="fuzzy-finder"
                     className="anchor"
-                    href="https://atom.io/releases#fuzzy-finder"
+                    href="/releases#fuzzy-finder"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -5960,7 +5909,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6017,7 +5966,7 @@ export default function Releases() {
                   <Link
                     id="settings-view"
                     className="anchor"
-                    href="https://atom.io/releases#settings-view"
+                    href="/releases#settings-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6043,7 +5992,7 @@ export default function Releases() {
                   <Link
                     id="tree-view"
                     className="anchor"
-                    href="https://atom.io/releases#tree-view"
+                    href="/releases#tree-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6092,7 +6041,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6134,7 +6083,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6212,7 +6161,7 @@ export default function Releases() {
                   <Link
                     id="find-and-replace"
                     className="anchor"
-                    href="https://atom.io/releases#find-and-replace"
+                    href="/releases#find-and-replace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6238,7 +6187,7 @@ export default function Releases() {
                   <Link
                     id="settings-view"
                     className="anchor"
-                    href="https://atom.io/releases#settings-view"
+                    href="/releases#settings-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6264,7 +6213,7 @@ export default function Releases() {
                   <Link
                     id="language-php"
                     className="anchor"
-                    href="https://atom.io/releases#language-php"
+                    href="/releases#language-php"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6295,7 +6244,7 @@ export default function Releases() {
                   <Link
                     id="language-python"
                     className="anchor"
-                    href="https://atom.io/releases#language-python"
+                    href="/releases#language-python"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6329,7 +6278,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6371,7 +6320,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6449,7 +6398,7 @@ export default function Releases() {
                   <Link
                     id="find-and-replace"
                     className="anchor"
-                    href="https://atom.io/releases#find-and-replace"
+                    href="/releases#find-and-replace"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6475,7 +6424,7 @@ export default function Releases() {
                   <Link
                     id="settings-view"
                     className="anchor"
-                    href="https://atom.io/releases#settings-view"
+                    href="/releases#settings-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6501,7 +6450,7 @@ export default function Releases() {
                   <Link
                     id="language-php"
                     className="anchor"
-                    href="https://atom.io/releases#language-php"
+                    href="/releases#language-php"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6532,7 +6481,7 @@ export default function Releases() {
                   <Link
                     id="language-python"
                     className="anchor"
-                    href="https://atom.io/releases#language-python"
+                    href="/releases#language-python"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6565,7 +6514,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6589,7 +6538,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6638,7 +6587,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6663,7 +6612,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6711,7 +6660,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6780,7 +6729,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6855,7 +6804,7 @@ export default function Releases() {
                   <Link
                     id="language-gfm"
                     className="anchor"
-                    href="https://atom.io/releases#language-gfm"
+                    href="/releases#language-gfm"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6882,7 +6831,7 @@ export default function Releases() {
                   <Link
                     id="language-php"
                     className="anchor"
-                    href="https://atom.io/releases#language-php"
+                    href="/releases#language-php"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6930,7 +6879,7 @@ export default function Releases() {
                   <Link
                     id="language-typescript"
                     className="anchor"
-                    href="https://atom.io/releases#language-typescript"
+                    href="/releases#language-typescript"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -6964,7 +6913,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7000,7 +6949,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7075,7 +7024,7 @@ export default function Releases() {
                   <Link
                     id="language-gfm"
                     className="anchor"
-                    href="https://atom.io/releases#language-gfm"
+                    href="/releases#language-gfm"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7102,7 +7051,7 @@ export default function Releases() {
                   <Link
                     id="language-php"
                     className="anchor"
-                    href="https://atom.io/releases#language-php"
+                    href="/releases#language-php"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7150,7 +7099,7 @@ export default function Releases() {
                   <Link
                     id="language-typescript"
                     className="anchor"
-                    href="https://atom.io/releases#language-typescript"
+                    href="/releases#language-typescript"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7183,7 +7132,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7214,7 +7163,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7285,7 +7234,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7346,7 +7295,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7407,7 +7356,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7438,7 +7387,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7505,7 +7454,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7547,7 +7496,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7595,7 +7544,7 @@ export default function Releases() {
                   <Link
                     id="notable-changes"
                     className="anchor"
-                    href="https://atom.io/releases#notable-changes"
+                    href="/releases#notable-changes"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7644,7 +7593,7 @@ export default function Releases() {
                   <Link
                     id="atom-core"
                     className="anchor"
-                    href="https://atom.io/releases#atom-core"
+                    href="/releases#atom-core"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7700,7 +7649,7 @@ export default function Releases() {
                   <Link
                     id="fuzzy-finder"
                     className="anchor"
-                    href="https://atom.io/releases#fuzzy-finder"
+                    href="/releases#fuzzy-finder"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7725,7 +7674,7 @@ export default function Releases() {
                   <Link
                     id="github"
                     className="anchor"
-                    href="https://atom.io/releases#github"
+                    href="/releases#github"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7748,7 +7697,7 @@ export default function Releases() {
                   <Link
                     id="settings-view"
                     className="anchor"
-                    href="https://atom.io/releases#settings-view"
+                    href="/releases#settings-view"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7774,7 +7723,7 @@ export default function Releases() {
                   <Link
                     id="snippets"
                     className="anchor"
-                    href="https://atom.io/releases#snippets"
+                    href="/releases#snippets"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7797,7 +7746,7 @@ export default function Releases() {
                   <Link
                     id="spell-check"
                     className="anchor"
-                    href="https://atom.io/releases#spell-check"
+                    href="/releases#spell-check"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7823,7 +7772,7 @@ export default function Releases() {
                   <Link
                     id="language-c"
                     className="anchor"
-                    href="https://atom.io/releases#language-c"
+                    href="/releases#language-c"
                     aria-hidden="true"
                   >
                     {/* <span
@@ -7840,19 +7789,8 @@ export default function Releases() {
                 <ul>
                   <li>
                     <Link href="https://github.com/atom/language-c/pull/330">
-                      atom/language-c#330 - Scopes after
-                      <Image
-                        title=":arrow_up:"
-                        alt=":arrow_up:"
-                        src={_2b06}
-                        height="20"
-                        width="20"
-                        style={{
-                          display: "inline-block",
-                          verticalAlign: "middle",
-                        }}
-                      />
-                      tree-sitter-c and tree-sitter-cpp
+                      atom/language-c#330 - Scopes after ⬆️ tree-sitter-c and
+                      tree-sitter-cpp
                     </Link>
                   </li>
                 </ul>
@@ -7860,7 +7798,7 @@ export default function Releases() {
                   <Link
                     id="language-ruby"
                     className="anchor"
-                    href="https://atom.io/releases#language-ruby"
+                    href="/releases#language-ruby"
                     aria-hidden="true"
                   >
                     {/* <span

@@ -129,7 +129,7 @@ export default function GitHub() {
                 Visit the 🚀
                 <Link
                   className="features-button"
-                  href="https://flight-manual.atom.io/using-atom/sections/github-package/"
+                  href="/flight-manual/using-atom/sections/github-package/"
                 >
                   documentation
                 </Link>
@@ -146,8 +146,8 @@ export default function GitHub() {
             <h2>Install</h2>
             <p>
               The GitHub package comes already bundled with
-              <Link href="https://atom.io/">Atom</Link>, so there is nothing
-              extra to install.&nbsp;🎉
+              <Link href="/">Atom</Link>, so there is nothing extra to
+              install.&nbsp;🎉
             </p>
           </div>
 
@@ -195,7 +195,7 @@ export default function GitHub() {
             <h2>Community packages</h2>
             <p>
               We also would like to point out all the
-              <Link href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
+              <Link href="/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
                 amazing packages
               </Link>
               the Atom community has already created.
@@ -208,40 +208,28 @@ export default function GitHub() {
             <p>Here just a few to check out:</p>
             <ul>
               <li>
-                <Link href="https://atom.io/packages/git-plus">git-plus</Link>
+                <Link href="/packages/git-plus">git-plus</Link>
               </li>
               <li>
-                <Link href="https://atom.io/packages/git-control">
-                  git-control
-                </Link>
+                <Link href="/packages/git-control">git-control</Link>
               </li>
               <li>
-                <Link href="https://atom.io/packages/git-time-machine">
-                  git-time-machine
-                </Link>
+                <Link href="/packages/git-time-machine">git-time-machine</Link>
               </li>
               <li>
-                <Link href="https://atom.io/packages/git-history">
-                  git-history
-                </Link>
+                <Link href="/packages/git-history">git-history</Link>
               </li>
               <li>
-                <Link href="https://atom.io/packages/git-blame">git-blame</Link>
+                <Link href="/packages/git-blame">git-blame</Link>
               </li>
               <li>
-                <Link href="https://atom.io/packages/context-git">
-                  context-git
-                </Link>
+                <Link href="/packages/context-git">context-git</Link>
               </li>
               <li>
-                <Link href="https://atom.io/packages/simple-git">
-                  simple-git
-                </Link>
+                <Link href="/packages/simple-git">simple-git</Link>
               </li>
               <li>
-                <Link href="https://atom.io/packages/split-diff">
-                  split-diff
-                </Link>
+                <Link href="/packages/split-diff">split-diff</Link>
               </li>
             </ul>
           </div>

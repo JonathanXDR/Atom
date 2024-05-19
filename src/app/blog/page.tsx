@@ -97,20 +97,17 @@ export default function Blog() {
                 </p>
                 <div className="post markdown">
                   <p>
-                    <Link href="https://atom.io/nightly">
+                    <Link href="/nightly">
                       <Image src={atomNightlyHeading} alt="Atom Nightly" />
                     </Link>
                   </p>
 
                   <p>
                     Today we&apos;re excited to introduce
-                    <Link href="https://atom.io/nightly">
-                      {" "}
-                      Atom Nightly releases{" "}
-                    </Link>
-                    ! This new release channel gives you access to Atom&apos;s
-                    latest feature improvements and bug fixes each day as they
-                    are merged into our
+                    <Link href="/nightly"> Atom Nightly releases </Link>! This
+                    new release channel gives you access to Atom&apos;s latest
+                    feature improvements and bug fixes each day as they are
+                    merged into our
                     <code className="language-plaintext highlighter-rouge">
                       master
                     </code>

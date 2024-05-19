@@ -19,7 +19,7 @@ export default function Contact() {
                   <h3 className="contact-title">Get in touch</h3>
                   <form
                     className="contact-form"
-                    action="https://atom.io/contact"
+                    action="/contact"
                     accept-charset="UTF-8"
                     method="post"
                   >

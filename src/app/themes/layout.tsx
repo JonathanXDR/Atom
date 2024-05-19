@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import "../globals.css";
 import "/public/assets/css/application.css";
 
 export const metadata: Metadata = {

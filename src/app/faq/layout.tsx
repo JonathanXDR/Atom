@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import "../globals.css";
 import "/public/assets/css/flight-manual.css";
 
 export const metadata: Metadata = {

@@ -1,10 +1,10 @@
-'use client';
-import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
-import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import PackageCardLegacy from '@/components/legacy/PackageCardLegacy/PackageCardLegacy';
-import footer from '@/data/footer.json';
-import nav from '@/data/nav.json';
-import packages from '@/data/packages.json';
+"use client";
+import FooterLegacy from "@/components/legacy/FooterLegacy/FooterLegacy";
+import NavLegacy from "@/components/legacy/NavLegacy/NavLegacy";
+import PackageCardLegacy from "@/components/legacy/PackageCardLegacy/PackageCardLegacy";
+import footer from "@/data/footer.json";
+import nav from "@/data/nav.json";
+import packages from "@/data/packages.json";
 import {
   ChevronRightIcon,
   ClockIcon,
@@ -14,7 +14,7 @@ import {
   SquirrelIcon,
   TriangleDownIcon,
   XIcon,
-} from '@primer/octicons-react';
+} from "@primer/octicons-react";
 import {
   ActionList,
   ActionMenu,
@@ -26,15 +26,15 @@ import {
   PageLayout,
   Text,
   TextInput,
-} from '@primer/react';
-import Link from 'next/link';
-import { useRef, useState } from 'react';
+} from "@primer/react";
+import Link from "next/link";
+import { useRef, useState } from "react";
 
 export default function Packages() {
   const timeSpans = [
-    { name: 'today' },
-    { name: 'this week' },
-    { name: 'this month' },
+    { name: "today" },
+    { name: "this week" },
+    { name: "this month" },
   ];
 
   const TimeSpan = () => {
@@ -49,7 +49,7 @@ export default function Packages() {
           <Text
             as="a"
             sx={{
-              cursor: 'pointer',
+              cursor: "pointer",
             }}
           >
             {selectedType.name}
@@ -63,7 +63,7 @@ export default function Packages() {
             aria-label="Close"
             onClick={() => setOpen(false)}
             sx={{
-              position: 'absolute',
+              position: "absolute",
               top: 2,
               right: 2,
             }}
@@ -91,9 +91,9 @@ export default function Packages() {
   };
 
   const filters = [
-    { name: 'Best Match' },
-    { name: 'Recently added' },
-    { name: 'Most installed/starred' },
+    { name: "Best Match" },
+    { name: "Recently added" },
+    { name: "Most installed/starred" },
   ];
 
   const Filter = () => {
@@ -105,10 +105,10 @@ export default function Packages() {
         <ActionMenu.Button size="large">
           <Text
             sx={{
-              color: 'fg.muted',
+              color: "fg.muted",
             }}
           >
-            Sort:{' '}
+            Sort:{" "}
           </Text>
           {selectedType.name}
         </ActionMenu.Button>
@@ -148,26 +148,26 @@ export default function Packages() {
             as="h2"
             className="center index-title"
             sx={{
-              marginBlock: '0.83em',
+              marginBlock: "0.83em",
             }}
           >
             Pick your favorite flavor of Atom.
           </Heading>
           <Box
             sx={{
-              width: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <FormControl
               sx={{
-                width: '860px',
+                width: "860px",
                 marginBottom: 6,
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'flex-end',
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-end",
                 gap: 2,
               }}
             >
@@ -177,7 +177,7 @@ export default function Packages() {
                 size="large"
                 placeholder="Search 664,454 themes"
                 sx={{
-                  width: '100%',
+                  width: "100%",
                 }}
               />
               {/* <Filter /> */}
@@ -186,7 +186,7 @@ export default function Packages() {
               </Button>
             </FormControl>
           </Box>
-          <Box className="package-list featured" sx={{ width: '100%' }}>
+          <Box className="package-list featured" sx={{ width: "100%" }}>
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
                 <MegaphoneIcon size={32} /> Featured
@@ -195,8 +195,8 @@ export default function Packages() {
             <Box
               // className="halves"
               sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
                 gap: 4,
               }}
             >
@@ -205,7 +205,7 @@ export default function Packages() {
               ))}
             </Box>
           </Box>
-          <Box className="package-list trending" sx={{ width: '100%' }}>
+          <Box className="package-list trending" sx={{ width: "100%" }}>
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
                 <FlameIcon size={32} /> Trending <TimeSpan />
@@ -216,8 +216,8 @@ export default function Packages() {
             <Box
               // className="halves"
               sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
                 gap: 4,
               }}
             >
@@ -227,7 +227,7 @@ export default function Packages() {
               {/* </Box> */}
             </Box>
           </Box>
-          <Box className="package-list newest" sx={{ width: '100%' }}>
+          <Box className="package-list newest" sx={{ width: "100%" }}>
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
                 <ClockIcon size={32} /> Newest
@@ -243,8 +243,8 @@ export default function Packages() {
             <Box
               // className="halves"
               sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
                 gap: 4,
               }}
             >
@@ -253,7 +253,7 @@ export default function Packages() {
               ))}
             </Box>
           </Box>
-          <Box className="package-list updated" sx={{ width: '100%' }}>
+          <Box className="package-list updated" sx={{ width: "100%" }}>
             <Box className="package-list-header">
               <Heading as="h3" className="package-list-title">
                 <SquirrelIcon size={32} /> Recently Updated
@@ -269,8 +269,8 @@ export default function Packages() {
             <Box
               // className="halves"
               sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
                 gap: 4,
               }}
             >

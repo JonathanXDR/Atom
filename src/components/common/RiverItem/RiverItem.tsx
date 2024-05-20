@@ -1,9 +1,9 @@
-import { Box, Heading, Link, Text } from '@primer/react';
-import Image from 'next/image';
-import React from 'react';
-import indexGithubScreenshot from '/public/assets/png/index-github-screenshot.png';
-import indexIdeScreenshot from '/public/assets/png/index-ide-screenshot.png';
-import indexTeletypeScreenshot from '/public/assets/png/index-teletype-screenshot.png';
+import { Box, Heading, Link, Text } from "@primer/react";
+import Image from "next/image";
+import React from "react";
+import indexGithubScreenshot from "/public/assets/png/index-github-screenshot.png";
+import indexIdeScreenshot from "/public/assets/png/index-ide-screenshot.png";
+import indexTeletypeScreenshot from "/public/assets/png/index-teletype-screenshot.png";
 
 const RiverItem: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const RiverItem: React.FC = () => {
           <Text
             as="p"
             sx={{
-              marginBlock: '1em',
+              marginBlock: "1em",
             }}
           >
             Great things happen when developers work together—from teaching and
@@ -34,9 +34,9 @@ const RiverItem: React.FC = () => {
 
           <Text as="p">
             Share your workspace and edit code together in real time. To start
-            collaborating,{' '}
+            collaborating,{" "}
             <Link href="atom://settings-view/show-package?package=teletype">
-              open Teletype in Atom{' '}
+              open Teletype in Atom{" "}
             </Link>
             and install the package.
           </Text>
@@ -55,7 +55,7 @@ const RiverItem: React.FC = () => {
           <Text
             as="p"
             sx={{
-              marginBlock: '1em',
+              marginBlock: "1em",
             }}
           >
             Atom-IDE is a set of optional packages to bring IDE-like
@@ -74,8 +74,8 @@ const RiverItem: React.FC = () => {
             You can also hover-to-reveal information, diagnostics (errors and
             warnings) and document formatting. To get all these IDE features,
             <Link href="atom://settings-view/show-package?package=atom-ide-ui">
-              {' '}
-              open Atom IDE UI in Atom{' '}
+              {" "}
+              open Atom IDE UI in Atom{" "}
             </Link>
             and install the package.
           </Text>
@@ -94,7 +94,7 @@ const RiverItem: React.FC = () => {
           <Text
             as="p"
             sx={{
-              marginBlock: '1em',
+              marginBlock: "1em",
             }}
           >
             A text editor is at the core of a developer&apos;s toolbox, but it

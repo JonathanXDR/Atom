@@ -1,8 +1,8 @@
-'use client';
-import { TriangleDownIcon } from '@primer/octicons-react';
-import { Button, SelectPanel } from '@primer/react';
-import React from 'react';
-import './VersionPicker.css';
+"use client";
+import { TriangleDownIcon } from "@primer/octicons-react";
+import { Button, SelectPanel } from "@primer/react";
+import React from "react";
+import "./VersionPicker.css";
 
 interface VersionPickerProps {
   versions: Token[];
@@ -15,14 +15,14 @@ type Token = {
 
 const VersionPicker: React.FC<VersionPickerProps> = ({ versions }) => {
   const [selected, setSelected] = React.useState<Token | undefined>(
-    versions[0]
+    versions[0],
   );
-  const [filter, setFilter] = React.useState('');
+  const [filter, setFilter] = React.useState("");
   const [open, setOpen] = React.useState(false);
 
   const filteredItems = versions
     .filter((version) =>
-      version.text.toLowerCase().startsWith(filter.toLowerCase())
+      version.text.toLowerCase().startsWith(filter.toLowerCase()),
     )
     .map((version) => ({
       ...version,
@@ -33,12 +33,12 @@ const VersionPicker: React.FC<VersionPickerProps> = ({ versions }) => {
     <SelectPanel
       renderAnchor={({ children, ...anchorProps }) => (
         <Button
-          sx={{ width: '100%' }}
+          sx={{ width: "100%" }}
           size="large"
           trailingAction={TriangleDownIcon}
           {...anchorProps}
         >
-          {children || 'Select version'}
+          {children || "Select version"}
         </Button>
       )}
       placeholderText="Search versions"
@@ -49,7 +49,7 @@ const VersionPicker: React.FC<VersionPickerProps> = ({ versions }) => {
       onSelectedChange={(item: any) => setSelected(item as Token | undefined)}
       onFilterChange={setFilter}
       showItemDividers={true}
-      overlayProps={{ width: 'medium', height: 'xlarge' }}
+      overlayProps={{ width: "medium", height: "xlarge" }}
     />
   );
 };

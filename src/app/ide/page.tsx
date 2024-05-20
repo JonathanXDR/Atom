@@ -1,5 +1,5 @@
-import { Box, Heading, Text } from '@primer/react';
-import Link from 'next/link';
+import { Box, Heading, Text } from "@primer/react";
+import Link from "next/link";
 
 export default function IDE() {
   return (
@@ -12,7 +12,7 @@ export default function IDE() {
         <Text
           as="p"
           sx={{
-            marginBlock: '1em',
+            marginBlock: "1em",
           }}
         >
           A special thanks goes to Facebook&apos;s Nuclide team for providing
@@ -30,7 +30,7 @@ export default function IDE() {
           Also many thanks to Atom IDE language package authors. To get started
           with your own language integration, check out
           <Link href="https://github.com/atom/atom-languageclient">
-            {' '}
+            {" "}
             atom-languageclient
           </Link>
           . 🚀
@@ -120,14 +120,14 @@ export default function IDE() {
           <Text
             as="p"
             sx={{
-              marginBlock: '1em',
+              marginBlock: "1em",
             }}
           >
             Start using IDE-like features in
-            <Link href="/"> Atom </Link>
+            <Link href="https://atom.io/"> Atom </Link>
             by following the steps below. If you need help, take a look at
             <Link href="/flight-manual/using-atom/sections/atom-packages/">
-              {' '}
+              {" "}
               how to install Atom packages
             </Link>
             .
@@ -138,8 +138,8 @@ export default function IDE() {
             <Text as="p">
               Install the
               <Link href="https://atom.io/packages/atom-ide-ui">
-                {' '}
-                atom-ide-ui{' '}
+                {" "}
+                atom-ide-ui{" "}
               </Link>
               package. This will add Atom IDE&apos;s user interface.
             </Text>
@@ -188,7 +188,7 @@ export default function IDE() {
 
           <Text as="p">
             You can also
-            <Link href="/packages/search?q=IDE"> search </Link>
+            <Link href="https://atom.io/packages/search?q=IDE"> search </Link>
             for packages created by the Atom community.
           </Text>
         </Box>

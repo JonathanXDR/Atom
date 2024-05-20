@@ -1,17 +1,17 @@
-'use client';
-import CreditBadgeLegacy from '@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy';
-import { MarkGithubIcon } from '@primer/octicons-react';
-import { Box, Heading, Text } from '@primer/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import githubBottomStars from '/public/assets/svg/github-bottom-stars.svg';
-import githubBottom from '/public/assets/svg/github-bottom.svg';
-import githubOctonaut from '/public/assets/svg/github-octonaut.svg';
-import githubPlanet1 from '/public/assets/svg/github-planet-1.svg';
-import githubPlanet2 from '/public/assets/svg/github-planet-2.svg';
-import githubPlanet3 from '/public/assets/svg/github-planet-3.svg';
-import githubRocket from '/public/assets/svg/github-rocket.svg';
-import githubSwoosh from '/public/assets/svg/github-swoosh.svg';
+"use client";
+import CreditBadgeLegacy from "@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy";
+import { MarkGithubIcon } from "@primer/octicons-react";
+import { Box, Heading, Text } from "@primer/react";
+import Image from "next/image";
+import Link from "next/link";
+import githubBottomStars from "/public/assets/svg/github-bottom-stars.svg";
+import githubBottom from "/public/assets/svg/github-bottom.svg";
+import githubOctonaut from "/public/assets/svg/github-octonaut.svg";
+import githubPlanet1 from "/public/assets/svg/github-planet-1.svg";
+import githubPlanet2 from "/public/assets/svg/github-planet-2.svg";
+import githubPlanet3 from "/public/assets/svg/github-planet-3.svg";
+import githubRocket from "/public/assets/svg/github-rocket.svg";
+import githubSwoosh from "/public/assets/svg/github-swoosh.svg";
 
 export default function GitHub() {
   return (
@@ -191,7 +191,7 @@ export default function GitHub() {
             <Heading as="h2">Community packages</Heading>
             <Text as="p">
               We also would like to point out all the
-              <Link href="/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
+              <Link href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
                 amazing packages
               </Link>
               the Atom community has already created.

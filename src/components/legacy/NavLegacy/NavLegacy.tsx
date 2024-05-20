@@ -1,80 +1,102 @@
-'use client';
-import { LinkProps } from '@/types/LinkProps';
-import { RssIcon, SignInIcon } from '@primer/octicons-react';
-import { Box, Heading, Octicon } from '@primer/react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import './NavLegacy.css';
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
-interface NavLegacyProps {
-  nav: LinkProps[];
+export interface LinkProps {
+  link: {
+    title: string;
+    class?: string;
+    url: string;
+    leadingIcon?: string;
+    trailingIcon?: string;
+  };
 }
 
-const NavLegacy: React.FC<NavLegacyProps> = ({ nav }) => {
+const NavLegacy: React.FC = () => {
   const pathname = usePathname();
 
+  const data: LinkProps[] = [
+    { link: { title: "Packages", url: "/packages" } },
+    { link: { title: "Themes", url: "/themes" } },
+    { link: { title: "Documentation", url: "/docs" } },
+    { link: { title: "Blog", url: "/blog" } },
+    {
+      link: {
+        title: "Discussions",
+        url: "https://github.com/atom/atom/discussions",
+      },
+    },
+  ];
+
+  const displayConditions: { [key: string]: (path: string) => string } = {
+    Discussions: (path) =>
+      path.startsWith("/blog") ||
+      path.startsWith("/faq") ||
+      path.startsWith("/flight-manual")
+        ? "Discuss"
+        : "Discussions",
+  };
+
+  const shouldDisplayTitle = (title: string, path: string) => {
+    if (displayConditions[title]) {
+      return displayConditions[title](path);
+    }
+    return title;
+  };
+
+  const filteredData = data.map((item) => ({
+    ...item,
+    link: {
+      ...item.link,
+      title: shouldDisplayTitle(item.link.title, pathname),
+    },
+  }));
+
   return (
-    <Box
-      as="nav"
-      className="top-bar"
-      aria-label="Primary"
-      sx={{
-        position: 'relative',
-        zIndex: 9999,
-      }}
-    >
-      <Box className="wrapper no-pad">
-        <Box as="ul" className="navigation">
-          {pathname !== '/' && (
-            <Box as="li">
-              <Heading as="h1">
+    <nav className="top-bar" aria-label="Primary">
+      <div className={`wrapper ${pathname === "/blog" ? "" : "no-pad"}`}>
+        <ul className="navigation">
+          {pathname !== "/" && (
+            <li>
+              <h1>
                 <Link
                   href="/"
                   className="logo-small"
                   title="Atom: A hackable text editor for the 21st Century"
                 ></Link>
-              </Heading>
-            </Box>
-          )}
-          {nav.map((item: LinkProps) => (
-            <Box as="li" key={item.link.title}>
-              <Link
-                href={item.link.url}
-                className={pathname === item.link.url ? 'is-selected' : ''}
-              >
-                {item.link.title}
-              </Link>
-            </Box>
+              </h1>
+            </li>
+          )}{" "}
+          {filteredData.map((item: LinkProps) => (
+            <>
+              <li key={item.link.title}>
+                <Link
+                  href={item.link.url}
+                  className={pathname === item.link.url ? "is-selected" : ""}
+                >
+                  {item.link.title}
+                </Link>
+              </li>{" "}
+            </>
           ))}
-        </Box>
+        </ul>
 
-        <Box className="top-bar-right">
-          {pathname === '/blog' ? (
+        <div className="top-bar-right">
+          {pathname === "/blog" ? (
             <Link href="/blog/feed.xml" className="rss-link">
-              <Octicon
-                icon={RssIcon}
-                size={16}
-                sx={{
-                  padding: '0',
-                }}
-              />{' '}
-              Subscribe
+              <span className="octicon octicon-rss"></span> Subscribe
             </Link>
           ) : (
-            <Link href="/login">
-              <Octicon
-                icon={SignInIcon}
-                size={16}
-                sx={{
-                  padding: '0',
-                }}
-              />{' '}
-              Sign in
-            </Link>
+            !["/flight-manual", "/faq", "/blog"].includes(pathname) && (
+              <Link href="/login">
+                <span className="octicon octicon-log-in"></span> Sign in
+              </Link>
+            )
           )}
-        </Box>
-      </Box>
-    </Box>
+        </div>
+      </div>
+    </nav>
   );
 };
 

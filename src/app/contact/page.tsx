@@ -1,8 +1,8 @@
-'use client';
-import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
-import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import footer from '@/data/footer.json';
-import nav from '@/data/nav.json';
+"use client";
+import FooterLegacy from "@/components/legacy/FooterLegacy/FooterLegacy";
+import NavLegacy from "@/components/legacy/NavLegacy/NavLegacy";
+import footer from "@/data/footer.json";
+import nav from "@/data/nav.json";
 import {
   Box,
   Button,
@@ -11,8 +11,8 @@ import {
   PageLayout,
   TextInput,
   Textarea,
-} from '@primer/react';
-import Link from 'next/link';
+} from "@primer/react";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -30,7 +30,7 @@ export default function Contact() {
           padding="normal"
           width="full"
           sx={{
-            minHeight: '100vh',
+            minHeight: "100vh",
           }}
         >
           <Box className="columns">
@@ -46,9 +46,9 @@ export default function Contact() {
               </Heading>
               <Box
                 sx={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  width: '100%',
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
                 }}
               >
                 <FormControl
@@ -59,7 +59,7 @@ export default function Contact() {
                   <FormControl.Label>Name</FormControl.Label>
                   <TextInput
                     sx={{
-                      width: '100%',
+                      width: "100%",
                     }}
                   />
                 </FormControl>
@@ -72,7 +72,7 @@ export default function Contact() {
                   <FormControl.Label>Email</FormControl.Label>
                   <TextInput
                     sx={{
-                      width: '100%',
+                      width: "100%",
                     }}
                   />
                 </FormControl>
@@ -85,7 +85,7 @@ export default function Contact() {
                   <FormControl.Label>Subject</FormControl.Label>
                   <TextInput
                     sx={{
-                      width: '100%',
+                      width: "100%",
                     }}
                   />
                 </FormControl>
@@ -98,7 +98,7 @@ export default function Contact() {
                   <FormControl.Label>Message</FormControl.Label>
                   <Textarea
                     sx={{
-                      width: '100%',
+                      width: "100%",
                     }}
                   />
                 </FormControl>
@@ -106,7 +106,7 @@ export default function Contact() {
                 <FormControl
                   sx={{
                     marginBottom: 3,
-                    alignSelf: 'flex-end',
+                    alignSelf: "flex-end",
                   }}
                 >
                   <FormControl.Label visuallyHidden>
@@ -130,7 +130,7 @@ export default function Contact() {
               <Box as="table" className="contact-list">
                 <Box as="tbody">
                   <Box as="tr">
-                    <Box as="td" sx={{ paddingRight: '10px' }}>
+                    <Box as="td" sx={{ paddingRight: "10px" }}>
                       GitHub
                     </Box>
                     <Box as="td">
@@ -138,7 +138,7 @@ export default function Contact() {
                     </Box>
                   </Box>
                   <Box as="tr">
-                    <Box as="td" sx={{ paddingRight: '10px' }}>
+                    <Box as="td" sx={{ paddingRight: "10px" }}>
                       Twitter
                     </Box>
                     <Box as="td">
@@ -148,7 +148,7 @@ export default function Contact() {
                     </Box>
                   </Box>
                   <Box as="tr">
-                    <Box as="td" sx={{ paddingRight: '10px' }}>
+                    <Box as="td" sx={{ paddingRight: "10px" }}>
                       Github Discussions
                     </Box>
                     <Box as="td">

@@ -1,5 +1,5 @@
-import { HighlightType } from './Highlight';
-import { LinkType } from './Link';
+import { HighlightType } from "./Highlight";
+import { LinkType } from "./Link";
 
 export type TitleType = {
   text: string;

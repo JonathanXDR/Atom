@@ -1,16 +1,16 @@
-import { BannerProps } from '@/types/Hero/BannerProps';
-import { DownloadProps } from '@/types/Hero/DownloadProps';
-import { MetaProps } from '@/types/Hero/MetaProps';
-import { TagListProps } from '@/types/Hero/TagListProps';
-import { Box } from '@primer/react';
-import Image from 'next/image';
-import HeroDownloadLegacy from '../HeroDownloadLegacy/HeroDownloadLegacy';
-import HeroLogoLegacy from '../HeroLogoLegacy/HeroLogoLegacy';
-import HeroMetaLegacy from '../HeroMetaLegacy/HeroMetaLegacy';
-import SunsetBannerLegacy from '../SunsetBannerLegacy/SunsetBannerLegacy';
-import TagListLegacy from '../TagListLegacy/TagListLegacy';
-import './HeroLegacy.css';
-import octonaut from '/public/assets/svg/octonaut.svg';
+import { BannerProps } from "@/types/Hero/BannerProps";
+import { DownloadProps } from "@/types/Hero/DownloadProps";
+import { MetaProps } from "@/types/Hero/MetaProps";
+import { TagListProps } from "@/types/Hero/TagListProps";
+import { Box } from "@primer/react";
+import Image from "next/image";
+import HeroDownloadLegacy from "../HeroDownloadLegacy/HeroDownloadLegacy";
+import HeroLogoLegacy from "../HeroLogoLegacy/HeroLogoLegacy";
+import HeroMetaLegacy from "../HeroMetaLegacy/HeroMetaLegacy";
+import SunsetBannerLegacy from "../SunsetBannerLegacy/SunsetBannerLegacy";
+import TagListLegacy from "../TagListLegacy/TagListLegacy";
+import "./HeroLegacy.css";
+import octonaut from "/public/assets/svg/octonaut.svg";
 
 interface HeroLegacyProps {
   banner?: BannerProps;

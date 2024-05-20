@@ -1,4 +1,4 @@
-import { LinkType } from './Link';
+import { LinkType } from "./Link";
 
 export type ImageType = {
   url: string;

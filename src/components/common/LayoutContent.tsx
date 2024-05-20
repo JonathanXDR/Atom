@@ -1,20 +1,20 @@
-import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
-import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import VersionPickerLegacy from '@/components/legacy/VersionPickerLegacy/VersionPickerLegacy';
-import footer from '@/data/footer.json';
-import nav from '@/data/nav.json';
-import versions from '@/data/versions.json';
-import '@primer/css/index.scss';
-import { DeviceDesktopIcon, PencilIcon } from '@primer/octicons-react';
+import FooterLegacy from "@/components/legacy/FooterLegacy/FooterLegacy";
+import NavLegacy from "@/components/legacy/NavLegacy/NavLegacy";
+import VersionPickerLegacy from "@/components/legacy/VersionPickerLegacy/VersionPickerLegacy";
+import footer from "@/data/footer.json";
+import nav from "@/data/nav.json";
+import versions from "@/data/versions.json";
+import "@primer/css/index.scss";
+import { DeviceDesktopIcon, PencilIcon } from "@primer/octicons-react";
 import {
-    Box,
-    FormControl,
-    Heading,
-    PageLayout,
-    TextInput,
-} from '@primer/react';
-import '@primer/react-brand/lib/css/main.css';
-import Link from 'next/link';
+  Box,
+  FormControl,
+  Heading,
+  PageLayout,
+  TextInput,
+} from "@primer/react";
+import "@primer/react-brand/lib/css/main.css";
+import Link from "next/link";
 
 const LayoutContent = ({
   pathname,
@@ -28,7 +28,7 @@ const LayoutContent = ({
     <PageLayout containerWidth="full" padding="normal">
       <PageLayout.Header
         sx={
-          pathname !== '/flight-manual'
+          pathname !== "/flight-manual"
             ? { marginBottom: 6 }
             : { marginBottom: 3 }
         }
@@ -36,22 +36,22 @@ const LayoutContent = ({
         <Box
           sx={{
             marginTop: 3,
-            display: 'flex',
-            alignItems: 'center',
+            display: "flex",
+            alignItems: "center",
             gap: 4,
-            flex: '1 1 100%',
-            flexWrap: 'wrap',
-            maxWidth: '100%',
+            flex: "1 1 100%",
+            flexWrap: "wrap",
+            maxWidth: "100%",
           }}
         >
           <FormControl
             sx={{
-              width: 'var(--pane-width)',
-              overflow: 'auto',
-              '--pane-width': '320px',
-              '--pane-min-width': '256px',
-              '--pane-max-width': 'calc(100vw - var(--pane-max-width-diff))',
-              '--pane-max-width-diff': '959px',
+              width: "var(--pane-width)",
+              overflow: "auto",
+              "--pane-width": "320px",
+              "--pane-min-width": "256px",
+              "--pane-max-width": "calc(100vw - var(--pane-max-width-diff))",
+              "--pane-max-width-diff": "959px",
             }}
           >
             <FormControl.Label visuallyHidden>Versions</FormControl.Label>
@@ -60,7 +60,7 @@ const LayoutContent = ({
 
           <FormControl
             sx={{
-              width: 'auto',
+              width: "auto",
               flexBasis: 0,
               flexGrow: 1,
               flexShrink: 1,
@@ -73,7 +73,7 @@ const LayoutContent = ({
               size="large"
               placeholder="Search the Flight Manual"
               sx={{
-                width: '100%',
+                width: "100%",
               }}
             />
           </FormControl>
@@ -81,21 +81,21 @@ const LayoutContent = ({
         <Box
           className="autocomplete-results"
           sx={{
-            display: 'none',
+            display: "none",
           }}
         >
           <Box className="result-group"></Box>
         </Box>
       </PageLayout.Header>
       <PageLayout.Content
-        padding={pathname !== '/flight-manual' ? 'none' : 'normal'}
-        width={pathname !== '/flight-manual' ? 'large' : 'full'}
+        padding={pathname !== "/flight-manual" ? "none" : "normal"}
+        width={pathname !== "/flight-manual" ? "large" : "full"}
         sx={{
-          paddingTop: '0 !important',
+          paddingTop: "0 !important",
         }}
       >
         <Box className="layout-toc platform-switch platform-mac documents">
-          {pathname !== '/flight-manual' && (
+          {pathname !== "/flight-manual" && (
             <Heading as="h1" className="document-title">
               <Box id="platform-nav">
                 <DeviceDesktopIcon />
@@ -141,7 +141,7 @@ const LayoutContent = ({
         </Box>
       </PageLayout.Content>
 
-      {pathname !== '/flight-manual' && (
+      {pathname !== "/flight-manual" && (
         <PageLayout.Pane
           sticky
           resizable
@@ -164,7 +164,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/getting-started/sections/why-atom">
@@ -176,7 +176,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/getting-started/sections/installing-atom">
@@ -188,7 +188,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/getting-started/sections/atom-basics">
@@ -200,7 +200,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/getting-started/sections/summary">
@@ -215,16 +215,14 @@ const LayoutContent = ({
               fontSize: 2,
             }}
           >
-            <Link href="/flight-manual/using-atom">
-              Chapter 2: Using Atom
-            </Link>
+            <Link href="/flight-manual/using-atom">Chapter 2: Using Atom</Link>
           </Heading>
           <Box as="ul">
             <Box
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/atom-packages">
@@ -236,7 +234,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/moving-in-atom">
@@ -248,7 +246,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/atom-selections">
@@ -260,7 +258,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/editing-and-deleting-text">
@@ -272,7 +270,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/find-and-replace">
@@ -284,7 +282,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/snippets">
@@ -296,7 +294,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/autocomplete">
@@ -308,7 +306,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/folding">
@@ -320,19 +318,17 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
-              <Link href="/flight-manual/using-atom/sections/panes">
-                Panes
-              </Link>
+              <Link href="/flight-manual/using-atom/sections/panes">Panes</Link>
             </Box>
 
             <Box
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/pending-pane-items">
@@ -344,7 +340,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/grammar">
@@ -356,7 +352,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/version-control-in-atom">
@@ -368,7 +364,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/github-package">
@@ -380,7 +376,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/writing-in-atom">
@@ -392,7 +388,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/basic-customization">
@@ -404,7 +400,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/using-atom/sections/summary">
@@ -428,7 +424,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/tools-of-the-trade">
@@ -440,7 +436,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/the-init-file">
@@ -452,7 +448,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/package-word-count">
@@ -464,7 +460,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/package-modifying-text">
@@ -476,7 +472,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/package-active-editor-info">
@@ -488,7 +484,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/creating-a-theme">
@@ -500,7 +496,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/creating-a-grammar">
@@ -512,7 +508,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/creating-a-legacy-textmate-grammar">
@@ -524,7 +520,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/publishing">
@@ -536,7 +532,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/iconography">
@@ -548,7 +544,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/debugging">
@@ -560,7 +556,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/writing-specs">
@@ -572,7 +568,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/handling-uris">
@@ -584,7 +580,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/cross-platform-compatibility">
@@ -596,7 +592,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/converting-from-textmate">
@@ -608,7 +604,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/hacking-on-atom-core">
@@ -620,7 +616,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/contributing-to-official-atom-packages">
@@ -632,7 +628,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/creating-a-fork-of-a-core-package-in-atom-atom">
@@ -644,7 +640,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/maintaining-a-fork-of-a-core-package-in-atom-atom">
@@ -656,7 +652,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/hacking-atom/sections/summary">
@@ -680,7 +676,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/configuration-api">
@@ -692,7 +688,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/keymaps-in-depth">
@@ -704,7 +700,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors">
@@ -716,7 +712,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/serialization-in-atom">
@@ -728,7 +724,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/developing-node-modules">
@@ -740,7 +736,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/interacting-with-other-packages-via-services">
@@ -752,7 +748,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/maintaining-your-packages">
@@ -764,7 +760,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/how-atom-uses-chromium-snapshots">
@@ -776,7 +772,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/behind-atom/sections/summary">
@@ -791,9 +787,7 @@ const LayoutContent = ({
               fontSize: 2,
             }}
           >
-            <Link href="/flight-manual/api/v1.57.0/">
-              Reference: API
-            </Link>
+            <Link href="/flight-manual/api/v1.57.0/">Reference: API</Link>
           </Heading>
           <Box as="ul">
             <Box as="li">
@@ -821,9 +815,7 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Color/">
-                Color
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Color/">Color</Link>
             </Box>
 
             <Box as="li">
@@ -839,9 +831,7 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Config/">
-                Config
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Config/">Config</Link>
             </Box>
 
             <Box as="li">
@@ -851,9 +841,7 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Cursor/">
-                Cursor
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Cursor/">Cursor</Link>
             </Box>
 
             <Box as="li">
@@ -893,21 +881,15 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Dock/">
-                Dock
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Dock/">Dock</Link>
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Emitter/">
-                Emitter
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Emitter/">Emitter</Link>
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/File/">
-                File
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/File/">File</Link>
             </Box>
 
             <Box as="li">
@@ -917,9 +899,7 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Grammar/">
-                Grammar
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Grammar/">Grammar</Link>
             </Box>
 
             <Box as="li">
@@ -929,9 +909,7 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Gutter/">
-                Gutter
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Gutter/">Gutter</Link>
             </Box>
 
             <Box as="li">
@@ -977,9 +955,7 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Package/">
-                Package
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Package/">Package</Link>
             </Box>
 
             <Box as="li">
@@ -989,15 +965,11 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Pane/">
-                Pane
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Pane/">Pane</Link>
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Panel/">
-                Panel
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Panel/">Panel</Link>
             </Box>
 
             <Box as="li">
@@ -1007,21 +979,15 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Point/">
-                Point
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Point/">Point</Link>
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Project/">
-                Project
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Project/">Project</Link>
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Range/">
-                Range
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Range/">Range</Link>
             </Box>
 
             <Box as="li">
@@ -1043,9 +1009,7 @@ const LayoutContent = ({
             </Box>
 
             <Box as="li">
-              <Link href="/flight-manual/api/v1.57.0/Task/">
-                Task
-              </Link>
+              <Link href="/flight-manual/api/v1.57.0/Task/">Task</Link>
             </Box>
 
             <Box as="li">
@@ -1097,16 +1061,14 @@ const LayoutContent = ({
               fontSize: 2,
             }}
           >
-            <Link href="/flight-manual/resources">
-              Appendix A: Resources
-            </Link>
+            <Link href="/flight-manual/resources">Appendix A: Resources</Link>
           </Heading>
           <Box as="ul">
             <Box
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/resources/sections/glossary">
@@ -1121,16 +1083,14 @@ const LayoutContent = ({
               fontSize: 2,
             }}
           >
-            <Link href="/flight-manual/faq">
-              Appendix B: FAQ
-            </Link>
+            <Link href="/flight-manual/faq">Appendix B: FAQ</Link>
           </Heading>
           <Box as="ul">
             <Box
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/is-atom-open-source">
@@ -1142,7 +1102,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/what-does-atom-cost">
@@ -1154,7 +1114,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/what-platforms-does-atom-run-on">
@@ -1166,7 +1126,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-can-i-contribute-to-atom">
@@ -1178,7 +1138,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/why-does-atom-collect-usage-data">
@@ -1190,7 +1150,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/atom-in-the-cloud">
@@ -1202,7 +1162,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/what-s-the-difference-between-an-ide-and-an-editor">
@@ -1214,7 +1174,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-can-i-tell-if-subpixel-antialiasing-is-working">
@@ -1226,7 +1186,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/why-is-atom-deleting-trailing-whitespace-why-is-there-a-newline-at-the-end-of-the-file">
@@ -1239,7 +1199,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/what-does-safe-mode-do">
@@ -1251,7 +1211,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/i-have-a-question-about-a-specific-atom-community-package-where-is-the-best-place-to-ask-it">
@@ -1264,7 +1224,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/i-m-using-an-international-keyboard-and-keys-that-use-altgr-or-ctrl-alt-aren-t-working">
@@ -1277,7 +1237,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/i-m-having-a-problem-with-julia-what-do-i-do">
@@ -1289,7 +1249,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/i-m-getting-an-error-about-a-self-signed-certificate-what-do-i-do">
@@ -1302,7 +1262,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/i-m-having-a-problem-with-platformio-what-do-i-do">
@@ -1314,7 +1274,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-do-i-make-atom-recognize-a-file-with-extension-x-as-language-y">
@@ -1327,7 +1287,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-do-i-make-the-welcome-screen-stop-showing-up">
@@ -1339,7 +1299,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-do-i-preview-web-page-changes-automatically">
@@ -1351,7 +1311,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-do-i-accept-input-from-my-program-or-script-when-using-the-script-package">
@@ -1364,7 +1324,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/i-am-unable-to-update-to-the-latest-version-of-atom-on-macos-how-do-i-fix-this">
@@ -1377,7 +1337,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/i-m-trying-to-change-my-syntax-colors-from-styles-less-but-it-isn-t-working">
@@ -1390,7 +1350,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-do-i-build-or-execute-code-i-ve-written-in-atom">
@@ -1402,7 +1362,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-do-i-uninstall-atom-on-macos">
@@ -1414,7 +1374,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/macos-mojave-font-rendering-change">
@@ -1426,7 +1386,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/why-does-macos-say-that-atom-wants-to-access-my-calendar-contacts-photos-etc">
@@ -1439,7 +1399,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-do-i-turn-on-line-wrap">
@@ -1451,7 +1411,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/the-menu-bar-disappeared-how-do-i-get-it-back">
@@ -1463,7 +1423,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/how-do-i-use-a-newline-in-the-result-of-find-and-replace">
@@ -1475,7 +1435,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/faq/sections/what-is-this-line-on-the-right-in-the-editor-view">
@@ -1490,16 +1450,14 @@ const LayoutContent = ({
               fontSize: 2,
             }}
           >
-            <Link href="/flight-manual/shadow-dom">
-              Appendix C: Shadow DOM
-            </Link>
+            <Link href="/flight-manual/shadow-dom">Appendix C: Shadow DOM</Link>
           </Heading>
           <Box as="ul">
             <Box
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/shadow-dom/sections/removing-shadow-dom-styles">
@@ -1523,7 +1481,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/upgrading-to-1-0-apis/sections/upgrading-your-package">
@@ -1535,7 +1493,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/upgrading-to-1-0-apis/sections/upgrading-your-ui-theme-or-package-selectors">
@@ -1547,7 +1505,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/upgrading-to-1-0-apis/sections/upgrading-your-syntax-theme">
@@ -1571,7 +1529,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/atom-server-side-apis/sections/atom-package-server-api">
@@ -1583,7 +1541,7 @@ const LayoutContent = ({
               as="li"
               className="unselected"
               sx={{
-                padding: '1px 1px 1px 15px',
+                padding: "1px 1px 1px 15px",
               }}
             >
               <Link href="/flight-manual/atom-server-side-apis/sections/atom-update-server-api">

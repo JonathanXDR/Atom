@@ -1,4 +1,4 @@
-import { LinkType } from './common/Link';
+import { LinkType } from "./common/Link";
 
 export interface LinkProps {
   link: LinkType;

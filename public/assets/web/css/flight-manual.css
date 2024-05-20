@@ -6,12 +6,12 @@
   outline: 0;
 }
 @font-face {
-  font-family: 'octicons';
+  font-family: "octicons";
   src:
-    url(../octicons/octicons.eot#iefix) format('embedded-opentype'),
-    url(../octicons/octicons.woff) format('woff'),
-    url(../octicons/octicons.ttf) format('truetype'),
-    url(../svg/octicons.svg#octicons) format('svg');
+    url(../octicons/octicons.eot#iefix) format("embedded-opentype"),
+    url(../octicons/octicons.woff) format("woff"),
+    url(../octicons/octicons.ttf) format("truetype"),
+    url(../svg/octicons.svg#octicons) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,12 +32,12 @@
   font-size: 32px;
 }
 @font-face {
-  font-family: 'octicons';
+  font-family: "octicons";
   src:
-    url(../octicons/octicons.eot#iefix) format('embedded-opentype'),
-    url(../octicons/octicons.woff) format('woff'),
-    url(../octicons/octicons.ttf) format('truetype'),
-    url(../svg/octicons.svg#octicons) format('svg');
+    url(../octicons/octicons.eot#iefix) format("embedded-opentype"),
+    url(../octicons/octicons.woff) format("woff"),
+    url(../octicons/octicons.ttf) format("truetype"),
+    url(../svg/octicons.svg#octicons) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -824,9 +824,9 @@ input::-webkit-outer-spin-button {
     freesans,
     clean,
     sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol';
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -3259,7 +3259,7 @@ kbd {
   padding: 3px 5px;
   font:
     13px Consolas,
-    'Liberation Mono',
+    "Liberation Mono",
     Menlo,
     Courier,
     monospace;

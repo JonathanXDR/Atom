@@ -1,10 +1,10 @@
 /* eslint-disable primer-react/no-system-props */
-import { CalendarIcon, CopilotIcon } from '@primer/octicons-react';
-import { Avatar, Box, Text } from '@primer/react';
-import { Pillar } from '@primer/react-brand';
-import Image from 'next/image';
-import React from 'react';
-import atomNightlyHeading from '/public/assets/png/atom-nightly-heading.png';
+import { CalendarIcon, CopilotIcon } from "@primer/octicons-react";
+import { Avatar, Box, Text } from "@primer/react";
+import { Pillar } from "@primer/react-brand";
+import Image from "next/image";
+import React from "react";
+import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
 
 const PillarItem: React.FC = () => {
   return (
@@ -15,15 +15,15 @@ const PillarItem: React.FC = () => {
         <Box
           sx={{
             marginBottom: 4,
-            display: 'flex',
-            alignItems: 'center',
+            display: "flex",
+            alignItems: "center",
             gap: 2,
           }}
         >
           <Box
             sx={{
-              display: 'flex',
-              alignItems: 'center',
+              display: "flex",
+              alignItems: "center",
               gap: 1,
             }}
           >
@@ -31,13 +31,13 @@ const PillarItem: React.FC = () => {
           </Box>
           <Box
             sx={{
-              display: 'flex',
-              alignItems: 'center',
+              display: "flex",
+              alignItems: "center",
               gap: 1,
             }}
           >
             <Avatar square src="https://avatars.githubusercontent.com/atom" />
-            <Text sx={{ color: 'fg.muted' }}>Atom</Text>
+            <Text sx={{ color: "fg.muted" }}>Atom</Text>
           </Box>
         </Box>
         <Image src={atomNightlyHeading} alt="Atom Nightly" />

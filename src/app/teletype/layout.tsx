@@ -1,48 +1,48 @@
-import '@primer/css/index.scss';
-import '@primer/react-brand/lib/css/main.css';
-import { Metadata } from 'next';
-import '../tailwind.css';
-import './main.css';
-import '/public/assets/css/teletype.css';
+import "@primer/css/index.scss";
+import "@primer/react-brand/lib/css/main.css";
+import { Metadata } from "next";
+import "../tailwind.css";
+import "./main.css";
+import "/public/assets/css/teletype.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://atom.io/teletype'),
-  title: 'Teletype for Atom',
+  metadataBase: new URL("https://atom.io/teletype"),
+  title: "Teletype for Atom",
   description:
-    'Teletype for Atom lets developers share their workspace with team members and collaborate on code in real time.',
+    "Teletype for Atom lets developers share their workspace with team members and collaborate on code in real time.",
   openGraph: {
-    url: '/teletype',
-    siteName: 'Atom',
-    type: 'website',
-    title: 'Code together in real time in Atom',
+    url: "/teletype",
+    siteName: "Atom",
+    type: "website",
+    title: "Code together in real time in Atom",
     description:
-      'Teletype for Atom lets developers share their workspace with team members and collaborate on code in real time.',
+      "Teletype for Atom lets developers share their workspace with team members and collaborate on code in real time.",
     images: [
       {
-        url: '/assets/png/teletype.png',
+        url: "/assets/png/teletype.png",
       },
     ],
   },
   authors: [
     {
-      name: 'GitHub',
-      url: 'https://github.com',
+      name: "GitHub",
+      url: "https://github.com",
     },
     {
-      name: 'Jonathan Russ',
-      url: 'https://jonathan-russ.com',
+      name: "Jonathan Russ",
+      url: "https://jonathan-russ.com",
     },
   ],
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
   alternates: {
-    canonical: '/',
+    canonical: "/",
     types: {
-      'application/atom+xml': [
+      "application/atom+xml": [
         {
-          url: '/packages.atom',
-          title: 'Atom Packages and Themes',
+          url: "/packages.atom",
+          title: "Atom Packages and Themes",
         },
       ],
     },

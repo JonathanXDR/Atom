@@ -1,10 +1,10 @@
-'use server';
-import fs from 'fs';
-import imageSize from 'image-size';
-import path from 'path';
+"use server";
+import fs from "fs";
+import imageSize from "image-size";
+import path from "path";
 
 export const getImageDimensions = (imagePath: string) => {
-  const fullPath = path.join(process.cwd(), 'public', imagePath);
+  const fullPath = path.join(process.cwd(), "public", imagePath);
   const buffer = fs.readFileSync(fullPath);
   const dimensions = imageSize(buffer);
 

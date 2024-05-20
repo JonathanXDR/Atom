@@ -1,4 +1,4 @@
-import { ImageType } from './Image';
+import { ImageType } from "./Image";
 
 export type UserType = {
   username: string;

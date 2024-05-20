@@ -1,12 +1,12 @@
-'use client';
-import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
-import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import PostLegacy from '@/components/legacy/PostLegacy/PostLegacy';
-import footer from '@/data/footer.json';
-import nav from '@/data/nav.json';
-import posts from '@/data/posts.json';
-import { CalendarIcon } from '@primer/octicons-react';
-import { Box, Button, PageLayout, Pagination } from '@primer/react';
+"use client";
+import FooterLegacy from "@/components/legacy/FooterLegacy/FooterLegacy";
+import NavLegacy from "@/components/legacy/NavLegacy/NavLegacy";
+import PostLegacy from "@/components/legacy/PostLegacy/PostLegacy";
+import footer from "@/data/footer.json";
+import nav from "@/data/nav.json";
+import posts from "@/data/posts.json";
+import { CalendarIcon } from "@primer/octicons-react";
+import { Box, Button, PageLayout, Pagination } from "@primer/react";
 
 export default function Blog() {
   return (
@@ -28,10 +28,10 @@ export default function Blog() {
 
           <Box
             sx={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              flexWrap: 'wrap',
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              flexWrap: "wrap",
               marginBottom: 4,
             }}
           >
@@ -47,7 +47,7 @@ export default function Blog() {
               variant="invisible"
               leadingVisual={CalendarIcon}
               sx={{
-                color: 'fg.muted',
+                color: "fg.muted",
               }}
             >
               Archive

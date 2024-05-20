@@ -1,13 +1,13 @@
-'use client';
-import CreditBadgeLegacy from '@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy';
-import { BroadcastIcon, PlayIcon } from '@primer/octicons-react';
-import { Box, Heading, Text } from '@primer/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import realTimePortals from '/public/assets/svg/real-time-portals.svg';
-import realTimePrivacy1 from '/public/assets/svg/real-time-privacy-1.svg';
-import realTimePrivacy2 from '/public/assets/svg/real-time-privacy-2.svg';
+"use client";
+import CreditBadgeLegacy from "@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy";
+import { BroadcastIcon, PlayIcon } from "@primer/octicons-react";
+import { Box, Heading, Text } from "@primer/react";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import realTimePortals from "/public/assets/svg/real-time-portals.svg";
+import realTimePrivacy1 from "/public/assets/svg/real-time-privacy-1.svg";
+import realTimePrivacy2 from "/public/assets/svg/real-time-privacy-2.svg";
 
 export default function Teletype() {
   const videoRef = React.useRef<HTMLVideoElement>(null);
@@ -18,7 +18,7 @@ export default function Teletype() {
     if (videoRef.current) {
       videoRef.current.play();
       videoRef.current.controls = true;
-      videoHudRef.current?.classList.add('is-hidden');
+      videoHudRef.current?.classList.add("is-hidden");
     }
   };
 
@@ -63,7 +63,7 @@ export default function Teletype() {
           <Text as="p">
             <strong>
               Teletype<sup>(beta)</sup> for Atom
-            </strong>{' '}
+            </strong>{" "}
             lets developers share their workspace with team members and
             collaborate on code in real time.
           </Text>
@@ -88,14 +88,14 @@ export default function Teletype() {
             <Box ref={videoHudRef} className="video-hud">
               <button
                 ref={videoButtonRef}
-                className="video-play-button mega-octicon octicon-playback-play"
+                className="video-play-button mega-octicon"
                 aria-label="Play video"
                 onClick={playVideo}
                 style={{
-                  border: 'none',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
+                  border: "none",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
                 <PlayIcon size={125} />
@@ -128,7 +128,7 @@ export default function Teletype() {
               className="img"
               src={realTimePortals}
               alt="real-time-portals"
-              style={{ width: '100%', height: '100%' }}
+              style={{ width: "100%", height: "100%" }}
             />
           </Text>
         </Box>
@@ -144,7 +144,7 @@ export default function Teletype() {
                   className="privacy-img"
                   src={realTimePrivacy1}
                   alt="real-time-privacy-1"
-                  style={{ width: '100%', height: '100%' }}
+                  style={{ width: "100%", height: "100%" }}
                 />
               </Text>
               <Text as="p">
@@ -158,7 +158,7 @@ export default function Teletype() {
                   className="privacy-img"
                   src={realTimePrivacy2}
                   alt="real-time-privacy-2"
-                  style={{ width: '100%', height: '100%' }}
+                  style={{ width: "100%", height: "100%" }}
                 />
               </Text>
               <Text as="p">
@@ -186,12 +186,12 @@ export default function Teletype() {
           </Text>
           <Heading as="h4">2. Install Teletype for Atom</Heading>
           <Text as="p">
-            Install the{' '}
+            Install the{" "}
             <Link href="atom://settings-view/show-package?package=teletype">
-              teletype{' '}
+              teletype{" "}
             </Link>
             package to start collaborating today. If you need help, take a look
-            at{' '}
+            at{" "}
             <Link href="/flight-manual/using-atom/sections/atom-packages/">
               how to install Atom packages
             </Link>
@@ -219,17 +219,17 @@ export default function Teletype() {
         <Box className="wrapper">
           <Heading as="h2">Feedback</Heading>
           <Text as="p">
-            We welcome your{' '}
+            We welcome your{" "}
             <Link href="https://github.com/atom/atom/discussions">
-              feedback{' '}
+              feedback{" "}
             </Link>
-            on this beta release. If you run into any problems, please{' '}
+            on this beta release. If you run into any problems, please{" "}
             <Link href="https://github.com/atom/teletype/issues">
-              open an issue{' '}
+              open an issue{" "}
             </Link>
-            or take a look at the{' '}
+            or take a look at the{" "}
             <Link href="https://github.com/atom/teletype/blob/master/CONTRIBUTING.md">
-              contribution guide{' '}
+              contribution guide{" "}
             </Link>
             and start contributing.
           </Text>

@@ -1,48 +1,48 @@
-import '@primer/css/index.scss';
-import '@primer/react-brand/lib/css/main.css';
-import { Metadata } from 'next';
-import '../tailwind.css';
-import './main.css';
-import '/public/assets/css/github.css';
+import "@primer/css/index.scss";
+import "@primer/react-brand/lib/css/main.css";
+import { Metadata } from "next";
+import "../tailwind.css";
+import "./main.css";
+import "/public/assets/css/github.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://atom.io/github'),
-  title: 'Github for Atom',
+  metadataBase: new URL("https://atom.io/github"),
+  title: "Github for Atom",
   description:
-    'Create new branches, stage and commit, push and pull, resolve merge conflicts, view pull requests and more—all from within your editor.',
+    "Create new branches, stage and commit, push and pull, resolve merge conflicts, view pull requests and more—all from within your editor.",
   openGraph: {
-    url: '/github',
-    siteName: 'Atom',
-    type: 'website',
-    title: 'The Git and GitHub integration right inside your editor!',
+    url: "/github",
+    siteName: "Atom",
+    type: "website",
+    title: "The Git and GitHub integration right inside your editor!",
     description:
-      'Create new branches, stage and commit, push and pull, resolve merge conflicts, view pull requests and more—all from within your editor.',
+      "Create new branches, stage and commit, push and pull, resolve merge conflicts, view pull requests and more—all from within your editor.",
     images: [
       {
-        url: '/assets/png/github.png',
+        url: "/assets/png/github.png",
       },
     ],
   },
   authors: [
     {
-      name: 'GitHub',
-      url: 'https://github.com',
+      name: "GitHub",
+      url: "https://github.com",
     },
     {
-      name: 'Jonathan Russ',
-      url: 'https://jonathan-russ.com',
+      name: "Jonathan Russ",
+      url: "https://jonathan-russ.com",
     },
   ],
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
   alternates: {
-    canonical: '/',
+    canonical: "/",
     types: {
-      'application/atom+xml': [
+      "application/atom+xml": [
         {
-          url: '/packages.atom',
-          title: 'Atom Packages and Themes',
+          url: "/packages.atom",
+          title: "Atom Packages and Themes",
         },
       ],
     },

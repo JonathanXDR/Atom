@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from '@primer/react';
+import { Box, Heading, Text } from "@primer/react";
 
 export default function Error() {
   return (

@@ -1,10 +1,10 @@
-import { getImageDimensions } from '@/helpers/imageHelper';
-import { injectTextSegments } from '@/helpers/textHelper';
-import { Box, Heading, Link, Text } from '@primer/react';
-import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-import { RiverProps } from '../../../types/RiverProps';
-import './RiverLegacy.css';
+import { getImageDimensions } from "@/helpers/imageHelper";
+import { injectTextSegments } from "@/helpers/textHelper";
+import { Box, Heading, Link, Text } from "@primer/react";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { RiverProps } from "../../../types/RiverProps";
+import "./RiverLegacy.css";
 
 interface RiverLegacyProps {
   river: RiverProps;

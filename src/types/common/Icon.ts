@@ -1,3 +1,3 @@
-import { OcticonProps } from '@primer/react';
+import { OcticonProps } from "@primer/react";
 
-export type IconType = OcticonProps['icon'] | string;
+export type IconType = OcticonProps["icon"] | string;

@@ -1,11 +1,11 @@
-'use client';
-import FooterLegacy from '@/components/legacy/FooterLegacy/FooterLegacy';
-import NavLegacy from '@/components/legacy/NavLegacy/NavLegacy';
-import footer from '@/data/footer.json';
-import nav from '@/data/nav.json';
-import { LinkIcon } from '@primer/octicons-react';
-import { Box, Heading, PageLayout, Text } from '@primer/react';
-import Link from 'next/link';
+"use client";
+import FooterLegacy from "@/components/legacy/FooterLegacy/FooterLegacy";
+import NavLegacy from "@/components/legacy/NavLegacy/NavLegacy";
+import footer from "@/data/footer.json";
+import nav from "@/data/nav.json";
+import { LinkIcon } from "@primer/octicons-react";
+import { Box, Heading, PageLayout, Text } from "@primer/react";
+import Link from "next/link";
 
 export default function Releases() {
   return (
@@ -48,7 +48,7 @@ export default function Releases() {
               <Text as="p">
                 You can learn more about the official sunset of Atom in our
                 <Link href="https://github.blog/2022-06-08-sunsetting-atom/">
-                  {' '}
+                  {" "}
                   blog post
                 </Link>
                 .

@@ -1,6 +1,6 @@
-import { injectTextSegments } from '@/helpers/textHelper';
-import { PackageCardProps } from '@/types/PackageCardProps';
-import { DownloadIcon, StarIcon, XIcon } from '@primer/octicons-react';
+import { injectTextSegments } from "@/helpers/textHelper";
+import { PackageCardProps } from "@/types/PackageCardProps";
+import { DownloadIcon, StarIcon, XIcon } from "@primer/octicons-react";
 import {
   Avatar,
   Box,
@@ -13,8 +13,8 @@ import {
   Text,
   Token,
   Tooltip,
-} from '@primer/react';
-import React, { useState } from 'react';
+} from "@primer/react";
+import React, { useState } from "react";
 
 interface PackageCardLegacyProps {
   packageCard: PackageCardProps;
@@ -26,7 +26,7 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
   const [open, setOpen] = useState(false);
   const description = injectTextSegments(
     packageCard.description.paragraphs,
-    false
+    false,
   );
 
   const DownloadPopover = () => {
@@ -40,7 +40,7 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
       >
         <Popover.Content
           sx={{
-            width: '260px',
+            width: "260px",
           }}
         >
           <Heading as="h4" sx={{ fontSize: 2 }}>
@@ -52,7 +52,7 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
             aria-label="Close"
             onClick={() => setOpen(false)}
             sx={{
-              position: 'absolute',
+              position: "absolute",
               top: 2,
               right: 2,
             }}
@@ -60,7 +60,7 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
           <Text
             as="p"
             sx={{
-              marginBlock: '1em',
+              marginBlock: "1em",
             }}
           >
             If nothing happens,
@@ -76,22 +76,22 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
     <>
       <Box
         sx={{
-          position: 'relative',
-          border: '1px solid',
-          borderColor: 'border.default',
-          borderRadius: '0.25rem',
+          position: "relative",
+          border: "1px solid",
+          borderColor: "border.default",
+          borderRadius: "0.25rem",
           // marginY: 4,
-          backgroundColor: 'canvas.subtle',
-          boxShadow: 'shadow.small',
+          backgroundColor: "canvas.subtle",
+          boxShadow: "shadow.small",
         }}
       >
         <Box
           sx={{
-            width: '100%',
-            height: '100%',
-            display: 'flex',
-            justifyContent: 'space-between',
-            flexDirection: 'column',
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
           }}
         >
           <Box
@@ -103,30 +103,30 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
             <Heading
               as="h4"
               sx={{
-                fontSize: '1.25rem',
-                color: 'fg.muted',
-                fontWeight: 'normal',
-                lineHeight: '1.25',
+                fontSize: "1.25rem",
+                color: "fg.muted",
+                fontWeight: "normal",
+                lineHeight: "1.25",
               }}
             >
               <Link
                 href={`/packages/${packageCard.title.text}`}
                 sx={{
-                  fontWeight: 'bold',
-                  wordBreak: 'break-word',
+                  fontWeight: "bold",
+                  wordBreak: "break-word",
                 }}
               >
                 {packageCard.title.text}
-              </Link>{' '}
+              </Link>{" "}
             </Heading>
             <Text
               as="p"
               sx={{
-                color: 'fg.muted',
+                color: "fg.muted",
                 marginBottom: 0,
-                whiteSpace: 'nowrap',
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
               }}
             >
               {description}
@@ -134,20 +134,20 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
             <Box
               sx={{
                 marginTop: 2,
-                display: 'flex',
+                display: "flex",
                 gap: 1,
               }}
             >
               <Box
                 sx={{
-                  display: 'flex',
+                  display: "flex",
                   gap: 1,
-                  flexWrap: 'nowrap',
-                  whiteSpace: 'nowrap',
-                  overflow: 'hidden',
-                  overflowX: 'auto',
-                  '::-webkit-scrollbar': {
-                    display: 'none',
+                  flexWrap: "nowrap",
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  overflowX: "auto",
+                  "::-webkit-scrollbar": {
+                    display: "none",
                   },
                 }}
               >
@@ -161,8 +161,8 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
 
           <Box
             sx={{
-              backgroundColor: 'canvas.default',
-              borderRadius: '0 0 0.25rem 0.25rem',
+              backgroundColor: "canvas.default",
+              borderRadius: "0 0 0.25rem 0.25rem",
             }}
           >
             <Box
@@ -172,19 +172,19 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
             >
               <Box
                 sx={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  flexWrap: 'wrap',
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
                   gap: 2,
-                  fontSize: '0.75rem',
-                  listStyle: 'none',
-                  color: 'fg.muted',
+                  fontSize: "0.75rem",
+                  listStyle: "none",
+                  color: "fg.muted",
                 }}
               >
                 <Box
                   sx={{
-                    display: 'flex',
-                    alignItems: 'center',
+                    display: "flex",
+                    alignItems: "center",
                     gap: 1,
                   }}
                 >
@@ -192,10 +192,10 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
                   <Link
                     href={`/${packageCard.user.username}`}
                     sx={{
-                      color: 'fg.subtle',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '4px',
+                      color: "fg.subtle",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "4px",
                     }}
                   >
                     {packageCard.user.username}
@@ -203,10 +203,10 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
                 </Box>
                 <Box
                   sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    flexWrap: 'wrap',
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    flexWrap: "wrap",
                     gap: 2,
                   }}
                 >
@@ -230,16 +230,16 @@ const PackageCardLegacy: React.FC<PackageCardLegacyProps> = ({
                   </Tooltip>
                   <Box
                     sx={{
-                      display: 'flex',
-                      justifyContent: 'center',
+                      display: "flex",
+                      justifyContent: "center",
                     }}
                   >
                     <Link
                       href="atom://settings-view/show-packageCard?packageCard=teletype"
                       sx={{
-                        textDecoration: 'none',
-                        '&:hover': {
-                          textDecoration: 'none',
+                        textDecoration: "none",
+                        "&:hover": {
+                          textDecoration: "none",
                         },
                       }}
                     >

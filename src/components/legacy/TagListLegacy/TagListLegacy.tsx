@@ -1,10 +1,10 @@
-import { injectTextSegments } from '@/helpers/textHelper';
-import { TagListProps } from '@/types/Hero/TagListProps';
-import { TagProps } from '@/types/Hero/TagProps';
-import { Box, Heading } from '@primer/react';
-import React from 'react';
-import TagLegacy from '../TagLegacy/TagLegacy';
-import './TagListLegacy.css';
+import { injectTextSegments } from "@/helpers/textHelper";
+import { TagListProps } from "@/types/Hero/TagListProps";
+import { TagProps } from "@/types/Hero/TagProps";
+import { Box, Heading } from "@primer/react";
+import React from "react";
+import TagLegacy from "../TagLegacy/TagLegacy";
+import "./TagListLegacy.css";
 
 interface TagListLegacyProps {
   tagList: TagListProps;

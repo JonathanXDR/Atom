@@ -1,9 +1,9 @@
-import { injectTextSegments } from '@/helpers/textHelper';
-import * as octicons from '@primer/octicons-react';
-import { Box, Heading, Link, Octicon, OcticonProps, Text } from '@primer/react';
-import React from 'react';
-import { FeatureProps } from '../../../types/FeatureProps';
-import './FeatureLegacy.css';
+import { injectTextSegments } from "@/helpers/textHelper";
+import * as octicons from "@primer/octicons-react";
+import { Box, Heading, Link, Octicon, OcticonProps, Text } from "@primer/react";
+import React from "react";
+import { FeatureProps } from "../../../types/FeatureProps";
+import "./FeatureLegacy.css";
 
 interface FeatureLegacyProps {
   feature: FeatureProps;
@@ -24,9 +24,9 @@ const FeatureLegacy: React.FC<FeatureLegacyProps> = ({ feature }) => {
         <Box
           className="mega-octicon"
           sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           {icon && <Octicon icon={icon} size={24} />}

@@ -1,8 +1,8 @@
 /* line 20, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome {
   font: 16px/1.5 normal normal;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 300;
   color: #efdab9;
   background-color: #343233;
@@ -129,7 +129,7 @@
 }
 /* line 122, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/application/welcome.scss */
 .welcome ::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;

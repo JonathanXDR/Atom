@@ -265,10 +265,10 @@ video::-webkit-media-controls-start-playback-button {
 }
 @charset "UTF-8";
 @font-face {
-  font-family: 'octicons';
+  font-family: "octicons";
   src:
     url(/web/20221209180904im_/https://ide.atom.io/assets/octicons/octicons/octicons-9c162bcbd21831c1c86623d8352a5b883d3d638b5b5e889caf9cf6817523c376.eot#iefix)
-      format('embedded-opentype'),
+      format("embedded-opentype"),
     url(/web/20221209180904im_/https://ide.atom.io/assets/octicons/octicons/octicons-cc5c5a519a545518743243db9cbfd19cc01662693d4bea686c54d622b0944b0b.woff)
       format("woff"),
     url(/web/20221209180904im_/https://ide.atom.io/assets/octicons/octicons/octicons-b06360cb96ebabeb54faaa03d75c758a7c58e99cb0566fef78dc58e092d07932.ttf)

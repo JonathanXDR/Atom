@@ -1,7 +1,7 @@
-'use client';
-import { Select } from '@primer/react';
-import React from 'react';
-import './VersionPickerLegacy.css';
+"use client";
+import { Select } from "@primer/react";
+import React from "react";
+import "./VersionPickerLegacy.css";
 
 interface VersionPickerLegacyProps {
   versions: Token[];

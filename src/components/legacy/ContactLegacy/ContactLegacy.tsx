@@ -1,8 +1,8 @@
-import { injectTextSegments } from '@/helpers/textHelper';
-import { ContactProps } from '@/types/ContactProps';
-import { Box, Heading, Link, Text } from '@primer/react';
-import React from 'react';
-import './ContactLegacy.css';
+import { injectTextSegments } from "@/helpers/textHelper";
+import { ContactProps } from "@/types/ContactProps";
+import { Box, Heading, Link, Text } from "@primer/react";
+import React from "react";
+import "./ContactLegacy.css";
 
 interface ContactLegacyProps {
   contacts: ContactProps[];
@@ -15,7 +15,7 @@ const ContactLegacy: React.FC<ContactLegacyProps> = ({ contacts }) => {
         <Box className="columns">
           {contacts.map((contact, index) => {
             const description = injectTextSegments(
-              contact.description?.paragraphs
+              contact.description?.paragraphs,
             );
 
             return (

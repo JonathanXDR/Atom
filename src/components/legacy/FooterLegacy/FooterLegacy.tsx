@@ -1,61 +1,104 @@
-'use client';
-import CreditBadgeLegacy from '@/components/legacy/CreditBadgeLegacy/CreditBadgeLegacy';
-import { LinkProps } from '@/types/LinkProps';
-import { Box } from '@primer/react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import React from 'react';
-import './FooterLegacy.css';
-interface FooterLegacyProps {
-  footer: LinkProps[];
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
+import CreditBadge from "../legacy/CreditBadgeLegacy/CreditBadgeLegacy";
+
+export interface LinkProps {
+  link: {
+    title: string;
+    class?: string;
+    url: string;
+    leadingIcon?: string;
+    trailingIcon?: string;
+  };
 }
 
-const FooterLegacy: React.FC<FooterLegacyProps> = ({ footer }) => {
+const FooterLegacy: React.FC = () => {
   const pathname = usePathname();
 
-  const exclusionRules: { [key: string]: string[] } = {
-    '/': ['Contribute!'],
-    '/blog': ['Privacy', 'Code of Conduct'],
-    '/faq': ['Contribute!'],
-    '/flight-manual': ['Contribute!'],
+  const data: LinkProps[] = [
+    {
+      link: {
+        title: "Terms of Use",
+        url: "https://docs.github.com/en/github/site-policy/github-open-source-applications-terms-and-conditions",
+      },
+    },
+    {
+      link: {
+        title: "Privacy",
+        url: "https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement",
+      },
+    },
+    {
+      link: {
+        title: "Code of Conduct",
+        url: "https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md",
+      },
+    },
+    {
+      link: {
+        title: "Releases",
+        url: "/releases",
+      },
+    },
+    {
+      link: {
+        title: "FAQ",
+        url: "/faq",
+      },
+    },
+    {
+      link: {
+        title: "Contact",
+        url: "/contact",
+      },
+    },
+    {
+      link: {
+        title: "Contribute!",
+        url: "https://github.com/atom/flight-manual.atom.io/blob/master/CONTRIBUTING.md",
+      },
+    },
+  ];
+
+  const displayConditions: { [key: string]: (path: string) => boolean } = {
+    "Contribute!": (path) =>
+      path.startsWith("/flight-manual") || path.startsWith("/faq"),
+    Privacy: (path) => !path.startsWith("/blog"),
+    "Code of Conduct": (path) => !path.startsWith("/blog"),
   };
 
-  const shouldExcludeLink = (title: string) => {
-    if (exclusionRules[pathname]) {
-      return exclusionRules[pathname].includes(title);
+  const shouldDisplay = (title: string, path: string) => {
+    if (displayConditions[title]) {
+      return displayConditions[title](path);
     }
-    return false;
+    return true;
   };
+
+  const filteredData = data.filter((item) =>
+    shouldDisplay(item.link.title, pathname),
+  );
 
   return (
-    <Box
-      as="footer"
-      sx={{
-        position: 'relative',
-        zIndex: 9999,
-      }}
-    >
-      <Box className="footer">
-        <Box className="wrapper no-pad">
-          <Box as="ul" className="footer-left">
-            {footer.map((item: LinkProps, index) => {
-              if (shouldExcludeLink(item.link.title)) {
-                return null;
-              }
-              return (
-                <Box as="li" key={index}>
+    <footer>
+      <div className="footer">
+        <div className={`wrapper ${pathname === "/blog" ? "" : "no-pad"}`}>
+          <ul className="footer-left">
+            {filteredData.map((item: LinkProps, index) => (
+              <>
+                <li key={index}>
                   <Link href={item.link.url}>{item.link.title}</Link>
-                </Box>
-              );
-            })}
-          </Box>
+                </li>{" "}
+              </>
+            ))}
+          </ul>
 
-          <Box className="footer-right">
-            <CreditBadgeLegacy />
-          </Box>
-        </Box>
-      </Box>
-    </Box>
+          <div className="footer-right">
+            <CreditBadge />
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 

@@ -1,10 +1,10 @@
-import { DownloadProps } from '@/types/Hero/DownloadProps';
-import * as octicons from '@primer/octicons-react';
-import { Box, Octicon, OcticonProps, Text } from '@primer/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import './HeroDownloadLegacy.css';
-import atomWordmark from '/public/assets/svg/atom-wordmark.svg';
+import { DownloadProps } from "@/types/Hero/DownloadProps";
+import * as octicons from "@primer/octicons-react";
+import { Box, Octicon, OcticonProps, Text } from "@primer/react";
+import Image from "next/image";
+import Link from "next/link";
+import "./HeroDownloadLegacy.css";
+import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
 
 interface HeroDownloadLegacyProps {
   downloads: DownloadProps[];
@@ -21,7 +21,7 @@ const HeroDownloadLegacy: React.FC<HeroDownloadLegacyProps> = ({
             className="logo-wordmark"
             src={atomWordmark}
             alt="atom-wordmark"
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           />
         </Box>
 

@@ -5,11 +5,11 @@ import NavItem from "@/components/Navigation/Navigation";
 import SunsetBanner from "@/components/SunsetBanner/SunsetBanner";
 import Image from "next/image";
 import Link from "next/link";
-import "/public/assets/css/application.css";
-import indexGithubScreenshot from "/public/assets/png/index-github-screenshot.png";
-import indexIdeScreenshot from "/public/assets/png/index-ide-screenshot.png";
-import indexTeletypeScreenshot from "/public/assets/png/index-teletype-screenshot.png";
-import octonaut from "/public/assets/svg/octonaut.svg";
+import "/public/assets/web/css/application.css";
+import indexGithubScreenshot from "/public/assets/web/png/index-github-screenshot.png";
+import indexIdeScreenshot from "/public/assets/web/png/index-ide-screenshot.png";
+import indexTeletypeScreenshot from "/public/assets/web/png/index-teletype-screenshot.png";
+import octonaut from "/public/assets/web/svg/octonaut.svg";
 
 export default function Home() {
   return (

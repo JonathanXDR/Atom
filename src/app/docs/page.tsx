@@ -4,7 +4,7 @@ import NavItem from "@/components/Navigation/Navigation";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
-import flightManualCover from "/public/assets/png/flight-manual-cover.png";
+import flightManualCover from "/public/assets/web/png/flight-manual-cover.png";
 
 export default function Docs() {
   return (

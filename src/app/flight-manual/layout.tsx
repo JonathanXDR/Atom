@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import "/public/assets/css/flight-manual.css";
+import "/public/assets/web/css/flight-manual.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://atom.io/flight-manual"),

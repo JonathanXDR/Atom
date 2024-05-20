@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import "/public/assets/css/teletype.css";
+import "/public/assets/web/css/teletype.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://atom.io/teletype"),

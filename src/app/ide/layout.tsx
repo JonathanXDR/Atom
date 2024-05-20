@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import "/public/assets/css/ide.css";
+import "/public/assets/web/css/ide.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://atom.io/ide"),

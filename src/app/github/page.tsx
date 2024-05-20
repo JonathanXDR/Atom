@@ -3,14 +3,14 @@ import CreditBadge from "@/components/CreditBadge/CreditBadge";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";
-import githubBottomStars from "/public/assets/svg/github-bottom-stars.svg";
-import githubBottom from "/public/assets/svg/github-bottom.svg";
-import githubOctonaut from "/public/assets/svg/github-octonaut.svg";
-import githubPlanet1 from "/public/assets/svg/github-planet-1.svg";
-import githubPlanet2 from "/public/assets/svg/github-planet-2.svg";
-import githubPlanet3 from "/public/assets/svg/github-planet-3.svg";
-import githubRocket from "/public/assets/svg/github-rocket.svg";
-import githubSwoosh from "/public/assets/svg/github-swoosh.svg";
+import githubBottomStars from "/public/assets/web/svg/github-bottom-stars.svg";
+import githubBottom from "/public/assets/web/svg/github-bottom.svg";
+import githubOctonaut from "/public/assets/web/svg/github-octonaut.svg";
+import githubPlanet1 from "/public/assets/web/svg/github-planet-1.svg";
+import githubPlanet2 from "/public/assets/web/svg/github-planet-2.svg";
+import githubPlanet3 from "/public/assets/web/svg/github-planet-3.svg";
+import githubRocket from "/public/assets/web/svg/github-rocket.svg";
+import githubSwoosh from "/public/assets/web/svg/github-swoosh.svg";
 
 export default function GitHub() {
   return (

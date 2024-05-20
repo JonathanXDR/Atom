@@ -44,7 +44,9 @@ textarea {
   &.focus,
   &:focus {
     border-color: #51a7e8;
-    box-shadow: inset 0 1px 2px rgb(0 0 0 / 7.5%), 0 0 5px rgb(81 167 232 / 50%);
+    box-shadow:
+      inset 0 1px 2px rgb(0 0 0 / 7.5%),
+      0 0 5px rgb(81 167 232 / 50%);
   }
 }
 
@@ -54,7 +56,9 @@ input.input-contrast,
 .input-contrast {
   background-color: #fafafa;
 
-  &:focus { background-color: #fff; }
+  &:focus {
+    background-color: #fff;
+  }
 }
 
 // Custom styling for HTML5 validation bubbles (WebKit only)
@@ -219,9 +223,13 @@ dl.form {
     h4 {
       margin: 4px 0 0;
 
-      &.is-error { color: $brand-red; }
+      &.is-error {
+        color: $brand-red;
+      }
 
-      &.is-success { color: $brand-green; }
+      &.is-success {
+        color: $brand-green;
+      }
     }
 
     h4 + p.note {
@@ -293,21 +301,37 @@ dl.form {
     text-indent: -9999px;
     width: 47px;
 
-    &.visa { background-position: 0 0; }
+    &.visa {
+      background-position: 0 0;
+    }
 
-    &.amex { background-position: -50px 0; }
+    &.amex {
+      background-position: -50px 0;
+    }
 
-    &.mastercard { background-position: -100px 0; }
+    &.mastercard {
+      background-position: -100px 0;
+    }
 
-    &.discover { background-position: -150px 0; }
+    &.discover {
+      background-position: -150px 0;
+    }
 
-    &.jcb { background-position: -200px 0; }
+    &.jcb {
+      background-position: -200px 0;
+    }
 
-    &.dinersclub { background-position: -250px 0; }
+    &.dinersclub {
+      background-position: -250px 0;
+    }
 
-    &.enabled { opacity: 1; }
+    &.enabled {
+      opacity: 1;
+    }
 
-    &.disabled { opacity: 0.2; }
+    &.disabled {
+      opacity: 0.2;
+    }
   }
 
   > .cards {
@@ -463,7 +487,9 @@ dl.form {
     margin: 28px 25px 0 -20px;
   }
 
-  select { margin-top: 5px; }
+  select {
+    margin-top: 5px;
+  }
 }
 
 // IE 9
@@ -600,9 +626,13 @@ html.no-dnd-uploads {
     border: 1px solid #cacaca;
   }
 
-  .comment-header .comment-header-actions { display: none; }
+  .comment-header .comment-header-actions {
+    display: none;
+  }
 
-  .comment-form-error { margin-bottom: 10px; }
+  .comment-form-error {
+    margin-bottom: 10px;
+  }
 
   .write-content,
   .preview-content {
@@ -654,14 +684,18 @@ div.composer {
   padding: 0 10px;
 }
 
-.composer .tabnav { margin: 0 0 10px; }
+.composer .tabnav {
+  margin: 0 0 10px;
+}
 
 .infobar-widget {
   &.milestone {
     float: right;
     position: relative; // requires so that the `right: 0;` below works
 
-    .select-menu-modal-holder { right: 0; }
+    .select-menu-modal-holder {
+      right: 0;
+    }
   }
 
   &.assignee {
@@ -851,9 +885,13 @@ p.explain {
     margin: 0;
   }
 
-  strong { color: #000; }
+  strong {
+    color: #000;
+  }
 
-  a { font-weight: bold; }
+  a {
+    font-weight: bold;
+  }
 }
 
 // Inline verification
@@ -865,7 +903,8 @@ p.explain {
 }
 
 .status-indicator-loading {
-  background: url("/images/spinners/octocat-spinner-32-EAF2F5.gif") 0 0 no-repeat;
+  background: url("/images/spinners/octocat-spinner-32-EAF2F5.gif") 0 0
+    no-repeat;
   background-size: 16px;
   height: 16px;
   margin-top: -4px;

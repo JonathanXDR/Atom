@@ -1,7 +1,7 @@
 "use client";
-import FooterItem from "@/components/FooterItem/FooterItem";
+import FooterItem from "@/components/Footer/Footer";
 import HeroHeader from "@/components/HeroHeader/HeroHeader";
-import NavItem from "@/components/NavItem/NavItem";
+import NavItem from "@/components/Navigation/Navigation";
 import Link from "next/link";
 import "./main.css";
 

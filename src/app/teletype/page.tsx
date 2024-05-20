@@ -88,7 +88,7 @@ export default function Teletype() {
             <Box ref={videoHudRef} className="video-hud">
               <button
                 ref={videoButtonRef}
-                className="video-play-button mega-octicon"
+                className="video-play-button mega-octicon octicon-playback-play"
                 aria-label="Play video"
                 onClick={playVideo}
                 style={{

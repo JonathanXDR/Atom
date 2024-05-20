@@ -1,0 +1,362 @@
+// stylelint-disable selector-class-pattern
+@import "octicons/octicons/sprockets-octicons";
+
+html {
+  background-color: #343233;
+  color: #efdab9;
+  font: 14px/1.5 normal normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-image: url("/assets/images/real-time-lines.svg"),
+    url("/assets/images/real-time-bg.svg");
+  background-position:
+    calc(100% + 500px) calc(100% - 50px),
+    -170px calc(100% - -155px);
+  background-repeat: no-repeat;
+  background-size:
+    auto 68px,
+    auto 340px;
+  margin: 0;
+  padding-bottom: 200px;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin: 0 0 2rem;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin: 3rem 0 1rem;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+}
+
+a {
+  color: #e2ad4b;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #635c55;
+  margin: 4rem 6rem;
+}
+
+strong {
+  color: #8bbbae;
+}
+
+li {
+  line-height: 1.4;
+  padding: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  > img {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  &:last-child > img {
+    margin-bottom: 0;
+  }
+}
+
+.is-centered {
+  text-align: center;
+}
+
+// Wrapper --------------------------
+.wrapper {
+  margin: 0 auto;
+  padding: 2rem;
+
+  & + & {
+    padding-top: 0;
+  }
+}
+
+.wrapper--full {
+  text-align: center;
+}
+
+// Video --------------------------
+.video-container {
+  display: flex;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video {
+  border-radius: 5px;
+  box-shadow: 0 15px 20px 4px rgb(0 0 0 / 15%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.video-hud {
+  display: flex;
+  inset: 0;
+  position: absolute;
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.video-play-button {
+  &.mega-octicon {
+    background-color: #dda131;
+    border: 4px solid;
+    border-radius: 2em;
+    color: #1a1919;
+    cursor: pointer;
+    font-size: 76px;
+    height: 1.5em;
+    line-height: 1;
+    margin: auto;
+    outline: none;
+    padding: 0;
+    width: 1.5em;
+
+    &::before {
+      left: 0.05em;
+      position: relative;
+    }
+  }
+
+  &:focus {
+    border-style: dashed;
+  }
+
+  &:hover {
+    background-color: #e5b55d;
+  }
+
+  &:active {
+    background-color: #d39522;
+    transform: scale(0.96);
+  }
+}
+
+// Content --------------------------
+.logo {
+  height: 60px;
+  margin-top: 1rem;
+}
+
+.intro {
+  text-align: center;
+
+  h2 {
+    font-size: 2.2em;
+  }
+
+  p {
+    font-size: 1.3em;
+
+    sup {
+      font-size: 60%;
+    }
+  }
+}
+
+.privacy-img {
+  margin: 0;
+}
+
+.privacy-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-top: 3em;
+    padding: 0;
+  }
+}
+
+// Love --------------------------
+.love {
+  text-align: center;
+  text-decoration: none;
+
+  .octicon-logo-github {
+    position: relative;
+    top: 0.11em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+// Background lines --------------------------
+.hero {
+  background-image: url("/assets/images/real-time-lines.svg"),
+    url("/assets/images/real-time-bg.svg");
+  background-position:
+    -580px 30px,
+    calc(100% + 215px) -260px;
+  background-repeat: no-repeat;
+  background-size:
+    auto 68px,
+    auto 340px;
+  padding-top: 100px;
+}
+
+.wrapper--video {
+  background-image: url("/assets/images/real-time-lines.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 68px;
+}
+
+// Responsive --------------------------
+// Medium
+@media (width >= 600px) {
+  html {
+    font-size: 15px;
+  }
+
+  body {
+    background-image: url("/assets/images/real-time-lines.svg"),
+      url("/assets/images/real-time-bg.svg");
+    background-position:
+      calc(100% + 1140px) calc(100% - 60px),
+      -420px calc(100% - -500px);
+    background-size: auto;
+  }
+
+  .wrapper {
+    max-width: 560px;
+    padding: 4rem 2rem;
+  }
+
+  .wrapper--full {
+    max-width: none;
+  }
+
+  .wrapper--video {
+    background-image: url("/assets/images/real-time-lines.svg"),
+      url("/assets/images/real-time-bg.svg");
+    background-position: center;
+    background-size: auto;
+    margin-bottom: 5rem;
+  }
+
+  .logo {
+    height: 106px;
+    width: 116px;
+  }
+
+  .privacy-list {
+    display: flex;
+    margin: 2rem 0;
+
+    li {
+      flex: 1;
+      margin: 0;
+
+      + li {
+        margin-left: 1rem;
+      }
+    }
+
+    p {
+      margin: 0;
+
+      &:last-child {
+        background-color: #393738;
+        border: 1px solid #494647;
+        border-radius: 6px;
+        font-size: 0.9em;
+        margin-top: 1rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .privacy-img-wrapper {
+    text-align: center;
+  }
+
+  // Background lines --------------------------
+  .hero {
+    background-position:
+      -1340px 50px,
+      calc(100% + 550px) -490px;
+    background-size: auto;
+    padding-top: 0;
+  }
+}
+
+// Large
+@media (width >= 1000px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    background-position:
+      calc(100% + 1140px) calc(100% - 60px),
+      -420px calc(100% - -360px);
+  }
+
+  .wrapper {
+    padding: 5rem 0;
+  }
+
+  .video-container {
+    padding-top: 0;
+  }
+
+  .video {
+    height: 540px;
+    left: initial;
+    margin: auto;
+    position: relative;
+    top: initial;
+    width: 960px;
+  }
+
+  // Background lines --------------------------
+  .hero {
+    background-position:
+      -1200px 80px,
+      calc(100% + 470px) -420px;
+  }
+}
+
+.hero .wrapper {
+  padding-bottom: 2rem;
+}
+
+.wrapper.intro {
+  padding-bottom: 0;
+}

@@ -1,0 +1,310 @@
+.api-search-result {
+  width: 780px;
+
+  .highlights {
+    em {
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    .highlight-separator {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.documents {
+  line-height: 1.6;
+
+  a:focus {
+    outline: 0;
+  }
+
+  code {
+    background-color: #f8f6f2;
+    border: none;
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 14px;
+    padding: 0.3em 0;
+  }
+
+  .extended-methods-container .extended-methods {
+    display: none;
+
+    &.show .extended-methods {
+      display: block;
+    }
+
+    &.show .extended-toggle .octicon::before {
+      content: "\f0a3";
+    }
+  }
+
+  .extended-toggle {
+    display: block;
+    font-weight: normal;
+    margin: 20px 0;
+
+    .octicon {
+      color: #b4daba;
+      width: 12px;
+    }
+  }
+
+  .no-methods-message {
+    font-style: italic;
+    opacity: 0.5;
+  }
+
+  .markdown-body {
+    font-size: 16px;
+
+    .anchor .octicon {
+      color: #9e9b95;
+    }
+
+    pre {
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .reference-link {
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      font-size: 14px;
+    }
+  }
+
+  .column.sidebar {
+    width: 30%;
+  }
+
+  .column.main-column {
+    width: 70%;
+  }
+
+  .section {
+    border-bottom: solid 1px #efeae1;
+  }
+
+  .detail-section {
+    margin: 30px 0 20px;
+  }
+
+  .document-section-nav h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+
+    a {
+      color: #574c4f;
+    }
+  }
+
+  .label {
+    border-radius: 2px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &.label-extended {
+      background: #faaf4f;
+    }
+
+    &.label-essential {
+      background: #81c08b;
+    }
+  }
+
+  .page-title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+    .label {
+      font-size: 12px;
+      margin-top: -2px;
+      padding: 6px;
+      vertical-align: middle;
+    }
+  }
+
+  .method-signature .argument {
+    color: #666;
+  }
+
+  a:hover .octicon-file-code {
+    color: #2d7653;
+  }
+
+  .document-source {
+    color: #3b9b6d;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: -1px;
+    vertical-align: middle;
+  }
+
+  .example {
+    margin: 1em 0;
+
+    .description {
+      margin-bottom: 1em;
+    }
+  }
+
+  .operator {
+    color: #b4daba;
+  }
+
+  .api-entry {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 1em 0 !important;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-size: 14px;
+    }
+
+    .method-summary-wrapper {
+      display: none;
+    }
+
+    &.expanded {
+      padding-bottom: 10px;
+
+      .method-summary-wrapper {
+        display: block;
+        padding-bottom: 20px;
+      }
+    }
+
+    > .name {
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 0.5em;
+      margin-top: 0;
+    }
+
+    .source-link {
+      color: #81c08b;
+      display: inline;
+
+      .octicon {
+        position: relative;
+        top: -2px;
+      }
+    }
+
+    .return-values,
+    .arguments {
+      border: solid 1px #efeae1;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin: 1em 0;
+      width: 100%;
+
+      .optional {
+        background: #f8f6f2;
+        color: rgb(0 0 0 / 50%);
+        display: block;
+        float: right;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        margin-right: -10px;
+        margin-top: -8px;
+        padding: 0 6px;
+      }
+
+      th {
+        background-color: #faf8f5;
+        color: #8e6965;
+        font-size: 14px;
+        padding: 8px 10px;
+        text-align: left;
+      }
+
+      td {
+        border-top: solid 1px #efeae1;
+        padding: 8px 10px;
+        vertical-align: top;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .argument-depth-1,
+      .argument-depth-2,
+      .argument-depth-3,
+      .argument-depth-4,
+      .argument-depth-5 {
+        > td {
+          border-top: none;
+
+          > code {
+            background-color: transparent;
+            color: #2e282a;
+            padding: 0;
+
+            &::before,
+            &::after {
+              content: none;
+            }
+          }
+        }
+      }
+
+      .argument-depth-1 > td:first-child {
+        padding-left: 27px;
+      }
+
+      .argument-depth-2 > td:first-child {
+        padding-left: 42px;
+      }
+
+      .argument-depth-3 > td:first-child {
+        padding-left: 57px;
+      }
+
+      .argument-depth-4 > td:first-child {
+        padding-left: 72px;
+      }
+
+      .argument-depth-5 > td:first-child {
+        padding-left: 87px;
+      }
+
+      code .argument-list {
+        opacity: 0.6;
+      }
+    }
+
+    .summary {
+      p {
+        margin-top: 0;
+
+        &:last-child {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}

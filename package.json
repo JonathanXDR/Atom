@@ -10,6 +10,9 @@
     "build:trigger": "sh ./src/scripts/build-trigger.sh"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.2.3",
     "@primer/css": "^21.3.1",
     "@primer/octicons-react": "^19.9.0",
     "@primer/react": "^36.18.0",

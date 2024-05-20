@@ -1,0 +1,595 @@
+.documents .navigation {
+  font-weight: bold;
+  padding: 0;
+  text-align: right;
+
+  a {
+    color: #a29f99;
+
+    &:hover {
+      color: #574c4f;
+    }
+
+    &.is-selected,
+    &:active {
+      color: #574c4f;
+    }
+  }
+}
+
+.atom-doc-index {
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  h3.subheader {
+    color: #8e6965;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .doc-section {
+    .octicon {
+      margin-right: 3px;
+    }
+
+    p {
+      font-size: 0.9em;
+      padding-right: 25px;
+    }
+
+    h3 {
+      border-bottom: 1px solid #eee;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+  }
+
+  .documents-search {
+    margin-bottom: 10px;
+  }
+}
+
+.version-switcher {
+  float: left;
+  margin-top: 9px;
+}
+
+.documents-search {
+  display: table;
+  line-height: 1.4;
+  margin-bottom: 40px;
+
+  .select-menu {
+    display: table-cell;
+    padding-right: 20px;
+    width: 1%;
+  }
+
+  input[type="text"] {
+    display: table-cell;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.documents-toc {
+  .anchor {
+    display: none;
+  }
+
+  h2,
+  h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+.inspectocat {
+  background-image: url("/assets/images/inspectocat.png");
+  display: block;
+  height: 448px;
+  width: 470px;
+
+  @media only screen and (resolution >= 2dppx) {
+    background-image: url("/assets/images/inspectocat@2x.png");
+    background-size: 470px 448px;
+  }
+}
+
+.doc-version-warning {
+  background-color: #ddd3c0;
+  background-image: linear-gradient(#efeae1, #ddd3c0);
+  background-repeat: repeat-x;
+  border: 1px solid #ccbb9e;
+  border-radius: 5px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.breadcrumbs {
+  font-size: 15px;
+  margin: 0 0 20px;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+
+    &::after {
+      content: ">";
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+}
+
+.manual-docs {
+  h1 {
+    margin-top: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+
+    li {
+      font-size: 1.2em;
+      margin-top: 4px;
+    }
+
+    small {
+      color: #666;
+      font-size: 0.9em;
+      margin-right: 10px;
+    }
+  }
+
+  .manual-ebooks {
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+
+    h3 {
+      margin: 1em 0 0;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    .ebooks img {
+      padding: 10px 10px 0;
+      width: 100px;
+    }
+  }
+}
+
+.toc {
+  border-right: 1px solid #eee;
+  display: block;
+  float: left;
+  margin-right: 15px;
+  max-width: 260px;
+  overflow: hidden;
+  width: 260px;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    font-size: 0.95em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 1px;
+      padding-left: 15px;
+
+      .selected {
+        background: #eee;
+      }
+    }
+  }
+}
+
+.document-content {
+  padding-left: 15px;
+
+  h1 {
+    border-bottom: 0;
+    font-size: 1em;
+    font-weight: 200;
+    text-align: right;
+  }
+
+  pre {
+    background: #eee;
+    color: #333;
+
+    code {
+      &.hll {
+        background-color: #ffc;
+      }
+
+      &.c {
+        color: #09f;
+        font-style: italic;
+      }
+
+      &.err {
+        color: #a00;
+      }
+
+      &.k {
+        color: #069;
+        font-weight: bold;
+      }
+
+      &.o {
+        color: #555;
+      }
+
+      &.cm {
+        color: #35586c;
+        font-style: italic;
+      }
+
+      &.cp {
+        color: #099;
+      }
+
+      &.c1 {
+        color: #35586c;
+        font-style: italic;
+      }
+
+      &.cs {
+        color: #35586c;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      &.gd {
+        background-color: #fcc;
+      }
+
+      &.ge {
+        font-style: italic;
+      }
+
+      &.gr {
+        color: #f00;
+      }
+
+      &.gh {
+        color: #030;
+        font-weight: bold;
+      }
+
+      &.gi {
+        background-color: #cfc;
+      }
+
+      &.go {
+        color: #000;
+      }
+
+      &.gp {
+        color: #009;
+        font-weight: bold;
+      }
+
+      &.gs {
+        font-weight: bold;
+      }
+
+      &.gu {
+        color: #030;
+        font-weight: bold;
+      }
+
+      &.gt {
+        color: #9c6;
+      }
+
+      &.kc {
+        color: #069;
+        font-weight: bold;
+      }
+
+      &.kd {
+        color: #069;
+        font-weight: bold;
+      }
+
+      &.kn {
+        color: #069;
+        font-weight: bold;
+      }
+
+      &.kp {
+        color: #069;
+      }
+
+      &.kr {
+        color: #069;
+        font-weight: bold;
+      }
+
+      &.kt {
+        color: #078;
+        font-weight: bold;
+      }
+
+      &.m {
+        color: #f60;
+      }
+
+      &.s {
+        color: #c30;
+      }
+
+      &.na {
+        color: #309;
+      }
+
+      &.nb {
+        color: #366;
+      }
+
+      &.nc {
+        color: #0a8;
+        font-weight: bold;
+      }
+
+      &.no {
+        color: #360;
+      }
+
+      &.nd {
+        color: #99f;
+      }
+
+      &.ni {
+        color: #999;
+        font-weight: bold;
+      }
+
+      &.ne {
+        color: #c00;
+        font-weight: bold;
+      }
+
+      &.nf {
+        color: #c0f;
+      }
+
+      &.nl {
+        color: #99f;
+      }
+
+      &.nn {
+        color: #0cf;
+        font-weight: bold;
+      }
+
+      &.nt {
+        color: #309;
+        font-weight: bold;
+      }
+
+      &.nv {
+        color: #033;
+      }
+
+      &.ow {
+        color: #000;
+        font-weight: bold;
+      }
+
+      &.w {
+        color: #bbb;
+      }
+
+      &.mf {
+        color: #f60;
+      }
+
+      &.mh {
+        color: #f60;
+      }
+
+      &.mi {
+        color: #f60;
+      }
+
+      &.mo {
+        color: #f60;
+      }
+
+      &.sb {
+        color: #c30;
+      }
+
+      &.sc {
+        color: #c30;
+      }
+
+      &.sd {
+        color: #c30;
+        font-style: italic;
+      }
+
+      &.s2 {
+        color: #c30;
+      }
+
+      &.se {
+        color: #c30;
+        font-weight: bold;
+      }
+
+      &.sh {
+        color: #c30;
+      }
+
+      &.si {
+        color: #a00;
+      }
+
+      &.sx {
+        color: #c30;
+      }
+
+      &.sr {
+        color: #3aa;
+      }
+
+      &.s1 {
+        color: #c30;
+      }
+
+      &.ss {
+        color: #a60;
+      }
+
+      &.bp {
+        color: #366;
+      }
+
+      &.vc {
+        color: #033;
+      }
+
+      &.vg {
+        color: #033;
+      }
+
+      &.vi {
+        color: #033;
+      }
+
+      &.il {
+        color: #f60;
+      }
+
+      &.g {
+        color: #050;
+      }
+
+      &.l {
+        color: #f90;
+      }
+
+      &.n {
+        color: #008;
+      }
+
+      &.nx {
+        color: #008;
+      }
+
+      &.py {
+        color: #96f;
+      }
+
+      &.p {
+        color: #000;
+      }
+
+      &.x {
+        color: #f06;
+      }
+    }
+  }
+
+  pre[data-code-language="console"] {
+    background: #ddd;
+    padding: 10px;
+
+    code {
+      &.go {
+        color: #555;
+        font-size: 1em;
+      }
+
+      &.gp {
+        color: #090;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.training-video-cta {
+  padding: 20px 0 50px;
+  text-align: center;
+}
+
+.training-video-link {
+  border: 1px solid #3fa674;
+  border-radius: 2px;
+  color: #3fa674;
+  font-size: 0.9em;
+  margin-left: 10px;
+  padding: 7px 12px 7px 0;
+
+  &:hover {
+    background: #6bc79b;
+    border-color: #6bc79b;
+    color: #fff;
+  }
+
+  a,
+  a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.training-video-play {
+  background: #3fa674;
+  border: 1px solid #3fa674;
+  border-radius: 2px 0 0 2px;
+  color: #fff;
+  margin-left: -4px;
+  margin-right: 7px;
+  padding: 7px 9px;
+}

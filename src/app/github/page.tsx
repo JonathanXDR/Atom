@@ -191,7 +191,7 @@ export default function GitHub() {
             <Heading as="h2">Community packages</Heading>
             <Text as="p">
               We also would like to point out all the
-              <Link href="https://atom.io/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
+              <Link href="/packages/search?utf8=%E2%9C%93&amp;q=keyword:git">
                 amazing packages
               </Link>
               the Atom community has already created.

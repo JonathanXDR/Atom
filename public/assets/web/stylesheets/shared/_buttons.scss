@@ -1,0 +1,139 @@
+.button {
+  .primary {
+    background-color: #68a672;
+    background-image: linear-gradient(#75bb80, #68a672);
+    background-repeat: repeat-x;
+    border-color: #62a26c;
+
+    &:hover {
+      background-color: #5b9a65;
+      background-image: linear-gradient(#64b370, #5b9a65);
+      background-repeat: repeat-x;
+      border-color: #5b9a65;
+    }
+  }
+
+  &.button-outline {
+    border-color: #efeae1;
+    color: #8e6965;
+    text-shadow: none;
+
+    &:hover {
+      background: #f8f6f2;
+      box-shadow: none;
+      z-index: auto;
+    }
+
+    &.selected {
+      background: #81c08b;
+      border-color: #70b87b;
+      box-shadow: none;
+      color: white;
+
+      &:hover {
+        background: #70b87b;
+        z-index: 2;
+      }
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+
+    .button-group &.selected,
+    .button-group &:active {
+      box-shadow: none;
+    }
+  }
+
+  &.button-large {
+    background: #3b9b6d;
+    border: none;
+    border-radius: 0.2em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+    text-shadow: none;
+  }
+
+  .mega-octicon {
+    color: rgb(0 0 0 / 5%);
+    line-height: 0;
+    margin-right: 10px;
+    margin-top: -3px;
+    vertical-align: middle;
+  }
+}
+
+.minibutton {
+  &.flash-warn {
+    background-color: #b34947;
+    background-image: linear-gradient(#e75e5b, #b34947);
+    background-repeat: repeat-x;
+    border-color: #b74a48;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+
+    &:hover {
+      background-color: #a14240;
+      background-image: linear-gradient(#e44845, #a14240);
+      background-repeat: repeat-x;
+      border-color: #a54341;
+      color: #fff;
+    }
+  }
+
+  &.primary {
+    background-color: #68a672;
+    background-image: linear-gradient(#75bb80, #68a672);
+    background-repeat: repeat-x;
+    border-color: #62a26c;
+
+    &:hover {
+      background-color: #5b9a65;
+      background-image: linear-gradient(#64b370, #5b9a65);
+      background-repeat: repeat-x;
+      border-color: #5b9a65;
+    }
+  }
+
+  .octicon {
+    vertical-align: baseline;
+  }
+}
+
+.button-image-down {
+  background-image: url("/assets/images/button-sprites.png");
+  display: inline-block;
+  height: 32px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 32px;
+
+  @media only screen and (resolution >= 2dppx) {
+    background-image: url("/assets/images/button-sprites@2x.png");
+    background-size: 64px 32px;
+  }
+}
+
+.button-image-github {
+  background-image: url("/assets/images/button-sprites.png");
+  background-position: -32px 0;
+  display: inline-block;
+  height: 32px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 32px;
+
+  @media only screen and (resolution >= 2dppx) {
+    background-image: url("/assets/images/button-sprites@2x.png");
+    background-size: 64px 32px;
+  }
+}
+
+.hidden {
+  display: none;
+}

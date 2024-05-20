@@ -1,0 +1,318 @@
+/* line 11, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+html {
+  color: #24292e;
+  /* GH $gray-900 */
+  font: 14px/1.5 normal normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/* line 17, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+body {
+  margin: 0;
+}
+/* line 21, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+/* line 25, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin: 0 0 1em 0;
+}
+/* line 30, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+}
+/* line 36, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+a {
+  color: #b41fff;
+  text-decoration: none;
+}
+/* line 40, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 44, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+img {
+  max-width: 100%;
+}
+/* Wrapper -------------------------- */
+/* line 52, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.wrapper {
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* line 57, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.wrapper + .wrapper {
+  padding-top: 0;
+}
+/* line 61, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.wrapper--full {
+  text-align: center;
+}
+/* line 69, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.dark {
+  position: relative;
+  color: white;
+  background-color: #2e1839;
+  background-image: radial-gradient(
+      ellipse farthest-corner at 50% 20%,
+      #4a2060,
+      rgba(46, 24, 57, 0.75)
+    ),
+    url(/web/20221209180904im_/https://ide.atom.io/assets/ide-bg-d488d959f5887e6bae2beadc498baae815aabd3f5bbcf67e8132d0805899cb7e.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: center, center;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 79, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.dark a {
+  color: #de9bff;
+}
+/* Video -------------------------- */
+/* line 87, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 62.5641025641%;
+  /* ~ 16:10 ratio */
+}
+/* line 92, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.video {
+  display: unset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.15);
+}
+/* Hide play button on iOS */
+/* line 102, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+video::-webkit-media-controls-start-playback-button {
+  -webkit-appearance: none;
+  display: none;
+}
+/* Content -------------------------- */
+/* line 111, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.text-center {
+  text-align: center;
+}
+/* line 115, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.notice-wrapper {
+  font-size: 14px;
+}
+/* line 119, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.notice-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+/* line 124, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.logo {
+  display: unset;
+  font-size: 12em;
+  width: 1em;
+}
+/* line 129, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.hero h2 {
+  text-align: center;
+}
+/* line 133, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.intro {
+  margin: 0;
+  font-size: 1.15em;
+}
+/* line 138, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.intro strong {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-weight: 500;
+  background-color: #612480;
+  border-radius: 3px;
+}
+/* line 146, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.getting-started-step {
+  position: relative;
+  border: 1px solid #dbdbdb;
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  font-size: 1.15em;
+}
+/* line 155, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.getting-started-step p:first-of-type {
+  margin-top: 0;
+}
+/* line 156, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.getting-started-step *:last-child {
+  margin-bottom: 0;
+}
+/* line 158, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.getting-started-step-nr {
+  position: absolute;
+  top: 1.25rem;
+  left: -1rem;
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 1rem;
+  color: white;
+  background-color: #b41fff;
+}
+/* line 172, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.language-packages {
+  list-style: none;
+  padding: 0.5em 1em;
+}
+/* line 176, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.language-packages li {
+  margin-top: 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 181, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.language-packages li:last-child {
+  border-bottom: none;
+}
+/* line 184, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.language-packages a {
+  margin: 0 0.4em;
+}
+/* line 187, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.language-packages-note {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: #999999;
+}
+/* footer -------------------------- */
+/* line 197, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.footer {
+  position: relative;
+}
+/* line 201, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.love {
+  text-decoration: none;
+  text-align: center;
+}
+/* line 206, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.love .octicon-logo-github {
+  position: relative;
+  top: 0.11em;
+}
+/* line 211, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.footer .love a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 216, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.love-plus {
+  font-weight: 200;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+/* line 221, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+.love-facebook {
+  width: 66px;
+  vertical-align: -1px;
+}
+/* Responsive -------------------------- */
+/* Medium */
+@media (min-width: 600px) {
+  /* line 233, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+  .wrapper {
+    max-width: 500px;
+    padding: 4rem;
+  }
+}
+/* Large */
+@media (min-width: 900px) {
+  /* line 244, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+  html {
+    font-size: 16px;
+  }
+  /* line 248, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+  .wrapper {
+    max-width: 36rem;
+    padding: 6rem 0;
+  }
+  /* line 253, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+  .notice-wrapper {
+    padding: 1.5rem 0;
+  }
+  /* line 257, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+  .wrapper--full {
+    max-width: none;
+  }
+  /* line 261, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+  .video-container {
+    padding-top: 0;
+  }
+  /* line 265, /home/runner/work/atom-io/atom-io/app/assets/stylesheets/ide.scss */
+  .video {
+    display: unset;
+    position: relative;
+    top: initial;
+    left: initial;
+    width: 860px;
+    height: 560px;
+  }
+}
+@charset "UTF-8";
+@font-face {
+  font-family: 'octicons';
+  src:
+    url(/web/20221209180904im_/https://ide.atom.io/assets/octicons/octicons/octicons-9c162bcbd21831c1c86623d8352a5b883d3d638b5b5e889caf9cf6817523c376.eot#iefix)
+      format('embedded-opentype'),
+    url(/web/20221209180904im_/https://ide.atom.io/assets/octicons/octicons/octicons-cc5c5a519a545518743243db9cbfd19cc01662693d4bea686c54d622b0944b0b.woff)
+      format("woff"),
+    url(/web/20221209180904im_/https://ide.atom.io/assets/octicons/octicons/octicons-b06360cb96ebabeb54faaa03d75c758a7c58e99cb0566fef78dc58e092d07932.ttf)
+      format("truetype"),
+    url(/web/20221209180904im_/https://ide.atom.io/assets/octicons/octicons/octicons-685f15d151c86713c12ae8bb4ad5e8fadb618ae27c5dbde9e923f00dde3896df.svg#octicons)
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 13, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/octicons/octicons/sprockets-octicons.scss */
+.octicon {
+  font: normal normal 16px octicons;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 21, /home/runner/work/atom-io/atom-io/vendor/assets/bower_components/octicons/octicons/sprockets-octicons.scss */
+.mega-octicon {
+  font: normal normal 32px octicons;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*
+     FILE ARCHIVED ON 18:09:04 Dec 09, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:01:32 Aug 10, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 801.252
+  exclusion.robots: 0.135
+  exclusion.robots.policy: 0.121
+  RedisCDXSource: 548.53
+  esindex: 0.006
+  LoadShardBlock: 232.396 (3)
+  PetaboxLoader3.datanode: 212.65 (4)
+  load_resource: 1016.397
+  PetaboxLoader3.resolve: 915.032
+*/

@@ -13,7 +13,7 @@ export interface LinkProps {
   };
 }
 
-const NavItem: React.FC = () => {
+const Navigation: React.FC = () => {
   const pathname = usePathname();
 
   const data: LinkProps[] = [
@@ -100,4 +100,4 @@ const NavItem: React.FC = () => {
   );
 };
 
-export default NavItem;
+export default Navigation;

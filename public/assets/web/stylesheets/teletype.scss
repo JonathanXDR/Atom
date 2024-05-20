@@ -5,24 +5,21 @@ html {
   background-color: #343233;
   color: #efdab9;
   font: 14px/1.5 normal normal;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Helvetica,
-    Arial,
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-image: url("/assets/images/real-time-lines.svg"), url("/assets/images/real-time-bg.svg");
-  background-position: calc(100% + 500px) calc(100% - 50px), -170px calc(100% - -155px);
+  background-image: url("/assets/images/real-time-lines.svg"),
+    url("/assets/images/real-time-bg.svg");
+  background-position:
+    calc(100% + 500px) calc(100% - 50px),
+    -170px calc(100% - -155px);
   background-repeat: no-repeat;
-  background-size: auto 68px, auto 340px;
+  background-size:
+    auto 68px,
+    auto 340px;
   margin: 0;
   padding-bottom: 200px;
 }
@@ -221,10 +218,15 @@ p {
 
 // Background lines --------------------------
 .hero {
-  background-image: url("/assets/images/real-time-lines.svg"), url("/assets/images/real-time-bg.svg");
-  background-position: -580px 30px, calc(100% + 215px) -260px;
+  background-image: url("/assets/images/real-time-lines.svg"),
+    url("/assets/images/real-time-bg.svg");
+  background-position:
+    -580px 30px,
+    calc(100% + 215px) -260px;
   background-repeat: no-repeat;
-  background-size: auto 68px, auto 340px;
+  background-size:
+    auto 68px,
+    auto 340px;
   padding-top: 100px;
 }
 
@@ -243,8 +245,11 @@ p {
   }
 
   body {
-    background-image: url("/assets/images/real-time-lines.svg"), url("/assets/images/real-time-bg.svg");
-    background-position: calc(100% + 1140px) calc(100% - 60px), -420px calc(100% - -500px);
+    background-image: url("/assets/images/real-time-lines.svg"),
+      url("/assets/images/real-time-bg.svg");
+    background-position:
+      calc(100% + 1140px) calc(100% - 60px),
+      -420px calc(100% - -500px);
     background-size: auto;
   }
 
@@ -258,7 +263,8 @@ p {
   }
 
   .wrapper--video {
-    background-image: url("/assets/images/real-time-lines.svg"), url("/assets/images/real-time-bg.svg");
+    background-image: url("/assets/images/real-time-lines.svg"),
+      url("/assets/images/real-time-bg.svg");
     background-position: center;
     background-size: auto;
     margin-bottom: 5rem;
@@ -302,7 +308,9 @@ p {
 
   // Background lines --------------------------
   .hero {
-    background-position: -1340px 50px, calc(100% + 550px) -490px;
+    background-position:
+      -1340px 50px,
+      calc(100% + 550px) -490px;
     background-size: auto;
     padding-top: 0;
   }
@@ -315,7 +323,9 @@ p {
   }
 
   body {
-    background-position: calc(100% + 1140px) calc(100% - 60px), -420px calc(100% - -360px);
+    background-position:
+      calc(100% + 1140px) calc(100% - 60px),
+      -420px calc(100% - -360px);
   }
 
   .wrapper {
@@ -337,7 +347,9 @@ p {
 
   // Background lines --------------------------
   .hero {
-    background-position: -1200px 80px, calc(100% + 470px) -420px;
+    background-position:
+      -1200px 80px,
+      calc(100% + 470px) -420px;
   }
 }
 

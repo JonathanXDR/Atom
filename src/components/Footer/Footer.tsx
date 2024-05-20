@@ -13,7 +13,7 @@ export interface LinkProps {
   };
 }
 
-const FooterItem: React.FC = () => {
+const Footer: React.FC = () => {
   const pathname = usePathname();
 
   const data: LinkProps[] = [
@@ -102,4 +102,4 @@ const FooterItem: React.FC = () => {
   );
 };
 
-export default FooterItem;
+export default Footer;

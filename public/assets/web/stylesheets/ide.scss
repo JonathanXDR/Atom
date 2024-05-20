@@ -4,16 +4,8 @@
 html {
   color: #24292e;
   font: 14px/1.5 normal normal;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Helvetica,
-    Arial,
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
@@ -66,7 +58,12 @@ img {
 
 .dark {
   background-color: #2e1839;
-  background-image: radial-gradient(ellipse farthest-corner at 50% 20%, #4a2060, rgb(46 24 57 / 75%)), url("/assets/images/ide-bg.svg");
+  background-image: radial-gradient(
+      ellipse farthest-corner at 50% 20%,
+      #4a2060,
+      rgb(46 24 57 / 75%)
+    ),
+    url("/assets/images/ide-bg.svg");
   background-position: center, center;
   background-repeat: no-repeat, repeat;
   color: white;

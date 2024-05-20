@@ -1,6 +1,6 @@
 "use client";
-import FooterItem from "@/components/FooterItem/FooterItem";
-import NavItem from "@/components/NavItem/NavItem";
+import FooterItem from "@/components/Footer/Footer";
+import NavItem from "@/components/Navigation/Navigation";
 import Image from "next/image";
 import Link from "next/link";
 import "./main.css";

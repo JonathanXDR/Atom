@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const ContactItem: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <section className="section section--contact">
       <div className="wrapper no-pad">
@@ -71,4 +71,4 @@ const ContactItem: React.FC = () => {
   );
 };
 
-export default ContactItem;
+export default Contact;

@@ -2,17 +2,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
-import portalBlueSemi from "/public/assets/svg/portal-blue-semi.svg";
-import portalBlue from "/public/assets/svg/portal-blue.svg";
-import portalGreenSemi from "/public/assets/svg/portal-green-semi.svg";
-import portalGreen from "/public/assets/svg/portal-green.svg";
-import portalOrangeSemi from "/public/assets/svg/portal-orange-semi.svg";
-import portalOrange from "/public/assets/svg/portal-orange.svg";
-import portalRedSemi from "/public/assets/svg/portal-red-semi.svg";
-import portalRed from "/public/assets/svg/portal-red.svg";
-import portalYellowSemi from "/public/assets/svg/portal-yellow-semi.svg";
-import portalYellow from "/public/assets/svg/portal-yellow.svg";
+import atomWordmark from "/public/assets/web/svg/atom-wordmark.svg";
+import portalBlueSemi from "/public/assets/web/svg/portal-blue-semi.svg";
+import portalBlue from "/public/assets/web/svg/portal-blue.svg";
+import portalGreenSemi from "/public/assets/web/svg/portal-green-semi.svg";
+import portalGreen from "/public/assets/web/svg/portal-green.svg";
+import portalOrangeSemi from "/public/assets/web/svg/portal-orange-semi.svg";
+import portalOrange from "/public/assets/web/svg/portal-orange.svg";
+import portalRedSemi from "/public/assets/web/svg/portal-red-semi.svg";
+import portalRed from "/public/assets/web/svg/portal-red.svg";
+import portalYellowSemi from "/public/assets/web/svg/portal-yellow-semi.svg";
+import portalYellow from "/public/assets/web/svg/portal-yellow.svg";
 
 const HeroMetaLegacy: React.FC = () => {
   const pathname = usePathname();

@@ -1,9 +1,9 @@
 import { Box, Heading, Link, Text } from "@primer/react";
 import Image from "next/image";
 import React from "react";
-import indexGithubScreenshot from "/public/assets/png/index-github-screenshot.png";
-import indexIdeScreenshot from "/public/assets/png/index-ide-screenshot.png";
-import indexTeletypeScreenshot from "/public/assets/png/index-teletype-screenshot.png";
+import indexGithubScreenshot from "/public/assets/web/png/index-github-screenshot.png";
+import indexIdeScreenshot from "/public/assets/web/png/index-ide-screenshot.png";
+import indexTeletypeScreenshot from "/public/assets/web/png/index-teletype-screenshot.png";
 
 const RiverItem: React.FC = () => {
   return (

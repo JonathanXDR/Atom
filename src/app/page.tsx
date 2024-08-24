@@ -16,8 +16,8 @@ import nav from "@/data/nav.json";
 import rivers from "@/data/rivers.json";
 import { ContactProps } from "@/types/ContactProps";
 import { Box, PageLayout } from "@primer/react";
-import "/public/assets/css/application.css";
-import "/public/assets/css/welcome.css";
+import "/public/assets/web/css/application.css";
+import "/public/assets/web/css/welcome.css";
 
 export default function Home() {
   return (

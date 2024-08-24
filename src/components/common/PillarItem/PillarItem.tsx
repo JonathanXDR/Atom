@@ -4,7 +4,7 @@ import { Avatar, Box, Text } from "@primer/react";
 import { Pillar } from "@primer/react-brand";
 import Image from "next/image";
 import React from "react";
-import atomNightlyHeading from "/public/assets/png/atom-nightly-heading.png";
+import atomNightlyHeading from "/public/assets/web/png/atom-nightly-heading.png";
 
 const PillarItem: React.FC = () => {
   return (

@@ -13,11 +13,7 @@ export interface LinkProps {
   };
 }
 
-<<<<<<<< HEAD:src/components/legacy/NavLegacy/NavLegacy.tsx
 const NavLegacy: React.FC = () => {
-========
-const Navigation: React.FC = () => {
->>>>>>>> develop:src/components/Navigation/Navigation.tsx
   const pathname = usePathname();
 
   const data: LinkProps[] = [
@@ -36,8 +32,8 @@ const Navigation: React.FC = () => {
   const displayConditions: { [key: string]: (path: string) => string } = {
     Discussions: (path) =>
       path.startsWith("/blog") ||
-      path.startsWith("/faq") ||
-      path.startsWith("/flight-manual")
+        path.startsWith("/faq") ||
+        path.startsWith("/flight-manual")
         ? "Discuss"
         : "Discussions",
   };
@@ -72,9 +68,9 @@ const Navigation: React.FC = () => {
               </h1>
             </li>
           )}{" "}
-          {filteredData.map((item: LinkProps) => (
-            <>
-              <li key={item.link.title}>
+          {filteredData.map((item: LinkProps, index) => (
+            <React.Fragment key={index}>
+              <li>
                 <Link
                   href={item.link.url}
                   className={pathname === item.link.url ? "is-selected" : ""}
@@ -82,7 +78,7 @@ const Navigation: React.FC = () => {
                   {item.link.title}
                 </Link>
               </li>{" "}
-            </>
+            </React.Fragment>
           ))}
         </ul>
 
@@ -104,8 +100,4 @@ const Navigation: React.FC = () => {
   );
 };
 
-<<<<<<<< HEAD:src/components/legacy/NavLegacy/NavLegacy.tsx
 export default NavLegacy;
-========
-export default Navigation;
->>>>>>>> develop:src/components/Navigation/Navigation.tsx

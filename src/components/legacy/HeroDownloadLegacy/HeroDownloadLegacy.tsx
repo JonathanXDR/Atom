@@ -4,7 +4,7 @@ import { Box, Octicon, OcticonProps, Text } from "@primer/react";
 import Image from "next/image";
 import Link from "next/link";
 import "./HeroDownloadLegacy.css";
-import atomWordmark from "/public/assets/svg/atom-wordmark.svg";
+import atomWordmark from "/public/assets/web/svg/atom-wordmark.svg";
 
 interface HeroDownloadLegacyProps {
   downloads: DownloadProps[];

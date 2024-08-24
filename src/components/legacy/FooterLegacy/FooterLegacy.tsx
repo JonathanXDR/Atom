@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import CreditBadge from "../legacy/CreditBadgeLegacy/CreditBadgeLegacy";
-
+import CreditBadgeLegacy from "../CreditBadgeLegacy/CreditBadgeLegacy";
 export interface LinkProps {
   link: {
     title: string;
@@ -13,11 +12,7 @@ export interface LinkProps {
   };
 }
 
-<<<<<<<< HEAD:src/components/legacy/FooterLegacy/FooterLegacy.tsx
 const FooterLegacy: React.FC = () => {
-========
-const Footer: React.FC = () => {
->>>>>>>> develop:src/components/Footer/Footer.tsx
   const pathname = usePathname();
 
   const data: LinkProps[] = [
@@ -89,16 +84,16 @@ const Footer: React.FC = () => {
         <div className={`wrapper ${pathname === "/blog" ? "" : "no-pad"}`}>
           <ul className="footer-left">
             {filteredData.map((item: LinkProps, index) => (
-              <>
-                <li key={index}>
+              <React.Fragment key={index}>
+                <li>
                   <Link href={item.link.url}>{item.link.title}</Link>
                 </li>{" "}
-              </>
+              </React.Fragment>
             ))}
           </ul>
 
           <div className="footer-right">
-            <CreditBadge />
+            <CreditBadgeLegacy />
           </div>
         </div>
       </div>
@@ -106,8 +101,4 @@ const Footer: React.FC = () => {
   );
 };
 
-<<<<<<<< HEAD:src/components/legacy/FooterLegacy/FooterLegacy.tsx
 export default FooterLegacy;
-========
-export default Footer;
->>>>>>>> develop:src/components/Footer/Footer.tsx

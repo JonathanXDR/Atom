@@ -27,7 +27,7 @@
         "url": "/teletype"
       },
       "image": {
-        "url": "/assets/png/index-teletype-screenshot.png",
+        "url": "/assets/web/png/index-teletype-screenshot.png",
         "alt": "index-teletype-screenshot"
       }
     },
@@ -58,7 +58,7 @@
         "url": "/ide"
       },
       "image": {
-        "url": "/assets/png/index-ide-screenshot.png",
+        "url": "/assets/web/png/index-ide-screenshot.png",
         "alt": "index-ide-screenshot"
       }
     },
@@ -83,7 +83,7 @@
         "url": "/github"
       },
       "image": {
-        "url": "/assets/png/index-github-screenshot.png",
+        "url": "/assets/web/png/index-github-screenshot.png",
         "alt": "index-github-screenshot"
       }
     }

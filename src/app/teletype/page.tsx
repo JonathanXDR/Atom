@@ -5,9 +5,9 @@ import { Box, Heading, Text } from "@primer/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import realTimePortals from "/public/assets/svg/real-time-portals.svg";
-import realTimePrivacy1 from "/public/assets/svg/real-time-privacy-1.svg";
-import realTimePrivacy2 from "/public/assets/svg/real-time-privacy-2.svg";
+import realTimePortals from "/public/assets/web/svg/real-time-portals.svg";
+import realTimePrivacy1 from "/public/assets/web/svg/real-time-privacy-1.svg";
+import realTimePrivacy2 from "/public/assets/web/svg/real-time-privacy-2.svg";
 
 export default function Teletype() {
   const videoRef = React.useRef<HTMLVideoElement>(null);

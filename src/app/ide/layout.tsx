@@ -3,7 +3,7 @@ import "@primer/react-brand/lib/css/main.css";
 import { Metadata } from "next";
 import "../tailwind.css";
 import "./main.css";
-import "/public/assets/css/ide.css";
+import "/public/assets/web/css/ide.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://atom.io/ide"),

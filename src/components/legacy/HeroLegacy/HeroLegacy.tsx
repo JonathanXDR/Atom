@@ -10,7 +10,7 @@ import HeroMetaLegacy from "../HeroMetaLegacy/HeroMetaLegacy";
 import SunsetBannerLegacy from "../SunsetBannerLegacy/SunsetBannerLegacy";
 import TagListLegacy from "../TagListLegacy/TagListLegacy";
 import "./HeroLegacy.css";
-import octonaut from "/public/assets/svg/octonaut.svg";
+import octonaut from "/public/assets/web/svg/octonaut.svg";
 
 interface HeroLegacyProps {
   banner?: BannerProps;

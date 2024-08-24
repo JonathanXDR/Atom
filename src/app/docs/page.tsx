@@ -4,15 +4,15 @@ import NavLegacy from "@/components/legacy/NavLegacy/NavLegacy";
 import footer from "@/data/footer.json";
 import nav from "@/data/nav.json";
 import {
-  BookIcon,
-  CommentDiscussionIcon,
-  GearIcon,
-  PlayIcon,
+    BookIcon,
+    CommentDiscussionIcon,
+    GearIcon,
+    PlayIcon,
 } from "@primer/octicons-react";
 import { Box, Heading, PageLayout, Text } from "@primer/react";
 import Image from "next/image";
 import Link from "next/link";
-import flightManualCover from "/public/assets/png/flight-manual-cover.png";
+import flightManualCover from "/public/assets/web/png/flight-manual-cover.png";
 
 export default function Docs() {
   return (
